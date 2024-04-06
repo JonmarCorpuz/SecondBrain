@@ -1,5 +1,3 @@
-#BlueTeam 
-
 A Demilitarized Zone is a section of an organization's network that's isolated from their internal network and external network
 
 * Provides an additional layer of security by placing public-facing systems and services that need to be accessible by third-parties from the internet in an intermediary zone with restricted access
