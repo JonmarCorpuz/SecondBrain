@@ -38,7 +38,7 @@ A general-purpose EC2 instance provides a balance of compute, memory, and networ
 | T3 instances                        | Offers a balance of baseline performance and the ability to burst higher CPU performance levels when needed (Suitable for workloads with variable CPU utilization patterns) |
 | M5 instances                        | Offers a balance of compute, memory, and networking resources (Suitable for a wide range of general-purpose workloads)                                                      |
  
-### Compute optimized EC2 instance
+### Compute Optimized EC2 instance
 
 A compute optimized EC2 instance delivers high computational performance and is optimized for workloads that require significant processing power
 
@@ -51,7 +51,7 @@ A compute optimized EC2 instance delivers high computational performance and is 
 | C5 instances                          | Offers a balance of compute power, memory, and networking resources (Suitable for applications and high-performance computing) |
 | C6g instances                         | Offers a good balance of compute power and cost-effectiveness (Suitable for various compute-intensive workloads)               |
 
-### Memory optimized EC2 instance
+### Memory Optimized EC2 instance
 
 A memory optimized EC2 instance delivers high performance for memory-intensive workloads and is optimized for providing a large amount of RAM along with sufficient compute and networking resources to support applications that require significant memory capacity
 
@@ -66,7 +66,7 @@ A memory optimized EC2 instance delivers high performance for memory-intensive w
 | R5 instances                  | Offers a balance of high memory capacity and compute power (Suitable for memory-intensive workloads) |
 | X1 instances                  | Offers up to 3.9 TB of RAM per instance (Suitable for memory-intensive workloads)                    |
 
-### Accelerated computing EC2 instance
+### Accelerated Computing EC2 instance
 
 An accelerated computing EC2 instance is designed to accelerate certain types of computational workloads using specialized hardware and is optimized for tasks that can benefit from parallel processing and high-performance computing capabilities provided by those accelerators
 
@@ -81,7 +81,7 @@ An accelerated computing EC2 instance is designed to accelerate certain types of
 | P3 instances                       | Provide high computational performance and are optimized for training deep learning models and running GPU-accelerated applications (Suitable for high-performance computing, machine learning, and other compute-intensive workloads) |
 | G4 instances                       | Offers a balance of performance, cost-effectiveness, and energy efficiency (Suitable for graphics-intensive applications, video transcoding, machine learning inference, and other GPU-accelerated workloads)                          |
 
-### Storage optimized EC2 instance
+### Storage Optimized EC2 instance
 
 A storage optimized EC2 instance provides high storage capacity and performance for data-intensive workloads, and is optimized to deliver fast access to large volumes of data
 
