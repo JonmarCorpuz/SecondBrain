@@ -35,17 +35,16 @@ The Community Cloud deployment model is a cloud service that's shared among orga
 
 * Timelines must be established for the migration to the cloud
 * Most migrations will be better served if performed incrementally in order to reduce the risk of an outage or having to back out the migration because of unforeseen issues
-	* Migration onto the cloud will usually take place during a maintenance window, which is a scheduled time that maintenance can be performed and outages are planned for ongoing support of operations
-		* The actual time window is determined by allocating time for all of the processes that need to occur sequentially during the migration
-			* There must be time for testing and validation after the migration where all stakeholders can test and verify that the systems are working as planned after the migration
-			* Time must be allocated in the even that a back-out is required and that the original site or installation must come back online
-		* It's best to begin an organization's migration onto the cloud with small, easy-to-implement, noncritical systems as candidates to migrate to the cloud
-			* Follows a "Start small and deploy over time" field of though
-			* This enables the organization to gain experience in the migration process and allow them to better determine what realistic time frames will need to be arranged for migrations
+* Migration onto the cloud will usually take place during a maintenance window, which is a scheduled time that maintenance can be performed and outages are planned for ongoing support of operations (*There must be time for testing and validation after the migration where all stakeholders can test and verify that the systems are working as planned after the migration*, *etc.*)
+* Time must be allocated in the even that a back-out is required and that the original site or installation must come back online*, *
+* It's best to begin an organization's migration onto the cloud with small, easy-to-implement, non-critical systems as candidates to migrate to the cloud
 
 ## Documentation
 
-* Complete documentation is critical for a successful migration (*All systems should be accurately diagrammed and configurations should be saved in a file separate from the systems being migrated*, *Complete and accurate documentation needs to be created and maintained for the migration to the cloud and the ongoing support of the cloud deployment*, *Shows what security devices will be used and where they are to be placed in the network*, *Network planning and documentation should start early in the cloud rollout process and be performed in collaboration with the CSP in order to allow for the correct selection and procurement of all needed networking hardware and software*, *etc.*)
+* All systems should be accurately diagrammed and configurations should be saved in a file separate from the systems being migrated
+* Complete and accurate documentation needs to be created and maintained for the migration to the cloud and the ongoing support of the cloud deployment
+* Shows what security devices will be used and where they are to be placed in the network
+* Network planning and documentation should start early in the cloud rollout process and be performed in collaboration with the CSP in order to allow for the correct selection and procurement of all needed networking hardware and software
 * Includes detailed explanations and topologies of the network (Ex: *The numbering of all interfaces and their associated IP subnets and VLANs*, *VPN links*, *Routing tables*, *ACLs*, *The connection to the CSP's network*, *Links to the corporate office and all data centers*, *etc.*)
 * Includes the routing, redundancy, and security protocols to be used (Ex: *VLANs*, *STP*, *VXLAN*, *etc.*)
 * Includes configuration scripts, which are useful for initial installation and for ongoing maintenance and troubleshooting
