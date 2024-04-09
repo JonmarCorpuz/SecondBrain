@@ -48,15 +48,7 @@ The VPC Endpoint is a service that enables users to privately connect their VPC 
 
 ### Gateway VPC Endpoint
 
-A gateway endpoint is a type Aused to connect a user's VPC to supported AWS services within the same region 
-
-* Enables traffic that's destined for an AWS service to be routed directly to the service without leaving the AWS network by creating a target for the route table in the user's VPC when they create a gateway endpoint
-
 ### Interface VPC Endpoint
-
-An interface endpoint 
-
-
 
 ## Transit Gateway
 
