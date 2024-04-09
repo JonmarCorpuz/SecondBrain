@@ -16,6 +16,7 @@ Amazon Elastic Compute Cloud is a web service provided by AWS that allows users 
 
 An EC2 instance is a virtual server hosted in the AWS cloud that users can use to run their applications
 
+* The user is responsible for the logical controls (Ex: *Guest OS*, *Security and patching*, *Networking*, *Scaling*, *etc.*) while AWS is responsible for the physical hardware
 * EC2 instances are a combination of vCPUs, memory, network, instance storage, and GPUs
 * By default, EC2 instances are placed in a network called the Amazon VPC, allowing users to get easily started with Amazon EC2 without having to learn how to create and configure a VPC (Any resources placed inside the default VPC will be public and accessible by the internet)
 
