@@ -1,6 +1,6 @@
-A computing model refers to the approach used to design, deploy, and manage computing resources in the cloud
-
 # AWS Computing Models
+
+A computing model refers to the approach used to design, deploy, and manage computing resources in the cloud
 
 ## Virtual Servers
 
