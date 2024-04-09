@@ -6,3 +6,58 @@ An Amazon Virtual Private Cloud allows users to create and manage isolated virtu
 * Provides users several options for connecting their virtual network to the internet (Ex: *Internet Gateways*, *NAT gateways*, *Virtual Private Gateways*, *etc.*), allowing them to control inbound and outbound internet traffic to and from your VPC resources
 * Offers robust security features to help users secure their virtual environment (Ex: *Security groups to control traffic to their instances*, *VPN connections to encrypt data in transit between their VPC and on-premises networks*, *etc.*)
 * Seamlessly integrates with other AWS services, allowing users to deploy and manage a wide range of cloud resources within their virtual environment
+
+# AWS VPC Types
+
+## Default VPC
+
+A default VPC is created in each AWS region for every AWS user by default
+
+* Pre-configured with default settings (Ex: *Default subnet in each AZs*, *Default security group*, *Default network ACL*, *etc.*)
+* Often used to quickly deploy resources without having to configure a custom VPC
+
+## Custom VPC
+
+A VPC that a user creates themselves
+
+* Allows users to fully customize their VPC's configuration
+* Gives the user full control over the CIDR block, subnets, route tables, internet gateways, NAT gateways, security groups, network ACLs, etc.
+* Often used to meet specific networking and security requirements
+
+## VPC Peering
+
+VPC peering allows users to connect two VPCs within the same AWS region
+
+* Enables communication between instances, services, and microservices in the peered VPCs as if they were in the same network using private IP address
+* Traffic stays within the AWS network and doesn't traverse the internet
+* Facilitates data sharing between applications or environments running in different VPCs
+* Only works with VPCs that are in the same AWS region
+
+### How VPC Peering Works
+
+1. The user establishes a peering connection between two VPCs, which will represent a one-to-one relationship between the two
+2. Once the peering connection is established, they'll update the route tables in each VPC to route the traffic that's destined for the CIDR block of the other VPC through the peering connection
+3. The user then configures security group rules and network ACLs to allow the desired traffic between instances in the peered VPCs
+4. Instances in the peered VPC should now be abled to communicate with each other using private IP addresses as if they were in the same network
+
+## VPC Endpoint
+
+The VPC Endpoint is a service that enables users to privately connect their VPC to supported AWS services without requiring an Internet gateway, NAT device, VPN connection, or AWS Direct Connect
+
+* Allows instances in the user's VPC to communicate with AWS services using private IP addresses, enhancing security and reducing latency
+
+### Gateway VPC Endpoint
+
+A gateway endpoint is a type Aused to connect a user's VPC to supported AWS services within the same region 
+
+* Enables traffic that's destined for an AWS service to be routed directly to the service without leaving the AWS network by creating a target for the route table in the user's VPC when they create a gateway endpoint
+
+### Interface VPC Endpoint
+
+An interface endpoint 
+
+
+
+## Transit Gateway
+
+
