@@ -15,6 +15,32 @@ AWS Lambda is a serverless computing service that allows users to run code witho
 
 ## Event/Trigger
 
+An event or trigger refers to a specifc occurrence or action that initiates the execution of a Lambda function (Ex: *AWS related events*, *HTTP requests*, *Scheduled events*, *etc.*)
+
+* Enables users to integrate a Lambda function with other AWS services 
+
 ## Code
 
+The code refers to the actual program or function that the user writes and uploads to the Lambda service for execution
+
+* Contains the logic that defines the functionality that the user wants the Lambda function to perform
+* Can be packaged along with any dependencies or libraries it requires to run into a deployment package, which can be yploaded to AWS Lambda
+
+### Lambda Function Handler
+
+The AWS Lambda function handler is the method in a user's function code that processes events
+
+* Lambda runs the function handle when the function is invoked
+* When the function handler exits or returns a response, it becomes available to handle another event
+
 ## Configuration
+
+The configuration refers to the settings and parameters that define how a Lambda function behaves and operates
+
+* Function settings
+* Runtime environment, which specifies the programming language and version that AWS Lambda will use to execute the Lambda function's code
+* Environment variables
+* Concurrency and scaling
+* Logging and monitoring
+* Permissions and security
+* Tags
