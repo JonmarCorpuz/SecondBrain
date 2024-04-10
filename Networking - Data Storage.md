@@ -4,7 +4,7 @@
 
 ## Block Storage
 
-Block storage is storage technology that takes any data and divides it into equal sized blocks while assigning each block a unique identifier, and then distributes those blocks across the storage network to balance efficiency and functionality
+Block storage is storage technology that takes any data and divides it into fixed, equal sized blocks while assigning each block a unique identifier, and then distributes those blocks across the storage network to balance efficiency and functionality
 
 * Stores the divided data blocks on underlying physical storage, which all gets reassembled together when a user requests the data 
 * Fast, reliable, and easy to access
