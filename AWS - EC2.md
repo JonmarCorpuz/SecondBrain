@@ -111,7 +111,7 @@ In order to create an EC2 instance, you need to define the hardware specificatio
 
 EC2 instances are live instantiations of what is defined in an AMI
 
-![[VBk76PGITdKLGz9RPTGtXw_16b6431eb1354ab889f7433d964da9f1_image.png]]
+![](VBk76PGITdKLGz9RPTGtXw_16b6431eb1354ab889f7433d964da9f1_image.png)
 
 * AMI is how you model and define your instance, while the EC2 instance is the entity you interact with
 * When you launch a new instance, AWS allocates a VM that runs on a hypervisor, where the AMI you selected is copied onto the root device volume, which contains the image used to boot the volume
