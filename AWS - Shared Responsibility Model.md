@@ -3,6 +3,8 @@ The AWS Shared Responsibility Model is a model that defines the division of resp
 * Outlines which security measures AWS is responsible for implementing and managing, and which security measures customers are responsible for implementing and managing themselves
 * The shared responsibility model varies depending on the type of AWS service that's being used
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # AWS Responsibility Categories
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/eKxMSz7eQe--4LueiSDLeA_768c8a872c8c47b78055a63415700ff1_asset-v1-AWS-AWS-AWS-OTP-AWSD16-1T2023-type-asset-block-Reading_1.5_AWS_Shared_Responsibility_Model.png)
