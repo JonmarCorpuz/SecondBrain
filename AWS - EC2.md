@@ -177,3 +177,5 @@ EC2 instance store refers to the temporary block-level storage that's physically
 * 
 
 ## External Storage
+
+* Multiple EBS volumes can be attached to EC2 instances, which can then be configured on the OS of the EC2 instance
