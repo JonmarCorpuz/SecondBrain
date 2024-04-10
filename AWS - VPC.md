@@ -115,10 +115,18 @@ Users can secure their VPCs using NACLs and security groups
 
 NACLs are stateless, numbered set of rules that control the traffic allowed to and from subnets in a VPC
 
+* Operates at the subnet level
 * Stateless, meaning that a user needs to configure an outbound traffic rule that corresponds to an inbound rule
 * Consists of numbered rules in sequential order that each either allows or denies traffic based on specified criteria (Ex: *Protocol*, *Port range*, *IP address*, *etc.*)
-* Allows users to monitor and analyze network traffic patterns and potential security threats by logging traffic that match specific rules
-* Operates at the subnet level
+* Logs traffic that match specific rules to allows users to monitor and analyze network traffic patterns and potential security threats
 
 ### Security Groups
 
+Security groups are virtual firelwalls that control inbound and outbound traffic for AWS instances and other resources within a VPC
+
+* Operates at the instance level
+* Allows users to specify which traffic is allowed to reach their instances and which isn't
+* Stateful, meaning that allowing inbound traffic for a specific protocol and port will automatically allow the return traffic for that connection regardless of any outbound rules
+* Changes to security groups take effect immediately
+* Each instance can be associated with multiple security groups
+* Provides logging and monitoring features to allow users to track changes, monitor traffic, and analyze security group activity
