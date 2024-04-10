@@ -9,4 +9,3 @@ A A Domain Controller (DC) is a server that serves as the central authority for 
 * Establishes and maintains trust relationships with other domains and forests, allowing users in one domain to access resources in trusted domains
 * Authenticates service requests within the same domain (Ex: *Requests for accessing shared resources, printers, or applications*, *etc.*)
 
-* 
