@@ -4,6 +4,8 @@ Amazon Elastic Block Store is a block storage service that allows users to creat
 * Provides block-level storage, allowing EBS volumes to be formatted and used like physical hard drives
 * Designed for high availability and durability, along with built-in redundancy and replication across multiple AZs within an AWS Region
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Amazon EBS Volumes
 
 Amazon EBS offers different volume types that are optimized for various performance and cost requirements
