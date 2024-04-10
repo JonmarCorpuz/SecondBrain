@@ -166,6 +166,14 @@ The stopping phase is the process of stopping an EC2 instance, where its running
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/EC2%20Storage.png)
 
-## EC2 Instance Storage
+## EC2 Instance Store
+
+EC2 instance store refers to the temporary block-level storage that's physically attached to the host computer running the EC2 instance
+
+* Provides very high I/O speeds and low latency since it's physically located on the same host computer as the EC2 instance
+* The size and number of instance store volumes available depends on the specific EC2 instance type and size
+* The data lifecycle of the data stored on instance store volumes is ephemeral, meaning that it doesn't persist if the instance is stopped, hibernated, or terminated, and the data is cryptographically erased when the instance is stopped or terminated
+* Instance store volumes are best suited for temporary, frequently changing data (Ex: *Caches*, *Buffers*, *Scratch data*, *etc.*)
+* 
 
 ## External Storage
