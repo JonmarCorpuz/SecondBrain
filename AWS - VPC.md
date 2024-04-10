@@ -52,4 +52,15 @@ The VPC Endpoint is a service that enables users to privately connect their VPC 
 
 ## Transit Gateway
 
+# Creating a VPC
+
+1. The user needs to declare two specific settings in order to create a VPC:
+  * The region they're selecting
+  * The IP range for the VPC in the form of CIDR notation
+
+2. In order to provide more granular control to their resources, the user will then divide the address range of their VPC into subnets (Ex: *Public subnet for public facing resources*, *Private subnet for private resources*, *etc.*). The user needs three main things in order to create a subnet:
+  * The VPC they want the subnet to live in
+  * The AZ they want their subnet to live in
+  * The CIDR range for their subnet that's within their previously specified VPC CIDR range
+
 
