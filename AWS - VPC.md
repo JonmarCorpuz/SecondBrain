@@ -54,6 +54,8 @@ The VPC Endpoint is a service that enables users to privately connect their VPC 
 
 ## Transit Gateway
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # VPC Components
 
 ## AWS IGW
@@ -81,6 +83,8 @@ A Virtual Private Gateway is a VPC component that enables communication between 
 ### Main Route Table
 
 ### Custom Route Table
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Creating a VPC Network
 
