@@ -1,4 +1,4 @@
-# Storage Types
+# Data Storage Types
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Data%20Storage%20Types.png)
 
@@ -15,6 +15,12 @@ Block storage is storage technology that takes any data and divides it into equa
 * Block storage architecture provides multiple paths to the data by decoupling data from user environments
 * Well-suited for applications requiring rapid read/write capabilities
 
+## File Storage
+File storage is a storage technology that stores data in files and organizes them into folders, which are then organized into directories and subdirectories
+
+* A user needs to specify the full file path from the directory down to the specific folder and file name to locate a file
+* Well-suited for storing and organizing structured, transactional data and manageable data volumes
+
 ## Object Storage
 
 Object storage is storage technology that manages and manipulates data as distinct units called "objects"
@@ -24,9 +30,3 @@ Object storage is storage technology that manages and manipulates data as distin
 * Data is accessed through APIs
 * Well-suited for storing and managing large volumes of unstructred data (Ex: *Image*, *Videos*, *etc.*)
 * Provides the ability to add rich metadata to objects and a flexible, scalable, and API-driven approach to storing and managing large amounts of unstructured data
-
-## File Storage
-File storage is a storage technology that stores data in files and organizes them into folders, which are then organized into directories and subdirectories
-
-* A user needs to specify the full file path from the directory down to the specific folder and file name to locate a file
-* Well-suited for storing and organizing structured, transactional data and manageable data volumes
