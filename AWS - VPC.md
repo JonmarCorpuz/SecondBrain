@@ -7,6 +7,8 @@ An Amazon Virtual Private Cloud allows users to create and manage isolated virtu
 * Offers robust security features to help users secure their virtual environment (Ex: *Security groups to control traffic to their instances*, *VPN connections to encrypt data in transit between their VPC and on-premises networks*, *etc.*)
 * Seamlessly integrates with other AWS services, allowing users to deploy and manage a wide range of cloud resources within their virtual environment
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # AWS VPC Types
 
 ## Default VPC
