@@ -16,6 +16,8 @@ The trusted domain is the domain that's trusted by another domain
 
 * Users can authenticate and access resources in the trusting domain based on the established trust relationship
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Types of Trust Relationships
 
 ## One-Way Trust Relationship
