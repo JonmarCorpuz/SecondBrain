@@ -74,16 +74,29 @@ A Virtual Private Gateway is a VPC component that enables communication between 
 * Automatically replicates the VGW across multiple AZs within a region to ensure continuous connectivity
 * Ensures secure communication between a user's VPC and their on-premises network by using industry-standard encryption protocols (Ex: *IPSec*, *etc.*)
 
-# Creating a VPC
+## Route Tables
 
-1. The user needs to declare two specific settings in order to create a VPC:
+### Main Route Table
+
+### Custom Route Table
+
+# Creating a VPC Network
+
+## Creating a VPC
+
+The user needs to declare two specific settings in order to create a VPC:
   * The region they're selecting
   * The IP range for the VPC in the form of CIDR notation
 
-2. In order to provide more granular control to their resources, the user will then divide the address range of their VPC into subnets (Ex: *Public subnet for public facing resources*, *Private subnet for private resources*, *etc.*). The user needs three main things in order to create a subnet:
+## Creating VPC Subnets
+
+In order to provide more granular control to their resources, the user will then divide the address range of their VPC into subnets (Ex: *Public subnet for public facing resources*, *Private subnet for private resources*, *etc.*). The user needs three main things in order to create a subnet:
   * The VPC they want the subnet to live in
   * The AZ they want their subnet to live in
   * The CIDR range for their subnet that's within their previously specified VPC CIDR range
 
+## Configuring VPC Routing
 
+VPC routing is done using route tables
 
+* Proper routes in the VPC's route table is one of the components that's needed to ensure that instances can communicate with the internet (If the route table has a route to the IGW then it does have internet access and vice versa)
