@@ -106,3 +106,19 @@ In order to provide more granular control to their resources, the user will then
 VPC routing is done using route tables
 
 * Proper routes in the VPC's route table is one of the components that's needed to ensure that instances can communicate with the internet (If the route table has a route to the IGW then it does have internet access and vice versa)
+
+## VPC Security
+
+Users can secure their VPCs using NACLs and security groups
+
+### NACLs
+
+NACLs are stateless, numbered set of rules that control the traffic allowed to and from subnets in a VPC
+
+* Stateless, meaning that a user needs to configure an outbound traffic rule that corresponds to an inbound rule
+* Consists of numbered rules in sequential order that each either allows or denies traffic based on specified criteria (Ex: *Protocol*, *Port range*, *IP address*, *etc.*)
+* Allows users to monitor and analyze network traffic patterns and potential security threats by logging traffic that match specific rules
+* Operates at the subnet level
+
+### Security Groups
+
