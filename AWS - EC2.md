@@ -1,6 +1,5 @@
 Amazon Elastic Compute Cloud is a web service provided by AWS that allows users to rent virtual virtual servers (Instances) on which they can run their own applications
 
-
 * Provides resizable compute capacity in the cloud, enabling users to quickly scale their computing resources up or down as needed
 * Users can easily scale the number of instances up or down to handle changes in demand of their applications (Elasticity) 
 * Offers a wide range of instance types (Ex: *Compute-optimized instances*, *Memory-optimized instances*, *GPU instances*, *etc.*)
@@ -160,3 +159,13 @@ The stopping phase is the process of stopping an EC2 instance, where its running
 	* Starting up a stop-hibernated instance will resume from the hibernated state, allowing for faster boot times as it doesn't need to reload the OS and application state
 
 ## Terminating
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# EC2 Storage
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/EC2%20Storage.png)
+
+## EC2 Instance Storage
+
+## External Storage
