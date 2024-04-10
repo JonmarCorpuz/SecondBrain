@@ -58,7 +58,7 @@ The VPC Endpoint is a service that enables users to privately connect their VPC 
 
 # VPC Components
 
-## AWS IGW
+## IGW
 
 An Internet Gateway is a horizontally scalable, redundant, and highly available VPC component that allows communication between instances within a user's VPC and the internet
 
@@ -70,7 +70,7 @@ An Internet Gateway is a horizontally scalable, redundant, and highly available 
 * Each VPC can only be associated with one IGW at a time
 * Can ensure that only authorized traffic is allowed to enter or leave the VPC by implementing security groups and NACLs to control the traffic that flows through the IGW
 
-## AWS VGW
+## VGW
 
 A Virtual Private Gateway is a VPC component that enables communication between a user's VPC and other AWS services or remote networks securely and privately over an encrypted VPN connection or a Direct Connect dedicated network connection
 
@@ -80,9 +80,28 @@ A Virtual Private Gateway is a VPC component that enables communication between 
 
 ## Route Tables
 
+A route table is a set of rules that determine how network traffic is directed within the VPC, between VPCs, and with other networks
+
+* Contains a set of rules (route) that specify where network traffic should be directed based on its destination
+* Each route consists of a destination CIDR block and a target
+* Ensures that traffic destined for IP addresses within the VPC's CIDR block stays within the VPC and doesn't leave the network by including default routes for local traffic within the VPC
+* Used to establish connectivity between a VPC and on-premises network
+* Allows for route sharing and communication between different parts of the user's network infrastructure by propagating routes learned from VPN connections or VPC peering connections to other route tables within the VPC
+
 ### Main Route Table
 
+The main route table refers to the default route table that gets automatically created for each VPC
+
+* Contains default routes for local traffic within the VPC
+* Allows instances within the VPC to communicate with each other using private IP addresses without the need for additional routing configuration
+* Automatically associated with all subnets in the VPC by default
+
 ### Custom Route Table
+
+The custom route table refers to a user-defined route table that the user creates and customizes to control the routing of network traffic within a VPC
+
+* Allows users to define custom routes and routing policies to control the flow of traffic within the VPC and between the VPC and other networks
+* Can be associated with one or more subnets within the VPC
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
