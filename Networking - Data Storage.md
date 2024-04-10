@@ -14,6 +14,7 @@ Block storage is storage technology that takes any data and divides it into fixe
 * Delivers ultra-low latency required for high-performance workloads because of the limited metadata that gets stored
 * Block storage architecture provides multiple paths to the data by decoupling data from user environments
 * Well-suited for applications requiring rapid read/write capabilities
+* Changes in a file will only require the affected blocks to be modified
 
 ## File Storage
 File storage is a storage technology that stores data in files and organizes them into folders, which are then organized into directories and subdirectories
@@ -30,3 +31,5 @@ Object storage is storage technology that manages and manipulates data as distin
 * Data is accessed through APIs
 * Well-suited for storing and managing large volumes of unstructred data (Ex: *Image*, *Videos*, *etc.*)
 * Provides the ability to add rich metadata to objects and a flexible, scalable, and API-driven approach to storing and managing large amounts of unstructured data
+* Changes in a file will require the whole object to be modified
+* Often follows a WORM (Write Once, Read Many) model
