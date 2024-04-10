@@ -12,6 +12,8 @@ Amazon Elastic Compute Cloud is a web service provided by AWS that allows users 
 * Allows users to enable auto-scaling groups to automatically adjust the number of EC2 instances based on predefined criteria (Ex: *CPU utilization*, *Incoming traffic*, *etc.*), ensuring that the application can handle varying workloads efficiently
 * Can be managed through the AWS CLI, SDKs, or through automation tools and infrastructure orchestration services
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # EC2 Instances
 
 An EC2 instance is a virtual server hosted in the AWS cloud that users can use to run their applications
@@ -113,6 +115,8 @@ EC2 instances are live instantiations of what is defined in an AMI
 
 * AMI is how you model and define your instance, while the EC2 instance is the entity you interact with
 * When you launch a new instance, AWS allocates a VM that runs on a hypervisor, where the AMI you selected is copied onto the root device volume, which contains the image used to boot the volume
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # EC2 Instance Lifecycle
 
