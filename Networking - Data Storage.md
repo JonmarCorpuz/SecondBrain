@@ -1,3 +1,5 @@
+Data storage refers to the technology and media used to retain and preserve digital information for ongoing and futur use
+
 # Data Storage Types
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Data%20Storage%20Types.png)
@@ -33,3 +35,10 @@ Object storage is storage technology that manages and manipulates data as distin
 * Provides the ability to add rich metadata to objects and a flexible, scalable, and API-driven approach to storing and managing large amounts of unstructured data
 * Changes in a file will require the whole object to be modified
 * Often follows a WORM (Write Once, Read Many) model
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Data Storage Device Categories
+
+* Direct-Attached Storage (DAS)
+* Network-Based Storage (Ex: *NAS*, *SAN*, *etc.*)
