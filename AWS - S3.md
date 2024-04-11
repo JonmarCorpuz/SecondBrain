@@ -36,5 +36,5 @@ An S3 Bucket is a public cloud storage container that's used to store objects
 ### S3 Bucket Policies
 
 * Defined using a JSON format
-* Attached to only S3 Buckets
+* Attached to S3 Buckets only
 * Specifies what actions are allowed or denied on the bucket that it's attached to
