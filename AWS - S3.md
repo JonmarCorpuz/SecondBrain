@@ -31,6 +31,10 @@ An object in S3 is a file containing data (Ex: *Text files*, *Images*, *Videos*,
 * Stored in S3 Buckets
 * Each object in S3 has a unique key that serves as its identifier within the S3 Bucket
 
+### S3 Object Lifecycle Policies
+
+S3 object lifecycle policies allow users to automate object related actions
+
 ## S3 Bucket
 
 An S3 Bucket is a public cloud storage container that's used to store, organize, and manage objects
@@ -88,13 +92,22 @@ S3 Standard
 
 S3 Intelligent-Tiering
 
+* Useful if the user's data has unknown or changing access patterns
+* Stores objects in two tiers: A frequent access tier and an infrequent access tier
+* Monitors the access pattern of the user's data and automatically moves it to the most cost-effective storage tier based on frequency of access
+
 ## S3 Standard-Infrequent Access 
 
-S3 Standard-IA
+S3 Standard-IA is for data that's accessed less frequently, but requires rapid access when needed
+
+* Offers high durability, high throughput, and low latency
+* Well-suited for long-term backups and disaster recovery files 
 
 ## S3 One Zone-Infrequent Access 
 
 S3 One Zone-IA
+
+* Stores data in a single AZ
 
 ## S3 Glacier Instant Retrieval
 
@@ -104,10 +117,17 @@ S3 Glacier Instant Retrieval
 
 S3 Glacier Flexible Retrieval
 
+* Offers low-cost storage for archive data that's aynchronously accessed only one or two times per year
+
 ## S3 Glacier Deep Archive
 
 S3 Glacier Deep Archive 
 
+* Supports long-term retention and digital preservation for data that may be accessed only once or twice in a year
+* Designed for customers in highly regulated industries that retain data sets for 7 to 10 years or longer to meet regulatroy compliance requirements
+
 ## S3 Outposts
 
-S3 on Outposts delivers object storage to the user's on-premises AWS Outposts environment
+S3 on Outposts 
+
+* Delivers object storage to the user's on-premises AWS Outposts environment
