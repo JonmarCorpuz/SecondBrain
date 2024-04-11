@@ -35,6 +35,9 @@ An object in S3 is a file containing data (Ex: *Text files*, *Images*, *Videos*,
 
 S3 object lifecycle policies allow users to automate object related actions
 
+* Automates transition actions, which are actions used to define when the user should transition their objects to another storage class
+* Automates expiration actions, which are actions that define when objects expire and should be permanently deleted
+
 ## S3 Bucket
 
 An S3 Bucket is a public cloud storage container that's used to store, organize, and manage objects
