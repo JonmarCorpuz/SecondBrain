@@ -70,12 +70,44 @@ An S3 Bucket is a public cloud storage container that's used to store, organize,
 }
 ```
 
-### IAM Policies
+### S3 Bucket States
 
-* Attached to users, groups, and roles
-* Used for private buckets when the user has many buckets with different permission requirements
-* Used when the user wants all their policies to be in a centralized location
+* Unversioned (Default state), meaning that no new or existing objects in the bucket has a version
+* Versioning-enabled, meaning that all objects in the bucket can have different versions
+* Versioning-suspended, meaning that versioning is suspended for new objects but all existing objects will keep their object versions
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# S3 Storage Classes
 
+## S3 Standard
+
+S3 Standard
+
+## S3 Intelligent-Tiering
+
+S3 Intelligent-Tiering
+
+## S3 Standard-Infrequent Access 
+
+S3 Standard-IA
+
+## S3 One Zone-Infrequent Access 
+
+S3 One Zone-IA
+
+## S3 Glacier Instant Retrieval
+
+S3 Glacier Instant Retrieval
+
+## S3 Glacier Flexible Retrieval
+
+S3 Glacier Flexible Retrieval
+
+## S3 Glacier Deep Archive
+
+S3 Glacier Deep Archive 
+
+## S3 Outposts
+
+S3 on Outposts delivers object storage to the user's on-premises AWS Outposts environment
