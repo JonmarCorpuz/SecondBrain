@@ -23,6 +23,8 @@ A DBMS is software that enables users to interact with databases
 
 # Database Types
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/15623398368289_SQL%20vs%20NoSQL.png)
+
 ## Relational Database
 
 A relational database is a type of BDMS that organizes data into tables that each consists of rows and columns
@@ -52,7 +54,11 @@ A foreign key is a column in one table that establishes a link to the primary ke
 
 ## Non-Relational Database
 
-A non-relational database is a type of BDMS that uses flexible data models to store data (Ex: *CSV*, *etc.*)
+A non-relational database is a type of BDMS that uses flexible data models to store data (Ex: *Graph databases*, *Key-value pairs*, *Wide-column stores*, *etc.*)
+
+* Doesn't follow the traditional tabular structure of relational databases
+* Designed to handle large volumes of structured, semi-structured, and unstructured data
+* Often used in situations where scalability, flexibility, and performance are critical
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
