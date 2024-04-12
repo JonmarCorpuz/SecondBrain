@@ -27,13 +27,15 @@ A DBMS is software that enables users to interact with databases
 
 ## Relational Database
 
-A relational database is a type of BDMS that organizes data into tables that each consists of rows and columns
+A relational database is a type of BDMS that organizes data into tables that each consists of rows and columns (Ex: *MySQL*, *PostgreSQL*, *Oracle*, *SQL Server*, *Amazon Aurora*, *etc.*)
 
 * Data is structured logically into tables that consist of rows and columns 
 * Each row in a table represents a record or tuple and each column represents a field or attribute
 * Tables are organized based on their logical relationships
 * The relationship between two different table is done using foreign keys
-* Once the database is operational, it ramins fixed and becomes difficult to change
+* Once the database is operational, it remains fixed and becomes difficult to change
+* Ensures that data is persisted with high integrity and adheres to the ACID (Atomicity, Consistency, Isolation, and Durability) principle
+* 
 
 ### Rows
 
@@ -81,7 +83,9 @@ A non-relational database is a type of BDMS that uses flexible data models to st
 
 # Database Architecture Types
 
-## On-Premises
+## On-Premises Database
 
-## Cloud-Based
+An on-premises database refers to a database system that's deployed and maintained within the physical premises of an organization
+
+## Cloud-Based Database
 
