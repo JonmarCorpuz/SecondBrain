@@ -2,6 +2,8 @@ A database is an organized collection of data or information that's stored and m
 
 * Allows data to be accessed, manipulated, and updated by multiple users or applications simultaneously
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Database Management System (DBMS)
 
 A DBMS is software that enables users to interact with databases
@@ -51,4 +53,12 @@ A foreign key is a column in one table that establishes a link to the primary ke
 ## Non-Relational Database
 
 A non-relational database is a type of BDMS that uses flexible data models to store data (Ex: *CSV*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Database Architecture Types
+
+## On-Premises
+
+## Cloud-Based
 
