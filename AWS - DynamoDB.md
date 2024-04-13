@@ -24,8 +24,6 @@ A table is a collection of data
 
 An item is a group of attributes that is uniquely identifiable among all of the other items
 
-* There's no limit
-
 ## Attributes
 
 An attribute is a fundamental data element 
