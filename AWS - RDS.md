@@ -54,3 +54,23 @@ A burstable performance database instance is a database instance designed for wo
 A subnet group is the subnet where a DB instance is placed
 
 * This is done by specifying the AZs that include the subnets that the user wants to add and the subnets in that AZ where they want their DB instance to be placed
+
+## Automatic Backups
+
+Automatic backups are periodic snapshots of a user's database instance's storage volume that are taken automatically and retained for a specific duration
+
+* Provide a means of recovering a user's database instance to a previous state in the event of a failure 
+* Provide Point-in-Time Recovery (PITR), which enables users to restore a database to a specific point in time within the retention period, by including transaction logs that provide users to restore their database to any specific point in time within the backup retention period, not just to the latest backup
+* Capture a full snapshot of the user's entire database instance during every snapshot (Ex: *Data*, *Tables*, *Indexes*, *Configurations*, *etc.*)
+
+## Manual Backups
+
+* Manual snapshots exist until the user deletes them, allowing users to retain backups for longer than 35 days
+* Restoring data from a manual snapshot creates a new DB instance with the data from the restored snapshot
+
+## Multi-AZ
+
+* Ensures that a user has two copies of their database running (One primary and the second on standby) for high availability purposes
+* Creates a redundant copy of a user's database in another AZ, also know as a standby copy , where the data in the primary copy is synchronously replicated to the standby copy
+* Uses the DNS name provided during the creation of the DB instance to failover to the standby database by promoting it to the primary database in the event of an automatic failover
+* During an automatic failover, a new standby database is created by either demoting the previous primary to standby if it's still up and running or standing up a new standby DB instance
