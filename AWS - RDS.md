@@ -3,5 +3,43 @@ The Relational Database Service is a managed database service that simplifies th
 * Allows users to focus on their applications rather than the underlying infrastructure
 * Handles routine database tasks (Ex: *Provisioning*, *Patching*, *Backup*, *Recovery*, *Scaling*, *etc.*)
 * Supports various popular relational database engines (Ex: *MySQL*, *PostgreSQL*, *MariaDB*, *Oracle*, *Microsoft SQL Server*, *Amazon Aurora*, *etc.*)
-* Enables users to scale database instances vertically by adjusting compute and memory resources or horizontally by adding read replicas for read scalability and multi-AZ deployment for high availability
-* Built off of compute and storage
+* Enables users to scale database instances vertically by adjusting compute and memory resources or horizontally by adding read replicas for read scalability
+* Enables multi-AZ deployment for high availability
+
+# Database Instance
+
+A DB instance refers to an isolated single database environment created and managed by RDS
+
+* Each DB instance has its own DNS endpoint and port number, allowing applications to connect and interact with the database
+* Can contain multiple databases with the same engine and each database can contain multiple tables
+* underneath eachs DB instance is an EC2 instance
+
+## Standard Database Instance
+
+A standard database instance is a regular standalone database instance 
+
+* Designed to meet the general needs of various types of applications and workloads
+* Commonly used for applications that require relational databases (Ex: *MySQL*, *PostgreSQL*, *Oracle*, *SQL Server*, *MariaDB*, *etc.*)
+* Offers a range of configurations for compute power, memory, storage, and network capacity to accommodate diverse requirements (Ex: *Automated backups*, *Monitoring*, *Security*, *High availability*, *etc.*)
+
+## Memory Optimized Database Instance
+
+A memory database instance is a database instance that's tailored for workloads that require high memory capacity and performance 
+
+* Optimized to handle momey-intensive database operations efficiently
+* Enables users to store large amounts of data in memory by offering a significantly higher amount of RAM compared to standard instances, resulting in reduced disk I/O and improved overall performance
+* Reduces latency and speeds up query processing by caching frequently accessed data, leading to faster database reads and writes, especially for applications with heavy read workloads or complex analytical queries
+* Ensures that applications can scale up as needed without sacrificing performance by allowing users to increase or decrease the instance size to meet changing workload demands
+* Well-suited for memory-intensive use cases (Ex: *In-memory databases*, *Real-time analytics*, *Caching layers*, *High-performance computing applications*, *etc.*)
+
+## Burstable Performance Database Instance
+
+A burstable performance database instance is a database instance designed for workloads that have fluctuating performance needs
+
+* Characterized by their ability to provide baseline performance with the capability to burst above that baseline when required
+* Each burstable performance instance has a baseline level of CPU performance that it provides continuously
+* Suitable for typical workloads and ensures consistent performance under normal usage
+* Baseline performance is measured in CPU Credits per hour, which can accumulate over time when the user operates below their baseline performance level
+* When a user's workload requires more CPU performance than their baseline level, the instance can burst above the baseline using the user's CPU Credits to temporarily deliver high CPU performance
+* Well-suited for workloads with periodic or unpredictable spikes in CPU usage
+* Allows users to track their instance's performance and optimize resource allocation accordingly by providing them tools to monitor their CPU Credit balance and usage
