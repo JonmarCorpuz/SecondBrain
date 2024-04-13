@@ -1,4 +1,4 @@
-Amazon DynamoDB is a fully managed NoSQL database service that's provided by AWS
+Amazon DynamoDB is a fully managed NoSQL database service 
 
 * Offers consistent, single-digit millisecond latency for read and write operations, making it suitable for applications requiring real-time data access
 * Handles administrative tasks (Ex: *Hardware provisioning*, *Configuration*, *Patching*, *Backups*, *etc.*)
