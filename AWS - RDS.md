@@ -12,7 +12,8 @@ A DB instance refers to an isolated single database environment created and mana
 
 * Each DB instance has its own DNS endpoint and port number, allowing applications to connect and interact with the database
 * Can contain multiple databases with the same engine and each database can contain multiple tables
-* underneath eachs DB instance is an EC2 instance
+* Underneath eachs DB instance is an EC2 instance
+* Uses EBS volumes as its storage layer
 
 ## Standard Database Instance
 
