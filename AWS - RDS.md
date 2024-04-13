@@ -44,3 +44,13 @@ A burstable performance database instance is a database instance designed for wo
 * When a user's workload requires more CPU performance than their baseline level, the instance can burst above the baseline using the user's CPU Credits to temporarily deliver high CPU performance
 * Well-suited for workloads with periodic or unpredictable spikes in CPU usage
 * Allows users to track their instance's performance and optimize resource allocation accordingly by providing them tools to monitor their CPU Credit balance and usage
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# RDS Features
+
+## Subnet Groups
+
+A subnet group is the subnet where a DB instance is placed
+
+* This is done by specifying the AZs that include the subnets that the user wants to add and the subnets in that AZ where they want their DB instance to be placed
