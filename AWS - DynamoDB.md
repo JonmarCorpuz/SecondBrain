@@ -6,7 +6,6 @@ Amazon DynamoDB is a fully managed NoSQL serverless database service that organi
 * Handles administrative tasks (Ex: *Hardware provisioning*, *Configuration*, *Patching*, *Backups*, *etc.*)
 * Provides high availability and performance by automatically distributing data and traffic 
 * Supports both document and key-value data models
-* Enables the integration with AWS IAM for fine-grained access control
 * Support encryption at rest and in transit
 * Provides continuous backups, enabling point-in-time recovery within a specified retention period
 * Enables users to replicate data across multiple AWS regions for global high availability and disaster recovery
@@ -26,4 +25,19 @@ An item is a group of attributes that is uniquely identifiable among all of the 
 
 ## Attributes
 
-An attribute is a fundamental data element 
+An attribute is a fundamental data element that's similar to a field or column in a relational database
+
+* Each attribute is composed of a name (key) and a value
+* Can be added or removed from items without needing to modify the table's schema
+
+### Scalar Attributes
+
+A scalar attribute is an attribute that represents a single value
+
+* Can be of various data types supported by DynamoDB (Ex: *String*, *Number*, *Binary*, *Boolean*, or *Null*)
+
+### Multi-Valued Attributes
+
+A multi-valued attribute can hold multiple values of the same data type
+
+* DynamoDB supports three types of multi-valued attributes: String Set, Number Set, and Binary Set
