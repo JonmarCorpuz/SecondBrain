@@ -187,3 +187,9 @@ EC2 instance store refers to the temporary block-level storage that's physically
 An EC2 instance metric is a type of data that's used to measure the performance of an EC2 instance
 
 * Provides valuable insights into the performance, health, and utilization of EC2 instances
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# EC2 Features
+
+## EC2 Auto Scaling
