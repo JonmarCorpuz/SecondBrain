@@ -193,3 +193,5 @@ An EC2 instance metric is a type of data that's used to measure the performance 
 # EC2 Features
 
 ## EC2 Auto Scaling
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/pVmtoRo0R2KIdGTo68hnWQ_d8a3718739a7477398aaff28f86847f1_image.png)
