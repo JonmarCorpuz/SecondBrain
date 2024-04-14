@@ -179,3 +179,11 @@ EC2 instance store refers to the temporary block-level storage that's physically
 ## External Storage
 
 * Multiple EBS volumes can be attached to EC2 instances, which can then be configured on the OS of the EC2 instance
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# EC2 Instance Metrics
+
+An EC2 instance metric is a type of data that's used to measure the performance of an EC2 instance
+
+* Provides valuable insights into the performance, health, and utilization of EC2 instances
