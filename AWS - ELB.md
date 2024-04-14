@@ -23,21 +23,25 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 ## Application Load Balancer (ALB)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ALB%20Components.PNG)
-
 * Operates at the Application Layer (Layer 7) 
 * Supports advanced features (Ex: *Path-based routing*, *Host-based routing*, *Integration with AWS Lambda functions* ,*etc.*)
-
-### ALB Listener
-
-### ALB Target Group
-
-### ALB Rule
 
 ## Network Load Balancer (NLB)
 
 * Operates at the Transport Layer (Layer 4)
 * Provides ultra-high performance, low-latency balancing for TCP and UDP traffic
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# ELB Components
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/i9pCEqt4SsCB_h-15irXaw_a37c73d64d7e4da1ab2055a798c5cef1_image.png)
+
+## ELB Listener
+
+## ELB Target Group
+
+## ELB Rule
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
