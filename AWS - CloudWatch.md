@@ -7,3 +7,14 @@ AWS CloudWatch is a monitoring and observability service that's provided by AWS
 * Provides a stream of system events (Ex: *Instance state changes*, *API calls*, *Schedule events*, *etc.*) that occur within AWS resources (CloudWatch Events)
 * Allows users to monitor the availability and performance of their application by simulating user interactions with web applications (CloudWatch Synthetics)
 * Uses machine learning algorithms to analyse metric data and automatically detect unusual patterns or anomalies (CloudWatch Anomaly Detection)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Collected Metrics
+
+* CPU utilization, which measures the percentage of CPU capacity used over a specified time period
+* Network traffic, which tracks the incoming and outgoing network traffic, typically in bytes per second, to help identify network bottlenecks or spikes in data transfer
+* Disk I/O, which monitors read and write operations to the resource's storage volumes, typically in bytes per second and by measuring the average disk read/write time
+* Memory utilization, which measures the percentage of memory (RAM) used by the resource to help identify memory-intensive applications or instances with insufficient memory allocation
+* Status check, which tracks the results of resource status checks to help monitor the health of a resource's underlying infrastructure
+* Disk space, which monitors the amount of disk space available on a resource's root volume or attached EBS volumes to help prevent storage capacity issues and ensure the availability of sufficient disk space for applications and data
