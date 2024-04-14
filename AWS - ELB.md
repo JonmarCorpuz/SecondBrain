@@ -41,7 +41,7 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# ELB Categories
+# ELB Routing Types
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ELB%20Route%20Traffic%20Example.PNG)
 
