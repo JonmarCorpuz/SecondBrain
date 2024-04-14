@@ -26,6 +26,21 @@ AWS CloudWatch is a monitoring and observability service that allows organizatio
 
 ## CloudWatch Logs
 
+* Allows users to query and filter their log data
+* Allows users to turn log data into numerical CloudWatch metrics that they can graph and use on their dashboards by setting up metric filters on logs
+
 ## CloudWatch Events
 
 ## CloudWatch Synthetics
+
+## CloudWatch Alarms
+
+* CloudWatch alarm states include OK (The metric is within the defined threshold), ALARM (The metric is outside of the defined threshold), and INSUFFICIENT_DATA (The alarm has just started, the metric isn't available, or there's not enough data available for the metric to determine the alarm state)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# CloudWatch Terminology
+
+* Log Event: A record of activity recorded by the application or resource being monitored that comes with a timestamp and an event message
+* Log stream: A sequence of log events that all belong to the same resource being monitored
+* Log Group: A group of log streams that all share the same retention and permissions settings
