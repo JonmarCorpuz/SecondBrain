@@ -10,6 +10,8 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 * Supports SSL/TLS termination, allowing it to offload the SSL/TLS encryption and decryption process from the backend targets in order to improve performance and reduce the computational overhead on the targets
 * Integrates with various AWS services (Ex: *Amazon EC2*, *Amazon ECS*, *etc.*), allowing it to load balance traffic to a wide range of target types
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # AWS ELB Types
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ELB%20Types.PNG)
@@ -36,3 +38,13 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 * Operates at the Transport Layer (Layer 4)
 * Provides ultra-high performance, low-latency balancing for TCP and UDP traffic
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# ELB Categories
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ELB%20Route%20Traffic%20Example.PNG)
+
+## External-Facing Load Balancer
+
+## Internal-Facing Load Balancer
