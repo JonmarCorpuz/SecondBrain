@@ -1,5 +1,7 @@
 AWS Elastic Load Balancing is a service provided by AWS that automatically distributes incoming application traffic across multiple targets 
 
+![](ELB Example.PNG)
+
 * Automatically distributes incoming traffic across multiple targets in multiple AZs to ensure high availability and fault tolerance
 * Enables AWS ELB to automatically adjust the number of targets based on changes in demand or health status by integrating with AWS Auto Scaling, ensuring that applications can dynamically scale to handle varying levels of traffic without manual intervention
 * Continuously monitors the health of targets by periodically sending health checks
