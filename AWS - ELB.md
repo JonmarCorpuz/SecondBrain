@@ -19,31 +19,38 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 ## Classic Load Balancer (CLB)
 
-* Provides load balancing across multiple EC2 instances
-* Supports TCP and HTTP(S) protocols
+A Classic Load Balancer is the classic load balancer that automatically distributes incoming application or network traffic across multiple targets to ensure that no single target becomes overwhelmed with traffic
+
+* Supports OSI Layer 4 (TCP) and OSI Layer 7 (HTTP/HTTPS) load balancing
+* Performs health checks on registered instances to ensure that only healthy instances receive traffic
+* Helps improve fault tolerance and availability by distributing traffic evenly across multiple AZs within a single AWS region
+* Ensures that requests from the same client are consistently routed to the same target instance by integrating session stickiness (Session affinity)
+* Can seamlessly integrate with other AWS services 
 
 ## Application Load Balancer (ALB)
 
-* Operates at the Application Layer (Layer 7)
-* Routes traffic based on request data (*URL path*, *HTTP headers*, *HTTP methods*, *Source IP address*, *etc.*)
-* Sends responses directly to the client (*Fixed responses*, *Redirect clients*, *etc.*)
-* Supports TLS offloading
+An Application Load Balancer is an OSI Layer 7 load balancer that automatically distributes traffic based on HTTP or HTTPS requests in order to provide high availability, scalability, and flexibility for applications and other resources
+
+* Allows for dynamic scaling and flexibility by routing traffic to target groups based on the contents of an HTTP/HTTPS request (Ex: *HTTP/HTTPS header*, *URLs*, *etc.*)
+* Sends responses directly to the client (*Fixed responses*, *Redirections*, *etc.*)
 * Able to authenticate users before they're allowed to pass through the load balancer by using the OpenID Connect protocol and integrating with other AWS services
 * Uses the round-robin routing algorith to ensure that each server receives the same number of requests
 * Uses the least outstanding request routing algorithm
 * Provides sticky sessions that are based on the cookie of the client
-* Supports advanced features (Ex: *Path-based routing*, *Host-based routing*, *Integration with AWS Lambda functions* ,*etc.*)
+* Supports additonal features (Ex: *Path-based routing*, *Host-based routing*, *Integration with AWS Lambda functions* , *TLS offloading*, *WebSocket traffic*, *etc.*)
+* Can seamlessly integrate with other AWS services 
 
 ## Network Load Balancer (NLB)
 
-* Operates at the Transport Layer (Layer 4)
-* Provides ultra-high performance, low-latency balancing for TCP and UDP traffic
-* Uses a flow hash routing algorithm, which is based on the protocol, source IP address, source port, destination IP address, destination port, and the TCP sequence number
+A Network Load Balancer is an OSI layer 4 load balancer 
+
+* Handles extermely high volumes of traffic while maintaining ultra-low latency
+* Handles traffic based on IP protocol data, making it highly efficient for handling TCP and UDP traffic
+* Provides a single static IP address for each AZ it operates in, allowing clients to establish connections directly to the load balancer
+* Uses a flow hash routing algorithm
 * Provides sticky sessions that are based on the source IP address of the client
-* Supports TLS offloading
-* Can handle millions of requests per second
-* Supports static and elastic IP addresses
 * Preserves source IP addresses of clients
+* Supports additional features (Ex: *TLS offloading*, *Static and elastic IP addresses*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -55,9 +62,10 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 An ELB listener is a configuration that defines how the ELB should handle incoming client connections
 
-* A port and the communication protocol that the ELB will use to receive incoming traffic must be defined when creating an ELB listener
-* An additional port and communication protocol that the ELB will use to communicate with a target group must be defined when creating an ELB listener
+* A port and the communication protocol (Ex: *HTTP*, *HTTPS*, *DNS*, *TCP*, *etc.*) that the ELB will use to receive incoming traffic must be defined when creating an ELB listener
+* An additional port and communication protocol (Ex: *HTTP*, *HTTPS*, *DNS*, *TCP*, *etc.*) that the ELB will use to communicate with a target group must be defined when creating an ELB listener
 * Incoming traffic will then be forwarded to the appropriate target group (Ex: *EC2 instances*, *Containers*, *IP addresses*, *Lambda functions*, *etc.*)
+* Users can configure multiple endpoints (ports and protocols) on their ELB to handle different types of traffic 
 
 ## ELB Target Group
 
