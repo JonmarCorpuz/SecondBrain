@@ -53,7 +53,11 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 ## ELB Listener
 
-* A port and the protocol to be used must be defined when creating a listener
+An ELB listener is a configuration that defines how the ELB should handle incoming client connections
+
+* A port and the communication protocol that the ELB will use to receive incoming traffic must be defined when creating an ELB listener
+* An additional port and communication protocol that the ELB will use to communicate with a target group must be defined when creating an ELB listener
+* Incoming traffic will then be forwarded to the appropriate target group (Ex: *EC2 instances*, *Containers*, *IP addresses*, *Lambda functions*, *etc.*)
 
 ## ELB Target Group
 
@@ -81,4 +85,23 @@ AWS Elastic Load Balancing is a service provided by AWS that automatically distr
 
 ## Connection Draining
 
+Connection draining allows already existing connections with an instance that's being deregistered or that's become unhealthy to remain while preventing new connections from happening
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8-YYaL_kRKKfxEta7-itsA_fd10181ed20449a28e87cf67ded460f1_image.png)
+
+* ELB will monitor the number of active connections to the unhealthy instance and will wait until there are no more active connections before completely removing the instance from its pool of active instances
+* Ensures that active connections aren't abruptly terminated when instances are removed from service
+* Helps maintain smooth operation and user experience changes in an infrastructure
+
+## Health Checking
+
+A health check is a mechanism used to monitor the health of the reigstered instances behind the load balancer to ensure that only healthy instances receive traffic
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8-YYaL_kRKKfxEta7-itsA_fd10181ed20449a28e87cf67ded460f1_image.png)
+
+* Defined by users by specifying the protocol, port, and endpoint that the load balancer should use to perform health checks
+* The ELB will periodically send health check requests to the registered instance based on the configuration parameters
+* An instance is healthy when it replies back to the ELB with a 200 HTTP response, any other response code will label that instance as unhealthy
+* Determines if an instance is capable of handling traffic
+* Unhealthy instances will automatically stop receiving traffic until it becomes healthy again
+* Improves the availability and reliability of a network or application
