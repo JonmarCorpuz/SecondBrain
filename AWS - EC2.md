@@ -196,8 +196,9 @@ An EC2 instance metric is a type of data that's used to measure the performance 
 
 ## Vertical Scaling
 
-Vertical scaling refers to adjusting the size of individual instances within an Auto Scaling group by changing their instance type or instance size, rather than increasing or decreasing the number of instances in the group
+Vertical scaling involves increasing or decreasing the size or capacity of individual instances within an Auto Scaling group by changing their instance type, CPU, RAM, or storage capacity
 
 ## Horizontal Scaling
 
-Horizontal scaling 
+Horizontal scaling involves dynamically adjusting the number of instances in an Auto Scaling group based on changes in demand, workload, or other metrics 
+
