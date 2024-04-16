@@ -190,8 +190,14 @@ An EC2 instance metric is a type of data that's used to measure the performance 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# EC2 Features
-
-## EC2 Auto Scaling
+# EC2 Auto Scaling
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/pVmtoRo0R2KIdGTo68hnWQ_d8a3718739a7477398aaff28f86847f1_image.png)
+
+## Vertical Scaling
+
+Vertical scaling refers to adjusting the size of individual instances within an Auto Scaling group by changing their instance type or instance size, rather than increasing or decreasing the number of instances in the group
+
+## Horizontal Scaling
+
+Horizontal scaling 
