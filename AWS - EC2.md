@@ -194,11 +194,25 @@ An EC2 instance metric is a type of data that's used to measure the performance 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/pVmtoRo0R2KIdGTo68hnWQ_d8a3718739a7477398aaff28f86847f1_image.png)
 
-## Vertical Scaling
+## EC2 Auto Scaling Components
+
+### Launch Template
+
+An EC2 Auto Scaling launch template or configuration is a set of configuration settings (Ex: *AWS AMI ID*, *Instance type*, *Security groups*, *etc.*) that define how new instances should be launched when Auto Scaling needs to scale out to meet increased demand
+
+### Scaling Policies
+
+### Auto Scaling Group
+
+An Auto Scaling group is a service that automatically adjusts the number of EC2 instances in a group based on scaling policies
+
+## EC2 Auto Scaling Features
+
+### Vertical Scaling
 
 Vertical scaling involves increasing or decreasing the size or capacity of individual instances within an Auto Scaling group by changing their instance type, CPU, RAM, or storage capacity
 
-## Horizontal Scaling
+### Horizontal Scaling
 
 Horizontal scaling involves dynamically adjusting the number of instances in an Auto Scaling group based on changes in demand, workload, or other metrics 
 
