@@ -148,15 +148,17 @@ Rebooting an instance is the process of restarting or rebooting an EC2 instance
 
 The stopping phase is the process of stopping an EC2 instance, where its running state is terminated
 
-* Stopped state
-	* The instance is no longer running
-	* Data on any EBS volumes attached to the instance persists, allowing to start the instance again later with the same data intact
-	* When starting a stopped instance, it resumes from where it was stopped while retaining its instance ID, private and public IP addresses, and any attached EBS volumes
+### Stopped state
 
-* Stop-hibernate state
-	* The instance's RAM contents are preserved on the root EBS volume
-	* Beneficial for instances that need to retain their in-memory state and resume quickly with all applications and data intact
-	* Starting up a stop-hibernated instance will resume from the hibernated state, allowing for faster boot times as it doesn't need to reload the OS and application state
+* The instance is no longer running
+* Data on any EBS volumes attached to the instance persists, allowing to start the instance again later with the same data intact
+* When starting a stopped instance, it resumes from where it was stopped while retaining its instance ID, private and public IP addresses, and any attached EBS volumes
+
+### Stop-hibernate state
+
+* The instance's RAM contents are preserved on the root EBS volume
+* Beneficial for instances that need to retain their in-memory state and resume quickly with all applications and data intact
+* Starting up a stop-hibernated instance will resume from the hibernated state, allowing for faster boot times as it doesn't need to reload the OS and application state
 
 ## Terminating
 
@@ -199,6 +201,9 @@ An EC2 instance metric is a type of data that's used to measure the performance 
 ### Launch Template
 
 An EC2 Auto Scaling launch template or configuration is a set of configuration settings (Ex: *AWS AMI ID*, *Instance type*, *Security groups*, *etc.*) that define how new instances should be launched when Auto Scaling needs to scale out to meet increased demand
+
+* Supports versioning, allowing for quick rollback if there was an issue or to specify a default version for a launh template
+* A launch instance can be defined either by using an existing EC2 instance, by using an already existing or a previous version of a launch template, or by creating a template from scratch
 
 ### Scaling Policies
 
