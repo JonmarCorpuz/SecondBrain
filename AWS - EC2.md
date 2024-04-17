@@ -210,6 +210,8 @@ An EC2 Auto Scaling launch template or configuration is a set of configuration s
 
 An Auto Scaling group is a service that automatically adjusts the number of EC2 instances in a group based on scaling policies
 
+* Enables users to define where EC2 Auto Scaling deploys their resources by specifying the VPC and subnets that the created EC2 instances should be launched in
+
 ## EC2 Auto Scaling Features
 
 ### Vertical Scaling
