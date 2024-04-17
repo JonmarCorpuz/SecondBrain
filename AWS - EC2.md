@@ -176,7 +176,6 @@ EC2 instance store refers to the temporary block-level storage that's physically
 * The size and number of instance store volumes available depends on the specific EC2 instance type and size
 * The data lifecycle of the data stored on instance store volumes is ephemeral, meaning that it doesn't persist if the instance is stopped, hibernated, or terminated, and the data is cryptographically erased when the instance is stopped or terminated
 * Instance store volumes are best suited for temporary, frequently changing data (Ex: *Caches*, *Buffers*, *Scratch data*, *etc.*) and for hosting applications that replicate data to other EC2 instances (Ex: *Hadoop clusters*, *etc.*)
-* 
 
 ## External Storage
 
