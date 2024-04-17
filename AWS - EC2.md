@@ -121,7 +121,7 @@ EC2 instances are live instantiations of what is defined in an AMI
 
 An EC2 instance transitions between different states from the moment a user creates it all the way through to its termination
 
-![[EC2 Instance Lifecycle.png]]
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/EC2%20Instance%20Lifecycle.png)
 
 ## Pending
 
