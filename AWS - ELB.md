@@ -109,7 +109,7 @@ A health check is a mechanism used to monitor the health of the reigstered insta
 
 * Defined by users by specifying the protocol, port, and endpoint that the load balancer should use to perform health checks
 * The ELB will periodically send health check requests to the registered instance based on the configuration parameters
-* An instance is healthy when it replies back to the ELB with a 200 HTTP response, any other response code will label that instance as unhealthy
+* An instance is healthy either when it replies back to the ELB with a 200 HTTP response or if a TCP connection towards the backend of an instance is successful
 * Determines if an instance is capable of handling traffic
 * Unhealthy instances will automatically stop receiving traffic until it becomes healthy again
 * Improves the availability and reliability of a network or application
