@@ -195,23 +195,48 @@ An EC2 instance metric is a type of data that's used to measure the performance 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/pVmtoRo0R2KIdGTo68hnWQ_d8a3718739a7477398aaff28f86847f1_image.png)
 
-## EC2 Auto Scaling Components
-
-### Launch Template
+## Launch Template
 
 An EC2 Auto Scaling launch template or configuration is a set of configuration settings (Ex: *AWS AMI ID*, *Instance type*, *Security groups*, *etc.*) that define how new instances should be launched when Auto Scaling needs to scale out to meet increased demand
 
 * Supports versioning, allowing for quick rollback if there was an issue or to specify a default version for a launh template
 * A launch instance can be defined either by using an existing EC2 instance, by using an already existing or a previous version of a launch template, or by creating a template from scratch
 
-### Scaling Policies
+## Scaling Policies
 
-### Auto Scaling Group
+A scaling policy is a policy that defines the conditions and actions for automatically adjusting the number of instances in an Auto Scaling Group based on changes in workload, traffic, or other metrics
+
+### Simple Scaling Policies
+
+* It waits a cooldown period before taking any other action after it gets triggered
+
+### Step Scaling Policies
+
+* Responds to additional alarms even while a scaling activity or health check replacement is in progress
+
+### Target Tracking Scaling Policies
+
+
+
+## Auto Scaling Group
 
 An Auto Scaling group is a service that automatically adjusts the number of EC2 instances in a group based on scaling policies
 
 * Enables users to define where EC2 Auto Scaling deploys their resources by specifying the VPC and subnets that the created EC2 instances will be launched in
-* To specify how many instances EC2 Auto Scaling should launch, the user needs to configure the minimum number 
+
+### EC2 ASG Settings
+
+To specify how many instances EC2 Auto Scaling should launch, the user needs to configure the following
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/pVmtoRo0R2KIdGTo68hnWQ_d8a3718739a7477398aaff28f86847f1_image.png)
+
+* The minimum number of instances running in the ASG even if the threshold for lowering the amount of instances is reached
+* The maximum number of instances running in the ASG even if the threshold for adding new instances is reached
+* The desired capacity of instances that should be in the ASG, which can only be within the specified minimum number of instances and the specified maximum number of desired instances (EC2 Auto Scaling will automatically add or remove instances, starting with the oldest instance by default, to match the desired capacity number)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Mw0CKJAzTg6PC8FtpAAlfw_aa974712ced74ca092f793c0e94a38f1_image.png)
+
+* EC2 Auto Scaling can be used for fleet management by configuring the three settings to the same number, which will ensure that the specified number of instances are always available by replacing an instance when it becomes unhealthy
 
 ## EC2 Auto Scaling Features
 
