@@ -38,7 +38,12 @@ An Application Load Balancer is an OSI Layer 7 load balancer that automatically 
 * Uses the least outstanding request routing algorithm
 * Provides sticky sessions that are based on the cookie of the client
 * Supports additonal features (Ex: *Path-based routing*, *Host-based routing*, *Integration with AWS Lambda functions* , *TLS offloading*, *WebSocket traffic*, *etc.*)
-* Can seamlessly integrate with other AWS services 
+* Can seamlessly integrate with other AWS services
+
+## Gateway Load Balancer (GLB)
+
+* Designed to help users deploy, scale, and manage third-party virtual appliances
+* Used to give one gateway for distributing traffic across multipe virtual appliances while scaling them based on demand
 
 ## Network Load Balancer (NLB)
 
