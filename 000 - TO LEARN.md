@@ -11,3 +11,4 @@
 * AWS SAP Backup Agents
 * AWS Application Discovery Service
 * AWS Control Tower
+* AWS CAF
