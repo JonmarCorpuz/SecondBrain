@@ -4,3 +4,7 @@
 * AWS Discovery Agent
 * AWS Discovery Connector
 * AWS Migration Evaluator Collector
+* AWS Database Migration Service
+* AWS Managed Services
+* AWS Snow Family
+* AWS Transfer Family
