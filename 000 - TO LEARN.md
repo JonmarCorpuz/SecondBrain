@@ -14,3 +14,4 @@
 * AWS Cloud Adoption Framework (CAF)
 * AWS Control Tower
 * AWS CloudFormation
+* AWS Service Catalog
