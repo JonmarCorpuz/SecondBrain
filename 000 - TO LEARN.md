@@ -8,3 +8,4 @@
 * AWS Managed Services
 * AWS Snow Family
 * AWS Transfer Family
+* AWS SAP Backup Agents
