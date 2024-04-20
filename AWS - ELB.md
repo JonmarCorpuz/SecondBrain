@@ -32,7 +32,7 @@ A Classic Load Balancer is the classic load balancer that automatically distribu
 An Application Load Balancer is an OSI Layer 7 load balancer that automatically distributes traffic based on HTTP or HTTPS requests in order to provide high availability, scalability, and flexibility for applications and other resources
 
 * Allows for dynamic scaling and flexibility by routing traffic to target groups based on the contents of an HTTP/HTTPS request (Ex: *HTTP/HTTPS header*, *URLs*, *etc.*)
-* Sends responses directly to the client (*Fixed responses*, *Redirections*, *etc.*)
+* Provides layer 7 functionalities directly to the client (*Fixed responses*, *Redirections*, *Session resumption*, *Cross-zone load balancing*, *etc.*)
 * Able to authenticate users before they're allowed to pass through the load balancer by using the OpenID Connect protocol and integrating with other AWS services
 * Uses the round-robin routing algorith to ensure that each server receives the same number of requests
 * Uses the least outstanding request routing algorithm
@@ -47,7 +47,7 @@ An Application Load Balancer is an OSI Layer 7 load balancer that automatically 
 
 ## Network Load Balancer (NLB)
 
-A Network Load Balancer is an OSI layer 4 load balancer 
+A Network Load Balancer is an OSI layer 4 load balancer for routing connections to various targets within a VPC
 
 * Handles extermely high volumes of traffic while maintaining ultra-low latency
 * Handles traffic based on IP protocol data, making it highly efficient for handling TCP and UDP traffic
