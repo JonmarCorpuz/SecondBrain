@@ -53,3 +53,5 @@ The mobilize migration phase refers to creating a migrating plan and refining th
 ## Migrate and Modernize
 
 The migrate and modernize phase refers to the designing, migration, and validation of assets
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
