@@ -7,7 +7,7 @@ The AWS Migration Evaluator is a migration assessment service that helps an orga
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Migration Evaluator Features
+# Migration Evaluator Tools
 
 ## Inventory Discovery
 
@@ -20,3 +20,9 @@ The quick insights feature provides visibility into the projected costs of runni
 * Gives clients the ability to download a one-page summary highlighting the estimated savings to rehost at AWS
 
 ## Business Cases
+
+## Application Discovery
+
+## Content Evaluation
+
+## Mobilization Assessment
