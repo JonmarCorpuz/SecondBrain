@@ -19,3 +19,4 @@
 * AWS Service Catalog
 * AWS Config
 * AWS Migration Competency Partners
+* AWS Partner Network (APN)
