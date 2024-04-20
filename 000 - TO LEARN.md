@@ -18,3 +18,4 @@
 * AWS CloudFormation
 * AWS Service Catalog
 * AWS Config
+* AWS Migration Competency Partners
