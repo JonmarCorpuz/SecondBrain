@@ -45,7 +45,10 @@ The asses migration phase refers to assessing or evaluating an organization's cu
 
 The mobilize migration phase refers to creating a migrating plan and refining the business case
 
-* Address gaps in an organization's readiness that were uncovered in the assess phase to drive operation readiness, develop cloud skills, and focus on building their baseline environment or landing zone
+* Focuses on addressing gaps in an organization's readiness that were uncovered in the assess phase to drive operation readiness
+* Focuses on building their baseline environment or landing zone while driving operational readiness and developing cloud skills
+* A strong migration plan starts with a deeper understanding of the interdependencies between an organization's applications
+* Evaluates migration strategies to meet the user's business case objectives
 
 ## Migrate and Modernize
 
