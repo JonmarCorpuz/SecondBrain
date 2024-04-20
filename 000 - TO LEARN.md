@@ -10,3 +10,4 @@
 * AWS Transfer Family
 * AWS SAP Backup Agents
 * AWS Application Discovery Service
+* AWS Control Tower
