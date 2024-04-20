@@ -1,6 +1,7 @@
 # AWS
 
 * AWS Agentless Discovery Agent
+* AWS Agentless Discovery Connector
 * AWS Discovery Agent
 * AWS Discovery Connector
 * AWS Migration Evaluator Collector
