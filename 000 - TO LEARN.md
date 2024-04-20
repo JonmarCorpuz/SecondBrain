@@ -12,3 +12,4 @@
 * AWS Application Discovery Service
 * AWS Control Tower
 * AWS Cloud Adoption Framework (CAF)
+* AWS Control Tower
