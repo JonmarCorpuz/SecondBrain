@@ -24,3 +24,4 @@
 * AWS Systems Manager
 * AWS Landing Zone
 * AWS Account Vending Machine (AVM)
+* AWS Application Migration Services
