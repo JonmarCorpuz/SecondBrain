@@ -23,3 +23,4 @@
 * AWS CloudFormation
 * AWS Systems Manager
 * AWS Landing Zone
+* AWS Account Vending Machine (AVM)
