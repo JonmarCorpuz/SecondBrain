@@ -6,6 +6,8 @@ The Relational Database Service is a managed database service that simplifies th
 * Enables users to scale database instances vertically by adjusting compute and memory resources or horizontally by adding read replicas for read scalability
 * Enables multi-AZ deployment for high availability
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Database Instance
 
 A DB instance refers to an isolated single database environment created and managed by RDS
@@ -74,3 +76,7 @@ Automatic backups are periodic snapshots of a user's database instance's storage
 * Creates a redundant copy of a user's database in another AZ, also know as a standby copy , where the data in the primary copy is synchronously replicated to the standby copy
 * Uses the DNS name provided during the creation of the DB instance to failover to the standby database by promoting it to the primary database in the event of an automatic failover
 * During an automatic failover, a new standby database is created by either demoting the previous primary to standby if it's still up and running or standing up a new standby DB instance
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# RDS Proxy
