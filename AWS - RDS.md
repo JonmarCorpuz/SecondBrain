@@ -80,3 +80,9 @@ Automatic backups are periodic snapshots of a user's database instance's storage
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # RDS Proxy
+
+* Allows applications to improve their ability to scale by establishing a database connection pool that they can reuse without the memory and CPU overhead needed to open a new database connection each time
+* Makes applications more resilient to database failures by automatically connecting to a standby DB instance, while preserving application connections
+* Can handle unpredictable surges in database traffic, allowing applications to continue scaling without abruptly failing or overwhelming the database
+* Allows users to protect the database against oversubscription by allowing them to control the number of database connections that are created
+* Queues or throttles application connections that can't be served immediately from the pool of connections
