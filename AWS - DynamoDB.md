@@ -13,6 +13,8 @@ Amazon DynamoDB is a fully managed NoSQL serverless database service that organi
 * Integrates seamlessly with other AWS services (Ex: *AWS Lambda*, *Amazon S3*, *Amazon Redshift*, *Amazon EMR*, *AWS Management Console*, *etc.*) for building serverless architectures and data analytics pipelines
 * Has flexible schemas, meaning that users can add and remove attributes from items in the table at any time and not every item in the table has to have the same attributes
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # DynamoDB Components
 
 ## Tables
@@ -42,6 +44,14 @@ A multi-valued attribute can hold multiple values of the same data type
 
 * DynamoDB supports three types of multi-valued attributes: String Set, Number Set, and Binary Set
 
-# Throughput Modes
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DynamoDB Throughput Modes
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Throughput%20stuff.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DynamoDB Features
+
+## DynamoDB Streams
