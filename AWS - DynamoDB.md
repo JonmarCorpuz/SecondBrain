@@ -41,3 +41,7 @@ A scalar attribute is an attribute that represents a single value
 A multi-valued attribute can hold multiple values of the same data type
 
 * DynamoDB supports three types of multi-valued attributes: String Set, Number Set, and Binary Set
+
+# Throughput Modes
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Throughput%20stuff.png)
