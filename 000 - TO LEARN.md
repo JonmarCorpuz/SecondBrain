@@ -20,3 +20,5 @@
 * AWS Config
 * AWS Migration Competency Partners
 * AWS Partner Network (APN)
+* AWS CloudFormation
+* AWS Systems Manager
