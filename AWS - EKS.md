@@ -4,12 +4,13 @@ Amazon Elastic Kubernetes Service is a managed Kubernetes service that allows us
 
 * Provides a fully managed Kubernetes control plane, eliminating the need for users to manage the control plane's infrastructure
 * Allows users to quickly create Kubernetes clusters using the AWS Management Console, CLI or API
-* Supports the latest version of Kubernetes and is compatible with popular Kubernetes tools and APIs
 * Enables users to scale their Kubernetes clusters dynamically based on workload demand by allowing them to add or remove worker nodes (EC2 instances) to accommodate changes in resource requirements
 * Automatically adjusts the cluster capacity accordingly and distributes Kubernetes master nodes across multiple AZs within an AWS Region, ensuring high availability and fault tolerance against infrastructure failures
 * Seamlessly integrates with other AWS services (Ex: *AWS ELB, AWS IAM*, *Amazon VPC*, *etc.*)
 * Offers built-in security features (Ex: *Encryption at rest and in transit*, *etc.*)
 * Follows a pay-as-you-go pricing model
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Managing Containers
 
