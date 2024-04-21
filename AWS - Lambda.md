@@ -48,8 +48,27 @@ The configuration refers to the settings and parameters that define how a Lambda
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/AWS%20Lambda.png)
 
-# Lambda Features
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Lamdba Power Tuning
+# Lamdba Power Tuning
 
-## Lambda Layers
+Lambda Power Tuning is an open-source state machine that helps users visualize and fine-tune the memory or power configuration of Lambda functions
+
+* Supports three optimization strategies: Cost, Speed, and Balanced
+* Helps users optimize their Lambda functions for cost or performance in a data-driven way
+* Powered by AWS Step Functions
+* Designed to be easy to deploy, fast to execute, and language agnostic
+* Requires a Lambda function ARN as input for it to work, which the state machine will then invoke with multiple power configurations in order to then analyze all the execution logs to suggest the best power configuration to minimize cost or maximize performance
+* The inputted Lambda function will run on the user's AWS account and perform actions on its behalf (Ex: *HTTP requests*, *SDK calls*, *Cold starts*, *etc.*)
+* Supports cross-Region invocations and parallel exeuction
+* Generates a visualization of average cost and speed for each power configuration
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Lambda Layers
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Lambda Powertools
+
+Lambda Powertools is a suite of utilities for AWS Lambda functions that's designed to make it easier to adopt best practices (Ex: *Tracing*, *Structured logging*, *Custom metrics*, *Idempotency*, *Batching*, *etc.*)
