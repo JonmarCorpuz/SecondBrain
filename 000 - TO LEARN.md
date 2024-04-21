@@ -35,3 +35,12 @@
 * AWS Kinesis Data Firehose
 * AWS QuickSight
 * AWS Organizations
+* AWS Lightsail
+* AWS Batch
+* AWS Elastic Container Registry (ECR)
+* AWS Outposts
+* AWS Wavelength
+* AWS SDK
+* AWS Elastic Beanstalk
+
+* https://aws.amazon.com/products/compute
