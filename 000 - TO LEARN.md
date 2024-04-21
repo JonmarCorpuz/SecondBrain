@@ -42,5 +42,9 @@
 * AWS Wavelength
 * AWS SDK
 * AWS Elastic Beanstalk
+* AWS ElastiCache
+* AWS MemoryDB
+* AWS DocumentDB
+* AWS Timestream
 
 * https://aws.amazon.com/products/compute
