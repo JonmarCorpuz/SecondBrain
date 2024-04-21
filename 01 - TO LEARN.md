@@ -46,5 +46,7 @@
 * AWS MemoryDB
 * AWS DocumentDB
 * AWS Timestream
+* AWS EventBridge
 
 * https://aws.amazon.com/products/compute
+* https://aws.amazon.com/event-driven-architecture/
