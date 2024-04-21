@@ -6,14 +6,17 @@ Amazon Elastic Container Service is a fully managed end-to-end container orchest
 * Manages the scheduling and orchestration of Docker containers across a cluster of EC2 instances or AWS Fargate
 * Offers built-in high availability and fault tolerance by distributing containers across multiple AZs within an AWS Region
 * Support Docker containers and Docker Compose, allowing users to use Docker images to package and deploy their applications
-* Uses task definitions to define containers, their configurations, networking, and storage requirements, and run tasks or services within ECS clusters
+* Uses task definitions to define containers, their configurations, networking, and storage requirements
+* Runs tasks and services within ECS clusters
 * Seamlessly integrates itself with other AWS services (Ex: *AWS Auto Scaling*, *AWS ELB*, *AWS IAM*, *Amazon CloudWatch*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Managing Containers
 
 To run and manage containers, the user needs to install the Amazon ECS Container Agent on their EC2 instance, which is open-source and responsible for communicating back to the Amazon ECS service about cluster management details
 
-![[QQCbn5jtTp-U9titkpxO6A_26e0fca673034a65bc3b6c18ed2fd8f1_image.png]]
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/QQCbn5jtTp-U9titkpxO6A_26e0fca673034a65bc3b6c18ed2fd8f1_image.png)
 
 * Can be run on both Linux and Windows AMIs
 * An instance with the container agent installed is often called a container instance
