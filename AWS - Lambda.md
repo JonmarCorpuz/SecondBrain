@@ -45,3 +45,11 @@ The configuration refers to the settings and parameters that define how a Lambda
 * Logging and monitoring
 * Permissions and security
 * Tags
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/AWS%20Lambda.png)
+
+# Lambda Features
+
+## Lamdba Power Tuning
+
+## Lambda Layers
