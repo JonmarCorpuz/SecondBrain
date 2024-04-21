@@ -52,6 +52,17 @@ A multi-valued attribute can hold multiple values of the same data type
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# DynamoDB Features
+# DynamoDB Streams
 
-## DynamoDB Streams
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DynamoDB Accelerator (DAX)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/f8NtZW24REOc8OUeH-spNA_1e7e8bff75544f98b9e872e9e1485af1_Reading1.6A.png)
+
+DAX is a fully managed, highly available, in-memory cache for DynamoDB that's designed to deliver up to a hundred times performance improvement
+
+* Does the heavy lifting that's required to add in-memory acceleration to a user's DynamoDB tables
+* Developers don't need to manage cache invalidation, data population, or cluster management
+* Users don't need to modify the application logic because DAX is compatible with existing DynamoDB API calls
+* Designed to run within a VPC environment
