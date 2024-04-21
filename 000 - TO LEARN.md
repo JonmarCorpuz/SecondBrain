@@ -22,3 +22,4 @@
 * AWS Partner Network (APN)
 * AWS CloudFormation
 * AWS Systems Manager
+* AWS Landing Zone
