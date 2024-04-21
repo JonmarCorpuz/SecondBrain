@@ -24,4 +24,7 @@
 * AWS Systems Manager
 * AWS Landing Zone
 * AWS Account Vending Machine (AVM)
-* AWS Application Migration Services
+* AWS Application Migration Services (AMS)
+* VMware Cloud on AWS
+* AWS Database Migration Services (DMS)
+* AWS Schema Conversion Tool (SCT)
