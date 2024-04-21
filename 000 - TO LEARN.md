@@ -29,3 +29,9 @@
 * AWS Database Migration Services (DMS)
 * AWS Schema Conversion Tool (SCT)
 * AWS Storage Gateway
+* AWS Simple Queue Service (SQS)
+* AWS API Gateway
+* AWS Athena
+* AWS Kinesis Data Firehose
+* AWS QuickSight
+* AWS Organizations
