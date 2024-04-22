@@ -54,6 +54,7 @@
 * AWS Glue DataBrew
 * AWS Data Exchange
 * AWS Cognito
+* AWS Managed Grafana
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
