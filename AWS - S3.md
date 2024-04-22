@@ -28,14 +28,14 @@ AWS Simple Storage Service is a scalable object storage service that stores data
 
 ## S3 Objects
 
-An object in S3 is a file containing data (Ex: *Text files*, *Images*, *Videos*, *etc.*) metadata (Ex: *Object creation date*, *Object size*, *Storage class*, *etc.*)
+An object in S3 is a file containing data (Ex: *Text files*, *Images*, *Videos*, *etc.*) and metadata (Ex: *Object creation date*, *Object size*, *Storage class*, *etc.*)
 
 * Stored in S3 Buckets
 * Each object in S3 has a unique key that serves as its identifier within the S3 Bucket
 
 ### S3 Object Lifecycle Policies
 
-S3 object lifecycle policies allow users to automate object related actions
+S3 object lifecycle policies are sets of rules that define actions to be automatically applied to a group of objects within an S3 bucket
 
 * Automates transition actions, which are actions used to define when the user should transition their objects to another storage class
 * Automates expiration actions, which are actions that define when objects expire and should be permanently deleted
@@ -116,17 +116,21 @@ S3 One Zone-IA
 
 * Stores data in a single AZ
 
-## S3 Glacier Instant Retrieval
+## S3 Glacier 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8lPIyU4NRyKS1l0B0okGOQ_b48af64b58f843caada35f01685a0cf1_Reading2.2B.png)
+
+### S3 Glacier Instant Retrieval
 
 S3 Glacier Instant Retrieval
 
-## S3 Glacier Flexible Retrieval
+### S3 Glacier Flexible Retrieval
 
 S3 Glacier Flexible Retrieval
 
 * Offers low-cost storage for archive data that's aynchronously accessed only one or two times per year
 
-## S3 Glacier Deep Archive
+### S3 Glacier Deep Archive
 
 S3 Glacier Deep Archive 
 
@@ -138,3 +142,19 @@ S3 Glacier Deep Archive
 S3 on Outposts 
 
 * Delivers object storage to the user's on-premises AWS Outposts environment
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# S3 Features
+
+## S3 CRR
+
+S3 Cross-Region Replication is a S3 feature that automatically replicates data across AWS regions
+
+* Designed to enhance data availability, protection, and compliance by allowing users to copy S3 objects from a source bucket in one AWS region to a destination bucket in a different region
+* Ensures data locality for compliance requirements and reduces latency by locating data closer to users
+* Helps protect against regional failures by ensuring that applications can continue to operate by accessing data from a replicated bucket in another region if the primary data source becomes unavailable
+* Supports replicating all or a subset of data based on S3 object tags
+* Ensures that every version of an object is replicated
+* Involves specifying a source bucket, a destination bucket in another region, and an optional replication rule that defines what objects to replicate
+* Enables users to set up replication at a bucket level, a shared prefix level, or an object level
