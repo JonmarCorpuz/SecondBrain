@@ -95,7 +95,9 @@ S3 Standard
 
 ## S3 Intelligent-Tiering
 
-S3 Intelligent-Tiering
+S3 Intelligent-Tiering 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/D8fzzMCvRVyI7RdBJLkFTw_7951069382b045c994fbac7ac76f4ff1_Reading2.2A.png)
 
 * Useful if the user's data has unknown or changing access patterns
 * Stores objects in two tiers: A frequent access tier and an infrequent access tier
