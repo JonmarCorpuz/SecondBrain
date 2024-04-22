@@ -3,7 +3,7 @@ AWS Simple Storage Service is a scalable object storage service that stores data
 * Allows businesses and developers to store and retrieve any amount of data from anywhere on the web using URLs
 * Designed to provide high durability for stored objects by replicating data across multiple geographically dispersed data centers, ensuring that the data remains available in the event of a failure or disaster
 * Can scale to accommodate virtually unlimited amounts of data
-* Offers high availability, with service-level agreements guaranteeing uptime of 99.99% or higher, ensuring that the data is accessible whenever needed
+* Ensures that data is accessible whenever needed and offers high availability with SLAs guaranteeing uptime of 99.999999999% durability for objects by replicating every single object in a bucket over different physical facilities in an AWS Region
 * Provides multiple layers of security to protect stored data (Ex: *Encryption at rest and in transit*, *ACLs*, *Bucket policies*, *etc.*)
 * Offers different storage classes to optimize costs and performance based on data access patterns and retention requirements (Ex: *Standard S3*, *Standard Infrequent Access S3*, *Intelligent-Tiering S3*, *Glacier S3*, *Glacier Deep Archive S3*, *etc.*)
 * Allows users to define lifecycle policies to automatically transition objects between different storage classes or delete them after a specified period
