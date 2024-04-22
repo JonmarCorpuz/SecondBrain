@@ -55,6 +55,7 @@
 * AWS Data Exchange
 * AWS Cognito
 * AWS Managed Grafana
+* AWS SageMaker
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
