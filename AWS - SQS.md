@@ -28,6 +28,7 @@ Long polling is a method used to retrieve messages from an SQS queue by sending 
 
 * Helps reduce the number of empty responses returned by the SQS service
 * Helps optimize costs and improve efficiency by reducing the number of unnecessary requests made by the client to check for new messages
+* Reduces false empty responses by querying all SQS servers in the user's VPC
 
 ![]()
 
