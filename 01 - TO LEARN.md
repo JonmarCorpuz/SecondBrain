@@ -57,7 +57,14 @@
 * AWS Managed Grafana
 * AWS SageMaker
 * AWS Lake Formation
+* AWS SageMaker
+* AWS Rekognition
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
 * https://aws.amazon.com/big-data/datalakes-and-analytics
+
+* Data movement
+* Data analytics
+* Data lakes and data storage
+* Predictive analytics and ML
