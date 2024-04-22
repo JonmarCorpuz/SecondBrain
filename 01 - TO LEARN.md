@@ -52,6 +52,8 @@
 * AWS EMR
 * AWS OpenSearch Service
 * AWS Glue DataBrew
+* AWS Data Exchange
+* AWS Cognito
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
