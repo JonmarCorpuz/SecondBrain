@@ -1,5 +1,8 @@
 AWS Simple Storage Service is a scalable object storage service that stores data in a flat structure, using unique identifiers to look up objects when requested
 
+![](xpDo1_CATs6a3dnaA9cVzA_4b9ae8b78cb3407baf58440f97a67cf1_Reading2.1A.png
+)
+
 * Allows businesses and developers to store and retrieve any amount of data from anywhere on the web using URLs
 * Designed to provide high durability for stored objects by replicating data across multiple geographically dispersed data centers, ensuring that the data remains available in the event of a failure or disaster
 * Can scale to accommodate virtually unlimited amounts of data
