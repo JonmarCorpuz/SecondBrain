@@ -49,6 +49,10 @@
 * AWS DocumentDB
 * AWS Timestream
 * AWS EventBridge
+* AWS EMR
+* AWS OpenSearch Service
+* AWS Glue DataBrew
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
+* https://aws.amazon.com/big-data/datalakes-and-analytics
