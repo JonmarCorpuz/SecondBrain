@@ -1,10 +1,14 @@
 AWS Virtual Private Network allows users to establish secure connections between their on-premises network or client devices and their AWS infrastructure
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # AWS VPN Methods
 
 ## AWS Site-to-Site VPN
 
 AWS Site-to-Site VPN enables secure, encrypted connections between a user's on-premises network and their VPC
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-04-22%20231939.png)
 
 * Allows users to extend their corporate network into the AWS cloud to provide seamless and secure access to AWS resources from their data center, office, or other on-premises locations
 * Ensures the confidentiality and integrity of data transmitted over the VPN connection by industry-standard IPSec VPN tunnels to encrypt network traffic between a user's on-premises network and their AWS VPC
@@ -18,6 +22,8 @@ AWS Site-to-Site VPN enables secure, encrypted connections between a user's on-p
 ## AWS Client VPN
 
 AWS Client VPN enables users to securely connect remote users or client devices to their AWS resources and services
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-04-22%20232123.png)
 
 * Enables authorized users to securely connect to their VPC from remote locations
 * Provides a secure communication channel over the internet
