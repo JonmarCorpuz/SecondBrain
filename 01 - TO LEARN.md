@@ -59,6 +59,8 @@
 * AWS Lake Formation
 * AWS SageMaker
 * AWS Rekognition
+* AWS Shield
+* AWS WAF
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
