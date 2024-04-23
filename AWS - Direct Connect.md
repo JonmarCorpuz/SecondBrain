@@ -13,4 +13,7 @@ Direct Connect is a cloud service solution that allows users to establish a dedi
 
 ## Direct Connect SiteLink
 
-* Allows users to send data between AWS Direct Connect locations to create private network connections between 
+Direct Connect SiteLink is an extension of Direct Connect that allows for a dedicated private network connection from a client's premises to AWS
+
+* Enhances the capabilities of Direct Connect by enabling private connectivity between different Direct Connect locations without the data having to traverse the public internet or the AWS network
+* Allows users to connect their AWS Direct Connect locations directly with each other
