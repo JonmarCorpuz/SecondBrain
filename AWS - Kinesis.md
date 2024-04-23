@@ -11,6 +11,8 @@ Kinesis is a platform that collects, processes, and analyzes real-time stream da
 
 Kinesis Data Streams is a highly scalable real-time data streaming service that's designed to capture, process, and store large streams of data records in real time as it arrives
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Kinesis%20Data%20Streams%20Example.png)
+
 * Designed to continuously capture gigabytes of data per second from hundreds of thousands of sources that usually become available in milliseconds
 * Enables users to build applications that require continuous data ingestion and real-time processing from multiple sources
 * Ensures high durability and availability by storing captured data records across multiple AZs in a region for up to a year
@@ -19,6 +21,8 @@ Kinesis Data Streams is a highly scalable real-time data streaming service that'
 ## Kinesis Video Streams
 
 Kinesis Video Streams is a fully managed service designed to securely stream video from connected devices to AWS for analytics, ML, and other processing
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Kinesis%20Video%20Streams%20Example.png)
 
 * Enables users to build applications that can play, process, and analyze video streams in real-time
 * Simplifies the complexity associated with capturing, storing, and managing video streams
