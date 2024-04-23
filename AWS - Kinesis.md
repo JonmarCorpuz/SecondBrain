@@ -21,6 +21,13 @@ Kinesis Data Streams is a highly scalable real-time data streaming service that'
 Kinesis Video Streams is a fully managed service designed to securely stream video from connected devices to AWS for analytics, ML, and other processing
 
 * Enables users to build applications that can play, process, and analyze video streams in real-time
+* Simplifies the complexity associated with capturing, storing, and managing video streams
+* Enables users to build applications that can take advantage of live and recorded video data without having to worry about the underlying storage or infrastructure
+* Provides a secure channel for streaming video from devices to the AWS cloud while using encryption to protect data both in transit and at rest
+* Supports both real-time and batch video processing to allow the analysis of video data as it's being streamed or after it's stored
+* Enables automated video analysis for object detection, facial recognition, and other AI-drive insights
+* Eliminates the need for managing storage infrastructure by automatically storing the video data that's streamed to Kinesis Video Streams in the AWS cloud, where it can be easily accessed for processing and analysis
+* Allows users to stream video from devices by providing SDKs for integrating Kinesis Video Streams with a variety of devices and applications
 
 ## Kinesis Data Firehose
 
@@ -33,5 +40,11 @@ Kinesis Data Firehose is a fully managed service designed to automatically captu
 
 ## Kinesis Data Analytics
 
-Kinesis Data Analytics is a fully managed service that enables users to easily write SQL queries or build Apache Flink applications to process and analyze streaming data
+Kinesis Data Analytics is a fully managed service that enables users to easily process and analyze streaming data in real time
+
+* Allows users to write standard SQL queries against incoming streams of data in order to gain insights and respond to new information quickly
+* Processes and analyzes streaming data as it arrives, which is crucial for applications that need to make immediate decisions based on the latest information
+* Allows users to use SQL to easily query streaming data
+* Ensures that a user's data processing can grow with their data by automatically scaling to match the volume and throughput rate of their incoming data streams
+* Handles the provisioning, configuration, and scaling of the resources needed in order to reduce the complexity of building, managing, and integrating streaming data processing applications
 
