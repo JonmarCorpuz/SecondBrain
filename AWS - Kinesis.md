@@ -1,11 +1,13 @@
 Kinesis is a platform that collects, processes, and analyzes real-time stream data
 
+* Enables users to build applications that can continuously capture, store, process, and analyze vast streams of data in real time
+* Provides a set of tools to handle everything from data ingestion and storage to real-time analytics and insights
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Kinesis Services
+# Kinesis Family
 
-* Makes it easier to collect, process, and analyze real-time stream data so that users can get timely insights and react quickly to new information
-* Can ingest real-time data and process data as it arrives
+The Kinesis Family refers to the different Kinesis services that are designed for real-time processing and analysis of streaming data
 
 ## Kinesis Data Streams
 
