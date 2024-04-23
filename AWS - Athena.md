@@ -22,6 +22,12 @@ Data compression is the practice of reducing the size of data files by compressi
 
 Data partitioning is the practice of dividing data into separate segments or partitions
 
-* Restricts the amount of data that's scanned by each query 
+* Restricts the amount of data that's scanned by each query
 
 ## Data Convertion
+
+Data conversion refers to the process of converting S3 bucket data into columnar data formats (Ex: *Apache Parquet*, *ORC*, *etc.*)
+
+* Columnar data formats saves storage space in S3 and reduces disk space and I/O during query processing by performing compression by column using a compression algorithm
+* When an Athena query obtains specific column values from the queried data, it uses statistics from data block predicates to determine whether to read or skip the block in order for Athena queries to fetch only the blocks that it needs
+* Columnar data formats enable Athena to split the reading of data to multiple readers and increase parallelism when it processes queries
