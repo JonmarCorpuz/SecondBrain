@@ -7,3 +7,4 @@ Cognito provides authentication, authorization, and user management for web and 
 * Can handle user directories at scale
 * Allows users to manage what users can and cannot access by defining roles and permissions for authenticated and unauthenticated users
 * Allows users to add user sign-up, sign-in, and access control to their web applications and mobile apps
+* Supports sign-in with social identity providers (Ex: *Apple*, *Facebook*, *Google*, *Amazon*, *etc.*) and enterprise identity providers through various protocols (Ex: *SAML 2.0*, *OpenID Connect*, *etc.*)
