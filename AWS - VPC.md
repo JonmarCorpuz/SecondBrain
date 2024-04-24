@@ -149,3 +149,7 @@ Security groups are virtual firelwalls that control inbound and outbound traffic
 * Changes to security groups take effect immediately
 * Each instance can be associated with multiple security groups
 * Provides logging and monitoring features to allow users to track changes, monitor traffic, and analyze security group activity
+
+# VPC Features
+
+## VPC Flow Logs
