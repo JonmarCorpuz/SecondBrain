@@ -35,4 +35,10 @@ A security control policy is a security control that offers centralized governan
 
 ## Tag Policies
 
-* Helps ensure that resources are tagged consistently across accounts
+A tag policy is a set of rules that help manage tags across multiple AWS accounts within an organization, which are key-value pairs used to organize and identify resources within AWS
+
+* Tag policies are first defined in the management account of the AWS Organization and then attached to OUs or individual accounts within the organization
+* Improves resource management, cost tracking, and compliance within a organization by enforcing consistent tagging practices (Ex: *Standardized tag keys and values*, *etc.*)
+* Can be applied to ensure that resources in member accounts use tags correctly according to the organization's standards
+* Can be used to verify that existing tags meet a tag policy's requirements
+* Allows AWS services and third-party tools to use the information from tag policies to automatically correct non-compliant tags 
