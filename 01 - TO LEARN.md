@@ -65,6 +65,7 @@
 * AWS Config
 * AWS GuardDuty
 * AWS Cloud9
+* AWS STS
 
 * AWS EC2 powered clusters
 * AWS Fargate powered clusters
