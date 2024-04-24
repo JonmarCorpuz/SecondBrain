@@ -97,3 +97,7 @@ AWS IAM Identity Center is an IdP that lets users sign in to a user portal with 
 * Provides users access to all their assigned accounts and applications in one central location
 * Enables you to sync your users and groups from thirds-party IdP to AWS IAM Identity Center
 * Separates the duties between your IdP and AWS, ensuring that your cloud access management isn't inside or dependent on your IdP
+
+# Multi-Account Strategies
+
+* 
