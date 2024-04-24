@@ -86,3 +86,8 @@ Automatic backups are periodic snapshots of a user's database instance's storage
 * Can handle unpredictable surges in database traffic, allowing applications to continue scaling without abruptly failing or overwhelming the database
 * Allows users to protect the database against oversubscription by allowing them to control the number of database connections that are created
 * Queues or throttles application connections that can't be served immediately from the pool of connections
+
+## Read Replicas
+
+* A read replica is created from a source DB instance and is kept in sync with the source
+* Allows read-heavy workloads to be directed to the read replica instead of the primary instance
