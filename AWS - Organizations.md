@@ -41,4 +41,24 @@ A tag policy is a set of rules that help manage tags across multiple AWS account
 * Improves resource management, cost tracking, and compliance within a organization by enforcing consistent tagging practices (Ex: *Standardized tag keys and values*, *etc.*)
 * Can be applied to ensure that resources in member accounts use tags correctly according to the organization's standards
 * Can be used to verify that existing tags meet a tag policy's requirements
-* Allows AWS services and third-party tools to use the information from tag policies to automatically correct non-compliant tags 
+* Allows AWS services and third-party tools to use the information from tag policies to automatically correct non-compliant tags
+
+## Guardrails
+
+Guardrails are high-level rules that provide governance and compliance controls for all the AWS accounts within an organization
+
+* Helps ensure that accounts follow best practices and organizational policies, allowing them to better protect their data and resources across all their accounts, ensure that all their accounts adhere to the same set of rules and policies, and help standardize operations across all their accounts
+* Can automate governance and ensure that organizations can maintain control over their AWS resources even as they scale 
+
+### Preventive Guardrails
+
+Preventive guardrails proactively prevent actions that don't comply with certain policies or best practices before they're executed
+
+* Help maintain compliance and reduce risks by enforcing policies directly through AWS service permissions
+* Often implemented with AWS Control Tower
+
+### Detective Guardrails
+
+Detective guardrails identifies and reports violations of specified policies or configurations after they occur
+
+* Allow AWS services and operations but monitor their usage to ensure they meet compliance and governance standards
