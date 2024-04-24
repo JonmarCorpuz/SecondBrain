@@ -82,3 +82,7 @@
 * Data analytics
 * Data lakes and data storage
 * Predictive analytics and ML
+
+# Cloud
+
+* Cloud CCoE (Cloud Center of Excellence)
