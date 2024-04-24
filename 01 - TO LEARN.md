@@ -62,6 +62,9 @@
 * AWS Shield
 * AWS WAF
 
+* AWS EC2 powered clusters
+* AWS Fargate powered clusters
+
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
 * https://aws.amazon.com/big-data/datalakes-and-analytics
