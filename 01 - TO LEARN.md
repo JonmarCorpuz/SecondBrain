@@ -21,7 +21,7 @@
 * AWS Migration Competency Partners
 * AWS Partner Network (APN)
 * AWS CloudFormation
-* AWS Systems Manager
+* AWS Systems Manager (SSM)
 * AWS Landing Zone
 * AWS Account Vending Machine (AVM)
 * AWS Application Migration Services (MGN)
@@ -61,6 +61,7 @@
 * AWS Rekognition
 * AWS Shield
 * AWS WAF
+* AWS Backup
 
 * AWS EC2 powered clusters
 * AWS Fargate powered clusters
@@ -75,6 +76,7 @@
 * https://aws.amazon.com/dms
 * https://aws.amazon.com/products/storage
 * https://aws.amazon.com/storagegateway
+* https://aws.amazon.com/hybrid
 
 * Data movement
 * Data analytics
