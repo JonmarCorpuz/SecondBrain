@@ -67,10 +67,14 @@
 
 * NAT EC2 Instance
 * AWS NAT Gateway
+* AWS Storage Gateway
 
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
 * https://aws.amazon.com/big-data/datalakes-and-analytics
+* https://aws.amazon.com/dms
+* https://aws.amazon.com/products/storage
+* https://aws.amazon.com/storagegateway
 
 * Data movement
 * Data analytics
