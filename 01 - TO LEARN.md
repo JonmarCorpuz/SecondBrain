@@ -65,6 +65,9 @@
 * AWS EC2 powered clusters
 * AWS Fargate powered clusters
 
+* NAT EC2 Instance
+* AWS NAT Gateway
+
 * https://aws.amazon.com/products/compute
 * https://aws.amazon.com/event-driven-architecture/
 * https://aws.amazon.com/big-data/datalakes-and-analytics
