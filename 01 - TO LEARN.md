@@ -62,6 +62,9 @@
 * AWS Shield
 * AWS WAF
 * AWS Backup
+* AWS Config
+* AWS GuardDuty
+* AWS Cloud9
 
 * AWS EC2 powered clusters
 * AWS Fargate powered clusters
