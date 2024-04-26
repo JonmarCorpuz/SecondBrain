@@ -19,6 +19,13 @@ An IAM user is an entity that represents a person or an application within an AW
 * Any activity done by a user is billed to the IAM user account that they used to perform that activity
 * IAM users have associated credentials that are used to sign AWS API call requests (Ex: *Username*, *Password*, *Access key ID*, *Secret access key*, *etc.*)
 
+### Federated Users
+
+A federated user is an individual that's wasn't created or isn't managed within AWS that's granted access to AWS resources 
+
+* The federated user's identities and credentials are managed outside of AWS, typically through an external IdP
+* Allows users from external third-parties to access AWS resources without needing a separate AWS identity
+
 ## IAM Group
 
 An IAM group is a collection of IAM users
@@ -35,6 +42,19 @@ An IAM Role is an identity that can be temporarily assumed by an entity or servi
 * Roles aren't associated with a specific user or group but can be assumed by many different IAM users, AWS services, or even by trusted entities outside of AWS 
 * Used to grant permissions dynamically rather than attaching policies directly to IAM users
 * Easier to maintain compared to IAM users since the temporary credentials for IAM roles expire after a defined period of time, meanwhile IAM users have long-term credentials in the form of username and password combinations or a set of access keys that only expire when the admin of that account rotates those keys
+
+### Service IAM Role
+
+A service IAM role is a role that a service assumes to perform actions in the user's account on their behalf
+
+* Must include all the permissions that the service needs to access the AWS resource that it must work with
+
+### Service-Linked IAM Role
+
+A service-linked IAM role is a predefined role that's directly linked to an AWS service
+
+* Includes all permissions that the service needs to call other AWS services on the user's behalf
+* Defines how users create, modify, and delete a service-linked role
 
 ## IAM Policy
 
@@ -96,6 +116,8 @@ IAM Authorization refers to the process of determining whether an authenticated 
 ## AWS IAM Identity Center
 
 AWS IAM Identity Center is an IdP that lets users sign in to a user portal with a single set of credentials
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ch_xCyeMTaqf8QsnjD2qkg_26dbde9b8e204aed936440ecacfb57f1_Reading4.3A.png)
 
 * Provides users access to all their assigned accounts and applications in one central location
 * Enables you to sync your users and groups from thirds-party IdP to AWS IAM Identity Center
