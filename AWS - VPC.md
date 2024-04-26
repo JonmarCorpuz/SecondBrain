@@ -1,5 +1,7 @@
 An Amazon Virtual Private Cloud allows users to create and manage isolated virtual networks within the AWS cloud environment
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/how-it-works.png)
+
 * Enables users to define and control a virtual network environment that closely resembles a traditional network 
 * Enables users to create multiple isolated VPCs within their AWS account, where each VPC operates as a logically isolated section of the AWS cloud and allows users to define its own IP address range, subnets, route tables, and network access control policies
 * Allows users to define custom routing tables to control the flow of traffic within their virtual network
