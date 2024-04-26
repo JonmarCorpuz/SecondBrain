@@ -247,4 +247,3 @@ Vertical scaling involves increasing or decreasing the size or capacity of indiv
 ### Horizontal Scaling
 
 Horizontal scaling involves dynamically adjusting the number of instances in an Auto Scaling group based on changes in demand, workload, or other metrics 
-
