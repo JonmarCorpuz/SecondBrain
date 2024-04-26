@@ -1,5 +1,7 @@
 AWS Virtual Private Network allows users to establish secure connections between their on-premises network or client devices and their AWS infrastructure
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdBpU3qHQomQaVN6h2KJmQ_5babb5fe652b475bbce85464b4b258f1_Reading3.1A.png)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # AWS VPN Components
