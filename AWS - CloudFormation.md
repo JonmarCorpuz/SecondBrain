@@ -1,5 +1,7 @@
 CloudFormation is a service that helps users automatically model, provision, and manage AWS and third-party resources by treating infrastructure as code
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/product-page-diagram_CloudFormation.ad3a4c93b4fdd3366da3da0de4fb084d89a5d761.png)
+
 * Allows users to use programming languages or a simple text file (Ex: *JSON*, *YAML*, *etc.*) to model and provision all the resources needed for their applications across all regions and accounts in an automated and secure manner
 * Provides users a common language for them to describe and provision all the infrastructure resources in their cloud environment
 * Enables users to create and manage a collection of related AWS resources while provisioning and updating them in an orderly and predictable fashion
