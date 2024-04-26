@@ -93,6 +93,8 @@ A transit gateway is a service that simplifies the networking and connectivity a
 * Simplifies a user's network and reduces its operational overhead by allowing users to manage connectivity and routing from a single point
 * Acts as a cloud router, where each new connection is made only once
 
+### NAT Gateway
+
 ## Route Tables
 
 A route table is a set of rules that determine how network traffic is directed within the VPC, between VPCs, and with other networks
