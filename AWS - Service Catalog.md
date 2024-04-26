@@ -4,3 +4,4 @@ Service Catalog is a service that allows organizations to create and manage cata
 
 * Helps ensure that users can only deploy IT services that comply with an organization's organizational policies and standards
 * Designed for organizations with mutliple teams or departments who need to use AWS resources while maintaining strict governance and compliance over their environments
+* Provides standardization by allowing organizations to administer and manage approved assets by restricting certain configuration options (Ex: *The type of instance that can be used*, *etc.*)
