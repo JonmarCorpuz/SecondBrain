@@ -3,6 +3,8 @@ CloudTrail enables operational and risk auditing, governance, and compliance ove
 * Every action taken by a user, role, or service are recorded as events
 * Automatically active when an AWS account when it gets created
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # CloudTrail Features
 
 ## Event History
