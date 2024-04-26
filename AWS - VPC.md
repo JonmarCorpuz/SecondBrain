@@ -153,3 +153,9 @@ Security groups are virtual firelwalls that control inbound and outbound traffic
 # VPC Features
 
 ## VPC Flow Logs
+
+VPC Flow Logs allows users to capture information about the IP traffic that goes to and from network interfaces in their VPC
+
+* Flow log data can be published to other AWS services (Ex: *CloudWatch Logs*, *S3*, *etc.*)
+* Enables users to monitor the traffic that reaches their VPC
+* Flow logs don't affect the network throughput or latency by collecting the flow log data outside the path of a VPC's network traffic
