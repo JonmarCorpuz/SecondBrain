@@ -60,9 +60,11 @@ The VPC Endpoint is a service that enables users to privately connect their VPC 
 
 # VPC Components
 
-## IGW
+## Gateways
 
-An Internet Gateway is a horizontally scalable, redundant, and highly available VPC component that allows communication between instances within a user's VPC and the internet
+### Internet Gateway
+
+An IGW is a horizontally scalable, redundant, and highly available VPC component that allows communication between instances within a user's VPC and the internet
 
 * Serves as a gateway through which traffic can flow between the user's VPC and the internet, allowing its instances to establish outbound connections to the internet in order to access resources, services, and data that's hosted outside the VPC
 * Typically associated with public subnets within a VPC
@@ -72,13 +74,24 @@ An Internet Gateway is a horizontally scalable, redundant, and highly available 
 * Each VPC can only be associated with one IGW at a time
 * Can ensure that only authorized traffic is allowed to enter or leave the VPC by implementing security groups and NACLs to control the traffic that flows through the IGW
 
-## VGW
+### Virtual Private Gateway
 
-A Virtual Private Gateway is a VPC component that enables communication between a user's VPC and other AWS services or remote networks securely and privately over an encrypted VPN connection or a Direct Connect dedicated network connection
+A VGW is a VPC component that enables communication between a user's VPC and other AWS services or remote networks securely and privately over an encrypted VPN connection or a Direct Connect dedicated network connection
 
 * Users can create routes from their on-premises network to their VPC and vice versa, allowing resources within the user's VPC to communicate with resources in their on-premises network as if they were part of the same network
 * Automatically replicates the VGW across multiple AZs within a region to ensure continuous connectivity
 * Ensures secure communication between a user's VPC and their on-premises network by using industry-standard encryption protocols (Ex: *IPSec*, *etc.*)
+
+### Transit Gateway
+
+A transit gateway is a service that simplifies the networking and connectivity architecture within an AWS environment by acting as a central, network transit hub that interconnects a user's VPCs and on-premises networks through a certain gateway
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/HGzQY3xrQSes0GN8azEn9Q_bc1d4d4485084aa7b83ea9be22c82bf1_Reading3.1H.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/H3s0Jz18Qdm7NCc9fOHZFA_2231cac1874d452dbe80ddbae3ce67f1_Reading3.1I.png)
+
+* Simplifies a user's network and reduces its operational overhead by allowing users to manage connectivity and routing from a single point
+* Acts as a cloud router, where each new connection is made only once
 
 ## Route Tables
 
