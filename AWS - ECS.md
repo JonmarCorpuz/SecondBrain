@@ -34,3 +34,10 @@ Preparing an application to run on Amazon ECS, the user needs to create a task d
 * Can define data volumes that containers use to persist data beyond the lifecycle of the containers, which can be stored on Amazon EBS or Amazon EFS
 * Can specify placement constraints to control where tasks are placed within the cluster
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# ECS Features
+
+## ECS Anywhere
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/NnfuZYkRTP-37mWJESz_tQ_58cbab3e1bfc414c94a7fc9c768286f1_Reading3.5A.png)
