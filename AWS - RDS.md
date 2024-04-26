@@ -70,7 +70,9 @@ Automatic backups are periodic snapshots of a user's database instance's storage
 * Manual snapshots exist until the user deletes them, allowing users to retain backups for longer than 35 days
 * Restoring data from a manual snapshot creates a new DB instance with the data from the restored snapshot
 
-## Multi-AZ
+## Multi-AZ Deployments
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Wa8sI1trTQWvLCNba70FyQ_6d2a964a1f0b45aaba34626e54bd4af1_Reading3.3A.png)
 
 * Ensures that a user has two copies of their database running (One primary and the second on standby) for high availability purposes
 * Creates a redundant copy of a user's database in another AZ, also know as a standby copy , where the data in the primary copy is synchronously replicated to the standby copy
@@ -78,6 +80,10 @@ Automatic backups are periodic snapshots of a user's database instance's storage
 * During an automatic failover, a new standby database is created by either demoting the previous primary to standby if it's still up and running or standing up a new standby DB instance
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Read Replicas
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/BGvmCA4yTXKr5ggOMi1y8w_192880b2735943e98a83d38076a513f1_Reading3.3C.png)
 
 # RDS Proxy
 
