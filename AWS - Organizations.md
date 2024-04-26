@@ -21,6 +21,8 @@ An organization unit in AWS is a group of IAM users that are grouped together fo
 
 A multi-account strategy is an account strategy that involves using multiple AWS accounts within an organization to segment different business units, projects, environments, or compliance requirements
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/_OfhL2ctQbGn4S9nLeGx_g_587c34ae590a42d986646ff247b24ff1_Reading4.6A.png)
+
 * Limits the blast radius of security incidents by using separate accounts for different operations
 * Makes it easier to track costs and usage per segment
 * Allows organizations to scale operations more effectively by spreading resources across accounts
@@ -42,6 +44,39 @@ A tag policy is a set of rules that help manage tags across multiple AWS account
 * Can be applied to ensure that resources in member accounts use tags correctly according to the organization's standards
 * Can be used to verify that existing tags meet a tag policy's requirements
 * Allows AWS services and third-party tools to use the information from tag policies to automatically correct non-compliant tags
+
+```JSON
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "tagging:TagResources",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestTag/${TagKey}": "${AllowedValue}"
+                },
+                "ForAllValues:StringEquals": {
+                    "aws:TagKeys": ["TagKey1", "TagKey2"]
+                }
+            }
+        },
+        {
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "tagging:UntagResources",
+            "Resource": "*",
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:TagKeys": ["TagKey1", "TagKey2"]
+                }
+            }
+        }
+    ]
+}
+```
 
 ## Guardrails
 
