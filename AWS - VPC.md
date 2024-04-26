@@ -1,7 +1,5 @@
 An Amazon Virtual Private Cloud allows users to create and manage isolated virtual networks within the AWS cloud environment
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/how-it-works.png)
-
 * Enables users to define and control a virtual network environment that closely resembles a traditional network 
 * Enables users to create multiple isolated VPCs within their AWS account, where each VPC operates as a logically isolated section of the AWS cloud and allows users to define its own IP address range, subnets, route tables, and network access control policies
 * Allows users to define custom routing tables to control the flow of traffic within their virtual network
@@ -66,6 +64,8 @@ The VPC Endpoint is a service that enables users to privately connect their VPC 
 
 An IGW is a horizontally scalable, redundant, and highly available VPC component that allows communication between instances within a user's VPC and the internet
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/how-it-works.png)
+
 * Serves as a gateway through which traffic can flow between the user's VPC and the internet, allowing its instances to establish outbound connections to the internet in order to access resources, services, and data that's hosted outside the VPC
 * Typically associated with public subnets within a VPC
 * Often used in conjunction with NAT Gateways or NAT instances, which reside in public subnets, to allow private instances within a VPC to initiate outbound connections to the internet while still maintaining a level of security
@@ -94,6 +94,14 @@ A transit gateway is a service that simplifies the networking and connectivity a
 * Acts as a cloud router, where each new connection is made only once
 
 ### NAT Gateway
+
+### Storage Gateway
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/rz4neyU3QOu-J3slN5DrtQ_14ed9f0304fb415c9d9ebd7c9eb058f1_Reading3.4A.png)
+
+* Connects a user's on-premises software appliance with cloud-based storage to provide near-seamless integration with data security features between their on-premises IT environment and their AWS storage infrastructure
+
+### S3 File Gateway 
 
 ## Route Tables
 
