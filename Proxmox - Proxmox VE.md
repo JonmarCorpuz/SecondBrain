@@ -3,7 +3,7 @@ Proxmox is an open-source server virtualization management platform that allows 
 * Based on Debian Linux
 * Utilizes KVM for virtualization
 
-!{](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Proxmox Components
 
