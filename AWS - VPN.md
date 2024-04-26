@@ -2,6 +2,23 @@ AWS Virtual Private Network allows users to establish secure connections between
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# AWS VPN Components
+
+## Virtual Private Gateway
+
+A virtual private gateway acts as the VPN concentrator on the AWS side of the VPN connection
+
+* Serves as the entry and exit point for VPN traffic into and out of a user's VPC
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/EW63c5vRTgmut3Ob0V4Jiw_09dccfe3d3d04c4a9da1111c36bb45f1_Reading3.1C.png)
+
+* How VGW works:
+  1. The user will allow traffic from their VPC to flow through the VGW to their on-premises network or another networ connected via VPN by attaching the VGW to their VPC
+  2. The user will then establish a VPN connection between the VGW and their on-premises VPN device or another network device configured to support VPN connections
+  3. The VGW will then route traffic between the user's VPC and the remote network securely over the VPN connection
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # AWS VPN Methods
 
 ## AWS Site-to-Site VPN
