@@ -23,6 +23,20 @@ A bond is a network bonding configuration used to combine multiple physical netw
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Proxmox Cluster Components
+
+## Resource Pool
+
+A resource pool is a logical grouping of physical or virtual resources (Ex: *CPU*, *RAM*, *etc.*)
+
+## Ceph
+
+Ceph is a distributed storage system solution that's used in a Proxmox cluster 
+
+* Provides scalable and high-performant storage by distributing data across a cluster of storage nodes (Object Storage Devices)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Proxmox Features
 
 ## Kernel-based Virtual Machine
