@@ -1,5 +1,7 @@
 Proxmox is an open-source server virtualization management platform that allows users to deploy and manage VMs and containers on a single host or across multiple hosts in a cluster
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dshdoiasiffdsgfafgea.png)
+
 * Based on Debian Linux
 * Utilizes KVM for virtualization
 
@@ -20,6 +22,18 @@ The vmbr is a virtual network interface that's used to connect VMs and container
 A bond is a network bonding configuration used to combine multiple physical network interfaces into a single logical interface
 
 * Provides increased bandwidth and can improve network throughput
+
+## Quick Emulator
+
+QEMU is the open-source virtualization technology that's used to emulate and run VMs and containers within Proxmox
+
+* Serves as the hypervisor
+* Responsible for creating and managing virtual machines and containers
+* Emulates hardware components (Ex: *CPU*, *RAM*, *etc.*)
+
+## Quick Emulator Agent
+
+A QEMU Agent enhances the communication and interaction between the Proxmox host and the virtual machine running on it
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
