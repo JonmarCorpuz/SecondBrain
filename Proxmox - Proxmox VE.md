@@ -1,6 +1,6 @@
 Proxmox is an open-source server virtualization management platform that allows users to deploy and manage VMs and containers on a single host or across multiple hosts in a cluster
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dshdoiasiffdsgfafgea.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/0_AqnPGgfOrhU9sw1g.png)
 
 * Based on Debian Linux
 * Utilizes KVM for virtualization
