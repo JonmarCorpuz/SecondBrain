@@ -31,9 +31,14 @@ A resource pool is a logical grouping of physical or virtual resources (Ex: *CPU
 
 ## Ceph
 
-Ceph is a distributed storage system solution that's used in a Proxmox cluster 
+Ceph is a distributed storage system solution that's used in a Proxmox cluster by deploying it alongside Proxmox hosts
 
-* Provides scalable and high-performant storage by distributing data across a cluster of storage nodes (Object Storage Devices)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/28519913-b1429d2a-706d-11e7-83cf-e1369b5e923f.gif)
+
+* Provides a scalable and high-performant storage by distributing data across a cluster of storage nodes (Object Storage Devices)
+* Allows administrators to easily provision and manage storage resources for VMs and containers
+* Allows administrators to add more OSDs and storage nodes to the cluster to scale out when needed
+* Provides fault tolerance and ensures data availability by replicating data across multiple OSDs and storage nodes
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
