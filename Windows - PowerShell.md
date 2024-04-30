@@ -9,8 +9,6 @@ PowerShell is a cross-platform task automation solution made up of a command-lin
 
 ## Attributes
 
-A
-
 * d (Directory), which indicates a folder
 * a (Archive), which indicates an archived item
 * r (ReadOnly), which indicates an item that's in read only
@@ -28,18 +26,56 @@ $VARIABLE = DATA
 [DATA TYPE]$VARIABLE = DATA
 ```
 
+*
+```PowerShell
+[string]$VARIABLE=<VALUE>
+[char]$VARIABLE=<VALUE>
+[byte]$VARIABLE=<VALUE>
+[int]$VARIABLE=<VALUE>
+[long]$VARIABLE=<VALUE>
+[bool]$VARIABLE=<VALUE>
+[decimal]$VARIABLE=<VALUE>
+[single]$VARIABLE=<VALUE>
+[double]$VARIABLE=<VALUE>
+[dateTime]$VARIABLE=<VALUE>
+[xml]$VARIABLE=<VALUE>
+[array]$VARIABLE=<VALUE>
+```
+
+*
+```PowerShell
+$Host="Host information"
+$Home="Current user's home folder"
+$Pwd="Present working directory"
+$Args=" "
+```
+
 ## Parameters
+
+*
+```PowerShell
+param(
+    [Parameter(Mandatory=$true)][<DATA>]$<PARAMETER_NAME>
+)
+```
 
 ## Conditions
 
 ```PowerShell
-if (CONDITION)
-{
-}
-else
-{
+if (CONDITION) {
+  <ACTION>;
+} else {
+  <ACTION>;
 }
 ```
+
+*
+```PowerShell
+Switch (<CONDITION>) {
+  <VALUE1> {<ACTION>; break}
+  <VALUE2> {<ACTION>; breal}
+  Default {<DEFAULT ACTION>}
+}
 
 ## Loops
 
@@ -78,13 +114,57 @@ foreach ($ITEM in $COLLECTION)
 
 ## Functions
 
+*
+```PowerShell
+Function <FUNCTION NAME> {
+  [PARAMETERS]
+  [VARIABLES]
+  [ACTIONS]
+}
+
+<FUNCTION NAME> [OPTIONS]
+```
+
+## Methods
+
+*
+```PowerShell
+[...] {$OBJECT.METHOD([PARAMETERS]) [OPTIONS]}
+```
+
+*
+```PowerShell
+[...] {$OBJECT.VALUE [OPTIONS]}
+```
+
 ## Operators
 
-* -eq
-* -lt
-* -le
-* gt
-* ge
+*
+```PowerShell
+-eq
+-lt
+-le
+-gt
+-ge
+-not
+-and
+-or
+-xor
+```
+
+*
+```PowerShell
++
+-
+*
+%
+**
+<<
+>>
+&
+|
+^
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
