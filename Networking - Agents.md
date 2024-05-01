@@ -17,7 +17,6 @@ An SNMP agent is used to monitor network-attached devices
 * Collects data about its host device (Ex: *Performance metrics*, *Utilization statistics*, *etc.*)
 * Communicates the data it collects to an SNMP manager or network management system using SNMP protocols either as a response to a request from the manager or proactively through a trap mechanism, which is an unsolicited notification of significant events or errors
 * Receives and acts on commands from the SNMP manager (Ex: *Configuration changes*, *Request for status updates*, *etc.*)
-* Maintains a Management Information Base, which is a structured database that contains information, where each item in the MIB is addressed through unique identifiers
 
 ## Proxy Agent
 
