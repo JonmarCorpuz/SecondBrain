@@ -1,5 +1,7 @@
 The Simple Network Management Protocol is a protocol that's designed to manage network performance on IP networks
 
+* Enables real-time performance monitoring and maintenance of network health and security
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # SNMP Components
@@ -23,11 +25,21 @@ An MIB is a database of a network device's statistics and control information
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# SNMP Versions
+
+## SNMPv1
+
+## SNMPv2
+
+## SNMPv3
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # SNMP Operations
 
-* `Get`
-* `Set`
-* `GetNext`
-* `GetBulk`
-* `Inform`
-* `Trap`
+* `Get` fetches the value of a specific variable from an agent
+* `Set` sets the value of a specific variable in an agent
+* `GetNext` fetches the next variable in the MIB
+* `GetBulk` retrieves large blocks of data (Used in SNMPv2 and SNMPv3)
+* `Inform` allows SNMP managers to send information to other SNMP managers (Used in SNMPv2 and SNMPv3)
+* `Trap` allows an agent to asynchronously inform the SNMP manage about a significant event
