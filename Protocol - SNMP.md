@@ -6,6 +6,8 @@ The Simple Network Management Protocol is a protocol that's designed to manage n
 
 # SNMP Components
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jdgfldjkjlrugfsjlk.png)
+
 ## SNMP Manager
 
 An SNMP manager is the central system that controls and monitors the network through SNMP
@@ -36,6 +38,8 @@ An MIB is a database of a network device's statistics and control information
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # SNMP Operations
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/why-snmp-is-important-view.jpg)
 
 * `Get` fetches the value of a specific variable from an agent
 * `Set` sets the value of a specific variable in an agent
