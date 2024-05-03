@@ -6,32 +6,32 @@ The Transmission Control Protocol/Internet Protocol model is a framework consist
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/063014_1912_TCPIPANDTHE2.jpg)
 
-## Application Layer
+## Application Layer (Layer 4)
 
-The Application Layer is the fourth layer of the TCP/IP protocol suite and is responsible for providing network services directly to end-users and application programs
+Responsible for providing network services directly to end-users and application programs
 
 * Responsible for making network requests and responding to requests
 * Defines which internet services and applications any user can access
-* Protocols in the Application Layer determine how the data packets will interact with the receiving devices (Ex: *[[Protocol (HTTP)|HTTP]]*, *[[Protocol (HTTPS)|HTTPS]]*, *[[Protocol (SMTP)|SMTP]]*, *[[Protocol (SSH)|SSH]]*, *[[Protocol (FTP)|FTP]]*, *[[Protocol (DNS)|DNS]]*, *etc.*)
+* Protocols in the Application Layer determine how the data packets will interact with the receiving devices (Ex: *HTTP*, *HTTPS*, *SMTP*, *SSH*, *FTP*, *DNS*, *etc.*)
 * Relies on the underlying layers to transfer the data across the network
 
-## Transport Layer
+## Transport Layer (Layer 3)
 
-The Transport Layer is the third layer of the TCP/IP protocol suite and is responsible for the end-to-end communication between devices
+Responsible for the end-to-end communication between devices
 
-* Includes protocols to control the flow of traffic across a network (Ex: *[[Protocol (TCP)|TCP]]*, *[[Protocol (UDP)|UDP]]*, *etc.*)
+* Includes protocols to control the flow of traffic across a network (Ex: *TCP*, *UDP*, *etc.*)
 
-## Internet Layer
+## Internet Layer (Layer 2)
 
-The Internet Layer is the second layer of the TCP/IP protocol suite and is responsible for the logical addressing and routing
+Responsible for the logical addressing and routing of packets 
 
 * Ensures that the data packets are delivered to the destination host
 * Ensures that IP addresses are attached to data packets to indicate the location of the sender and receiver
-* Determines which protocol is responsible for delivering the data packets (Ex: *[[Protocol (IP)|IP]]*, *[[Protocol (ICMP)|ICMP]]*, *etc.*) 
+* Determines which protocol is responsible for delivering the data packets (Ex: *IP*, *ICMP*, *IGMP*, *etc.*) 
 
-## Network Access Layer
+## Network Access Layer (Layer 1)
 
-The Network Access Layer (or Data Link Layer) is the first layer of the TCP/IP protocol suite and is responsible for dealing with the physical connection between devices on the same network
+The Network Access/Data Link layer is responsible for the physical and logical link between devices 
 
-* This layer corresponds to the physical hardware involved in network transmission (Ex: *Hubs*, *Modems*, *Cables*, *Wiring*, *etc.*)
+* Corresponds to the physical hardware involved in network transmission (Ex: *Hubs*, *Modems*, *Cables*, *Wiring*, *etc.*)
 * Includes protocols that govern the transmission of data frames over specific types of physical media (Ex: *Ethernet*, *Wi-Fi*, *ARP*, *etc.*)
