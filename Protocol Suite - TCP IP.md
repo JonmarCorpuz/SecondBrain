@@ -2,6 +2,8 @@ The Transmission Control Protocol/Internet Protocol model is a framework consist
 
 * Structured as a stack of protocols, with each layer handling specific aspects of the communication process
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # TCP/IP Layers
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/063014_1912_TCPIPANDTHE2.jpg)
