@@ -4,6 +4,8 @@ The Open Systems Interconnection model is a standardized concept of communicatio
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1_17Zz6v0HWIzgiOzQYmO6lA.jpg)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/OSI-7-layers.jpg)
+
 ## Application Layer
 
 The Application Layer is the seventh layer of the OSI model and is responsible for providing network services directly to end-users or application processes
