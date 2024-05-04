@@ -47,7 +47,7 @@ The Transport layer is the fourth layer of the OSI model and is responsible for 
 
 ## Network Layer (Layer 3)
 
-The Network layer is responsible for handling the routing, addressing, and logical network topology
+The Network layer is responsible for handling the logical routing and addressing of packets
 
 * Determines the best path for data to travel from the source to the destination across multiple networks
 * The intended destination can be found based on the IP address that resides in the frame of the data packets
