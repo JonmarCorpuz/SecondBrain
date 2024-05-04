@@ -39,7 +39,7 @@ The Session Layer is the fifth layer of the OSI model and is responsible for man
 
 ## Transport Layer (Layer 4)
 
-The Transport Layer is the fourth layer of the OSI model and is responsible for ensuring end-to-end communication, error recovery, and flow control between devices
+The Transport layer is the fourth layer of the OSI model and is responsible for ensuring end-to-end communication, error recovery, and flow control between devices
 
 * Handles the speed of data transfer, the flow of the data transfer, and the fragmentation of data packets into smaller fragments to make them easier to transport
 	* Fragmented packets needs to be reassembled at their destination so that they can be processed at the Session Layer
@@ -47,16 +47,18 @@ The Transport Layer is the fourth layer of the OSI model and is responsible for 
 
 ## Network Layer (Layer 3)
 
-The Network Layer is the third layer of the OSI model and is responsible for handling the routing, addressing, and logical network topology
+The Network layer is responsible for handling the routing, addressing, and logical network topology
 
 * Determines the best path for data to travel from the source to the destination across multiple networks
 * The intended destination can be found based on the IP address that resides in the frame of the data packets
 
 ## Data Link Layer (Layer 2)
 
-Responsible for formatting data into frames and preparing it for transmission over the physical layer, as well as handling the reception of incoming frames
+The Data link is responsible for formatting data into frames and preparing it for transmission over the physical layer, as well as handling the reception of incoming frames
 
 ## Physical Layer (Layer 1)
+
+The Physical layer is responsible for the actual transmission of raw data bits over a physical medium
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
