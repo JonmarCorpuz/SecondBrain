@@ -1,6 +1,9 @@
 Asterisk is an open-source framework for building communications applications
 
-* Provides a platform for creating a wide range of voice, video, and messaging solutions (Ex: *FreePBX*, *VoIP gateways*, *Conference bridges*, *Interactive Voice Response systems*, *etc.*)
+* Provides a platform for creating a wide range of voice, video, and messaging solutions
+* Can create feature-rich Private Branch Exchange systems, which are private telephone networks used within organizations to manage and route calls
+* Can serve as a VoIP server to enable users to make and receive calls
+* Supports VoIP protocols (Ex: *SIP*, *RTP*, *etc.*)
 
 # Asterisk-Based Phone Systems
 
