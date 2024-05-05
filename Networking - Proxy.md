@@ -24,6 +24,12 @@ A reverse proxy is a type of proxy server that's palced in front of web servers 
 
 ## HTTP Proxy
 
+An HTTP proxy is a type of proxy server that handles HTTP requests from a client, forwards them to the destined web server, and then relays the HTTP response back to the client
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/615635613cd4216f4d4f01d5_web-browsing-with-proxy.png)
+
+## SSL Proxy
+
 ## SOCKS Proxy
 
 ## Transparent Proxy
