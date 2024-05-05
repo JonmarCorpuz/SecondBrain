@@ -1,6 +1,7 @@
-A proxy is an intermediate server that forwards web requests and responses between the user and the internet
+A proxy is an intermediate server that sits between end users and the web services that they want to access and forwards their web requests to the destined web server and return its reponses back to the client
 
-* Sits between end users and the web services that they want to access
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/615635613cd4216f4d4f01d5_web-browsing-with-proxy.png)
+
 * Hides IP addresses from the web resources that the user is requesting access to
 * Can block IP addresses and websites
 * Can filter web content
@@ -25,8 +26,6 @@ A reverse proxy is a type of proxy server that's palced in front of web servers 
 ## HTTP Proxy
 
 An HTTP proxy is a type of proxy server that handles HTTP requests from a client, forwards them to the destined web server, and then relays the HTTP response back to the client
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/615635613cd4216f4d4f01d5_web-browsing-with-proxy.png)
 
 ## SSL Proxy
 
