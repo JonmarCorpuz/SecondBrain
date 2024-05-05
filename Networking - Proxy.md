@@ -29,6 +29,14 @@ An HTTP proxy is a type of proxy server that handles HTTP requests from a client
 
 ## SSL Proxy
 
+An SSL proxy is a type of proxy server that handles SSL/TLS encrypted traffic between a client and a web server
+
+* Provides detailed inspection and management of secure HTTPS traffic by intercepting, decrypting, and inspecting the encrypted SSL/TLS traffic, and then re-encrypting and forwarding that traffic to its intended destination
+
 ## SOCKS Proxy
 
+A SOCKS proxy is a type of proxy server that handles any type of traffic
+
 ## Transparent Proxy
+
+A transparent proxy is a type of proxy server that intercepts normal communication at the network layer without requiring any special client configuration
