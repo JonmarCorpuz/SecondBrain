@@ -18,7 +18,10 @@ Les besoins:
 
 Les éléments d'influence sur la sécurité les besoins (intrants):
 * Besoins et exigences de sécurité
-* Obligations de sécurité et des besoins d'affaires (*Mettre en place un site web sécurisé pour réaliser de la vente en ligne*, *Déployer des pointes de vente sécurisées pour permettre des achats par carte de crédit en magasin*, *etc.*)
+* Obligations de sécurité et des besoins d'affaires
+  * *Mettre en place un site web sécurisé pour réaliser de la vente en ligne*
+  * *Déployer des pointes de vente sécurisées pour permettre des achats par carte de crédit en magasin*
+  * *etc.*
 * Bonnes pratiques de cybersecurité
 
 ##
