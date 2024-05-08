@@ -8,9 +8,9 @@ Les besoins:
 * Éviter une protection de l'environment informatique non adequate
 * Éviter une protection par tatonnement
 * Assurer le respect des obligations de conformité
- * Protection des renseignements personnels: *Loi 25 du Québec*, *Personal Information Protection and Electronic Documents Act (PIPEDA)*, *etc*
- * Protection des donné
- * Protection des données de cartes de credit: *PCI DSS*, *etc.*
+  * Protection des renseignements personnels: *Loi 25 du Québec*, *Personal Information Protection and Electronic Documents Act (PIPEDA)*, *etc*
+  * Protection des donné
+  * Protection des données de cartes de credit: *PCI DSS*, *etc.*
 * Planifier et anticiper l'évolution
 * Maitriser les budgetrs de sécurité TI
 
