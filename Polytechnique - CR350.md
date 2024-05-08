@@ -34,8 +34,7 @@ Apercu du framework de sécurité: ![](https://github.com/JonmarCorpuz/SecondBra
 ##
 Apercu de l'architecture de sécurité TI:![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Architecture%20de%20securite%20TI.PNG)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
+##
 4 sous-système:
 * Gestion des identités et des accès (GIA)
 * Contrôle et sécurité des flux de données
@@ -84,3 +83,34 @@ Intégrité et disponibilité:
 
 ##
 Architecture de securité: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Architecture%20de%20securite.PNG)
+
+## 
+Sécurisation des données
+* Traitement du risque:
+  * Mise en place de mesures correctives (Mitigation)
+  * Acceptation du risque
+  * Transfer du risque
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+Sécurisation des systèmes et applications
+* Endurcissement des systèmes et applications:
+  * Minimiser les delais de detection des intrusions et incidents
+  * Assurer la disponibilité des services
+  * Assurer l'intégrité des données
+  * Gestion des vulnérabilités de sécurité
+ 
+Sécurisation du réseau
+* Firewalls
+* IDS
+* IPS
+* NDR
+* EDR
+* DLP
+* SIEM
+* PKI
+* VPN
+* IPSec
+* Chiffrement
+* etc.
+ 
