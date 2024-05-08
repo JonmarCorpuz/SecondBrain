@@ -99,6 +99,8 @@ Sécurisation des systèmes et applications
   * Assurer la disponibilité des services
   * Assurer l'intégrité des données
   * Gestion des vulnérabilités de sécurité
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
  
 Sécurisation du réseau
 * Firewalls
