@@ -22,6 +22,10 @@ An autonomous system is a network or group of networks under a common administra
 
 An Interior Gateway Protocol is a type of routing protocol that's used within a single autonomous system to exchange routing information between routers
 
+### Open Shortest Path First
+
+### Enhanced Interior Gateway Routing Protocol
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Exterior Gateway Protocols
