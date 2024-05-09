@@ -36,7 +36,6 @@ An Exterior Gateway Protocol is a type of routing protocol that's used to exchan
 
 The Border Gateway Protocol is an exterior gateway protocol used in large-scale networks to enable the exchange of routing and reachability information between autonomous systems
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/bgp-ospf.png)
+
 * The most scalable routing protocol
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
