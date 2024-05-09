@@ -24,6 +24,8 @@ An Interior Gateway Protocol is a type of routing protocol that's used within a 
 
 ### Open Shortest Path First
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/The-Role-of-the-Area-Border-Router-ABR.png)
+
 ### Enhanced Interior Gateway Routing Protocol
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
@@ -35,7 +37,5 @@ An Exterior Gateway Protocol is a type of routing protocol that's used to exchan
 ### Border Gateway Protocol
 
 The Border Gateway Protocol is an exterior gateway protocol used in large-scale networks to enable the exchange of routing and reachability information between autonomous systems
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/The-Role-of-the-Area-Border-Router-ABR.png)
 
 * The most scalable routing protocol
