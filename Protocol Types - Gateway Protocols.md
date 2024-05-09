@@ -4,8 +4,6 @@ A gateway protocol is a type of networking protocol that's used by routers or ga
 
 # Gateway Protocol Components
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/IGP_EGP.jpg)
-
 ## Autonomous Systems
 
 An autonomous system is a network or group of networks under a common administrative control and sharing a common routing policy, which is a set of rules or configurations that govern how routers make decisions about forwarding data packets
@@ -17,6 +15,8 @@ An autonomous system is a network or group of networks under a common administra
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Gateway Protocol Types
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/IGP_EGP.jpg)
 
 ## Interior Gateway Protocols
 
