@@ -1,4 +1,4 @@
-The OSPF protocol is a link state routing protocol, which is a protocol that determines the best route for data through a network, within a single autonomous system
+The Open Shortest Path First protocol is a link state routing protocol, which is a protocol that determines the best route for data through a network, that's used within a single autonomous system
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/The-Role-of-the-Area-Border-Router-ABR.png)
 
@@ -10,3 +10,5 @@ The OSPF protocol is a link state routing protocol, which is a protocol that det
 * Enables more efficient path selection by using cost as its routing metric that is based off of the consumed bandwidth of links
 * Supports multiple equal-cost paths to a destination, which can be used simultaneously to improve network utilization
 * Allows for the configuration of authentication to ensure that routing exchanges occur only between trusted routers
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
