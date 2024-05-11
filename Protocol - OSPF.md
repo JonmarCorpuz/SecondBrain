@@ -12,3 +12,33 @@ The Open Shortest Path First protocol is a link state routing protocol, which is
 * Allows for the configuration of authentication to ensure that routing exchanges occur only between trusted routers
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# OSPF Components
+
+## Router ID
+
+A router ID is a unique identifier that's used to uniquely identify each router in an OSPF area
+
+## Link State Advertisements
+
+## Link State Database
+
+## Areas
+
+## Routing Table
+
+## Intervals
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# OSPF Area Types
+
+## Backbone Area
+
+## Stub Area
+
+## Totally Stubby Area
+
+## Not-So-Stubby Area
+
+## Totally Not-So-Stubby Area
