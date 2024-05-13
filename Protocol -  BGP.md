@@ -13,10 +13,31 @@ The Border Gateway Protocol is an exterior gateway protocol used in large-scale 
 
 A BGP speaker is any network device that's capable of running the BGP protocol
 
-* Echanges routing information with each other to make routing decisions about how to route traffic between different networks or ASes
+* Exchanges routing information with each other to make routing decisions about how to route traffic between different networks or ASes
+* BGP speakers communicate through BGP messages, 
 
 ## BGP Peers
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# BGP Message Types
+
+## Open Message
+
+An Open message is the first message sent between two BGP speakers when establishing a BGP session between the both of them
+
+* Contains parameters necessary for setting up the BGP session (Ex: *BGP version number*, *Autonomous System Number*, *Hold time*, *etc.*)
+
+## Keepalive Message
+
+A Keepalive message ensures that the connection between BGP speakers remains active and that they're still reachable
 
 
-## 
+
+## Update Message
+
+
+
+## Notification Message
+
+
