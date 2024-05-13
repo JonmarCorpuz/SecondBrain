@@ -31,6 +31,14 @@ A router ID is a unique identifier that's used to uniquely identify each router 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# OSPF Types
+
+## Flat-Area OSPF
+
+## Multi-Area OSPF
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # OSPF Area Types
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ospf-stub-areas.png)
