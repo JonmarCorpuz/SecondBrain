@@ -32,12 +32,12 @@ An Open message is the first message sent between two BGP speakers when establis
 
 A Keepalive message ensures that the connection between BGP speakers remains active and that they're still reachable
 
-
+* Serves as a means to maintain the connectivity and state of the BGP session between two BGP speakers
 
 ## Update Message
 
-
+An Update message 
 
 ## Notification Message
 
-
+A Notification message
