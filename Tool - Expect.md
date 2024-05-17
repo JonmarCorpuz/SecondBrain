@@ -6,6 +6,14 @@ Expect is a Bash CLI tool that automates the control of interactive applications
 
 # Expect Commands
 
-* `spawn <program>` starts a program
-* `expect "<value>"` waits for a specific output
-* `send "<value>"` sends an input to the program
+* `spawn <command>` starts a script or program
+* `expect {<pattern>|eof}` waits for a specific pattern or an EOF from the output of the spawned command
+* `send <string>` sends a string to the previously started process
+* `interact` allows a user to manually interact with the previously spawned process
+* `set <variable> <value>` assigns a value to a variable
+* `expect_after <pattern> <action>` specifies whaat should happen if a pattern is seen after a certain point in the script
+* `expect_before <pattern> <value>` specifies what should happen if a pattern is seen before a certain point in the script
+* `exp_continue` tells Expect to continue processing the current expect command within an expect block, allowing it to match additional patterns
+* `timeout` determines how long Expect should wait for a pattern before giving up
+* `close` closes the connection to the previously spawned process
+
