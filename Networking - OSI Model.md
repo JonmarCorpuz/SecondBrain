@@ -8,6 +8,11 @@ The Open Systems Interconnection model is a conceptual framework that breaks dow
 
 ## 7. Application Layer
 
+The application layer provides services directly to user applications 
+
+* The layer closest to the end-user
+* Application layer protocols include: *HTTPS*, *HTTP*, *FTP*, *SMTP*, *etc.*
+
 ## 6. Presentation Layer
 
 ## 5. Session Layer
