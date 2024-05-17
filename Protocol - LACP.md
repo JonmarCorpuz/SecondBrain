@@ -30,8 +30,6 @@ After the EtherChannel is formed, the devices continue to exchange LACP frames p
 
 # LACP Operation Modes
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/images.jpg)
-
 ## Active
 
 * The network device will actively send LACP frames to initiate and negotiate the formation of an EtherChannel with a neighboring device
