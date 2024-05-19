@@ -1,5 +1,7 @@
 The Open Systems Interconnection model is a conceptual framework that breaks down the communication process into seven layers
 
+* Defines a layered approach to network communication, with each layer responsible for specific functions
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # OSI Model Layers
