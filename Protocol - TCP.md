@@ -66,6 +66,8 @@ The TCP header flags field controls the behavior of the TCP connection
 
 The urgent flag indicates that certain data within the TCP segment is urgent and should be prioritized by the receiver
 
+* URG packets are immediately sent to the destined application, regardless of any buffered data 
+
 ### ACK
 
 The acknowledge flag indicates the acknowledgement of the receipt of data from the sender
