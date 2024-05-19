@@ -171,8 +171,28 @@ L'hyperviseur est hébergé sur le système d’exploitation
 
 ### Privé
 
+* Ressources partagées en privé entre les membres d’une organisation
+* Peut être détenu, géré et exploité par une organisation ou une tierce partie
+* Peut exister l’intérieur des locaux de l’organisation ou a l’extérieur
+
 ### Communautaire
+
+* Dédié à une communauté spécifique de consommateurs d'organisations
+* Ces consommateurs partagent des préoccupations (ex.: la mission, politique, etc.).
+* Peut être détenu, géré et exploité par une ou plusieurs des organisations
+* Peut exister sur ou hors des locaux
+* Mise à disposition pour une utilisation ouverte par le grand public
 
 ### Publique
 
+* Prévue pour une utilisation ouverte au grand public
+* Peut être détenu, géré et exploité par une entreprise, une université, une
+organisation gouvernementale
+* Peut être déployer dans les locaux du fournisseur infonuagique
+
 ### Hybride
+
+* Composé d'au moins deux entités infonuagiques distinctes (privées,
+communautaires ou publiques)
+* Demeurent uniques, mais liées entre elles par une technologie
+standardisée ou propriétaire
