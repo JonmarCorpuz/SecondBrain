@@ -69,8 +69,25 @@ en question pour éviter que leur utilisation n'interfère avec d'autres demande
 
 ### Systèmes d'exploitation serveurs
 
+* Sécurité
+* Performance
+* Focus minimal sur des fonctionnalités (services)
+* Intégration aux hyperviseurs et conteneriseurs
+
 ### Systèmes d'exploitation poste de travail
+
+* Facilité d'utilisation
+* Convivialité de l'interface graphique
+* Intégration de fonctionnalités
+* Support matériel
 
 ### Systèmes d'exploitation mobiles
 
+* Facilité d'utilisation
+* Support d'application
+
 ### Systèmes d'exploitation embarqués
+
+* Minimisation de la taille
+* APIs d'accès direct au matériel
+* Performance
