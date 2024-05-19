@@ -1,4 +1,4 @@
-# Sécurité des serveurs
+# Les serveurs
 
 Un serveur est un système qui offre des services via un réseau informatique
 * Peut être matériel ou logiciel
