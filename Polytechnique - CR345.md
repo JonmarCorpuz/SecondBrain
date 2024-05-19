@@ -101,22 +101,78 @@ que les versions bureau
 * Opère entre organisations, via réseaux informatiques
 * Héberge différents serveurs logiciels (*messageries*, *bases
 de données*, *etc.*)
-
-
-Mémoire vive: Support plus de mémoires que les versions
-bureau.
-• CPU: utilisation plus efficace de l’unité de traitement centrale
-(CPU).
-• Réseau: support plus accru de connexions réseau.
-• Traitement en arrière plan: Le serveur priorise le traitement
-des taches en arrière plan (back-end task processing).
-• Cout: Il est plus cher que le version bureau, car il est conçu
-pour les entreprises et le monde des affaires en général.
-• Fonctionnalités et convivialité limitées: Il est conçu pour des
-taches professionnelles, donc toutes les fonctionnalités de
-bureau ne sont pas nécessaires (ex: navigateur web, service
-de courriel, suite office.).
+* Support plus de mémoires que les versions
+bureau
+* Utilisation plus efficace de l’unité de traitement centrale
+(CPU)
+* Support plus accru de connexions réseau.
+* Priorise le traitement des taches en arrière plan (back-end task processing)
+* Plus cher que le version bureau, car il est conçu pour les entreprises et le monde des affaires en général
+* Conçu pour des taches professionnelles, donc toutes les fonctionnalités de
+bureau ne sont pas nécessaires (ex: *navigateur web*, *service
+de courriel*, *suite office*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Linux Server
+
+* Généralement installé dans des serveurs Rack ou Tour.
+* Plus de longévité, stabilité, performance, sécurité
+* Utilisation du code correcting (ECC) RAM
+* Pas besoin d’interface graphique
+* Pas besoin de clavier, souris et autres périphériques
+(headless)
+* Permet d'installer certain serveurs applicatifs (ex: *Serveur web
+Apache*, *Serveur d’impression*, *Serveur de messagerie*, *Serveur de sécurité*, *etc.*)
+* Généralement accédé et géré a travers une connexion SSH distante
+* Utilise le même noyau que la version bureau
+* On peut installer l’interface graphique sur une version serveur
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Système infonuagique
+
+L’infonuagique est un modèle permettant un accès réseau omniprésent, pratique et à la demande à un basin partagé de ressources informatiques configurables (ex.: *réseaux*, *serveurs*, *stockage*, *applications*, *services*, *etc.*)
+
+* Ces ressources peuvent être rapidement provisionnés et libérés avec un effort minimal de gestion et d’interaction avec le fournisseur de services
+* Ce modèle est composé de cinq caractéristiques essentielles, trois modèles de services et quatre modèles de déploiement ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/cjvbasfcdshf%3Blasdasj.PNG)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Architecture Infonuagique
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ccvugadshfvbladikugfaosdfadf.PNG)
+
+### Type 1: Bare metal
+
+L'hyperviseur est hébergé directement sur le matériel
+
+### Type 2: Hosted
+
+L'hyperviseur est hébergé sur le système d’exploitation
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Modèles infonuagiques
+
+* Definisse quelle partie est gérée par le fournisseur infonuagique et quelle partie est gérée par le client
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dsgdbasuvhfasbdfaklfna.PNG)
+
+### SaaS
+
+### PaaS
+
+### IaaS
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Modèles de déploiement infonuagique
+
+### Privé
+
+### Communautaire
+
+### Publique
+
+### Hybride
