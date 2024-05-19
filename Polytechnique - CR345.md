@@ -55,3 +55,22 @@ connecté avec d’autres serveurs lames
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Les systèmes d'exploitation
+
+Le système d'exploitation est un ensemble de programmes qui
+dirige l'utilisation des capacités d'un ordinateur par des
+logiciels applicatifs
+
+* Reçoit des demandes d'utilisation des ressources de
+l'ordinateur de la part de logiciels applicatifs
+* Accepte ou refuse les demandes d'utilisation, puis réserve les ressources
+en question pour éviter que leur utilisation n'interfère avec d'autres demandes provenant d'autres logiciels
+
+## Catégories de systèmes d’exploitations
+
+### Systèmes d'exploitation serveurs
+
+### Systèmes d'exploitation poste de travail
+
+### Systèmes d'exploitation mobiles
+
+### Systèmes d'exploitation embarqués
