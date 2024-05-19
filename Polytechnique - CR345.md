@@ -316,6 +316,20 @@ Configuration globale liée ni à la machine, ni à un utilisateur
 
 ### Domaine de Premier Niveau (TLD)
 
+Les domaines qui se trouvent immédiatement sous la racine
+
 ### Domaines Génériques (gTLD)
 
+Les domaines dont les noms ne correspondent pas à une extension de pays (ex: *.org*, *.com*, *etc.*)
+
 ### Domaine de Premier Niveau National (ccTLD)
+
+Des domaines dont les noms correspondent à des codes de pays (ex: *.ca*, *.us*, *.fr*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Résolution de domaine
+
+### Résolution itérative
+
+### Résolution inverse
