@@ -8,6 +8,8 @@ The Transmission Control Protocol provides reliable, connection-oriented communi
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ksdbjlfkldsdfjhbsghlgk.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Connection Establishment
 
 The Transmission Control Protocol uses a three-way handshake to establish a connection between a client and a server
