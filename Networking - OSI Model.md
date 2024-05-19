@@ -44,7 +44,28 @@ The network layer focuses on routing data packets from the source to the destina
 
 * Assigns logical addresses to devices connected to a network
 * Responsible for determining the best path for data packets to reach their destination
+* May fragment packets into smaller units for transmission across networks with different maximum packet sizes
+* May detect errors in transmitted packets and take corrective actions (Ex: *Requesting retransmission of corrupted packets*, *etc.*)
 
 ## 2. Data Link Layer
 
+The data link layer is responsible for providing reliable data transfer across a physical link or medium between neighboring network nodes 
+
+* Implemented in NICs and network switches
+* Ensures that data packets are delivered error-free and in sequence over the physical link
+* Encapsulates network layer packets into frames by adding header and trailer information for transmission over the physical medium (Ex: *Source and destination MAC addresses*, *Frame type and error detection information*, *etc.*)
+* Uses physical addresses to identify devices on the same local network
+* Ensures that multiple devices connected to the same network can share the bandwidth efficiently by governing access to the physical medium using different access control methods (Ex: *CSMA/CD for Wi-Fi*, *etc.*)
+* Performs error detection and correction mechanisms to ensure data integrity during transmission over the physical medium (Ex: *CRC for error detection and retransmission of corrupted frames*, *etc.*)
+* Regulates the flow of data between devices to prevent congestion and buffer overflow (Ex: *Sliding window protocols*, *etc.*)
+* Supports *Ethernet*, *Wi-Fi*, *PPP*, *etc.*
+
 ## 1. Physical Layer
+
+The physical layer deals with the physical transmission of data between devices
+
+* Includes the actual hardware components and physical medium used for communication
+* Defines the characteristics of the physical medium used for communication (Ex: *Cable type*, *Frequency spectrum*, *etc.*)
+* Specifies how digital data is converted into signals suitable for transmission over the physical medium
+* Determines the maximum transmission rate or bandwidth supported by the physical medium
+* Ensures compatibility and interoperability between devices by specifying the physical connectors, pinouts, and electrical characteristics used to connect devices to the network medium
