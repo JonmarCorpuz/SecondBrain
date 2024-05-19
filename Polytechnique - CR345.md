@@ -211,3 +211,89 @@ standardisée ou propriétaire
 
 # Platformes client
 
+## Types de platformes client
+
+### Poste de travail (Workstation)
+
+* Facilité d'utilisation
+* Convivialité de l'interface graphique
+* Intégration de fonctionnalités
+* Support matériel
+
+### Mobile
+
+* Facilité d'utilisation
+* Support d'application
+
+### Embarqué
+
+* Minimisation de la taille
+* APIs d'accès direct au matériel
+* Performance
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Structure du système de fichiers
+
+### Structure du système de fichiers Linux
+
+* /: Racine du système
+* /etc: Fichiers de configuration
+* /dev: Fichier d'accès au matériel
+* /proc: Fichier d'accès au noyau
+* /bin: fichiers binaires exécutables systèmes
+* /sbin: fichiers binaires statiques exécutables système
+* /lib: bibliothèque systèmes
+* /usr/bin: fichiers binaires exécutables utilisateur
+* /usr/sbin: fichiers binaires statiques exécutables utilisateur
+* /usr/lib: Bibliothèques utilisateur
+* /var: Fichiers de support
+* /home: Répertoires personnels des utilisateurs.
+
+### Structure du système de fichiers Windows
+
+* c:\: Racine du système
+* c:\Windows: Fichiers du système d'exploitation
+* c:\Program Files: Fichiers des applications
+  * Il contient toutes les applications dans un système 32-bits
+  * Il contient les applications 64-bits dans un système 64-bits
+* c:\Program Files (x86): Fichiers des applications
+  * Il contient les applications 32-bits dans un system 64-bits
+ 
+### Structure du système de fichiers MacOS
+
+* /: Racine du système
+* /etc: Fichiers de configuration
+* /dev: Fichier d'accès au matériel
+* /Applications: Répertoire d'installation des applications
+* /bin: fichiers binaires exécutables systèmes
+* /sbin: fichiers binaires statiques exécutables système
+* /Library: bibliothèque systèmes
+* /usr/bin: fichiers binaires exécutables utilisateur
+* /usr/sbin: fichiers binaires statiques exécutables utilisateur
+ 
+## Bases de registres Windows
+
+* Stocke l'information de configuration du SE et les applications.
+* Stocke des couples clé/valeur, où la clé est représentée dans une
+arborescence
+
+### HKEY_CLASSES_ROOT
+
+Description des classes de fichiers
+
+### HKEY_LOCAL_MACHINE
+
+Configuration globale de la machine
+
+### HKEY_CURRENT_USER
+
+Configuration propre à l'utilisateur courant
+
+### HKEY_USERS
+
+Configuration des autres utilisateurs
+
+### HKEY_CURRENT_CONFIG
+
+Configuration globale liée ni à la machine, ni à un utilisateur
