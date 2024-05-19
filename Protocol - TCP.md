@@ -26,6 +26,8 @@ The server responds with a SYN-ACK packet to acknowledge the client's request an
 
 The client sends an ACK packet back to the server to confirm the receipt of the server's SYN-ACK packet and establishes the connection
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Connection Termination
 
 The Transmission Control Protocol uses a four-way handshake to terminate a connection between a client and a server
