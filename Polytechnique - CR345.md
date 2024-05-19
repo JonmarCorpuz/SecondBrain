@@ -297,3 +297,25 @@ Configuration des autres utilisateurs
 ### HKEY_CURRENT_CONFIG
 
 Configuration globale liée ni à la machine, ni à un utilisateur
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Serveurs DNS
+
+## Hiérarchie de domaines
+
+### Sommet
+
+### Domaine
+
+### Sous-domaine
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Types de domaines
+
+### Domaine de Premier Niveau (TLD)
+
+### Domaines Génériques (gTLD)
+
+### Domaine de Premier Niveau National (ccTLD)
