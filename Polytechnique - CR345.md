@@ -196,3 +196,11 @@ organisation gouvernementale
 communautaires ou publiques)
 * Demeurent uniques, mais liées entre elles par une technologie
 standardisée ou propriétaire
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Virtulisation légère: Conteneurs
+
+* Déploiement rapide de services
+* Pas besoin de système d’exploitation pour le client ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/isldyhgfsidgygisdghfgjh%3B.PNG)
+* Peut être intégré avec une virtualisation standard ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/daskjhgvghjfdghjsdfghjlsdf.PNG)
