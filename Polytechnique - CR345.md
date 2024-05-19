@@ -202,5 +202,12 @@ standardisée ou propriétaire
 # Virtulisation légère: Conteneurs
 
 * Déploiement rapide de services
-* Pas besoin de système d’exploitation pour le client ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/isldyhgfsidgygisdghfgjh%3B.PNG)
-* Peut être intégré avec une virtualisation standard ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/daskjhgvghjfdghjsdfghjlsdf.PNG)
+* Pas besoin de système d’exploitation pour le client
+  ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/isldyhgfsidgygisdghfgjh%3B.PNG)
+* Peut être intégré avec une virtualisation standard
+  ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/daskjhgvghjfdghjsdfghjlsdf.PNG)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Platformes client
+
