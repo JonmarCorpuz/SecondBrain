@@ -330,6 +330,17 @@ Des domaines dont les noms correspondent à des codes de pays (ex: *.ca*, *.us*,
 
 ## Résolution de domaine
 
+* La résolution de domaines est faite en parcourant la hiérarchie depuis le sommet, en passant par les délégations successives
+* Les noms de domaines sont parcouru de droite à gauche
+* La résolution repose sur une délégation correcte établis dans le domaine de niveau supérieur
+
 ### Résolution itérative
+
+* Le host consulte un ou plusieurs serveurs (appelés serveurs récursifs)
+* Ces derniers parcourent la hiérarchie DNS en délégant la requête a d’autres serveurs, afin de compléter la résolution
+* Ces serveurs récursifs sont souvent offert par le fournisseur d’internet (ISP), mais il y’a aussi des serveurs récursif publiques (ex: *Google Public DNS: 8.8.8.8 et 8.8.4.4*, *OpenNIC: 172.98.193.42*)
+* Dans un nom de domaine, la partie la plus générale est à droite (ex: *.org dans fr.wikipedia.org*) donc la résolution est faite de droite à gauche
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ertgerththrtrheatrrywraehg.PNG)
 
 ### Résolution inverse
