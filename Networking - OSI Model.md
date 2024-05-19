@@ -71,3 +71,9 @@ The physical layer deals with the physical transmission of data between devices
 * Specifies how digital data is converted into signals suitable for transmission over the physical medium
 * Determines the maximum transmission rate or bandwidth supported by the physical medium
 * Ensures compatibility and interoperability between devices by specifying the physical connectors, pinouts, and electrical characteristics used to connect devices to the network medium
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# OSI vs TCP/IP
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/osi-vs-tcpip-cp-image.jpg)
