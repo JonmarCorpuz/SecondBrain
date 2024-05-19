@@ -91,3 +91,32 @@ en question pour éviter que leur utilisation n'interfère avec d'autres demande
 * Minimisation de la taille
 * APIs d'accès direct au matériel
 * Performance
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Windows Server
+
+* Conçus pour être plus performant et plus sécuritaire
+que les versions bureau
+* Opère entre organisations, via réseaux informatiques
+* Héberge différents serveurs logiciels (*messageries*, *bases
+de données*, *etc.*)
+
+
+Mémoire vive: Support plus de mémoires que les versions
+bureau.
+• CPU: utilisation plus efficace de l’unité de traitement centrale
+(CPU).
+• Réseau: support plus accru de connexions réseau.
+• Traitement en arrière plan: Le serveur priorise le traitement
+des taches en arrière plan (back-end task processing).
+• Cout: Il est plus cher que le version bureau, car il est conçu
+pour les entreprises et le monde des affaires en général.
+• Fonctionnalités et convivialité limitées: Il est conçu pour des
+taches professionnelles, donc toutes les fonctionnalités de
+bureau ne sont pas nécessaires (ex: navigateur web, service
+de courriel, suite office.).
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Linux Server
