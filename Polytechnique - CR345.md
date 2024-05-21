@@ -300,7 +300,7 @@ Configuration globale liée ni à la machine, ni à un utilisateur
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Serveurs DNS
+# DNS
 
 ## Hiérarchie de domaines
 
@@ -344,3 +344,15 @@ Des domaines dont les noms correspondent à des codes de pays (ex: *.ca*, *.us*,
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ertgerththrtrheatrrywraehg.PNG)
 
 ### Résolution inverse
+
+* L'ordre de résolution est inversé et le résultat obtenue est concaténé au pseudo domaine in-addr.arpa (Exemple: *Pour trouver le nom de domaine de l'adresse IP 91.198.174.2, on résout 2.174.198.91.in-addr.arpa*)
+* Dans une adresse IPv6, un domaine spécial est utilisé: ip6.arpa (Exemple: *L’adresse Ipv6: 2001:db8::567:89ab est convertie en: b.a.9.8.7.6.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DHCP
+
+Dynamic Host Configuration Protocol est un protocole réseau, dont le rôle est d’attribuer des adresses IP aux hôtes de façon automatique
+
+* Principalement, il attribue des adresses IP et les masques réseau
+* D’autres informations peuvent être attribuées par le DHCP (Ex: *Adresse de la passerelle par défaut*, *Serveurs de noms DNS*, *Serveurs de noms BNNS*, *etc.*)
