@@ -359,16 +359,35 @@ Dynamic Host Configuration Protocol est un protocole réseau, dont le rôle est 
 
 ## Résolution d’adresse
 
-1. Le client envoie un message “DISCOVER” pour contacter les serveurs DHCP disponibles sur le réseau
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dsfihggihdfsiuhguighduighfdsiugdsf.PNG)
+
+1. Le client envoie un message **DISCOVER** pour contacter les serveurs DHCP disponibles sur le réseau
   * UDP boardcast sur le port 67
   * S’il y’a un DHCP-relais, cette requête est bloquée au niveau du routeur, et une adresse IP est retournée par ce dernier
 
-2. Le serveur répond avec un message “OFFER” qui contient toutes les paramètres réseau.
+2. Le serveur répond avec un message **OFFER** qui contient toutes les paramètres réseau.
   * UDP broadcat sur le port 68
   * Tous autres serveurs DHCP sont informés
 
-3. Le client répond avec un message “REQUEST” pour informer le serveur DCHP de l’adresse IP sélectionnée.
+3. Le client répond avec un message **REQUEST** pour informer le serveur DCHP de l’adresse IP sélectionnée.
   * Le message est reçu par tous les serveurs DHCP dans le réseau, ainsi tous savent quelle adresse a été sélectionnée
 
-4. Le serveur répond avec une message “ACK” (Acknowledge)
-  * Les paramètres réseau seront envoyés au client.
+4. Le serveur répond avec une message **ACK** (Acknowledge)
+  * Les paramètres réseau seront envoyés au client
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+* Cas spéciaux:
+  * **Decline**: Le client refuse l’adresse IP attribuée par le DHCP, car elle est déjà utilisée
+  * **NACK**: Le serveur refuse d’allouer une adresse IP spécifique
+  * **Inform**: Un message est envoyé lorsque certain paramètres doivent être changés
+  * **Release**: Pour informer le serveur que la réservation de l’adresse n’est plus nécessaire
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+ 
+# Contrôleur de domaine
+
+Un contrôleur de domaine (DC) est un serveur qui gére les requêtes d’authentification ainsi que les utilisateurs du réseau informatique
+
+* Sert à authentifier les utilisateurs (valider leurs accès au réseau)
+* Lorsque un utilisateur demande de se connecter à son domaine, le DC vérifie son identifiant, mot de passe, et d’autres information et soit autorise ou refuse l’accès de l’utilisateur au domaine
