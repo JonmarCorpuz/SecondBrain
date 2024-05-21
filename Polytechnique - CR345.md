@@ -356,3 +356,19 @@ Dynamic Host Configuration Protocol est un protocole réseau, dont le rôle est 
 
 * Principalement, il attribue des adresses IP et les masques réseau
 * D’autres informations peuvent être attribuées par le DHCP (Ex: *Adresse de la passerelle par défaut*, *Serveurs de noms DNS*, *Serveurs de noms BNNS*, *etc.*)
+
+## Résolution d’adresse
+
+1. Le client envoie un message “DISCOVER” pour contacter les serveurs DHCP disponibles sur le réseau
+  * UDP boardcast sur le port 67
+  * S’il y’a un DHCP-relais, cette requête est bloquée au niveau du routeur, et une adresse IP est retournée par ce dernier
+
+2. Le serveur répond avec un message “OFFER” qui contient toutes les paramètres réseau.
+  * UDP broadcat sur le port 68
+  * Tous autres serveurs DHCP sont informés
+
+3. Le client répond avec un message “REQUEST” pour informer le serveur DCHP de l’adresse IP sélectionnée.
+  * Le message est reçu par tous les serveurs DHCP dans le réseau, ainsi tous savent quelle adresse a été sélectionnée
+
+4. Le serveur répond avec une message “ACK” (Acknowledge)
+  * Les paramètres réseau seront envoyés au client.
