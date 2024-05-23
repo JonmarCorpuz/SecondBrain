@@ -109,8 +109,45 @@ KVM est intégré au sein du noyau Linux depuis la version du noyau 2.6.20
 
 ## Citrix-XEN
 
+* Permet d'exécuter plusieurs systèmes d'exploitation (et leurs applications) de manière isolée sur une même machine physique sur plate-forme x86, x86-64, IA-64 et PowerPC
+* Se comporte comme un hyperviseur
+* Les systèmes d'exploitation invités partagent ainsi les ressources de la machine hôte
+* Produits: XenServeur, XenDesktop, XenApps, Xen Motion interopérabilité avec 
+Microsoft HyperV
+
 ## Microsoft Hyper-V
+
+* Hyper-V dans Windows Server permet de créer un environnement informatique de serveur virtualisé dans lequel vous pouvez créer et gérer des ordinateurs virtuels
+* Permet à plusieurs systèmes d'exploitation de s’exécuter sur une machine physique en même temps
+* Pour exécuter Hyper-V, il faut impérativement disposer d'un système x64 avec les 
+technologies Intel VT ou AMD-V.
 
 ## VMware
 
+### Logiciels VMware
+
+* vSphere: Logiciel de virtualisation des serveurs (hyperviseur de type 1)
+* vSAN: Stockage vSphere natif
+* VMware vCenter Converter: Permet la conversion des machines physiques en machines virtuelles
+* vCenter Server: Logiciel de gestion de serveur vSphere
+* NSX: Platforme de virtulisation du reséau et la sécurité
+* etc.
+
+### Fichiers de VMware
+
+* .vmx contient la configuration de la machine virtuelle
+* .nvram contient l'état du BIOS
+* .vmk contient le contenu
+* .log contient les logs
+* .vmdk.REDO, .vmsn et .vmx.sav contiennent les snapshots
+
 ## QEMU
+
+QEMU est une machine virtuelle (ou émulateur de système) libre qui permet d'exécuter un ou plusieurs 
+systèmes d'exploitation, leurs applications (ou seulement des processus) sur un système d'exploitation déjà 
+installé sur la machine
+
+* Il fonctionne sous les systèmes d'exploitation Linux, FreeBSD, NetBSD, OpenBSD, Mac OS X, Unix et Microsoft Windows
+* Les systèmes d’exploitations sont isolés et Il permet de simuler les périphériques PCI, son, USB
+* Les systèmes d'exploitation invités partagent les ressources de la machine physique de façon relativement 
+invisible
