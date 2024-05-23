@@ -5,6 +5,9 @@ applications sur un même serveur physique et fait comme si ces systèmes foncti
 
 * Les ressources de la machine physiques sont partagées pour créer les machines virtuelles
 * Le CPU donne l’apparence comme chaque système possède son propre processeur
+* Chaque système informatique virtuel correspond à une machine virtuelle qui se présente comme un conteneur de logiciels totalement isolé, et doté d'un système d'exploitation et de ses propres applications
+* Chaque machine virtuelle est une entité autonome et complètement indépendante
+
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png) 
 
@@ -81,3 +84,33 @@ Un hyperviseur de type 2 est un logiciel qui s’installe et s’exécute à l�
 * On appelle également les hyperviseurs de type 2 des hyperviseurs hébergés.
 * Ici plus de ressources sont utilisées étant donné qu’on fait tourner l’hyperviseur et le système d’exploitation qui le supporte
 * Possibilité d’avoir plusieurs hyperviseurs sur le même hôte car ils ne sont pas liés au matériel 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png) 
+
+# Les solutions
+
+## Oracle's Virtualbox
+
+VirtualBox est un puissant produit de virtualisation x86 et AMD64 /Intel64 pour les entreprises ainsi que l'utilisation à domicile :
+
+* C’est une solution gratuite en tant que Logiciel Open source
+* S'exécute sur des serveurs Windows, Linux, Macintosh, Solaris
+* Prend en charge les systèmes invités comme les systèmes Windows, Windows 3.1, Linux, solaris, OpenBSD etc
+* VirtualBox peut présenter jusqu'à 32 CPU virtuelles à chaque machine virtuelle
+
+## Kernel Virtual Machine
+
+KVM est intégré au sein du noyau Linux depuis la version du noyau 2.6.20
+
+* Le système invité n'a pas besoin d'être modifié (Chaque système invité est traité par le noyau comme un processus autonome)
+* KVM s'utilise en ligne de commande, il n'y a pas d'interface graphique officielle
+* Pour utiliser KVM, le système hôte doit être équipé d’un processeur compatible (architectures x86 disposant des technologies Intel VT ou AMD SVM (AMD-V))
+* Actuellement, la majorité des processeurs Intel et AMD récents sont compatibles avec KVM
+
+## Citrix-XEN
+
+## Microsoft Hyper-V
+
+## VMware
+
+## QEMU
