@@ -4,20 +4,14 @@ Unified Communication refers to the integration of various communication tools a
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Unified Communication Components
+# Unified Communication Categories
 
-## Voice Communication
+## Real-Time Communication
 
-## Instant Messaging
-
-## Video Conferencing
-
-## Email Integration
-
-## Presence Information
+## Store-and-Forward Communication
 
 ## Collaboration Tools
 
-## Unified Messaging
+## Presence and Availability
 
-## Mobility
+## Mobility and Integration
