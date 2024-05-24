@@ -8,3 +8,5 @@ Session Initiation Protocol is a signalling protocol that's used for initiating,
 * Uses URIs to address endpoints
 * Allows endpoints to negotiate session parameters and exchange session descriptions using Session Description Protocol (SDP), which is used to specify session details that are necessary for establishing communication (Ex: *Media types*, *Codecs*, *IP address*, *etc.*) 
 * Designed to be extensible and interoperable with other protocol systems  (Ex: *PSTN*, *RTP*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
