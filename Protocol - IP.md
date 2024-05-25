@@ -11,6 +11,16 @@ Internet Protocol version 4 addresses are 32-bit binary numbers that are represe
 
 ## IPv4 Components
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/vpc-ip-anatomy.6b178b63cc72849678ddaddc133b6acf233c87b67a938a20a057a2601beaa91c.png)
+
+### Network Address
+
+### Host Address
+
+### Subnet Mask
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## IPv4 Address Types
 
 ### Unicast
@@ -24,6 +34,22 @@ Internet Protocol version 4 addresses are 32-bit binary numbers that are represe
 ### Private
 
 ### Public
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## IPv4 Address Classes
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/4hdOm.png)
+
+### Class A
+
+### Class B
+
+### Class C
+
+### Class D
+
+### Class E
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -51,6 +77,8 @@ The network prefix defines the network portion of the IPv6 address
 The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
 
 * Uniquely identifies a device within its network
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## IPv6 Address Types
 
