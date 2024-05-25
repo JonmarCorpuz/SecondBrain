@@ -9,6 +9,22 @@ The Internet Protocol is responsible for routing packets of data across networks
 
 Internet Protocol version 4 addresses are 32-bit binary numbers that are represented in dotted-decimal notation
 
+## IPv4 Components
+
+## IPv4 Address Types
+
+### Unicast
+
+### Broadcast
+
+### Multicast
+
+### Loopback
+
+### Private
+
+### Public
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # IPv6
@@ -31,6 +47,22 @@ The network prefix defines the network portion of the IPv6 address
 ### Subnet ID
 
 ### Interface Identifier (Client ID)
+
+## IPv6 Address Types
+
+### Unicast 
+
+### Multicast
+
+### Anycast
+
+### Loopback
+
+### Link-Local
+
+### Unique Local Address
+
+### Global Unicast Address
 
 The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
 
