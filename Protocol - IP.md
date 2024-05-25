@@ -43,13 +43,27 @@ Internet Protocol version 4 addresses are 32-bit binary numbers that are represe
 
 ### Class A
 
+Class A addresses range from 1.0.0.0 to 126.0.0.0
+
 ### Class B
+
+Class B addresses range from 128.0.0.0 to 192.255.0.0
 
 ### Class C
 
+Class C addresses range from 192.0.0.0 to 223.255.255.0
+
 ### Class D
 
+Class D addresses range from 224.0.0.0 to 239.255.255.255 and are reserved for multicast addresses
+
+* Used for multicasting data to multiple recipients simultaneously
+
 ### Class E
+
+Class E addresses range from 240.0.0.0 to 255.255.255.255 and are reserved for experimental and future use
+
+* Not intended for general use on the internet
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
