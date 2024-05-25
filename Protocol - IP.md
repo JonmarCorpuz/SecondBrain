@@ -48,22 +48,52 @@ The network prefix defines the network portion of the IPv6 address
 
 ### Interface Identifier (Client ID)
 
+The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
+
+* Uniquely identifies a device within its network
+
 ## IPv6 Address Types
 
 ### Unicast 
 
+An IPv6 unicast address identifies a single network interface and are used for one-to-one communication between devices on a network
+
 ### Multicast
+
+An IPv6 multicast address is an address that starts with the prefix **ff00::/8** and is used to deliver packets to multiple recipients efficiently
+
+* Devices interested in receiving multicast traffic subscribe to specific multicast addresses
 
 ### Anycast
 
+An IPv6 anycast address is an address that's assigned to multiple interfaces
+
+* Packets destined to an anycast address is sent to the nearest interface that hols that address
+* Often used for load balancing and service redundancy
+* Assigned from the unicast space
+
 ### Loopback
+
+An IPv6 loopback address is an address that's used to send packets to the same device
+
+* Often used for testing and troubleshooting
 
 ### Link-Local
 
+An IPv6 link-local address is an address that's always within the **fe80::/64** range and are automatically assigned to interfaces on a local network segment
+
+* Used primarily for communication between devices on the same link
+* Not routable beyond the local network segment
+
 ### Unique Local Address
+
+An IPv6 ULA address is a private address that starts with the **fc00::/7** prefix and is used for communication within a site or organization
+
+* Not globally routable
+* Intended for local use only
 
 ### Global Unicast Address
 
-The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
+An IPv6 global unicast address is a public address that starts with the **2000::/3** prefix and is used for communication between devices across different networks
 
-* Uniquely identifies a device within its network
+* Globally routable on the internet
