@@ -15,9 +15,21 @@ Internet Protocol version 4 addresses are 32-bit binary numbers that are represe
 
 ### Network Address
 
+The network address portion of an IPv4 address identifies the network to which the device belongs to
+
+* Determined by the subnet mask
+* Devices within the same network share the same network portion of their IPv4 address
+
 ### Host Address
 
+The host portion of an IPv4 address identifies a specific device within a network
+
+* Determined by the remaining bit of the address after the network portion
+* The host portion must be unique in every network
+
 ### Subnet Mask
+
+The subnet mask specifies how many bits of an IPv4 address represent the network portion
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -25,11 +37,28 @@ Internet Protocol version 4 addresses are 32-bit binary numbers that are represe
 
 ### Unicast
 
+An IPv4 unicast address is an address that identifies a single interface on a network
+
+* Used for one-to-one communication between devices on a network
+
 ### Broadcast
+
+An IPv4 broadcast address is an address that's used to send packets to all devices on a specific network segment
+
+* Has all host bits set to 1
+* Used for broadcasting information or messages to multiple devices simultaneously within a local network
 
 ### Multicast
 
+An IPv4 multicast address is an address that's used to deliver packets to multiple recipients efficiently
+
+* Devices interested in receiving multicast traffic subscribe to specific multicast addresses
+* Used for one-to-many or many-to-many communication
+* Commonly used in multimedia streaming, network discovery, and routing protocols
+
 ### Loopback
+
+An IPv4 loopback address is a special address that's used by a device to send traffic to itself
 
 ### Private
 
