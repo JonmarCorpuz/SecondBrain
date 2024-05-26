@@ -224,15 +224,33 @@ The Fragment Offset field indicated in what portion of a fragmented packet that 
 
 ### Time to Live (8 bits)
 
+The Time to Live field represents that maximum number of hops that the packet can traverse before being discarded
+
+* Decrements by one at each router and if it reaches zero, then the packet is discarded
+
 ### Protocol (8 bits)
+
+The Protocol field indicates the protocol used in the data portion of the packet (Ex: *TCP*, *UDP*, *ICMP*, *etc.*)
 
 ### Header Checksum (16 bits)
 
-### Source IPv4 Address (32 bits)
+The Header Checksum field provides error-checking for the header only
 
-### Destination IPv4 Address (32 bits)
+* Calculated based on the header contents and is recomputed at each router
+
+### Source Address (32 bits)
+
+The Source Address field specifies the IPv4 address of the packet's source
+
+### Destination Address (32 bits)
+
+The Source Address field specifies the IPv4 address of the packet's destination
 
 ### Options (Variable length)
+
+The Options field may include various additional information (Ex: *Record route*, *Timestamp*, *etc.*)
+
+* The presence and format of options are indicated by the header length field
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -246,14 +264,36 @@ The version section indicates the IP version that's being used, which in this ca
 
 ### Traffic Class (8 bits)
 
+The Traffic Class field is used to prioritize packets and specify QoS parameters
+
+* Similar to IPv4's ToS field
+
 ### Flow Label (20 bits)
+
+The Flow Label field is used to identify packets belonging to the same flow
+
+* Allows for special handling of those packets within routers
 
 ### Payload Length (16 bits)
 
+The Payload Length field indicates the length of the IPv6 payload in octets, excluding the header
+
 ### Next Header (16 bits)
+
+The Next Header field specifies that type of the next header in the packet
+
+* Indicates the protocol or extension header following the IPv6 header
 
 ### Hop Limit (8 bits)
 
-### Source IPv6 Address (128 bits)
+The Hop Limit field specifies the maximum number of router hops that the packet can traverse before being discarded
+
+* Similar to IPv4's TTL field
+
+### Source Address (128 bits)
+
+The Source Address field specifies the IPv6 address of the packet's source
 
 ### Destination IPv6 Address (128 bits)
+
+The Destination Address field specifies the IPv6 address of the packet's intended destination
