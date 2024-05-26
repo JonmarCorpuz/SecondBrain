@@ -117,6 +117,8 @@ The network prefix defines the network portion of the IPv6 address
 
 The subnet ID in an IPv6 address identifies a specific subnet within a network
 
+* Two subnets within the same network cannot have the same IPv6 network address and client ID combination
+
 ### Interface Identifier (Client ID)
 
 The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
