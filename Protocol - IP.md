@@ -185,17 +185,42 @@ An IPv6 global unicast address is a public address that starts with the **2000::
 
 ### Version (4 bits)
 
+The Version field indicates the IP version that's being used, which in this case is set to 4 for IPv4
+
 ### Header Length (4 bits)
+
+The Header Lengt field specifies the length of the IPv4 header in 32-bit words
+
+* With 4 bits, the Header Length fiel can represent values from 0 to 15, where each value corresponds to a header length ranging from 0 (no header present) to 60 byes (the maximum header length)
+* Since the header length is specified in 32-bit words, the actual header length in bytes is calculated by multiplying the value in the Header Length field by 4
 
 ### Type of Service (8 bits)
 
 ### Total Length (16 bits)
 
+The Total Length field indicates the total length of the IPv4 packet, including the header and payload
+
+* The maximum value is 65 535 bytes (524 280 bits)
+
 ### Identification (16 bits)
+
+The Identification field is used for uniquely identifying fragments of an original IP datagram
+
+* Primarily used in fragmentation and reassembly of IP packets
 
 ### Flags (3 bits)
 
+The Flags field contains control flags that are used for fragmentation and reassembly
+
+* Reserved (bit **0**), which indicates that the bit is reserved for potential future use
+* Don't Fragment (bit **1**), which indicates that the packet should not be fragmented
+* More Fragments (bit **2**), which indicated that there are more fragments following this one
+
 ### Fragment Offset (13 bits)
+
+The Fragment Offset field indicated in what portion of a fragmented packet that it belongs to
+
+* Specifies where the fragment fits in the original datagram
 
 ### Time to Live (8 bits)
 
@@ -216,6 +241,8 @@ An IPv6 global unicast address is a public address that starts with the **2000::
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2-Figure2-1.png)
 
 ### Version (4 bits)
+
+The version section indicates the IP version that's being used, which in this case is set to 6 for IPv6
 
 ### Traffic Class (8 bits)
 
