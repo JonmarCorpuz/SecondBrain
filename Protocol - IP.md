@@ -172,3 +172,13 @@ An IPv6 ULA address is a private address that starts with the **fc00::/7** prefi
 An IPv6 global unicast address is a public address that starts with the **2000::/3** prefix and is used for communication between devices across different networks
 
 * Globally routable on the internet
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IP Headers
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/technologies_white_paper0900aecd8054d37d-03.avif)
+
+## IPv4 Header
+
+## IPv6 Header
