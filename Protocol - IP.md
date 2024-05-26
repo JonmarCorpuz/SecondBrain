@@ -181,6 +181,8 @@ An IPv6 global unicast address is a public address that starts with the **2000::
 
 ## IPv4 Header Components
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1_-ZrMtI_V4FqPYeATVL5PSw.png)
+
 ### Version (4 bits)
 
 ### Header Length (4 bits)
@@ -208,3 +210,5 @@ An IPv6 global unicast address is a public address that starts with the **2000::
 ### Options (Variable length)
 
 ## IPv6 Header Components
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2-Figure2-1.png)
