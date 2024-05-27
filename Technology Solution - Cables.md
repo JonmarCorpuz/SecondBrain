@@ -8,6 +8,11 @@ A cable refers to the physical medium used to transmit data between devices in a
 
 ## Ethernet
 
+An Ethernet cable is a type of networking cable commonly used to connect devices within a LAN
+
+* Designed for transmitting data between networking devices
+* Typically uses twisted pair conductors to carry electrical signals
+
 ### Cat5e
 
 ### Cat6
