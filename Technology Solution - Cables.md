@@ -20,7 +20,7 @@ A cable refers to the physical medium used to transmit data between devices in a
 
 ## Twisted Pair
 
-A twisted pair cable consists of pairs of insulated copper wires twisted together that transmits data using electrical signals
+A twisted pair cable consists of four pairs of insulated copper wires twisted together that transmits data using electrical signals
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jsdfisdjbjdsbdsbdsbsdg.jpeg«0
 
