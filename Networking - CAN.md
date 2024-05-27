@@ -2,3 +2,9 @@ A Campus Area Network is a type of network that interconnects multiple LANs with
 
 * Provides high-speed connectivity
 * Facilitates the exchange of data and resources among different departments, buildings, or area within the campus
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# CAN Enterprise Network Architecture
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/03fig03.jpg)
