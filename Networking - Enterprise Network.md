@@ -2,3 +2,5 @@ An enterprise network refers to the interconnected IT infrastructure and network
 
 * Typically designed to meet the specific needs and requirements of large-scale organizations
 * Designed to be scalable
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
