@@ -10,4 +10,20 @@ The Network Address Translation is a process used in routers to modify network a
 
 Port Address Translation is a type of NAT that allows multiple devices within a private network to share a single public IP address
 
-* Each device within the private network is assigned a unique port number and when those devices communicate with external servers or devices on the internet, the device performing PAT will keep track of the source port number assigned to each interal device and will then translate both the private IP address and the source port number to a single public IP and a unique port number on the networking device
+### PAT Components
+
+#### Translation Table
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+### Outbound PAT Traffic
+
+1. **Packet Creation**: When an internal device sends a packet to an external destination, it constructs the packet with its own private IP address as the source IP and a random source port number
+2. **Translation Table Lookup**: The router or firewall performing PAT will check its translation table to determine the appropriate public IP address to use for the translation
+3. **Source Address Translation**: The router or firewall performing PAT will replace the source IP address in the packet header with its own public IP address, as well as the source port number with a unique port number allocated from a pool of available ports
+4. **Packet Forwarding**: The router or firewall performing PAT will forward the modified packet towards the external destination
+
+### Inbound PAT Traffic
+
+1. **Packet Arrival**: A packet arrives at the router or firewall performing the PAT
+2. **Translation Table Lookup**: The router or firewall performing PAT checks its translation table to find the corresponding entry for the destination IP address and port number in the incoming packet
