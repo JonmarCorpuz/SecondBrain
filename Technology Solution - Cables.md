@@ -47,6 +47,11 @@ A fiber optic cable is a type of cable that transmits data as pulses of light si
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/0510-fiber-closeup-left.jpg)
 
 * Consists of one or more thin strands of glass or plastic fibers surrounded by a protective outer layer
+* The core of each fiber is designed to carry light signals
+* The outer cladding is designed to reflect the light inward in order to help prevent signal loss or leakage
+* More suitable for transmitting large amounts of data over long distances since it can support higher bandwidth compared to copper cables
+* Allows for longer transmission distances without the need for signal boosting or regeneration since the light signals transmitted through fiber optic cables experience minimal signal loss
+* Suitable for environments with high levels of electrical noise since they're not affected by electromagnetic interference from external sources
 
 ### SMF
 
