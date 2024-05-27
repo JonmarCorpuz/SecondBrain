@@ -5,4 +5,5 @@ A Storage Area Network is a specialized high-speed network that connects and pro
 * High-speed, highly redundant, and completely dedicated to interconnecting storage devices
 * Facilitates efficient and centralized storage management, enabling multiple servers to access storage resources as if they were locally attached
 * Operates at the block level, which are fixed-size chunks of data within storage devices
+* Appears to the OS as a locally attached device
 * Uses different protocols to enable communication between servers and storage devices (Ex: *Fibre Channel*, *Fibre Channel over Ethernet*, *Internet Small Computer System*, *etc.*)
