@@ -25,6 +25,7 @@ A twisted pair cable consists of pairs of insulated copper wires twisted togethe
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jsdfisdjbjdsbdsbdsbsdg.jpeg«0
 
 * The twisting of the wires helps to reduce eletromagnetic interference from external sources and crosstalk between adjacent pairs, improving the cable's performance and reliability
+* Susceptible to eavesdropping
 
 ### Unshielded Twisted Pair
 
@@ -52,6 +53,8 @@ A fiber optic cable is a type of cable that transmits data as pulses of light si
 * More suitable for transmitting large amounts of data over long distances since it can support higher bandwidth compared to copper cables
 * Allows for longer transmission distances without the need for signal boosting or regeneration since the light signals transmitted through fiber optic cables experience minimal signal loss
 * Suitable for environments with high levels of electrical noise since they're not affected by electromagnetic interference from external sources
+* Provides greater security for data transmission compared to copper cables since they're more difficult to tap into or intercept
+* Easier to install and handle compared to bulky copper cables
 
 ### SMF
 
@@ -60,6 +63,10 @@ A fiber optic cable is a type of cable that transmits data as pulses of light si
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Coaxial 
+
+A coaxial cable is a type of electrical cable consisting of a central conductor, an insulating layer, a metallic shield, and an outer insulating layer that transmits data using electrical signals
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/CoaxialCable-660x330.jpg)
 
 ### RG-6
 
