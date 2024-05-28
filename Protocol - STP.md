@@ -36,7 +36,7 @@ The MAC address is a switch's unique physical address
 
 ## Designated Port
 
-A designated port is the root switch port that's selected to forward traffic on a specific network segment
+A designated port is the port that's selected to forward traffic on a specific network segment
 
 * Each switch in a STP network must have only one designated port, which will be responsible for forwarding traffic towards the root bridge
 * The designated port is the port with the lowest cost to reach the root bridge
