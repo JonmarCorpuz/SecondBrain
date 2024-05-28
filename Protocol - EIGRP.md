@@ -13,11 +13,11 @@ The Enhanced Interior Gateway Routing Protocol is an advanced distance-vector ro
 
 The metric calculation in EIGRP considers the K-values used to calculate the best route
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jhbfidbjfndngkdfnjsdfdfasd.png)
+
 * The K-value can be between 0 and 255 and independently set
 * A K-value should be equal to zero (0) if it isn't considered in the metric calculation and one (1) if it is
 * Neighboring devices must have matching K-values
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jhbfidbjfndngkdfnjsdfdfasd.png)
 
 ## K1. Bandwidth
 
