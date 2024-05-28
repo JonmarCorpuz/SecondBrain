@@ -8,6 +8,8 @@ The Spanning Tree Protocol is a network protocol that ensures a loop-free topolo
 
 ## Root Bridge
 
+The root bridge is the reference point for all spanning tree calculations within a network of interconnected switches
+
 ## Designated Port
 
 ## Blocking Port
@@ -17,6 +19,8 @@ The Spanning Tree Protocol is a network protocol that ensures a loop-free topolo
 ## Root Port
 
 The root port is the port that provides the shortest path to the root bridge
+
+* The root bridge is elected based on a comparison of Bridge IDs, which consists of a bridge priority value and a MAC address
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
