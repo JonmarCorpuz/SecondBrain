@@ -1,5 +1,7 @@
 The Spanning Tree Protocol is a network protocol that ensures a loop-free topology in Ethernet networks
 
+* Operates at the Data Link Layer of the OSI model (Layer 2)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # STP Components
