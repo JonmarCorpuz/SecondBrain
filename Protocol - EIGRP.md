@@ -65,13 +65,35 @@ The EIGRP routing table contains the best route to each destination in the netwo
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# EIGRP Path Selection Process
+# EIGRP Neighbor Relationship Process
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/02fig04_alt.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/hbidhbdbhdbdsfnjadfnjafnjafnj.png)
 
-1. Neighbour discovery and maintenance
-2. Exchange of routing information
-3. Calculation of routes using the Diffusing Update Algorithm
-4. Building the routing table
-5. Handling topology changes
-6. Metric calculation
+## 1. Neighbor Discovery 
+
+EIGRP-capable routers send **Hello** packets to each other to initiate the discovery process
+
+* EIGRP-capable routers periodically send Hello packets to the multicast address 224.0.0.10 to discover and maintain neighbor relationships
+
+## 2. Full Routing Information
+
+After establishing initial contact through Hello packets, the EIGRP-capable routers will exchange full routing information
+
+* Only routing table changes are sent to the neighboring devices after the full routing information has been exchanged between EIGRP-capable routers are exchanged in order to reduce bandwidth usage
+* Exchanging routing information with other EIGRP-capable routers enable them to build a comprehensive view of the network topology
+
+## 3. Acknowldgement
+
+Each EIGRP-capable router will send an acknowledgement back to the other EIGRP-capable routers after receiving the full routing information
+
+* Confirms that the routing information was received
+* Ensures reliable communication between the routers
+
+## 4. Neighorship Established
+
+After the exchange of Hello packets, updates, and acknowledgements, the neighbor relationships between the EIGRP-capable routers are fully established
+
+* Enables them to continue sharing routing information and maintaining updated and accurate routing tables as the network topology changes
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
