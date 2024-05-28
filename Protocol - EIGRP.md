@@ -1,32 +1,47 @@
-The Enhanced Interior Gateway Routing Protocol is an advanced distance-vector routing protocol, which is a protocol that's used to determine the best path for data packets based on distance metrics, that's used on a network for automating routing decisions and configuration
+The Enhanced Interior Gateway Routing Protocol is an advanced distance-vector routing protocol that's used to dynamically determine the best path for data packets based on distance metrics
 
-* Reduces network traffic and speeds up convergence, which is the time it takes for all routers in the network to have a consistent view of the network, by sending updates only when there are changes in the network topology
-* Prevents routing loops using techinques such as route poisoning, split horizon, and holddown timers
+* Used on a network for automating routing decisions and configuration
+* Reduces network traffic and speeds up convergence (the time it takes for all routers in the network to have a consistent view of the network) by sending updates only when there are changes in the network topology
+* Prevents routing loops by employing various techinques (Ex: *Route poisoning*, *Split horizon*, *Holddown timers*, *etc.*)
 * Provides more precise and efficient route selection based on current network conditions (Ex: *Bandwidth*, *Hop count*, *etc.*)
 * Can enhance network performance by spreading traffic across several paths to avoid overloading any single route
-* Can manage large routing tables and reduce the amount of routing information that must be processed and stored by routers by supporting features such as route summarization and route aggregation
+* Can manage large routing tables and reduce the amount of routing information that must be processed and stored by routers by employing various features (Ex: *Route summarization*, *Route aggregation*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Path Metrics
+# EIGRP Metric Calculation
 
-## Bandwidth
+The metric calculation in EIGRP considers the K-values used to calculate the best route
+
+* The K-value can be between 0 and 255 and independently set
+* A K-value should be equal to zero (0) if it isn't considered in the metric calculation and one (1) if it is
+* Neighboring devices must have matching K-values
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jhbfidbjfndngkdfnjsdfdfasd.png)
+
+## K1. Bandwidth
 
 Bandwidth refers to the maximum rate of data transfer across a given path
 
-## Delay
+## K2. Delay
 
 Delay refers to the time it takes for a packet to travel from the source to the destination
 
-## Load
+## K3. Load
 
-The load refers to the current traffic usage on a link as a franction of the link's capacity 
+The load refers to the current traffic usage on a link
 
-## Reliability
+* Represented as a fraction of 255 (with 255 being 100% utilization)
+* A dynamic metric that can change over time as traffic conditions change
 
-Reliability refers to the trustworthiness of a network link based on the historical stability and error rate of the link
+## K4. Reliability
 
-## Maximum Transmission Unit
+Reliability refers to the trustworthiness of a network link
+
+* Represented as a fraction of 255 (with 255 being 100% reliable)
+* Typically based on the historical stability and error rate of the link
+
+## K5. Maximum Transmission Unit
 
 MTU refers to the largest size of IP packet or frame that can be sent over a network link without the need for fragmentation
 
