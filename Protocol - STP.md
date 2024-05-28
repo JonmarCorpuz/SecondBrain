@@ -36,7 +36,7 @@ The MAC address is a switch's unique physical address
 
 ## Designated Port
 
-A designated port is a switch port that's selected to forward traffic on a specific network segment
+A designated port is the root switch port that's selected to forward traffic on a specific network segment
 
 * Each switch in a STP network must have only one designated port, which will be responsible for forwarding traffic towards the root bridge
 * The designated port is the port with the lowest cost to reach the root bridge
@@ -57,9 +57,10 @@ A blocked port is a switch port that's put into a blocking state to prevent loop
 
 ## Root Port
 
-The root port is the port that provides the shortest path to the root bridge
+The root port is the port on a non-root switch that provides the shortest path to the root bridge within the STP network
 
-* The root bridge is elected based on a comparison of Bridge IDs, which consists of a bridge priority value and a MAC address
+* The root port is calculated based on its path cost to reach the root switch, which is based on the cumulative cost of all the links between the non-root switch and the root switch, and determined by the speed of the link (faster links have lower costs)
+* The root port is placed in a forwarding state to allow traffic to pass through
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
