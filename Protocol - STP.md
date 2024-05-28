@@ -73,3 +73,17 @@ The root port is the port on a non-root switch that provides the shortest path t
 3. **Blocking redundant paths**, which is where STP will identify and block redundant paths in the network to prevent loops
 4. **Dynamic reconfiguration**, which is when STP will dynamically reconfigure the network topology in resonse to changes by recalculating the spanning tree to ensure that there are no loops and that traffic can still flow through the network
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# STP Types
+
+## STP (802.1D)
+
+## RSTP (802.1w)
+
+## MSTP (802.1s)
+
+## PVST+
+
+## RPVST+
+
