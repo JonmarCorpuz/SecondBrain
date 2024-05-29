@@ -7,7 +7,7 @@ Subnetting is a technique used to divide a single network into smaller and more 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Subnetting Method
+# Subnetting Methods
 
 ## FLSM
 
