@@ -45,6 +45,8 @@ Classless Inter-Domain Routing is a method used for IP addressing to allow for m
 | /1 | 128.0.0.0 | 127.255.255.255 | 2,147,483,648 | 2,147,483,646 |
 | /0 | 0.0.0.0 | 255.255.255.255 | 4,294,967,296 | 4,294,967,294 |
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # IPv6 CIDR
 
 | CIDR | SUBNET MASK	| NUMBER OF USABLE IP ADDRESSES |
