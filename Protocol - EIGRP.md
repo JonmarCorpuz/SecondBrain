@@ -67,7 +67,7 @@ The EIGRP routing table contains the best route to each destination in the netwo
 
 # EIGRP Neighbor Relationship Process
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/hbidhbdbhdbdsfnjadfnjafnjafnj.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hbidhbdbhdbdsfnjadfnjafnjafnj.png)
 
 ## 1. Neighbor Discovery 
 
