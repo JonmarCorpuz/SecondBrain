@@ -1,1 +1,1 @@
-
+The Hot Standby Router Protocol is a Cisco proprietary redundancy protocol that allows for the configuration of a group of routers that'll work together in order to provide redundancy and high availability
