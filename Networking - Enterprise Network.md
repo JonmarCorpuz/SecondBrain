@@ -4,3 +4,30 @@ An enterprise network refers to the interconnected IT infrastructure and network
 * Designed to be scalable
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Enterprise Network Architecture Components
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/A-Typical-Enterprise-Network-Source.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/01fig20_alt.jpg)
+
+## Enterprise Edge
+
+The Enterprise Edge refers to the part of the network that interfaces with external networks and services (Ex: *Internet*, *Extranets*, *Remote branch offices*, *etc.*)
+
+* Acts as a boundary between the internal network of an organization and the outside world
+* Includes various networking devices (Ex: *Firewalls*, *Routers*, *VPN concentrators*, *etc.*)
+* Critical for ensuring the security, availability, and performance of network services for an organization
+
+## Service Provider Edge
+
+The Service Provider Edge refers to the part of the network that sits between an organization's internal network and their service provider's network
+
+* Enables and facilitates the interconnection of the SP's network with the organization's internal network
+* Responsible for managing and directing traffic within the provider's network to ensure efficient use of network resources and optimal performance for customers (Ex: *Traffic prioritization*, *Traffic shaping*, *Traffic engineering*, *etc.*)
+* The Service Provider Edge is where various services offered by the SP are delivered to customers (Ex: *VPNs*, *Internet access*, *etc.*)
+* Serves as the entry point to the Sp's network
+
+## Server Farm
+
+A Server Farm, also known as a data center or a server cluster, is a centralized facility used to house and manage a large number of servers and associated equipment
