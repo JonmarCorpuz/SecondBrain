@@ -51,4 +51,3 @@ A transparent proxy is a type of proxy server that intercepts normal communicati
 An authentication proxy is a type of proxy server that authenticates users or devices attempting to access network resources and services, typically by validating their credentials against a centralized authentication system (Ex: *LDAP*, *etc.*)
 
 * Sits between client devices and servers
-* Allows administrators to configure access rules and security policies based on usernames and user group names instead of only through source IP addresses
