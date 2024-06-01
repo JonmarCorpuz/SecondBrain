@@ -32,7 +32,7 @@ A firewall is a network security device or software that monitors incoming and o
 
 A stateless firewall is a type of firewall that doesn't maintain any knowledge of the state or context of active connections passing through it
 
-* Operates at the Network layer of the OSI model (Layer 3) and is seen as a router hop 
+* Operates at the Network layer of the OSI model (Layer 3) and is seen as a routed hop 
 * Evaluates each individual packet based solely on predetermined criteria (Ex: *Source IP addresses*, *Destination IP addresses*, *Port numbers*, *Protocol types*, *etc.*)
 * When a packet arrives at a stateless firewall, it examines the packet headers and compares them against a set of static rules or ACLs
 * Less effective at identifying and blocking certain types of threats
@@ -42,7 +42,7 @@ A stateless firewall is a type of firewall that doesn't maintain any knowledge o
 
 A stateful firewall is a type of firewall that keeps track of the state of active connections passing through it
 
-* Operates at the Network layer of the OSI model (Layer 3) and is seen as a router hop 
+* Operates at the Network layer of the OSI model (Layer 3) and is seen as a routed hop 
 * Monitors the state of active connections and makes decisions about allowing or blocking traffic based on the context of those connections (Ex: *Source IP address*, *Destination IP address*, *Source port number*, *Destination port number*, *etc.*)
 * Maintains a state table, which records the state of each connection (Ex: *Source IP addresses*, *Destination IP addresses*, *Port numbers*, *Sequence numbers*, *Packet headers such as SYN, SYN-ACK, and ACK*, *etc.*)
 * When a packet arrives at the firewall, it checks its state table to determine whether the packet is part of an existing authorized connection or if it's attempting to establish a new and potentially unauthorized connection
@@ -51,6 +51,9 @@ A stateful firewall is a type of firewall that keeps track of the state of activ
 
 ## Transparent Firewall
 
-A transparent firewall is a type of firewall
+A transparent firewall is a type of firewall that acts as a bridge by inspecting and moving network frames between interfaces
 
-* Operates at the Data Link layer of the OSI model (Layer 2) and isn't seen as a router hop
+* Operates at the Data Link layer of the OSI model (Layer 2) and isn't seen as a routed hop
+* Filters traffic based on the source and destination MAC addresses 
+* Can be seen as a "stealth firewall" that supports outside and inside interfaces
+* Helps organizations solve issues relating to traffic visibility and threat protection without having to re-addressing their network (Ex: *Site-to-Site network communication*, *etc.*)
