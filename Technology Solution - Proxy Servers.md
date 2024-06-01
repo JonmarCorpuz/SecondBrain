@@ -6,6 +6,7 @@ A proxy server is an intermediate server that sits between end users and the web
 * Can block IP addresses and websites
 * Can filter web content
 * Can cache data to speed up common requests
+* Introduces delay and a single point of failure
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -17,11 +18,15 @@ A forward proxy is a type of proxy server that's placed in front of clients and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Fordward%20Proxy.png)
 
+* Doesn't let users go directly outside and vice-versa
+
 ## Reverse Proxy
 
 A reverse proxy is a type of proxy server that's palced in front of web servers and retrieves resources on behalf of a client from one or more servers
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Reverse%20Proxy.png)
+
+* Doesn't let servers go directly outside and vice-versa
 
 ## HTTP Proxy
 
