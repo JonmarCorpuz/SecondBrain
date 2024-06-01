@@ -57,3 +57,9 @@ A transparent firewall is a type of firewall that acts as a bridge by inspecting
 * Filters traffic based on the source and destination MAC addresses 
 * Can be seen as a "stealth firewall" that supports outside and inside interfaces
 * Helps organizations solve issues relating to traffic visibility and threat protection without having to re-addressing their network (Ex: *Site-to-Site network communication*, *etc.*)
+
+## Identity Firewall
+
+An identity firewall is a type of firewall that provides IAM capabilities along with traditional firewall functionality to enforce access control policies based on user identities
+
+* Allows organizations to implement more granular and context-aware security policies in order to reduce the risk of unauthorized access
