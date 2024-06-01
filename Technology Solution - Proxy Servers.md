@@ -1,4 +1,4 @@
-A proxy is an intermediate server that sits between end users and the web services that they want to access and forwards their web requests to the destined web server and return its reponses back to the client
+A proxy server is an intermediate server that sits between end users and the web services that they want to access and forwards their web requests to the destined web server and return its reponses back to the client
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/615635613cd4216f4d4f01d5_web-browsing-with-proxy.png)
 
