@@ -45,3 +45,9 @@ A SOCKS proxy is a type of proxy server that handles any type of traffic
 ## Transparent Proxy
 
 A transparent proxy is a type of proxy server that intercepts normal communication at the network layer without requiring any special client configuration
+
+## Authentication Proxy
+
+An authentication proxy is a type of proxy server that authenticates users or devices attempting to access network resources and services, typically by validating their credentials against a centralized authentication system (Ex: *LDAP*, *etc.*)
+
+* Sits between client devices and servers 
