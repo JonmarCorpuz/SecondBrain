@@ -68,6 +68,10 @@ An identity firewall is a type of firewall that provides IAM capabilities along 
 
 ## Proxy Firewall
 
+A proxy firewall, also known as an application firewall or proxy server firewall, is a type of firewall that inspects and filters traffic at the application layer
+
+* Operates at the Application layer of the OSI model (Layer 7)
+
 ## Unified Threat Management Firewall
 
 ## Next-Generation Firewall
