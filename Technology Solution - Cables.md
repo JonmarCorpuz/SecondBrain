@@ -2,6 +2,16 @@ A cable refers to the physical medium used to transmit data between devices in a
 
 * Serves as the infrastructure that connects devices to each other and other networks, allowing them to communicate with each other
 
+* ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cable Categories 
+
+## Straight Cable
+
+## Cross Cable
+
+## Rolled Over Cable
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Cable Types
