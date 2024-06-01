@@ -63,3 +63,13 @@ A transparent firewall is a type of firewall that acts as a bridge by inspecting
 An identity firewall is a type of firewall that provides IAM capabilities along with traditional firewall functionality to enforce access control policies based on user identities
 
 * Allows organizations to implement more granular and context-aware security policies in order to reduce the risk of unauthorized access
+* Allows administrators to configure access rules and security policies based on usernames and user group names instead of only through source IP addresses
+* Integrates with Microsoft Active Directory in conjunction with an external Active Directory Agent that provides the actual identity mapping
+
+## Proxy Firewall
+
+## Unified Threat Management Firewall
+
+## Next-Generation Firewall
+
+## Threat-focused Next Generation Firewall
