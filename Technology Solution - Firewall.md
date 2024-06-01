@@ -28,6 +28,8 @@ A firewall is a network security device or software that monitors incoming and o
 
 # Firewall Types
 
+## Stateless Firewall
+
 ## Stateful Firewall
 
 A stateful firewall is a type of firewall that keeps track of the state of active connections passing through it
