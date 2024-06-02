@@ -62,3 +62,4 @@ CBAC is a security mechanism that controls access to network resources based on 
 * Examines the payload of packets to identify the application protocols being used
 * Allows administrators to define access control policies based on contextual information (Ex: *Application type*, *User identity*, *Time of access*, *Session state*, *etc.*)
 * Maintains awareness of the state of network connections and sessions, allowing it to make access control decisions based on the context of each connection
+* May generate real-time alerts and audit trails upon detecting suspicious activity using CBAC inspection rules
