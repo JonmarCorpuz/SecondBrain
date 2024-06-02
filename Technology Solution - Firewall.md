@@ -28,9 +28,9 @@ A firewall is a network security device or software that monitors incoming and o
 
 # Firewall Types
 
-## Stateless Firewall
+## Stateless Inspection Firewall
 
-A stateless firewall is a type of firewall that doesn't maintain any knowledge of the state or context of active connections passing through it
+A stateless inspection firewall is a type of firewall that doesn't maintain any knowledge of the state or context of active connections passing through it
 
 * Operates at the Network layer of the OSI model (Layer 3) and is seen as a routed hop 
 * Evaluates each individual packet based solely on predetermined criteria (Ex: *Source IP addresses*, *Destination IP addresses*, *Port numbers*, *Protocol types*, *etc.*)
@@ -38,9 +38,9 @@ A stateless firewall is a type of firewall that doesn't maintain any knowledge o
 * Less effective at identifying and blocking certain types of threats
 * Lack the ability to perform advanced security functions (Ex: *Packet inspection*, *Deep packet inspection*, *etc.*)
 
-## Stateful Firewall
+## Stateful Inspection Firewall
 
-A stateful firewall is a type of firewall that keeps track of the state of active connections passing through it
+A stateful inspection firewall is a type of firewall that keeps track of the state of active connections passing through it
 
 * Operates at the Network layer of the OSI model (Layer 3) and is seen as a routed hop 
 * Monitors the state of active connections and makes decisions about allowing or blocking traffic based on the context of those connections (Ex: *Source IP address*, *Destination IP address*, *Source port number*, *Destination port number*, *etc.*)
@@ -74,6 +74,14 @@ A proxy firewall, also known as an application firewall or proxy server firewall
 
 ## Unified Threat Management Firewall
 
+A Unified Threat Management Firewall is a type of firewall that integrates multiple security features into a single platform or appliance (Ex: *IPS*, *Antivirus*, *VPN*, *Firewall*, *DLP*, *etc.*)
+
+* Offers simplified management, reduced complexity, and often cost savings compared to deploying and managing multiple standalone security solutions
+
 ## Next-Generation Firewall
+
+A Next-Generation Firewall is a type of firewall that incorporates traditional firewall features along with additional capabilities to provide deeper inspection and more granular control over network traffic
+
+* Designed to identify and control applications at the network level, allowing administrators to enforce policies based on various elements (Ex: *Ports*, *Protocols*, *Applications*, *Application functions*, *etc.*)
 
 ## Threat-focused Next Generation Firewall
