@@ -54,7 +54,15 @@ Cisco's Adaptive Security Appliance is a security device that provides various s
 
 ## Failover
 
+Failover refers to the ability of the ASA to automatically switch traffic processing from a primary unit to a secondary unit in the event of a failure or downtime
+
+### Active-Standby Failover
+
 ### Stateful Failover
+
+### Stateless Failover
+
+### Transparent Failover
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
