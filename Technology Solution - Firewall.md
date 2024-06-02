@@ -80,14 +80,18 @@ A Unified Threat Management Firewall is a type of firewall that integrates multi
 
 ## Next-Generation Firewall
 
-A Next-Generation Firewall is a type of firewall that incorporates traditional firewall features along with additional capabilities to provide deeper inspection and more granular control over network traffic
+A NGFW is a type of firewall that incorporates traditional firewall features along with additional capabilities to provide deeper inspection and more granular control over network traffic
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/SFDGdfrdfhrherhdhrdfh.jpg)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdsdssgdfgwgsdADGSAGSFGH.jpg)
 
 * Designed to identify and control applications at the network level, allowing administrators to enforce policies based on various elements (Ex: *Ports*, *Protocols*, *Applications*, *Application functions*, *etc.*)
 * Can integrate with authentication systems to identify users and apply policies based on their identities in order to enable organizations to enforce access controls and security policies on a per-user basis
 * Can perform SSL inspection by decrypting and inspecting SSL-encrypted traffic to identify and block threats hidden within encrypted communications
 * May incorporate advanced threat detection and prevention mechanisms (Ex: *Sandboxing*, *Threat intelligence feeds*, *Behavior-based analysis*, *etc.*)
 
-## Threat-focused Next Generation Firewall
+### Threat-focused Next Generation Firewall
 
 A threat-focused NGFW is a type of firewall that places primary emphasis on threat detection, prevention, and response capabilities
 
