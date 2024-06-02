@@ -57,6 +57,7 @@ ABAC is a flexible access control model that evluates access decisions based on 
 
 CBAC is a security mechanism that controls access to network resources based on contextual information (Ex: *Application protocol*, *Session state*, *User identity*, *Time of access*, *Source IP address*, *Destination IP address*, *Packet payload information*, *Packet header information*, *etc.*)
 
+* Operates on the Network, Transport, and Application layers of the OSI model (Layer 2,3, and 7)
 * Performs deep packet inspection to analyze the contents of network packets at the Application layer
 * Examines the payload of packets to identify the application protocols being used
 * Allows administrators to define access control policies based on contextual information (Ex: *Application type*, *User identity*, *Time of access*, *Session state*, *etc.*)
