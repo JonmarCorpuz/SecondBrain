@@ -76,6 +76,10 @@ Cisco's Adaptive Security Appliance is a security device that provides various s
 
 ## Port to Application Mapping
 
+PAM is the process of associating a particular port number with a specific application or service
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ldfbhbdsbjdbddfkdjbbjkdfjbkd.png)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Event Logging
