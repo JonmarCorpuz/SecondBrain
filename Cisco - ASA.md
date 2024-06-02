@@ -80,6 +80,8 @@ PAM is the process of associating a particular port number with a specific appli
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ldfbhbdsbjdbddfkdjbbjkdfjbkd.png)
 
+* Each network service or application running on a device listens for incoming connections on a specific port number
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Event Logging
