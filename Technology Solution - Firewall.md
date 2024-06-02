@@ -83,5 +83,18 @@ A Unified Threat Management Firewall is a type of firewall that integrates multi
 A Next-Generation Firewall is a type of firewall that incorporates traditional firewall features along with additional capabilities to provide deeper inspection and more granular control over network traffic
 
 * Designed to identify and control applications at the network level, allowing administrators to enforce policies based on various elements (Ex: *Ports*, *Protocols*, *Applications*, *Application functions*, *etc.*)
+* Can integrate with authentication systems to identify users and apply policies based on their identities in order to enable organizations to enforce access controls and security policies on a per-user basis
+* Can perform SSL inspection by decrypting and inspecting SSL-encrypted traffic to identify and block threats hidden within encrypted communications
+* May incorporate advanced threat detection and prevention mechanisms (Ex: *Sandboxing*, *Threat intelligence feeds*, *Behavior-based analysis*, *etc.*)
 
 ## Threat-focused Next Generation Firewall
+
+A threat-focused NGFW is a type of firewall that places primary emphasis on threat detection, prevention, and response capabilities
+
+* Incorporates advanced threat detection mechanisms to identify known threats traversing the network (Ex: *IPS*, *Signature-based detection*, *Anomaly detection*, *Behavioral analysis*, *etc.*)
+* Leverages real-time threat intelligence feeds from internal and external sources to enhance threat detection accuracy and effectiveness
+* Integrates multiple security features and technologies into a single platform (Ex: *Firewall*, *IPS*, *Antivirus*, *URL Filtering*, *Application control*, *Encryption inspection*, *etc.*)
+* Incorporates contextual awareness capabilities, allowing them to analyze network traffic in the context of user identities, device types, application behaviors, and network protocols in order to perform more accurate threat detection and better enforcement of security policies
+* Includes automated threat response capabilities by automating response actions based on predefined policies and security rules in order to help mitigate the impact of security incidents more quickly and efficiently
+* Designed to scale and perform efficiently in high-volume network environments by supporting high-speed data throughput and low latency while maintaining effective threat detection and prevention capabilities
+* Can integrate with SOAR platforms to enable centralized management, orchestration, and automation of security operations
