@@ -10,7 +10,7 @@ Cisco's Adaptive Security Appliance is a security device that provides various s
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Cisco ASA Components
+# Cisco ASA Access Control Components
 
 ## Security Levels
 
@@ -29,6 +29,14 @@ The security levels between 1 and 99 are assigned to interfaces based on their t
 ### Security Levels 100
 
 The level 100 security level is considered the most trusted
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cisco ASA VPN Components
+
+## Internet Security Association and Key Management Protocol Policies
+
+An ISAKMP policy is a set of parameters that governs the process of establising a secure communication channel (**IPsec tunnel**) between two networking devices (Ex: *Encryption algorithm*, *Authentication method*, *Hashing Alogrithm*, *Diffie-Hellman group*, *Lifetime*, *ISAKMP key*, *ISAKMP policy priority*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
