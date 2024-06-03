@@ -10,6 +10,28 @@ Cisco's Adaptive Security Appliance is a security device that provides various s
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Cisco ASA Components
+
+## Security Levels
+
+Security levels are used to determine the trustworthiness of a port and the permissions of traffic flowing between interfaces
+
+### Security Level 0
+
+The level 0 security level is considered the least trusted
+
+### Security Levels 1-99
+
+The security levels between 1 and 99 are assigned to interfaces based on their trustworthiness
+
+* Traffic between interfaces with security levels from 1 to 99 is controlled by ACLs and NAT rules
+
+### Security Levels 100
+
+The level 100 security level is considered the most trusted
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Cisco ASA Features
 
 ## Firewall
