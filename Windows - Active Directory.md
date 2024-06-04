@@ -1,4 +1,6 @@
-A A Domain Controller (DC) is a server that serves as the central authority for authenticating and authorizing users and computers within a Windows domain network
+## AD DC
+
+A Domain Controller (DC) is a server that serves as the central authority for authenticating and authorizing users and computers within a Windows domain network
 
 * Authenticates users and computers when they attempt to log in to the domain
 * Enforces security policies and permissions to determine what resources the authenticated users and computers are allowed to access within the domain
