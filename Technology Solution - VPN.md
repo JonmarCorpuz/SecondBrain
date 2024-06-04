@@ -89,6 +89,10 @@ An SSL VPN is a type of VPN that allows users to access web applications via a w
 
 ## OpenVPN
 
+OpenVPN is an open-source VPN software that provides a secure and reliable way to establish encrypted connections over a public network
+
+* Supports client-to-server and site-to-site VPN deployments
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## IPsec VPN
