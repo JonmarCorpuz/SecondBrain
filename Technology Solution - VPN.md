@@ -37,9 +37,14 @@ A VPN tunneling protocol is a protocol that defines the method used to encapsula
 The Internet Protocol Security is a suite of protocols that's used to secure IP communications in order to ensure the confidentiality and integrity of data transmitted over IP networks
 
 * Operates at the Network layer of the OSI model (Layer 3)
-* 
+* Allows entities to authenticate each other in order to ensure that the communication remains between trusted parties and to prevent unauthorized access to network resources
 
 ## L2TP
+
+The Layer 2 Tunneling Protocol is a tunneling protocol that's used to establish VPNs or provide remote access to network resources over a public network by creating a tunnel between a VPN client and a VPN gateway over an existing IP network
+
+* Operates at the Data Link layer of the OSI model (Layer 2)
+* Often used in conjunction with IPsec to provide security features (Ex: *Encryption*, *Authentication*, *etc.*)
 
 ## PPTP
 
@@ -80,7 +85,11 @@ An SSL VPN is a type of VPN that allows users to access web applications via a w
 
 * Operates at the Application layer of the OSI model (Layer 7)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## OpenVPN
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## IPsec VPN
 
@@ -88,8 +97,16 @@ An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure 
 
 * Provides a secure tunnel for transmitting data between two endpoints
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## PPTP VPN
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## L2TP VPN
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## WireGuard VPN
+
+
