@@ -14,4 +14,7 @@ The Internet Security Association and Key Management Protocol is a protocol used
 
 ## Phase 1
 
+The initial phase of negotiation between two VPN peers to establish a secure channel for further communication
+
 ## Phase 2
+
