@@ -101,6 +101,8 @@ An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure 
 
 * Provides a secure tunnel for transmitting data between two endpoints
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fgfdhstrhtresyhdgdsfhgresygdf.gif)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hgfghfgdfhgsdgfgddfhhgdfdfhfdsdgfsdgdsg.PNG)
 
 ## Phase 1: IKE SA Establishment
