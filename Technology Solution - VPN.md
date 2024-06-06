@@ -101,6 +101,30 @@ An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure 
 
 * Provides a secure tunnel for transmitting data between two endpoints
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hgfghfgdfhgsdgfgddfhhgdfdfhfdsdgfsdgdsg.PNG)
+
+## Phase 1: IKE SA Establishment
+
+Phase 1 is responsible for establishing the IKE SA, which is responsible for setting up a secure tunnel through which subsequent communications for Phase 2 can occur, between the VPN peers
+
+* The VPN peers authenticate each other to ensure mutual trust and identity using various authentication methods (Ex: *Pre-sahred keys*, *Digital certificates*, *Public-key encryption*, *etc.*)
+* Includes a Diffie-Hellman key exchange process, allowing the VPN peers to agree upon a shared secret key without transmitting it over the network
+* The VPN peers negotiate encryption parameters to ensure compatibility and security between the VPN peers (Ex: *Encryption algorithm*, *Hash algorithm*, *Authentication method*, *etc.*)
+
+### Main Mode
+
+### Agressive Mode
+
+## Phase 2: IPsec SA Establishment
+
+Phase 2 is responsible for establishing the IPsec SA, which is responsible for securing the actual data transmission, between two VPN peers
+
+* The VPN peers exchange the proposals for the parameters of the IPsec SA that was established in the Phase 1 (Ex: *Encryption algorithm*, *Hash algorithm*, *Security protocol*, *etc.*)
+* Generates the keys that'll be used for encrypting and decrypting data in order to ensure the confidentiality and integrity of the data during transit
+
+### Quick Mode
+
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## PPTP VPN
