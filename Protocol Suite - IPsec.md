@@ -46,3 +46,5 @@ The IKE is a key managemetn protocol that's used to negotiate and establish Secu
 2. **Pahse 2**: IPsec peers will then establish Security Associations for IPsec communication (Ex: *Encryption keys*, *Authentication keys*, *Lifetimes*, *etc.*), which will define the parameters for securing communication between IPsec peers in order to ensure the confidentiality, integrity, and authenticity of the data transmitted over the VPN tunnel
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dfghfhdfhddfhgsdgsdgewggwer.gif)
