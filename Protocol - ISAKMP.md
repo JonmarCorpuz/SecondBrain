@@ -10,13 +10,4 @@ The Internet Security Association and Key Management Protocol is a protocol used
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# ISAKMP Negotiation Phases
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hgfghfgdfhgsdgfgddfhhgdfdfhfdsdgfsdgdsg.PNG)
-
-## Phase 1
-
-The initial phase of negotiation between two VPN peers to establish a secure channel for further communication
-
-## Phase 2
 
