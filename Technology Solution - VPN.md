@@ -56,6 +56,14 @@ The Point-to-Point Tunneling Protocol is a networking protocol developed by Micr
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# VPN Categories
+
+## Policy-based VPNs
+
+## Route-based VPNs
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Types of VPNs
 
 ## Remote Access
