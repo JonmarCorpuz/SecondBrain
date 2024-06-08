@@ -56,11 +56,24 @@ The Point-to-Point Tunneling Protocol is a networking protocol developed by Micr
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# VPN Categories
+# VPN Implementation Types
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/gdfhgfjfhgkjghkghdfgrdtytyuiyiyuf.png)
 
 ## Policy-based VPNs
 
+A policy-based VPN is a type of VPN implementation that operates based on predefined security policies or rules
+
+* Uses predefined security policies or rules to match VPN traffic
+* Traffic is sent over a pair SAs, one which is used to each direction of traffic, meaning that you can have different rules for different types of traffic between two devices
+
 ## Route-based VPNs
+
+A route-based VPN is a type of VPN implementation that uses routing protocols to dynamically determine which traffic should be sent through the VPN tunnel
+
+* Uses routing tables to decide how to route VPN traffic through the tunnel (Ex: *Target matching based on prefix*, *etc.*)
+* Each network prefix has a single pair of SAs, meaning that all traffic types between two devices use the same pair of SAs
+* Provides less functionality but is much simpler to set up
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
