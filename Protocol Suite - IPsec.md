@@ -69,6 +69,8 @@ In IKE Phase 1, IPsec peers will create an IKE SA (Phase 1 tunnel) in order to s
 
 In IKE Phase 2, IPsec peers will then create an IPsec SA (Phase 2 tunnel) in order to set up the VPN
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hfghdfggjhdfhvhrdgsdgursdhrejftjhtjt.png)
+
 * Faster and agile
 * Runs over the Phase 1 tunnel
 * Can be torn down when no more interesting traffic occurs while the Phase 1 tunnel remains intact, making establishing a Phase 2 tunnel faster and require less work
