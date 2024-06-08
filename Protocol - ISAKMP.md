@@ -56,6 +56,8 @@ The Flags field contains various flags that provide additional information about
 
 ## Message ID
 
+The Message ID field contains the unique ID of the ISAKMP message that's being exchanged
+
 ## Length
 
 The Length field specifies the total length of the ISAKMP message, including the ISAKMP header and any payload data
