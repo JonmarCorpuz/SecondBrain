@@ -60,14 +60,14 @@ The Point-to-Point Tunneling Protocol is a networking protocol developed by Micr
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/gdfhgfjfhgkjghkghdfgrdtytyuiyiyuf.png)
 
-## Policy-based VPNs
+## Policy-based VPN Implementation
 
 A policy-based VPN is a type of VPN implementation that operates based on predefined security policies or rules
 
 * Uses predefined security policies or rules to match VPN traffic
 * Traffic is sent over a pair SAs, one which is used to each direction of traffic, meaning that you can have different rules for different types of traffic between two devices
 
-## Route-based VPNs
+## Route-based VPN Implementation
 
 A route-based VPN is a type of VPN implementation that uses routing protocols to dynamically determine which traffic should be sent through the VPN tunnel
 
@@ -79,7 +79,7 @@ A route-based VPN is a type of VPN implementation that uses routing protocols to
 
 # Types of VPNs
 
-## Remote Access
+## Remote Access VPN
 
 A remote access VPN is a type of VPN that enables users to connect to a private network securely from a remote location through the Internet
 
@@ -88,7 +88,7 @@ A remote access VPN is a type of VPN that enables users to connect to a private 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Site-to-Site 
+## Site-to-Site VPN
 
 A site-to-site VPN is a type of VPN that connects entire different LANs together, creating a virtual network-to-network connection
 
@@ -100,7 +100,7 @@ A site-to-site VPN is a type of VPN that connects entire different LANs together
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## SSL VPN
+## SSL VPN 
 
 An SSL VPN is a type of VPN that allows users to access web applications via a web browser
 
