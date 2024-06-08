@@ -9,25 +9,25 @@ The Internet Protocol Security is a suite of protocols that's used to secure IP 
 
 ## Authentication Header
 
-The AH adds a header to the IP packet that includes a cryptographic checksum based on the packet contents in order to provide data integrity, authentication, and anti-replay protection for IP packets
+The AH protocol adds a header to the IP packet that includes a cryptographic checksum based on the packet contents in order to provide data integrity, authentication, and anti-replay protection for IP packets
 
 * Ensures that the data hasn't been tampered with during transit
 * Doesn't provide encryption for the packet payload
 
 ## Encapsulating Security Payload
 
-The ESP encrypts a packet's payload and optionally the authentication data in order to provide confidentiality and integrity
+The ESP protocol encrypts a packet's payload and optionally the authentication data in order to provide confidentiality and integrity
 
 ### Transport Mode
 
-The ESP only encrypts and authenticates the payload of the IP packet while leaving the IP header intact
+The ESP protocol only encrypts and authenticates the payload of the IP packet while leaving the IP header intact
 
 * Alls intermediate devices to examine and route the packet based on its destination IP address
 * Commonly used for securing end-to-end communication between two hosts
 
 ### Tunnel Mode
 
-The ESP encapsulates and encrypts the entire IP packet within another IP packet
+The ESP protocol encapsulates and encrypts the entire IP packet within another IP packet
 
 * Provide end-to-end security between the two endpoints
 * Makes the original IP packet insible to intermediate devices
@@ -35,7 +35,7 @@ The ESP encapsulates and encrypts the entire IP packet within another IP packet
 
 ## Internet Key Exchange
 
-The IKE is a key managemetn protocol that's used to negotiate and establish Security Associations between IPsec peers (Ex: *VPN clients*, *VPN gateways*, *etc.*)
+The IKE protocol is a key managemetn protocol that's used to negotiate and establish Security Associations between IPsec peers (Ex: *VPN clients*, *VPN gateways*, *etc.*)
 
 * Allows IPsec peers to authenticate each other, establish secure communication channels, and exchange cryptographic keys for encryption and authentication
 * Uses various encryption and authentication algorithms to protect the key exchange process in order to ensure the integrity and confidentiality of the excahnged keys
