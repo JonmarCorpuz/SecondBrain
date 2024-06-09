@@ -2,6 +2,7 @@ The Internet Key Exchange protocol is a protocol used in IPsec VPNs to establish
 
 * Negotiates the parameters of the SA (Ex: *Encryption algorithms, *Authentication methods*, *Key exchange mechanisms*, *etc.*)
 * Facilitates the exchange of the keys used for encryption and authentication between two devices in order to ensure that those keys are securely exchanged
+* An implementation of ISAKMP
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
