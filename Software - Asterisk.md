@@ -1,4 +1,4 @@
-Asterisk is a powerful opne-source software that acts as a telephone engine or a VoIP server
+Asterisk is a powerful open-source software that acts as a telephone engine or a VoIP server
 
 * Replaces traditional Private Branch Exchanges with by allowing computers to function as a telephone system, making it a more versatile and cost-effective VoIP-based solution
 * Provides a wide range of VoIP services (Ex: *Voice calls*, *Video calls*, *Text messaging*, *etc.*
