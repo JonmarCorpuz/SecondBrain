@@ -10,6 +10,22 @@ The Internet Protocol Security is a suite of protocols that's used to secure IP 
 
 ## IPsec Tunnels
 
+An IPsec tunnel is a secure communication channel that's established between two endpoints over an untrusted network
+
+* Provides a secure means for transmitting data between networks or hosts by encrypting and authenticating the traffic that traverses them
+
+### Tunnel Mode
+
+An IPsec tunnel in tunnel mode encapsulates the entire original IP packet, including the IP header, within a new IP packet along with its own IP header containing the source and destination addresses of the VPN gateways or IPsec peers
+
+* The original packet is encrypted and authenticated to ensure confidentiality, integrity, and authenticity during transit
+
+### Transport Mode
+
+An IPsec tunnel in transport mode only encapsulates the payload of the original IP packet, leaving the original IP header intact
+
+* Typically used for end-to-end communication between hosts or securing traffic between a host and a VPN gateway
+
 ## Interesting Traffic
 
 Interesting traffic refers to traffic that matches certain rules (Ex: *Network prefixes*, *Traffic types*, *etc.*)
