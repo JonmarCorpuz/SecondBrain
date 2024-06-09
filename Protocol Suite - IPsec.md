@@ -100,5 +100,3 @@ In IKE Phase 2, IPsec peers will then create an IPsec SA (Phase 2 tunnel) in ord
 # IPsec Phases
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dfghfhdfhddfhgsdgsdgewggwer.gif)
-
-## IKE Phase 1
