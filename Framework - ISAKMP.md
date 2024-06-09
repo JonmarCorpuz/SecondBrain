@@ -1,7 +1,6 @@
-The Internet Security Association and Key Management Protocol is a protocol used 
+The Internet Security Association and Key Management Protocol is a protocol framework that defines the procedures and packet formats usd for establishing, negotiating, modifying, and deleting SAs between peers in an IPsec VPN
 
-* Defines procedures and packet formats to establish, negotiate, modify and delete SAs, which contain all the information required for execution of various network security services
-* Defines payloads for exchanging key generation and authentication data
+* Defines the overall framework for key management and SA establishment (Ex: *Payloads for exchanging key generation and authentication data*, *etc.*)
 * ISAKMP formats provide a consistent framework for transferring key and authentication data independent of the key generation technique, encryption algorithm, and authentication mechanism
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
