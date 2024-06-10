@@ -1,5 +1,5 @@
 
-* Implemented with a near-zero-downtime
+* Implemented with a near-zero-downtime policy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
