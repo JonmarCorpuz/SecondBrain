@@ -1,4 +1,6 @@
 
+* Implemented with a near-zero-downtime
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Types of Maintenances
