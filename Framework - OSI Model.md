@@ -6,7 +6,7 @@ The Open Systems Interconnection model is a conceptual framework that breaks dow
 
 # OSI Model Layers
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1636366469923.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/NCDafYdORnKavM8aa711kg_fa51b33b7ddd4d9497a7a08deb522fe1_C2M2L2_Item02_img2_OSI-model_v3_new.png)
 
 ## 7. Application Layer
 
