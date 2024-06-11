@@ -77,3 +77,5 @@ The physical layer deals with the physical transmission of data between devices
 # OSI vs TCP/IP
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/AlNgVaY3SdO6d9FGNfawRg_6288440de8ae467a872cff2df38909e1_C2M2L2_Item-04_img3_OSI-TCP-layer-comparison.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/j8zOXD2lQta9WYdXdVj1lQ_3f8299c40e714116aa76af397fd175e1_C2M2L2_Item-04_img4_Data-unit-comparison.png)
