@@ -2,13 +2,9 @@ Palo Alto Networks Operating System is the software platform for Palo Alto Netwo
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# PAN OS Web UI Components
+# PAN OS Web UI Tabs
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/klnggdsklfngfkgdsgklsngklsdotirtoirtirio.png)
-
-## Dashboard
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/oioiroitoritierieotioeitoeitoeieoriow.png)
 
 ## ACC Tab
 
@@ -31,3 +27,9 @@ Palo Alto Networks Operating System is the software platform for Palo Alto Netwo
 ## User Activity Tab
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# PAN OS Web Dashboard
+
+## Dashboard
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/oioiroitoritierieotioeitoeitoeieoriow.png)
