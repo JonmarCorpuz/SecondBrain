@@ -2,6 +2,8 @@ A Virtual Private Network is a technology that creates a private and secure comm
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1_uoTideZRhY7hXrho-9wbFg.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/38KzTKwGStyh7poKFy3CYQ_c8c29cb17ed54105b78f3e2b84afd8e1_M2L1_04_img3.png)
+
 * Increases privacy by concealing personal information (Ex: *IP addresses*, *etc.*)
 * Provides a server that acts as a gateway between a computer and the Internet, which creates a path similar to a virtual tunnel that hides the computer's IP address and encrypts the data in transit to the Internet
 * Enables trusted and encrypted connections to be established on non-trusted networks
