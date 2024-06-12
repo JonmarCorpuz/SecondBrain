@@ -4,6 +4,12 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 # PA Firewall Interface Types
 
+## Management Interfaces
+
+* Management Profiles should only have access to this interface
+
+## HA Interfaces
+
 ## Network Interfaces
 
 ## Layer 2 Interfaces
