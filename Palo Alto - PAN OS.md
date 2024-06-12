@@ -17,6 +17,7 @@ Palo Alto Networks Operating System is the software platform for Palo Alto Netwo
 ## Objects Tab
 
 * **Addresses**:
+* **Address Groups**:
 
 ## Device Tab
 
