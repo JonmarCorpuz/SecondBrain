@@ -1,19 +1,20 @@
 
-# Types of Encryption
-
-## Symmetric Encryption
-
-* Fast and has low overhead
-
-## Asymmetric Encryption
 
 * Slower than symmetric encryption
 * Usually used to establish a communication tunnel between two devices and to exchange symmetric encryption keys
 
-### Public Key
+# Asymmetric Encryption Components
+
+## Public Key
 
 * Used to encrypt data
 
-### Private Key
+## Private Key
 
 * Used to decrypt data
+
+# Asymmetric Encryption Algorithms
+
+## ECC
+
+## RSA
