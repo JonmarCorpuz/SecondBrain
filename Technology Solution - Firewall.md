@@ -6,6 +6,18 @@ A firewall is a network security device or software that monitors incoming and o
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Firewall Security Zones
+
+## Outside Zone
+
+## Inside Zone
+
+## DMZ Zone
+
+## Server Zone
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Firewall Components
 
 ## Access Control Lists
