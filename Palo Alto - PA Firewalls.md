@@ -8,11 +8,9 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 * Management Profiles should only have access to this interface
 
-## HA Interfaces
-
-## Network Interfaces
-
 ## Layer 2 Interfaces
+
+## Layer 3 Interfaces
 
 ## Tap Interfaces
 
