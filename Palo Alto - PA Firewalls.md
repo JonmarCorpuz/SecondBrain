@@ -24,7 +24,7 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## Tunnel Interfaces
 
-## Virtual Wire
+## V-Wire Interface
 
 ## HA Interfaces
 
