@@ -16,6 +16,8 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## Layer 3 Interfaces
 
+* Every layer 3 interface must be assigned to a virtual router so that it can forward traffic to other interfaces
+
 ## Tap Interfaces
 
 ## Loopback Interfaces
