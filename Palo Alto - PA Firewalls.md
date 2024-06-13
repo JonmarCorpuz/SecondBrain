@@ -24,6 +24,8 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## Virtual Wire
 
+## HA Interfaces
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # PA Firewall Features
