@@ -26,9 +26,10 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## V-Wire Interface
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdertetretwetrtrtwrterreryttytrytryetwtertwrtwr.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdertetretwetrtrtwrterreryttytrytryetwtertwrtwfgdhdfghdf.png)
 
-* Connects two physical interfaces
+* Logically connects two physical interfaces
+* No routing happens on v-wire interfaces
 * Allocated to a physical interface
 * Allows the firewall to work and enforce security rules in transparent mode, which makes it so that a user or network doesn't know that they're passing through a stateful firewall
 
