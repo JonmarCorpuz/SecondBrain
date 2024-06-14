@@ -24,6 +24,8 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## Tunnel Interfaces
 
+* Can be assigned as a layer 2 or layer 3 interface 
+
 ## V-Wire Interface
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdertetretwetrtrtwrterreryttytrytryetwtertwrtwfgdhdfghdf.png)
