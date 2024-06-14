@@ -57,6 +57,10 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 * Virtual firewalls inside our physical appliance
 
+## Virtual Routers
+
+* Enables organizations to seperate routing instances (Ex: *Virtual router for inside routing*, *Virtual router for outside routing*, *etc.*)
+
 ## VPN Tunneling
 
 * Site-to-site IPsec tunnels
