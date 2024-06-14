@@ -53,7 +53,7 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## Clustering
 
-## Virtual Systems
+## Virtual Firewalls
 
 * Virtual firewalls inside our physical appliance
 
