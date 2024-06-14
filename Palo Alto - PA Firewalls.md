@@ -1,5 +1,7 @@
 A Palo Alto firewall are firewalls that are developed and manufactured by Palo Alto Networks
 
+* Enforces security policies from top to bottom (**Security overruling**)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # PA Firewall Interface Types
