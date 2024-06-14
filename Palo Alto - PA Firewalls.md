@@ -41,9 +41,11 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# PA Firewall Features
+# PA NGFW Firewall Features
 
 ## Antivirus
+
+* Palo Alto Wildfire
 
 ## Anti-Spyware
 
