@@ -55,7 +55,7 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## High Availability Cluster
 
-* Active-Standby, only one PA will forward traffic while the other PA will standby in case the active-primary goes down
+* Active-Standby, only one PA will forward traffic while the other PA will standby in case the active-primary goes down (Everything that's done on the active unit will be synced to the standby unit, meaning that the standby PA will have a copy of what the active PA was doing)
 * Active-Active, all PA will forward traffic at the same time in order to provide load balancing (Needs a configured virtual IP)
 * Heartbeat information
 
