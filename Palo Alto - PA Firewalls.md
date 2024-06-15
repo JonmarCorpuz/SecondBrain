@@ -53,7 +53,11 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ## DoS Protection
 
-## Clustering
+## High Availability Cluster
+
+* Active-Standby, only one PA will forward traffic while the other PA will standby in case the active-primary goes down
+* Active-Active, all PA will forward traffic at the same time in order to provide load balancing (Needs a configured virtual IP)
+* Heartbeat information
 
 ## Virtual Firewalls
 
