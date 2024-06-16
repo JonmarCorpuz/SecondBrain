@@ -18,7 +18,7 @@ The Domain Name System protocol is a protocol that's used to translate domain na
 
 ## Recursive Resolver
 
-A recursive DNS server is a server that acts as a middleman between a DNS client and a DNS nameserver
+A recursive DNS server is a type of DNS server that acts as a middleman between a DNS client and a DNS nameserver
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hjgjkhgbmvncvxbxvcbxcvbcvbcxvbxcvbvcxbvcn.png)
 
@@ -27,7 +27,7 @@ A recursive DNS server is a server that acts as a middleman between a DNS client
 
 ## Root Nameserver
 
-The DNS root nameserver is a server that's responsible for resolving DNS queries starting from the root of the DNS hierarchy
+The DNS root nameserver is a type of DNS server that's responsible for resolving DNS queries starting from the root of the DNS hierarchy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/asdadfdasfsadasdsafdafsdasfadfdfasdfdsfadfafsdfadfadfad.png)
 
@@ -38,11 +38,20 @@ The DNS root nameserver is a server that's responsible for resolving DNS queries
 
 ## TLD Nameserver
 
+A TLD nameserver is a type of DNS server that's responsible for managing DNS records and responding to queries for domain names within a specific TLD
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/qweqweqwewqeqrewrqwerwerqrqetqwerqfsdfsdfsdf.png)
+
+* Maintains information for all the domain names that share a common domain extension
+* Responds to a recursive resolver's request by redirecting it to the authoritative nameserver for that domain
 
 ## Authoritative Nameserver
 
+An authoritative nameserver is a type of DNS server that contains information specific to the domain name it serves
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/iuyoiiottuyiuyoyiututyuytiuotututuiuoiturtuytiuoiyturutoiutituitui.png)
+
+* Provides a recursive resolver with the information for the DNS queries that it's requesting (Ex: *IP address*, *Alias domain*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
