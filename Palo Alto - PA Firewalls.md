@@ -62,6 +62,7 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 * Active-active requires another HA interface to be configured in order to do a VR sync, as well as a virtual IP for the inside interface and the outside interface
 * In active-active, you can't have a single NAT statement that can be duplicated across two files
 * Virtual IP on outside interface
+* Active/Active NAT HA binding
 
 ## Virtual Firewalls
 
