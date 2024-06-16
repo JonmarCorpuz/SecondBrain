@@ -63,6 +63,7 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 * In active-active, you can't have a single NAT statement that can be duplicated across two files
 * Virtual IP on outside interface
 * Active/Active NAT HA binding
+* Both firewalls must be the same model
 
 ## Virtual Firewalls
 
