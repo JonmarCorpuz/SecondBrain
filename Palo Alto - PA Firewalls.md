@@ -59,6 +59,8 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 * Active-Active, all PA will forward traffic at the same time in order to provide load balancing (Needs a configured virtual IP)
 * Heartbeat information (Everything in the active firewall will be mirrored to the standby firewall, so make sure that the standby firewall is connected to the same networks as the active firewall via the same ports)
 * The configuration from the active firewall will sync with the standby firewall, allowing it to have the same exact configurations as the active firewall (I think)
+* Active-active requires another HA interface to be configured in order to do a VR sync, as well as a virtual IP for the inside interface and the outside interface
+* In active-active, you can't have a single NAT statement that can be duplicated across two files
 
 ## Virtual Firewalls
 
