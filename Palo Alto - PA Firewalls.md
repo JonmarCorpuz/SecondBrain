@@ -67,6 +67,8 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 ## Virtual Firewalls
 
 * Virtual firewalls inside our physical appliance
+* Isolate policies between tenants
+* Virtual system 1 is the default virtual system
 
 ## Virtual Routers
 
