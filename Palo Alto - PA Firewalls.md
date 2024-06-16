@@ -79,4 +79,10 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 * Site-to-site IPsec tunnels
 
-## GlobalProtect
+## VPN Tunneling
+
+### Site-to-site IPsec tunnels
+
+### GlobalProtect VPN
+
+* Two options: GlobalProtect portal and GlobalProtect gateway
