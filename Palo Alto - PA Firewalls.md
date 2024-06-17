@@ -101,3 +101,7 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
   3. Create a Certificate Signing Request (CSR) or self-signed certificate
   4. Create a SSL/TLS Service Profile that we'll point the certificate to
   5. Configure and Enable the GlobalProtect Portal
+ 
+* Snapshots
+* Format disks
+* Repair partitions
