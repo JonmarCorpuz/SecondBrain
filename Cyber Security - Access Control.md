@@ -4,7 +4,7 @@ Access control is a security mechanism used to regulate and manage access to net
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Access Control Types
+# Access Control Methods
 
 ## Physical Access Control
 
@@ -17,11 +17,15 @@ Logical access control regulates access to digital resources using a various aut
 * Uses various authentication mechanisms (Ex: *Passwords*, *Biometrics*, *Smart cards*, *etc.*)
 * Uses various authorization mechanisms (Ex: *Access control lists*, *RBAC*, *etc.*)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## NAC
 
 Network Access Control governs access to computer networks and resoures based on the identity and security posture of the devices seeking to connect
 
 * Enforces security policies to ensure that only compliant and trusted devices are allowed to access the network
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## MAC
 
@@ -30,6 +34,8 @@ Mandatory Access Control is a security model that enforces access control polici
 * A security label is a label that indicates a network resource or asset's sensitivity or classification level and is typically represented as security clearances, security classifications, or sensitivity levels
 * Access rules are predefined rules that dictate which users or processes can access specific resources based on their security labels (Access decisions are made by comparing the security labels of the user and the requested resource against the access rules defined by the central authority)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## DAC
 
 Discretionary Access Control is a security model that regulates access to resources based on the discretion of resource owners
@@ -37,12 +43,18 @@ Discretionary Access Control is a security model that regulates access to resour
 * Resource owners have full control over who can access their resources and what level of access is granted
 * Resource owners have the authority to set access permissions for that resource (Ex: *Read*, *Write*, *Execute*, *etc.*)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## RBAC
 
 Role-Based Access Control is a policy-based access control model that assigns permissions to users based on their roles within an organization
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/kokjojoojojohhohuouoorjhgoojgorjgorjgorgjrojg.png)
+
 * Access is determined by the role a user is assigned rather than the individual themself
 * Reduces the risk of unauthorized access by ensuring that users only have access to the resources that they need for their roles
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## ABAC
 
@@ -52,6 +64,8 @@ Attribute-Based Access Control is a flexible access control model that evluates 
 * Resource attributes include resource type, resource sensitivty, resource owner, resource location, and resource metadata
 * Environmental attributes include date and time, network location, device information, and connection security
 * Contextual attributes include session context, policy context, and external factors
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## CABAC
 
@@ -63,3 +77,37 @@ Context-Based Access Control is a security mechanism that controls access to net
 * Allows administrators to define access control policies based on contextual information (Ex: *Application type*, *User identity*, *Time of access*, *Session state*, *etc.*)
 * Maintains awareness of the state of network connections and sessions, allowing it to make access control decisions based on the context of each connection
 * May generate real-time alerts and audit trails upon detecting suspicious activity using CBAC inspection rules
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Access Control Models
+
+## AGDLP
+
+The **Account, Global, Domain, Local, Permission** is an access control model that's used to organize, scale, and manage permissions effectively within Active Directory by structuring group membership in a way that simplifies access control and permission assignment across domains and forests
+
+* **A**ccount refers to a user or group account
+* **G**lobal refers to a global group that can contain user accounts, groups, or other global groups from any domain within a forest
+* **D**omain local group refers to a group that can contain user accounts, global groups, or other domain local groups from any domain within a particular domain tree or forest
+* **L**ocal group refers to a local groups that's used within a single domain
+* **P**ermissions refer to the actual permissions that are assigned to the groups or accounts
+
+## AGUDLP
+
+The **Account, Global, Universal, Domain, Local, Permission**
+
+* **A**ccount refers to a user or group account
+* **G**lobal group refers to a global group that can contain user accounts, groups, or other global groups from any domain within a forest
+* **U**niversal group refers to a group that can contain user accounts, global groups, and other universal groups from any domain within a forest
+* **D**omain local group refers to a group that can contain user accounts, global groups, or other domain local groups from any domain within a particular domain tree or forest
+* **L**ocal group refers to a local groups that's used within a single domain
+* **P**ermissions refer to the actual permissions that are assigned to the groups or accounts
+
+## AGLP
+
+The **Account, Global, Local, Permission**
+
+* **A**ccount refers to a user or group account
+* **G**lobal group refers to a global group that can contain user accounts, groups, or other global groups from any domain within a forest
+* **L**ocal group refers to a local groups that's used within a single domain
+* **P**ermissions refer to the actual permissions that are assigned to the groups or accounts
