@@ -81,6 +81,19 @@ A Palo Alto firewall are firewalls that are developed and manufactured by Palo A
 
 ### GlobalProtect VPN
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# PA Firewall Management
+
+## PAN-OS Version Types
+
+* Don't ever go from one version to another without updating into the base version for the release that you want to upgrade to
+* Always backup the configuration file of a PA firewall before upgrading to the next base version
+
+### Base
+
+### Maintenance
+
 * Two options: GlobalProtect portal and GlobalProtect gateway
 * GlobalProtect Portal prerequisites:
   1. Create a VPN User and VPN Users Group
