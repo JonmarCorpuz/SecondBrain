@@ -10,7 +10,7 @@ The Open Systems Interconnection model is a conceptual framework that breaks dow
 
 ## 7. Application Layer
 
-The application layer provides services directly to end-users and applications 
+The application layer provides services directly to **end-users and applications** 
 
 * Enables the communication between different software applications
 * Serves as the interface between the network and the software application that utilize the network for communication
@@ -18,7 +18,7 @@ The application layer provides services directly to end-users and applications
 
 ## 6. Presentation Layer
 
-The presentation layer focuses on data formatting, encryption, compressions, and other functions related to data syntax and semantics
+The presentation layer focuses on **data formatting**, **encryption**, **compressions**, and other functions related to data syntax and semantics
 
 * Ensures that data from the appication layer of one system can be understood by the application layer of another system
 * Acts as a translator regardless of differences in data representation
@@ -26,7 +26,7 @@ The presentation layer focuses on data formatting, encryption, compressions, and
 
 ## 5. Session Layer
 
-The session layer is responsible for establishing, maintaining, and terminating sessions between applications
+The session layer is responsible for **establishing**, **maintaining**, and **terminating sessions** between applications
 
 * Coordinates communication sessions between computers
 * Involves managing the dialog control between devices (Ex: *Establishing sessions*, *Maintaining sessions*, *Sychronizing sessions*, *Session checkpointing* *etc.*)
@@ -35,14 +35,13 @@ The session layer is responsible for establishing, maintaining, and terminating 
 
 ## 4. Transport Layer
 
-The transport layer is responsible for the end-to-end delivery of data between hosts or endpoints on a network
+The transport layer is responsible for the **end-to-end delivery of segments** (TCP) or **datagrams** (UDP) between endpoints on a network
 
 * Focuses on data segmentation and reassembly, error detection and correction, flow control, and end-to-end connection establishment and termination
-* Supports *TCP* and *UDP*
 
 ## 3. Network Layer
 
-The network layer focuses on routing data packets from the source to the destination based on logical network addresses
+The network layer focuses on **routing packets** from the source to the destination based on logical network addresses
 
 * Assigns logical addresses to devices connected to a network
 * Responsible for determining the best path for data packets to reach their destination
@@ -51,7 +50,7 @@ The network layer focuses on routing data packets from the source to the destina
 
 ## 2. Data Link Layer
 
-The data link layer is responsible for providing reliable data transfer across a physical link or medium between neighboring network nodes 
+The data link layer is responsible for **forwarding frames** across a physical medium between neighboring network nodes, as well as **error checking** and **flow control**
 
 * Implemented in NICs and network switches
 * Ensures that data packets are delivered error-free and in sequence over the physical link
@@ -64,7 +63,7 @@ The data link layer is responsible for providing reliable data transfer across a
 
 ## 1. Physical Layer
 
-The physical layer deals with the physical transmission of data between devices
+The physical layer deals with the **physical transmission of bits** between devices
 
 * Includes the actual hardware components and physical medium used for communication
 * Defines the characteristics of the physical medium used for communication (Ex: *Cable type*, *Frequency spectrum*, *etc.*)
