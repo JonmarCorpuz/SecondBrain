@@ -1,8 +1,6 @@
 
 # Forest Structure
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ad_forest_img1.jpg)
-
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jouiuouoouioyiuooewiruweorituwpreworew.png)
 
 ## Forest
@@ -25,3 +23,8 @@ A domain in Active Directory is a logical grouping of network objects that share
 * Serves as administrative boundaries within an Active Directory forest
 * Provides a means for organizing and managing network resources in a hierarchical manner
 
+## Organizational Unit
+
+## Object
+
+An object in Active Directory refers to a unique identifiable entity that represents a resource or security principal within Active Directory
