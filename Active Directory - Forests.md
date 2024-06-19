@@ -3,6 +3,8 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ad_forest_img1.jpg)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jouiuouoouioyiuooewiruweorituwpreworew.png)
+
 ## Forest
 
 A forest in Active Directory is a collection of one or more domains that share a common schema, configuration, and global catalog
@@ -22,3 +24,4 @@ A domain in Active Directory is a logical grouping of network objects that share
 
 * Serves as administrative boundaries within an Active Directory forest
 * Provides a means for organizing and managing network resources in a hierarchical manner
+
