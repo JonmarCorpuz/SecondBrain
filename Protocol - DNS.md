@@ -2,15 +2,42 @@ The Domain Name System protocol is a protocol that's used to translate domain na
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# DNS Hierarchy
+# DNS Structure
 
-## Root Zone
+## Root Domain
+
+The root domain serves as the starting point for all DNS resolutions and is denoted by a single dot (Ex: *www.example.com.*, *victim.local.*. *etc.*)
+
+* The highest level in the hierarchical DNS structure
 
 ## Top-Level Domain
 
+A TLD is the last segment of a domain name and serves to identify the type and location of websites and online resources
+
+* TLDs are managed by domain name registries 
+
+### Genertic Top-Level Domain
+
+A gTLD is a type of TLD that's not tied to any specific country or territory (Ex: *.com*, *.org*, *.net*, *.info*, *etc.*)
+
+### Country Code Top-Level Domain
+
+A ccTLD is a type of TLD that's reserved for a specific country or territory (Ex: *.us*, *.ca*, *.uk*, *.jp*. *etc.*)
+
 ## Second-Level Domain
 
+A SLD represents the unique identifier within a domain name 
+
+* The segment of a domain that appears directly to the left of the TLD (Ex: *example in example.com*, *etc.*)
+* A SLD must be unique within their TLD
+* 
+
 ## Subdomains
+
+A subdomain is a subdivision of a domain 
+
+* Enables the creation of separate or distinct branches within a domain name hierarchy
+* Helps organize content or services into logical sections under a single domain name
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -67,6 +94,8 @@ An authoritative nameserver is a type of DNS server that contains information sp
 
 ## Reverse Lookup Zone
 
+## Root Zone
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # DNS Records
@@ -84,3 +113,21 @@ An authoritative nameserver is a type of DNS server that contains information sp
 ## PTR
 
 ## TXT
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DNS Resolution
+
+## Recursive DNS Resolution
+
+
+
+## Iterative DNS Resolution
+
+
+
+## Caching DNS Resolution
+
+
+
+## Reverse DNS Resolution
