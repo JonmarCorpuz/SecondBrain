@@ -14,7 +14,7 @@ Virtualization is technology that enables the creation of virtual versions of co
 
 A hypervisor, also known as a VMM (Virtual Machine Monitor) or virtualization engine, is a software or hardware component that enables the creation and management of VMs
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/ereytuyiytutyretrwerrqwewqewqrer.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ereytuyiytutyretrwerrqwewqewqrer.png)
 
 * Its primary function is to create and manage virtual machines (Guest OS) on a physical host machine (Host OS), allowing them to behave independently and run their own OS and applications
 
