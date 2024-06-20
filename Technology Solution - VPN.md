@@ -100,6 +100,8 @@ A site-to-site VPN is a type of VPN that connects entire different LANs together
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# VPN Solutions
+
 ## SSL VPN 
 
 An SSL VPN is a type of VPN that allows users to access web applications via a web browser
