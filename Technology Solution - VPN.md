@@ -60,8 +60,6 @@ The Point-to-Point Tunneling Protocol is a networking protocol developed by Micr
 
 # VPN Implementation Types
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/gdfhgfjfhgkjghkghdfgrdtytyuiyiyuf.png)
-
 ## Policy-based VPN Implementation
 
 A policy-based VPN is a type of VPN implementation that operates based on predefined security policies or rules
@@ -122,9 +120,9 @@ OpenVPN is an open-source VPN software that provides a secure and reliable way t
 
 An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure connections over the internet
 
-* Provides a secure tunnel for transmitting data between two endpoints
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/gdfhgfjfhgkjghkghdfgrdtytyuiyiyuf.png)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fgfdhstrhtresyhdgdsfhgresygdf.gif)
+* Provides a secure tunnel for transmitting data between two endpoints
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
