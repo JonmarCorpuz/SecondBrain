@@ -128,11 +128,11 @@ An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## PPTP VPN
+## L2TP VPN
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## L2TP VPN
+## PPTP VPN
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
