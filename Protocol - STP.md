@@ -21,6 +21,8 @@ The root bridge is the reference point for all spanning tree calculations within
 
 * The switch with the lowest Bridge ID becomes the root bridge
 * All ports on the root bridge are designated ports that are put in a forwarding state, while the other switches in the topology must have a path to reach the root bridge
+* A root bridge only gives up its position if it receives a BPDU that contains a lower bridge ID than its own bridge ID
+* once all switches in the topology agree on the root bridge, only the root bridge will be able to generate BPDUs, while the other switches may only forward them
 
 ## Bridge ID
 
@@ -82,17 +84,77 @@ A blocked port is a switch port that's put into a blocking state to prevent loop
 
 The root port is the port on a non-root switch that provides the shortest path to the root bridge within the STP network
 
-* The root port is calculated based on its path cost to reach the root switch, which is based on the cumulative cost of all the links between the non-root switch and the root switch, and determined by the speed of the link (faster links have lower costs)
 * The root port is placed in a forwarding state to allow traffic to pass through
+* If multiple ports have the same lowest root cost, then the port connection to th neighboring switch with the lowest Bridge ID will become the root port, and if this still results in the same path cost, then the port connected to a neighboring port that has the lowest STP port ID will be elected as the root port and is calculated using the following: STP Port ID = Port Priority (128 by default) + Port Number
+
+### Root Cost
+
+* The root port is calculated based on its path cost to reach the root switch, which is based on the cumulative cost of all the links between the non-root switch and the root switch, and determined by the speed of the link (faster links have lower costs)
+* The cost only counts the cost of the outgoing interface (If the other end of the link is the destination interface, then the cost for that link would be 0)
+
+| Link Speed | STP Cost |
+| --- | --- |
+| 10 Mbps | 100 |
+| 100 Mbps | 19 |
+| 1 Gbps | 4 |
+| 10 Gbps | 2 |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# STP Port States
+
+| STP Port State | Stable/Transitional | Send BPDUs | Receive BPDUs | Frame Forwarding | MAC Address Learning |
+| --- | --- | --- | --- | --- | --- |
+| Forwarding | Stable | YES | YES | YES | YES |
+| Listening | Transitional | YES | YES | NO | NO |
+| Learning | Transition | YES | YES | NO | YES |
+| Blocking | Stable | NO | YES | NO | NO |
+| Disabled | Unavailable | NO | NO | NO | NO |
+
+## Forwarding
+
+* Root and Designated ports remain stable in a Forwarding state
+* Forwards and receives STP BPDUs
+* Sends and receives normal traffic
+* Learns MAC addresses from the frames that arrive on the interface
+
+## Listening 
+
+* A transitional state that's passed through when an interface is activated or when a blocking port must transition to a Forwarding state
+* Interfaces with the Designated or Root role are the only ones that can go into a Listening state
+* 15 seconds long by default and can be determined by the Forward delay timer, which is also used for ports in a Learning state
+* Only forwards and receives STP BPDUs
+* Doesn't send or receive regular traffic
+* Doesn't learn MAC addresses from regular traffic that arrive on the interface
+
+## Learning
+
+* A transitional state that's passed through when an interface is activated or when a blocking port must transition to a Forwarding state
+* Interfaces with the Designated or Root role are the only ones that can go into a Learning state
+* 15 seconds long by default and can be determined by the Forward delay timer, which is also used for ports in a Listening state
+* Only forwards and receives STP BPDUs
+* Doesn't send or receive regular traffic
+* Learns the MAC addresses from regular traffic that arrive on the interface since the port is preparing to start forwarding traffic and to do so it needs to start building its MAC address table beforehand
+
+## Blocking
+
+* Non-designated ports remain stable in a Blocking state
+* Disabled to prevent loops
+* Doesn't send or receive regular network traffic but can receive and process STP BPDUs to be aware of the Spanning Tree topology and be ready to transition towards a forwarding state if they need to
+* Doesn't forward STP BPDUs
+* Doesn't learn MAC addresses
+
+## Disabled
+
+* Administratively disabled
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # How STP Works
 
-1. **Root bridge election**, which is the reference point for all spanning tree calculations to determine the shortest path to all other switches in the network
-2. **Determination of root ports and designated ports**, which is done after the root bridge has been elected and is where non-root switches will select a root port
-3. **Blocking redundant paths**, which is where STP will identify and block redundant paths in the network to prevent loops
-4. **Dynamic reconfiguration**, which is when STP will dynamically reconfigure the network topology in resonse to changes by recalculating the spanning tree to ensure that there are no loops and that traffic can still flow through the network
+1. The switch with the lowest Bridge ID will be elected as the root bridge and will make all of its ports as a designated port, which will all be put in a forwarding state
+2. Each remaining switch in the topology will select the port with the lowest root cost to the root bridge and make it their root port, which will be put in a forwarding state
+3. Each non-root bridge will elect only one designated port, which is the port that'll be put into a forwarding state in order to forward BPDUs, and the assign the other ports into a non-designated port, which will put into a blocking state
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
