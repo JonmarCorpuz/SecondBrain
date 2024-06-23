@@ -10,6 +10,13 @@ The Spanning Tree Protocol (IEEE 802.1D) is a network protocol that ensures a lo
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ihbjgudfafdgbhjaobjodfsggdasfhjbnou.jpg)
 
+## BPDU
+
+A Bridge Protocol Data Unit is a frame used in STP implementations to prevent loops in Ethernet networks
+
+* Used by switches running STP to exchange information with each other, as well as update and maintain the STP topology
+* STP-enabled switches send and receive **Hello BPDUs** out of all interfaces every two seconds and if a switch receives a **Hello BPDU** on an interface, then it'll know that that interface is connected to another switch
+
 ## Root Bridge
 
 The root bridge is the reference point for all spanning tree calculations within a network of interconnected switches
