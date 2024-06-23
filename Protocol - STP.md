@@ -29,8 +29,6 @@ A Bridge ID (BID) is a unique identifier assigned to each switch in a Spanning T
 * Each switch in the network will advertise its own BID, which consists of a bridge priority and its MAC address
 * When switches receive BID information from neighboring switches, they'll compare the received BIDs with their own and the switch with the lowest BID is elected as the root bridge
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dsfidshdijsjkorytirpiyutruytrpyprtyuportyrpt.jpg)
-
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdlshjfgsfkjgskdgfhksflghskdlgsdfjkgsdfgsdf.jpg)
 
 ### Bridge Priority
