@@ -6,45 +6,57 @@ The Spanning Tree Protocol (IEEE 802.1D) is a network protocol that ensures a lo
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# STP Components
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ihbjgudfafdgbhjaobjodfsggdasfhjbnou.jpg)
-
-## BPDU
+# STP BPDU
 
 A Bridge Protocol Data Unit is a frame used in STP implementations to prevent loops in Ethernet networks
 
 * Used by switches running STP to exchange information with each other, as well as update and maintain the STP topology
 * STP-enabled switches send and receive **Hello BPDUs** out of all interfaces every two seconds and if a switch receives a **Hello BPDU** on an interface, then it'll know that that interface is connected to another switch
 
-## Root Bridge
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Root Bridge
 
 The root bridge is the reference point for all spanning tree calculations within a network of interconnected switches
 
 * The switch with the lowest Bridge ID becomes the root bridge
 * All ports on the root bridge are put in a forwarding state, while the other switches in the topology must have a path to reach the root bridge
 
-### Bridge ID
+## Bridge ID
 
 A Bridge ID (BID) is a unique identifier assigned to each switch in a Spanning Tree Protocol network
 
 * Each switch in the network will advertise its own BID, which consists of a bridge priority and its MAC address
 * When switches receive BID information from neighboring switches, they'll compare the received BIDs with their own and the switch with the lowest BID is elected as the root bridge
 
-#### Bridge Priority
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dsfidshdijsjkorytirpiyutruytrpyprtyuportyrpt.jpg)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fdlshjfgsfkjgskdgfhksflghskdlgsdfjkgsdfgsdf.jpg)
+
+### Bridge Priority
 
 The Bridge Priority is a configurable value assigned to each switch
 
 * Set to 32768 by default but can be manually adjusted
 * Lower priority values indicate a higher priority for becoming the root bridge
 
-#### MAC Address
+### Extended System ID
+
+The Extended System ID refers to the VLAN ID
+
+* Used in STP's PVST, which runs a separate STP instance in each VLAN, allowing each VLAN to have different forwarding and blocking interfaces
+
+### MAC Address
 
 The MAC address is a switch's unique physical address
 
 * In the event that multiple switches have the same bridge priority, the switch with the lowest MAC address among them will be selected as the root bridge
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# STP Ports
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ihbjgudfafdgbhjaobjodfsggdasfhjbnou.jpg)
 
 ## Designated Port
 
