@@ -1,6 +1,8 @@
-The Spanning Tree Protocol is a network protocol that ensures a loop-free topology in Ethernet networks
+The Spanning Tree Protocol (IEEE 802.1D) is a network protocol that ensures a loop-free topology in Ethernet networks by placing redundant ports in a blocking state
 
 * Operates at the Data Link Layer of the OSI model (Layer 2)
+* STP is run by default on network switches
+* Ports in a blocking state act as backups that can enter a forwarding state if an active interface fails
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -52,7 +54,7 @@ A designated port is the port that's selected to forward traffic on a specific n
 A blocked port is a switch port that's put into a blocking state to prevent loops in the STP network topology
 
 * Remains in a listening and learning state, ready to become active if the active path fails
-* Blocked ports don't forward traffic but are actively monitoring the network for any changes in the topology
+* Blocked ports don't forward traffic but are actively monitoring the network for any changes in the topology and can only send or receive BPDUs
 * Serves as backup links in case the active path fails
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
