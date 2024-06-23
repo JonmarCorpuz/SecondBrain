@@ -40,6 +40,8 @@ A firewall is a network security device or software that monitors incoming and o
 
 # Firewall Types
 
+## Host-based Firewall
+
 ## Stateless Inspection Firewall
 
 A stateless inspection firewall is a type of firewall that doesn't maintain any knowledge of the state or context of active connections passing through it
