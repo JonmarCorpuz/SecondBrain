@@ -34,6 +34,7 @@ The root bridge is the reference point for all spanning tree calculations within
 * All ports on the root bridge are designated ports that are put in a forwarding state, while the other switches in the topology must have a path to reach the root bridge
 * A root bridge only gives up its position if it receives a BPDU that contains a lower bridge ID than its own bridge ID
 * once all switches in the topology agree on the root bridge, only the root bridge will be able to generate BPDUs, while the other switches may only forward them
+* STP timers on the root bridge determine the STP timers for the entire network
 
 ## Bridge ID
 
@@ -179,6 +180,19 @@ The root port is the port on a non-root switch that provides the shortest path t
 | **Hello** | How often the root bridge sends Hello BPDUs | 2 seconds |
 | **Forward Delay** | How long the switch will stay in the Listening and then the Learning state | 15 seconds per state |
 | **Max Age** | How long an interface will wait after ceasing to receive Hello BPDUs to change the STP topology (Resets every time it receives a Hello BPDU) | 20 seconds (10 Hello BPDUs) |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# STP Toolkit
+
+The STP Toolkit contains additional features that can be activated to improve the functionality of STP
+
+## Portfast
+
+Portfast is used to reduce the time it takes for a port to transition from the Blocking state or Listening state to the Forwarding state
+
+* Allows switch ports to bypass the usual spanning tree initialization process and immediately transition to the forwarding state when they're brought up, allowing for almost immediate traffic forwarding upon link-up to reduce network convergence time and providing faster connectivity to end devices
+* Typically used on switch ports that are connected to end devices
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
