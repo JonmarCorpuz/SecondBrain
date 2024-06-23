@@ -37,6 +37,7 @@ The Bridge Priority is a configurable value assigned to each switch
 
 * Set to 32768 by default but can be manually adjusted
 * Lower priority values indicate a higher priority for becoming the root bridge
+* The Bridge Priority can only be changed in units of 4096 and the Extended System ID will then be added to this number to make the total bridge priority
 
 ### Extended System ID
 
