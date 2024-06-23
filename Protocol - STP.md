@@ -12,6 +12,7 @@ A Bridge Protocol Data Unit is a frame used in STP implementations to prevent lo
 
 * Used by switches running STP to exchange information with each other, as well as update and maintain the STP topology
 * STP-enabled switches send and receive **Hello BPDUs** out of all interfaces every two seconds and if a switch receives a **Hello BPDU** on an interface, then it'll know that that interface is connected to another switch
+* Only forwarded to Designated ports
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -67,6 +68,7 @@ A designated port is the port that's selected to forward traffic on a specific n
 * The designated port is the port with the lowest cost to reach the root bridge
 * If multiple ports on a switch offer the same shortest path to the root bridge, the one with the lowest port number will be the one that'll be selected as the designated port
 * Designated ports will be placed in a fowarding state in order to allow traffic to pass through
+* This is the only port that a switch will forward STP BPDUs to
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -105,11 +107,11 @@ The root port is the port on a non-root switch that provides the shortest path t
 
 | STP Port State | Stable/Transitional | Send BPDUs | Receive BPDUs | Frame Forwarding | MAC Address Learning |
 | --- | --- | --- | --- | --- | --- |
-| Forwarding | Stable | YES | YES | YES | YES |
-| Listening | Transitional | YES | YES | NO | NO |
-| Learning | Transition | YES | YES | NO | YES |
-| Blocking | Stable | NO | YES | NO | NO |
-| Disabled | Unavailable | NO | NO | NO | NO |
+| **Forwarding** | Stable | YES | YES | YES | YES |
+| **Listening** | Transitional | YES | YES | NO | NO |
+| **Learning** | Transition | YES | YES | NO | YES |
+| **Blocking** | Stable | NO | YES | NO | NO |
+| **Disabled** | Unavailable | NO | NO | NO | NO |
 
 ## Forwarding
 
@@ -155,6 +157,16 @@ The root port is the port on a non-root switch that provides the shortest path t
 1. The switch with the lowest Bridge ID will be elected as the root bridge and will make all of its ports as a designated port, which will all be put in a forwarding state
 2. Each remaining switch in the topology will select the port with the lowest root cost to the root bridge and make it their root port, which will be put in a forwarding state
 3. Each non-root bridge will elect only one designated port, which is the port that'll be put into a forwarding state in order to forward BPDUs, and the assign the other ports into a non-designated port, which will put into a blocking state
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# STP Timers
+
+| STP Timer | Purpose | Duration |
+| --- | --- | --- |
+| **Hello** | How often the root bridge sends Hello BPDUs | 2 seconds |
+| **Forward Delay** | How long the switch will stay in the Listening and then the Learning state | 15 seconds per state |
+| **Max Age** | How long an interface will wait after ceasing to receive Hello BPDUs to change the STP topology (Resets every time it receives a Hello BPDU) | 20 seconds (10 Hello BPDUs) |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
