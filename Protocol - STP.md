@@ -14,6 +14,16 @@ A Bridge Protocol Data Unit is a frame used in STP implementations to prevent lo
 * STP-enabled switches send and receive **Hello BPDUs** out of all interfaces every two seconds and if a switch receives a **Hello BPDU** on an interface, then it'll know that that interface is connected to another switch
 * Only forwarded to Designated ports
 
+## STP BPDU Header
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hgkfhkgjfjfhgjhjhhjlhjghjgjhlghjghjghjggh.png)
+
+### Protocol Identifier
+
+### Protocol Version Identifier
+
+### BPDU Type
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Root Bridge
@@ -119,6 +129,7 @@ The root port is the port on a non-root switch that provides the shortest path t
 * Forwards and receives STP BPDUs
 * Sends and receives normal traffic
 * Learns MAC addresses from the frames that arrive on the interface
+* Can directly converge to a Blocking state
 
 ## Listening 
 
@@ -145,6 +156,7 @@ The root port is the port on a non-root switch that provides the shortest path t
 * Doesn't send or receive regular network traffic but can receive and process STP BPDUs to be aware of the Spanning Tree topology and be ready to transition towards a forwarding state if they need to
 * Doesn't forward STP BPDUs
 * Doesn't learn MAC addresses
+* Can't directly convert to a Forwarding state, it must go through the Listening and Learning states
 
 ## Disabled
 
@@ -174,11 +186,17 @@ The root port is the port on a non-root switch that provides the shortest path t
 
 ## STP (802.1D)
 
+* Uses the **01:80:C2:00:00:00** MAC address as the destination
+
 ## RSTP (802.1w)
+
+* Uses the **01:80:C2:00:00:00** MAC address as the destination
 
 ## MSTP (802.1s)
 
 ## PVST+
+
+* Uses the **01:00:0C:CC:CC:CD** MAC address as the destination
 
 ## RPVST+
 
