@@ -22,6 +22,7 @@ A Bridge Protocol Data Unit is a frame used in STP implementations to prevent lo
 The root bridge is the reference point for all spanning tree calculations within a network of interconnected switches
 
 * The switch with the lowest Bridge ID becomes the root bridge
+* All ports on the root bridge are put in a forwarding state, while the other switches in the topology must have a path to reach the root bridge
 
 ### Bridge ID
 
