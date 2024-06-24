@@ -220,6 +220,12 @@ Loop Guard enhances network stability by mitigating the risks associated with un
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# STP Load Balancing
+
+* Configuring different root bridges for different VLANs help distribute  traffic across different paths rather than relying on a single path
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # STP Types
 
 ## STP (802.1D)
