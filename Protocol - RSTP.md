@@ -54,6 +54,12 @@ The RSTP alternate port role is a discarding port that receives a superior BPDU 
 
 ### Backup Port
 
+The RSTP backup port role is a discarding port that receives a superior BPDU from another interface on the same switch, which only happens when two interfaces are connected to the same segment via a hub 
+
+* Only used when on an interface that's connected to a hub
+* If a switch's designated port fails, then the backup port will immediately become the designated port and begin forwarding traffic
+* If a switch has multiple interfaces connected to a hub, the interface with the lowest port ID will be selected as the designated port while the rest will become backup ports
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # RSTP+
