@@ -6,6 +6,7 @@ The Spanning Tree Protocol (**IEEE 802.1D**) is a network protocol that ensures 
 * Uses the **01:80:C2:00:00:00** MAC address as the destination
 * Can take up to 50 seconds for a network to converge after a change in the topology, which can be really slow
 * All VLANs share one STP instance
+* Uses long timers to determine when it's safe to move to the next state, which can be quite long since it wants to ensure that no loops are accidentally created when a port starts
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
