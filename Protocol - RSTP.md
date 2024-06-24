@@ -7,7 +7,7 @@ The Rapid per VLAN Spanning Tree (**802.1w**) is an evolution of the original ST
 * Elects a root bridge with the same rules as STP
 * Elects root ports with the same rules as STP
 * Has STP's UplinkFast and Backbone Fast features built-in RSTP
-* Compatible with STP
+* Compatible with STP, meaning that interfaces on a RSTP enabled switch that are connected to a STP enabled switch will operate in STP mode rather than RSTP
 
 # RSTP Port States
 
@@ -63,4 +63,32 @@ The RSTP backup port role is a discarding port that receives a superior BPDU fro
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# RSTP+
+# RSTP BPDU
+
+* All switches originate and send their own BPDUs from their designated ports 
+
+## Protocol Identifier
+
+## Protocol Version
+
+## BPDU Type
+
+## BPDU Flags
+
+## Root Identifier
+
+## Root Path Cost
+
+## Bridge Identifier
+
+## Port Identifier
+
+## Message Age
+
+## Max Age
+
+## Hello Time
+
+## Forward Delay
+
+## Version 1 Length
