@@ -3,3 +3,4 @@ The Rapid per VLAN Spanning Tree (**802.1w**) is an evolution of the original ST
 * Much faster at converging and adapting to network changes than 802.1D
 * All VLANs share one STP instance
 
+# RSTP+
