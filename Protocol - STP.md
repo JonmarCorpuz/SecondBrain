@@ -1,8 +1,11 @@
-The Spanning Tree Protocol (IEEE 802.1D) is a network protocol that ensures a loop-free topology in Ethernet networks by placing redundant ports in a blocking state
+The Spanning Tree Protocol (**IEEE 802.1D**) is a network protocol that ensures a loop-free topology in Ethernet networks by placing redundant ports in a blocking state
 
 * Operates at the Data Link Layer of the OSI model (Layer 2)
 * STP is run by default on network switches
 * Ports in a blocking state act as backups that can enter a forwarding state if an active interface fails
+* Uses the **01:80:C2:00:00:00** MAC address as the destination
+* Can take up to 50 seconds for a network to converge after a change in the topology, which can be really slow
+* All VLANs share one STP instance
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -226,15 +229,10 @@ Loop Guard enhances network stability by mitigating the risks associated with un
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# STP Types
-
-## STP (802.1D)
-
-* Uses the **01:80:C2:00:00:00** MAC address as the destination
-
 ## RSTP (802.1w)
 
 * Uses the **01:80:C2:00:00:00** MAC address as the destination
+* Only takes a few seconds to respond to changes in the topology
 
 ## MSTP (802.1s)
 
