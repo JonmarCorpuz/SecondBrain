@@ -192,7 +192,18 @@ The STP Toolkit contains additional features that can be activated to improve th
 Portfast is used to reduce the time it takes for a port to transition from the Blocking state or Listening state to the Forwarding state
 
 * Allows switch ports to bypass the usual spanning tree initialization process and immediately transition to the forwarding state when they're brought up, allowing for almost immediate traffic forwarding upon link-up to reduce network convergence time and providing faster connectivity to end devices
-* Typically used on switch ports that are connected to end devices
+* Must only be enabled on access mode switch ports that are connected to end devices (If enabled on a port connected to another switch it could cause a Layer 2 loop)
+* Enabled at the interface level
+
+## BPDU Guard
+
+BPDU Guard protects a network from potential loops cause by unauthorized or misconfigured switches connected to ports where BPDU Guard is enabled
+
+* If a BDPU Guard enabled interface receives a BPDU from another switch, the interface will be shut down to prevent a loop from forming
+
+## Root Guard
+
+## Loop Guard
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
