@@ -18,15 +18,13 @@ A Bridge Protocol Data Unit is a frame used in STP implementations to prevent lo
 * STP-enabled switches send and receive **Hello BPDUs** out of all interfaces every two seconds and if a switch receives a **Hello BPDU** on an interface, then it'll know that that interface is connected to another switch
 * Only forwarded to Designated ports
 
-## STP BPDU Header
-
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hgkfhkgjfjfhgjhjhhjlhjghjgjhlghjghjghjggh.png)
 
-### Protocol Identifier
+## Protocol Identifier
 
-### Protocol Version Identifier
+## Protocol Version Identifier
 
-### BPDU Type
+## BPDU Type
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
