@@ -203,7 +203,20 @@ BPDU Guard protects a network from potential loops cause by unauthorized or misc
 
 ## Root Guard
 
+Root Guard enforces the position of the root bridge in a network topology by preventing a switch from becoming the root bridge if it's not intended to be the root
+
+* If Root Guard is enabled on an interface, even if it receives a superior BPDU on that interface, the switch will not accept the new switch as the root bridge and that interface will be disabled
+
 ## Loop Guard
+
+Loop Guard enhances network stability by mitigating the risks associated with unidirectional link failures in a network where STP is active by preventing forwarding loops that can occur when a unidirectional link failure happends in the network
+
+* If Loop Guard is enabled on an interface, even if the interface stops receiving BPDUs, it will not start forwarding and the interface will be disabled
+* Helps prevent loops if an interface fails only in one direction
+
+## UplinkFast
+
+## Backbone Fast
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
