@@ -7,6 +7,7 @@ The Rapid per VLAN Spanning Tree (**802.1w**) is an evolution of the original ST
 * Elects a root bridge with the same rules as STP
 * Elects root ports with the same rules as STP
 * Has STP's UplinkFast and Backbone Fast features built-in RSTP
+* Compatible with STP
 
 # RSTP Port States
 
