@@ -53,6 +53,7 @@ A stateless inspection firewall is a type of firewall that doesn't maintain any 
 * When a packet arrives at a stateless firewall, it examines the packet headers and compares them against a set of static rules or ACLs
 * Less effective at identifying and blocking certain types of threats
 * Lack the ability to perform advanced security functions (Ex: *Packet inspection*, *Deep packet inspection*, *etc.*)
+* You need to seperately configure both outbound and inbound rules
 
 ### Stateful Inspection Firewall
 
