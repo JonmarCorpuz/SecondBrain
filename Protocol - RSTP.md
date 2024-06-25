@@ -6,7 +6,7 @@ The Rapid per VLAN Spanning Tree (**802.1w**) is an evolution of the original ST
 * Works on a bridge-bridge handshake mechanism, which allows ports to move directly to a Forwarding state
 * Elects a root bridge with the same rules as STP
 * Elects root ports with the same rules as STP
-* Has STP's UplinkFast and Backbone Fast features built-in RSTP
+* Has STP's UplinkFast, BackboneFast, and PortFast features built-in RSTP
 * Compatible with STP, meaning that interfaces on a RSTP enabled switch that are connected to a STP enabled switch will operate in STP mode rather than RSTP
 
 # RSTP Port States
@@ -65,7 +65,8 @@ The RSTP backup port role is a discarding port that receives a superior BPDU fro
 
 # RSTP BPDU
 
-* All switches originate and send their own BPDUs from their designated ports 
+* All switches originate and send their own BPDUs from their designated ports
+* A switch will consider a neighbor lost if it misses three BPDUs and then flush all MAC addresses learned on that interface since it knows that it won't be able to reach anything through that interface anymore
 
 ## Protocol Identifier
 
@@ -92,3 +93,25 @@ The RSTP backup port role is a discarding port that receives a superior BPDU fro
 ## Forward Delay
 
 ## Version 1 Length
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# RSTP Link Types
+
+## Edge
+
+* A port that's connected to an end host
+* Moves directly to forwarding without going through the negotiation process since there's no risk of creating a loop
+* Functions like a classic STP port with PortFast enabled and it's configured the same way
+
+## Point-to-Point
+
+* A direct connection between two switches
+* Operates in full-duplex
+* Point-to-point interfaces are detected and not configured
+
+## Shared
+
+* A connection to a hub
+* Operates in half-duplex mode
+* Shared interfaces are detected and not configured
