@@ -22,21 +22,23 @@ The network prefix defines the network portion of the IPv6 address
 * Expressed as a number of bits, which indicates how many bits of the address are reserved for the network prefix
 * The first three quartet
 
-## Subnet ID
+## Subnet ID 
 
 The subnet ID in an IPv6 address identifies a specific subnet within a network
 
 * Two subnets within the same network cannot have the same IPv6 network address and client ID combination
-* The fourth quartet 
+* The fourth quartet
 
-## Interface Identifier (Client ID)
+## Client ID (Interface Identifier)
 
-The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
+The Client ID uniquely identifies a device within a network
 
-* Uniquely identifies a device within its network
+* Typically consists of the last 64 bits of the IPv6 address 
 * The last four quartets
 
 ### Extended Unique Identifier
+
+* Allows a host to assign itself a unique 64-bit IPv6 interface identifier by converting its 48-bit MAC address into a 64-bit interface identifier by dividing it in half, inserting **FFFE** in the middle, and then invert the seventh bit
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
