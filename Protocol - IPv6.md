@@ -2,9 +2,12 @@ The Internet Protocol is responsible for routing packets of data across networks
 
 * Operates at the Network layer of the OSI model and adds an IP header to the data packet to include additional information (Ex: *Source IP address*, *Destination IP address*, *Packet length*, *etc.*)
 * Doesn't guarantee delivery or provide mechanisms for error recovery or flow control since it's connectionless
-* Internet Protocol version 6 addresses are 128-bit that are represented as eight groups of four hexadecimal digits separated by colons
+* Provides more usable IP addresses than IPv4
+* 128-bit (16 bytes) that are represented as eight groups of four hexadecimal digits separated by colons
+* Only uses slash notation to indicate the prefix length
 * Includes built-in support for IPsec and features that simplify routing and network configuration
 * Allows devices to automatically configure their IP addresses without the need for DHCP
+* IPv6 addresses can be shortened either by removing the leading 0s from any quartets (Ex: *2001:0DB8:000A:001B:20A1:0020:0080:34BD -> 2001:DB8:A:1B:20A1:20:80:34BD*) or by replacing consecutive quartets of all 0s with a double colon (Ex: *2001:0DB8:0000:0000:0000:0000:0080:34BD -> 2001:0DB8::0080:34BD*), or by using both methods (Ex: *2001:0DB8:0000:0000:0000:0000:0080:34BD -> 2001:DB8::80:34BD*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
