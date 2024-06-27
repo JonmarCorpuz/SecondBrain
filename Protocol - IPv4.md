@@ -2,7 +2,7 @@ The Internet Protocol is responsible for routing packets of data across networks
 
 * Operates at the Network layer of the OSI model and adds an IP header to the data packet to include additional information (Ex: *Source IP address*, *Destination IP address*, *Packet length*, *etc.*)
 * Doesn't guarantee delivery or provide mechanisms for error recovery or flow control since it's connectionless
-* Internet Protocol version 4 addresses are 32-bit binary numbers that are represented in dotted-decimal notation
+* 32-bit (4 bytes) binary numbers that are represented in dotted-decimal notation
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -15,7 +15,10 @@ The Internet Protocol is responsible for routing packets of data across networks
 The network address portion of an IPv4 address identifies the network to which the device belongs to
 
 * Determined by the subnet mask
+* The host portion is all 0
 * Devices within the same network share the same network portion of their IPv4 address
+* The first address of a network
+* Can't be assigned to a host
 
 ## Host Address
 
@@ -44,6 +47,7 @@ An IPv4 broadcast address is an address that's used to send packets to all devic
 
 * Has all host bits set to 1
 * Used for broadcasting information or messages to multiple devices simultaneously within a local network
+* The last address in a network
 
 ## Multicast
 
@@ -56,6 +60,10 @@ An IPv4 multicast address is an address that's used to deliver packets to multip
 ## Loopback
 
 An IPv4 loopback address is a special address that's used by a device to send traffic to itself
+
+* Address range is from 127.0.0.0 to 127.255.255.255
+* Used to test the network stack on the local device, which refers to the set of software layers that handle network communication tasks of the TCP/IP model
+* Devices that send traffic to a loopback address, it's simply processed back up the TCP/IP stack as if it were traffic received from another device
 
 ## Private
 
@@ -146,22 +154,36 @@ The Options field may include various additional information (Ex: *Record route*
 
 Class A addresses range from 1.0.0.0 to 126.0.0.0
 
+| Class | First Octet | First Octet Numeric Range | Prefix Length |
+| --- | --- | --- | --- |
+| A | 0------- | 0-127 | /8 |
+
 ## Class B
 
 Class B addresses range from 128.0.0.0 to 192.255.0.0
+
+| Class | First Octet | First Octet Numeric Range | Prefix Length |
+| --- | --- | --- | --- |
+| B | 10------ | 0-128-191 | /16 |
 
 ## Class C
 
 Class C addresses range from 192.0.0.0 to 223.255.255.0
 
+| Class | First Octet | First Octet Numeric Range | Prefix Length |
+| --- | --- | --- | --- |
+| C | 110----- | 192-223 | /24 |
+
 ## Class D
 
-Class D addresses range from 224.0.0.0 to 239.255.255.255 and are reserved for multicast addresses
+Class D addresses range from 224.0.0.0 to 239.255.255.255
 
+* Reserved for multicast addresses
 * Used for multicasting data to multiple recipients simultaneously
 
 ## Class E
 
-Class E addresses range from 240.0.0.0 to 255.255.255.255 and are reserved for experimental and future use
+Class E addresses range from 240.0.0.0 to 255.255.255.255
 
+* Reserved for experimental and future use
 * Not intended for general use on the internet
