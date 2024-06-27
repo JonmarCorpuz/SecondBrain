@@ -20,18 +20,21 @@ The Internet Protocol is responsible for routing packets of data across networks
 The network prefix defines the network portion of the IPv6 address
 
 * Expressed as a number of bits, which indicates how many bits of the address are reserved for the network prefix
+* The first three quartet
 
 ## Subnet ID
 
 The subnet ID in an IPv6 address identifies a specific subnet within a network
 
 * Two subnets within the same network cannot have the same IPv6 network address and client ID combination
+* The fourth quartet 
 
 ## Interface Identifier (Client ID)
 
 The Interface ID, also know as the host portion, typically consists of the last 64 bits of the IPv6 address 
 
 * Uniquely identifies a device within its network
+* The last four quartets
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -51,7 +54,7 @@ An IPv6 multicast address is an address that starts with the prefix **ff00::/8**
 
 An IPv6 anycast address is an address that's assigned to multiple interfaces
 
-* Packets destined to an anycast address is sent to the nearest interface that hols that address
+* Packets destined to an anycast address is sent to the nearest interface that holds that address
 * Often used for load balancing and service redundancy
 * Assigned from the unicast space
 
