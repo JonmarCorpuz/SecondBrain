@@ -36,6 +36,8 @@ The Interface ID, also know as the host portion, typically consists of the last 
 * Uniquely identifies a device within its network
 * The last four quartets
 
+### Extended Unique Identifier
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # IPv6 Address Types
