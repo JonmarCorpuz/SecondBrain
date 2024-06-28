@@ -72,8 +72,9 @@ An IPv6 multicast address is an address that
 | --- | --- | --- |
 | All nodes/hosts | FF02::1 | 224.0.0.1 |
 | All routers | FF02::2 | 224.0.0.2 |
-| All OSPF DRs/BDRs | FF02::5 | 224.0.0.5 |
-| All RIP routers | FF02::6 | 224.0.0.6 |
+| All OSPF routers | FF02::5 | 224.0.0.5
+| All OSPF DRs/BDRs | FF02::6 | 224.0.0.6 |
+| All RIP routers | FF02::9 | 224.0.0.9 |
 | All EIGRP routers | FF02::A | 224.0.0.10 |
 
 ## Anycast
