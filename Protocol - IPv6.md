@@ -17,28 +17,34 @@ The Internet Protocol is responsible for routing packets of data across networks
 
 ## Network Prefix
 
-The network prefix defines the network portion of the IPv6 address
+The network prefix defines the network portion of the IPv6 address (48-bits)
 
 * Expressed as a number of bits, which indicates how many bits of the address are reserved for the network prefix
+
+### Global Routing Prefix
+
 * The first three quartet
+* Usually assigned by the ISP
 
-## Subnet ID 
+### Subnet ID 
 
-The subnet ID in an IPv6 address identifies a specific subnet within a network
+The subnet ID in an IPv6 address identifies a specific subnet within a network (16-bits)
 
 * Two subnets within the same network cannot have the same IPv6 network address and client ID combination
 * The fourth quartet
 
 ## Client ID (Interface Identifier)
 
-The Client ID uniquely identifies a device within a network
+The Client ID uniquely identifies a device within a network (64-bits)
 
 * Typically consists of the last 64 bits of the IPv6 address 
 * The last four quartets
 
-### Extended Unique Identifier
+### EUI-64
 
-* Allows a host to assign itself a unique 64-bit IPv6 interface identifier by expanding its 48-bit MAC address into a 64-bit interface identifier by dividing it in half, inserting **FFFE** in the middle, and then invert the seventh bit
+The Extended Unique Identifier-64 is a standard for creating a 64-bit unique identifier
+
+* Allows a host to assign itself a unique 64-bit IPv6 interface identifier by expanding its 48-bit MAC address into a 64-bit interface identifier by dividing it in half, inserting the **FFFE** hexadecimal in the middle, and then invert the seventh bit
 * If the U/L bit was flipped to 0, that means that the MAC address the EUI-64 interface ID was made from an LAA MAC address
 * If the U/L bit was flipped to 1, that means that the MAC address the EUI-64 interface ID was made from a UAA MAC address
 
@@ -46,15 +52,29 @@ The Client ID uniquely identifies a device within a network
 
 # IPv6 Address Types
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dsdsfjoododogohihodoihiohiihhihihohiohio.jpg)
+
 ## Unicast 
 
-An IPv6 unicast address identifies a single network interface and are used for one-to-one communication between devices on a network
+An IPv6 unicast address identifies a single network interface 
+
+* Used for one-to-one communication between devices on a network (One source to one destination)
 
 ## Multicast
 
-An IPv6 multicast address is an address that starts with the prefix **ff00::/8** and is used to deliver packets to multiple recipients efficiently
+An IPv6 multicast address is an address that 
 
+* Uses the **FF00::/8** address block, which ranges from **FF00::** to **FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
+* Used to deliver packets to multiple recipients that are part of a specific multicast group
 * Devices interested in receiving multicast traffic subscribe to specific multicast addresses
+
+| Purpose | IPv6 Address | IPv4 Address |
+| --- | --- | --- |
+| All nodes/hosts | FF02::1 | 224.0.0.1 |
+| All routers | FF02::2 | 224.0.0.2 |
+| All OSPF DRs/BDRs | FF02::5 | 224.0.0.5 |
+| All RIP routers | FF02::6 | 224.0.0.6 |
+| All EIGRP routers | FF02::A | 224.0.0.10 |
 
 ## Anycast
 
@@ -72,23 +92,31 @@ An IPv6 loopback address is an address that's used to send packets to the same d
 
 ## Link-Local
 
-An IPv6 link-local address is an address that's always within the **fe80::/64** range and are automatically assigned to interfaces on a local network segment
+An IPv6 link-local address is an address that's automatically generated on IPv6-enabled interfaces
 
+* Uses the **FE80::/64** address block, which ranges from **FE80** to **FEBF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF** (The standard states that the 54 bits after FE80/10 should be all 0s, which means that you'll only see link local addresses beginning with FE8)
+* Automatically assigned to interfaces on a local network segment
 * Used primarily for communication between devices on the same link
 * Not routable beyond the local network segment
+* The interface ID is generated using EUI-64 rules
+* Can be used for routing protocol peerings, next-hop addresses for static routes, NDP, etc.
 
 ## Unique Local Address
 
-An IPv6 ULA address is a private address that starts with the **fc00::/7** prefix and is used for communication within a site or organization
+An IPv6 ULA address is a private address that can't be used over the Internet
 
-* Not globally routable
-* Intended for local use only
+* Uses the **FD00::/7** address block, which ranges from **FD00::** to **FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:** (Requires the 8th bit to be set to 1, so the first two digits must be FD)
+* Used for communication within a site or organization
+* Not globally routable and intended for local use only
+* Doesn't need to be registered in order for them to be used within internal networks
 
 ## Global Unicast Address
 
-An IPv6 global unicast address is a public address that starts with the **2000::/3** prefix and is used for communication between devices across different networks
+An IPv6 global unicast address is a public address that can be used over the Internet
 
-* Globally routable on the internet
+* Uses the **2000::/3** address block, which ranges from **2000::** to **3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
+* Must be registered and globally unique
+* Used for communication between devices across different networks
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
