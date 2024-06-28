@@ -67,7 +67,7 @@ An IPv6 multicast address is an address that
 * Uses the **FF00::/8** address block, which ranges from **FF00::** to **FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
 * Used to deliver packets to multiple recipients that are part of a specific multicast group
 * Devices interested in receiving multicast traffic subscribe to specific multicast addresses
-* Defines multiple multicast scopes which indicate how far the packet should be forwarded
+* Defines multiple multicast scopes which indicate how far the packet should be forwarded, which needs to be defined by the network engineer
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/sddsfgfgfgfserwerewrewtrtretwrwewewqewr.png)
 
@@ -92,9 +92,11 @@ An IPv6 multicast address is an address that
 
 An IPv6 anycast address is an address that's assigned to multiple interfaces
 
-* Packets destined to an anycast address is sent to the nearest interface that holds that address
+* One-to-one-of-many (Multiple routers are configured with the same IPv6 address)
+* Packets destined to an anycast address is sent to the nearest interface that holds that address (When a host sends packets to an anycast address, the routers will forward it to the nearest router with the smallest routing protocol metric that's configured with that IP address)
 * Often used for load balancing and service redundancy
 * Assigned from the unicast space
+* There's no specific address range for anycast addresses, meaning that you can use a regular unicast address and specify it as an anycast address
 
 ## Loopback
 
