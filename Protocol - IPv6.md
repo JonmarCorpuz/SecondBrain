@@ -67,15 +67,26 @@ An IPv6 multicast address is an address that
 * Uses the **FF00::/8** address block, which ranges from **FF00::** to **FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
 * Used to deliver packets to multiple recipients that are part of a specific multicast group
 * Devices interested in receiving multicast traffic subscribe to specific multicast addresses
+* Defines multiple multicast scopes which indicate how far the packet should be forwarded
 
-| Purpose | IPv6 Address | IPv4 Address |
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/sddsfgfgfgfserwerewrewtrtretwrwewewqewr.png)
+
+| Multicast Scope | IPv6 Scope | Description |
 | --- | --- | --- |
-| All nodes/hosts | FF02::1 | 224.0.0.1 |
-| All routers | FF02::2 | 224.0.0.2 |
-| All OSPF routers | FF02::5 | 224.0.0.5
-| All OSPF DRs/BDRs | FF02::6 | 224.0.0.6 |
-| All RIP routers | FF02::9 | 224.0.0.9 |
-| All EIGRP routers | FF02::A | 224.0.0.10 |
+| Interface-local | FF01 | The packet doesn't leave the local device |
+| Link-local | FF02 | The packet remains in the local subnet |
+| Site-local | FF05 | The packet can be forwarded by routers within a single location (Can't be forwarded over a WAN) |
+| Organization-local | FF08 | The packet can be forwarded by routers between multiple physical locations |
+| Global | FF0E | The packet can be routed over the Internet (No boundaries) |
+
+| Multicast Group | IPv6 Address | IPv4 Address |
+| --- | --- | --- |
+| All nodes/hosts | <multicast_scope>::1 | 224.0.0.1 |
+| All routers | <multicast_scope>::2 | 224.0.0.2 |
+| All OSPF routers | <multicast_scope>::5 | 224.0.0.5
+| All OSPF DRs/BDRs | <multicast_scope>::6 | 224.0.0.6 |
+| All RIP routers | <multicast_scope>::9 | 224.0.0.9 |
+| All EIGRP routers | <multicast_scope>::A | 224.0.0.10 |
 
 ## Anycast
 
