@@ -39,6 +39,8 @@ The Client ID uniquely identifies a device within a network
 ### Extended Unique Identifier
 
 * Allows a host to assign itself a unique 64-bit IPv6 interface identifier by expanding its 48-bit MAC address into a 64-bit interface identifier by dividing it in half, inserting **FFFE** in the middle, and then invert the seventh bit
+* If the U/L bit was flipped to 0, that means that the MAC address the EUI-64 interface ID was made from an LAA MAC address
+* If the U/L bit was flipped to 1, that means that the MAC address the EUI-64 interface ID was made from a UAA MAC address
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
