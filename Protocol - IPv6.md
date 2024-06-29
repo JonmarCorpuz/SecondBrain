@@ -61,6 +61,8 @@ The Extended Unique Identifier-64 is a standard for creating a 64-bit unique ide
 
 The Stateless Address Autoconfiguration is a method used in IPv6 network to enable devices to automatically configure their own IPv6 addresses without the need for a centralized server based on information provided by local routers and certain local parameters
 
+* Hosts use the RS and RA messages to learn the IPv6 prefix of the local link and then use it to automatically generate an IPv6 address
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # IPv6 Address Types
