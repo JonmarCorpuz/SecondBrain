@@ -155,6 +155,8 @@ An IPv6 global unicast address is a public address that can be used over the Int
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2-Figure2-1.png)
 
+* The IPv6 header has a fixed size of 40 bytes
+
 ## Version (4 bits)
 
 The version section indicates the IP version that's being used, which in this case is set to 6 for IPv6
