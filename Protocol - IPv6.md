@@ -57,6 +57,10 @@ The Extended Unique Identifier-64 is a standard for creating a 64-bit unique ide
 * If the U/L bit was flipped to 0, that means that the MAC address the EUI-64 interface ID was made from an LAA MAC address
 * If the U/L bit was flipped to 1, that means that the MAC address the EUI-64 interface ID was made from a UAA MAC address
 
+### SLAAC
+
+The Stateless Address Autoconfiguration is a method used in IPv6 network to enable devices to automatically configure their own IPv6 addresses without the need for a centralized server based on information provided by local routers and certain local parameters
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # IPv6 Address Types
@@ -159,7 +163,28 @@ An IPv6 global unicast address is a public address that can be used over the Int
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# IPv6 Header Components
+# IPv6 Neighbor Table
+
+An IPv6 neighobor table is a data structure used by IPv6 nodes to store information about neighboring devices on the same link
+
+| IPv6 Neighbor Table Component | Description |
+| --- | --- |
+| IPv6 address | The IPv6 address of the neighboring node |
+| Link-layer address | The corresponding link-layer address of the neighboring address |
+| State | The current state of the neighbor entry |
+| Timer | A time associated with the entry to track the expiration of the current state or the need for reachability confirmation |
+
+| IPv6 Neighbor State | Description |
+| --- | --- |
+| Incomplete | The address resolution is in progress |
+| Reachable | The neighbor is known to be reachable |
+| Stale | The neighbor's reachability is unknown but no recent communication failures have been detected |
+| Delay | The neighbor's reachability is unkown and the node is waiting before probing the neighbor |
+| Probe | The node is actively probing the neighbo to determine its reachability status |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IPv6 Header 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2-Figure2-1.png)
 
