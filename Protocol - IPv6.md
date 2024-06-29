@@ -97,6 +97,14 @@ An IPv6 multicast address is an address that
 | All RIP routers | <multicast_scope>::9 | 224.0.0.9 |
 | All EIGRP routers | <multicast_scope>::A | 224.0.0.10 |
 
+### Solicited-Node Multicast Address
+
+A solicited-node multicast address is a special type of multicast address that's used in IPv6 to efficiently handle NDP
+
+* Calculated from a unicast address
+* Fixed prefix + Last 6 hex digits of a unicast address (Ex: *ff02:0000:0000:0000:0000:0001:ff + 2001:0db8:0000:0001:0489:4eda:07a3:00b1 becomes ff02::1:ffa3:b1*)
+* Used for tasks such as address resolution and Duplicate Address Detection
+
 ## Anycast
 
 An IPv6 anycast address is an address that's assigned to multiple interfaces
@@ -166,6 +174,7 @@ The version section indicates the IP version that's being used, which in this ca
 The Traffic Class field is used to prioritize packets and specify QoS parameters
 
 * Similar to IPv4's ToS field
+* Indicates high priority traffic
 
 ## Flow Label (20 bits)
 
@@ -175,18 +184,23 @@ The Flow Label field is used to identify packets belonging to the same flow
 
 ## Payload Length (16 bits)
 
-The Payload Length field indicates the length of the IPv6 payload in octets, excluding the header
+The Payload Length field indicates the length of the IPv6 payload in bytes
 
-## Next Header (16 bits)
+* Excludes the header
+
+## Next Header (8 bits)
 
 The Next Header field specifies that type of the next header in the packet
 
 * Indicates the protocol or extension header following the IPv6 header
+* Has the same function as the protocol field of the IPv4 header
 
 ## Hop Limit (8 bits)
 
 The Hop Limit field specifies the maximum number of router hops that the packet can traverse before being discarded
 
+* Decremented by one by each router that forwards it
+* The packet gets discarded if it reaches zero
 * Similar to IPv4's TTL field
 
 ## Source Address (128 bits)
