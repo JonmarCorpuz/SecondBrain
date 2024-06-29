@@ -7,8 +7,16 @@ The Internet Protocol is responsible for routing packets of data across networks
 * Only uses slash notation to indicate the prefix length
 * Includes built-in support for IPsec and features that simplify routing and network configuration
 * Allows devices to automatically configure their IP addresses without the need for DHCP
-* IPv6 addresses can be shortened either by removing the leading 0s from any quartets (Ex: *2001:0DB8:000A:001B:20A1:0020:0080:34BD -> 2001:DB8:A:1B:20A1:20:80:34BD*) or by replacing consecutive quartets of all 0s with a double colon (Ex: *2001:0DB8:0000:0000:0000:0000:0080:34BD -> 2001:0DB8::0080:34BD*), or by using both methods (Ex: *2001:0DB8:0000:0000:0000:0000:0080:34BD -> 2001:DB8::80:34BD*)
-* A router can be assigned an IPv6 address of each IPv6 type 
+* A router can be assigned an IPv6 address of each IPv6 type
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IPv6 Address Shortening
+
+* Leading zeroes must be removed (Ex: *2001:0db8:0000:0001:0f2a:4fff:fea3:00b1 becomes 2001:db8:0:1:f2a:4fff:fea3:b1*)
+* A **::** must be used to shorten the longest string of multiple all zero quartets and a **0** for a single all zero quartets (Ex: *2001:0000:0000:0000:0f2a:4fff:fea3:00b1 becomes 2001::f2a:0:0:b1*)
+* If there are two equal-length choices for the **::**, then shortent the left one (Ex: *2001:0db8:0000:0000:0f2a:0000:0000:00b1 becomes 2001:db8::f2a:0:0:b1*)
+* Hexadecimal characters must be written using lowercase
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -45,7 +53,7 @@ The Client ID uniquely identifies a device within a network (64-bits)
 
 The Extended Unique Identifier-64 is a standard for creating a 64-bit unique identifier
 
-* Allows a host to assign itself a unique 64-bit IPv6 interface identifier by expanding its 48-bit MAC address into a 64-bit interface identifier by dividing it in half, inserting the **FFFE** hexadecimal in the middle, and then invert the seventh bit
+* Allows a host to assign itself a unique 64-bit IPv6 interface identifier by expanding its 48-bit MAC address into a 64-bit interface identifier by dividing it in half, inserting the **fffe** hexadecimal in the middle, and then invert the seventh bit
 * If the U/L bit was flipped to 0, that means that the MAC address the EUI-64 interface ID was made from an LAA MAC address
 * If the U/L bit was flipped to 1, that means that the MAC address the EUI-64 interface ID was made from a UAA MAC address
 
@@ -65,7 +73,7 @@ An IPv6 unicast address identifies a single network interface
 
 An IPv6 multicast address is an address that 
 
-* Uses the **FF00::/8** address block, which ranges from **FF00::** to **FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
+* Uses the **ff00::/8** address block, which ranges from **ff00::** to **ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff**
 * Used to deliver packets to multiple recipients that are part of a specific multicast group
 * Devices interested in receiving multicast traffic subscribe to specific multicast addresses
 * Defines multiple multicast scopes which indicate how far the packet should be forwarded, which needs to be defined by the network engineer
@@ -111,7 +119,7 @@ An IPv6 loopback address is an address that's used to send packets to the same d
 
 An IPv6 link-local address is an address that's automatically generated on IPv6-enabled interfaces
 
-* Uses the **FE80::/64** address block, which ranges from **FE80** to **FEBF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF** (The standard states that the 54 bits after FE80/10 should be all 0s, which means that you'll only see link local addresses beginning with FE8)
+* Uses the **fe80::/64** address block, which ranges from **fe80** to **febf:ffff:ffff:ffff:ffff:ffff:ffff:ffff** (The standard states that the 54 bits after FE80/10 should be all 0s, which means that you'll only see link local addresses beginning with FE8)
 * Automatically assigned to interfaces on a local network segment
 * Used primarily for communication between devices on the same link
 * Not routable beyond the local network segment
@@ -122,7 +130,7 @@ An IPv6 link-local address is an address that's automatically generated on IPv6-
 
 An IPv6 ULA address is a private address that can't be used over the Internet
 
-* Uses the **FD00::/7** address block, which ranges from **FD00::** to **FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:** (Requires the 8th bit to be set to 1, so the first two digits must be FD)
+* Uses the **fd00::/7** address block, which ranges from **fd00::** to **fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff** (Requires the 8th bit to be set to 1, so the first two digits must be FD)
 * Used for communication within a site or organization
 * Not globally routable and intended for local use only
 * Doesn't need to be registered in order for them to be used within internal networks
@@ -131,7 +139,7 @@ An IPv6 ULA address is a private address that can't be used over the Internet
 
 An IPv6 global unicast address is a public address that can be used over the Internet
 
-* Uses the **2000::/3** address block, which ranges from **2000::** to **3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
+* Uses the **2000::/3** address block, which ranges from **2000::** to **3fff:ffff:ffff:ffff:ffff:ffff:ffff:ffff**
 * Must be registered and globally unique
 * Used for communication between devices across different networks
 
