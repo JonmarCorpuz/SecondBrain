@@ -22,7 +22,7 @@ The RS message (ICMPv6 Type 133)
 The RA message (ICMPv6 Type 134)
 
 * Sent to the multicast address of all the nodes in the local network
-* The router announces its presence and provides information about their link (Ex: *Default gateway*, *etc.*)
+* The router announces its presence and provides information about their link (Ex: *Default gateway*, *Prefix length*, *etc.*)
 * Are sent in response to RS messages and periodically sent even if a router hasn't received an RS message
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
