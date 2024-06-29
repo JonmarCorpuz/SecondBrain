@@ -44,3 +44,10 @@ The NA message (ICMPv6 Type 136) provides information about a node's link-layer 
 * A response message to a NDP NS message or to advertise changes in link-layer addresses
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# NDP DAD
+
+NDP's Duplicate Address Detection is a process used in IPv6 networks to ensure that no two devices on the same network are assigned the same IPv6 address
+
+* DAD is performed any time an IPv6-enabled interface initializes or an IPv6 address is configured on an interface
+* Performed using the NS and NA messages (The host will send a NS message to its own IPv6 address and if it doesn't get a reply, then it knowns that the address is unique)
