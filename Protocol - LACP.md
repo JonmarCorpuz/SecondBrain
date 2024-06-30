@@ -1,6 +1,7 @@
 LACP allows network devices to automatically negotiate and manage the bundling of multiple physical Ethernet links into a single logical links
 
 * Ensures that only compatible ports are aggregated and that they share the same configuration parameters
+* Used to configure EtherChannels
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
