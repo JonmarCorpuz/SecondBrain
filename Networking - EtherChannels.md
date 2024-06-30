@@ -15,17 +15,42 @@ An EtherChannel, also known as a port channel or link aggregation group (LAG), i
 
 * Cisco proprietary protocol
 * Dynamically negotiates the creation and maintenance of the EtherChannel
+* PAgP EtherChannel configuration modes include **auto** and **desirable**
+
+| Link Configuration | EtherChannel Formation |
+| --- | --- |
+| auto + auto | No |
+| desirable + auto | Yes |
+| desirable + desirable | Yes |
 
 ## LACP
 
 * Industry standard protocol (IEEE 802.3ad)
 * Dynamically negotiates the creation and maintenance of the EtherChannel
+* LACP EtherChannel configuration modes include **active** and **passive**
+
+| Link Configuration | EtherChannel Formation |
+| --- | --- |
+| passive + passive | No |
+| active + passive | Yes |
+| active + active | Yes |
 
 ## Static EtherChannel
 
 * A protocol isn't used to determine if an EtherChannel should be formed
 * Interfaces are statically configured to form an EtherChannel
 * Doesn't allow switches to dynamically maintain the EtherChannel
+* Static EtherChannel configuration modes include **on** and will only form an EtherChannel if the other switch's EtherChannel is configured in **on** mode as well
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# EtherChannel Components
+
+## Channel Group Number
+
+* Has to match for member interfaces on the same switch
+* Doesn't have to match the channel group number on the adjacent switch (Ex: *Channel group 1 on switch 1 can form an EtherChannel with channel group on switch 2*)
+* Each member interface must have matching configurations (Ex: *Duplex*, *Speed*, *Switchport mode*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
