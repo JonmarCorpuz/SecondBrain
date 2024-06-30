@@ -8,6 +8,7 @@ The Internet Protocol is responsible for routing packets of data across networks
 * Includes built-in support for IPsec and features that simplify routing and network configuration
 * Allows devices to automatically configure their IP addresses without the need for DHCP
 * A router can be assigned an IPv6 address of each IPv6 type
+* Disabled on routers by default (A router can still forward and receive IPv6 traffic even if IPv6 routing is disabled, but it won't be able to route IPv6 traffic between networks)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -237,3 +238,20 @@ The Source Address field specifies the IPv6 address of the packet's source
 ## Destination IPv6 Address (128 bits)
 
 The Destination Address field specifies the IPv6 address of the packet's intended destination
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IPv6 Static Routes
+
+## Directly Attached Static Route
+
+* Only the exit interface is specified
+* Can't be used on an Ethernet interface (The router can accept the command but it won't route the packets)
+
+## Recursive Static Route
+
+* Only the next hop is specified
+
+## Fully Specified Static Route
+
+* Both the exit interface and next hop are specified
