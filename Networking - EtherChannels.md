@@ -1,6 +1,6 @@
 An EtherChannel, also known as a port channel or link aggregation group (LAG), is a technology that's used to combine multiple physical Ethernet links into a single logical link
 
-* Primarily operates at the Data Link layer of the OSI model (Layer 2)
+* Operates on Layers 2 and 3 of the OSI model
 * Provides higher bandwidth and increased redundancy
 * Provides load balancing across the member links by distributing traffic across multiple links
 
