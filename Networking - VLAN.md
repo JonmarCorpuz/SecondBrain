@@ -6,12 +6,32 @@ A Virtual Local Area Network is a method of logically dividing a physical networ
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# VLAN Traffic
+# VLAN Tagging
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/922c8b652a916ec056dcc5ebc65fee00.png)
 
 * VLANs are configured on a switch by adding a 802.1q or dot1q tag to a frame, which will designate the VLAN that the traffic originated from
 * The 802.1q tag provides a standard between vendors that'll always define the VLAN of a frame
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VLAN Ports
+
+## Access Ports
+
+An access port is a switchport that's assigned to a single VLAN and carries traffic for that VLAN only
+
+## Trunk Ports
+
+A trunk port is a switch port that carries traffic for multiple VLANs 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VLAN Routing
+
+## Router on a Stick
+
+## SVI Routing
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
