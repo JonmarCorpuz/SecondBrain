@@ -22,9 +22,11 @@ A trunk port (Tagged port) is a switch port that carries traffic for multiple VL
 
 The ISL is a Cisco proprietary VLAN trunking protocol that encapsulates the entire Ethernet frame with an ISL header and trailer
 
+* Created before the industry standard IEEE 802.1Q
+
 ### IEEE 802.1Q
 
-The IEEE 802.1Q is a trunking protocol that inserts a 4-byte tag into the Ethernet frame header
+The IEEE 802.1Q is a industry standard trunking protocol that inserts a 4-byte tag into the Ethernet frame header
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/922c8b652a916ec056dcc5ebc65fee00.png)
 
