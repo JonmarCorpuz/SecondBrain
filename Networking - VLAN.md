@@ -1,6 +1,8 @@
 A Virtual Local Area Network is a method of logically dividing a physical network into multiple virtual networks
 
-* Allows administrators to segment traffic within a network without requiring a physical separation of devices
+* Logically segments traffic within a network at the Layer 2 of the OSI model without requiring a physical separation of devices
+* Switches don't forward traffic directly between hosts in different VLANs
+* Automatically created when assigned to an interface
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
