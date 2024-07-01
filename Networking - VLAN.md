@@ -28,7 +28,7 @@ The ISL is a Cisco proprietary VLAN trunking protocol that encapsulates the enti
 
 The IEEE 802.1Q is a industry standard trunking protocol that inserts a 4-byte (32 bits) between the source and length/type fields of the Ethernet frame header
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/922c8b652a916ec056dcc5ebc65fee00.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dsfdfdgsgdfsgfdsgdfsfdsfdsfdsfddfsdfsfdsdsfdsg.png)
 
 * VLANs are configured on a switch by adding a 802.1q or dot1q tag to a frame, which will designate the VLAN that the traffic originated from
 * The 802.1q tag provides a standard between vendors that'll always define the VLAN of a frame
