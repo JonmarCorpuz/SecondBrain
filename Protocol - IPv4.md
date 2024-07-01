@@ -112,43 +112,63 @@ The Total Length field indicates the total length of the IPv4 packet, including 
 
 * Measured in bytes
 * The minimum value is 20 bytes, which means equals to an IPv4 header with no encapsulated data
-* The maximum value is 65 535 bytes 
+* The maximum value is 65 535 bytes
+
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 32768 | 16384 | 8192 | 4096 | 2048 | 1024 | 512 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
 ## Identification (16 bits)
 
 The Identification field is used for uniquely identifying fragments of an original IP datagram
 
 * Primarily used in fragmentation and reassembly of IP packets
+* All fragments of the same packet will have their own IPv4 header with the same value in this field so that they can be reassembled later
+* Packets are fragmented if they'r elarger than the Maximum Transmission Unit, which is usually 1500 bytes
 
 ## Flags (3 bits)
 
-The Flags field contains control flags that are used for fragmentation and reassembly
+The Flags field contains control flags that are used to control and identify fragments
 
-* Reserved (bit **0**), which indicates that the bit is reserved for potential future use
-* Don't Fragment (bit **1**), which indicates that the packet should not be fragmented
-* More Fragments (bit **2**), which indicated that there are more fragments following this one
+| Flag | Meaning | Purpose |
+| --- | --- | --- |
+| Bit 0 | Reserved | Indicates that the bit is reserved for potential future use |
+| Bit 1 | Don't Fragment (DF) | Indicates that the packet should not be fragmented |
+| Bit 2 | More Fragments (MF) | Indicates that there are either more fragments following this one if it's set to 1 or that this is the last fragment if it's set to 0 |
 
 ## Fragment Offset (13 bits)
 
-The Fragment Offset field indicated in what portion of a fragmented packet that it belongs to
+The Fragment Offset field indicates the position of the fragment within the original IP packet
 
 * Specifies where the fragment fits in the original datagram
+* Allows fragmented packets to be reassembled, even if the fragments arrive out of order
 
 ## Time to Live (8 bits)
 
-The Time to Live field represents that maximum number of hops that the packet can traverse before being discarded
+The Time to Live field represents the maximum number of hops that the packet can traverse before being discarded
 
-* Decrements by one at each router and if it reaches zero, then the packet is discarded
+* Decrements by one at each hop
+* The packet is discarded if the TTL reaches 0
+* Prevents infinite loops
 
 ## Protocol (8 bits)
 
-The Protocol field indicates the protocol used in the data portion of the packet (Ex: *TCP*, *UDP*, *ICMP*, *etc.*)
+The Protocol field indicates the protocol used in the encapsulated L4 PDU 
+
+| Protocol Field Value | Meaning |
+| --- | --- |
+| 1 | ICMP |
+| 6 | TCP |
+| 17 | UDP |
+| 89 | OSPF |
 
 ## Header Checksum (16 bits)
 
-The Header Checksum field provides error-checking for the header only
+The Header Checksum field checks for errors in the IPv4 header
 
-* Calculated based on the header contents and is recomputed at each router
+* Calculated based on the header contents and compared to the one in this field
+* Recomputed at each router
+* If the calculated checksum and the value of this field doesn't match, then the router will drop the packet
 
 ## Source Address (32 bits)
 
@@ -158,7 +178,7 @@ The Source Address field specifies the IPv4 address of the packet's source
 
 The Source Address field specifies the IPv4 address of the packet's destination
 
-## Options (Variable length)
+## Options (0-320 bits)
 
 The Options field may include various additional information (Ex: *Record route*, *Timestamp*, *etc.*)
 
