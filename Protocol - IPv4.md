@@ -130,9 +130,9 @@ The Flags field contains control flags that are used to control and identify fra
 
 | Flag | Meaning | Purpose |
 | --- | --- | --- |
-| Bit 0 | Reserved | Indicates that the bit is reserved for potential future use |
-| Bit 1 | Don't Fragment (DF) | Indicates that the packet should not be fragmented |
-| Bit 2 | More Fragments (MF) | Indicates that there are either more fragments following this one if it's set to 1 or that this is the last fragment if it's set to 0 |
+| First bit (100) | Reserved | Indicates that the bit is reserved for potential future use |
+| Second bit (010) | Don't Fragment (DF) | Indicates that the packet should not be fragmented |
+| Third bit (001) | More Fragments (MF) | Indicates that there are either more fragments following this one if it's set to 1 or that this is the last fragment if it's set to 0 |
 
 ## Fragment Offset (13 bits)
 
