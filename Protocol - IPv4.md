@@ -162,7 +162,7 @@ The Protocol field indicates the protocol used in the encapsulated L4 PDU
 
 ## Header Checksum (16 bits)
 
-The Header Checksum field checks for errors in the IPv4 header
+The Header Checksum field checks for errors in the IPv4 header only
 
 * Calculated based on the header contents and compared to the one in this field
 * Recomputed at each router
