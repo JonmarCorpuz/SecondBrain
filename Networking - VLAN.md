@@ -33,6 +33,38 @@ The IEEE 802.1Q is a industry standard trunking protocol that inserts a 4-byte (
 * VLANs are configured on a switch by adding a 802.1q or dot1q tag to a frame, which will designate the VLAN that the traffic originated from
 * The 802.1q tag provides a standard between vendors that'll always define the VLAN of a frame
 
+#### TPID 
+
+* 16 bits (2 bytes) in length
+* Always set to a value of 0x8100 to indicate that the frame is 802.1Q-tagged
+* 
+
+#### PCP
+
+* 3 bits in length
+* Used for Class of Service, which prioritizes important traffic in congested networks
+
+#### DEI
+
+* 1 bit in length
+* Used to indicate frames that can be dropped if the network is congested, which makes sure that more important traffic gets through
+
+#### VID
+
+* 12 bits in length, which means that there are 4096 total VLANs
+* Identifies the VLAN that the frame belongs to
+* VLANs 0 and 4095 are reserved, meaning that the actual range of VLANs is 1 to 4094
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VLAN Ranges
+
+## Normal VLANs
+
+
+
+## Extended VLANs
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # VLAN Routing
@@ -66,6 +98,7 @@ A management VLAN is used to access and manage network devices
 A native VLAN is the network traffic that's carried untagged on trunk ports
 
 * Allows devices that don't support VLAN tagging to still be able to receive and understand the traffic that belongs to the native VLAN
+* Not available in ISL
 
 ## Private VLAN
 
