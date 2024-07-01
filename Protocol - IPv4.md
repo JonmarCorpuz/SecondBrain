@@ -87,16 +87,32 @@ The Version field indicates the IP version that's being used
 The IHL field specifies the length of the IPv4 header in 32-bit words
 
 * Necesasary to indicate the total length of the header since the Options fiel is variable in length
-* Can represent values from 0 to 15, where each value corresponds to a header length ranging from 0 (no header present) to 60 bytes (the maximum header length)
-* Since the header length is specified in 32-bit words, the actual header length in bytes is calculated by multiplying the value in the ISL field by 4
+* Identified in 4-byte increments (32-bits) and is calculated by multiplying the value of the ISL field by 4 (Ex: *Value of 5 = 5x4-bytes = 20 bytes*)
+* The value ranges from 0 to 15
+* The minimum value is 5 (*5x4=20 bytes*)
+* The maximum value is 15 (*5x15=60 bytes*)
+
+## Differentiated Services Code Point (6 bits)
+
+The DSCP is used for QoS and prioritizes delay-sensitive data (Ex: *Streaming voice*, *Video*, *etc.*)
+
+* Identifies which traffic should receive priority treatment
+
+## Explicit Congestion Notification (2 bits)
+
+The ECN provides end-to-end notification of network congestion without dropping packets
+
+* An optional feature that requires both endpoints and the underlying network infrastructure to support it
 
 ## Type of Service (8 bits)
 
 ## Total Length (16 bits)
 
-The Total Length field indicates the total length of the IPv4 packet, including the header and payload
+The Total Length field indicates the total length of the IPv4 packet, including the L3 header and L4 segment
 
-* The maximum value is 65 535 bytes (524 280 bits)
+* Measured in bytes
+* The minimum value is 20 bytes, which means equals to an IPv4 header with no encapsulated data
+* The maximum value is 65 535 bytes 
 
 ## Identification (16 bits)
 
