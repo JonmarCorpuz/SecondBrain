@@ -77,14 +77,18 @@ An IPv4 loopback address is a special address that's used by a device to send tr
 
 ## Version (4 bits)
 
-The Version field indicates the IP version that's being used, which in this case is set to 4 for IPv4
+The Version field indicates the IP version that's being used
 
-## Header Length (4 bits)
+* IPv4 is identified with the value of 4 (*0100*)
+* IPv6 is identified with the value of 6 (*0110*)
 
-The Header Lengt field specifies the length of the IPv4 header in 32-bit words
+## Internet Header Length (4 bits)
 
-* With 4 bits, the Header Length fiel can represent values from 0 to 15, where each value corresponds to a header length ranging from 0 (no header present) to 60 byes (the maximum header length)
-* Since the header length is specified in 32-bit words, the actual header length in bytes is calculated by multiplying the value in the Header Length field by 4
+The IHL field specifies the length of the IPv4 header in 32-bit words
+
+* Necesasary to indicate the total length of the header since the Options fiel is variable in length
+* Can represent values from 0 to 15, where each value corresponds to a header length ranging from 0 (no header present) to 60 bytes (the maximum header length)
+* Since the header length is specified in 32-bit words, the actual header length in bytes is calculated by multiplying the value in the ISL field by 4
 
 ## Type of Service (8 bits)
 
