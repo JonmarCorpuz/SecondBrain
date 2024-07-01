@@ -104,8 +104,6 @@ The ECN provides end-to-end notification of network congestion without dropping 
 
 * An optional feature that requires both endpoints and the underlying network infrastructure to support it
 
-## Type of Service (8 bits)
-
 ## Total Length (16 bits)
 
 The Total Length field indicates the total length of the IPv4 packet, including the L3 header and L4 segment
