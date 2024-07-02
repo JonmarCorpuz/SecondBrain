@@ -1,6 +1,6 @@
 Classless Inter-Domain Routing is a method used for IP addressing to allow for more efficient allocation of IP addresses that the older classful addressing methods
 
-* IP addresses are represented as a prefix followed by a slash and a number that indicates the number of significant bits in the subnet mask (Ex: *192.168.1.0/24*)
+* Removes the use of IPv4 classes and allows larger networks to be split into smaller networks (subnets)
 * Allows for the use of VLSM and doesn't adhere to strict address classes
 * Facilitates hierarchical addressing and address aggregation, which helps minimize the size of routing tables in routers and reduces the overhead associated with routing updates in large-scale networks
 * Contributes to the scalability and stability of the global internet infrastructure
@@ -44,6 +44,8 @@ Classless Inter-Domain Routing is a method used for IP addressing to allow for m
 | /2 | 192.0.0.0 | 63.255.255.255 |	1,073,741,824 |	1,073,741,822 |
 | /1 | 128.0.0.0 | 127.255.255.255 | 2,147,483,648 | 2,147,483,646 |
 | /0 | 0.0.0.0 | 255.255.255.255 | 4,294,967,296 | 4,294,967,294 |
+
+* The number of usable addresses in a network is calculated by doing 2ⁿ-2 (n = number of host bits)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
