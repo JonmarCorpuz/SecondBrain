@@ -18,6 +18,9 @@ An access port (Untagged port) is a switchport that's assigned to a single VLAN 
 
 A trunk port (Tagged port) is a switch port that carries traffic for multiple VLANs 
 
+* All VLANs are allowed on a trunk port by default
+* If a VLAN doesn't exist, even if it's allowed on the trunk it won't appear in the VLANs allowed and active list
+
 ### Inter-Switch Link
 
 The ISL is a Cisco proprietary VLAN trunking protocol that encapsulates the entire Ethernet frame with an ISL header and trailer
@@ -32,6 +35,7 @@ The IEEE 802.1Q is a industry standard trunking protocol that inserts a 4-byte (
 
 * VLANs are configured on a switch by adding a 802.1q or dot1q tag to a frame, which will designate the VLAN that the traffic originated from
 * The 802.1q tag provides a standard between vendors that'll always define the VLAN of a frame
+* Provides a native VLAN for trunk ports, which is used for untagged traffic and used the VID 1 on all trunks by default
 
 #### TPID 
 
@@ -71,7 +75,23 @@ The IEEE 802.1Q is a industry standard trunking protocol that inserts a 4-byte (
 
 ## Router on a Stick
 
+ROAS is a networking technique that's used to route traffic between multiple VLANs by creating multiple subinterfaces on an interface for each VLAN
+
+* Each subinterface is configured with a unique VLAN tag and an IP address in order to allow the router to distinguish and route traffic between VLANs over a single physical connection
+* The router will behave as if frames arriving with a certain VLAN tag have arrived on the subinterface configured with that VLAN tag
+* The router will tag frames sent out of each subinterface with the VLAN tag configured on the subinterface
+
 ## SVI Routing
+
+A switch virtual interface is a virtual interface on a Layer 3 switch that represents a VLAN interface for routing and management purposes
+
+* Used for inter-VLAN routing within the switch itself
+* Can route traffic between SVIs without the need of an external router
+* Typically have an IP address assigned to it and functions similarly to physical interfaces but within the context of a VLAN on the switch
+* Configured as a VLAN's default gateway
+* SVIs get added to the Layer 3 switch's routing table
+* Must have at least one access or trunk port in the VLAN to be in an up/up state in order for it to be up/up itself (If not, it'll remain down/down)
+* SVIs are shutdown by default
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -95,10 +115,15 @@ A management VLAN is used to access and manage network devices
 
 ## Native VLAN
 
-A native VLAN is the network traffic that's carried untagged on trunk ports
+A native VLAN is the network traffic that carries untagged traffic on trunk ports
 
 * Allows devices that don't support VLAN tagging to still be able to receive and understand the traffic that belongs to the native VLAN
 * Not available in ISL
+* Each switch in the network must have the same native VLAN
+* Expects all traffic in the Native VLAN to be untagged, meaning that it doesn't have a dot1q tag (If a frame does happen to have a dot1q tag, the switch will consider this as an error and will not forward it)
+* Assigned to an unused VLAN
+* Each frame is smaller since they're not tagged, which allows the device to send more frames per second
+* Networking devices will understand that untagged traffic belongs to the native VLAN, so there's no need to encapsulate them with dot1q tag
 
 ## Private VLAN
 
