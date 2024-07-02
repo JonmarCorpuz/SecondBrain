@@ -46,6 +46,7 @@ Classless Inter-Domain Routing is a method used for IP addressing to allow for m
 | /0 | 0.0.0.0 | 255.255.255.255 | 4,294,967,296 | 4,294,967,294 |
 
 * The number of usable addresses in a network is calculated by doing 2ⁿ-2 (n = number of host bits)
+* The number of possible subnets in a network is calculated by doing 2ˣ (x = number of borrowed host btis)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
