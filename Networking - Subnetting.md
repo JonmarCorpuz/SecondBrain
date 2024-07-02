@@ -11,12 +11,12 @@ Subnetting is a technique used to divide a single network into smaller and more 
 
 ## FLSM
 
-Fixed Length Subnet Masking is a subnetting technique that's used to divide a network into subnets of equal size, each containing the same subnet mask
+Fixed Length Subnet Masking is a subnetting technique that's used to divide a network into subnets of equal size
 
 * Can lead to inefficient allocation of IP addresses
 
 ## VLSM
 
-Variable Length Subnet Masking is a subnetting technique used to allocate IP addresses for efficiently 
+Variable Length Subnet Masking is a subnetting technique used to create subnets of different sizes
 
-* Allows for subnets of different sizes within the same network by using subnet masks of varying lengths
+* Allows more efficient allocation of IP addresses
