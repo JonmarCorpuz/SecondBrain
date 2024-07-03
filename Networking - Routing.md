@@ -35,6 +35,13 @@ An IGP is a type of dynamic routing protocol that's used to share routes within 
 | Distance Vector |   | RIP, EIGRP |
 | Link State |   | OSPF, IS-IS |
 
+| IGP Protocol | Metric | Description |
+| --- | --- | --- |
+| RIP | Hop count |  |
+| EIGRP | Metric based on bandwidth and delay |  |
+| OSPF | Cost |  |
+| IS-IS | Cost |  |
+
 #### Distance Vector Protocols
 
 * Operate by sending the known destination networks and their metric to reach them to their directly connected neighbors (Shares their routing table with them)
