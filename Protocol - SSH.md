@@ -7,3 +7,11 @@
 4. Configure username and passwords
 5. Enable SSH
 6. Configure VTY lines 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# SSH Components
+
+## SSH Server
+
+## SSH Client
