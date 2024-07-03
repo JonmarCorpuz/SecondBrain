@@ -12,6 +12,25 @@ A routing table is a data structure that contains routes to particular network d
 * Each route in a routing table is an instruction (*To reach destinations in network X, send the packet to next-hop Y*)
 * A router will drop a packet if it doesn't match any routes in its routing table
 
+## Administrative Distance
+
+* Used to determine which routing protocol is preferred
+* A lower AD is preferred and indicates that the routing protocol is considered more trustworthy
+
+| AD | Route type |
+| --- | --- |
+| 0 | Directly Connected |
+| 1 | Static Route |
+| 20 | External BGP |
+| 90 | EIGRP |
+| 100 | IGRP |
+| 110 | OSPF |
+| 115 | IS-IS |
+| 120 | RIP |
+| 170 | External EIGRP | 
+| 200 | Internal BGP |
+| 255 | Unusable Route (The router doesn't believe the source of that route and doesn't install it in the routing table) |
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Routing Methods
@@ -20,11 +39,15 @@ A routing table is a data structure that contains routes to particular network d
 
 * The routing table isn't automatically updated (If an interface goes down, the route will still remain in the routing table)
 
+## Floating Static Route
+
+
 ## Dynamic Routing
 
 * Routers form adjacencies with adjacent routers to advertise and exchange information about the routes they know to other routers and vice-versa
 * If multiple routes to a destination are learned, the router will determine which route is superior and will add it to the routing table (The superior route is the one with the lower metric)
 * The routing table is automatically updated (If an interface goes down, the router removes the route from the routing table and replaces it with the next best route if there's one)
+* Metrics are used to compare routes that are learned via the same routing protocol
 
 ### Interior Gateway Protocol
 
@@ -37,10 +60,10 @@ An IGP is a type of dynamic routing protocol that's used to share routes within 
 
 | IGP Protocol | Metric | Description |
 | --- | --- | --- |
-| RIP | Hop count |  |
+| RIP | Hop count | Each router in the path counts as one hop and the total metric is the total number of hops to the destination |
 | EIGRP | Metric based on bandwidth and delay |  |
-| OSPF | Cost |  |
-| IS-IS | Cost |  |
+| OSPF | Cost | The cost of each link is calculated based on bandwidth and the total metric is the total cost of each link in the route |
+| IS-IS | Cost | The total metric is the total cost of each link in the route (All links have a cost of 10 by default and aren't calculated based on bandwidth) |
 
 #### Distance Vector Protocols
 
