@@ -12,6 +12,8 @@ The Dynamic Host Configuration Protocol is a network management protocol that al
 
 ### Centralized DHCP Server
 
+* DHCP relay agents are configured to forward a client's broadcast DHCP messages to a remote DHCP server as unicast messages since centralized DHCP servers won't always be able to receive a DHCP client's broadcast message since broadcast messages don't leave the local subnet
+
 ## DHCP Clients
 
 * Uses port UDP 68
