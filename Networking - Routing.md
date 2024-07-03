@@ -18,7 +18,45 @@ A routing table is a data structure that contains routes to particular network d
 
 ## Static Routing
 
+* The routing table isn't automatically updated (If an interface goes down, the route will still remain in the routing table)
+
 ## Dynamic Routing
+
+* Routers form adjacencies with adjacent routers to advertise and exchange information about the routes they know to other routers and vice-versa
+* If multiple routes to a destination are learned, the router will determine which route is superior and will add it to the routing table (The superior route is the one with the lower metric)
+* The routing table is automatically updated (If an interface goes down, the router removes the route from the routing table and replaces it with the next best route if there's one)
+
+### Interior Gateway Protocol
+
+An IGP is a type of dynamic routing protocol that's used to share routes within a single autonomous system (Ex: *OSPF*, *EIGRP*)
+
+| IGP Algorithm Type | Description | Protocols |
+| --- | --- | --- |
+| Distance Vector |   | RIP, EIGRP |
+| Link State |   | OSPF, IS-IS |
+
+#### Distance Vector Protocols
+
+* Operate by sending the known destination networks and their metric to reach them to their directly connected neighbors (Shares their routing table with them)
+* Route sharing method is called "routing by rumor" because a router doesn't know about the networks beyond their neighbors, they only know the information that their neighbors tell them
+* The routers only learn the distance (metric) and vector (direction) of each route
+
+#### Link State Protocols
+
+* Every router will create a connectivity map of the network by advertising information about their interfaces to its neighbors, which are then passed along to other routers, until all routers in the network develop the same map of the network
+* After every router has developed the same connectivitiy map of the network, they'll use it to calculate the best routes to each network it knowns about
+* Uses more resources on the router because more information is shared
+* Tend to be faster in reacting to changes in the network
+* The router's route table will contain the best route to each destination network it knows about
+* The route with the lowest metric is considered as the best route (If a router learns two or more routes via the same routing protocol to the same destination with the same metric, both will be added to the routing table and the traffic will be load-balanced over both routes, which is known as **Equal Cost Multi-Path Load Balancing**)
+
+### Exterior Gateway Protocol
+
+An EGP is a type of dynamic routing protocol that's used to share routes between different autonomous systems (Ex: *BGP*)
+
+| EGP Algorithm Type | Description | Protocols |
+| --- | --- | --- |
+| Path Vector |   | BGP |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -28,6 +66,7 @@ A routing table is a data structure that contains routes to particular network d
 | --- | --- |
 | C | Connected route |
 | L | Local route |
+| O | OSPF Dynamic route |
 
 ## Connected Route 
 
