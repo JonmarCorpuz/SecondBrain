@@ -8,6 +8,10 @@ The Dynamic Host Configuration Protocol is a network management protocol that al
 
 * Uses port UDP 67
 
+### Uncentralized DHCP Server
+
+### Centralized DHCP Server
+
 ## DHCP Clients
 
 * Uses port UDP 68
@@ -22,22 +26,24 @@ The Dynamic Host Configuration Protocol is a network management protocol that al
 
 ## DHCPOFFER
 
-* Source is UDP 67
-* Destination is UDP 68
 * The message sent back to the DHCP client can be either broadcast or unicast (The client's IP address isn't officially configured yet, meaning that some client's won't accept unicast messages and that's why broadcast must be used)
 
 ## DHCPREQUEST
 
 * A client will typically accept the first offer it receives
-* A broadcast message
+* A broadcast message 
 
 ## DHCPACK
 
-## DHCPACK
+* The message sent back to the DHCP client can be either broadcast or unicast (The client's IP address isn't officially configured yet, meaning that some client's won't accept unicast messages and that's why broadcast must be used)
+
+## DHCPNACK
 
 ## DHCPDECLINE
 
 ## DHCPRELEASE
+
+* A unicast message
 
 ## DHCPINFORM
 
