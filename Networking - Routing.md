@@ -75,7 +75,7 @@ An IGP is a type of dynamic routing protocol that's used to share routes within 
 
 * Every router will create a connectivity map of the network by advertising information about their interfaces to its neighbors, which are then passed along to other routers, until all routers in the network develop the same map of the network
 * After every router has developed the same connectivitiy map of the network, they'll use it to calculate the best routes to each network it knowns about
-* Uses more resources on the router because more information is shared
+* Uses more resources (CPU) on the router because more information is shared
 * Tend to be faster in reacting to changes in the network
 * The router's route table will contain the best route to each destination network it knows about
 * The route with the lowest metric is considered as the best route (If a router learns two or more routes via the same routing protocol to the same destination with the same metric, both will be added to the routing table and the traffic will be load-balanced over both routes, which is known as **Equal Cost Multi-Path Load Balancing**)
