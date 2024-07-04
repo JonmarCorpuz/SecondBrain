@@ -97,6 +97,7 @@ An EGP is a type of dynamic routing protocol that's used to share routes between
 | C | Connected route |
 | L | Local route |
 | O | OSPF Dynamic route |
+| D | EIGRP route |
 
 ## Connected Route 
 
