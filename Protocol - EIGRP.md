@@ -8,6 +8,7 @@ The Enhanced Interior Gateway Routing Protocol is an advanced distance-vector ro
 * Can manage large routing tables and reduce the amount of routing information that must be processed and stored by routers by employing various features (Ex: *Route summarization*, *Route aggregation*, *etc.*)
 * Sends messages using the 224.0.0.10 multicast address
 * Can perform unequal-cost load-balancing (By default it performs ECMP load-balancing over 4 paths like RIP)
+* Route ID priority starts with the manually configured IP address, the highest loopback interface address, and the the highest physical interface address
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
