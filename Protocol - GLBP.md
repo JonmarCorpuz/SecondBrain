@@ -1,6 +1,8 @@
 The Gateway Load Balancing Protocol
 
-* Load balances among multiple routers within a single subnet (Ex: *PC1 and PC2 in the same subnet can both use a different router as their default gateway*)
+* Allows multiple active routers to load balance traffic within a single subnet (Ex: *PC1 and PC2 in the same subnet can both use a different router as their default gateway*)
+* 224.0.0.102 multicast address
+* 0007.b400.XXYY virtual MAC address where XX is the GLBP group number and the YY is the AVF number
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
