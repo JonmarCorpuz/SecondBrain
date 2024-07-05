@@ -15,3 +15,9 @@ A FHRP is a computer networking protocol that's designed to protect the default 
 * Non-preemptive by default, meaning that the current active router will not automatically give up its role, even if the former active router returns
 * When a standby router becomes active, it'll broadcast a gratuitous ARP message so that all the switches in the network will update their MAC address tables (If the previous active router comes back online, by default it won't take back its role as the active router and will become a standby router instead)
 
+| FHRP Protocol | Terminology | Multicast IP | Virtual MAC | Cisco Proprietary |
+| --- | --- | --- | --- | --- |
+| HSRPv1 | Active/Standby | 224.0.0.2 | 0000.0c07.acXX | Yes |
+| HSRPv2 | Active/Standby | 224.0.0.102 | 0000.0c9f.fXXX | Yes |
+| VRRP | Master/Backup | 224.0.0.18 | 0000.5e00.01XX | No |
+| GLBP | AVG/AVF | 224.0.0.102 | 0007.b400.XXYY | Yes |
