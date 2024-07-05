@@ -80,10 +80,11 @@ Backbone routers are routers that are connected to the backbone OSPF area
 * OSPF's metric is called cost, which is the total cost of the bandwidth of the outgoing interfaces
 * Automatically calculated based on the bandwidth of the interface and by dividing a reference bandwidth value, which is 100 by default, by the interface's bandwidth (Ex: *Reference 100 mbps / Interface 10 mbps = Cost of 10*)
 * **Reference bandwidth / Interface bandwidth**
-* The lowest cost is 1 (Ex: *Reference 100 mbps / Interface 1000 mbps = Cost of 1*)
+* The lowest cost is 1 (Values less than 1 are automatically converted to 1)
 * The reference bandwidth should be greater than the fastest link in your network
 * Loopback interfaces have a cost of 1
 * It is recommended to change the reference bandwidth and then change the cost of individual interfaces
+* FastEthernet, GigabitEthernet, and 10GigabitEthernet interfaces have the same cost
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -180,11 +181,16 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 | OSPF Message Type | Purpose |
 | --- | --- |
+| Link-State Advertisement (LSA) | Exchanges information about the network topology |
 | Hello | Neighbor discovery and maintenance |
 | Database Description (DBD) | Contains a summary of a router's LSDB and checks if the LSDB of each router is the same |
 | Link-State Request (LSR) | Requests specific LSAs from a neighbor router | 
 | Link-State Update (LSU) | Sends specific LSAs to a neighbor router |
 | Link-State Acknowledgement | Used to acknowledge that the router received a message |
+
+## LSA 
+
+### 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -217,3 +223,7 @@ Backbone routers are routers that are connected to the backbone OSPF area
 ## Not-So-Stubby Area
 
 ## Totally Not-So-Stubby Area
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# OSPF Neighbor Router Requirements
