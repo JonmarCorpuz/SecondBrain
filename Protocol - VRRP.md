@@ -1,5 +1,9 @@
 The Virtual Router Redundancy Protocol is an open standard First Hot Redundancy protocol used to provide high availability and failover capability for routers on a LAN
 
+* 224.0.0.18 multicast address
+* 0000.5e00.01XX virtual MAC address where XX is the VRRP group number
+* Allows users to configure a different master router in each subnet or VLAN to load balance
+
 # VRRP Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/667919245926862848.png)
