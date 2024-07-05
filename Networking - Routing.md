@@ -33,6 +33,18 @@ A routing table is a data structure that contains routes to particular network d
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Router Interfaces
+
+## Loopback Interface
+
+A loopback interface is a virtual interface on a router
+
+* Always up/up unless you manually shut it down
+* Not dependant on a physical interface
+* Provides a consistent IP address that can be used to reach and identify the router
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Routing Methods
 
 ## Static Routing
