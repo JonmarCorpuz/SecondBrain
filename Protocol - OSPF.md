@@ -176,13 +176,25 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# OSPF Message Types
+
+| OSPF Message Type | Purpose |
+| --- | --- |
+| Hello | Neighbor discovery and maintenance |
+| Database Description (DBD) | Contains a summary of a router's LSDB and checks if the LSDB of each router is the same |
+| Link-State Request (LSR) | Requests specific LSAs from a neighbor router | 
+| Link-State Update (LSU) | Sends specific LSAs to a neighbor router |
+| Link-State Acknowledgement | Used to acknowledge that the router received a message |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # OSPF Versions
 
 ## OSPFv1
 
-## OSPFv2
-
 * Old and no longer in use
+
+## OSPFv2
 
 * Used for IPv4
 
