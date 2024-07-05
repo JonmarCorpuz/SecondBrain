@@ -71,6 +71,11 @@ An ASBR is an OSPF router that connects the OSPF network to an external network
 
 Backbone routers are routers that are connected to the backbone OSPF area
 
+## Metric
+
+* OSPF's metric is called cost
+* Automatically calculated based on the bandwidth of the interface and by dividing a reference bandwidth value, which is 100 by default, by the interface's bandwidth (Ex: *Reference 100 mbps / Interface 10 mbps = Cost of 10*)
+
 ## Intervals
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
