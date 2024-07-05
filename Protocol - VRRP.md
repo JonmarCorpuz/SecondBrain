@@ -1,4 +1,4 @@
-The Virtual Router Redundancy Protocol is an open standard networking protocol used to provide high availability and failover capability for routers on a LAN
+The Virtual Router Redundancy Protocol is an open standard First Hot Redundancy protocol used to provide high availability and failover capability for routers on a LAN
 
 # VRRP Components
 
