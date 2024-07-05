@@ -226,4 +226,26 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# OSPF Connection Types
+
+## Broadcast
+
+* Enabled by default on Ethernet and Fiber Distributed Data Interfaces interfaces
+* Routers dynamically discover neighbors by sending and listening for OSPF Hello messages using the 224.0.0.5 multicast address
+* A designated router and backup designated router must be elected on each subnet (If there are no OSPF neighbors, then only a designated router is enough)
+* Routers that aren't the designated router or backup designated router become a DROther
+
+## Point-to-Point
+
+* Enabled by default on Point-to-Point Protocol and High-Level Data Link Control interfaces
+
+## Non-Broadcast
+
+* Enabled by default on Frame Relay and X.25 interfaces
+* Neighbors must be manually configured
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # OSPF Neighbor Router Requirements
+
+
