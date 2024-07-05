@@ -75,9 +75,11 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 * OSPF's metric is called cost, which is the total cost of the bandwidth of the outgoing interfaces
 * Automatically calculated based on the bandwidth of the interface and by dividing a reference bandwidth value, which is 100 by default, by the interface's bandwidth (Ex: *Reference 100 mbps / Interface 10 mbps = Cost of 10*)
+* **Reference bandwidth / Interface bandwidth**
 * The lowest cost is 1 (Ex: *Reference 100 mbps / Interface 1000 mbps = Cost of 1*)
 * The reference bandwidth should be greater than the fastest link in your network
 * Loopback interfaces have a cost of 1
+* It is recommended to change the reference bandwidth and then use the **ospf cost** command to change the cost of individual interfaces
 
 ## Intervals
 
