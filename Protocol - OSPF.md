@@ -115,6 +115,16 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 # OSPF Neighbor States
 
+| OSPF Neighbor Process | Description |
+| --- | --- |
+| 1. Down State |   |
+| 2. Init State |   |
+| 3. 2-Way State |   |
+| 4. Exstart State |   |
+| 5. Exchange State |   |
+| 6. Loading State |   |
+| 7. Full State |   |
+
 ## Down State
 
 * The router doesn't know about any OSPF neighbors yet
@@ -142,6 +152,16 @@ Backbone routers are routers that are connected to the backbone OSPF area
 * Both routers move to the next state after exchanging DBDs
 
 ## Loading State
+
+* Routers will send Link State Request messages to request that their neighbors send them any LSAs that they don't have (The missing LSAs are sent as Link State Update messages)
+* The router receiving any missing LSAs will send LSAck messages back to the neighbor router to acknowledge that they received the LSAs
+* Ensures that each router has the same LSAs
+
+## Full State
+
+* The routers have a full OSPF adjacency and identical LSDBs
+* Neighboring routers will continue to send and listen for Hello packets to maintain the neighobr adjacency (They'll listen every 10 seconds by default)
+* Every time a Hello packet is received, the Dead timer is reset and if the Dead time (40 seconds by default) counts down to 0 and no Hello message is received, the neighbor is removed, if the neighbor remains up then the neighbor routers will continue to share LSAs as the network changes to make sure that each router has a complete and accurate map of the network 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
