@@ -1,6 +1,7 @@
 The Hot Standby Router Protocol is a Cisco proprietary First Hop Redundancy Protocol that allows for the configuration of a group of routers that'll work together in order to provide redundancy and high availability
 
 * Allows users to configure a different active router in each subnet or VLAN to load balance
+* All routers in the group have to use the same version of HSRP since both versions aren't compatible with one another
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
