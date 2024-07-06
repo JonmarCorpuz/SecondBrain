@@ -128,8 +128,10 @@ The **Account, Global, Local, Permission**
 ### Standard Access Control Lists
 
 * Matches traffic based on only the source IP address of the packet
+* Should be applied as close to the destination as possible
+* The network device may re-order the /32 ACEs to improve the efficiency of processing the ACL
 
-#### Numbered Standard Access Control List
+#### Standard Numbered Access Control Lists
 
 * Identified with a number
 * Different types of ACLs have a different range of numbers that can be used
@@ -138,6 +140,10 @@ The **Account, Global, Local, Permission**
 | --- | --- |
 | 1-99 and 1300-1999 | Standard ACLs |
 
-#### Extended Access Control List
+#### Standard Named Access Control Lists
+
+* Identified with a name
+
+### Extended Access Control Lists
 
 * Matches traffic based on the source and destination IP address, and the source and destination port of the packet
