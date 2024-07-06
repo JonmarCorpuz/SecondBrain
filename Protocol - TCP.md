@@ -58,41 +58,9 @@ The client acknowledges the server's finish packet with an acknowledge packet an
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# TCP Header
+## TCP Header Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/HEADER-768x432.png)
-
-## TCP Header Flags
-
-The TCP header flags field controls the behavior of the TCP connection
-
-### URG
-
-The urgent flag indicates that certain data within the TCP segment is urgent and should be prioritized by the receiver
-
-* URG packets are immediately sent to the destined application, regardless of any buffered data 
-
-### ACK
-
-The acknowledge flag indicates the acknowledgement of the receipt of data from the sender
-
-### PSH
-
-The push flag indicates that the receiver should deliver data to the receiving application immediately, without buffering
-
-### RST
-
-The reset flag indicates an immediate termination of the connection
-
-### SYN
-
-The synchronize flag indicates the initiation of a connection
-
-### FYN
-
-The finish flag indicates the termination of a connection
-
-## TCP Header Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/TCP-headersssssss.png)
 
@@ -125,6 +93,32 @@ The reserved field is reserved for future use
 ### Flags
 
 The flags field controls the behavior of the TCP connection
+
+#### URG
+
+The urgent flag indicates that certain data within the TCP segment is urgent and should be prioritized by the receiver
+
+* URG packets are immediately sent to the destined application, regardless of any buffered data 
+
+#### ACK
+
+The acknowledge flag indicates the acknowledgement of the receipt of data from the sender
+
+#### PSH
+
+The push flag indicates that the receiver should deliver data to the receiving application immediately, without buffering
+
+#### RST
+
+The reset flag indicates an immediate termination of the connection
+
+#### SYN
+
+The synchronize flag indicates the initiation of a connection
+
+#### FYN
+
+The finish flag indicates the termination of a connection
 
 ### Window Size
 
