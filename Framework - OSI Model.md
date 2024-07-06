@@ -8,7 +8,7 @@ The Open Systems Interconnection model is a conceptual framework that breaks dow
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/NCDafYdORnKavM8aa711kg_fa51b33b7ddd4d9497a7a08deb522fe1_C2M2L2_Item02_img2_OSI-model_v3_new.png)
 
-## 7. Application Layer
+## Layer 7 (Application)
 
 The application layer provides services directly to **end-users and applications** 
 
@@ -16,7 +16,7 @@ The application layer provides services directly to **end-users and applications
 * Serves as the interface between the network and the software application that utilize the network for communication
 * Supports *HTTPS*, *HTTP*, *FTP*, *SMTP*, *etc.*
 
-## 6. Presentation Layer
+## Layer 6 (Presentation)
 
 The presentation layer focuses on **data formatting**, **encryption**, **compressions**, and other functions related to data syntax and semantics
 
@@ -24,7 +24,7 @@ The presentation layer focuses on **data formatting**, **encryption**, **compres
 * Acts as a translator regardless of differences in data representation
 * Allows applications to communicate without worrying about the underlying technical details by abstracting the complexities of data formats and conversions
 
-## 5. Session Layer
+## Layer 5 (Session)
 
 The session layer is responsible for **establishing**, **maintaining**, and **terminating sessions** between applications
 
@@ -33,13 +33,15 @@ The session layer is responsible for **establishing**, **maintaining**, and **te
 * Ensures that communication sessions between applications are properly managed
 * Abstracts the complexities of sessions management, providing a seamless communication experience for applications running on different systems
 
-## 4. Transport Layer
+## Layer 4 (Transport)
 
 The transport layer is responsible for the **end-to-end delivery of segments** (TCP) or **datagrams** (UDP) between endpoints on a network
 
 * Focuses on data segmentation and reassembly, error detection and correction, flow control, and end-to-end connection establishment and termination
+* Provides various services to applications (Ex: *Reliable data transfer*, *Error recovery*, *Data sequencing*, *Flow control*, *etc.*)
+* Provides Layer 4 addressing (Port numbers) that identifies the Application Layer protocol that's being used and provides session multiplexing
 
-## 3. Network Layer
+## Layer 3 (Network)
 
 The network layer focuses on **routing packets** from the source to the destination based on logical network addresses
 
@@ -48,7 +50,7 @@ The network layer focuses on **routing packets** from the source to the destinat
 * May fragment packets into smaller units for transmission across networks with different maximum packet sizes
 * May detect errors in transmitted packets and take corrective actions (Ex: *Requesting retransmission of corrupted packets*, *etc.*)
 
-## 2. Data Link Layer
+## Layer 2 (Data Link)
 
 The data link layer is responsible for **forwarding frames** across a physical medium between neighboring network nodes, as well as **error checking** and **flow control**
 
@@ -61,7 +63,7 @@ The data link layer is responsible for **forwarding frames** across a physical m
 * Regulates the flow of data between devices to prevent congestion and buffer overflow (Ex: *Sliding window protocols*, *etc.*)
 * Supports *Ethernet*, *Wi-Fi*, *PPP*, *etc.*
 
-## 1. Physical Layer
+## Layer 1 (Physical)
 
 The physical layer deals with the **physical transmission of bits** between devices
 
