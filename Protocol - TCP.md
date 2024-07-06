@@ -1,10 +1,11 @@
 The Transmission Control Protocol provides reliable, connection-oriented communication between devices on a network
 
 * Operates at the Layer 4 of the OSI model
-* Connection-oriented, meaning that before sending data to the destination host, the two hosts communicate to establish a connection, and once the connection is established, the data exchange begins
-* Provides reliable communication since the destination host must acknowledge that it received each TCP segment
-* Provides sequencing by adding sequence numbers in the TCP header to allow destination hosts to put segments in the correct order even if they arrive out of order
-* Provides flow control, meaning that the destination host can tell the source host to either decrease or increase the rate that data is sent so that it isn't overwhelmed by receiving traffic faster that it can process it 
+* **Connection-oriented**, meaning that before sending data to the destination host, the two hosts communicate to establish a connection, and once the connection is established, the data exchange begins
+* Provides **reliable communication** since the destination host must acknowledge that it received each TCP segment by using the acknowledgement field of the TCP header
+* Provides **sequencing** by adding sequence numbers in the sequencing field of the TCP header to allow destination hosts to put segments in the correct order even if they arrive out of order
+* Provides **flow control**, meaning that the destination host can tell the source host to either decrease or increase the rate that data is sent so that it isn't overwhelmed by receiving traffic faster that it can process it
+* Provides **TCP retransmission**, meaning that if a segment isn't acknowledged after a certain amount of time, it'll be sent again
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -57,9 +58,14 @@ The destination port field specifies the port number of the receiver process
 
 The sequence number field indicates the position of the data in the byte stream being sent to help in reassembling the data at the receiving end 
 
+* Unique to the host only
+* Hosts will set a random initial sequence number when initiating communication with another device
+
 ### Acknowledgement number (32 Bits)
 
 The acknowledgement number field contains the next sequence number that the sender should expect to receive 
+
+* TCP uses forward acknowledgement, which indicates the sequence number of the next segment that the host expects to receive (Ex: *During a TCP Three-Way Handshake, PC1 sends a SYN with a sequence number of 10 and PC2 will reply with an ACK with an ackownledgement value of 11, PC1 will then send back an ACK with a sequence number of 11 since that's what PC2 is expecting*)
 
 ### Data offset
 
@@ -88,4 +94,5 @@ The flags field controls the behavior of the TCP connection
 
 The window size field specifies the size of the receive window 
 
-* Used for flow control 
+* Used for flow control
+* Allows more data to be sent before an acknowledgement is required
