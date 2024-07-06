@@ -10,44 +10,44 @@ Access control is a security mechanism used to regulate and manage access to net
 
 Physical access control restricts entry to physical locations (Ex: *Locks*, *Keys*, *Access cards*, *Biometric scanners*, *etc.*) 
 
-## LAC
+## Logical Access Control
 
-Logical access control regulates access to digital resources using a various authentication, authorization, and encryption mechanisms in order to protect data and resources and ensure that only authorized users can access them and perform actions on them
+LAC regulates access to digital resources using a various authentication, authorization, and encryption mechanisms in order to protect data and resources and ensure that only authorized users can access them and perform actions on them
 
 * Uses various authentication mechanisms (Ex: *Passwords*, *Biometrics*, *Smart cards*, *etc.*)
 * Uses various authorization mechanisms (Ex: *Access control lists*, *RBAC*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## NAC
+## Network Access Control
 
-Network Access Control governs access to computer networks and resoures based on the identity and security posture of the devices seeking to connect
+NAC governs access to computer networks and resoures based on the identity and security posture of the devices seeking to connect
 
 * Enforces security policies to ensure that only compliant and trusted devices are allowed to access the network
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## MAC
+## Mandatory Access Control
 
-Mandatory Access Control is a security model that enforces access control policies based on a system of security labels and access rules defined by a central authority
+MAC is a security model that enforces access control policies based on a system of security labels and access rules defined by a central authority
 
 * A security label is a label that indicates a network resource or asset's sensitivity or classification level and is typically represented as security clearances, security classifications, or sensitivity levels
 * Access rules are predefined rules that dictate which users or processes can access specific resources based on their security labels (Access decisions are made by comparing the security labels of the user and the requested resource against the access rules defined by the central authority)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## DAC
+## Discretionary Access Control
 
-Discretionary Access Control is a security model that regulates access to resources based on the discretion of resource owners
+DAC is a security model that regulates access to resources based on the discretion of resource owners
 
 * Resource owners have full control over who can access their resources and what level of access is granted
 * Resource owners have the authority to set access permissions for that resource (Ex: *Read*, *Write*, *Execute*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## RBAC
+## Role-Based Access Control
 
-Role-Based Access Control is a policy-based access control model that assigns permissions to users based on their roles within an organization
+RBAC is a policy-based access control model that assigns permissions to users based on their roles within an organization
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/kokjojoojojohhohuouoorjhgoojgorjgorjgorgjrojg.png)
 
@@ -56,9 +56,9 @@ Role-Based Access Control is a policy-based access control model that assigns pe
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## ABAC
+## Attribute-Based Access Control
 
-Attribute-Based Access Control is a flexible access control model that evluates access decisions based on multiple attributes (Ex: *User attributes*, *Resource attributes*, *Environmental attributes*, *Contextual attributes*, *etc.*)
+ABAC is a flexible access control model that evluates access decisions based on multiple attributes (Ex: *User attributes*, *Resource attributes*, *Environmental attributes*, *Contextual attributes*, *etc.*)
 
 * User attributes include user roles, user department, user location, user clearance level, and user group membership
 * Resource attributes include resource type, resource sensitivty, resource owner, resource location, and resource metadata
@@ -67,9 +67,9 @@ Attribute-Based Access Control is a flexible access control model that evluates 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## CABAC
+## Context-Based Access Control
 
-Context-Based Access Control is a security mechanism that controls access to network resources based on contextual information (Ex: *Application protocol*, *Session state*, *User identity*, *Time of access*, *Source IP address*, *Destination IP address*, *Packet payload information*, *Packet header information*, *etc.*)
+CBAC is a security mechanism that controls access to network resources based on contextual information (Ex: *Application protocol*, *Session state*, *User identity*, *Time of access*, *Source IP address*, *Destination IP address*, *Packet payload information*, *Packet header information*, *etc.*)
 
 * Operates on the Network, Transport, and Application layers of the OSI model (Layer 2,3, and 7)
 * Performs deep packet inspection to analyze the contents of network packets at the Application layer
@@ -111,3 +111,33 @@ The **Account, Global, Local, Permission**
 * **G**lobal group refers to a global group that can contain user accounts, groups, or other global groups from any domain within a forest
 * **L**ocal group refers to a local groups that's used within a single domain
 * **P**ermissions refer to the actual permissions that are assigned to the groups or accounts
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Access Control Mechanisms
+
+## Access Control Lists
+
+* Configured globally on a device and must be applied to an interface (Configuring an ACL in global configuration mode won't make the ACL take effect)
+* Made up of one or more Access Control Entities
+* The device will check the ACEs in the ACL from top to bottom and once it finds a match, it'll stop checking the other ACEs in the ACL and will take action based on the first matching ACE (All ACEs below the matching entry will be ignored)
+* Applied to either inbound or outbound traffic depending on the interface that it was applied to
+* A maximum of one ACL can be applied to one interface per direction
+* If a packet doesn't match an ACE in the ACL, the device will implicitly deny it (Implicit deny, which tells the device to deny all traffic that doesn't match any of the configured ACEs in the ACL)
+
+### Standard Access Control Lists
+
+* Matches traffic based on only the source IP address of the packet
+
+#### Numbered Standard Access Control List
+
+* Identified with a number
+* Different types of ACLs have a different range of numbers that can be used
+
+| Number Range | ACL Type |
+| --- | --- |
+| 1-99 and 1300-1999 | Standard ACLs |
+
+#### Extended Access Control List
+
+* Matches traffic based on the source and destination IP address, and the source and destination port of the packet
