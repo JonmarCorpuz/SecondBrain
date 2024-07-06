@@ -40,6 +40,13 @@ The transport layer is responsible for the **end-to-end delivery of segments** (
 * Focuses on data segmentation and reassembly, error detection and correction, flow control, and end-to-end connection establishment and termination
 * Provides various services to applications (Ex: *Reliable data transfer*, *Error recovery*, *Data sequencing*, *Flow control*, *etc.*)
 * Provides Layer 4 addressing (Port numbers) that identifies the Application Layer protocol that's being used and provides session multiplexing
+* Port numbers can help identify the Application Layer protocol (Ex: *HTTP*, *etc.*) and the session (Ex: *A PC will randomly select a source port on a PC, which it'll use to identify a session*)
+
+| Port Ranges | Purpose |
+| --- | --- |
+| 0 - 1023 | Well known port numbers that are used for major protocols and strictly regulated |
+| 1024 - 49151 | Registered port numbers that require registration in order to use them |
+| 49152 - 65535 | Ephermeral/Private/Dynamic port numbers that are used by hosts when selecting the random source port |
 
 ## Layer 3 (Network)
 
