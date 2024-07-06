@@ -95,4 +95,4 @@ The flags field controls the behavior of the TCP connection
 The window size field specifies the size of the receive window 
 
 * Used for flow control
-* Allows more data to be sent before an acknowledgement is required
+* Allows more data to be sent before an acknowledgement is required by using a sliding window, which is a feature that manages the amount of data that can be sent before receiving an acknowledgement from the receiver
