@@ -8,7 +8,7 @@ The Transmission Control Protocol provides reliable, connection-oriented communi
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# How TCP Works
+# TCP Processes
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ksdbjlfkldsdfjhbsghlgk.png)
 
@@ -20,17 +20,9 @@ The Transmission Control Protocol uses a three-way handshake to establish a conn
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-05-19%20125455.png)
 
-### 1. Client Sends SYN Packet
-
-The client sends a synchronize packet to the server to indicate its desire to initiate a connection
-
-### 2. Server Responds With SYN-ACK Packet
-
-The server responds with a SYN-ACK packet to acknowledge the client's request and indicate that it's ready to establish a connection
-
-### 3. Client Responds With ACK Packet
-
-The client sends an ACK packet back to the server to confirm the receipt of the server's SYN-ACK packet and establishes the connection
+1. The client sends a synchronize (SYN) packet to the server to indicate its desire to initiate a connection
+2. The server responds with a SYN-ACK packet to acknowledge the client's request and indicate that it's ready to establish a connection
+3. The client sends an ACK packet back to the server to confirm the receipt of the server's SYN-ACK packet and establishes the connection
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -53,19 +45,19 @@ The Transmission Control Protocol uses a four-way handshake to terminate a conne
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/TCP-headersssssss.png)
 
-### Source port
+### Source port (16 Bits)
 
 The source port field specifies the port number of the sender process 
 
-### Destination port
+### Destination port (16 Bits)
 
 The destination port field specifies the port number of the receiver process 
 
-### Sequence Number
+### Sequence Number (32 Bits)
 
 The sequence number field indicates the position of the data in the byte stream being sent to help in reassembling the data at the receiving end 
 
-### Acknowledgement number
+### Acknowledgement number (32 Bits)
 
 The acknowledgement number field contains the next sequence number that the sender should expect to receive 
 
@@ -95,3 +87,5 @@ The flags field controls the behavior of the TCP connection
 ### Window Size
 
 The window size field specifies the size of the receive window 
+
+* Used for flow control 
