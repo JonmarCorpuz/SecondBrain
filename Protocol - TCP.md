@@ -1,6 +1,6 @@
 The Transmission Control Protocol provides reliable, connection-oriented communication between devices on a network
 
-* Operates at the Layer 4 of the OSI model
+* Provides Layer 4 addressing using port numbers
 * **Connection-oriented**, meaning that before sending data to the destination host, the two hosts communicate to establish a connection, and once the connection is established, the data exchange begins
 * Provides **reliable communication** since the destination host must acknowledge that it received each TCP segment by using the acknowledgement field of the TCP header
 * Provides **sequencing** by adding sequence numbers in the sequencing field of the TCP header to allow destination hosts to put segments in the correct order even if they arrive out of order
@@ -96,3 +96,19 @@ The window size field specifies the size of the receive window
 
 * Used for flow control
 * Allows more data to be sent before an acknowledgement is required by using a sliding window, which is a feature that manages the amount of data that can be sent before receiving an acknowledgement from the receiver
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Port Numbers
+
+| Port Number | Protocol |
+| --- | --- |
+| 20 | FTP Data |
+| 21 | FTP Control |
+| 22 | SSH |
+| 23 | Telnet |
+| 25 | SMTP |
+| 53 | DNS |
+| 80 | HTTP | 
+| 110 | POP3 |
+| 443 | HTTPS |
