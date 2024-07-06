@@ -8,7 +8,7 @@ The Transmission Control Protocol provides reliable, connection-oriented communi
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# TCP Processes
+# TCP Communication
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ksdbjlfkldsdfjhbsghlgk.png)
 
