@@ -123,11 +123,12 @@ The **Account, Global, Local, Permission**
 * The device will check the ACEs in the ACL from top to bottom and once it finds a match, it'll stop checking the other ACEs in the ACL and will take action based on the first matching ACE (All ACEs below the matching entry will be ignored)
 * Applied to either inbound or outbound traffic depending on the interface that it was applied to
 * A maximum of one ACL can be applied to one interface per direction
-* If a packet doesn't match an ACE in the ACL, the device will implicitly deny it (Implicit deny, which tells the device to deny all traffic that doesn't match any of the configured ACEs in the ACL)
+* If a packet doesn't match an ACE in the ACL, the device will implicitly deny and drop it (Implicit deny, which tells the device to deny and drop all traffic that doesn't match any of the configured ACEs in the ACL)
 
 ### Standard Access Control Lists
 
 * Matches traffic based on only the source IP address of the packet
+* Each interface has an inbound and outbound traffic direction
 * Should be applied as close to the destination as possible
 * The network device may re-order the /32 ACEs to improve the efficiency of processing the ACL
 
