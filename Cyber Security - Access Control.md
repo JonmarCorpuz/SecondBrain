@@ -125,11 +125,16 @@ The **Account, Global, Local, Permission**
 * A maximum of one ACL can be applied to one interface per direction
 * If a packet doesn't match an ACE in the ACL, the device will implicitly deny and drop it (Implicit deny, which tells the device to deny and drop all traffic that doesn't match any of the configured ACEs in the ACL)
 
+| Number Range | ACL Type |
+| --- | --- |
+| 1-99 and 1300-1999 | Standard ACLs |
+| 100-199 and 2000-2699 | Extended ACLs |
+
 ### Standard Access Control Lists
 
 * Matches traffic based on only the source IP address of the packet
 * Each interface has an inbound and outbound traffic direction
-* Should be applied as close to the destination as possible
+* Should be applied as close to the destination as possible (Standard ACLs are less specific, so if they're applied close to the source there's a risk of blocking more traffic than intended)
 * The network device may re-order the /32 ACEs to improve the efficiency of processing the ACL
 
 #### Standard Numbered Access Control Lists
@@ -137,14 +142,11 @@ The **Account, Global, Local, Permission**
 * Identified with a number
 * Different types of ACLs have a different range of numbers that can be used
 
-| Number Range | ACL Type |
-| --- | --- |
-| 1-99 and 1300-1999 | Standard ACLs |
-
 #### Standard Named Access Control Lists
 
 * Identified with a name
 
 ### Extended Access Control Lists
 
-* Matches traffic based on the source and destination IP address, and the source and destination port of the packet
+* Matches traffic based on more parameters than the standard ACL, which makes them more precise (Ex: *Source IP address*, *Destination IP address*, *Source port number*, *Destination port number*, *Protocol*, *etc.*)
+* Should be applied as close to the source as the source as possible in order to limit how far the packets travel in the network before being denied 
