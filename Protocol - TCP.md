@@ -14,7 +14,7 @@ The Transmission Control Protocol provides reliable, connection-oriented communi
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Connection Establishment
+## Connection Establishment (Three-Way Handshake)
 
 The Transmission Control Protocol uses a three-way handshake to establish a connection between a client and a server
 
@@ -26,7 +26,7 @@ The Transmission Control Protocol uses a three-way handshake to establish a conn
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Connection Termination
+## Connection Termination (Four-Way Handshake)
 
 The Transmission Control Protocol uses a four-way handshake to terminate a connection between a client and a server
 
