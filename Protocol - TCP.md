@@ -20,9 +20,9 @@ The Transmission Control Protocol uses a three-way handshake to establish a conn
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-05-19%20125455.png)
 
-1. The client sends a synchronize (SYN) packet to the server to indicate its desire to initiate a connection
-2. The server responds with a SYN-ACK packet to acknowledge the client's request and indicate that it's ready to establish a connection
-3. The client sends an ACK packet back to the server to confirm the receipt of the server's SYN-ACK packet and establishes the connection
+1. The client sends a synchronize (**SYN**) packet to the server to indicate its desire to initiate a connection
+2. The server responds with a **SYN-ACK** packet to acknowledge the client's request and indicate that it's ready to establish a connection
+3. The client sends an **ACK** packet back to the server to confirm the receipt of the server's SYN-ACK packet and establishes the connection
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -32,10 +32,10 @@ The Transmission Control Protocol uses a four-way handshake to terminate a conne
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/uhgytfyuijopkbhljnmdsk.png)
 
-1. The client sends a finish (FIN) packet to the server to indicate that it wants to terminate the connection
-2. The server acknowledges the receipt of the finish packet with an acknowledge (ACK) packet
-3. The server sends its own finish (FIN) packet to the client to indicate that it's ready to terminate the connection
-4. The client acknowledges the server's finish packet with an acknowledge (ACK) packet and terminates the session
+1. The client sends a finish (**FIN**) packet to the server to indicate that it wants to terminate the connection
+2.1 The server acknowledges the receipt of the finish packet with an acknowledge (**ACK**) packet
+2.2 The server sends its own finish (**FIN**) packet to the client to indicate that it's ready to terminate the connection
+3. The client acknowledges the server's finish packet with an acknowledge (**ACK**) packet and terminates the session
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -77,12 +77,12 @@ The flags field controls the behavior of the TCP connection
 
 | TCP Flag | Meaning | Purpose |
 | --- | --- | --- |
-| URG | Urgent | Indicates that certain data within the TCP segment is urgent and should be prioritized by the receiver (URG packets are immediately sent to the destined application, regardless of any buffered data ) |
-| ACK | Acknowledge | Indicates the acknowledgement of the receipt of data from the sender |
-| PSH | Push | Indicates that the receiver should deliver data to the receiving application immediately, without buffering |
-| RST | Reset | Indicates an immediate termination of the connection |
-| SYN | Synchronize | Indicates the initiation of a connection | 
-| FYN | Finish | Indicates the termination of a connection | 
+| **URG** | Urgent | Indicates that certain data within the TCP segment is urgent and should be prioritized by the receiver (URG packets are immediately sent to the destined application, regardless of any buffered data ) |
+| **ACK** | Acknowledge | Indicates the acknowledgement of the receipt of data from the sender |
+| **PSH** | Push | Indicates that the receiver should deliver data to the receiving application immediately, without buffering |
+| **RST** | Reset | Indicates an immediate termination of the connection |
+| **SYN** | Synchronize | Indicates the initiation of a connection | 
+| **FYN** | Finish | Indicates the termination of a connection | 
 
 ### Window Size
 
