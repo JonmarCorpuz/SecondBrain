@@ -1,6 +1,10 @@
 The Transmission Control Protocol provides reliable, connection-oriented communication between devices on a network
 
 * Operates at the Layer 4 of the OSI model
+* Connection-oriented, meaning that before sending data to the destination host, the two hosts communicate to establish a connection, and once the connection is established, the data exchange begins
+* Provides reliable communication since the destination host must acknowledge that it received each TCP segment
+* Provides sequencing by adding sequence numbers in the TCP header to allow destination hosts to put segments in the correct order even if they arrive out of order
+* Provides flow control, meaning that the destination host can tell the source host to either decrease or increase the rate that data is sent so that it isn't overwhelmed by receiving traffic faster that it can process it 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
