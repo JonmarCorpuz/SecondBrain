@@ -26,6 +26,7 @@ The User Datagram Protocol is a connectionless communication protocol that's use
 
 | Port Number | Protocol |
 | --- | --- |
+| 53 | DNS |
 | 67 | DHCP Server |
 | 68 | DHCP Client |
 | 69 | TFTP |
