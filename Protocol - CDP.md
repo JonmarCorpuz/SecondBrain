@@ -2,7 +2,7 @@ The Cisco Discovery Protocol is a Layer 2 Cisco proprietary protocol that's used
 
 * Allows Cisco devices to share information with other Cisco devices (Ex: *Hostname*, *IP address*, *Device type*, *Device capabilities*, *Operating system version*, *etc.*)
 * Considered as a security risk since they share information about the devices in the network
-* Globally enabled on Cisco devices by default
+* Enabled globally and on each interface on Cisco devices by default
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
