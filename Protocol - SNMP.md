@@ -6,11 +6,14 @@ The Simple Network Management Protocol is a protocol that's designed to manage n
 
 # SNMP Devices
 
+## Network Management Station
+
+* Can ask the managed devices for information about their current status
+* Can tell the managed devices to change aspects of their configuration (Ex: *IP address*, *etc.*)
+
 ## Managed Devices
 
-
-
-## Network Management Station
+* Can notify the NMS of events
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -51,7 +54,7 @@ An MIB is a database of a network device's statistics and control information
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# SNMP Operations
+# SNMP Processes
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/why-snmp-is-important-view.jpg)
 
