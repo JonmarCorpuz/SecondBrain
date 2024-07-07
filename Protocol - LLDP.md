@@ -2,6 +2,7 @@ The Link Layer Discovery Protocol (IEEE 802.1AB) is a vendor-neutral Layer 2 pro
 
 * Allows devices to announce their identity, capabilities, and information about their neighbors on the network (Ex: *Device type*, *Device name*, *Port Identifier*, *VLAN information*, *System capabilities*, *etc.*)
 * Considered as a security risk since they share information about the devices in the network
+* Interface Tx and Rx operations are enabled separately
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
