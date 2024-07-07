@@ -1,4 +1,6 @@
-The Domain Name System protocol is a protocol that's used to translate domain names into numerical IP addresses
+The Domain Name System protocol is a protocol that's used to translate human-readable domain names into numerical IP addresses
+
+* Standard DNS queries and responses use port UDP 53 (Port TCP 53 is used for DNS messages that are greater than 512 bytes)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
