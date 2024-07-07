@@ -1,0 +1,4 @@
+The Network Time Protocol is a protocol that's used to synchronize the clocks of devices over a network
+
+* Enables accurate timekeeping between various devices by synchronizing their clocks with a reference time source
+* 
