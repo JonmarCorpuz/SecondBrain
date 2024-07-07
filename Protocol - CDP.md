@@ -11,6 +11,7 @@ The Cisco Discovery Protocol is a Layer 2 Cisco proprietary protocol that's used
 * CDP messages are periodically sent to the 0100.0CCC.CCCC multicast MAC address
 * Cisco devices don't forward CDP messages to other devices, meaning that a Cisco device can only become a CDP neighbor with other directly connected Cisco devices (When a device receives a CDP message, it'll process and then discard it)
 * Sent once every 60 seconds by default
+* If a CDP message from a CDP neighbor isn't sent for 180 seconds, the CDP neighbor is removed from the CDP neighbor table, which ensures that that CDP neighbor table doesn't have entries from old CDP neighbors that are no longer connected
 * Contains Cisco device information (Ex: *Hostname*, *IP address*, *Device type*, *Device capabilities*, *Operating system version*, *etc.*)
 * When a device receives a CDP message, it adds an entry for the device in its CDP neighbor table
 
@@ -19,3 +20,15 @@ The Cisco Discovery Protocol is a Layer 2 Cisco proprietary protocol that's used
 # CDP Components
 
 ## CDP Neighbor Table
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# CDP Versions
+
+## CDPv1
+
+* Old
+
+## CDPv2
+
+* Provides the ability to identify native VLAN mismatches
