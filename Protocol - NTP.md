@@ -6,6 +6,9 @@ The Network Time Protocol is a protocol that's used to synchronize the clocks of
 * Allows automatic syncing of time over a network
 * Allows accuracy of time within 1 millisecond if the NTP server is in the same LAN or within 50 milliseconds if connecting to the NTP server over a WAN
 * Uses UDP port 123 to communicate
+* Only uses the UTC timezone
+* Provides authentication to be configured in order to allow NTP clients to ensure that they only sync to the intended servers
+* A loopback address can't be manually configured as the NTP reference clock
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -22,6 +25,9 @@ A reference clock is a highly accurate timekeeping device that's used as a sourc
 * Stratum 15 is the maximum, meaning that anything above that is considered unreliable and the device won't synchronize to it (Ex: *Stratum 1 NTP servers get their time from reference clocks since they're directly connected to them*, *Stratum 2 NTP servers get their time from stratum 1 NTP servers since they're connected to the servers and not the reference clock*, *etc.*)
 
 ## Hardware Calendar
+
+* Tracks the data and time on the device regardless of the event
+* Used to initialize the software clock when the system is restarted
 
 ## Software Clock
 
@@ -53,6 +59,8 @@ A secondary NTP server gets the time from another NTP server
 # NTP Modes
 
 ## Server Mode
+
+* The default stratum of the NTP master is 8
 
 ## Client Mode
 
