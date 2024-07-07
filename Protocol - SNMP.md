@@ -1,6 +1,16 @@
 The Simple Network Management Protocol is a protocol that's designed to manage network performance on IP networks
 
-* Enables real-time performance monitoring and maintenance of network health and security
+* Enables real-time performance monitoring and maintenance of network health and security (Ex: *Device status*, *Configuration changes*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# SNMP Devices
+
+## Managed Devices
+
+
+
+## Network Management Station
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -24,6 +34,10 @@ An MIB is a database of a network device's statistics and control information
 
 * Each SNMP agent maintains a MIB
 * Each piece of information in the MIB is indexed using Object Identifies
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# SNMP Messages
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
