@@ -19,7 +19,12 @@ A NMS is a system or application that monitors and manages SNMP-enabled devices 
 
 An SNMP manager is the central system that controls and monitors the network through SNMP
 
+* It's the software on the NMS that interacts with the managed devices (Ex: *Receives notifications*, *Sends requests for information*, *Sends configuration changes*, *etc.*)
 * Sends requests to SNMP agents on network devices and receives responses and unsolicited messages (traps) from those agents
+
+### SNMP Application 
+
+* Provides an interface an interface for the network admin to interact with
 
 ## Managed Devices
 
