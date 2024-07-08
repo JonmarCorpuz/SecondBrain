@@ -6,16 +6,20 @@ Syslog is a protocol that's used to keep logs of various events that happen on t
 
 # Syslog Message Format
 
-seq:time stamp: %facility-severity-MNEMONIC:description
+**seq:time stamp: %facility-severity-MNEMONIC:description**
 
-* **seq** refers to a sequence number that indicates the order and sequence of the log messages
-* **time stamp** indicates the time the message was generated
-* **facility** refers to a value that indicates which process on the device generated the message
-* severity refers to a number that indicates the severity of the logged event
-* MNEMONIC refers to a short code for the message that indicates what happened
-* description refers to detailed information about the event that's being reported
+| Syslog Message Component | Meaning |
+| --- | --- |
+| **seq** | A sequence number that indicates the order and sequence of the log messages (Doesn't always show depending on the device's configuration) |
+| **time stamp** | Indicates the time the message was generated |
+| **facility** | A value that indicates which process on the device generated the message |
+| **severity** | A number that indicates the severity of the logged event |
+| **MNEMONIC** | A short code for the message that indicates what happened |
+| **description** | Detailed information about the event that's being reported |
 
-## Syslog Severity Levels
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Syslog Severity Levels
 
 The syslog severity level indicates how severe an event is
 
@@ -32,3 +36,12 @@ The syslog severity level indicates how severe an event is
 | 5 | Notice | Normal but significant condition |
 | 6 | Informational | Information messages |
 | 7 | Debugging | Debug-level messages |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Syslog Logging Locations
+
+* Console line (Syslog messages will be displayed in the CLI when connected to the device via the console port and all messages of all severity levels are displayed by default)
+* VTY lines (Syslog messages will be displayed in the CLI when connected to the device via Telnet or SSH and is disabled by default)
+* Buffer (Syslog messages will be saved to the RAM and all messages of all  severity levels are displayed by default)
+* External server (Syslog messages will be sent to and viewed on an external syslog server, which listens on UDP port 514)
