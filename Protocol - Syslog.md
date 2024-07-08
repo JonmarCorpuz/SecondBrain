@@ -11,7 +11,7 @@ Syslog is a protocol that's used to keep logs of various events that happen on t
 | Syslog Message Component | Meaning |
 | --- | --- |
 | **seq** | A sequence number that indicates the order and sequence of the log messages (Doesn't always show depending on the device's configuration) |
-| **time stamp** | Indicates the time the message was generated |
+| **time stamp** | Indicates the time the message was generated Doesn't always show depending on the device's configuration) |
 | **facility** | A value that indicates which process on the device generated the message |
 | **severity** | A number that indicates the severity of the logged event |
 | **MNEMONIC** | A short code for the message that indicates what happened |
