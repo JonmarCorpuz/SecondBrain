@@ -4,43 +4,39 @@ The Simple Network Management Protocol is a protocol that's designed to manage n
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# SNMP Devices
-
-## Network Management Station
-
-* Can ask the managed devices for information about their current status
-* Can tell the managed devices to change aspects of their configuration (Ex: *IP address*, *etc.*)
-
-## Managed Devices
-
-* Can notify the NMS of events
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
 # SNMP Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jdgfldjkjlrugfsjlk.png)
 
-## SNMP Manager
+## Network Management Station
+
+A NMS is a system or application that monitors and manages SNMP-enabled devices on a network
+
+* Can ask the managed devices for information about their current status
+* Can tell the managed devices to change aspects of their configuration (Ex: *IP address*, *etc.*)
+
+### SNMP Manager
 
 An SNMP manager is the central system that controls and monitors the network through SNMP
 
 * Sends requests to SNMP agents on network devices and receives responses and unsolicited messages (traps) from those agents
 
-## SNMP Agent
+## Managed Devices
+
+A managed device is any network components or hardware device that's monitored and controlled using network management protocols (Ex: *SNMP*)
+
+* Can notify the NMS of events
+
+### SNMP Agent
 
 An SNMP agent is a software that's installed on a network device, collects information of that network devices, and reports it to the SNMP manager
 
-## Management Information Base
+### Management Information Base
 
 An MIB is a database of a network device's statistics and control information
 
 * Each SNMP agent maintains a MIB
 * Each piece of information in the MIB is indexed using Object Identifies
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# SNMP Messages
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -54,7 +50,7 @@ An MIB is a database of a network device's statistics and control information
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# SNMP Processes
+# SNMP Messages
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/why-snmp-is-important-view.jpg)
 
