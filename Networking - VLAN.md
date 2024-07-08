@@ -101,11 +101,14 @@ A switch virtual interface is a virtual interface on a Layer 3 switch that repre
 
 A data VLAN handles the regular data traffic network
 
+* Data traffic uses the IP network (Ex: *Enterprise WAN*, *Internet*, *etc.*)
+
 ## Voice VLAN
 
 A voice VLAN handles VoIP traffic generate
 
 * Ensures that voice traffic gets the necessary priorirty and bandwidth to avoid delays and jitter
+* Voice traffic uses the PSTN
 
 ## Management VLAN
 
