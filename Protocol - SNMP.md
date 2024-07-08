@@ -14,7 +14,8 @@ The Simple Network Management Protocol is a protocol that's designed to manage n
 A NMS is a system or application that monitors and manages SNMP-enabled devices on a network
 
 * Can ask the managed devices for information about their current status
-* Can tell the managed devices to change aspects of their configuration (Ex: *IP address*, *etc.*)
+* Can tell the managed devices to modify their configuration (Ex: *IP address*, *etc.*)
+* Can receive notifications from managed devices
 
 ### SNMP Manager
 
