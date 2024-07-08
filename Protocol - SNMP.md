@@ -22,6 +22,7 @@ An SNMP manager is the central system that controls and monitors the network thr
 
 * It's the software on the NMS that interacts with the managed devices (Ex: *Receives notifications*, *Sends requests for information*, *Sends configuration changes*, *etc.*)
 * Sends requests to SNMP agents on network devices and receives responses and unsolicited messages (traps) from those agents
+* UDP port 162
 
 ### SNMP Application 
 
@@ -38,6 +39,7 @@ A managed device is any network components or hardware device that's monitored a
 An SNMP agent is a software that's installed on a network device, collects information of that network devices, and reports it to the SNMP manager
 
 * Sends notifications to and receives messages from the NMS
+* UDP port 161
 
 ### Management Information Base
 
@@ -73,9 +75,9 @@ An MIB is a database of a network device's statistics and control information
 | `Set` | Sets the value of a specific variable in an agent | A request from the SNMP manager to the SNMP agent to change the value of one or more variables |
 | `GetNext` | Fetches the next variable in the MIB | Sent from the SNMP manager to the SNMP agent to discover the available variables in the MIB |
 | `GetBulk` | Retrieves large blocks of data (Used in SNMPv2 and SNMPv3) | Sent from the SNMP manager to the SNMP agent to discover the available variables in the MIB |
-| `Inform` | Allows SNMP managers to send information to other SNMP managers (Used in SNMPv2 and SNMPv3) |
-| `Trap` | Allows a SNMP agent to asynchronously inform the SNMP manager about a significant event (Unreliable since the SNMP manager won't send a Response message to acknowledge that it received the trap | A notification sent from the SNMP agent to the SNMP manager | 
-| `Response` |  | Sent from the SNMP agent to the SNMP manager in response to a Set message containing the new configurations |
+| `Inform` | Allows SNMP managers to send information to other SNMP managers (A notification message that's acknowledged with a Response message) | Sent from a SNMP agent to the SNMP manager |
+| `Trap` | Allows a SNMP agent to asynchronously inform the SNMP manager about a significant event (Unreliable since the SNMP manager won't send a Response message to acknowledge that it received the trap) | A notification sent from the SNMP agent to the SNMP manager | 
+| `Response` |  | Sent from the SNMP manager to an SNMP agent in response to a previous message or request |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
