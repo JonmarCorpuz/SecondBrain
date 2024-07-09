@@ -41,6 +41,20 @@ The loss refers to the percentage of packets sent that don't reach their destina
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# QoS Traffic Classification
+
+Traffic classification organizes network traffic (packets) into traffic classes (categories)
+
+* Allows organizations to give priority to certain traffic classes
+
+## Traffic Classification Using ACLs
+
+* Traffic which is permitted by an ACL will be given certain treatment while other traffic will not
+
+## Traffic Classification Using Network Based Application Recognition
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Queuing
 
 Queuing in QoS refers to the process of managing and prioritizing packets within network queues based on predefined rules and policies
