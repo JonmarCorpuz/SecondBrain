@@ -2,6 +2,7 @@ Terminal Controller Access Control System Plus is an enhanced version of TACACS,
 
 * Addresses the limitations of the original TACACS protocol (Ex: *Improved security*, *Improved flexibility*, *Improved scalability*, *etc.*)
 * Allows administrators to control who can access the network, what resources they can access, and keep track of their activities
+* Uses TCP port 49
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
