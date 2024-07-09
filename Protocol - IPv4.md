@@ -99,12 +99,32 @@ The DSCP is used for QoS and prioritizes delay-sensitive data (Ex: *Streaming vo
 * Identifies which traffic should receive priority treatment
 * 6 bits in DSCP allows for a total of 64 values
 
-| DSCP Standard Marking | Traffic Type |
-| --- | --- |
-| Default Forwarding (DF) | Best effort traffic |
-| Expedited Forwarding (EF) | Low loss/latency/jitter traffic (Usually voice traffic) |
-| Assured Forwarding (AF) | A set of 12 standard values |
-| Class Selector (CS) | A set of 8 standard values and provides backward compatibility with IPP |
+| DSCP Standard Marking | Traffic Type | Decimal Marking | Binary Marking |
+| --- | --- | --- | --- |
+| Default Forwarding (DF) | Best effort traffic | 0 | 000000 |
+| Expedited Forwarding (EF) | Low loss/latency/jitter traffic (Usually voice traffic) | 46 | 101110 |
+| Assured Forwarding (AF) | A set of 12 standard values |  |  | 
+| Class Selector (CS) | A set of 8 standard values and provides backward compatibility with IPP |  |  |
+
+### Default Forwarding
+
+
+
+### Expedited Forwarding
+
+
+
+### Assured Forwarding
+
+* AF defines four traffic classes and all packets in each class have the same priority, and within each class, there are four levels of drop precedence
+* Higher drop precedence means that it's more likely to drop the packet during congestion
+* In AF, the three first bits are for the traffic class, the next two bits are for the drop precedence and the last bit is always 0
+* AF is written as AFXY, where X is the decimal number of the class and Y is the decimal drop precedence
+* The formula to conver an AF value to a decimal DSCP value is 8X + 2Y (Ex: *DSCP 10 equals to AF11*, *etc.*)
+
+### Class Selector
+
+* CS defines eight DSCP values for backward compatibility with IPP
 
 ## Explicit Congestion Notification (2 bits)
 
