@@ -114,8 +114,18 @@ Queuing in QoS refers to the process of managing and prioritizing packets within
 
 ### Scheduling Method
 
-* Round-robin = Packets are taken from each queue in order, cyclically
+* Round-robin = Packets are taken from each queue in order, cyclically (Not ideal for voice and video traffic since it can add delay and jitter because even the high priority queues have to wait their turn in the scheduler)
 * Weighted = More data is taken from high priority queues each time the scheduler reaches that queue
+* Class-Based Weighted Fair Queuing = Guarantees each queue a certain percentage of the interface's bandwidth during congestion while using a weighted round-robin scheduler
+
+## Low Latency Queuing
+
+LLQ designates one or more queues as strict priority queues
+
+* The queues are services in order of prioirty, which means that if the scheduler will keep taking the next packet from the prioritized queue until it's empty
+* Very effective for reducing the delay and jitter of voice and video traffic
+* Can potentially starve other queues if there's always traffic in the designated strict priority queue (The other queues might not even get a turn to send traffic)
+* Policing can be used to control the amount of traffic that's allowed in the strict priority queue so that it can't take all of the link's bandwidth
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -125,3 +135,20 @@ The trust boundary defines where devices trust and don't trust the QoS markings 
 
 * If the markings are trusted, the device will forward the message without changing the markings, but if they aren't trusted then the device will change the markings according to the configured policy before forwarding it (Ex: *If an IP phone sends an EF packet, the switch will trust it and forward it as is, but if a PC sends an EF packet, then the switch will change it to a DF before forwarding it*, *etc.*)
 * It's recommended to set the trust boundary to an IP phone that's connected to the network's switch
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Shaping 
+
+* Used to control the rate of traffic
+* Buffers traffic in a queue if the traffic rate goes over the configured rate
+* Can use classification to allow for different rates for different kinds of traffic
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Policing
+
+* Used to control the rate of traffic
+* Either drops or re-marks traffic if the traffic rate goes over the configured rate
+* Burst traffic over the configured rate is allowed for a short period of time instead of a constant stream of data and can be configured
+* Can use classification to allow for different rates for different kinds of traffic
