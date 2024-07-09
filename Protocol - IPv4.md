@@ -97,6 +97,7 @@ The IHL field specifies the length of the IPv4 header in 32-bit words
 The DSCP is used for QoS and prioritizes delay-sensitive data (Ex: *Streaming voice*, *Video*, *etc.*)
 
 * Identifies which traffic should receive priority treatment
+* 6 bits in DSCP allows for a total of 64 values 
 
 ## Explicit Congestion Notification (2 bits)
 
