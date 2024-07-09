@@ -1,7 +1,7 @@
 
 # Port Security 
 
-Port security is a network security feature that allows you to control which and how many source MAC addresses are allowed to enter the switchport
+Port security is a Layer 2 network security feature that allows you to control which and how many source MAC addresses are allowed to enter the switchport
 
 * If an unauthorized source MAC address enters the port, an action will be taken (By default it'll place the interface in an err-disabled state)
 * Port security default settings only allow one MAC address
@@ -29,6 +29,12 @@ Port security is a network security feature that allows you to control which and
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # DHCP Snooping
+
+DHCP snooping is a Layer 2 security feature that's used to filter DHCP messages received on untrusted ports
+
+* Only filters DHCP messages
+* All ports are untrusted by defaultand it's up to you to configure which ports will be trusted (Usually, uplink ports, which point away from end hosts, are configured as trusted and downlink ports, which are interfaces pointing towards end hosts, remain untrusted)
+* DHCP snooping doesn't inspect DHCP messages on the trusted ports 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
