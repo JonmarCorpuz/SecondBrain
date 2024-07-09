@@ -6,7 +6,13 @@ Quality of Service refers to the ability to prioritize and manage network traffi
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# QoS Management
+# QoS Components
+
+| QoS Component | QoS Standard |
+| --- | --- |
+| One-way delay | 150 milliseconds or less |
+| Jitter | 30 milliseconds or less |
+| Loss | 1% or less |
 
 ## Bandwidth 
 
@@ -32,3 +38,25 @@ The loss refers to the percentage of packets sent that don't reach their destina
 
 * Can be cause by faulty cables or a congested network (Ex: *If a device's packet queues get full it'll start discarding packets*, *etc.*)
 * Can negatively affect the audio quality of phone calls
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Queuing
+
+Queuing in QoS refers to the process of managing and prioritizing packets within network queues based on predefined rules and policies
+
+* Used to control the order in which packets are processed and transmitted, which helps in optimizing network performance and ensuring that critical traffic receives preferential treatment over less important traffic
+* If a network device receives messages faster than it can forward them out of the appropriate interface, the messages are placed in a queue
+* Queued messages will be forwarded in a First In First Out manner, meaning that messages will be sent in the order that they're received
+* If the queue gets full, the incoming packets will be dropped, also known as tail drop, which can lead to TCP global synchronization, which is when multiple TCP connections simultaneously reduce their transmission rates in response to network congestion or packet loss (Network congestion --> Tail drop --> Global TCP window size decrease --> Network underutilized --> Global TCP window size increase --> Network congestion)
+
+## Random Early Detection
+
+* Prevents tail drop and TCP global synchronization by randomly dropping packets from select TCP flows when the amount of traffic in the queue reaches a certain threshold (Those TCP flows that dropped packets will reduce the rate at which traffic is sent, which all TCP flows reduce and then increase the rate of transmission at the same time in waves)
+
+### Standard Random Early Detection
+
+### Weighted Random Early Detection
+
+* Allows a user to control which packets are dropped depending on the traffic class (Ex: *Drop HTTP packets when the queue is full*, *etc.*)
+* Traffic classes configured with the lowest priority are those that will be dropped sooner when the queue reaches a certain threshold
