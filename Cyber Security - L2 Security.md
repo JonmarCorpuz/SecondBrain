@@ -1,7 +1,8 @@
 
 # Port Security 
 
-* A security feature on Cisco devices that allows you to control which and how many source MAC addresses are allowed to enter the switchport
+Port security is a network security feature that allows you to control which and how many source MAC addresses are allowed to enter the switchport
+
 * If an unauthorized source MAC address enters the port, an action will be taken (By default it'll place the interface in an err-disabled state)
 * Port security default settings only allow one MAC address
 * You can configure the allowed MAC address manually (If you don't configure the MAC addresses manually, it'll only allow the first source MAC address that enters the interface)
