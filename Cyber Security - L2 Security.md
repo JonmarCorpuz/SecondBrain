@@ -34,8 +34,10 @@ DHCP snooping is a Layer 2 security feature that's used to filter DHCP messages 
 
 * Only filters DHCP messages
 * All ports are untrusted by defaultand it's up to you to configure which ports will be trusted (Usually, uplink ports, which point away from end hosts, are configured as trusted and downlink ports, which are interfaces pointing towards end hosts, remain untrusted)
-* DHCP snooping doesn't inspect DHCP messages on the trusted ports 
+* DHCP snooping doesn't inspect incoming and outgoing DHCP messages on the trusted ports 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Dynamic ARP Inspection 
+
+DAI is a Layer 2 security feature that's used in network switches to mitigate ARP spoofing attacks
