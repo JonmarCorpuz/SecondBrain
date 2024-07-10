@@ -92,3 +92,13 @@ DHCP options are additional parameters that can be included in DHCP messages to 
 | 66 | TFTP Server Name | Provides the name or IP address of a TFTP server for network booting |
 | 67 | Bootfile Name | Specifies the name of the file to be booted by the client |
 | 119 | Domain Search | Provides a list of domain names that the client should search when resolving hostnames |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DHCP Packet Fields
+
+## Client Hardware Address
+
+The CHADDR field indicates the MAC address of the client
+
+* Used to identify the client since DHCP messages that are going out of the local network to reach a remote DHCP server won't have the client's MAC address as the source MAC address
