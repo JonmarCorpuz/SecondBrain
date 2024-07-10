@@ -108,3 +108,17 @@ A coaxial cable is a type of electrical cable consisting of a central conductor,
 Leased lines are a type of dedicated telecommunication line that provides a constant and direct connection between two locations
 
 * Uses serial cables
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Digital Subscriber Lines
+
+* DSL provides Internet connectivity to customers over phone lines, and can share the same phone line that is already installed in most homes
+* A DSL modulator-demodulator (modem) is required to convert data into a format suitable to be sent over the phone lines
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cable Television
+
+* CATV can provide internet access
+* A cable modulator-demodulator (modem) is required to convert data into a format suitable to be sent over the CATV cables
