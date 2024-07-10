@@ -9,8 +9,6 @@ A Campus Area Network is a type of network that interconnects multiple LANs with
 
 * Also called the Core-Distribution Layer
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/03fig03.jpg)
-
 ## Access Layer 
 
 The Access layer is the point at which end devices connect to the local network
@@ -32,6 +30,8 @@ The Distribution layer serves as an intermediary between the Access Layer and th
 * Distribution switches can connect to other distribution switches from other CANs
 
 # Three-Tier Campus LAN
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/03fig03.jpg)
 
 ## Access Layer
 
