@@ -22,7 +22,7 @@ The Distribution layer serves as an intermediary between the Access Layer and th
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Three-Tier Campus LAN
+# Three-Tier Network Architecture
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/03fig03.jpg)
 
