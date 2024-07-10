@@ -5,7 +5,9 @@ A Campus Area Network is a type of network that interconnects multiple LANs with
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Enterprise CAN Network Layers
+# Two-Tier Campus LAN
+
+* Also called the Core-Distribution Layer
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/03fig03.jpg)
 
@@ -27,7 +29,26 @@ The Distribution layer serves as an intermediary between the Access Layer and th
 * Make routing decisions to determine the best path for traffic within the network (Ex: *Static routes*, *OSPF*, *EIGRP*, *etc.*)
 * Responsible for enforcing network policies and access control mechanisms (Ex: *ACLs*, *QoS policies*, *VLANs*, *etc.*)
 * Typically implements redundancy and high availability features to ensure network resilience and minimize downtime (Ex: *EtherChannels*, *HSRP*, *VRRP*, *etc.*)
+* Distribution switches can connect to other distribution switches from other CANs
+
+# Three-Tier Campus LAN
+
+## Access Layer
+
+* The layer that end hosts connect to
+* Typically have lots of ports for end hosts to connect to
+* QoS marking is typically done here
+* Security services are performed here (Ex: *Port security*, *DAI*, *etc.*)
+
+## Distribution Layer
+
+* Aggregates connections from the Access Layer switches
+* Typically is the border between Layer 2 and Layer 3
 
 ## Core Layer
 
-The Core layer serves as the backbone of the network
+* Helps scale large LAN networks by connecting distribution layers together in large LAN networks (Recommended to use if there are more than three Distribution Layers in a single location)
+* Connections are all Layer 3
+* Focuses on speed
+* CPU-intensive operations should be avoided at this layer (Ex: *QoS marking*, *Port security*, *etc.*)
+* Should remain connectivity throughout the LAN even if devices fail
