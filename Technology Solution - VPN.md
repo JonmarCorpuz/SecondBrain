@@ -81,10 +81,14 @@ A route-based VPN is a type of VPN implementation that uses routing protocols to
 
 ## Remote Access VPN
 
-A remote access VPN is a type of VPN that enables users to connect to a private network securely from a remote location through the Internet
+A remote access VPN is a type of VPN that enables devices to connect to a private network securely from a remote location through the Internet
 
 * Usually used to establish a connection between a personal device and a VPN server
 * Encrypts data sent and received through a personal device
+* Typically uses TLS
+* Requires a VPN client software to be installed on end devices in order for them to be able to form secure tunnels to one of the organization's routers or firewalls that's acting as a TLS server
+* Provides service to the one end device that the VPN client software is installed on
+* Typically used to provide on-demand access for end devices that want to securely access company resources while connected to a network that isn't secure
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -97,6 +101,9 @@ A site-to-site VPN is a type of VPN that connects entire different LANs together
 * Useful for enterprises that have offices across the globe
 * IPSec is commonly used to create an encrypted tunnel between the primary network and the remote network
 * Can be complex to configure and manage compared to remote access VPNs
+* Typically uses IPsec
+* Provides service to many devices within the sites that they're connected to
+* Typically used to permanently connect two sites over the Internet
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -125,6 +132,8 @@ An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/gdfhgfjfhgkjghkghdfgrdtytyuiyiyuf.png)
 
 * Provides a secure tunnel for transmitting data between two endpoints
+* Supports only unicast traffic
+* Can support broadcast and multicast traffic using Generic Routing Encapsulation (GRE), which can encapsulate a wide variety of Layer 3 protocols as well as broadcast and unicast messages but in plaintext (Using GRE over IPsec encrypts encapsulates the GRE packet within an IPsec VPN header and a new IP header)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -138,4 +147,11 @@ An IPsec VPN is a type of VPN that utilizes IPsec protocols to establish secure 
 
 ## WireGuard VPN
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+## Dynamic Multipoint VPN
+
+DMVPN is a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel
+
+* Provides the configuration simplicity of hub-and-spoke, meaning that each spoke router only needs one tunnel configured
+* Provides efficient direct spoke-to-spoke communication, meaning that spoke routers can communicate directly without traffic passing through the hub
