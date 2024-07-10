@@ -22,3 +22,8 @@ A mesh topology is a network topology where each device is connected to multiple
 * Each device is connected to each other device
 
 ## Tree Topology
+
+## Hub and Spoke
+
+* Usually connected over leased lines
+* Easier to centrally control what traffic is allowed and what isn't (Ex: *All spoke traffic can be sent to a firewall within the hub to control which traffic is allowed and which isn't*, *etc.*)
