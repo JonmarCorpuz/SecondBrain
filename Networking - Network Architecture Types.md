@@ -103,3 +103,14 @@ A Server Farm, also known as a data center or a server cluster, is a centralized
 * Leaf switches don't connect to other Leaf switches
 * End hosts only connect to Leaf switches
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Split-MAC Wireless Architecture
+
+* Scalable
+* The WLC can automatically select which channel each AP should use
+* The WLC can automatically set the appropriate transmit power for each AP to provide sufficient coverage without interfering with other APs
+* The WLC can provide self-healing coverage, meaning that when an AP stops functioning, the WLC can increase the transmit power of nearby APs to avoid coverage holes
+* Provides seamless roaming, meaning that wireless clients can roam between APs with no noticeable delay
+* Provides client load balancing, meaning that if a wireless client is in range of two APs, the WLC can associate the client with the least-used AP to balance the load among APs
+* Provides central management of security and QoS policies to ensure consistency across the network
