@@ -188,3 +188,4 @@ An IBSS is a wireless network in which two or more wireless devices connect to e
 # Wireless Network Security
 
 * It's important to encrypt wireless traffic sent between the wireless clients and the AP because wireless signals aren't contained within a wire, meaning that any device within range of the signal can receive the traffic
+* All devices on the WLAN will use the same encryption protocol, however each client will use a unique encryption/decryption key so that other devices can't read its traffic
