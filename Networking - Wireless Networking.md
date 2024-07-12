@@ -182,3 +182,9 @@ An IBSS is a wireless network in which two or more wireless devices connect to e
 * It's possible for an AP to provide multiple wireless LANs, each with a unique SSID
 * Each wireless LAN is mapped to a separate VLAN and connected to the wired network via a trunk
 * Each wireless LAN uses a unique BSSID, usually by incrementing the last digit of the BSSID by one
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Wireless Network Security
+
+* It's important to encrypt wireless traffic sent between the wireless clients and the AP because wireless signals aren't contained within a wire, meaning that any device within range of the signal can receive the traffic
