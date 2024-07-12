@@ -9,6 +9,7 @@
 
 * Can be located either inside the same subnet or VLAN as the APs it manages or outside
 * Connected to the wired network via a trunk link
+* Connects to a switch via a Link Aggregation Group (Only supports static LAG)
 
 ### WLC Deployment Types
 
