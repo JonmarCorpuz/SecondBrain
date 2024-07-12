@@ -10,6 +10,39 @@
 * Can be located either inside the same subnet or VLAN as the APs it manages or outside
 * Connected to the wired network via a trunk link
 
+### WLC Deployment Types
+
+| WLC Deployment Types | Description |
+| --- | --- |
+| Unified | The WLC is a hardware appliance in a central location of the network |
+| Cloud-Based | The WLC is a VM running on a server, usually in a private cloud in a data center |
+| Embedded | The WLC is integrated within a switch |
+| Mobility Express | The WLC is integrated within an AP |
+
+#### Unified WLC Deployment
+
+The WLC is a hardware appliance in a central location of the network
+
+* Can support up to about 6000 APs (If more than 6000 APs are needed, then additional WLCs can be added to the network)
+
+#### Cloud-Based WLC Deployment
+
+The WLC is a VM running on a server, usually in a private cloud in a data center
+
+* Can support up to about 3000 APs (If more than 3000 APs are needed, then more WLC VMs can be deployed)
+
+#### Embedded WLC Deployment
+
+The WLC is integrated within a switch
+
+* Can support up to 200 APs (If more than 200 APs are needed, then more switches with embedded WLCs can be added)
+
+#### Mobility Express WLC Deployment
+
+The WLC is integrated within an AP
+
+* Can support up to 100 APs (If more than 100 APs are needed, more APs with embedded Mobility Express WLCs can be added)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # AP Deployment Methods
@@ -54,6 +87,9 @@ Autonomous APs are self-contained systems that don't rely on a Wireless LAN Cont
 
 ## Cloud-Based
 
-
+* A mix between autonomous APs and split-MAC architecture
+* Autonomous APs that are centrally managed in the cloud (Ex: *Cisco Meraki*, *etc.*)
+* Data traffic is sent to the wired network like when using autonomous APs
+* Only management and control traffic is sent to the cloud (Ex: *RF spectrum information*, *Management information*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
