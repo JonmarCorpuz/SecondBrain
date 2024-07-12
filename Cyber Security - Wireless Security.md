@@ -13,6 +13,20 @@
 
 ## Message Integrity Check
 
+## Temporal Key Integrity Protocol
+
+## Counter/CBC-MAC Protocol
+
+### AES Counter Mode
+
+### CBC-MAC 
+
+## Galois/Counter Mode Protocol
+
+### AES Counter Mode
+
+### Galois Message Authentication Code
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Wireless Authentication Methods
@@ -23,12 +37,10 @@
 
 ## Extensible Authentication Protocol
 
-## Lightweight Extensible Authentication Protocol
+### Lightweight Extensible Authentication Protocol
 
-## Extensible Authentication Protocol Flexible Authentication via Secure Tunneling
+### Extensible Authentication Protocol Flexible Authentication via Secure Tunneling
 
-## Protected Extensible Authentication Protocol
+### Protected Extensible Authentication Protocol
 
-## Extended Extensible Authentication Protocol
-
-## Extensible Authentication Protocol Transport Layer Security
+### Extensible Authentication Protocol Transport Layer Security
