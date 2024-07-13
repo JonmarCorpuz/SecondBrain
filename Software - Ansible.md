@@ -8,3 +8,5 @@
 ## Inventory 
 
 ## Templates
+
+## Variables
