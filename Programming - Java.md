@@ -18,7 +18,75 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Conditional Statements
+
+If statement
+```Java
+if (<condition>) {
+  <code_to_be_executed>;
+}
+```
+
+If-else statement
+```Java
+if (<condition>) {
+  <code_to_be_executed>;
+} else
+  <code_to_be_executed>;
+}
+```
+
+If-else if-else statments
+```Java
+if (<condition>) {
+  <code_to_be_executed>;
+} else if (<conditions>) {
+  <code_to_be_executed>;
+}else
+  <code_to_be_executed>;
+}
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Loops
+
+| Loop Control Statement | Purpose |
+| --- | --- |
+| break | |
+| continue | |
+
+## While Loops
+
+While loop
+```Java
+while (<conditions>) {
+  <code_to_be_executed>;
+}
+```
+
+Do while loop
+```Java
+do {
+  <code_to_be_executed>;
+} while (<conditions>)
+```
+
+## For Loops
+
+For loop
+```Java
+for (<initialization>; <conditions>; <update>) {
+  <code_to_be_executed>;
+}
+```
+
+For each loop
+```Java
+for (<data_type> <element> : <array>) {
+  <code_to_be_executed>;
+}
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
