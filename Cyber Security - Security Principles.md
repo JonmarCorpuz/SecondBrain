@@ -4,6 +4,16 @@ A security principle is a guideline or rule that helps ensure the CIA triad of i
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# CIA Triad
+
+## Confidentiality
+
+## Integrity
+
+## Availability
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Security Principles
 
 ## Least Privilege
