@@ -11,9 +11,9 @@
 | boolean | True or false values |
 | char | 16-bit unicode character (Ranges from '\u0000' to '\uffff') |
 
-```Java
-{byte|short|int|float|long|double|boolean|char|string|object} <variable_name> = <value>;
-```
+
+`{byte|short|int|float|long|double|boolean|char|string|object} <variable_name> = <value>;`
+
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
