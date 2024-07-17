@@ -20,7 +20,7 @@ A security principle is a guideline or rule that helps ensure the CIA triad of i
 
 ## Defense in Depth
 
-## Fail-Ssafe Defaults
+## Fail-Safe Defaults
 
 ## Economy of Mechanisms
 
