@@ -13,6 +13,7 @@
 | -a | **--useragent** | Specifies a custom user-agent string |
 | -H | **--header** | Specifies HTTP headers |
 | -b | **--cookies** | Specifies cookies to use for the requests |
+| -v | **--verbose** | Verbose output |
 
 # Brute-Force  
 
