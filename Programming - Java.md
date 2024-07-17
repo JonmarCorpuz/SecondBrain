@@ -49,12 +49,31 @@ if (<condition>) {
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Switch Statements
+
+```Java
+switch (<expression>) {
+  case <value>:
+    <code_to_execute>;
+    break;
+  [case <value>:
+    <code_to_execute>;
+    break;]
+  // If no match is found
+  default:
+    <code_to_execute>;
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Loops
 
 | Loop Control Statement | Purpose |
 | --- | --- |
-| break | |
-| continue | |
+| break | Terminates the loop  |
+| break outerLoop | Terminates the nested loop |
+| continue | skips the current iteration of the loop and continues to the next iteration |
+| return | Immediately exits the loop and returns a value |
 
 ## While Loops
 
