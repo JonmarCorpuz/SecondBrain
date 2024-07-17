@@ -20,14 +20,14 @@
 
 # Conditional Statements
 
-If statement
+**If statement**
 ```Java
 if (<condition>) {
   <code_to_be_executed>;
 }
 ```
 
-If-else statement
+**If-else statement**
 ```Java
 if (<condition>) {
   <code_to_be_executed>;
@@ -36,7 +36,7 @@ if (<condition>) {
 }
 ```
 
-If-else if-else statments
+**If-else if-else statments**
 ```Java
 if (<condition>) {
   <code_to_be_executed>;
@@ -77,14 +77,14 @@ switch (<expression>) {
 
 ## While Loops
 
-While loop
+**While loop**
 ```Java
 while (<conditions>) {
   <code_to_be_executed>;
 }
 ```
 
-Do while loop
+**Do While loop**
 ```Java
 do {
   <code_to_be_executed>;
@@ -93,14 +93,14 @@ do {
 
 ## For Loops
 
-For loop
+**For loop**
 ```Java
 for (<initialization>; <conditions>; <update>) {
   <code_to_be_executed>;
 }
 ```
 
-For each loop
+**For each loop**
 ```Java
 for (<data_type> <element> : <array>) {
   <code_to_be_executed>;
@@ -111,4 +111,6 @@ for (<data_type> <element> : <array>) {
 
 # Functions
 
+```Java
 
+```
