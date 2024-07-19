@@ -11,31 +11,19 @@ The Network Address Translation is a process used in routers to modify the sourc
 
 An inside network refers to a router's internal network
 
-### Inside Local Address
-
-An inside local address is the IP address of an inside host from the perspective of the local network
-
-* An inside local IP address is mapped to an inside global IP address
-* Usually a private IP address
-
-### Inside Global Address
-
-An inside global address is the IP address of an inside host after NAT from the perspective of the external network
-
-* Usually a public IP address
-* Allows external hosts access the internal hosts via their inside global address
+| Inside Network Address | Description | 
+| --- | --- |
+| Inside Local Address | The IP address of an inside host from the perspective of the local network (Usually a private IP address that's mapped to an inside global IP address) |
+| Inside Global Address | The IP address of an inside host after NAT from the perspective of the external network (Usually a public IP address that allows external hosts to access the internal hosts via their inside global address) |
 
 ## Outside Network
 
 An outside network refers to a router's external network
 
-### Outside Local Address
-
-An outside local address is the IP address of an outside host from the perspective of the local network
-
-### Outside Global Address
-
-An outside global address is the IP address of the outside host from the perspective of the outside network
+| Outside Network Address | Description |
+| --- | --- |
+| Outside Local Address | The IP address of an outside host from the perspective of the local network |
+| Outside Global Address | The IP address of the outside host from the perspective of the outside network |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -65,20 +53,37 @@ Dynamic NAT dynamically maps inside local addresses to inside global addresses a
 * NAT pool exhaustion happens when there aren't enough global IP addresses available and will drop a packet that needs NAT
 * Dynamic NAT entries are temporary and will time out automatically if not used (Default timer of 24 hours and each time a translation is made, the timer resets)
 
-## PAT
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# PAT
 
 Port Address Translation translates both the IP address and the port number if necessary
 
 * Using a unique port number for each communication flow, a single public IP address cam be used by many different internal hosts at the same time
 * The router performing PAT will keep track of which inside local address is using which inside global address and port, as well as each communication flows by using a unique port number for each flow
 * Useful for preserving public IP addresses
-* Uses many-to-one mapping (Many inside local addresses to one inside global address
+* Uses many-to-one mapping (Many inside local addresses to one inside global address)
 
-### PAT Components
+## PAT Components
 
-#### Translation Table
+### Translation Table
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+## Static PAT
+
+Static PAT maps a specific private IP address and port number to a specific public IP address and port number
+
+* Unidirectional
+* Used for allowing external access to internal services, such as web servers, FTP servers, or gaming servers
+* When traffic arrives at the public IP address on the specified port, the router forwards it to the corresponding internal IP address and port
+
+## Dynamic PAT
+
+Dynamic PAT maps multiple private IP addresses to a single public IP address (or a pool of public IP addresses) by using different port numbers
+
+* Commonly used in scenarios where many devices need to access the internet simultaneously using a single public IP address
+* When an internal device initiates a connection to the internet, the router assigns a unique port number to the session, allowing it to distinguish between different internal devices
+
+## PAT Traffic
 
 ### Outbound PAT Traffic
 
