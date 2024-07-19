@@ -53,6 +53,10 @@ Dynamic NAT dynamically maps inside local addresses to inside global addresses a
 * NAT pool exhaustion happens when there aren't enough global IP addresses available and will drop a packet that needs NAT
 * Dynamic NAT entries are temporary and will time out automatically if not used (Default timer of 24 hours and each time a translation is made, the timer resets)
 
+## Identity NAT
+
+## Twice NAT
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # PAT
