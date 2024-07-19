@@ -18,26 +18,6 @@ A firewall is a network security device or software that monitors incoming and o
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Firewall Components
-
-## Access Control Lists
-
-### Standard ACL
-
-### Extended ACL
-
-### Named ACL
-
-### Time Based ACL
-
-### Dynamic ACL
-
-### Reflective ACL
-
-### TCP Establish ACL
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
 # Firewall Types
 
 ## Host-based Firewalls
