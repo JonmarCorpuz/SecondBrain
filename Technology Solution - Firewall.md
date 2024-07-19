@@ -18,13 +18,13 @@ A firewall is a network security device or software that monitors incoming and o
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Firewall Types
+# Host-based Firewalls
 
-## Host-based Firewalls
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Network-based Firewalls
+# Network-based Firewalls
 
-### Stateless Inspection Firewall
+## Stateless Inspection Firewall
 
 A stateless inspection firewall is a type of firewall that doesn't maintain any knowledge of the state or context of active connections passing through it
 
@@ -35,7 +35,7 @@ A stateless inspection firewall is a type of firewall that doesn't maintain any 
 * Lack the ability to perform advanced security functions (Ex: *Packet inspection*, *Deep packet inspection*, *etc.*)
 * You need to seperately configure both outbound and inbound rules
 
-### Stateful Inspection Firewall
+## Stateful Inspection Firewall
 
 A stateful inspection firewall is a type of firewall that keeps track of the state of active connections passing through it
 
@@ -46,7 +46,7 @@ A stateful inspection firewall is a type of firewall that keeps track of the sta
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-### Transparent Firewall
+## Transparent Firewall
 
 A transparent firewall is a type of firewall that acts as a bridge by inspecting and moving network frames between interfaces
 
@@ -55,7 +55,7 @@ A transparent firewall is a type of firewall that acts as a bridge by inspecting
 * Can be seen as a "stealth firewall" that supports outside and inside interfaces
 * Helps organizations solve issues relating to traffic visibility and threat protection without having to re-addressing their network (Ex: *Site-to-Site network communication*, *etc.*)
 
-### Identity Firewall
+## Identity Firewall
 
 An identity firewall is a type of firewall that provides IAM capabilities along with traditional firewall functionality to enforce access control policies based on user identities
 
@@ -63,19 +63,19 @@ An identity firewall is a type of firewall that provides IAM capabilities along 
 * Allows administrators to configure access rules and security policies based on usernames and user group names instead of only through source IP addresses
 * Integrates with Microsoft Active Directory in conjunction with an external Active Directory Agent that provides the actual identity mapping
 
-### Proxy Firewall
+## Proxy Firewall
 
 A proxy firewall, also known as an application firewall or proxy server firewall, is a type of firewall that inspects and filters traffic at the application layer
 
 * Operates at the Application layer of the OSI model (Layer 7)
 
-### Unified Threat Management Firewall
+## Unified Threat Management Firewall
 
 A Unified Threat Management Firewall is a type of firewall that integrates multiple security features into a single platform or appliance (Ex: *IPS*, *Antivirus*, *VPN*, *Firewall*, *DLP*, *etc.*)
 
 * Offers simplified management, reduced complexity, and often cost savings compared to deploying and managing multiple standalone security solutions
 
-### Next-Generation Firewall
+## Next-Generation Firewall
 
 A NGFW is a type of firewall that incorporates traditional firewall features along with additional capabilities to provide deeper inspection and more granular control over network traffic
 
@@ -87,3 +87,6 @@ A NGFW is a type of firewall that incorporates traditional firewall features alo
 * Can integrate with authentication systems to identify users and apply policies based on their identities in order to enable organizations to enforce access controls and security policies on a per-user basis
 * Can perform SSL inspection by decrypting and inspecting SSL-encrypted traffic to identify and block threats hidden within encrypted communications
 * May incorporate advanced threat detection and prevention mechanisms (Ex: *Sandboxing*, *Threat intelligence feeds*, *Behavior-based analysis*, *etc.*)
+
+## Zone-Based Firewall
+
