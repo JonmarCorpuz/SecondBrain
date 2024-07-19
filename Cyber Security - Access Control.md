@@ -6,6 +6,17 @@ Access control is a security mechanism used to regulate and manage access to net
 
 # Access Control Methods
 
+| Access Control Method | Meaning | Description |
+| --- | --- | --- |
+| PAC | Physical Access Control | |
+| LAC | Logical Access Control | |
+| NAC | Network Access Control | |
+| MAC | Mandatory Access Control | |
+| DAC | Discretionary Access Control | |
+| RBAC | Role-Based Access Control | |
+| ABAC | Attribute-Based Access Control | |
+| CBAC | Context-Based Access Control | |
+
 ## Physical Access Control
 
 Physical access control restricts entry to physical locations (Ex: *Locks*, *Keys*, *Access cards*, *Biometric scanners*, *etc.*) 
@@ -71,7 +82,7 @@ ABAC is a flexible access control model that evluates access decisions based on 
 
 CBAC is a security mechanism that controls access to network resources based on contextual information (Ex: *Application protocol*, *Session state*, *User identity*, *Time of access*, *Source IP address*, *Destination IP address*, *Packet payload information*, *Packet header information*, *etc.*)
 
-* Operates on the Network, Transport, and Application layers of the OSI model (Layer 2,3, and 7)
+* Operates on the Network, Transport, and Application layers of the OSI model (Layers 3, 4, and 7)
 * Performs deep packet inspection to analyze the contents of network packets at the Application layer
 * Examines the payload of packets to identify the application protocols being used
 * Allows administrators to define access control policies based on contextual information (Ex: *Application type*, *User identity*, *Time of access*, *Session state*, *etc.*)
@@ -114,9 +125,7 @@ The **Account, Global, Local, Permission**
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Access Control Mechanisms
-
-## Access Control Lists
+# Access Control Lists
 
 * Configured globally on a device and must be applied to an interface (Configuring an ACL in global configuration mode won't make the ACL take effect)
 * Made up of one or more Access Control Entities
@@ -130,23 +139,30 @@ The **Account, Global, Local, Permission**
 | 1-99 and 1300-1999 | Standard ACLs |
 | 100-199 and 2000-2699 | Extended ACLs |
 
-### Standard Access Control Lists
+## Standard Access Control Lists
 
 * Matches traffic based on only the source IP address of the packet
 * Each interface has an inbound and outbound traffic direction
 * Should be applied as close to the destination as possible (Standard ACLs are less specific, so if they're applied close to the source there's a risk of blocking more traffic than intended)
 * The network device may re-order the /32 ACEs to improve the efficiency of processing the ACL
 
-#### Standard Numbered Access Control Lists
+### Standard Numbered Access Control Lists
 
 * Identified with a number
 * Different types of ACLs have a different range of numbers that can be used
 
-#### Standard Named Access Control Lists
+### Standard Named Access Control Lists
 
 * Identified with a name
 
-### Extended Access Control Lists
+## Extended Access Control Lists
 
 * Matches traffic based on more parameters than the standard ACL, which makes them more precise (Ex: *Source IP address*, *Destination IP address*, *Source port number*, *Destination port number*, *Protocol*, *etc.*)
 * Should be applied as close to the source as the source as possible in order to limit how far the packets travel in the network before being denied 
+
+## Dynamic Access Control Lists
+
+## Reflexive Access Control Lists
+
+## Time-Based Access Control Lists
+
