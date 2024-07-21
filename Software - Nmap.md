@@ -1,3 +1,29 @@
+Network Mapper is an open-source tool that's used for network discovery and security auditing
+
+* Provides host discovery by identifying live hosts on a network
+* Provides a list of open, closed, and filtered ports on a host, as well as the services that are running on them
+* Can detect which OS is running on a host
+* Can map out the path that packets take to reach their destination
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Nmap Scanning Engines
+
+## Host Discovery Engine
+
+## Port Scanning Engine
+
+## Service and Version Detection Engine
+
+## OS Detection Engine
+
+## NSE Engine
+
+## Traceroute Engine
+
+## Output Engine
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Nmap Scanning Options
 
