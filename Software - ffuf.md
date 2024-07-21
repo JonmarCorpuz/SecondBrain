@@ -5,7 +5,7 @@ Fuzz Faster U Fool is a tool that's used for web fuzzing, which is a security te
 ## Username Enumeration 
 
 ```Bash
-ffuf -w <path_to_wordlist> -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://MACHINE_IP/customers/signup -mr "username already exists"
+ffuf -w <path_to_wordlist> -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u <target_url> -mr "<string_to_validate_valid_username>"
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
