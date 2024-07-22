@@ -15,3 +15,9 @@ Subdomain enumeration is the process of finding valid subdomains for a domain
 ## Brute Force
 
 ## Virtual Host
+
+# Subdomain Enumeration Tools 
+
+| Subdomain Enumeration Tool | Description |
+| --- | --- |
+| https://dnsdumpster.com | An online tool that provides detailed DNS information about a domain {Ex: *Subdomains*, *DNS records*, *etc.*) |
