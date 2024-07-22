@@ -35,15 +35,6 @@ A relational database is a type of BDMS that organizes data into tables that eac
 * The relationship between two different table is done using foreign keys
 * Once the database is operational, it remains fixed and becomes difficult to change
 * Ensures that data is persisted with high integrity and adheres to the ACID (Atomicity, Consistency, Isolation, and Durability) principle
-* 
-
-### Rows
-
-A row (record) contains all information about a specific entry
-
-### Columns
-
-A column contains an attribute about a specific entry
 
 ### Schema 
 
@@ -52,6 +43,14 @@ A schema refers to the way that the data is organized and how relationships amon
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1_aMlw5Z3EN950koxWOJdneg.png)
 
 * Includes descriptions of the tables, their columns, data types, constraints, and relationships between tables
+
+### Rows
+
+A row (record) contains all information about a specific entry
+
+### Columns
+
+A column contains an attribute about a specific entry
 
 ### Primary Keys
 
