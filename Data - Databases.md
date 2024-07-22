@@ -4,7 +4,7 @@ A database is an organized collection of data or information that's stored and m
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Database Management System (DBMS)
+# Database Management System
 
 A DBMS is software that enables users to interact with databases
 
