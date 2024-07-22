@@ -8,4 +8,7 @@
 | DELETE | | |
 | LIMIT | | |
 
-
+| SQL Operator | Description | Example |
+| --- | --- | --- |
+| OR | | |
+| AND | | |
