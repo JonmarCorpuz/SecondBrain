@@ -29,41 +29,47 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 
 ## Host Discovery
 
-| Nmap Host Discovery Option | Meaning | Purpose |
-| --- | --- | --- |
-| -sL | List Scan | |
-| -sn | Ping Scan | |
-| -Pn | | |
-| -PS | | TCP SYN/ACK |
-| -PA | | UDP |
-| -PU | | SCTP discovery |
-| -PE | | ICMP echo |
-| -PO[protocol list] | | IP Protocol Ping
-| -n | | Never do DNS resolution |
-| -R | | Always resolve 
-| --dns-servers <dns_server>[, <dns_server>] | | Specify custom DNS servers |
-| --system-dns | | Use OS's DNS resolver |
-| --traceroute | | Trace hop path to each host |
+* Nmap uses a ping scan to find live hosts on a network
+* When a privileged user tries to scan targets on its local network, Nmap will use ARP requests
+* When a privileged user tries to scan targets outside its local network, Nmap will use ICMP echo requests, TCP ACK to port 80, TCP SYN to port 443, and ICMP timestamp request
+* When an unprivileged user tries to scan targets outside its local network, Nmap will resort to a TCP Three-Way Handshake by sending SYN packets to ports 80 and 443
+
+| Nmap Host Discovery Option | Meaning | Purpose | Command Syntax |
+| --- | --- | --- | --- |
+| -sL | List Scan | | |
+| -sn | Ping Scan | (No port scanning) | |
+| -Pn | | | |
+| -PR | ARP Scan | Sends an ARP request for every address in the specified network to discover live hosts (No port scanning) | |
+| -PS | | TCP SYN/ACK | |
+| -PA | | UDP | |
+| -PU | | SCTP discovery | |
+| -PE | | ICMP echo | |
+| -PO[protocol list] | | IP Protocol Ping | |
+| -n | | Never do DNS resolution | |
+| -R | | Always resolve | |
+| --dns-servers <dns_server>[, <dns_server>] | | Specify custom DNS servers | |
+| --system-dns | | Use OS's DNS resolver | |
+| --traceroute | | Trace hop path to each host | |
 
 ## Scan Techniques
 
-| Nmap Scan Technique Option | Meaning | Purpose |
-| --- | --- | --- |
-| -sS | | TCP SYN |
-| -sT | | Connect() |
-| -sA | | ACK | 
-| -sW | | Window |
-| -sM | | Maimon scans |
-| -sU | | UDP scan |
-| -sN | | TCP Null |
-| -sF | | FIN |
-| -sX | | Xmas scans |
-| --scanflags <flags> | | Customize TCP scan flags |
-| -sI <zombie_host[:probeport]> | | Idle scan
-| -sY | | SCTP INIT scan |
-| -sZ | | COOKIE-ECHO scan |
-| -sO | | IP protocol scan |
-| -b <ftp_relay_host | | FTP bounce scan |
+| Nmap Scan Technique Option | Meaning | Purpose | Command Syntax |
+| --- | --- | --- | --- |
+| -sS | | TCP SYN | |
+| -sT | | Connect() | |
+| -sA | | ACK | |
+| -sW | | Window | |
+| -sM | | Maimon scans | |
+| -sU | | UDP scan | |
+| -sN | | TCP Null | |
+| -sF | | FIN | |
+| -sX | | Xmas scans | |
+| --scanflags <flags> | | Customize TCP scan flags | |
+| -sI <zombie_host[:probeport]> | | Idle scan | |
+| -sY | | SCTP INIT scan | |
+| -sZ | | COOKIE-ECHO scan | |
+| -sO | | IP protocol scan | |
+| -b <ftp_relay_host | | FTP bounce scan | |
 
 ## Port Specification and Scan Order Scan Options
 
@@ -181,3 +187,5 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 | --unprivileged | | Assume that the user lacks raw socket privileges |
 | -V | | Print version number |
 | -h | | Print the help summary page |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
