@@ -39,7 +39,7 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 | -sL | List Scan | | |
 | -sn | Ping Scan | (No port scanning) | |
 | -Pn | | | |
-| -PR | ARP Scan | Sends an ARP request for every address in the specified network to discover live hosts (No port scanning) | |
+| -PR | ARP Scan | Sends an ARP request for every address in the specified network to discover live hosts | |
 | -PS | | TCP SYN/ACK | |
 | -PA | | UDP | |
 | -PU | | SCTP discovery | |
