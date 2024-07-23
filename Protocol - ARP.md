@@ -6,6 +6,8 @@ The Address Resolution Protocol
 
 ## ARP Request
 
+## ARP Response
+
 ## Gratuitous ARP 
 
 ARP messages that are sent without receiving an ARP Request
