@@ -7,11 +7,14 @@ traceroute is a network diagnostic tool used to track the path that packets take
 * Starts by sending UDP datagrams within IP packets of TTL being 1, which causes the first router to encounter a TTL of 0 and send an ICMP TTL exceed back to the source revealing its IP address, traceroute will then send another UDP datagram within an incremented TTL and so on, until it manages to reach its destination (Some routers may not send back an ICMP TTL exceed message and reveal their public IP address)
 * Don't expect the route to remain fixed when the packets need to go via other routers outside our network
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Traceroute on Windows
 
 ```PowerShell
 tracert <target_ip>
 ```
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Traceroute on Linux and MacOS
 
