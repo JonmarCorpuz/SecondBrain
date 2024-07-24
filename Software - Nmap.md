@@ -95,7 +95,8 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 
 | Nmap Port Specification and Scan Order Option | Meaning | Purpose |
 | --- | --- | --- |
-| -p <port_range> | | Only scan specified ports |
+| -p {<port_range>|<port_list>} | | Only scan specified ports |
+| -p- | | Scan all 65535 ports |
 | --exclude-ports <port_ranges> | | Exclude the specified ports from scanning |
 | -F | Fast Mode | Scan fewer ports than the default scan (From the 1000 most common ports to the 100 most common ports) |
 | -r | | Scan ports consecutively and in order (Don't randomize) |
@@ -139,7 +140,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | -T<0-5> | | Set timing template (Higher is faster) |
 | --min-hostgroup <size> | | |
 | --max-hostgroup <size> | | |
-| --min-parallelism <number_of_probes> | | |
+| --min-parallelism <number_of_probes> | | Ensures that Nmap maintains the specified number of probes in parallel and that they're related to host discover and open ports |
 | --max-parallelism <number_of_probes> | | |
 | min-rtt-timeout <time> | | |
 | max-rtt-timeout <time> | | |
@@ -148,9 +149,8 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | --host-timeout <seconds> | | Give up on target after the specified time |
 | --scan-delay <seconds> | | |
 | --max-scan-delay <seconds> | | |
-| --min-rate <seconds> | | Sends packets no slower than the specified number of seconds |
-| --max-rate <seconds> | | Sends packets no faster than the specified number of seconds |
-
+| --min-rate <number> | | Ensures that Nmap isn't sending a number of packets lower than the specified amount per second |
+| --max-rate <number> | | Ensures that Nmap isn't sending a number of packets higher than the specified amount per second |
 
 ## Firewall and IDS Evasion and Spoofing 
 
@@ -226,15 +226,20 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 
 ## TCP SYN Ping Scan
 
-Privileged TCP SYN Nmap ping scan
+**Privileged TCP SYN Nmap ping scan**
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fe642b2fafb70cbaa2531d2c41d6cddb1.png)
 
 * If a port replies back with a SYN/ACK, then the port is open
 * If a port replies back with a RST, then the port is closed
 * Privileged users don't need to complete the TCP Three-Way Handshake even if the port is open
+* Nmap tears down the connection once it receives a response from the host, which decreases the chances of the scan being logged since it didn't establish a TCP connection
 
-Unprivileged TCP SYN Nmap ping scan
+**Unprivileged TCP SYN Nmap ping scan**
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fe642b2fafb70cbaa2531d2c41d6cddb2.png)
 
 * Unprivileged users have to complete the TCP Three-Way Handshake even if the port is open
 
@@ -253,9 +258,68 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 
 * The only scan that's possible for non privileged users to discover open TCP ports
 
+## TCP Null Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/04b178a9cf7048c21256988b8b2343e3.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/224e01a913a1ce7b0fb2b9290ff5e1c8.png)
+
+* Requires root privileges
+* A TCP packet with no flags set won't trigger any response when it reaches an open port, which means that a lack of reply in a Null scan indicates that either the port is open or a firewall is blocking the packet
+* If a port is closed, it'll reply to a Null flag with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
+* Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
+
+## TCP FIN Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/78eb3d6ba158542f2b3223184b032e64.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/74dc07da7351a5a7f258948ec59efccc.png)
+
+* If a port is closed, it'll reply to a FIN flag with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
+* Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
+
+## TCP Xmas Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/7d28b756aed3b6eb72faf98d6974776c.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/4304eacbc3db1af21657f285bc16ebce.png)
+
+* If a port is closed, it'll reply to a Xmas scan with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
+* Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
+
+## TCP Maimon Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8ca5e5e0f6e0a1843cebe11b5b0785b3.png)
+
+* The FIN and ACK bits are set
+* Most target systems respond with an RST regardless of whether the TCP port is open
+
+## TCP Window Scan
+
+
+
 ## UDP Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1b827ef60c39619e281c4ca51a6d57b6.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/f927563f4778092ced3ef7afa67cece3.png)
+
 * Open UDP ports aren't expected to send a reply
 * Closed UDP ports are expected to send back an ICMP Port Unreachable packet reply, which reveals that the host is online
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Nmap Scan Timing
+
+| Nmap Scan Timing | Meaning | Description |
+| --- | --- | --- |
+| 0 | Paranoid | |
+| 1 | Sneaky | |
+| 2 | Polite | |
+| 3 | Normal | |
+| 4 | Aggressive | |
+| 5 | Insane | |
+
+| Nmap Packet Rate | Description | 
+| --- | --- |
+| 
