@@ -37,20 +37,23 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 * When a privileged user tries to scan targets on its local network, Nmap will use ARP requests
 * When a privileged user tries to scan targets outside its local network, Nmap will use ICMP echo requests, TCP ACK to port 80, TCP SYN to port 443, and ICMP timestamp request
 * When an unprivileged user tries to scan targets outside its local network, Nmap will resort to a TCP Three-Way Handshake by sending SYN packets to ports 80 and 443
+* By default, Nmap will look up online hosts and will use reverse-DNS lookup
 
 | Nmap Host Discovery Option | Meaning | Purpose | Command Syntax |
 | --- | --- | --- | --- |
 | -sL | List Scan | | |
-| -sn | Ping Scan | (No port scanning) | |
+| -sn | Ping Scan | Host discovery only (No port scanning) | |
 | -Pn | | | |
 | -PR | ARP Scan | Sends an ARP request for every address in the specified network to discover live hosts | |
-| -PS | | TCP SYN/ACK | |
-| -PA | | UDP | |
-| -PU | | SCTP discovery | |
-| -PE | | ICMP echo | |
+| -PS[<port_number>] | | TCP SYN Ping scan | |
+| -PA[<port_number>] | | TCP ACK Ping scan | |
+| -PU[<port_number>] | | UDP Ping scan | |
+| -PE | | Tells Nmap to use ICMP Echo to discover live hosts | |
+| -PP | | Tells Nmap to use ICMP Timestamp to discover live hosts | |
+| -PM | | Tells Nmap to use ICMP Address Mask to discover live hosts | |
 | -PO[protocol list] | | IP Protocol Ping | |
-| -n | | Never do DNS resolution | |
-| -R | | Always resolve | |
+| -n | | No DNS lookup | |
+| -R | | Reverse-DNS lookup for all hosts regardless if they're online or offline | |
 | --dns-servers <dns_server>[, <dns_server>] | | Specify custom DNS servers | |
 | --system-dns | | Use OS's DNS resolver | |
 | --traceroute | | Trace hop path to each host | |
@@ -193,3 +196,45 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | -h | | Print the help summary page |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Nmap Scanning Techniques
+
+## ARP Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/f0ce4cd34b827f529255c5c73bb909d1.png)
+
+* If a host sends back an ARP Reply, then the host is active
+
+## ICMP Ping Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/25fb5fd5d2009cf69d7aae40e8fde2ec.png)
+
+* If a host sends back an ICMP Reply, then the host is active
+
+## TCP SYN Ping Scan
+
+Privileged TCP SYN Nmap ping scan
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
+
+* If a port replies back with a SYN/ACK, then the port is open
+* If a port replies back with a RST, then the port is closed
+* Privileged users don't need to complete the Three-Way TCP handshake even if the port is open
+
+Unprivileged TCP SYN Nmap ping scan
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
+
+* Unprivileged users have to complete the Three-Way TCP handshake even if the port is open
+
+## TCP ACK Ping Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/db5ab44a8c700c4ab0603e85e456040d.png)
+
+* Must be a privileged user to accomplish this scan (Attempting this with an unprivileged user will result in Three-Way TCP handshake)
+* An active target will respond with a RST flag because the TCP packet with the ACK flag isn't part of any ongoing connection
+
+## UDP Ping Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1b827ef60c39619e281c4ca51a6d57b6.png)
+
+* Open UDP ports aren't expected to send a reply
+* Closed UDP ports are expected to send back an ICMP Port Unreachable packet reply, which reveals that the host is online
