@@ -7,6 +7,19 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Nmap Port States
+
+| Nmap Port State | Description | 
+| --- | --- |
+| Open | Indicates that a service is listening on the specified port |
+| Closed | Indicates that no service is listening on the specified port (The port can still be accessible) |
+| Filtered | Nmap cannot determine if the port is open or closed because the port isn't accessible (Usually due to a firewall preventing Nmap from reaching that port or that the responses are blocked from reaching Nmap's host |
+| Unfiltered | Nmap cannot determine if the port is open or closed, although the port is accessible |
+| Open/Filtered | Nmap cannot determine whether the port is open or filtered |
+| Closed/Filtered | Nmap cannot decide whether a port is closed or filtered |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Nmap Scanning Engines
 
 ## Host Discovery Engine
@@ -63,7 +76,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | Nmap Scan Technique Option | Meaning | Purpose | Command Syntax |
 | --- | --- | --- | --- |
 | -sS | | TCP SYN | |
-| -sT | | Connect() | |
+| -sT | | TCP Connect Scan | |
 | -sA | | ACK | |
 | -sW | | Window | |
 | -sM | | Maimon scans | |
@@ -84,8 +97,8 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | --- | --- | --- |
 | -p <port_range> | | Only scan specified ports |
 | --exclude-ports <port_ranges> | | Exclude the specified ports from scanning |
-| -F | Fast Mode | Scan fewer ports than the default scan |
-| -r | | Scan ports consecutively (Don't randomize) |
+| -F | Fast Mode | Scan fewer ports than the default scan (From the 1000 most common ports to the 100 most common ports) |
+| -r | | Scan ports consecutively and in order (Don't randomize) |
 | --top-ports <port_number> | | Scan the specified number of the most common ports | 
 | --port-ratio <ratio> | | Scan port s more common than the specified ratio |
 
@@ -218,19 +231,27 @@ Privileged TCP SYN Nmap ping scan
 
 * If a port replies back with a SYN/ACK, then the port is open
 * If a port replies back with a RST, then the port is closed
-* Privileged users don't need to complete the Three-Way TCP handshake even if the port is open
+* Privileged users don't need to complete the TCP Three-Way Handshake even if the port is open
 
 Unprivileged TCP SYN Nmap ping scan
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
 
-* Unprivileged users have to complete the Three-Way TCP handshake even if the port is open
+* Unprivileged users have to complete the TCP Three-Way Handshake even if the port is open
 
 ## TCP ACK Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/db5ab44a8c700c4ab0603e85e456040d.png)
 
-* Must be a privileged user to accomplish this scan (Attempting this with an unprivileged user will result in Three-Way TCP handshake)
+* Must be a privileged user to accomplish this scan (Attempting this with an unprivileged user will result in an attempt for the TCP Three-Way Handshake)
 * An active target will respond with a RST flag because the TCP packet with the ACK flag isn't part of any ongoing connection
+
+## TCP Connect Scan
+
+TCP Connect scan works by completing the TCP Three-Way Handshake in order to determine if a TCP port is open and then tearing that connection down right away
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/514972cd54b3f58c83f951978ea9183e.png)
+
+* The only scan that's possible for non privileged users to discover open TCP ports
 
 ## UDP Ping Scan
 
