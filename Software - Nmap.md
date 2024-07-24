@@ -227,14 +227,14 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 ## TCP SYN Ping Scan
 
 Privileged TCP SYN Nmap ping scan
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
 
 * If a port replies back with a SYN/ACK, then the port is open
 * If a port replies back with a RST, then the port is closed
 * Privileged users don't need to complete the TCP Three-Way Handshake even if the port is open
 
 Unprivileged TCP SYN Nmap ping scan
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
 
 * Unprivileged users have to complete the TCP Three-Way Handshake even if the port is open
 
