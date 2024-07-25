@@ -1,4 +1,4 @@
-The File Transfer Protocol is a network protocol that's used for transferring files from one host to another over a TCP-based network
+File Transfer Protocol is a network protocol that's used for transferring files from one host to another over a TCP-based network
 
 * Listens on port 21 by default
 * FTP traffic is in cleartext
