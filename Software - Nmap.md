@@ -32,6 +32,27 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 
 ## NSE Engine
 
+* A script is a piece of code that doesn't need to be compiled, meaning that it'll remain in its original human-readable form and doesn't need to be converted to machine language)
+* Nmap provides support for scripts using the Lua language
+* NSE is a Lua interpreter that allows Nmap to execute Nmap scripts written in Lua
+* Some scripts can belong to more than one category
+
+| Nmap Script Category | Description |
+| --- | --- |
+| default | |
+| auth | Authentication related scripts |
+| broadcast | Discover hosts by sending broadcast messages |
+| brute | |
+| discovery | Retrieve accessible information (Ex: *Database tables*, *DNS names*, *etc.*) |
+| dos | |
+| exploit | |
+| fuzzer | |
+| intrusive | | 
+| malware | |
+| safe | |
+| version | |
+| vuln | |
+
 ## Traceroute Engine
 
 ## Output Engine
@@ -69,7 +90,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | -R | | Reverse-DNS lookup for all hosts regardless if they're online or offline | |
 | --dns-servers <dns_server>[, <dns_server>] | | Specify custom DNS servers | |
 | --system-dns | | Use OS's DNS resolver | |
-| --traceroute | | Trace hop path to each host | |
+| --traceroute | | Trace hop path to each host (Starts with a packet of high TTL and keeps decreasing it) | |
 
 ## Scan Techniques
 
@@ -108,8 +129,8 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 
 | Nmap Service and Version Detection Scan Option | Meaning | Purpose |
 | --- | --- | --- |
-| -sV | | Probe open ports to determine their service and its version |
-| --version-intensity <intensity_level> | | Set from 0 (light) to 9 (try all probes) |
+| -sV | | Probe open ports to determine their service and its version (Forces Nmap to proceed with the TCP Three-Way Handshake and establish the connection, which is necessary because Nmap can't discover the version without establishing a connection fully and communicating with the listening service) |
+| --version-intensity <0-9> | | Set from 0 (light) to 9 (try all probes) |
 | --version-light | | Limit to most likely probes (intensity 2) |
 | --version-all | | Try every single probe (intensity 9) |
 | --version-trace | | Show detailed version scan activity (for debugging) |
@@ -119,7 +140,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | Nmap Script Scan Option | Meaning | Purpose |
 | --- | --- | --- |
 | -sC | | Equivalent to --script=default |
-| --script=<lua_script>[,<lua_script>,...] | |
+| --script=<script_name>[,<script_name>,...] | |
 | --script-args=<n1=v1[,n2=v2,...]> | | Provides arguments to scripts |
 | --script-args-file=<filename> | | Provide NSE scripts args in a file | 
 | --script-trace | | Shows all data sent and received |
@@ -130,7 +151,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 
 | Nmap OS detection Option | Meaning | Purpose |
 | --- | --- | --- |
-| -O | OS Detection | Enable OS detection |
+| -O | OS Detection | Enable OS detection (Nmap needs to find at least one open and one closed port on the target to make a reliable guess, and the guest OS fingerpints might get distorted) |
 | --osscan-limit | | Limit OS detection to promising targets |
 | --osscan-guess | | Guess OS more aggressively |
 
@@ -357,5 +378,22 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 | 3 | Normal | |
 | 4 | Aggressive | |
 | 5 | Insane | |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Nmap Service Detection Scan Intensity Levels
+
+| Nmap Scan Intensity Level | Description |
+| --- | --- | --- |
+| 0 | Quick but may miss some services and only includes the most likely probes |
+| 1 | Includes slightly more probes than level 0 |
+| 2 | Includes more probes to provide a better balance between speed and accuracy |
+| 3 | Good balance between thoroughness and time consumption (The default level) |
+| 4 | More probes than the default and is more likely to identify obscure services but takes more time |
+| 5 | Further increases the number of probes to provide a more comprehensive version detection | 
+| 6 | Adds even more probes to the scan but is more time-consuming |
+| 7 | Very thorough since it uses almost all available probes but can be very slow |
+| 8 | Uses all probes to provide maximum thoroughness | 
+| 9 | All probes are used to ensure the most comprehensive detection but at the cost of scan time and potential false positives |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
