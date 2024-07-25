@@ -84,7 +84,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | -sN | | TCP Null | |
 | -sF | | FIN | |
 | -sX | | Xmas scans | |
-| --scanflags <flags> | | Customize TCP scan flags | |
+| --scanflags <tcp_flags> | | Customize TCP scan | |
 | -sI <zombie_host[:probeport]> | | Idle scan | |
 | -sY | | SCTP INIT scan | |
 | -sZ | | COOKIE-ECHO scan | |
@@ -100,6 +100,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | --exclude-ports <port_ranges> | | Exclude the specified ports from scanning |
 | -F | Fast Mode | Scan fewer ports than the default scan (From the 1000 most common ports to the 100 most common ports) |
 | -r | | Scan ports consecutively and in order (Don't randomize) |
+| --source-port <port_number> | | Specifies the source port |
 | --top-ports <port_number> | | Scan the specified number of the most common ports | 
 | --port-ratio <ratio> | | Scan port s more common than the specified ratio |
 
@@ -156,7 +157,9 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 
 | Nmap Firewall and IDS Evasion and Spoofing | Meaning | Purpose |
 | --- | --- | --- |
-| -f; --mtu <number> | | Fragment packets |
+| -f | | Fragments packets into 8 byte-fragments |
+| -ff | | Fragments packets into 16 byte-fragments |
+| -f; --mtu <number> | | Fragment packets to the specified number |
 | -D <decoy>[,<decoy>]> | | Cloak a scan with decoys |
 | -S <ip_address> | | Spoof source address |
 | -e <iface> | | Use the specified interface |
@@ -165,7 +168,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | --proxies <url>[,<url>][,...] | | Relay connections through HTTP/SOCKS4 proxies |
 | --data <hex_string> | | Append a custom payload to sent packets | 
 | --data-string <string> | | Append a custom ASCII string to sent packets |
-| --data-length <number> | | Append random data to sent packets |  
+| --data-length <number> | | Increase the size of packets to the specified number of bytes |  
 | --ip-options <options> | | Send packets with specified IP options |
 | --ttl <value> | | Set IP TTL field |
 | --spoof-mac <mac_address>/<prefix>/<vendor_name> | | Spoof your MAC address |
@@ -184,7 +187,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 | -vv | | Increase verbosity level even more |
 | -d | | Increase debugging level |
 | -dd | | Increase debugging level even more |
-| --reason | | Display the reason a port is in a particular state |
+| --reason | | Displays why Nmap concluded that the system is up or a particular port is open |
 | --open | | Only show open (or possibly open) ports |
 | --packet-trace | | Show all packets sent and received |
 | --iflist | | Print host interfaces and routes (For debugging) | 
@@ -249,6 +252,7 @@ nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><pr
 
 * Must be a privileged user to accomplish this scan (Attempting this with an unprivileged user will result in an attempt for the TCP Three-Way Handshake)
 * An active target will respond with a RST flag because the TCP packet with the ACK flag isn't part of any ongoing connection
+* Useful to help map out firewall rules
 
 ## TCP Connect Scan
 
@@ -296,7 +300,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 
 ## TCP Window Scan
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/5118dcb424d429376f09bf2f85db5bce.png)
 
+* Almost the same as the ACK scan but it examines the TCP Window field of the RST packets returned, which can reveal an open port on specific systems
+* Sometimes you have to repeat a TCP Window scan against a target that's behind a firewall in order to get more information
+* Useful to help map out firewall rules
 
 ## UDP Ping Scan
 
@@ -306,6 +314,36 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 
 * Open UDP ports aren't expected to send a reply
 * Closed UDP ports are expected to send back an ICMP Port Unreachable packet reply, which reveals that the host is online
+
+## Spoofed Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/45b982d501fd26deb2b381059b16f80c.png)
+
+* The target will respond to the incoming packets by sending the replies to the destination IP address that we spoofed
+* To figure out which ports are open, the attacker needs to monitor the network traffic to analyze the replies that are sent back to the destination address
+* In general, you expect to specify the network interface using **-e** and to explicitly disable ping scan using **-Pn**
+* You can also spoof you MAC address if you're in the same Ethernet (802.3) network or WiFi (802.11)
+* Spoofing only works in a minimal number of cases where certain conditions are met
+
+## Decoy Scan
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/754fc455556a424ca83f512665beaf7d.png)
+
+* Decoy scanning involves making the scan appear to be coming from many IP addresses so that the attacker's IP address would be lost among them
+
+## Idle Scan
+
+* Requires an idle system to be connected to the network that you can use to communicate with (If the idle host is busy, then all the returned IP IDs would be useless)
+* Nmap will make each probe appear as if it's coming from the idle host, then it'll check for indicators whether the idle host received any response to the spoofed probe, which can be accomplished by checking the IP ID value in the IP header of the packets
+
+1. Trigger the idle host to respond so that you can record the current IP ID on the idle host
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/a93e181f0effe000554a8b307448bbb2.png)
+
+2. Send a spoofed SYN packet to a TCP port on the target to make it appear as if it was coming from the idle host
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8e28bf940936ddbc2367b193ea3550b8.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2b0de492e2154a30760852e07cebae0e.png)
+
+3. Trigger the idle machine again to respond so that you can compare the new IP ID with the one received earlier (If the difference is 1, it means the port on the target is closed or filtered, but if the difference is two, it means that the port on the target is open)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -320,6 +358,4 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 | 4 | Aggressive | |
 | 5 | Insane | |
 
-| Nmap Packet Rate | Description | 
-| --- | --- |
-| 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
