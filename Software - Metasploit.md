@@ -2,9 +2,7 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Metasploit Components
-
-## Metasploit Database
+# Metasploit Database
 
 The Metasploit database allows you to store and manage information about the targets your working on
 
@@ -142,18 +140,47 @@ The command shell provides a basic command-line interface to interact with the t
 
 The Meterpreter shell is a more advanced and versatile shell that runs in memory
 
+* Runs in memory (RAM) on the target system and acts as an agent, meaning that it's not directly installed on the target system and doesn't write itself to the disk on the target, making it seen as a process and not have a file that can be detected on the target system
 * Provides extensive port-exploitation capabilities
-* Provides encrypted communication between the local host and the target host
+* Provides an encrypted communication (TLS) channel between the local host and the target host to avoid being detected
 * Extensible via scripts and modules
 * Provides filesystem navigation, process management, and privilege escalation capabilities
 
-## Bind Shell
-
-The bind shell is the shell that sets up a listener on the target machine that the attacker will connect to
-
-## Reverse Shell
-
-The reverse shell is the shell that makes the target machine initiate a connection back to the attacker's host
+| Meterpreter Command | Description |
+| --- | --- | 
+| background | Backgrounds the current session |
+| exit | Terminates the Meterpreter session |
+| guid | Gets the session GUID |
+| getpid | Shows the current PID |
+| getuid | Shows the user that Meterpreter is running as |
+| irb | Opens an interactive Ruby shell on the current session |
+| load | Loads one or more Meterpreter extensions |
+| migrate <pid> | Migrates Meterpreter to the specified process |
+| run | Executes a Meterpreter script or Post-Exploitation module |
+| sessions | Quickly switch to another session |
+| edit | Will allow you to edit a file |
+| search | Searches for files |
+| upload | Uploads a file or directory |
+| download | Downloads a file or directory |
+| portfwd | Forwards a local port to a remote service |
+| route | Allows you to view and modify the routing table |
+| clearev | Clears the event logs |
+| execute | Executes a command |
+| shell | Drops into a system command shell |
+| sysinfo | Gets information about the remote system |
+| idletime | Returns the number of seconds the remote user has been idle |
+| keyscan_dump | Dumps the keystroke buffer |
+| keyscan_start | Starts capturing keystrokes |
+| keyscan_stop | Stops capturing keystrokes |
+| screenshare | Watches the remote user's desktop in real-time |
+| screenshot | Grabs a screenshot of the interactive desktop |
+| record_mic | Records audio from the default microphone for the specified amount of seconds |
+| webcam_chat | Starts a video chat |
+| webcam_list | Lists webcams |
+| webcam_snap | Takes a screenshot from the specified webcam |
+| webcam_stream | Plays a video stream from the specified webcam | 
+| getsystem | Attempts to elevate your privileges to that of local system |
+| hashdump | Dumps the content of the SAM database |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
