@@ -77,6 +77,34 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Metasploit Shell Types
+
+## Command Shell
+
+The command shell provides a basic command-line interface to interact with the target host
+
+* Provides direct access to the command prompt of the target
+* Limited functionality
+
+## Meterpreter Shell
+
+The Meterpreter shell is a more advanced and versatile shell that runs in memory
+
+* Provides extensive port-exploitation capabilities
+* Provides encrypted communication between the local host and the target host
+* Extensible via scripts and modules
+* Provides filesystem navigation, process management, and privilege escalation capabilities
+
+## Bind Shell
+
+The bind shell is the shell that sets up a listener on the target machine that the attacker will connect to
+
+## Reverse Shell
+
+The reverse shell is the shell that makes the target machine initiate a connection back to the attacker's host
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Metasploit Tools
 
 ## msfvenom
