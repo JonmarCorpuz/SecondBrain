@@ -65,20 +65,6 @@ services [-S <service_name>]
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Metasploit Modules
-
-| Metasploit Module Type | Description |
-| --- | --- |
-| Auxiliary | Versatile tools for tasks other than exploitation, such as reconnaissance (Ex: *Scanners*, *Fuzzers*, *etc.*) |
-| Encoders | Encodes payloads to avoid detection by antivirus software by transforming them into a different formal that's less likely to be flagged as malicious |
-| Evasion | Used to bypass security defenses (Ex: *Firewalls*, *IDS*, *Antivirus software*, *etc.*) |
-| Exploits | Contains the actual code to exploit a specific vulnerability |
-| NOP Generator | Creates no-operation instructions to pad shellcode in order to ensure that it aligns correctly in memory to prevent buffer overflow exploits from crashing the target system |
-| Payloads | Code snippets that run on the target system after a successful exploit |
-| Post-Exploitation | Used after gaining access to a target system |
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
 # Metasploit Commands
 
 | Basic Metasploit Command | Description |
@@ -177,10 +163,13 @@ The reverse shell is the shell that makes the target machine initiate a connecti
 
 msfvenom is a tool within the Metasploit framework that's used to generate payloads, shellcode, and executable files
 
-* Allows users to create custom payloads and encode them to avoid detection
+* Allows users to create custom payloads and encode them into many different formats for many different target systems
+* Allows access to all the payloads that are available in the Metasploit framework
 
 | msfvenom Option | Description |
 | --- | --- |
+| -l payloads | |
+| --list formats | Lists all supported output formats |
 | -p <path_to_payload> | Specifies the payload to use |
 | -f <output_format> | Specifies the output format |
 | -a <architecture> | Specifies the architecture |
@@ -191,3 +180,29 @@ msfvenom is a tool within the Metasploit framework that's used to generate paylo
 | -b <bad_characters> | Specifies characters to avoid in the payload |
 | LHOST=<ip_address> | Specifies the local host IP address for reverse payloads |
 | LPORT=<port_number> | Specifies the local port number for reverse payloads |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Metasploit Modules
+
+| Metasploit Module Type | Description |
+| --- | --- |
+| Auxiliary | Versatile tools for tasks other than exploitation, such as reconnaissance (Ex: *Scanners*, *Fuzzers*, *etc.*) |
+| Encoders | Encodes payloads to avoid detection by antivirus software by transforming them into a different formal that's less likely to be flagged as malicious |
+| Evasion | Used to bypass security defenses (Ex: *Firewalls*, *IDS*, *Antivirus software*, *etc.*) |
+| Exploits | Contains the actual code to exploit a specific vulnerability |
+| NOP Generator | Creates no-operation instructions to pad shellcode in order to ensure that it aligns correctly in memory to prevent buffer overflow exploits from crashing the target system |
+| Payloads | Code snippets that run on the target system after a successful exploit |
+| Post-Exploitation | Used after gaining access to a target system |
+
+## Auxiliary Modules
+
+## Encoder Modules
+
+## Exploit Modules
+
+| Metasploit Exploit Module | Description |
+| --- | --- |
+| exploit/multi/handler | |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
