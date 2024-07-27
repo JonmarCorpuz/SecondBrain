@@ -2,6 +2,12 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Metasploit Components
+
+## Metasploit Database
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Metasploit Modules
 
 | Metasploit Module Type | Description |
@@ -11,18 +17,46 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 | Evasion | Used to bypass security defenses (Ex: *Firewalls*, *IDS*, *Antivirus software*, *etc.*) |
 | Exploits | Contains the actual code to exploit a specific vulnerability |
 | NOP Generator | Creates no-operation instructions to pad shellcode in order to ensure that it aligns correctly in memory to prevent buffer overflow exploits from crashing the target system |
-| Paylaods | Code snippets that run on the target system after a successful exploit |
+| Payloads | Code snippets that run on the target system after a successful exploit |
 | Post-Exploitation | Used after gaining access to a target system |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Metasploit Commands
 
-| Metasploit Command | Description |
+| Basic Metasploit Command | Description |
 | --- | --- |
-| msfconsole | | 
-| exploit | |
-| history | |
+| msfconsole | Launches the Metasploit Framework console | 
+| msfupdate | Updates the Metasploit Framework to the latest version |
+| msfdb init | Initializes the Metasploit database |
+| msfvenom | Generates and outputs various types of shellcode, executable, files, and payloads |
+
+| Exploitation Metasploit Command | Description |
+| --- | --- |
+| exploit | Runs the selected exploit module |
+| check | Checks if the target is vulnerable to the selected exploit |
+| background | Backgrounds the current session | 
+| sessions -l | Lists all active sessions |
+| sessions -i <session_id> | Interacts with a specified session |
+| sessions -k <session_id> | Kills the specified session |
+
+| Module Interaction Metasploit Command | Description |
+| --- | --- |
+| search <keyword> | Searches for modules related to the keyword |
+| use <module> | Selects a module to use |
+| info | Disaplys information about the selected module |
+| show options | Displays the options available for the selected module |
+| show payloads | Lists the payloads that are compatible with the selected exploit |
+| show {exploits|auxiliary|encoders|nops|post} | Lists all modules for the specified type |
+
+| Configuration Metasploit Command | Description |
+| --- | --- |
+| set <parameter> <value> | Sets a value for the specified parameter in the selected module |
+| unset <parameter> | Unsets the value of a specified parameter in the selected module |
+| setg <parameter> <value> | Sets a global value for the specified option |
+| unsetg <parameter> | Unsets the value of a global parameter |
+| show advanced | Displays advanced options for the selected module |
+| set target <index> | Sets the target index for the exploit |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
