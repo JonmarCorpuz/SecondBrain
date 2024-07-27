@@ -74,3 +74,26 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 | **PASSWORD** | Specifies the password to authenticate with on the target | set PASSWORD <password> |
 | **VERBOSE** | Toggles verbose output to get more detailed information during the exploit process | set VERBOSE {true|false} |
 | **CMD** | Specifies the command to execute on the target system | set CMD <command> |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Metasploit Tools
+
+## msfvenom
+
+msfvenom is a tool within the Metasploit framework that's used to generate payloads, shellcode, and executable files
+
+* Allows users to create custom payloads and encode them to avoid detection
+
+| msfvenom Option | Description |
+| --- | --- |
+| -p <path_to_payload> | Specifies the payload to use |
+| -f <output_format> | Specifies the output format |
+| -a <architecture> | Specifies the architecture |
+| --platform <platform> | Specifies the platform | 
+| -o <output_file> | Specifies the output file to write the payload to |
+| -e <encoder> | Specifies the encoder to use |
+| -i <number_of_iterations> | Specifies the number of times to encode the payload |
+| -b <bad_characters> | Specifies characters to avoid in the payload |
+| LHOST=<ip_address> | Specifies the local host IP address for reverse payloads |
+| LPORT=<port_number> | Specifies the local port number for reverse payloads |
