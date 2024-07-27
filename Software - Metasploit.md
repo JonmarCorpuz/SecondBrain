@@ -6,6 +6,63 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 
 ## Metasploit Database
 
+The Metasploit database allows you to store and manage information about the targets your working on
+
+* Stores information about the hosts you have discovered (Ex: *IP addresses*, *Hostnames*, *OSes*, *Open ports*, *etc.*)
+* Keeps track of the services running on each host (Ex: *Service names*, *Service versions*, *etc.*)
+* Logs the vulnerabilities that were discovered on each host 
+
+| Metasploit Database Feature | Description |
+| --- | --- |
+| Workspaces | Allows you to create separate environments within the Metasploit database to organize testing activities |
+
+**Launching the Metasploit Database**
+```Bash
+# You'll first need to start the PostgreSQL database
+sudo systemctl start postgresql
+
+# Then initialize the Metasploit Database
+msfdb_init
+```
+
+Manage Worksapces
+```Bash
+# Add a workspace
+workspace {-a|--add} <workspace_name>
+
+# Rename a workspace
+workspace {-r|--rename} <old_workspace_name> <new_workspace_name>
+
+# Delete a workspace 
+workspace {-d|-delete} <workspace_name>
+
+# Delete all workspaces
+workspace {-D|--delete-all}
+```
+
+**Troubleshoot**
+```Bash
+# Launch the Metasploit console
+msfconsole
+
+# Check the database status
+db_status
+
+# List all available workspace
+workspace
+
+# List all available workspace in more detail
+workspace {-v|--list-verbose}
+
+# Search for a workspace
+workspace {-s|--search} <workspace_name>
+```
+
+```Bash
+hosts [-R]
+services [-S <service_name>]
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Metasploit Modules
@@ -74,6 +131,15 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 | **PASSWORD** | Specifies the password to authenticate with on the target | set PASSWORD <password> |
 | **VERBOSE** | Toggles verbose output to get more detailed information during the exploit process | set VERBOSE {true|false} |
 | **CMD** | Specifies the command to execute on the target system | set CMD <command> |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Metasploit Keyboard Shortcuts
+
+| Metasploit Keyboard Shortcut | Description |
+| --- | --- |
+| CTRL + Z | Background a session |
+| CTRL + C | Kill a session |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
