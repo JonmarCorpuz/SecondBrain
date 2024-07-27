@@ -30,13 +30,13 @@ Metasploit is an open-source framework that's used for developing, testing, and 
 
 | Metasploit Paramater  | Description | Syntax |
 | --- | --- | --- |
-| **RHOSTS** | Specifies the the IP address or IP addresses, IP address range, or subnet of the target host or hosts | `set RHOSTS {<ip_address>|<ip_address_range>|<subnet>}` |
-| **RPORT**  | Specifies the port number on the target system that the exploit will connect to | `set RPORT <port_number>` |
-| **LHOSTS** | Specifies the IP address of the machine that the target host will connect back to | `set LHOST <ip_address>` |
-| **LPORT** | Specifies the port number of the machine that'll listen for incoming connections from the target | `set LPORT <port_number>` |
-| **TARGET** | Specifies the target OS or software version if the exploit supports multiple targets | `set TARGET <>` |
-| **PAYLOAD** | Specifies the payload to be delivered once the exploit is successful | `set PAYLOAD <path_to_payload>` |
-| **USERNAME** | Specifies the username to authenticate with on the target | `set USERNAME <username>` |
-| **PASSWORD** | Specifies the password to authenticate with on the target | `set PASSWORD <password>` |
-| **VERBOSE** | Toggles verbose output to get more detailed information during the exploit process | `set VERBOSE {true|false}` |
-| **CMD** | Specifies the command to execute on the target system | `set CMD <command>` |
+| **RHOSTS** | Specifies the the IP address or IP addresses, IP address range, or subnet of the target host or hosts | set RHOSTS {<ip_address>|<ip_address_range>|<subnet>} |
+| **RPORT**  | Specifies the port number on the target system that the exploit will connect to | set RPORT <port_number> |
+| **LHOSTS** | Specifies the IP address of the machine that the target host will connect back to | set LHOST <ip_address> |
+| **LPORT** | Specifies the port number of the machine that'll listen for incoming connections from the target | set LPORT <port_number> |
+| **TARGET** | Specifies the target OS or software version if the exploit supports multiple targets | set TARGET <> |
+| **PAYLOAD** | Specifies the payload to be delivered once the exploit is successful | set PAYLOAD <path_to_payload> |
+| **USERNAME** | Specifies the username to authenticate with on the target | set USERNAME <username> |
+| **PASSWORD** | Specifies the password to authenticate with on the target | set PASSWORD <password> |
+| **VERBOSE** | Toggles verbose output to get more detailed information during the exploit process | set VERBOSE {true|false} |
+| **CMD** | Specifies the command to execute on the target system | set CMD <command> |
