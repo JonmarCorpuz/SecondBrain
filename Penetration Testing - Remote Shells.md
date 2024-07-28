@@ -1,5 +1,7 @@
 A remote shell is method used by threat actors to execute commands on a remote system as if they were operating directly on that system
 
+* Change your terminal tty size with `stty {rows|cols} <number>`
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Remote Shell Connection Types
