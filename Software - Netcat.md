@@ -66,3 +66,41 @@ nc -lvnp <port_number>
 ```Bash
 nc <hostname> <port_number>
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Netcat Shell Stabilization
+
+* Non-interactive by default
+* Very unstable by default (Ex: *Pressing CTRL + C kills the whole thing*) due to netcat shells being processes running inside a terminal, rather than being bonafide terminals 
+
+## Netcat Shell Stabilization Using Python
+
+```Bash
+# 1. Spawn a better featured shell using Python
+python -c 'import pty;pty.spawn("/bin/bash")'
+
+# 2. Give yourself access to term commands
+export TERM=xterm
+
+# 3. CTRL + Z to background the shell
+
+# 4. Turn off our own terminal echo and then foreground the shell
+stty raw -echo; fg
+```
+
+* Only applicable to Linux boxes since they nearly always have Python installed by default
+* Return your own terminal back to normal by entering `reset` in your own terminal
+
+## Netcat Shell Stabilization Using rlwrap
+
+```Bash
+# 1. Install rlwrap
+sudo apt -y install rlwrap
+
+# 2. Use rlwrap to invoke a slightly different listener
+rlwrap nc -lvnp <port_number>
+```
+
+* rlwrap gives us access to history, tab autocompletion, and the arrow keys immediately upong receiving a shell (Some manual stabilisation may be required if you want to be able to use CTRL + C inside the shell)
+* Particularly used when dealing with Windows shells since they're usually difficult to stabilise
