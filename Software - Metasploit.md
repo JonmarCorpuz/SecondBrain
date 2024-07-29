@@ -23,7 +23,7 @@ sudo systemctl start postgresql
 msfdb_init
 ```
 
-Manage Worksapces
+**Manage Workspaces**
 ```Bash
 # Add a workspace
 workspace {-a|--add} <workspace_name>
@@ -74,7 +74,7 @@ services [-S <service_name>]
 
 | Exploitation Metasploit Command | Description |
 | --- | --- |
-| exploit | Runs the selected exploit module |
+| exploit [-j] | Runs the selected exploit module |
 | check | Checks if the target is vulnerable to the selected exploit |
 | background | Backgrounds the current session | 
 | sessions -l | Lists all active sessions |
