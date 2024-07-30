@@ -65,6 +65,8 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 nmap [options] {<target_ip>|<domain_name>|<target_ip_range>|<network_address><prefix_length>}
 ```
 
+* `nmap --interactive` can be used to spawn a special shell-like interface
+
 ## Host Discovery
 
 * Nmap uses a ping scan to find live hosts on a network
