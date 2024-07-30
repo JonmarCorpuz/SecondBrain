@@ -25,6 +25,9 @@ Set User ID is a special file permission bit that's used to allow a program to r
 ```Bash
 # List files that have SUID bits set
 find / -type f -perm -04000 -ls 2>/dev/null
+
+# List files that have SUID bits set along with their owner
+find / -type f -perm -04000 -exec ls -l {} \; 2>/dev/null
 ```
 
 ## SGID 
