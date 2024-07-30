@@ -1,21 +1,56 @@
-| Privilege Escalation Enumeration Command | Description | Purpose |
-| --- | --- | --- |
-| hostname | Returns the hostname of the target machine | May provide information about the target system's role |
-| uname -a | Prints system information | May provide additional detail about the kernel used by the target system |
-| ps | Displays the currently running processes | May provide additional information about |
-| env | Displays environmental variables |
-| sudo -l | Lists all the commands that the current user can run using sudo |
-| id | | |
-| history | | |
-| ifconfig | | |
-| netstat | | |
-| find | | |
+# System Information
 
-| Privilege Escalation Enumeration File | Description | Purpose |
-| --- | --- | --- |
-| /proc/version | Contains information on the kernel version and additional data (Ex: *Whether a compiler is installed*, *etc.*) | May provide information about the target system processes |
-| /etc/issue | Contains information about the operating system | May provide additional information about the target system |
-| /etc/passwd |  |  |
+```Bash
+# Print system information
+uname -a
+```
+
+```Bash
+# Display all environmental variables and their values
+env
+```
+
+```Bash
+# View all running processes
+ps -A
+
+# View process tree
+ps axjf
+
+#
+ps aux
+```
+
+```Bash
+# List all commands that the user can run with sudo
+sudo -l
+```
+
+```Bash
+# Show all listening ports and established connections
+netstat -a
+
+# Show all listening ports and TCP established connections
+netstat -at
+
+# Show all listening ports and UDP established connections
+netstat -au
+
+# Show all ports that are open and ready to accept incoming connections (Listening mode)
+netstat -l
+
+# List network usage statistics by protocol
+netstat -s
+
+# List connections with the service name and PID information
+netstat -tp
+
+# Display interface statistics
+netstat -i
+
+#
+netstat -ano
+```
 
 # Find Files
 
@@ -44,3 +79,10 @@ find / -type {d|f} -amin -<minutes> 2>/dev/null
 # Find all directories or files with the specified size
 find / -type {d|f} -size {[+]|[-]}<size> 2>/dev/null
 ```
+
+# Interesting Files
+
+* /etc/issue
+* /etc/passwd
+
+* /proc/version
