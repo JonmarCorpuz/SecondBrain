@@ -52,6 +52,13 @@ netstat -i
 netstat -ano
 ```
 
+```Bash
+# List all enabled capabilities 
+getcap -r / 2>/dev/null
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Find Files
 
 ```Bash
@@ -79,6 +86,8 @@ find / -type {d|f} -amin -<minutes> 2>/dev/null
 # Find all directories or files with the specified size
 find / -type {d|f} -size {[+]|[-]}<size> 2>/dev/null
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Interesting Files
 
