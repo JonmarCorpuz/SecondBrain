@@ -93,5 +93,6 @@ find / -type {d|f} -size {[+]|[-]}<size> 2>/dev/null
 
 * /etc/issue
 * /etc/passwd
+* /etc/crontab
 
 * /proc/version
