@@ -100,3 +100,4 @@ After the exchange of Hello packets, updates, and acknowledgements, the neighbor
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# EIGRP Authentication
