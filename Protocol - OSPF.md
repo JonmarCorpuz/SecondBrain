@@ -26,7 +26,13 @@ The Open Shortest Path First protocol is a link state routing protocol, which is
 
 ## Link State Database
 
-## Areas
+## Router ID
+
+A router ID is a unique identifier that's used to uniquely identify each router in an OSPF area
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# OSPF Areas
 
 An OSPF area is a set of routers and links that share the same LSDB
 
@@ -34,44 +40,42 @@ An OSPF area is a set of routers and links that share the same LSDB
 * All OSPF areas must have at least one ABR connected to the backbone area
 * OSPF interfaces in the same subnet must be in the same area (If they aren't in the same area, they won't be able to become OSPF neighbors and won't exchange information about the networks they know about)
 
-### Backbone Area
+## Backbone Area
 
 The backbone area (Area 0) is an area that all other areas must connect to
 
-### Intra-area Route
+## Intra-area Route
 
 An intra-area route is a route to a destination inside the same OSPF area
 
-### Interarea Route
+## Interarea Route
 
 An interarea route is a route to a destination in a different OSPF area
 
-## Routers
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-### Router ID
+# OSPF Router Types
 
-A router ID is a unique identifier that's used to uniquely identify each router in an OSPF area
-
-### Internal Routers
+## Internal Routers
 
 Internal routers are routers that has all their interfaces in the same OSPF area
 
-### Area Border Routers
+## Area Border Routers
 
 ABRs are routers that has multiple interfaces in multiple OSPF areas
 
 * Maintain a separate LSDB for each area that they're connected to
 * Connecting an ABR to more than two OSPF areas can overburden the router
 
-### Autonomous System Boundary Router
+## Autonomous System Boundary Router
 
 An ASBR is an OSPF router that connects the OSPF network to an external network
 
-### Backbone Routers
+## Backbone Routers
 
 Backbone routers are routers that are connected to the backbone OSPF area
 
-### Designated Router
+## Designated Router
 
 * The router with the highest OSPF interface priority in the subnet becomes the designated router (All interfaces have their priority set to 1 by default)
 * If all interfaces have the same priority, the routers will then compare their OSPF router IDs and the router with the highest OSPF router ID will be elected as the designated router
@@ -81,18 +85,21 @@ Backbone routers are routers that are connected to the backbone OSPF area
 * Uses the multicast address 224.0.0.6
 * Forms full adjacencies with all the routers in the subnet
 
-### Backup Designated Router
+## Backup Designated Router
 
 * In a non-preemptive DR and BDR election, when the DR goes down, the BDR becomes the new DR even if it doesn't have the highest interface priority or OSPF router ID, and then an election is held for the next BDR
 * Uses the multicast address 224.0.0.6
 * Forms full adjacencies with all the routers in the subnet
 
-### Designated Router Other
+## Designated Router Other
 
 * Remains in a 2-way state
 * Only forms full adjacencies with the DR and BDR
 
-## Metric
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+
+ # OSPF Metric
 
 * OSPF's metric is called cost, which is the total cost of the bandwidth of the outgoing interfaces
 * Automatically calculated based on the bandwidth of the interface and by dividing a reference bandwidth value, which is 100 by default, by the interface's bandwidth (Ex: *Reference 100 mbps / Interface 10 mbps = Cost of 10*)
@@ -318,3 +325,7 @@ Backbone routers are routers that are connected to the backbone OSPF area
 * OSPF Hello and Dead timers must match
 * Authentication settings must match (Ex: *Configured OSPF passwords*, *etc.*)
 * IP MTU settings and OSPF network type must match (Even if the settings don't match, they can still become neighbors but OSPF won't function properly)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# OSPF Authentication
