@@ -1,5 +1,7 @@
 The Internet Protocol Security is a suite of protocols that's used to secure IP communications between two devices over a public network
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dfghfhdfhddfhgsdgsdgewggwer.gif)
+
 * Operates at the Network layer of the OSI model (Layer 3)
 * Allows entities to authenticate each other in order to ensure that the communication remains between trusted parties and to prevent unauthorized access to network resources
 * Uses asymmetric encryption to establish a VPN tunnel and to exchange symmetric keys, which will be used for any ongoing encryption
@@ -8,27 +10,12 @@ The Internet Protocol Security is a suite of protocols that's used to secure IP 
 
 # IPsec Components
 
-## IPsec Tunnels
-
-An IPsec tunnel is a secure communication channel that's established between two endpoints over an untrusted network
-
-* Provides a secure means for transmitting data between networks or hosts by encrypting and authenticating the traffic that traverses them
-
-### Tunnel Mode
-
-An IPsec tunnel in tunnel mode encapsulates the entire original IP packet, including the IP header, within a new IP packet along with its own IP header containing the source and destination addresses of the VPN gateways or IPsec peers
-
-* The original packet is encrypted and authenticated to ensure confidentiality, integrity, and authenticity during transit
-
-### Transport Mode
-
-An IPsec tunnel in transport mode only encapsulates the payload of the original IP packet, leaving the original IP header intact
-
-* Typically used for end-to-end communication between hosts or securing traffic between a host and a VPN gateway
-
-## Interesting Traffic
-
-Interesting traffic refers to traffic that matches certain rules (Ex: *Network prefixes*, *Traffic types*, *etc.*)
+| IPsec Component | Description |
+| --- | --- |
+| Interesting Traffic | Refers to traffic that matches certain rules (Ex: *Network prefixes*, *Traffic types*, *etc.*) |
+| Security Associations | A set of policies and cryptographic keys that define how data should be securely transmitted over a network |
+| Diffie-Hellman Private Key | |
+| Shared Diffie-Hellman Key | |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -36,9 +23,10 @@ Interesting traffic refers to traffic that matches certain rules (Ex: *Network p
 
 | IPsec Protocol | Description |
 | --- | --- |
-| Authentication Header (AH) | |
-| Encapsulation Security Payload (ESP) | |
-| Internet Key Exchange (IKE) | |
+| Authentication Header (**AH**) | Adds a header to the IP packet that includes a cryptographic checksum based on the packet contents in order to provide data integrity, authentication, and anti-replay protection for IP packets |
+| Encapsulation Security Payload (**ESP**) | Encrypts a packet's payload and optionally the authentication data in order to provide confidentiality and integrity |
+| Internet Security Association and Key Management Protocol (**ISAKMP**) | Defines the procedures and packet formats to establish, negotiate, modify, and delete SAs, but not how keys are exchanged or authenticated |
+| Internet Key Exchange (**IKE**) | A key management protocol that's used within ISAKMP to negotiate and establish Security Associations between IPsec peers (Ex: *VPN clients*, *VPN gateways*, *etc.*) |
 
 ## Authentication Header
 
@@ -53,8 +41,8 @@ The ESP protocol encrypts a packet's payload and optionally the authentication d
 
 | ESP Mode | Description |
 | --- | --- |
-| Transport Mode | |
-| Tunnel Mode | |
+| **Transport Mode** | The ESP protocol only encrypts and authenticates the payload of the IP packet while leaving the IP header intact |
+| **Tunnel Mode** | The ESP protocol encapsulates and encrypts the entire IP packet within another IP packet |
 
 ### Transport Mode
 
@@ -82,14 +70,21 @@ The IKE protocol is a key management protocol that's used to negotiate and estab
 
 | IKE Negotiation Phase | Description |
 | --- | --- |
-| IKE Phase 1 (Phase 1 Tunnel) | IPsec peers will create an IKE SA in order to set up the communications channel between the two devices |
-| IKE Phase 2 (Phase 2 Tunnel) | IPsec peers will then create an IPsec SA in order to set up the VPN |
+| **IKE Phase 1** | IPsec peers will create an IKE SA (Phase 1 Tunnel) in order to set up the communications channel between the two devices |
+| **IKE Phase 2** | IPsec peers will then create an IPsec SA (Phase 2 Tunnel) in order to set up the VPN |
 
 #### IKE Phase 1 
 
 In IKE Phase 1, IPsec peers will create an IKE SA (Phase 1 tunnel) in order to set up the communications channel between two devices
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dfdgsgdgsgdsgddddfsdfdsfdsfdasfsadf.png)
+
+| IKE Phase 1 Component | Description |
+| --- | --- |
+| IKE Security Associations | |
+| Diffie-Hellman Private Key | |
+| Shared Diffie-Hellman Key | |
+| Symmetrical IKE Key | |
 
 * Slow and heavy
 
@@ -104,16 +99,18 @@ In IKE Phase 2, IPsec peers will then create an IPsec SA (Phase 2 tunnel) in ord
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hfghdfggjhdfhvhrdgsdgursdhrejftjhtjt.png)
 
+| IKE Phase 2 Component | Description |
+| --- | --- |
+| IPsec Security Associations | |
+| Symmetrical IPsec Key | |
+
 * Faster and agile
 * Runs over the Phase 1 tunnel
 * Can be torn down when no more interesting traffic occurs while the Phase 1 tunnel remains intact, making establishing a Phase 2 tunnel faster and require less work
-* Both devices will agree upon how the VPN will be constructed by first agreeing upon the method of communication (Ex: *The first host will communicate the encryption algorithms that it supports using the Phase 1 tunnel and the second host will pick out the best encryption algorithm from the list that they support as well*)
-* After agreeing upon the method of encryption, the key material will then be used to create a symmetricl IPsec key, which is a key that's designed and will be used for large scale data transfer
-* The IPsec key will be then used to encrypt and decrypt interesting traffic across the VPN tunnel
 * Across each Phase 1 tunnel, there's a pair of SAs, one from right to left and one from left to right, which are used to transfer the data between networks at either side of a VPN
 
+1. Both devices will agree upon how the VPN will be constructed by first agreeing upon the method of communication (Ex: *The first host will communicate the encryption algorithms that it supports using the Phase 1 tunnel and the second host will pick out the best encryption algorithm from the list that they support as well*)
+2. After agreeing upon the method of encryption, the key material will then be used to create a symmetrical IPsec key, which is a key that's designed and will be used for large scale data transfer
+3. The IPsec key will be then used to encrypt and decrypt interesting traffic across the VPN tunnel
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# IPsec Phases
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dfghfhdfhddfhgsdgsdgewggwer.gif)
