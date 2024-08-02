@@ -18,59 +18,40 @@ The metric calculation in EIGRP considers the K-values used to calculate the bes
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jhbfidbjfndngkdfnjsdfdfasd.png)
 
-* The K-value can be between 0 and 255 and independently set
+| K-Value | Description |
+| --- | --- |
+| K1. Bandwidth | The maximum rate of data transfer across a given path |
+| K2. Delay | The time it takes for a packet to travel from the source to the destination |
+| K3. Load | The current traffic usage on a link represented as a fraction of 255 (with 255 being 100% utilization) |
+| K4. Reliability | The trustworthiness of a network link represented as a fraction of 255 (with 255 being 100% reliable) and is typically based on the historical stability of the link |
+| K5. Maximum Transmission Unit | The largest size of IP packet or frame that can be sent over a network link without the need for fragmentation |
+
+* The value of a K-value can be between 0 and 255 and independently set
 * A K-value should be equal to zero (0) if it isn't considered in the metric calculation and one (1) if it is
 * Neighboring devices must have matching K-values
-
-## K1. Bandwidth
-
-Bandwidth refers to the maximum rate of data transfer across a given path
-
-## K2. Delay
-
-Delay refers to the time it takes for a packet to travel from the source to the destination
-
-## K3. Load
-
-The load refers to the current traffic usage on a link
-
-* Represented as a fraction of 255 (with 255 being 100% utilization)
-* A dynamic metric that can change over time as traffic conditions change
-
-## K4. Reliability
-
-Reliability refers to the trustworthiness of a network link
-
-* Represented as a fraction of 255 (with 255 being 100% reliable)
-* Typically based on the historical stability and error rate of the link
-
-## K5. Maximum Transmission Unit
-
-MTU refers to the largest size of IP packet or frame that can be sent over a network link without the need for fragmentation
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # EIGRP Routing Tables
 
-## Neighbor Table
-
-A neighbor EIGRP routing table stores information about directly connected neighbors
-
-## Topology Table
-
-A topology EIGRP routing table contains all destinations advertised by neighboring routers, along with the metrics and paths to reach those destinations
-
-* Also stores the backup paths for different destinations
-
-## Routing Table
-
-The EIGRP routing table contains the best route to each destination in the network, which are selected from the topology table based on the path metrics
+| EIGRP Neighbor Table | Description |
+| --- | --- |
+| Neighbor Table | Contains information about directly connected neighbors |
+| Topology Table | Contains all destinations advertised by neighboring routers, along with the metrics and paths to reach those destinations |
+| Routing Table | Contains the best route to each destination in the network, which are selected from the topology table based on the path metrics |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# EIGRP Neighbor Relationship Process
+# EIGRP Neighbor Relationship Formation
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/hbidhbdbhdbdsfnjadfnjafnjafnj.png)
+
+| EIGRP Relationship Formation Step | Description |
+| --- | --- |
+| 1. Neighbor Discovery | |
+| 2. Full Routing Information | |
+| 3. Acknowledgement | |
+| 4. Neighborship Established | |
 
 ## 1. Neighbor Discovery 
 
