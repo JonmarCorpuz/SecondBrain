@@ -36,9 +36,11 @@ A router ID is a unique identifier that's used to uniquely identify each router 
 
 An OSPF area is a set of routers and links that share the same LSDB
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ospf-stub-areas.png)
+
 | OSPF Area | Description | 
 | --- | --- |
-| Backbone Area | |
+| Backbone Area (Area 0) | An area that all other areas must connect to |
 | Non-Backbone Area | |
 | Stub Area | |
 | Totally Stud Area | |
@@ -49,9 +51,10 @@ An OSPF area is a set of routers and links that share the same LSDB
 * All OSPF areas must have at least one ABR connected to the backbone area
 * OSPF interfaces in the same subnet must be in the same area (If they aren't in the same area, they won't be able to become OSPF neighbors and won't exchange information about the networks they know about)
 
-## Backbone Area
-
-The backbone area (Area 0) is an area that all other areas must connect to
+| OSPF Types | Description |
+| --- | --- |
+| Flat-Area OSPF | |
+| Multi-Area OSPF | |
 
 ## Intra-area Route
 
@@ -67,32 +70,13 @@ An interarea route is a route to a destination in a different OSPF area
 
 | OSPF Router Type | Description | 
 | --- | --- |
-| Internal Router | | 
-| Area Border Router | | 
-| Autonomous System Boundary Router | |
-| Backbone Router | |
+| Internal Routers | Routers that has all their interfaces in the same OSPF area | 
+| Area Border Routers | Routers that has multiple interfaces in multiple OSPF areas (Maintain a separate LSDB for each area that they're connected to) | 
+| Autonomous System Boundary Routers | Router that connects the OSPF network to an external network |
+| Backbone Router | Routers that are connected to the backbone OSPF area |
 | Designated Router | |
 | Backup Designated Router | |
 | Designated Router Other | |
-
-## Internal Routers
-
-Internal routers are routers that has all their interfaces in the same OSPF area
-
-## Area Border Routers
-
-ABRs are routers that has multiple interfaces in multiple OSPF areas
-
-* Maintain a separate LSDB for each area that they're connected to
-* Connecting an ABR to more than two OSPF areas can overburden the router
-
-## Autonomous System Boundary Router
-
-An ASBR is an OSPF router that connects the OSPF network to an external network
-
-## Backbone Routers
-
-Backbone routers are routers that are connected to the backbone OSPF area
 
 ## Designated Router
 
@@ -122,7 +106,7 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 | OSPF Metric | Description |
 | --- | --- |
-| Cost | The total cost of the bandwidth of the outgoing interfaces that's calculated by dividing the reference bandwidth with the interface bandwidth (Reference bandwidth / Interface bandwidth)
+| Cost | The total cost of the bandwidth of the outgoing interfaces that's calculated by dividing the reference bandwidth with the interface bandwidth (**Reference bandwidth / Interface bandwidth**)
 
 * OSPF's metric is called cost, which is the total cost of the bandwidth of the outgoing interfaces
 * Automatically calculated based on the bandwidth of the interface and by dividing a reference bandwidth value, which is 100 by default, by the interface's bandwidth (Ex: *Reference 100 mbps / Interface 10 mbps = Cost of 10*)
@@ -276,31 +260,11 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 # OSPF Versions
 
-## OSPFv1
-
-* Old and no longer in use
-
-## OSPFv2
-
-* Used for IPv4
-
-## OSPFv3
-
-* Used for IPv4 and IPv6
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# OSPF Area Types
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ospf-stub-areas.png)
-
-| OSPF Area | Description |
+| OSPF Version | Description |
 | --- | --- |
-| Backbone Area | |
-| Stub Area | |
-| Totally Stubby Area | |
-| Not-So-Stubby Area | |
-| Totally Not-So-Stubby Area | |
+| OSPFv1 | (Old and no longer in use) |
+| OSPFv2 | (Used for IPv4) |
+| OSPFv3 | (Used for IPv4 and IPv6) |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
