@@ -36,6 +36,15 @@ A router ID is a unique identifier that's used to uniquely identify each router 
 
 An OSPF area is a set of routers and links that share the same LSDB
 
+| OSPF Area | Description | 
+| --- | --- |
+| Backbone Area | |
+| Non-Backbone Area | |
+| Stub Area | |
+| Totally Stud Area | |
+| Not-So-Stubby Area | |
+| Totally Not-So-Stubby Area | |
+
 * OSPF areas should be contiguous, meaning that each individual area should be connected and not divided up (Ex: *There shouldn't be two area 1s that aren't physically connected to each other*, *etc.*)
 * All OSPF areas must have at least one ABR connected to the backbone area
 * OSPF interfaces in the same subnet must be in the same area (If they aren't in the same area, they won't be able to become OSPF neighbors and won't exchange information about the networks they know about)
@@ -55,6 +64,16 @@ An interarea route is a route to a destination in a different OSPF area
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # OSPF Router Types
+
+| OSPF Router Type | Description | 
+| --- | --- |
+| Internal Router | | 
+| Area Border Router | | 
+| Autonomous System Boundary Router | |
+| Backbone Router | |
+| Designated Router | |
+| Backup Designated Router | |
+| Designated Router Other | |
 
 ## Internal Routers
 
@@ -99,7 +118,11 @@ Backbone routers are routers that are connected to the backbone OSPF area
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 
- # OSPF Metric
+# OSPF Metric
+
+| OSPF Metric | Description |
+| --- | --- |
+| Cost | The total cost of the bandwidth of the outgoing interfaces that's calculated by dividing the reference bandwidth with the interface bandwidth (Reference bandwidth / Interface bandwidth)
 
 * OSPF's metric is called cost, which is the total cost of the bandwidth of the outgoing interfaces
 * Automatically calculated based on the bandwidth of the interface and by dividing a reference bandwidth value, which is 100 by default, by the interface's bandwidth (Ex: *Reference 100 mbps / Interface 10 mbps = Cost of 10*)
@@ -271,15 +294,13 @@ Backbone routers are routers that are connected to the backbone OSPF area
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/ospf-stub-areas.png)
 
-## Backbone Area
-
-## Stub Area
-
-## Totally Stubby Area
-
-## Not-So-Stubby Area
-
-## Totally Not-So-Stubby Area
+| OSPF Area | Description |
+| --- | --- |
+| Backbone Area | |
+| Stub Area | |
+| Totally Stubby Area | |
+| Not-So-Stubby Area | |
+| Totally Not-So-Stubby Area | |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
