@@ -34,6 +34,12 @@ Interesting traffic refers to traffic that matches certain rules (Ex: *Network p
 
 # IPsec Protocols
 
+| IPsec Protocol | Description |
+| --- | --- |
+| Authentication Header (AH) | |
+| Encapsulation Security Payload (ESP) | |
+| Internet Key Exchange (IKE) | |
+
 ## Authentication Header
 
 The AH protocol adds a header to the IP packet that includes a cryptographic checksum based on the packet contents in order to provide data integrity, authentication, and anti-replay protection for IP packets
@@ -44,6 +50,11 @@ The AH protocol adds a header to the IP packet that includes a cryptographic che
 ## Encapsulating Security Payload
 
 The ESP protocol encrypts a packet's payload and optionally the authentication data in order to provide confidentiality and integrity
+
+| ESP Mode | Description |
+| --- | --- |
+| Transport Mode | |
+| Tunnel Mode | |
 
 ### Transport Mode
 
@@ -62,12 +73,17 @@ The ESP protocol encapsulates and encrypts the entire IP packet within another I
 
 ## Internet Key Exchange
 
-The IKE protocol is a key managemetn protocol that's used to negotiate and establish Security Associations between IPsec peers (Ex: *VPN clients*, *VPN gateways*, *etc.*)
+The IKE protocol is a key management protocol that's used to negotiate and establish Security Associations between IPsec peers (Ex: *VPN clients*, *VPN gateways*, *etc.*)
 
 * Allows IPsec peers to authenticate each other, establish secure communication channels, and exchange cryptographic keys for encryption and authentication
 * Uses various encryption and authentication algorithms to protect the key exchange process in order to ensure the integrity and confidentiality of the excahnged keys
 
 ### IKE Negotioation Phases
+
+| IKE Negotiation Phase | Description |
+| --- | --- |
+| IKE Phase 1 (Phase 1 Tunnel) | IPsec peers will create an IKE SA in order to set up the communications channel between the two devices |
+| IKE Phase 2 (Phase 2 Tunnel) | IPsec peers will then create an IPsec SA in order to set up the VPN |
 
 #### IKE Phase 1 
 
@@ -76,10 +92,11 @@ In IKE Phase 1, IPsec peers will create an IKE SA (Phase 1 tunnel) in order to s
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/dfdgsgdgsgdsgddddfsdfdsfdsfdasfsadf.png)
 
 * Slow and heavy
-* VPN peers will first authenticate each other using an authentication method (Ex: *Pre-shared keys*, *Digital certificates*, *etc.*)
-* After successful authentication, each side will create a Diffie-Hellman private key that'll be used to decrypt data and to sign things, and from that private key will derive a corresponding public key, which will be used to encrypt data and exchanged between the two devices, and using their own private key and the other's public key, they'll independently generate a shared Diffie-Hellman key that's the same for both sides
-* The two devices will then use the Diffie-Hellman key to exchange key materials and agreements (Ex: *Encryption algorithm*, *etc.*), which they'll then use to independently generate a final Phase 1 symmetrical encryption key that'll be used to encrypt everything that'll be passing through the Phase 1 tunnel
-* Diffie-Hellman allows both devices to have the same symmetric encryption key without having it passed between them
+
+1. VPN peers will first authenticate each other using an authentication method (Ex: *Pre-shared keys*, *Digital certificates*, *etc.*)
+2. After successful authentication, each side will create a Diffie-Hellman private key that'll be used to decrypt data and to sign things (Diffie-Hellman allows both devices to have the same symmetric encryption key without having it passed between them)
+3. From that private key will derive a corresponding public key, which will be used to encrypt data and exchanged between the two devices, and using their own private key and the other's public key, they'll independently generate a shared Diffie-Hellman key that's the same for both sides
+4. The two devices will then use the Diffie-Hellman key to exchange key materials and agreements (Ex: *Encryption algorithm*, *etc.*), which they'll then use to independently generate a final Phase 1 symmetrical encryption key that'll be used to encrypt everything that'll be passing through the Phase 1 tunnel
 
 #### IKE Phase 2 
 
