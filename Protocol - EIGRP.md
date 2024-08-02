@@ -48,10 +48,10 @@ The metric calculation in EIGRP considers the K-values used to calculate the bes
 
 | EIGRP Relationship Formation Step | Description |
 | --- | --- |
-| 1. Neighbor Discovery | |
-| 2. Full Routing Information | |
-| 3. Acknowledgement | |
-| 4. Neighborship Established | |
+| 1. Neighbor Discovery | EIGRP-capable routers send **Hello** packets to each other to initiate the discovery process |
+| 2. Full Routing Information | The EIGRP-capable routers will exchange full routing information |
+| 3. Acknowledgement | Each EIGRP-capable router will send an acknowledgement back to the other EIGRP-capable routers after receiving the full routing information |
+| 4. Neighborship Established | The neighbor relationships between the EIGRP-capable routers are fully established |
 
 ## 1. Neighbor Discovery 
 
