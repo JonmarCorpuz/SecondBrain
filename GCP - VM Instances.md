@@ -1,3 +1,11 @@
+A virtual machine instance is a virtualized computing environment that runs on a physical host machine
+
+* Each VM instance is associated with a project within the GCP
+* You can only edit a VM instance only when it's stopped
+* VM instances are Zonal, meaning that they run in a specific zone within a specific region
+* Automatic Basic Monitoring is enabled by default for each VM instance to monitor default metrics (Ex: *CPU utilization*, *Inbound and outbound network bytes*, *Disk throughput*, *etc.*)
+* Requires the Compute Engine API to be enabled
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # VM Instace Types 
@@ -55,4 +63,3 @@ A spot VM is a cheaper VM instance for workloads that don't require continuous a
 * Can be used to create VM instances in multiple different regions and zones
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
