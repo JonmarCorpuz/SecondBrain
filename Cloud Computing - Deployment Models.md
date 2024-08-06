@@ -13,21 +13,29 @@ Cloud computing is a model for delivering and enabling the consumption of config
 
 Cloud deployment models help differentiate between cloud offerings in the marketplace
 
+| Cloud Deployment Model | Description |
+| --- | --- |
+| Private Cloud | A cloud computing system that's dedicated to a single consumer |
+| Public Cloud | A cloud computing system that's used and shared among multiple consumers |
+| Hybrid Cloud | A cloud service that combines public cloud computing and private cloud computing systems for different resources |
+| Community Cloud | A cloud computing system that's shared among organizations with common interests, requirements, or compliance needs |
+| Multi-Cloud | A cloud computing system that uses multiple cloud service providers to avoid vendor lock-in and leverage best-of-breed services |
+
 ## Private Cloud
 
-The <mark style="background: #ADCCFFA6;">Private Cloud</mark> deployment model is a cloud service that's dedicated to <mark style="background: #C9E2EEA6;">a single consumer</mark> 
+The Private Cloud deployment model is a cloud computing system that's dedicated to a single consumer
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151350.png)
 
 ## Public Cloud
 
-The <mark style="background: #ADCCFFA6;">Public Cloud</mark> deployment model is a cloud service that's <mark style="background: #C9E2EEA6;">used and shared among multiple consumers</mark> 
+The Public Cloud deployment model is a cloud computing system that's used and shared among multiple consumers 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151214.png)
 
 ## Hybrid Cloud
 
-The <mark style="background: #ADCCFFA6;">Hybrid Cloud</mark> deployment model is a cloud service that <mark style="background: #C9E2EEA6;">combines public cloud services and private cloud services for different resources</mark> 
+The Hybrid Cloud deployment model is a cloud service that combines public cloud computing and private cloud computing systems for different resources
 
 * Can include a combination of a CSP's services and an organization's on-premise resources
 * Organizations can use hybrid cloud environments to reduce their costs and maintain some control over network resources
@@ -36,9 +44,11 @@ The <mark style="background: #ADCCFFA6;">Hybrid Cloud</mark> deployment model is
 
 ## Community Cloud
 
-The Community Cloud deployment model is a cloud service that's shared among organizations with common interests, requirements, or compliance needs
+The Community Cloud deployment model is a cloud computing system that's shared among organizations with common interests, requirements, or compliance needs
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151711.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Cloud Deployment Elements
 
