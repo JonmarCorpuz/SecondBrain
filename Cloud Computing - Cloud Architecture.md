@@ -10,13 +10,13 @@ Cloud computing involves several layers, each responsible for specific aspects o
 | --- | --- |
 | **Frontend** | The client side of a cloud computing system |
 | **Internet** | The medium that allows the relation and communication between a cloud computing system's frontend and backend |
-| **Backend** | The cloud computing system used and provided by the service provider |
+| **Backend** | The cloud computing system that's used and provided by the service provider |
 
 ## Frontend
 
 | Cloud Computing Frontend Component | Description |
 | --- | --- |
-| **Client Infrastructure** | The applications that users interact with to access cloud services |
+| **Client Infrastructure** | The applications and devices that enables users to interact to access and interact with cloud computing services |
 
 ## Backend
 
