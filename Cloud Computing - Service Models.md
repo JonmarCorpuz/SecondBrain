@@ -6,18 +6,19 @@ A cloud service model is a service model that offers a variety of different serv
 
 | Cloud Computing Service | Description |
 | --- | --- |
-| Infrastructure as a Service | |
-| Platfrom as a Service | |
-| Software as a Service | |
+| Infrastructure as a Service (IaaS) | |
+| Platfrom as a Service (PaaS) | |
+| Software as a Service (SaaS) | |
+| Function as a Service (FaaS) | |
 
-## Infrastructure as a Service
+## IaaS
 
 IaaS enables consumers to use virtualized computing resources offered by a CSP over the Internet (*Virtual machines*, *Data storage*, etc.) 
 
 * Consumers don't manage or control the underlying cloud infrastructure but have control over the OS, middleware, runtime, data, and applications that they want to deploy
 * Consumers can purchase a basic computing hardware platform and then build their solutions on top of that
 
-## Platform as a Service
+## PaaS
 
 PaaS provides a platform created by a CSP that enables consumers to develop, run, and manage applications without dealing with the underlying infrastructure 
 
@@ -25,7 +26,7 @@ PaaS provides a platform created by a CSP that enables consumers to develop, run
 * Enables consumers to deploy onto the cloud infrastructure consumer-created or consumer-acquired applications that were created using programming languages and tools that are supported by the CSP
 * Consumers can rapidly deploy their applications quickly without having to purchase and install their own servers and associated equipment
 
-## Software as a Service
+## SaaS
 
 SaaS enables consumers to access software applications that are offered by a CSP via the cloud without having to host the software on their machines 
 
@@ -33,7 +34,9 @@ SaaS enables consumers to access software applications that are offered by a CSP
 * The CSP has complete responsibility for the management and support of their applications
 * All networking, processing, storage, and applications are offered as a service in this model
 
-# Communications as a Service
+## FaaS
+
+## CaaS
 
 CaaS enables consumers to access communication services and features over the Internet (Ex: *Video conferencing*, *Instant messaging*, *E-mail*, *Collaboration*, *etc.*)
 
@@ -41,18 +44,18 @@ CaaS enables consumers to access communication services and features over the In
 * There's no need for a staff to manage the communication services since the CaaS CSP will take responsibility
 * Also known as the Unified Communications as a Service (UCaaS)
 
-# Anything as a Service
+## XaaS
 
 XaaS provides consumers access to any service
 
-# Desktop as a Service
+## DaaS
 
 DaaS enables consumers to access virtual desktop environments over the Internet
 
 * Provides consumers with a Virtual Desktop Infrastructure (VDI), where all of its applications are hosted in the cloud and can consist of any type of application
 * DaaS CSPs manage all the maintenance and configurations as well as licensing and version updates
 
-# Business Process as a Service
+## BPaaS
 
 BPaaS enables businesses to leverage external expertise and technology to streamline and optimize specific business processes without having to build and maintain those processes in-house
 
