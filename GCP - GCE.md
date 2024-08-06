@@ -40,6 +40,8 @@ A machine family is a curated set of processor and hardware configurations that 
 
 ## Compute Engine Machine Type
 
+* Machine type availability can vary from region to regions
+
 | Compute Engine Machine Type | Description |
 | --- | --- |
 | Predefined Machine Type | |
@@ -64,6 +66,7 @@ A custom machine type is a custom machine type created by a user when the predif
 
 * Allows you to adjust the amount of vCPUs, memory, and GPUs to suite your needs
 * Billed per vCPU and memory that is provisioned to each VM instance
+* Remember to use images with GPU libraries installed otherwise the added GPU won't be used (GPUs aren't support on all machine types)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -90,6 +93,7 @@ A custom machine type is a custom machine type created by a user when the predif
 | GCE Feature | Description |
 | --- | --- |
 | Availability Policy | A set of configurations that defines how GCP handles the availability and behavior of VM instances under different condititions |
+| Autoscaling | A feature that automatically adjusts the number of compute resources based on predefined criteria or metrics |
 
 ## Availability Policy
 
