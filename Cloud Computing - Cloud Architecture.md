@@ -2,13 +2,14 @@ Cloud computing involves several layers, each responsible for specific aspects o
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Cloud Computing Architecture Modules
+# Cloud Computing Architecture Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/sfdsfdsgsdfasdasdasdasd.jpg)
 
 | Cloud Computing Architecture Category | Description | 
 | --- | --- |
 | Frontend | The client side of a cloud computing system |
+| Internet | The medium that allows the relation and communication between a cloud computing system's frontend and backend |
 | Backend | The cloud computing system used and provided by the service provider |
 
 ## Frontend
@@ -26,6 +27,8 @@ Cloud computing involves several layers, each responsible for specific aspects o
 | Cloud Runtime | Provides the execution and runtime environment to a VM |
 | Storage | Provides accessible, durable, and scalable storage solutions to support applications and services |
 | Infrastructure | The hardware and software components of a cloud infrastructure (Ex: *Servers*, *Storage network devices*, *Virtualization software*, *etc.*) |
+| Management | The management of backend components |
+| Security | The implementation of different security mechanisms in the backend for secure cloud resources |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
