@@ -1,3 +1,10 @@
+Cloud computing is a paradigm shift in the way IT services are delivered and consumed
+
+| Cloud Computing Principles | Description | 
+| --- | --- |
+| Resource Pooling | The process of allocating resources into a group (pool), which are then made available to multiple consumers by the hypervisor |
+| Rapid Elasticity | The ability to quickly automatically provision computing resources as soon as it's needed or release them when they're no longer required |
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Resource Pooling
