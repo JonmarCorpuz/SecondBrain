@@ -10,9 +10,13 @@ Virtualization is technology that enables the creation of virtual versions of co
 | Efficiency | Virtualization can make it easier to decrease the resources allocated to a virtual machine if there's reduced usage |
 | Maximizes Resource Utilization | VMs have access to the logical resources that were abstracted away from the physical resources and assigned to the virtual machine |
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Hypervisors
 
 A hypervisor, also known as a VMM (Virtual Machine Monitor) or virtualization engine, is a software or hardware component that enables the creation and management of VMs on a physical host, allowing them to behave independently and run their own OS and applications
+
+## Hypervisor Types
 
 | Hypervisor Type | Description |
 | --- | --- |
@@ -45,6 +49,12 @@ A Type 2 Hypervisor (Hosted) is a virtualization hypervisor that runs on top of 
 * Not strictly designed to run a large number of virtual machines for scale
 
 ## Hypervisor Functions
+
+| Hypervisor Function | Description |
+| --- | --- |
+| Memory Ballooning | |
+| Overcommitting | |
+| Hyper-Threading | |
 
 ### Memory Ballooning
 
