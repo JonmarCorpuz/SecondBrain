@@ -1,13 +1,14 @@
-#Cloud 
-
 A cloud service model is a service model that offers a variety of different services through the cloud
-
-* Cloud service models are characterized by the term "as a service" and are accessed by many types of devices 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/f04ce2f08624ac4c7973ad4e6e6275cd.png)
 
+# Cloud Computing Services
 
-# Computing as a Service
+| Cloud Computing Service | Description |
+| --- | --- |
+| Infrastructure as a Service | |
+| Platfrom as a Service | |
+| Software as a Service | |
 
 ## Infrastructure as a Service
 
