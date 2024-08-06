@@ -1,14 +1,14 @@
 Virtualization is technology that enables the creation of virtual versions of computing resources (Ex: *RAM*, *CPU*, *etc.*) in a virtual environment (*Virtual Machine*) by creating an abstraction layer over a device's hardware
 
-* An abstraction layer allows a single device to be divided into multiple virtual machines (*VMs*)
+* An abstraction layer refers to the separation of a system into multiple different parts, allowing a single device (*Server*, *NAS*, *etc.*) to be divided into multiple virtual machines (*VMs*)
 * Virtualization enables the creation of virtualized resources (Ex: *RAM*, *CPU*, *etc.*) that are then consumed by a hypervisor for allocation to VMs 
 
-# Virtualization Benefits
-
-* Decreased expenses: Virtualization can decrease the number of hardware needed for a company's infrastructure
-* Scalability: Virtualization makes scaling easier and can delegate a server's resources to VMs as needed based on usage
-* Efficiency: Virtualization can make it easier to decrease the resources allocated to a virtual machine if there's reduced usage
-* Maximizing resource utilization: VMs have access to the logical resources that were abstracted away from the physical resources and assigned to the virtual machine
+| Virtualization Benefits | Description |
+| --- | --- |
+| Decreased expenses | Virtualization can decrease the number of hardware needed for a company's infrastructure |
+| Scalability | Virtualization makes scaling easier and can delegate a server's resources to VMs as needed based on usage |
+| Efficiency | Virtualization can make it easier to decrease the resources allocated to a virtual machine if there's reduced usage |
+| Maximizes Resource Utilization | VMs have access to the logical resources that were abstracted away from the physical resources and assigned to the virtual machine |
 
 # Hypervisors
 
