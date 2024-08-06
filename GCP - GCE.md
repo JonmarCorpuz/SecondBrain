@@ -70,3 +70,33 @@ A machine type is a predefined configuration for VMs that specifies a set of har
 * Can be used to create VM instances in mutliple different regions
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# GCE Features
+
+| GCE Feature | Description |
+| --- | --- |
+| Availability Policy | A set of configurations that defines how GCP handles the availability and behavior of VM instances under different condititions |
+
+## Availability Policy
+
+An Availability Policy is a set of configurations that defines how GCP handles the availability and behavior of VM instances under different condititions (Ex: *What should happen to a VM instance during periodic infrastructure maintenance*, *Host failure*, *etc.*)
+
+* Includes settings that determine a VM instance's behavior during planned and unplanned disruptions
+
+| Availability Policy Feature | Description |
+| --- | --- |
+| On Host Maintenance | A running instance will be either migratated to another host in the same zone or stopped if the host that it's currently on goes offline |
+| Automatic Restart | A running instance will be automatically restarted if they're terminated due to non-user-initiated reasons |
+
+### On Host Maintenance
+
+Live Migration is when a running instance will be either migratated to another host in the same zone or stopped if the host that it's currently on goes offline
+
+* Doesn't change any attributes or properties of the VM instance
+* Supported VM instances include instances with local SSDs
+* Not supported VM instances include preemptible instances and instances to which you have added GPUs
+* Configured using an Availability Policy
+
+### Automatic Restart 
+
+Automatic Restart is when a running instance will be automatically restarted if they're terminated due to non-user-initiated reasons (Ex: *Maintenance event*, *Hardware failure*, *etc.*)
