@@ -32,13 +32,3 @@ Cloud computing involves several layers, each responsible for specific aspects o
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Cloud Computing Architecture Layers
-
-| Cloud Computing Architecture Layer | Description |
-| --- | --- |
-| 1. Physical Layer | |
-| 2. Infrastructure Layer | |
-| 3. Platform Layer | |
-| 4. Application Layer | |
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
