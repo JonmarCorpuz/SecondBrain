@@ -40,6 +40,13 @@ A machine family is a curated set of processor and hardware configurations that 
 
 ## Compute Engine Machine Type
 
+| Compute Engine Machine Type | Description |
+| --- | --- |
+| Predefined Machine Type | |
+| Custom Machine Type | A custom machine type created by the user to satisfy their needs |
+
+### Predefined Machine Type
+
 A machine type is a predefined configuration for VMs that specifies a set of hardware combinations (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*)
 
 | Predefined Machine Type | Description |
@@ -50,6 +57,13 @@ A machine type is a predefined configuration for VMs that specifies a set of har
 | megamem | |
 | hypermem | |
 | ultramem | |
+
+### Custom Machine Type
+
+A custom machine type is a custom machine type created by the user to satisfy their needs
+
+* Allows you to adjust the amount of vCPUs, memory, and GPUs to suite your needs
+* Billed per vCPU and memory that is provisioned to each VM instance
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
