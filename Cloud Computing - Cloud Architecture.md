@@ -12,7 +12,19 @@
 
 ## Frontend
 
+| Cloud Computing Frontend Component | Description |
+| --- | --- |
+| Client Infrastructure | |
+
 ## Backend
+
+| Cloud Computing Backend Module | Description |
+| --- | --- |
+| Application | |
+| Service | |
+| Cloud Runtime | |
+| Storage | |
+| Infrastructure | |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
