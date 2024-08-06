@@ -1,3 +1,4 @@
+Cloud computing involves several layers, each responsible for specific aspects of the cloud environment
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
