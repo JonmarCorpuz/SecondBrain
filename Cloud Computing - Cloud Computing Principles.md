@@ -59,3 +59,8 @@ Rapid elasticity refers to the ability to quickly automatically provision comput
 * Allows businesses to pay only for the resources that they need
 * Ensures applications maintain optimal performance levels
 * Improves user experience by minimizing latency and downtime since resources are always matched to the current demand
+
+| Rapid Elasticity Types | Description |
+| --- | --- |
+| Horizontal Scaling | Involves adding or removing VM instances |
+| Vertical Scaling | Involves increasing or decreasing the resources allocated to a single VM instance (Ex: *CPU*, *Memory*, *etc.*) |
