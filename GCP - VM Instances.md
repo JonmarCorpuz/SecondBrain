@@ -63,3 +63,4 @@ A spot VM is a cheaper VM instance for workloads that don't require continuous a
 * Can be used to create VM instances in multiple different regions and zones
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
