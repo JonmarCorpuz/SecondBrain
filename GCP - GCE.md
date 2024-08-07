@@ -118,3 +118,20 @@ Live Migration is when a running instance will be either migratated to another h
 ### Automatic Restart 
 
 Automatic Restart is when a running instance will be automatically restarted if they're terminated due to non-user-initiated reasons (Ex: *Maintenance event*, *Hardware failure*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Node Groups
+
+A node group is a homogeneous set of sole-tenant nodes in a specific zone
+
+* A node group can have zero or more nodes, and can contain multiple VMs running on machine types of various sizes, as long as the machine type has two or more vCPUs
+
+## Sole-Tenant
+
+A sole-tenant node is a physical Compute Engine server that's dedicated to host a group of VM instances on the same hardware
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/skdhgfhgsdfgosdfgdsfgjkfdsjkgfdsgjk.png)
+
+* Sole-tenant nodes can help you meet dedicated hardware requirements for BYOL scenarios that require per-core or per-processor licenses
+* Sole-tenant nodes provide visibility into the node's underlying hardware, which allows you to track core and processor usage
