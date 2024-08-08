@@ -7,6 +7,8 @@ Google Cloud Logging is a fully managed service for collecting, storing, and ana
 * Stores logs securely with configurable retention periods
 * Allows you to configure alerts based on specific log patterns or thesholds, as well as store, search, and analyze on massive volume of data
 * Allows you to implement control and permissions to ensure that only authorized users can view or manage logs
+* Allows you to route logs to specific log buckets based on filters
+* Logs can be exported to a Cloud Storage bucket for long term retention
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -17,7 +19,7 @@ Google Cloud Logging is a fully managed service for collecting, storing, and ana
 | Logs Explorer | Allows you to search, sort, and analyze logs using queries |
 | Logs Dashboard | Provides visualizations of logs |
 | Logs Metric | Allows you to collect custom metrics using queries or matching strings |
-| Logs Router | Allows you to route log entries back to their source |
+| Logs Router | Allows you to route logs to specific log buckets |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -58,3 +60,27 @@ Google Cloud Logging is a fully managed service for collecting, storing, and ana
 | Policy Denied Audit Log | Logs for when a user or service account is denied access | Logging/Logs Viewer or Project/Viewer |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Log Bucket
+
+A log bucket is a storage container within Cloud Logging that holds log entries
+
+* Provides a structured and organized way to manage and store log data from various sources
+* Allows you to create different buckets for different logging purposes in order to organize your logs
+* Allows you to define retention policies that determine how long logs are kept before they're deleted
+
+| Log Bucket Type | Description |
+| --- | --- |
+| _Required | Holds Admin activity, System Events, and Access Transparency logs |
+| _Default | Holds all other logs that aren't stored in the _Required bucket |
+
+## _Required Log Bucket
+
+* Free and can't be deleted
+* The retention period is 400 days be default and can't be changed
+
+## _Default Log Bucket
+
+* You're billed based on Cloud Logging pricing
+* The bucket can't be deleted but you can disable the _Default log sink route to disable log ingestion
+* The retention period is 30 days by default and can be edited to be between 1 and 3650 days
