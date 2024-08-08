@@ -64,3 +64,6 @@ A spot VM is a cheaper VM instance for workloads that don't require continuous a
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# VM Instance Groups
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
