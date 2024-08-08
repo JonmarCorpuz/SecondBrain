@@ -13,6 +13,7 @@ A Kubernetes cluster is simply a group of nodes that are managed by Kubernetes t
 | --- | --- |
 | Master Node | Manages the Kubernetes cluster |
 | Worker Node | Runs the workload (pods) |
+| Node Pool | A group of worker nodes within a cluster with the same configurations |
 
 ## Master Node
 
