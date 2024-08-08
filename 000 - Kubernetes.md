@@ -18,6 +18,8 @@ A Kubernetes cluster is simply a group of nodes that are managed by Kubernetes t
 
 The Master Node, also known as the Control Plane, is the node the manages the Kubernetes cluster
 
+* Always replicate the master nodes across multiple zones for high availability
+
 | Master Node Component | Description |
 | --- | --- |
 | API Server | Handles all communication from other nodes and the outside for a Kubernetes cluster (Ex: *Receives the request for a command*, *etc.*) |
@@ -45,10 +47,13 @@ The Master Node, also known as the Control Plane, is the node the manages the Ku
 | Deployment Controller | |
 | DaemonSet Controller | |
 | Job Controller | |
+| StatefulSet Controller | |
 
 ### etcd
 
 ## Worker Node
+
+* Some CPU on the worker node is reserved by the Control Plane since the nodes need to communicate back to it
 
 | Worker Node Component | Description |
 | --- | --- |
