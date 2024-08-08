@@ -8,6 +8,8 @@ Google Cloud Logging is a fully managed service for collecting, storing, and ana
 * Allows you to configure alerts based on specific log patterns or thesholds, as well as store, search, and analyze on massive volume of data
 * Allows you to implement control and permissions to ensure that only authorized users can view or manage logs
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Google Cloud Logging Features
 
 | Google Cloud Logging Feature | Description |
@@ -16,3 +18,43 @@ Google Cloud Logging is a fully managed service for collecting, storing, and ana
 | Logs Dashboard | Provides visualizations of logs |
 | Logs Metric | Allows you to collect custom metrics using queries or matching strings |
 | Logs Router | Allows you to route log entries back to their source |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cloud Logging Agent
+
+* The Logging Agent needs to be installed on the VM instances that you want to ingest logs from (Cloud Logging API and the BlindPlane tool from Blue Medora can be used to ingest logs from on-premises hosts)
+* Based on fluentd
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cloud Logging Log Types
+
+| Cloud Logging Log Type | Description |
+| --- | --- |
+| Access Transparency Log | Captures actions performed by the GCP team on your content |
+| Cloud Audit Log | Captures who did what, when, and where |
+
+## Access Transparency Log
+
+## Cloud Audit Log
+
+## Audit Log Entries
+
+| Cloud Logging Log Entry | Description |
+| --- | --- |
+| The Service | |
+| The Operation | |
+| The Audited Resource | |
+| The Subject Making the Call | |
+
+## Audit Log Types
+
+| Audit Log Type | Description | Access Permissions Needed |
+| --- | --- | --- |
+| Admin Activity Log | Logs for API calls or other actions that modify the configuration of resources (Ex: *VM creation*, *Paatching resources*, *Change in IAM permissions*, *etc.*) | Logging/Logs Viewer or Project/Viewer |
+| Data Access Log | Logs for everyone that reads resource configurations (Ex: *Listing resources*, *etc.*) | Logging/Private Logs Viewer or Project/Owner |
+| System Event Audit Log | Logs for Google Cloud administrative actions (Ex: *On host maintenance*, *Instance preemption*, *Automatic restart*, *etc.*) | Logging/Logs Viewer or Project/Viewer |
+| Policy Denied Audit Log | Logs for when a user or service account is denied access | Logging/Logs Viewer or Project/Viewer |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
