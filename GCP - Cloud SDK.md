@@ -11,3 +11,9 @@ The Google Software Development Kit is a collection of tools and libraries that 
 | Cloud BigQuery | bq | Allows you to manage and interact with BigQuery |
 | Cloud Bigtable | cbt | Allows you to manage and interact with Google Cloud Bigtable |
 | Kubernetes | kubectl | Allows you to manage and interact with GKE clusters |
+
+## gcloud
+
+```Bash
+gcloud <group> <subgroup> <action>
+```
