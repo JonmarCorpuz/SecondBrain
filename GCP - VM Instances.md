@@ -66,4 +66,9 @@ A spot VM is a cheaper VM instance for workloads that don't require continuous a
 
 # VM Instance Groups
 
+| VM Instance Group Type | Description |
+| --- | --- |
+| Managed | Each VM instance in the group is identical and was created using a template |
+| Unmanaged | VM instances within the group can have different configuration |
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
