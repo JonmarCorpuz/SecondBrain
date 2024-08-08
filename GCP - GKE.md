@@ -2,6 +2,7 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 * Uses the Container-Optimized OS, which is a hardened OS built by Google
 * The Kubernetes APIs need to be enabled in order to use the Kubernetes Engine
+* Integrated with Google Cloud Monitoring and Google Cloud Logging by default
 
 | GKE Feature | Description | 
 | --- | --- |
