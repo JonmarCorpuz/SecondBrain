@@ -10,6 +10,8 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 | Pod Autoscaling | |
 | Cluster Autoscaling | |
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # GKE Cluster Mode
 
 | GKE Cluster Mode | Description |
@@ -23,3 +25,12 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 * Reduces your operational costs in running Kubernetes clusters
 * Provides a hands-off experience (GKE will manage the cluster infrastructure for you)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# GKE Kubernetes Deployment Methods
+
+| GKE Kubernetes Deployment Method | Description |
+| --- | --- |
+| Cloud Shell | |
+| YAML Declarative Configuration | |
