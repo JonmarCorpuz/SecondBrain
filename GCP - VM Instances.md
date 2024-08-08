@@ -66,9 +66,18 @@ A spot VM is a cheaper VM instance for workloads that don't require continuous a
 
 # VM Instance Groups
 
+* Can be zonal or regional
+
 | VM Instance Group Type | Description |
 | --- | --- |
-| Managed | Each VM instance in the group is identical and was created using a template |
+| Managed | Each VM instance in the group is identical and created using a template |
 | Unmanaged | VM instances within the group can have different configuration |
+
+## Managed Instance Group
+
+A MIG is an instance group where all VM instances are identical and was created using a template
+
+## Unmanaged Instance Group
+
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
