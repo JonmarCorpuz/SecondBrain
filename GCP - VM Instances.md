@@ -77,6 +77,12 @@ A spot VM is a cheaper VM instance for workloads that don't require continuous a
 
 A MIG is an instance group where all VM instances are identical and was created using a template
 
+* Provides auto-healing (Ex: *If an instance crashes, MIG will launch another instance*) and autoscaling (Ex: *MIG can increase or decrease instances based on load*)
+* A load balancer can be added to distrbute workload
+* VM instances in the same MIG can be created in multiple zones (Zonal MIGs)
+* MIGs can be replicated into different regions (Regional MIGs)
+* Instances can be upgraded to another instance template without any downtime (*Rolling updates*, *Canary Deployment*)
+
 ## Unmanaged Instance Group
 
 
