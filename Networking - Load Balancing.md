@@ -9,11 +9,13 @@ Load balancing is the practice of distributing incoming network traffic across m
 | Host Rules | Configurations that determine how traffic should be directed based on the hostname in the client request |
 | Path Rules | Configurations that determine how traffic should be routed based on the URL path in the client request |
 
-# Load Balancing Techniques
+# Load Balancing Types
+
+| Load Balancing Type | Description |
+| --- | --- |
+| DNS Load Balancing | Distributes traffic by rotating DNS responses to route users to different IP addresses for a single domain |
 
 ## DNS Load Balancing
-
-## Server Loan Balancing
 
 ## Application Load Balancing
 
