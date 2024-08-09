@@ -81,12 +81,17 @@ A MIG is an instance group where all VM instances are identical and was created 
 * A load balancer can be added to distrbute workload
 * VM instances in the same MIG can be created in multiple zones (Zonal MIGs)
 * MIGs can be replicated into different regions (Regional MIGs)
-* Instances can be upgraded to another instance template without any downtime (*Rolling updates*, *Canary Deployment*)
 
 | MIG Type | Description |
 | --- | --- |
 | Stateless MIG | |
 | Stateful MIG | |
+
+| MIG Update Type | Description |
+| --- | --- |
+| Rolling Update | Gradually update instances in an instance group to the new instance template |
+| Rolling Restart/Replace | Gradually restart or replace all the instances in the group |
+| Canary Deployment | |
 
 ## Unmanaged Instance Group
 
