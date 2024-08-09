@@ -83,7 +83,11 @@ A MIG is an instance group where all VM instances are identical and was created 
 * MIGs can be replicated into different regions (Regional MIGs)
 * Instances can be upgraded to another instance template without any downtime (*Rolling updates*, *Canary Deployment*)
 
-## Unmanaged Instance Group
+| MIG Type | Description |
+| --- | --- |
+| Stateless MIG | |
+| Stateful MIG | |
 
+## Unmanaged Instance Group
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
