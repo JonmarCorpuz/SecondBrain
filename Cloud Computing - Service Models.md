@@ -50,6 +50,13 @@ Platform as a Service provides a platform created by a CSP that enables consumer
 * Enables consumers to deploy onto the cloud infrastructure consumer-created or consumer-acquired applications that were created using programming languages and tools that are supported by the CSP
 * Consumers can rapidly deploy their applications quickly without having to purchase and install their own servers and associated equipment
 
+## Serverless 
+
+Serverless infrastructure is a cloud computing model where the CSP dynamically manages the infrastructure and resources required to run code
+
+* ALlows developers to focus on writing and deploying code without having to worry about managing servers or infrastructure
+* Zero visibility into the network infrastructure (Ex: *Which server is running your application*, *etc.*)
+
 ### FaaS
 
 Function as a Service allows developers to execute code in response events without the need to manage or provision servers
