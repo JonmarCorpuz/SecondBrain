@@ -50,12 +50,31 @@ Platform as a Service provides a platform created by a CSP that enables consumer
 * Enables consumers to deploy onto the cloud infrastructure consumer-created or consumer-acquired applications that were created using programming languages and tools that are supported by the CSP
 * Consumers can rapidly deploy their applications quickly without having to purchase and install their own servers and associated equipment
 
+## SaaS
+
+Software as a Service enables consumers to access software applications that are offered by a CSP via the cloud without having to host the software on their machines 
+
+| SaaS Customer Responsibility | SaaS CSP Responsibility |
+| --- | --- |
+
+* Consumers don't manage or control the underlying cloud infrastructure
+* The CSP has complete responsibility for the management and support of their applications
+* All networking, processing, storage, and applications are offered as a service in this model
+
 ## Serverless 
 
 Serverless infrastructure is a cloud computing model where the CSP dynamically manages the infrastructure and resources required to run code
 
-* ALlows developers to focus on writing and deploying code without having to worry about managing servers or infrastructure
+* ALlows developers to focus on writing code in the form of functions that execute in response to events and deploying it without having to worry about managing servers or infrastructure
 * Zero visibility into the network infrastructure (Ex: *Which server is running your application*, *etc.*)
+* Serverless applications are usually event-driven (Ex: *Triggered by specific HTTP requests*, *etc.*)
+
+| Serverless Type | Description |
+| --- | --- |
+| Function-as-a-Service | |
+| Backend-as-a-Service | |
+| Event-Driven Computing | |
+| Serverless Containers | |
 
 ### FaaS
 
@@ -73,7 +92,7 @@ Function as a Service allows developers to execute code in response events witho
 | | Availability | 
 | | Load Balancing |
 
-### CaaS
+## CaaS
 
 Container as a Service provides users a platform for users to manage, deploy, and run containerized applications
 
@@ -90,17 +109,6 @@ Container as a Service provides users a platform for users to manage, deploy, an
 | | Load Balancing |
 
 * Offers the ability to automatically scale containerized applications vertically based on demand
-
-## SaaS
-
-Software as a Service enables consumers to access software applications that are offered by a CSP via the cloud without having to host the software on their machines 
-
-| SaaS Customer Responsibility | SaaS CSP Responsibility |
-| --- | --- |
-
-* Consumers don't manage or control the underlying cloud infrastructure
-* The CSP has complete responsibility for the management and support of their applications
-* All networking, processing, storage, and applications are offered as a service in this model
 
 ## XaaS
 
