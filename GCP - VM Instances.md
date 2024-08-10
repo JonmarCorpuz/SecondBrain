@@ -96,3 +96,20 @@ A MIG is an instance group where all VM instances are identical and was created 
 ## Unmanaged Instance Group
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VM Instance Scaling Types
+
+| VM Instance Scaling Type | Description |
+| --- | --- |
+| Automatic | Automatically scale instances based on the load |
+| Basic | Instances are created as and when requests are received |
+| Manual | Manually specify the number of instances to run |
+
+## Automatic Scaling
+
+* Based on the configured CPU usage threshold, throughput threshold, and the maximum of concurrent requests an instance can receive
+
+## Basic Scaling
+
+* Instances are shutdown if there are zero requests being made
+* Isn't supported by GAE's Flexible environment
