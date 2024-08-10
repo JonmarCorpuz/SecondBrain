@@ -1,7 +1,6 @@
-Container orchastartion management tool
+Kubernetes is an open-source container orchestration platform 
 
-* An open-source container ochestration solution
-* Provides cluster management
+* Automates the deployment, scaling, and management of clusters and the containers within
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -11,9 +10,9 @@ A Kubernetes cluster is simply a group of nodes that are managed by Kubernetes t
 
 | Kubernetes Cluster Component | Description |
 | --- | --- |
-| Master Node | Manages the Kubernetes cluster |
-| Worker Node | Runs the workload (pods) |
-| Node Pool | A group of worker nodes within a cluster with the same configurations |
+| **Master Node** | The node that manages the Kubernetes cluster |
+| **Worker Node** | A node that runs the workload (pods) |
+| **Node Pool** | A group of worker nodes within a cluster with the same configurations |
 
 ## Master Node
 
