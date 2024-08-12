@@ -99,38 +99,52 @@ A Pod is the smallest and simplest unit in the Kubernetes object model that can 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Kubernetes Concepts
+# Kubernetes Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/bhlfbhfblkbsbbsdfsfbdsbfbdsf.png)
 
-| Kubernetes Concept | Description |
+| Kubernetes Component | Description |
 | --- | --- |
-| Deployment | |
-| ReplicaSet | Ensures that the specified number of Pods are running for a specific microservice version |
-| Namespace |  |
-| StatefulSets | |
+| ReplicaSet | Maintains a set of replica pods, which is a copy of a pod that's created and managed by Kubernetes, to guarantee the availability of the specified number of pods |
+| Deployment | Allows the user to define a desired state, which is the configurations and operational status that the user defines for their applications and resources within the cluster |
+| StatefulSets | Enables stateful applications to run on Kubernetes |
+| Service | Ensures that a single IP address can be associated with a Pod and its replicas by acting as an access point |
+
+## ReplicaSet
+
+* Ensures that the specified number of stateless Pods are running for a specific microservice version
+* If a stateless Pod is deleted, isn't running, or fails then ReplicaSet will create a new one to replace it
+* Managed by a deployment
 
 ## Deployment 
+
+* Once the desired state is defined, the deployment controller will change the actual state of the container to the desired state
 
 * Represents a microservice
 * Manages new releases ensuring zero downtime
 * Deploying a new version of a microservice, it'll create a new replica set for the new version of the microservice and replace those from the old version
+* Each Pod is identical and is used for stateless applications
 
-## ReplicaSet
+## StatefulSets
 
-* Ensures that the specified number of Pods are running for a specific microservice version
-* If a Pod is deleted, isn't running, or fails then ReplicaSet will create a new one to replace it
-* Uses label selectors to identify which Pods it should manage
+StatefulSets enable stateful applications to run on Kubernetes
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/jkhjkjhkghjghjghfghfghfgfdgd.png)
 
-# Kubernetes Service
+* Stateful Pods can't be created in any order and require a unique and persistent identity, network identifiers, and storage
+
+| StatefulSet Pod | Description |
+| --- | --- |
+| Master Pod | The only Pod that can read and write to the database |
+| Slave Pod | These Pods can only read the database and has an accurate replication of the master Pod's storage |
+
+## Service
 
 A Service is a method for exposing a Pod so that other users and resources can interact with it
 
-* Ensures that the external world doesn't get impacted as Pods within your cluster go down and come up
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/mcvmcvmcvmncmvnmcvnmcvmcvnmc.png)
 
-## Kubernetes Service Types
+* Ensures that the external world doesn't get impacted as Pods within your cluster go down and come up
 
 | Kubernetes Service Type | Description |
 | --- | --- |
