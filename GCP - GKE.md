@@ -38,6 +38,17 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# GKE Container Exeternal Deployment Methods
+
+| GKE Container Deployment Method | Description |
+| --- | --- |
+| LoadBalancer | Externally exposes the service using the CSP's load balancer |
+| ClusterIP | Internally exposes the service using the cluster's interal IP address |
+| NodePort | Externally exposes the service using the node's IP address at a static port |
+| ExternalName | Externally exposes the service using the value mapped to the value of the externalName field in the DNS server |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # GKE Cluster Types
 
 | GKE Cluster Type | Description |
