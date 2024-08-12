@@ -151,3 +151,55 @@ A Service is a method for exposing a Pod so that other users and resources can i
 | ClusterIP | |
 | LoadBalancer | |
 | NodePort | |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Kubernetes Object YAML Configuration
+
+* A Kubernetes object is a persistent entity in the Kubernetes system that represents the state of the cluster (Ex: *What applications are running*, *What resources the running applications are using*, *etc.*)
+
+| Required Fields | Description |
+| --- | --- |
+| apiVersion | The version of the Kubernetes API that you're going to use to create this object |
+| kind | The kind of object that you're going to create |
+| metadata | Contains data that can be used to uniquely identify the object |
+| spec | The desired state of the object |
+
+Service YAML configuration file example
+```YAML
+apiVersion: v1
+kind: Service
+metadata:
+  name: example-nginx-service
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+  type: ClusterIP
+```
+
+Deployment YAML configuration file example
+```YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```
