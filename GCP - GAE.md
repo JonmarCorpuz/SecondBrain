@@ -1,10 +1,12 @@
 Google App Engine is a PaaS offering that enables developers to build and deploy applicaitons on a fully managed serverless platform
 
+* AppEngine is regional and services are deployed across multiple zones (You can't change an application's region once the project is created)
 * Allows developers to focus on writing code without worying about provisioning, maintaining, or scaling servers
 * Supports various programming languages using pre-configured runtimes
 * Allows developers to use custom run-time and write code in any language
 * Less flexibility compared to GCE
-* Maximum of one application per project and per region (One application can host multiple microservices)
+* Maximum of one application per project (One application can host multiple microservices)
+* Uses a combination of resident instances (Instances that run contiunuously) and dynamic instances (Instances that are added based on load)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
