@@ -83,7 +83,7 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Deploying New Versions Without Downtime
+# New Version Deployment Methods
 
 | New Version Deployment Method | Description |
 | --- | --- |
@@ -91,3 +91,22 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 | Deploy new version without immediately shifting traffic to it and then migrate all traffic to it at once | |
 | Deploy new version without immediately shifting traffic to it and then gradually shift traffic to it | |
 | Deploy new version without immediately shifting traffic to it and then control the pace of migration by splitting traffic | |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Traffic Splitting Methods
+
+| Traffic Splitting Method | Description | 
+| --- | --- |
+| IP Splitting |  |
+| Cookie Splitting |  |
+| Random |  |
+
+## IP Splitting 
+
+* Splits traffic based on a request's source IP address
+* Can have issues (Ex: *IP addresses can change*, *If all requests originate from a corporate VPN with a single IP, this can cause all requests to go to the same version*, *etc.*)
+
+## Cookie Splitting
+
+* Cookies (GOOGAPPUID) can be controlled from your application to generate the appropriate cookie to accurately assign users to versions
