@@ -110,3 +110,14 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 ## Cookie Splitting
 
 * Cookies (GOOGAPPUID) can be controlled from your application to generate the appropriate cookie to accurately assign users to versions
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# GAE YAML Files
+
+| GAE YAML File | Description |
+| --- | --- |
+| app.yaml | |
+| cron.yaml | |
+| dispatch.yaml | |
+| queue.yaml | |
