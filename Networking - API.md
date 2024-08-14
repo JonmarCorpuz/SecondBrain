@@ -1,5 +1,6 @@
-An Application Programming Interface is a set of rules and protocols that allows different software applications to communicate with each other
+An Application Programming Interface is a middleware that facilitates the communication of two software components by using a set of protocols and definitions
 
+* "Application" refers to any software having specific functionality and "Interface" refers to the service contract between two applications that make communication possible via requests and responses
 * Allows applications to interact with web services to retrieve or send data
 * Enables different software systems from different vendors to communicate and exchange data
 * Automates routine tasks (Ex: *Updating databases*, *Generating reports*, *Managing cloud resources*, *etc.*)
