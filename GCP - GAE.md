@@ -56,3 +56,27 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 * Multiple versions can co-exist
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Service Request Routing
+
+| Service Request Routing Method | Description |
+| --- | --- |
+| Routing With URLs | |
+| Routing With Dispatch File | |
+| Routing With Cloud Load Balancing | |
+
+## Routing With URLs
+
+| URL Path | Description | Syntax |
+| --- | --- | --- |
+| Default Service | | https://<project_id>.<region_id>.r.appspot.com |
+| Specific Service | | https://<service>-dot-<project_id>.<region_id>.r.appspot.com |
+| Specific Version of Service | | https://<version_id>-dot-<service>-dot-<project_id>.<region_id>.r.appspot.com |
+
+## Routing With Dispatch File
+
+* Configure dispatch.yaml with routes
+
+## Routing With Cloud Load Balancing
+
+* Configure routes on Load Balancing instance
