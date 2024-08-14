@@ -27,7 +27,7 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 * Complete isolation from OS
 * Pricing is based on instance hours
-* Can scale to zero
+* Automatically scales down and up depending on traffic (Scales down to zero instances if there's no requests being made to the application)
 
 ## Flexible Environment 
 
