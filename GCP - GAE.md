@@ -85,7 +85,7 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 # Deploying New Versions Without Downtime
 
-| Deploying New Versions Without Downtime Method | Description |
+| New Version Deployment Method | Description |
 | --- | --- |
 | Deploy new version and shift traffic all at one | |
 | Deploy new version without immediately shifting traffic to it and then migrate all traffic to it at once | |
