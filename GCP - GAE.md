@@ -80,3 +80,14 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 ## Routing With Cloud Load Balancing
 
 * Configure routes on Load Balancing instance
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Deploying New Versions Without Downtime
+
+| Deploying New Versions Without Downtime Method | Description |
+| --- | --- |
+| Deploy new version and shift traffic all at one | |
+| Deploy new version without immediately shifting traffic to it and then migrate all traffic to it at once | |
+| Deploy new version without immediately shifting traffic to it and then gradually shift traffic to it | |
+| Deploy new version without immediately shifting traffic to it and then control the pace of migration by splitting traffic | |
