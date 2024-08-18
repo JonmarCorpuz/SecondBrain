@@ -86,6 +86,6 @@ PD snapshots are point-in-time backups of your PD
 
 ## Machine Images
 
-* Created from a VM instance
+* Created from a VM instance (Backs up VM instance's configuration along with all its attached PDs)
 * Contains everything you need to create a VM instance (Ex: *Configurations*, *Metadata*, *Permissions*, *Data from the boot disk*, *Data from other disks*, *etc.*)
 * Recommended for disk backups, instance cloning, and replication
