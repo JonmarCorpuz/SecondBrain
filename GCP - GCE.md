@@ -154,8 +154,10 @@ A sole-tenant node is a physical Compute Engine server that's dedicated to host 
 * Data is automatically encrypted but you can't configure the encryption keys
 * Supports SCSI and NVMe interfaces
 * Can't be detached and attached to another VM instance
+* Doesn't support snapshots
 
 ## Persistent Storage
 
 * Network storage
 * Lifecycle isn't tied to a VM instance
+* Supports snapshots
