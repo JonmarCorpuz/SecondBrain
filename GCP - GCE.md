@@ -135,3 +135,27 @@ A sole-tenant node is a physical Compute Engine server that's dedicated to host 
 
 * Sole-tenant nodes can help you meet dedicated hardware requirements for BYOL scenarios that require per-core or per-processor licenses
 * Sole-tenant nodes provide visibility into the node's underlying hardware, which allows you to track core and processor usage
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VM Instance Storage 
+
+| Storage Type | Description | 
+| --- | --- |
+| Local SSD | |
+| Persistent Disk | |
+
+## Local SSD
+
+* Physically attached to the host of the VM instance
+* Temporary data that persists until the VM instance stops (Lower durability and availability)
+* Lifecycle tied to VM instance
+* Provides very fast I/O and throughput, as well as very low latency
+* Data is automatically encrypted but you can't configure the encryption keys
+* Supports SCSI and NVMe interfaces
+* Can't be detached and attached to another VM instance
+
+## Persistent Storage
+
+* Network storage
+* Lifecycle isn't tied to a VM instance
