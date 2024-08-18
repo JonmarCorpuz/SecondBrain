@@ -161,3 +161,4 @@ A sole-tenant node is a physical Compute Engine server that's dedicated to host 
 * Network storage
 * Lifecycle isn't tied to a VM instance
 * Supports snapshots
+* A persistent disk is automatically attached by default that's used as the boot disk
