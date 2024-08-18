@@ -55,7 +55,22 @@ Google's Persistent Disk is a reliable and high-performance block storage for VM
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Persistent Disk Snapshots
+# Persistent Disk Backups
+
+| Persistent Disk Backup Method | Description |
+| --- | --- |
+| Snapshots | |
+| Machine Image | |
+
+| Backup Scenario | Machine Image | Persistent Disk Snapshot | Custom Image | Instance Template |
+| --- | --- | --- | --- | --- |
+| Single Disk Backup | Yes | Yes | Yes | No |
+| Multiple Disk Backup | Yes | No | No | No |
+| Differential Backup | Yes | Yes | No | No |
+| Instance Cloning and Replication | Yes | No | Yes | Yes |
+| VM Instance Configuration | Yes | No | No | Yes |
+
+## PD Snapshots
 
 PD snapshots are point-in-time backups of your PD
 
@@ -69,9 +84,7 @@ PD snapshots are point-in-time backups of your PD
 * Performance is reduced while snapshots are being taken (Recommended to take snapshots during off-peak hours)
 * Faster to create from disk than to create from images but creating PDs from images is faster than creating from snapshots (Recommended to create an image from a snapshot)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Machine Images
+## Machine Images
 
 * Created from a VM instance
 * Contains everything you need to create a VM instance (Ex: *Configurations*, *Metadata*, *Permissions*, *Data from the boot disk*, *Data from other disks*, *etc.*)
