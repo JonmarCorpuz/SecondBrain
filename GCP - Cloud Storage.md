@@ -139,3 +139,17 @@ A storage class is a piece of metadata that's used by every object to control th
 
 # Object Lifecycle Management
 
+* When specific conditions are met for an object within a bucket, the specified actions will automatically happen
+
+| Object Lifecycle Management Condition | Description |
+| --- | --- |
+| Age | |
+| CreatedBefore | |
+| IsLive | |
+| MatchesStorageClass | |
+| NumberOfNewerVersions | |
+
+| Object Lifecycle Management Action | Description |
+| --- | --- |
+| SetStorageClass | Changes an object's storage class to another |
+| Deletion | Deletes an object |
