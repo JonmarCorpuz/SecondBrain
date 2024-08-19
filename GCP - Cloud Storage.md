@@ -5,7 +5,8 @@ Google's Cloud Storage is a managed service for storing unstructured data
 * Provides access control at the object level
 * Provides REST API to access and modify objects
 * Can store all file types (Ex: *Text*, *Binary*, *Backup*, *Archives*, *etc.*)
-* Always encrypts data on the server side (A newly created bucket is assigned with a Google managed key that'sused to encrypt the data by default)
+* Always encrypts data on the server side (A newly created bucket is assigned with a Google managed key that's used to encrypt the data by default)
+* Allows clients to encrypt their objects before uploading it to Cloud Storage
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
