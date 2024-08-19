@@ -19,6 +19,8 @@ Google's Cloud Storage is a managed service for storing unstructured data
 
 * Each object it identified by a unique key
 * Maximum size is 5TB
+* Objects can be versioned to prevent accidental deletion and provide history (The live version is the latest version and the older versions are uniquely identified by an object key along with a generation number)
+* Object versions take up storage space since you're storing multiple versions of an object
 
 ## Bucket
 
