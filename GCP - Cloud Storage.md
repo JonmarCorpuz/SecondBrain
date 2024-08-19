@@ -134,3 +134,8 @@ A storage class is a piece of metadata that's used by every object to control th
 ## Sliced Object Download
 
 * Used to download large objects by slicing them
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Object Lifecycle Management
+
