@@ -1,1 +1,20 @@
 Google's Cloud Identity and Access Management allows users to manage who has access to read and modify their GCP resources
+
+* Provides very granular control
+
+# GCP IAM Components
+
+| GCP IAM Component | Description |
+| --- | --- |
+| Resource | |
+| Action | |
+| Role | A set of permissions to perform specific actions on specific resources |
+| Policy | A set of bindings that associate one or more members with a specific role |
+
+# GCP IAM Roles
+
+| GCP IAM Role Type | Description | 
+| --- | --- |
+| Basic/Primitive | A set of predefined roles that provide broad levels of access to resources within a project (*roles.viewer*, *roles.editor*, *roles.owner*)
+| Predefined | Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin*, *Storage Object Admin*, *Storage Object Viewer*, *etc.*) |
+| Custom | Custom roles that are created by the client |
