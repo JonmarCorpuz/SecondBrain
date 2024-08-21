@@ -30,9 +30,11 @@ The Master Node, also known as the Control Plane, is the node the manages the Ku
 | **Kube-scheduler** | Monitors the cluster to ensure that every newly created Pod is assigned to a node |
 | **Kube-controller-manager**  | Responsible for running the controller processes, which are components that manage the state of resources in the cluster |
 | **etcd** | A distributed key-value store database that stores all the cluster's data and its current state |
-| **Cloud-controller-manager** | Enables communication between a Kubernetes cluster and a cloud provide API to allow the separation of components that communicate internally within the cluster and those that communicate externally by interacting with a cloud provider |
+| **Cloud-controller-manager** | Enables communication between a Kubernetes cluster and a cloud provider's APIs to allow the separation of components that communicate internally within the cluster and those that communicate externally by interacting with a cloud provider |
 
 ### Kube-apiserver
+
+* Allows us to communicate with the Master Node through the kubectl command-line tool
 
 ### Kube-scheduler
 
