@@ -155,3 +155,17 @@ A storage class is a piece of metadata that's used by every object to control th
 | --- | --- |
 | SetStorageClass | Changes an object's storage class to another |
 | Deletion | Deletes an object |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cloud Storage Access Management
+
+| Cloud Storage Access Management Method | Description |
+| --- | --- |
+| IAM | |
+| ACL | |
+| Signed URL | |
+
+## Signed URL
+
+A signed URL is a URL that gives permissions for a limited time to perform specific actions
