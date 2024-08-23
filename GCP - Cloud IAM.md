@@ -2,6 +2,8 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 * Provides very granular control
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # GCP IAM Components
 
 | GCP IAM Component | Description |
@@ -23,9 +25,9 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 | GCP Member Type | Description |
 | --- | --- |
-| user | |
-| serviceaccount | |
-| group | |
+| user | Represents a person |
+| serviceaccount | Represents an application account |
+| group | A collection of users and service accounts |
 | domain | |
 
 ### Service Accounts
@@ -57,6 +59,12 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 * Used by GCP to perform operations on a user's behalf
 
+### Group
+
+* Assigned a unique IP address
+
+### Domain
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # GCP IAM Roles
@@ -83,3 +91,13 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 # GCP IAM Policy
 
 * Represented by a policy object
+* Can be set on the resource level, project level, folder level, and organization level
+* Policy inheritance is transitive (Resources inherit the policies of all its parents and you can't restrict an IAM policy at a lower level if it's given at a higher level)
+* The effective policy for a resource is the union of the policy on that resource and its parents
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# GCP Organization Policy
+
+* Provides fine grained permissions about what can be done on specific resources
+* Overrides IAM Policies
