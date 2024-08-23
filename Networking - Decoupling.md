@@ -8,3 +8,6 @@ Decoupling refers to the practice of designing systems and components in a way t
 * Enables scalability by allowing components to be independently scaled based on demand
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Asynchronous Communication
+
