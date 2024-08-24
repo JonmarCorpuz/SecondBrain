@@ -25,13 +25,39 @@
 
 | Google App Engine Predefined Role | Description |
 | --- | --- |
+| App Engine Creator | |
+| App Engine Viewer | |
+| App Engine Code Viewer | |
+| App Engine Deployer | |
+| App Engine Service Admin | |
 
 # Google Kubernetes Engine Predefined Roles
 
 | Google Kubernetes Engine Predefined Role | Description |
 | --- | --- |
+| Kubernetes Engine Admin | |
+| Kubernetes Engine Cluster Admin | |
+| Kubernetes Engine Developer | |
+| Kubernetes Engine Viewer | |
+| Kubernetes API Objects | |
+| Cluster Operations | |
 
 # Google Cloud BigQuery Predefined Roles
 
 | Google Cloud BigQuery Predefined Role | Description |
 | --- | --- |
+| BigQuery Admin | |
+| BigQuery Data Owner | |
+| BigQuery Data Editor | |
+| BigQuery Data Viewer | |
+| BigQuery Job User | |
+| BigQuery User | |
+
+# Google Cloud Storage Predefined Roles
+
+| Google Cloud Storage Predefined Role | Description |
+| --- | --- |
+| Storage Admin | |
+| Storage Object Admin | |
+| Storage Object Creator | |
+| Storage Object Viewer | |
