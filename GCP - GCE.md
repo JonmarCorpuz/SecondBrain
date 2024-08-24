@@ -162,3 +162,16 @@ A sole-tenant node is a physical Compute Engine server that's dedicated to host 
 * Lifecycle isn't tied to a VM instance
 * Supports snapshots
 * A persistent disk is automatically attached by default that's used as the boot disk
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# SSHing Into Linux VMs
+
+Option 1: Console (SSH Button)
+* Ephemeral SSH key pair is created
+
+Option 2: Gcloud
+
+Option 3: Use customized SSH keys
+* Metadata managed
+* OS Login (Set enable-oslogin to true in metadata)
