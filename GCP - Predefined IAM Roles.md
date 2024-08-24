@@ -61,3 +61,32 @@
 | Storage Object Admin | |
 | Storage Object Creator | |
 | Storage Object Viewer | |
+
+# Logging and Audit Logging
+
+| Logging and Audit Logging Predefined Role | Description |
+| --- | --- |
+| roles/logging.viewer (Logs Viewer) | |
+| roles/logging.privateLogViewer (Private Logs Viewer) | |
+| roles/logging.admin (Logging Admin) | |
+
+# Service Accounts
+
+| Service Account | Description |
+| --- | --- |
+| roles/iam.serviceAccountAdmin | |
+| roles/iam.serviceAccountUser | |
+| roles/iam.serviceAccountTokenCreator | |
+| roles/iam.serviceAccountKeyAdmin | |
+
+# Other Important Roles
+
+| Other Important Predefined Role | Description |
+| --- | --- |
+| roles/iam.securityAdmin | |
+| roles/iam.securityReviewer | |
+| roles/iam.organizationRoleAdmin | |
+| roles/iam.organizationRoleViewer | |
+| roles/iam.roleAdmin | |
+| roles/iam.roleViewer | |
+| roles/browser | |
