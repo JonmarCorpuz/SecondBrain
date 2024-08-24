@@ -162,9 +162,9 @@ A storage class is a piece of metadata that's used by every object to control th
 
 | Cloud Storage Access Management Method | Description |
 | --- | --- |
-| IAM | |
-| ACL | |
-| Signed URL | |
+| IAM | Assigns access permissions to an entire Cloud Storage bucket |
+| ACL | Assigns access permissions to a sub set of objects in a Cloud Storage bucket |
+| Signed URL | Assigns access permissions to a specific object in a Cloud Storage bucket for a limited amount of time |
 
 ## Signed URL
 
