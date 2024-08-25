@@ -45,3 +45,13 @@
 | When you exhibit presence, those around you feel listened to, respected, and valued |
 | Because your mind can't tell the difference between imagination and reality, by creating a charismatic internal state your body language will authentically display charisma |
 | Get the internal state right, and the right charismatic behaviors and body language will pour forth automatically |
+
+# Chapter 3: The Obstacles to Presence, Power, and Warmth
+
+> "Because he is aware of this problem, he can take action before it affects the way he's perceived." (p.30)
+
+> "When the discomfort can't be alleviated, it's even more important to prevent other people from taking your tension personally. Take a moment to explain that you're in discomfort due to a particular issue. [...] Giving voice to something will generally allow both of you to move on from it." (p.31)
+
+> "Our inability to tolerate uncertainty carries multiple costs. It can cause us to make premature decisions. It can hamper us in negotiations, leading us ot reveal more than we should as we scramble to fill the silence, unable to bear the uncertainty of not knowing what the other person is thinking. And most important, it can lead us to feel anxious. Anxiety is a serious drawback to charisma. First, it impacts our internal state: quite obviously, it's hard to be fully present while you're feeling anxious. Anxiety can also lower our confidence. Anxiety, low presence, and low confidence can show up directly in our body language, as well as reduce our ability to emanate warmth." (p.32)
+
+> "The next time you feel yourself considering alternative outcomes to a situation, pay close attention. If your brain is going around in circles, obessing about possible outcomes, try a responsibility transfer to alleviate some of the anxiety." (p.35)
