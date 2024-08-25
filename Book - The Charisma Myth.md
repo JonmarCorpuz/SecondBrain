@@ -38,10 +38,10 @@
 
 > "Due to the fact that whatever is in our mind affects our body, and because our mind has trouble distinguishing imagination from reality, whatever we imagine can have an impact on our body language and, thus, on our levels of charisma. Our imagination can dramatically enhance or inhibit our charisma, depending on its content." (p.26)
 
-Key Takeaways:
-
-* Charisma has three essential components: presence, power, and warmth
-* Being present and paying attention to what's going on rather than being caught up in your throughts can yield immense rewards
-* When you exhibit presence, those around you feel listened to, respected, and valued
-* Because your mind can't tell the difference between imagination and reality, by creating a charismatic internal state your body language will authentically display charisma
-* Get the internal state right, and the right charismatic behaviors and body language will pour forth automatically
+| Key Takeaways |
+| --- |
+| Charisma has three essential components: presence, power, and warmth |
+| Being present and paying attention to what's going on rather than being caught up in your throughts can yield immense rewards |
+| When you exhibit presence, those around you feel listened to, respected, and valued |
+| Because your mind can't tell the difference between imagination and reality, by creating a charismatic internal state your body language will authentically display charisma |
+| Get the internal state right, and the right charismatic behaviors and body language will pour forth automatically |
