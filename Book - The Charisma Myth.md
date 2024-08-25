@@ -1,6 +1,6 @@
 # Introduction
 
-* "An extensive research in recent years has shown, charisma is the result of specific nonverbal behaviors, not an inherent or magical personal quality. This is one of the reasons why charisma levels fluctuate: its presense depends on whether or not someone is exhibiting these bahvrios." (p.4)
+> "An extensive research in recent years has shown, charisma is the result of specific nonverbal behaviors, not an inherent or magical personal quality. This is one of the reasons why charisma levels fluctuate: its presense depends on whether or not someone is exhibiting these bahvrios." (p.4)
 
 # Chapter 1: Charisma Demystified
 
