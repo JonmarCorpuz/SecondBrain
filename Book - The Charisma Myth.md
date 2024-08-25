@@ -24,3 +24,24 @@
 
 > "Someone who is powerful but not warm can be impressive, but isn't necessarily perceived as charismatic and can come across as arrogant, cold, or standoffish. Someone who possesses warmth without prower can be likable, but isn't necessarily perceived as charismatic and can come across as overeager, subservient, or desperate to please." (p.20)
 
+> "For charisma, your body language matters far more than your words do. No matter how powerful your message or how skillfully crafter your pitch, if your body language is wrong, you won't be charismatic. On the other hand, with the right body langauge you can be charismatic without saying a word. Projecting presence, power, and warmth through your body language is often all you need to be perceived as charismatic." (p.21)
+
+> "Our facial expressions, voice, posture, and all the other components of body language reflect our mental and emotional condition every second. Because we don't control this flow consciously, whatever is in our head will show up in our body language. Even if we control the main expression on our face or the way we hold our arms, legs, or head, if our internal state is different from what we're aiming to portray, sooner or later what's called microexpression will flash across our face. These split-second microexpressions may be fleeting, but they will be caught by observers. And if there's an incongruence between our main expression and that microexpression, people will feel it on a subconscious level: their gut will tell them something's not quite right." (p.21-22)
+
+> "Striving to acquire external charisma skills without learning how to handle your internal world is like adding pretty balconies to a house with a weak foundation. It's a nice touch, but at the first earthquake everything falls apart." (p.23)
+
+> "Individuals with strong internal skills are aware of what exactly is happening inside them and know how to handle it. They can recognize when their self-confidence has taken a hit and have the tools to get back to a confident state so that their body language remains charismatic." (p.23)
+
+> "The internal skills necessary for charisma include both the awareness of your internal state and the tools to effectively manage it." (p.24)
+
+> "Because your brain cannot distinguish imagination from reality, imaginary situations cause your brain to send your body the same commands as it would for a real situation. Whatever your mind believes, your body will manifest." (p.24-25)
+
+> "Due to the fact that whatever is in our mind affects our body, and because our mind has trouble distinguishing imagination from reality, whatever we imagine can have an impact on our body language and, thus, on our levels of charisma. Our imagination can dramatically enhance or inhibit our charisma, depending on its content." (p.26)
+
+Key Takeaways:
+
+* Charisma has three essential components: presence, power, and warmth
+* Being present and paying attention to what's going on rather than being caught up in your throughts can yield immense rewards
+* When you exhibit presence, those around you feel listened to, respected, and valued
+* Because your mind can't tell the difference between imagination and reality, by creating a charismatic internal state your body language will authentically display charisma
+* Get the internal state right, and the right charismatic behaviors and body language will pour forth automatically
