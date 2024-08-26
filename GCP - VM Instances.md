@@ -79,8 +79,11 @@ A MIG is an instance group where all VM instances are identical and was created 
 
 * Provides auto-healing (Ex: *If an instance crashes, MIG will launch another instance*) and autoscaling (Ex: *MIG can increase or decrease instances based on load*)
 * A load balancer can be added to distrbute workload
+* Can maintain a certain number of instances
 * VM instances in the same MIG can be created in multiple zones (Zonal MIGs)
 * MIGs can be replicated into different regions (Regional MIGs)
+* Allows rolling updates, which is when a new version of an instance template gets gradually released by updating a percentage of instances to the new version at a time
+* Allows canary updates, which is when you test a new version of an instance template with a group of instances before releasing it across all instances
 
 | MIG Type | Description |
 | --- | --- |
