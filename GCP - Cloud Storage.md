@@ -19,14 +19,20 @@ Google's Cloud Storage is a managed service for storing unstructured data
 
 ## Object
 
-* Each object it identified by a unique key
+* Each object it identified by a unique key and stored in a bucket
 * Maximum size is 5TB
 * Objects can be versioned to prevent accidental deletion and provide history (The live version is the latest version and the older versions are uniquely identified by an object key along with a generation number)
 * Object versions take up storage space since you're storing multiple versions of an object
+* Noncurrent objects are uniquely identified (object key + generation number)
+
+| Object Version | Description |
+| --- | --- |
+| Live | The latest version of an object |
+| Noncurrent | An older version of an object that has been replaced by a newer version |
 
 ## Bucket
 
-* Bucket names start with the **goog** prefix and should not contain the work google
+* Bucket names start with the **goog** prefix and should not contain the word google
 * Bucket names can only contain lower case letters, numbers, hyphens, underscores, and periods (3 to 63 characters max)
 * Bucket names are globally unique and are used as part of object URLs
 * A bucket can contain unlimited objects that each belong to different storage classes
@@ -46,17 +52,17 @@ Google's Cloud Storage is a managed service for storing unstructured data
 A storage class is a piece of metadata that's used by every object to control their availability and pricing model (Objects accessed less frequently are charges less)
 
 * Helps optimize your costs based on your access needs
-* High availability (99.9999999% annual durability)
-* Low latency
+* High availability for all storage classes (99.9999999% annual durability)
+* Low latency for all storage classes
 * Unlimited storage (Autoscaling is automatically configured and there's no minimum object size required)
 * The APIs used across storage classes are the same (Ex: *Storing data to the archive storage class is the same way you'd store data to the standard class*)
 
-| Storage Class | Description |
-| --- | --- |
-| Standard | |
-| Nearline Storage | |
-| Coldline Storage | |
-| Archive Storage | |
+| Storage Class | Minimum Storage Duration | Use Case |
+| --- | --- | --- |
+| Standard | None | Frequently used objects or objects that need to be stored for a short period of time |
+| Nearline Storage | 30 days | Objects that are read or modified once a month on average |
+| Coldline Storage | 90 days | Objects that are read or modified once a quarter |
+| Archive Storage | 365 days | Objects that are read or modified once a year |
 
 ## Standard
 
@@ -84,21 +90,21 @@ A storage class is a piece of metadata that's used by every object to control th
 
 | Object Upload Option | Description |
 | --- | --- |
-| Simple Upload | |
-| Multipart Upload | |
-| Resumable Upload | |
-| Streaming Transfer | |
-| Parallel Composite Upload | |
+| Simple Upload | Used to upload small files that can be re-uploaded in case of failures |
+| Multipart Upload | Used to upload small files that can be re-uploaded in case of failures |
+| Resumable Upload | Used to upload small and large files (Costs one additional HTTP request) |
+| Streaming Transfer | Used to upload an object of unknown size |
+| Parallel Composite Upload | Used to upload a large object by dividing it up into 32 chunks and uploading it in parallel |
 
 ## Simple Upload
 
 * Used to upload small files that can be re-uploaded in case of failures
-* No object metadata
+* No metadata will be associated with an uploaded object
 
 ## Multipart Upload
 
 * Used to upload small files that can be re-uploaded in case of failures
-* Objects contain metadata
+* Metadata will be associated with an uploaded object
 
 ## Resumable Upload
 
@@ -109,10 +115,9 @@ A storage class is a piece of metadata that's used by every object to control th
 
 * Used to upload an object of unknown size
 
-# Parallel Composite Upload
+## Parallel Composite Upload
 
-* Used to upload a large object 
-* The object is divided up to 32 chunks and uploaded in parallel
+* Used to upload a large object by dividing it up into 32 chunks and uploading it in parallel
 * Significantly fast if the network and disk speeds are not limiting factors
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
@@ -121,17 +126,17 @@ A storage class is a piece of metadata that's used by every object to control th
 
 | Object Download Option | Description |
 | --- | --- |
-| Simple Download |  |
-| Streaming Download |  |
-| Sliced Object Download |  |
+| Simple Download | Used to download objects to a specific destination |
+| Streaming Download | Used when you don't know the size of the object you want to download or you want to stream the object to a process |
+| Sliced Object Download | Used to download large objects by slicing them |
 
 ## Simple Download 
 
-* Downloading objects to a specific destination
+* Used to download objects to a specific destination
 
 ## Streaming Download
 
-* You don't know the size of the object or you want to stream the object to a process
+* Used when you don't know the size of the object you want to download or you want to stream the object to a process
 
 ## Sliced Object Download
 
