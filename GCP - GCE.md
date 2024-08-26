@@ -6,8 +6,8 @@ The Google Compute Engine is a the service engine that provisions VMs to users u
 * Provides persistent disks for VM storage and allows users to create snapshots of persistent disks for backup and disaster recovery
 * Provides networking features (Ex: *VPC*, *Subnets*, *Firewall rules*, *Routes*, *Load-balancing*, *Autoscaling*, *etc.*)
 
-| Compute Engine Element | Description |
-| --- | --- |
+| Compute Engine Element | Description | Example |
+| --- | --- | --- |
 | Name | <machine_type_family>-<workload_type>-<number_of_gpu> |
 | Labels | |
 | Region | |
@@ -18,52 +18,44 @@ The Google Compute Engine is a the service engine that provisions VMs to users u
 
 # Machine Configuration
 
+* Machine name is <machine_type_family>-<workload_type>-<number_of_cpu> (Ex: e2-standard-4)
 
+## Machine Family
 
-## Compute Engine Machine Family
-
-A machine family is a curated set of processor and hardware configurations that are optimized for specific workloads
+A machine family is a curated set of VM configurations that are optimized for specific workloads
 
 * Machine families are further classified by series, generation, and processor type
+* Each machine family have a set of characteristics that are tailored to certain performance needs
+* Each machine family offers various machine types
 
-| Compute Engine Machine Family | Description |
-| --- | --- |
-| General Purpose | Provides a balanced mix of compute, memory, and network resources | 
-| Compute-Optimized | Provides high compute performance per core for compute-intensive workloads |
-| Memory-Optimized | Provides large amounts of memory for memory-intensive workloads |
-| Storage-Optimized | Provides large amounts of storage for workloads that are low in core usage and high in storage density |
-| Accelerator-Optimized | Provides GPU acceleration for workloads that require GPUs |
+| Machine Family | Description | Machine Types |
+| --- | --- | --- |
+| General Purpose | Provides a balanced mix of compute, memory, and network resources |  |
+| Compute-Optimized | Provides high compute performance per core for compute-intensive workloads |  |
+| Memory-Optimized | Provides large amounts of memory for memory-intensive workloads |  |
+| Storage-Optimized | Provides large amounts of storage for workloads that are low in core usage and high in storage density |  |
+| Accelerator-Optimized | Provides GPU acceleration for workloads that require GPUs |  |
 
-## Compute Machine Series
+## Machine Type
 
-
-
-## Compute Engine Machine Type
+A machine type is a set of specific predefined or customized configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*) (The more vCPU you have, the more memory and networking capabilities you have)
 
 * Machine type availability can vary from region to regions
 
-| Compute Engine Machine Type | Description |
+| Machine Type | Description |
 | --- | --- |
-| Predefined Machine Type | |
-| Custom Machine Type | A custom machine type created by a user when the predifined machine types aren't sufficient for their workloads |
+| Predefined Machine Type | A predefined configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*) |
+| Custom Machine Type | A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*) |
 
 ### Predefined Machine Type
 
-A machine type is a predefined configuration for VMs that specifies a set of hardware combinations (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*)
-
-| Predefined Machine Type | Description |
-| --- | --- |
-| highcpu | |
-| standard | |
-| highmem | |
-| megamem | |
-| hypermem | |
-| ultramem | |
+A predefined machine type is a predefined configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*)
 
 ### Custom Machine Type
 
-A custom machine type is a custom machine type created by a user when the predifined machine types aren't sufficient for their workloads 
+A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *etc.*)
 
+* Created by a user when the predifined machine types aren't sufficient for their workloads
 * Allows you to adjust the amount of vCPUs, memory, and GPUs to suite your needs
 * Billed per vCPU and memory that is provisioned to each VM instance
 * Remember to use images with GPU libraries installed otherwise the added GPU won't be used (GPUs aren't support on all machine types)
