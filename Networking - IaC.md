@@ -1,0 +1,1 @@
+Infrastructure as Code is the management and provisioning of computing infrastructure (*Networks*, *VMs*, *Load Balancers*, *etc.*) through code (*Scripts*, *Declarative definitions*, *etc.*) instead of through manual processes
