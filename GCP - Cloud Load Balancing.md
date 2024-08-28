@@ -27,3 +27,24 @@ SSL/TLS Offloading is the process of moving the computationally intensive SSL/TL
 
 * Typically involves both SSL/TLS termination and sometimes re-encryption if traffic is to remain secure between the SSL/TLS Offloading device and the backend servers
 * Offloading the SSL/TLS processing workload from backend servers allows them to focus on application logic, improving performance, and scalability
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Load Balancer Options
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/sdfsdfsdfsdfsdfsdfsdfsddfasdasdasfdsfasddas.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/zxxcbvvbcnbnvxcbnbmncvbvcbcvbcvbcvbcv.png)
+
+## External Load Balancers
+
+| External Application Load Balancer Type | Description | 
+| --- | --- |
+| Global External Application Load Balancer | |
+| Regional External Application Load Balancer | |
+
+## Internal Load Balancers
+
+| Internal Load Balancer Type | Description | 
+| --- | --- |
+| 
