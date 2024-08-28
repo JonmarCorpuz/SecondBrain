@@ -42,9 +42,16 @@ SSL/TLS Offloading is the process of moving the computationally intensive SSL/TL
 | --- | --- |
 | Global External Application Load Balancer | |
 | Regional External Application Load Balancer | |
+| Global External Proxy Network Load Balancer | |
+| Regional External Proxy Network Load Balancer | |
+| Regional External Passthrough Network Load Balancer | |
 
 ## Internal Load Balancers
 
 | Internal Load Balancer Type | Description | 
 | --- | --- |
-| 
+| Regional Internal Application Load Balancer | |
+| Cross-Region Internal Application Load Balancer | |
+| Regional Internal Proxy Network Load Balancer | |
+| Cross-Region Internal Proxy Network Load Balancer | |
+| Regional Internal Passthrough Network Load Balancer | |
