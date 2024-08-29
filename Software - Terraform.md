@@ -103,7 +103,7 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 | Terraform Block Block | Description |
 | --- | --- |
 | cloud | Configures Terraform Cloud |
-| backend | Configures a state backend for the project |
+| backend | Configures a state backend for the project (Uses local state by default, meaning that the state files will be recorded locally) |
 | required_version | Specifes the accepted versions of Terraform for the current project |
 | require_providers | Specifies the required providers for the current project or module |
 
