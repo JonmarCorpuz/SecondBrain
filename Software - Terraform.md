@@ -8,6 +8,7 @@ Terraform is an infrastructure as code tool that enables you to safely and predi
 * Provides several ways to protect resources against accidental changes or deletion, as well as ways of validating the deployed infrastructure
 * Very fast dur to its implementation of a state file to bind local resources or configuration resources to remote real world objects
 * Automatically identifies the dependencies and follows the necessary order to create the specified resources
+* Only looks for files within the current directory and doesn't look through any subdirectories that the current directory has
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
