@@ -82,3 +82,36 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 ## Apply Phase
 
 ## Destroy Phase
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Blocks
+
+| Terraform Block | Description |
+| --- | --- |
+| Terraform Block | |
+| Resource Block | |
+| Data Block | |
+| Variable Block | |
+| Output Block | |
+| Locals Block | |
+| Module Block | |
+
+## Terraform Block
+
+| Terraform Block Block | Description |
+| --- | --- |
+| cloud | Configures Terraform Cloud |
+| backend | Configures a state backend for the project |
+| required_version | Specifes the accepted versions of Terraform for the current project |
+| require_providers | Specifies the required providers for the current project or module |
+
+| Version Constraint | Description |
+| --- | --- |
+| = | Allows only the specified version |
+| != | Excludes an exact version |
+| >=, <=, >, < | Allow versions for which the comparison is true |
+| ~> | Allows only the rightmost digit to increment |
+
+* Used to configure the backend, providers, and required versions for your Terraform project
+* Only constants are allowed (Input variables or resource references aren't allowed)
