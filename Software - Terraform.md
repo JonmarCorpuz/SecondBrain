@@ -28,6 +28,10 @@ The Terraform Core is the central component of Terraform's architecture that's r
 
 ## Remote APIs
 
+A remote API is an interface provided by Terraform that allows users to interact with Terraform configurations and state files over the network
+
+* Facilitates various operations that can be performed remotely
+
 ## Terraform Registry
 
 The Terraform Registry is a public repository where users can discover, share, and use Terraform modules and providers
