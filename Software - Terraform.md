@@ -103,7 +103,7 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 | Terraform Block Block | Description |
 | --- | --- |
 | cloud | Configures Terraform Cloud |
-| backend | Configures a state backend for the project (Uses local state by default, meaning that the state files will be recorded locally) |
+| backend | Configures a state backend for the project (Can't use any input variables, resource references, and data sources) |
 | required_version | Specifes the accepted versions of Terraform for the current project |
 | require_providers | Specifies the required providers for the current project or module |
 
@@ -132,3 +132,34 @@ Terraform State keeps track of the infrastructure managed by Terraform in order 
 * If a real-world object has been modified outside of Terraform and the Terraform configuration for that resource hasn't been updated, Terraform will revert the changes to match the configuration file (If the retrieved information is different from what's in your resource configuration, Terraform will include changes in the plan so that the real world objects match the resource configuration)
 * Provides **state locking**, meaning that Terraform will lock the state file while executing write operations to prevent concurrent modifications and state corruption
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Backends
+
+A Terraform backend defines where Terraform stores its state file
+
+* It's important to store this file properly in a place where you can properly control the access permissions
+* A Terraform configuration can provide only one backend
+* Uses the local backend by default, meaning that the state files will be recorded locally
+
+| Backend Type | Description |
+| --- | --- |
+| Local | The state file is stored in the same machine as the Terraform project |
+| Terraform Cloud | The state file is stored in Terraform Cloud project or workspace | 
+| Third-Party | The state file is stored in a remote backend (Ex: *AWS S3*, *Google Cloud Storage*, *etc.*) |
+
+## Local Backend
+
+The state file is stored in the user's local machine
+
+## Terraform Cloud Backend
+
+The state file is stored in Terraform Cloud
+
+## Third-Party Remote Backend
+
+The state file is stored in a remote backend (Ex: *AWS S3*, *Google Cloud Storage*, *etc.*)
+
+* State locking isn't available for all remote backends
+* Not all backends require the same arguments
+* Requires authentication credentials in order for Terraform to properly access the configuration files
