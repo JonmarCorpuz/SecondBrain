@@ -23,9 +23,11 @@ The Terraform Core is the central component of Terraform's architecture that's r
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/vgbihgihjivucvcicicicuxfgufgyfgyhgfhfghfghgfh.png)
 
 * Allows the Terraform Core to know how to interact with remote APIs
-* Provides the logic to interact with the upstream APIs in order to read, create, update, and delete resources through that provider's API, meaning that Terraform doesn't need to implement all the logic to ineteract with all the remote APIs that it supports because all that can be implemented through plugins via providers
+* Provides a set of resource types and data sources that the Terraform core can use to call remote APIs
+* Providers are developed and maintained separately from Terraform
 * Anyone can write and publish a provider for a remote API, as long as it follows Terraform's specifications
 * We declare the necessary providers in the Terraform project configuration and then Terraform will install those providers during initialization
+* Provider configurations belong to the root module of a Terraform project, meaning that child modules will receive their provider configuration from the parent module
 
 ## Remote APIs
 
