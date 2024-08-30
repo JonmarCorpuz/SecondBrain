@@ -4,9 +4,7 @@ Terraform is an infrastructure as code tool that enables you to safely and predi
 * Provides high-level abstraction, meaning that it can be used to manage resources across multiple providers
 * Provides a modular approach, meaning that you can create modules grouping multiple resources and then combine and compose those modules to build a bigger solution
 * Provides parallel deployment, meaning that it can build a dependency graph of resources (What resources depends on what) and supports parallel changes
-* Provides separation of the plan and apply stages, meaning that you can execute only plan commands to inspect the potential changes before actually applying them
-* Provides several ways to protect resources against accidental changes or deletion, as well as ways of validating the deployed infrastructure
-* Very fast dur to its implementation of a state file to bind local resources or configuration resources to remote real world objects
+* Very fast due to its implementation of a state file to bind local resource blocks to remote real world objects (Ex: *example_s3_bucket_resource_name -> AWS S3 Bucket*)
 * Automatically identifies the dependencies and follows the necessary order to create the specified resources
 * Only looks for files within the current directory and doesn't look through any subdirectories that the current directory has
 
@@ -118,6 +116,13 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 
 * Used to configure the backend, providers, and required versions for your Terraform project
 * Only constants are allowed (Input variables or resource references aren't allowed)
+
+## Resource Block
+
+* Used to configure and manage real-world infrastructure objects with Terraform (Ex: *Virtual networks*, *Compute instances*, *DNS records*, *Storage disks*, *etc.*)
+* Arguments depend on and vary based on the resource type
+* The combination of resource type and resource name must be unique within a module
+* Offers a few local-only resources (Ex: *Generating random strings*, *Generating random IDs*, *Private keys*, *Self-Issued TLS certificates*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
