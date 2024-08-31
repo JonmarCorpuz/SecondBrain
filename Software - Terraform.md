@@ -7,6 +7,7 @@ Terraform is an infrastructure as code tool that enables you to safely and predi
 * Very fast due to its implementation of a state file to bind local resource blocks to remote real world objects (Ex: *example_s3_bucket_resource_name -> AWS S3 Bucket*)
 * Automatically identifies the dependencies and follows the necessary order to create the specified resources
 * Only looks for files within the current directory and doesn't look through any subdirectories that the current directory has
+* Supports both parallel and sequential management of resources (Inspects the expressions to automatically establish implicit dependencies between ressources)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -109,10 +110,10 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 
 | Version Constraint | Description |
 | --- | --- |
-| = | Allows only the specified version |
-| != | Excludes an exact version |
-| >=, <=, >, < | Allow versions for which the comparison is true |
-| ~> | Allows only the rightmost digit to increment |
+| `=` | Allows only the specified version |
+| `!=` | Excludes an exact version |
+| `>=`, `<=`, `>`, `<` | Allow versions for which the comparison is true |
+| `~>` | Allows only the rightmost digit to increment |
 
 * Used to configure the backend, providers, and required versions for your Terraform project
 * Only constants are allowed (Input variables or resource references aren't allowed)
@@ -170,3 +171,25 @@ The state file is stored in a remote backend (Ex: *AWS S3*, *Google Cloud Storag
 * State locking isn't available for all remote backends
 * Not all backends require the same arguments
 * Requires authentication credentials in order for Terraform to properly access the configuration files
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Meta-Arguments
+
+Meta-arguments are special arguments that change the behavior of Terraform when parsing the declared module
+
+* Allows you to configure Terraform's behavior when it comes to resources and data sources
+
+| Resource Meta-Argument | Description |
+| --- | --- |
+| `depends_on` | Used to explicitly defines dependencies between resources |
+| `count` | Allows the creation of multiple resources of the same type without having to declare separate resource blocks |
+| `for_each` | Allows the creation of multiple resources of the same type without having to declare separate resource blocks |
+| `provider` | Used to explicitly define which provider to use with a specific resource |
+
+| Lifecycle Meta-Argument | Description |
+| --- | --- |
+| `create_before_destroy` | Overrides Terraform's default behavior of destroying before creating resources the can't be updated in-place to make sure it creates the new resources and then delete the old one |
+| `prevent_destroy` | Protects critical resources from being destroyed by having Terraform exit with an error if the planned changes would lead to the destruction of the resources marked with this |
+| `replace_triggered_by` | Replaces the resource when any of the referenced items change |
+| `ignore_changes` | Allows you to provide a list of attributes that shouldn't trigger an update when modified outside of Terraform |
