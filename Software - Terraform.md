@@ -195,3 +195,10 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 | `prevent_destroy` | Protects critical resources from being destroyed by having Terraform exit with an error if the planned changes would lead to the destruction of the resources marked with this |
 | `replace_triggered_by` | Replaces the resource when any of the referenced items change |
 | `ignore_changes` | Allows you to provide a list of attributes that shouldn't trigger an update when modified outside of Terraform |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Data Sources
+
+* Allows you to query or retrieve data from external resources or projects using remote APIs and reference the retrieved information within your Terraform configuration
+* Data sources are managed using data blocks in your Terraform configuration
