@@ -127,6 +127,16 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 * The combination of resource type and resource name must be unique within a module
 * Offers a few local-only resources (Ex: *Generating random strings*, *Generating random IDs*, *Private keys*, *Self-Issued TLS certificates*, *etc.*)
 
+## Data Block 
+
+## Variable Block
+
+## Output Block
+
+## Locals Block 
+
+## Module Block
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Terraform State
