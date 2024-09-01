@@ -85,6 +85,8 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 
 ## Destroy Phase
 
+* Terraform will first refresh the state of all the resources in the Terraform configuration files to revert any resources that were modified outside of Terraform back to the state that are defined in the Terraform configration files
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Terraform Blocks
