@@ -241,4 +241,4 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 | Math | `+`, `-`, `/`, `*` | |
 | Equality | `=`, `==`, `!=` | |
 | Comparison | `<`, `<=`, `>`, `>=` | |
-| Logical | '||', '&&' | |
+| Logical | `&&` | |
