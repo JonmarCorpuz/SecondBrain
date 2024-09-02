@@ -225,4 +225,4 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fgpfogpofdpofpdogdofpdofpdofpdfodpgodpof.webp)
 
 * Configuration overrides happen at the variable level and not the file level
-* Processes files in lexical order
+* Processes files in lexical order whenever there are multiple files on the same level of precedence
