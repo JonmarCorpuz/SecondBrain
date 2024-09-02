@@ -236,9 +236,9 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 # Terraform Operators
 
-| Operator Type | Operator Symbols | Description |
+| Operator Type | Operator Symbols | Return Value |
 | --- | --- | --- |
-| Math | `+`, `-`, `/`, `*` | |
-| Equality | `=`, `==`, `!=` | |
-| Comparison | `<`, `<=`, `>`, `>=` | |
-| Logical | `&&` | |
+| Math | `+`, `-`, `/`, `*` | Number |
+| Equality | `=`, `==`, `!=` | Boolean |
+| Comparison | `<`, `<=`, `>`, `>=` | Boolean |
+| Logical | `&&` | Boolean |
