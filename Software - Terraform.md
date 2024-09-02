@@ -231,3 +231,14 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 | 3. terraform.tfvars |
 | 2. *.auto.tfvars |
 | 1. -var and -var-file CLI arguments |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Operators
+
+| Operator Type | Operator Symbols | Description |
+| --- | --- | --- |
+| Math | `+`, `-`, `/`, `*` | |
+| Equality | `=`, `==`, `!=` | |
+| Comparison | `<`, `<=`, `>`, `>=` | |
+| Logical | '||', '&&' | |
