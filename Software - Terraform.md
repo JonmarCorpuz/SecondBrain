@@ -242,3 +242,12 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 | Equality | `=`, `==`, `!=` | Boolean |
 | Comparison | `<`, `<=`, `>`, `>=` | Boolean |
 | Logical | `&&` | Boolean |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Expressions
+
+| Terraform Expression | Description |
+| --- | --- |
+| for | |
+|  | |
