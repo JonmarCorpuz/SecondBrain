@@ -212,3 +212,14 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 * Allows you to query or retrieve data from external resources or projects using remote APIs and reference the retrieved information within your Terraform configuration
 * Data sources are managed using data blocks in your Terraform configuration
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Input Variables
+
+* Allows you to create reusable and composable code
+* Allows you to customize aspects of Terraform configurations and modules without having to alter the source code
+
+## Input Variable Precedence
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fgpfogpofdpofpdogdofpdofpdofpdfodpgodpof.webp)
