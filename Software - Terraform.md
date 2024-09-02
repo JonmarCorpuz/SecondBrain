@@ -186,7 +186,7 @@ The state file is stored in a remote backend (Ex: *AWS S3*, *Google Cloud Storag
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Meta-Arguments
+# Terraform Meta-Arguments
 
 Meta-arguments are special arguments that change the behavior of Terraform when parsing the declared module
 
@@ -247,7 +247,21 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 # Terraform Expressions
 
-| Terraform Expression | Description |
+## Loop Expressions
+
+| Loop Expression | Description |
 | --- | --- |
-| for | |
-|  | |
+| `for` | |
+
+## Splat Expressions
+
+* Only works with lists
+
+| Splat Expression | Expression | Description |
+| --- | --- | --- |
+| Simple Splat | `[*]` | |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Functions
+
