@@ -223,3 +223,5 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 ## Input Variable Precedence
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fgpfogpofdpofpdogdofpdofpdofpdfodpgodpof.webp)
+
+* Configuration overrides happen at the variable level and not the file level
