@@ -215,7 +215,7 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Terraform Variables
+# Terraform Input Variables
 
 * Allows you to create reusable and composable code
 * Allows you to customize aspects of Terraform configurations and modules without having to alter the source code
@@ -225,7 +225,7 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 * Configuration overrides happen at the variable level and not the file level
 * Processes files in lexical order whenever there are multiple files on the same level of precedence
 
-| Terraform Variable Precendence Order | 
+| Terraform Input Variable Precendence Order | 
 | --- |
 | 4. TF_VAR environmental variables |
 | 3. terraform.tfvars |
