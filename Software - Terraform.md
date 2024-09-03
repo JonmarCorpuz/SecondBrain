@@ -195,8 +195,8 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 | Resource Meta-Argument | Description |
 | --- | --- |
 | `depends_on` | Used to explicitly defines dependencies between resources |
-| `count` | Allows the creation of multiple resources of the same type without having to declare separate resource blocks |
-| `for_each` | Allows the creation of multiple resources of the same type without having to declare separate resource blocks |
+| `count` | Used to define the number of instances of a specific resource that Terraform should create |
+| `for_each` | Accepts a map or a set of strings and creates an instance for each entry in the received expression |
 | `provider` | Used to explicitly define which provider to use with a specific resource |
 
 | Lifecycle Meta-Argument | Description |
