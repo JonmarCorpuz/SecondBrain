@@ -265,3 +265,5 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 # Terraform Functions
 
+| Terraform Function | Description |
+| --- | --- |
