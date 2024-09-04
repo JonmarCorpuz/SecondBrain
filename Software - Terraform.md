@@ -267,3 +267,16 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 | Terraform Function | Description |
 | --- | --- |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Modules
+
+* Allows you to organize, encapsulate, and re-use Terraform components, as well as combine different resources together
+* Seen as a collection of .tf files that are kept in the same directory
+
+| Terraform Module Type | Description |
+| --- | --- |
+| Root Module | The set of files in the main working directory |
+| Child Module | A local module that's called by the root module |
+| Published Module | A remote module from either a public or private registry that's called by the root module |
