@@ -317,3 +317,20 @@ $ tree complete-module/
 | main.tf | The main entry point for module resources |
 | variables.tf | Contains all variables for the module |
 | outputs.tf | Contains all outputs from the module |
+
+## Terraform Module Best Practices
+
+* Build modules when useful abstraction of our infrastructure can be identified
+* Build modules when certain groups of resources always need to be created together and strongly depend on each other
+* Build modules when hiding the infrastructure details of a certain part of your infrastructure will lead to better developer experience
+* Use object attributes to group related information under object-typed variables to make it easier to work with your Terraform projects in the long term
+* Seperate long-lived from short-lived infrastructure (Resources that change rarely shouldn't be grouped together with resources that change often)
+* Modules should be only reusable blocks of your infrastructure
+* Don't expose all the internals of the module for configuration via variables
+* Output as much non-sensitive information as possible
+* Define a stable input and output interface (Ensure that changing a variable name won't mess up your code's logic)
+* Extensively document variables and outputs
+* Favor a flat and composable module structure instead of deeply nested modules since they become harder to maintain over time and increase the configuration complexity for the module's users
+* Thoroughly validate the infrastructure created by your module and don't rely on the users to always pass valid input values
+* Make your dependencies explicit by requiring the information via input variables
+* Keep a module's scrope narrow (Don't try to do everything inside a single module)
