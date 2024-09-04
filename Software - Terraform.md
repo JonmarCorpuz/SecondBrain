@@ -308,3 +308,11 @@ $ tree complete-module/
 │   ├── exampleB/
 │   ├── .../
 ```
+
+| Standard Terraform Module Structure File | Description |
+| --- | --- |
+| LICENSE | Specifies how the module can be used by others |
+| README.md | Contains documentation for the module |
+| main.tf | The main entry point for module resources |
+| variables.tf | Contains all variables for the module |
+| outputs.tf | Contains all outputs from the module |
