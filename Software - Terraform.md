@@ -282,3 +282,28 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 | Root Module | The set of files in the main working directory |
 | Child Module | A local module that's called by the root module |
 | Published Module | A remote module from either a public or private registry that's called by the root module |
+
+## Standard Terraform Module Structure
+
+```Bash
+$ tree complete-module/
+.
+├── README.md
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── ...
+├── modules/
+│   ├── nestedA/
+│   │   ├── README.md
+│   │   ├── variables.tf
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   ├── nestedB/
+│   ├── .../
+├── examples/
+│   ├── exampleA/
+│   │   ├── main.tf
+│   ├── exampleB/
+│   ├── .../
+```
