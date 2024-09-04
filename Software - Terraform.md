@@ -277,6 +277,7 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 * Allows you to group related parts of your infrastructure to make the code easier to understand and improve maintainability (Organize configuration)
 * Allows you to encapsulate sets of resources to prevent unintended changes and mistakes that can happen in complex code bases (Encapsulate configuration)
 * Allows you to reuse entire sets of components, allowing you to improve consistency, save time, and prevent errors (Re-use configuration)
+* Published modules support versioning, automatically generate documentation, allow browsing version histories, show examples and READMEs, etc.
 
 | Terraform Module Type | Description |
 | --- | --- |
@@ -334,3 +335,10 @@ $ tree complete-module/
 * Thoroughly validate the infrastructure created by your module and don't rely on the users to always pass valid input values
 * Make your dependencies explicit by requiring the information via input variables
 * Keep a module's scrope narrow (Don't try to do everything inside a single module)
+
+## Public Terraform Module Conditions
+
+* The module must be on Github and must be a public repo (Required only for public registries)
+* Repositories must use the following naming format: terraform-<provider>-<name>, where <provider> is the provider where resources are created and <name> is the type of infrastructure managed by the module
+* The module repository must have a simple one sentence descripiton
+* The module should adhere to the standard module structure (Ex: *main.tf*, *outputs.tf*, *variables.tf*, *etc.*)
