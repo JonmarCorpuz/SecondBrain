@@ -288,6 +288,7 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 ```Bash
 $ tree complete-module/
 .
+├── LICENSE
 ├── README.md
 ├── main.tf
 ├── variables.tf
