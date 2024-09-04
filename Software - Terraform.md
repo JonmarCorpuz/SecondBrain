@@ -272,8 +272,10 @@ Meta-arguments are special arguments that change the behavior of Terraform when 
 
 # Terraform Modules
 
-* Allows you to organize, encapsulate, and re-use Terraform components, as well as combine different resources together
 * Seen as a collection of .tf files that are kept in the same directory
+* Allows you to group related parts of your infrastructure to make the code easier to understand and improve maintainability (Organize configuration)
+* Allows you to encapsulate sets of resources to prevent unintended changes and mistakes that can happen in complex code bases (Encapsulate configuration)
+* Allows you to reuse entire sets of components, allowing you to improve consistency, save time, and prevent errors (Re-use configuration)
 
 | Terraform Module Type | Description |
 | --- | --- |
