@@ -27,6 +27,7 @@ The Terraform Core is the central component of Terraform's architecture that's r
 * Anyone can write and publish a provider for a remote API, as long as it follows Terraform's specifications
 * We declare the necessary providers in the Terraform project configuration and then Terraform will install those providers during initialization
 * Provider configurations belong to the root module of a Terraform project, meaning that child modules will receive their provider configuration from the parent module
+* You can't have two different versions of the same provider installed side by side in the same project
 
 ## Remote APIs
 
