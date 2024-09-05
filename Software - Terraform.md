@@ -369,3 +369,52 @@ $ tree complete-module/
 * Used from outside resources and data blocks
 * Can reference information from across the current Terraform project
 * Results only in a warning and doesn't stop the applying process
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# State Manipulation
+
+## Tainting
+
+* Forcing the recreation of a resource that's tracked by a Terraform configuration
+* Can be used when a certain resource goes into an invalid state, but the configuration is correct and hasn't changed
+* Tainting marks a resource for recreation (Applying a Terraform configuration will destroy the resource if it exists already and recreate a new one)
+
+## Importing 
+
+* Importing existing resources into a Terraform project, and start managing them with IaC
+
+## Refactoring
+
+* Renaming resources without recreating them, and then moving them inside and outside of modules whenever needed
+* Prevents recreation due to changing resource addresses in Terraform
+
+## Untracking
+
+* Removing a resource from a Terraform configuration without actually destroying that resource
+* Useful when we want to manage the resource independently of the Terraform project
+
+## Generating Configuration
+
+* Leveraging Terraform's code generation feature to generate a best-effort configuration based on existing resources
+* Can be used when importing resources into Terraform
+
+## Fine-Grained State File Changes
+
+* Forcing state unlocking or pulling and pushing the state file from remote backends to perform careful, fine-grained editing in case something is wrong with it
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Workspaces
+
+* Uses a single code-base for different environments
+* Allows us to leverage the same configuration directory to create different environments in order to reduce code duplication and avoid installing multiple copies of modules and providers
+* Resources from other workspaces aren't considered when using the CLI in a workspace
+* Different workspaces correspond to different state data (Terraform stores them in different .tfstate files)
+* Terraform always has a default workspace that gets created when you intialize a Terraform project without specifying a workspace
+* Not every backend supports workspaces
+* Shouldn't be used in Terraform configuration files to make conditional decisions 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Cloud
