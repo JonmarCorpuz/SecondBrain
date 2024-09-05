@@ -342,3 +342,19 @@ $ tree complete-module/
 * Repositories must use the following naming format: terraform-<provider>-<name>, where <provider> is the provider where resources are created and <name> is the type of infrastructure managed by the module
 * The module repository must have a simple one sentence descripiton
 * The module should adhere to the standard module structure (Ex: *main.tf*, *outputs.tf*, *variables.tf*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Object Validations
+
+## Preconditions
+
+* Used from within resources and data blocks
+* Can't reference the resource itself
+* Can be used to check the validity of data blocks or variables that the resource references
+
+## Postconditions
+
+* Used from within resources and data blocks
+* Can reference the resource itself
+* Can be used to check the validity of the resource's configuration
