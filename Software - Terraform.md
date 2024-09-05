@@ -437,11 +437,11 @@ $ tree complete-module/
 
 * A required component of Terraform Cloud projects
 * Can be linked to branches of VCS repositories and you can also specify which files and directories within the VCS repository that you want to plan and apply
+* You can create workspace variables to store data (Ex: *Access keys for remote authentication*, *etc.*)
+* Terraform Cloud keeps track of the state for each of the runs that were triggered
 
-## Terraform Cloud Run Triggering Methods
-
-| Terraform Cloud Run Method | Description |
+| Terraform Cloud Workspace Workflow | Description |
 | --- | --- |
-| CLI-Driven Workflow | Developers or CI/CD systems login to Terraform Cloud via the CLI and interact with the remote environment via CLI commands |
-| UI or API-Driven-Workflow | Developers or systems manually trigger and manage runs by interacting with Terraform Cloud's UI or API |
-| VCS Repository | Developers push code to a remote repository, which then triggers the terraform run and apply commands |
+| Version Control Workflow | Trigger runs based on changes to configuration in remote repositories (Ex: *Github repositories*, *etc.*) |
+| CLI-Driven Workflow | Trigger runs in a workspace using the Terraform CLI |
+| API-Driven Workflow | Trigger runs using the Terraform Cloud API |
