@@ -418,3 +418,30 @@ $ tree complete-module/
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Terraform Cloud
+
+* Allows us to execute and manage Terraform code in a secure remote environment instead of locally
+* Provides access control to approving infrastructure changes
+* Supports secure state and secret storage
+* Provides private registries for sharing modules within an organization
+* Provides policy controls for managing the contents of Terraform projects
+* Allows you to check the run history of terraform plan and apply commands
+* Resources are organized into workspaces, which can be then organized into projects
+
+| Terraform Component | Local Terraform | Terraform Cloud |
+| --- | --- | --- |
+| Configuration | Saved on disk | Saved in a VCS repository and can be called via API or commands from the CLI |
+| State File | Saved locally or by using a remote backend | Saved in a Terraform Cloud workspace |
+| Secrets | Passed via environment variables or through the prompt | Saved in a Terraform Cloud workspace |
+
+## Terraform Cloud Workspaces
+
+* A required component of Terraform Cloud projects
+* Can be linked to branches of VCS repositories and you can also specify which files and directories within the VCS repository that you want to plan and apply
+
+## Terraform Cloud Run Triggering Methods
+
+| Terraform Cloud Run Method | Description |
+| --- | --- |
+| CLI-Driven Workflow | Developers or CI/CD systems login to Terraform Cloud via the CLI and interact with the remote environment via CLI commands |
+| UI or API-Driven-Workflow | Developers or systems manually trigger and manage runs by interacting with Terraform Cloud's UI or API |
+| VCS Repository | Developers push code to a remote repository, which then triggers the terraform run and apply commands |
