@@ -358,3 +358,9 @@ $ tree complete-module/
 * Used from within resources and data blocks
 * Can reference the resource itself
 * Can be used to check the validity of the resource's configuration
+
+## Check Assertions
+
+* Used from outside resources and data blocks
+* Can reference information from across the current Terraform project
+* Results only in a warning and doesn't stop the applying process
