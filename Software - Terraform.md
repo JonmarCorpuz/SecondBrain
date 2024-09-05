@@ -439,9 +439,11 @@ $ tree complete-module/
 * Can be linked to branches of VCS repositories and you can also specify which files and directories within the VCS repository that you want to plan and apply
 * You can create workspace variables to store data (Ex: *Access keys for remote authentication*, *etc.*)
 * Terraform Cloud keeps track of the state for each of the runs that were triggered
+* Provides speculative plans, which are plan-only runs that'll show you possible changes and the policies that would be affected by those changes
 
 | Terraform Cloud Workspace Workflow | Description |
 | --- | --- |
 | Version Control Workflow | Trigger runs based on changes to configuration in remote repositories (Ex: *Github repositories*, *etc.*) |
 | CLI-Driven Workflow | Trigger runs in a workspace using the Terraform CLI |
 | API-Driven Workflow | Trigger runs using the Terraform Cloud API |
+
