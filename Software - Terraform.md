@@ -84,6 +84,8 @@ The .terraform folder contains all the data necessary to execute Terraform confi
 
 ## Apply Phase
 
+* Executes until there are no more changes to be applied
+
 ## Destroy Phase
 
 * Terraform will first refresh the state of all the resources in the Terraform configuration files to revert any resources that were modified outside of Terraform back to the state that are defined in the Terraform configration files
@@ -351,13 +353,16 @@ $ tree complete-module/
 
 * Used from within resources and data blocks
 * Can't reference the resource itself
-* Can be used to check the validity of data blocks or variables that the resource references
+* Can be used to check the validity of data blocks or variables that the resource is referencing (Ex: *Invalid IP address syntax, *etc.*)
+* Doesn't validate resources that aren't known to Terraform during the plan phase (Some information is only known to Terraform during the apply phase)
+* Terraform will exit without going into the apply phase if it detects an issue
 
 ## Postconditions
 
 * Used from within resources and data blocks
 * Can reference the resource itself
 * Can be used to check the validity of the resource's configuration
+* Validation is deferred until the apply phase and will interrupt the creation of resources if it detects an error but it won't automatically destroy the resources that it created before the interruption
 
 ## Check Assertions
 
