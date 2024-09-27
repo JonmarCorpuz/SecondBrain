@@ -4,7 +4,11 @@
 
 ## Instance Types
 
-| Instance Type | Description 
+| Instance Type | Description |
+| --- | --- |
+| Preemptible | | 
+| Spot | |
+| Standard | |
 
 ## Instance Template
 
