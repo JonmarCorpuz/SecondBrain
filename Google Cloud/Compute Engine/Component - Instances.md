@@ -38,12 +38,25 @@ A spot instance is the same as a preempt instance but without the 24 hour maximu
 
 | Storage Option | Description |
 | --- | --- |
-| Google Cloud Hyperdisk | |
+| Google Cloud Hyperdisk | Google's next generation block storage |
 | Hyperdisk Storage Pools | |
-| Persistent Disk | |
+| Persistent Disk | Durable network storage devices that an instance can access |
 | Local SSD Disk | |
 
 ## Google Cloud Hyperdisk
+
+Google Cloud Hyperdisk is Google's next generation block storage
+
+* Decouples storage performance from an instance's type and size by offloading and dynamically scaling out storage processing
+* Offers substantially higher performance, flexibility, and efficiency when compared to Persistent Disk
+
+| Google CLoud Hyperdisk Type | Description |
+| --- | --- |
+| Hyperdisk Balanced | |
+| Hyperdisk ML | |
+| Hyperdisk Extreme | |
+| Hyperdisk Throughput | |
+| Hyperdisk Balanced High Availability | |
 
 ## Hyperdisk Storage Pools
 
@@ -54,8 +67,10 @@ Persistent Disks are durable network storage devices that an instance can access
 * Data on each Persistent Disk volume is distributed across several physical disks
 * Google manages the physical disks and the data distribution to ensure redundancy and optimal performance
 * Located independently from instances, meaning that it can be detached and moved
+* Performance scales automatically wiith size
+* Can be resized and more can be added to a VM if needed
 
-| Persistent Disk Types | Description |
+| Persistent Disk Type | Description |
 | --- | --- |
 | Balanced (pd-balanced) | |
 | Performance (pd-ssd) | |
@@ -64,10 +79,27 @@ Persistent Disks are durable network storage devices that an instance can access
 
 ### Balanced Persistent Disks
 
+* Provides a balance between performance and cost
+* Have the same maximum IOPS as SSD persistent disks and lower IOPS per GiB
+* Offers performance levels suitable for most general-purpose applications at a price point between that of standard and performance persistent disks
+* Backed by SSDs
+
 ### Performance Persistent Disks
+
+* Suitable for enterprise applications and high-performance databases that require lower latency and more IOPS than standard persistent disks provide
+* Backed by SSDs
 
 ### Standard Persistent Disks
 
+* Suitable for large data processing workloads that primarily use sequential I/Os
+* Backed by SSDs
+
 ### Extreme Persistent Disks
+
+* Offers consistently high performance for both random access workloads and bulk throughput
+* Designed for high-end database workloads
+* Allows customers to provision the target IOPS
+* Not available for all machine types
+* Backed by SSDs
 
 ## Local SSD Disk
