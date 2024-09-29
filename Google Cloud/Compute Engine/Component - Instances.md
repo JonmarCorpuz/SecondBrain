@@ -49,11 +49,25 @@ A spot instance is the same as a preempt instance but without the 24 hour maximu
 
 ## Persistent Disk
 
+Persistent Disks are durable network storage devices that an instance can access
+
+* Data on each Persistent Disk volume is distributed across several physical disks
+* Google manages the physical disks and the data distribution to ensure redundancy and optimal performance
+* Located independently from instances, meaning that it can be detached and moved
+
 | Persistent Disk Types | Description |
 | --- | --- |
 | Balanced (pd-balanced) | |
 | Performance (pd-ssd) | |
 | Standard (pd-standard) | |
-| Extremee (pd-extreme) | |
+| Extreme (pd-extreme) | |
+
+### Balanced Persistent Disks
+
+### Performance Persistent Disks
+
+### Standard Persistent Disks
+
+### Extreme Persistent Disks
 
 ## Local SSD Disk
