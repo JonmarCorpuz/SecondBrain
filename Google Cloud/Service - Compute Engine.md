@@ -1,5 +1,3 @@
-
-
 # Instances
 
 A virtual machine instance is a virtualized computing environment that runs on a physical host machine
@@ -87,6 +85,10 @@ A spot instance is the same as a preempt instance but without the 24 hour maximu
 
 * Not all instances in the group are identical
 * Customers manage the VMs themselves
+
+# Instance Storage
+
+
 
 # Sources
 
