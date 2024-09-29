@@ -17,19 +17,21 @@ A machine family is a curated set of VM configurations that are optimized for sp
 * Each machine family have a set of characteristics that are tailored to certain performance needs
 * Each machine family offers various machine types
 
-# Machine Type
+## Machine Type
 
 A machine type is a set of specific predefined or customized configuration of VM resources
-
-* Machine type availability can vary from region to region
-* The more vCPU a machine has, the more memory and networking capabilities it has
 
 | Machine Type | Description |
 | --- | --- |
 | Predefined | A non-configurable predefined configuration of instance resources |
 | Custom | A custom configuration of instance resources |
 
-## Predefined Machine Type
+* Machine type availability can vary from region to region
+* The more vCPU a machine has, the more memory and networking capabilities it has
+
+### Predefined Machine Type
+
+A predefined machine type is a non-configurable predefined configuration of instance resources
 
 | Predefined Machine Type | vCPU to memory ratio |
 | --- | --- |
@@ -39,3 +41,10 @@ A machine type is a set of specific predefined or customized configuration of VM
 | megamem | 14 to 19 GB memory per vCPU |
 | hypermem | 19 to 24 memory per vCPU |
 | ultramem | 24 to 31 GB per vCPU |
+
+### Custom Machine Type
+
+A custom machine type is a custom configuration of instance resources
+
+* Created by the customer when the predefined machine types aren't sufficient for their workload
+* Billed per vCPU and the memory that's provisioned to each VM instance
