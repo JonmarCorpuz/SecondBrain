@@ -34,14 +34,14 @@ A spot instance is the same as a preempt instance but without the 24 hour maximu
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Storage Options
+# Block Storage Options
 
 | Storage Option | Description |
 | --- | --- |
 | Google Cloud Hyperdisk | Google's next generation block storage |
 | Hyperdisk Storage Pools | |
 | Persistent Disk | Durable network storage devices that an instance can access |
-| Local SSD Disk | |
+| Local SSD Disk | A physical drive that's directly attached to the same server of its instance |
 
 ## Google Cloud Hyperdisk
 
@@ -103,3 +103,7 @@ Persistent Disks are durable network storage devices that an instance can access
 * Backed by SSDs
 
 ## Local SSD Disk
+
+A physical drive that's directly attached to the same server of its instance
+
+* Can offer better performance but is ephemeral
