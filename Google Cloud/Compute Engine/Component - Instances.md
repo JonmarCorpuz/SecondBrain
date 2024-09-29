@@ -32,6 +32,8 @@ A spot instance is the same as a preempt instance but without the 24 hour maximu
 
 ### Standard Instances
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Storage Options
 
 | Storage Option | Description |
