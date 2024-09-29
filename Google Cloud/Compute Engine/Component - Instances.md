@@ -32,3 +32,26 @@ A spot instance is the same as a preempt instance but without the 24 hour maximu
 
 ### Standard Instances
 
+# Storage Options
+
+| Storage Option | Description |
+| --- | --- |
+| Google Cloud Hyperdisk | |
+| Hyperdisk Storage Pools | |
+| Persistent Disk | |
+| Local SSD Disk | |
+
+## Google Cloud Hyperdisk
+
+## Hyperdisk Storage Pools
+
+## Persistent Disk
+
+| Persistent Disk Types | Description |
+| --- | --- |
+| Balanced (pd-balanced) | |
+| Performance (pd-ssd) | |
+| Standard (pd-standard) | |
+| Extremee (pd-extreme) | |
+
+## Local SSD Disk
