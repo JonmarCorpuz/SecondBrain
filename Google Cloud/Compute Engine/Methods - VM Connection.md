@@ -10,7 +10,7 @@
 | Cloud Interconnect | |
 
 References:
-* [](https://cloud.google.com/compute/docs/connect/ssh-internal-ip)
+* [test](https://cloud.google.com/compute/docs/connect/ssh-internal-ip)
 
 ## VM Connection Using External IP
 
