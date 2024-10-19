@@ -3,3 +3,11 @@ pspy is a command line tool designed to snoop on processes and see commands run 
 ```Bash
 pspy
 ```
+
+# pspy-binaries
+
+pspy-binaries monitors Linux processes without the need for root permissions
+
+```Bash
+pspy-binaries
+```
