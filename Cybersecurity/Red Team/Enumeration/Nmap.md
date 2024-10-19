@@ -30,6 +30,11 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 
 * If a host sends back an ARP Reply, then the host is active
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ## ICMP Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/25fb5fd5d2009cf69d7aae40e8fde2ec.png)
@@ -49,6 +54,11 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 * Privileged users don't need to complete the TCP Three-Way Handshake even if the port is open
 * Nmap tears down the connection once it receives a response from the host, which decreases the chances of the scan being logged since it didn't establish a TCP connection
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ### Unprivileged TCP SYN Nmap Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
@@ -56,6 +66,11 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fe642b2fafb70cbaa2531d2c41d6cddb2.png)
 
 * Unprivileged users have to complete the TCP Three-Way Handshake even if the port is open
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 ## TCP ACK Ping Scan
 
@@ -65,6 +80,11 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 * An active target will respond with a RST flag because the TCP packet with the ACK flag isn't part of any ongoing connection
 * Useful to help map out firewall rules
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ## TCP Connect Scan
 
 TCP Connect scan works by completing the TCP Three-Way Handshake in order to determine if a TCP port is open and then tearing that connection down right away
@@ -72,6 +92,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/514972cd54b3f58c83f951978ea9183e.png)
 
 * The only scan that's possible for non privileged users to discover open TCP ports
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>} -sT
+```
 
 ## TCP Null Scan
 
@@ -84,6 +109,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 * If a port is closed, it'll reply to a Null flag with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
 * Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ## TCP FIN Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/78eb3d6ba158542f2b3223184b032e64.png)
@@ -92,6 +122,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 
 * If a port is closed, it'll reply to a FIN flag with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
 * Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 ## TCP Xmas Scan
 
@@ -102,12 +137,22 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 * If a port is closed, it'll reply to a Xmas scan with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
 * Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ## TCP Maimon Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8ca5e5e0f6e0a1843cebe11b5b0785b3.png)
 
 * The FIN and ACK bits are set
 * Most target systems respond with an RST regardless of whether the TCP port is open
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 ## TCP Window Scan
 
@@ -117,6 +162,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 * Sometimes you have to repeat a TCP Window scan against a target that's behind a firewall in order to get more information
 * Useful to help map out firewall rules
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ## UDP Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1b827ef60c39619e281c4ca51a6d57b6.png)
@@ -125,6 +175,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 
 * Open UDP ports aren't expected to send a reply
 * Closed UDP ports are expected to send back an ICMP Port Unreachable packet reply, which reveals that the host is online
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 ## Spoofed Scan
 
@@ -136,11 +191,21 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 * You can also spoof you MAC address if you're in the same Ethernet (802.3) network or WiFi (802.11)
 * Spoofing only works in a minimal number of cases where certain conditions are met
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ## Decoy Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/754fc455556a424ca83f512665beaf7d.png)
 
 * Decoy scanning involves making the scan appear to be coming from many IP addresses so that the attacker's IP address would be lost among them
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 ## Idle Scan
 
@@ -155,6 +220,11 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2b0de492e2154a30760852e07cebae0e.png)
 
 3. Trigger the idle machine again to respond so that you can compare the new IP ID with the one received earlier (If the difference is 1, it means the port on the target is closed or filtered, but if the difference is two, it means that the port on the target is open)
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
