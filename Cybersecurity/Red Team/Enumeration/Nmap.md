@@ -26,14 +26,14 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 
 ## ARP Scan
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/f0ce4cd34b827f529255c5c73bb909d1.png)
-
-* If a host sends back an ARP Reply, then the host is active
-
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/f0ce4cd34b827f529255c5c73bb909d1.png)
+
+* If a host sends back an ARP Reply, then the host is active
 
 ## ICMP Ping Scan
 
@@ -45,6 +45,11 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 ### Privileged TCP SYN Nmap Ping Scan
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fe642b2fafb70cbaa2531d2c41d6cddb1.png)
@@ -54,12 +59,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * Privileged users don't need to complete the TCP Three-Way Handshake even if the port is open
 * Nmap tears down the connection once it receives a response from the host, which decreases the chances of the scan being logged since it didn't establish a TCP connection
 
+### Unprivileged TCP SYN Nmap Ping Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-### Unprivileged TCP SYN Nmap Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
 
@@ -67,12 +72,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 * Unprivileged users have to complete the TCP Three-Way Handshake even if the port is open
 
+## TCP ACK Ping Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP ACK Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/db5ab44a8c700c4ab0603e85e456040d.png)
 
@@ -80,12 +85,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * An active target will respond with a RST flag because the TCP packet with the ACK flag isn't part of any ongoing connection
 * Useful to help map out firewall rules
 
+## TCP Connect Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP Connect Scan
 
 TCP Connect scan works by completing the TCP Three-Way Handshake in order to determine if a TCP port is open and then tearing that connection down right away
 
@@ -93,12 +98,12 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 
 * The only scan that's possible for non privileged users to discover open TCP ports
 
+## TCP Null Scan
+
 ```Bash
 #
-nmap {<TARGET_IP>|<TARGET_NETWORK>} -sT
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP Null Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/04b178a9cf7048c21256988b8b2343e3.png)
 
@@ -109,12 +114,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>} -sT
 * If a port is closed, it'll reply to a Null flag with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
 * Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
 
+## TCP FIN Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP FIN Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/78eb3d6ba158542f2b3223184b032e64.png)
 
@@ -123,12 +128,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * If a port is closed, it'll reply to a FIN flag with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
 * Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
 
+## TCP Xmas Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP Xmas Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/7d28b756aed3b6eb72faf98d6974776c.png)
 
@@ -137,24 +142,24 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * If a port is closed, it'll reply to a Xmas scan with a RST packet, which indicates that the port is closed (Note that some firewalls may drop the traffic without sending an RST reply)
 * Can be efficient when scanning a target behind a stateless firewall, since it'll usually check if the incoming packet has the SYN flag set to detect a connection attempt
 
+## TCP Maimon Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP Maimon Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8ca5e5e0f6e0a1843cebe11b5b0785b3.png)
 
 * The FIN and ACK bits are set
 * Most target systems respond with an RST regardless of whether the TCP port is open
 
+## TCP Window Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## TCP Window Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/5118dcb424d429376f09bf2f85db5bce.png)
 
@@ -162,12 +167,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * Sometimes you have to repeat a TCP Window scan against a target that's behind a firewall in order to get more information
 * Useful to help map out firewall rules
 
+## UDP Ping Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## UDP Ping Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1b827ef60c39619e281c4ca51a6d57b6.png)
 
@@ -176,12 +181,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * Open UDP ports aren't expected to send a reply
 * Closed UDP ports are expected to send back an ICMP Port Unreachable packet reply, which reveals that the host is online
 
+## Spoofed Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## Spoofed Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/45b982d501fd26deb2b381059b16f80c.png)
 
@@ -191,23 +196,23 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 * You can also spoof you MAC address if you're in the same Ethernet (802.3) network or WiFi (802.11)
 * Spoofing only works in a minimal number of cases where certain conditions are met
 
+## Decoy Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## Decoy Scan
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/754fc455556a424ca83f512665beaf7d.png)
 
 * Decoy scanning involves making the scan appear to be coming from many IP addresses so that the attacker's IP address would be lost among them
 
+## Idle Scan
+
 ```Bash
 #
 nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ```
-
-## Idle Scan
 
 * Requires an idle system to be connected to the network that you can use to communicate with (If the idle host is busy, then all the returned IP IDs would be useless)
 * Nmap will make each probe appear as if it's coming from the idle host, then it'll check for indicators whether the idle host received any response to the spoofed probe, which can be accomplished by checking the IP ID value in the IP header of the packets
@@ -220,11 +225,6 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/2b0de492e2154a30760852e07cebae0e.png)
 
 3. Trigger the idle machine again to respond so that you can compare the new IP ID with the one received earlier (If the difference is 1, it means the port on the target is closed or filtered, but if the difference is two, it means that the port on the target is open)
-
-```Bash
-#
-nmap {<TARGET_IP>|<TARGET_NETWORK>}
-```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
