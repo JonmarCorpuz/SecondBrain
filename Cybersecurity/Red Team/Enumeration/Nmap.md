@@ -231,9 +231,24 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 3. Trigger the idle machine again to respond so that you can compare the new IP ID with the one received earlier (If the difference is 1, it means the port on the target is closed or filtered, but if the difference is two, it means that the port on the target is open)
 
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Nmap Scan Timing
+# Nmap Scan Options
+
+## OS Discovery
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
+## Timing
+
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 | Nmap Scan Timing | Meaning | Description |
 | --- | --- | --- |
@@ -244,9 +259,12 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 | 4 | Aggressive | |
 | 5 | Insane | |
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+## Intensity Levels
 
-# Nmap Service Detection Scan Intensity Levels
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
 
 | Nmap Scan Intensity Level | Description |
 | --- | --- |
