@@ -170,7 +170,7 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 # Nmap Service Detection Scan Intensity Levels
 
 | Nmap Scan Intensity Level | Description |
-| --- | --- | --- |
+| --- | --- |
 | 0 | Quick but may miss some services and only includes the most likely probes |
 | 1 | Includes slightly more probes than level 0 |
 | 2 | Includes more probes to provide a better balance between speed and accuracy |
