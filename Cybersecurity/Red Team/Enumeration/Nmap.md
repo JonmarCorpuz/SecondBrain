@@ -38,7 +38,8 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 
 ## TCP SYN Ping Scan
 
-**Privileged TCP SYN Nmap ping scan**
+### Privileged TCP SYN Nmap Ping Scan
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/168d48701c5f872cf1930e08b32bcd6f.png)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fe642b2fafb70cbaa2531d2c41d6cddb1.png)
@@ -48,7 +49,8 @@ Network Mapper is an open-source tool that's used for network discovery and secu
 * Privileged users don't need to complete the TCP Three-Way Handshake even if the port is open
 * Nmap tears down the connection once it receives a response from the host, which decreases the chances of the scan being logged since it didn't establish a TCP connection
 
-**Unprivileged TCP SYN Nmap ping scan**
+### Unprivileged TCP SYN Nmap Ping Scan
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/23e7f481f78de8d3e89ef845b747002d.png)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/fe642b2fafb70cbaa2531d2c41d6cddb2.png)
@@ -185,7 +187,4 @@ TCP Connect scan works by completing the TCP Three-Way Handshake in order to det
 | 9 | All probes are used to ensure the most comprehensive detection but at the cost of scan time and potential false positives |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Nmap Commands
-
 
