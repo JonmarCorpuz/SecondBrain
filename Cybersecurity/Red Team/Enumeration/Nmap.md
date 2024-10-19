@@ -37,6 +37,11 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 ## ICMP Ping Scan
 
+```Bash
+#
+nmap {<TARGET_IP>|<TARGET_NETWORK>}
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/25fb5fd5d2009cf69d7aae40e8fde2ec.png)
 
 * If a host sends back an ICMP Reply, then the host is active
@@ -89,7 +94,7 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 ```Bash
 #
-nmap {<TARGET_IP>|<TARGET_NETWORK>}
+nmap {<TARGET_IP>|<TARGET_NETWORK>} -sT
 ```
 
 TCP Connect scan works by completing the TCP Three-Way Handshake in order to determine if a TCP port is open and then tearing that connection down right away
@@ -171,7 +176,7 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 ```Bash
 #
-nmap {<TARGET_IP>|<TARGET_NETWORK>}
+nmap {<TARGET_IP>|<TARGET_NETWORK>} -sU
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/1b827ef60c39619e281c4ca51a6d57b6.png)
