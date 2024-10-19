@@ -1,3 +1,7 @@
+# Hydra Overview 
+
+Hydra is a tool that's used for conducting brute-force attacks on various network services
+
 # Brute Force Credentials 
 
 ## SSH
