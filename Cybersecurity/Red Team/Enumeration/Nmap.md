@@ -240,7 +240,7 @@ nmap {<TARGET_IP>|<TARGET_NETWORK>}
 
 ```Bash
 #
-nmap {<TARGET_IP>|<TARGET_NETWORK>}
+nmap {<TARGET_IP>|<TARGET_NETWORK>} -O
 ```
 
 ## Timing
