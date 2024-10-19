@@ -1,1 +1,0 @@
-Broken User Authentication is a vulnerability where an attacker is able to bypass or exploit flawed authentication mechanisms to gain unauthorized access, perform unauthorized operations, or impersonate another user
