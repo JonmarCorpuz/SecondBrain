@@ -2,6 +2,8 @@
 
 A trust relationship in Active Directory is a method of connecting two distinct Active Directory domains or forests to allow users in one domain or forest to authenticate against resources in the other
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Trust Relationship Components
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Trust%20Relationship.png)
