@@ -1,3 +1,5 @@
+# SMTP Overview
+
 Simple Mail Transfer Protocol is a protocol that's used for sending email messages from a client to a server or between servers to relay messages to the recipient's email server
 
 * Uses port 25 by default
