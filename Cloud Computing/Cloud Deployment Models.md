@@ -1,6 +1,4 @@
-Cloud computing is a model for delivering and enabling the consumption of configurable computing services over the Internet usually through a Cloud Service Provider
-
-# Cloud Deployment Models
+# Cloud Deployment Model Overview
 
 Cloud deployment models help differentiate between cloud offerings in the marketplace
 
@@ -12,43 +10,42 @@ Cloud deployment models help differentiate between cloud offerings in the market
 | **Community Cloud** | A cloud computing system that's shared among organizations with common interests, requirements, or compliance needs |
 | **Multi-Cloud** | A cloud computing system that uses multiple cloud service providers to avoid vendor lock-in and leverage best-of-breed services |
 
-## Private Cloud
+# Private Cloud
 
-The Private Cloud deployment model is a cloud computing system that's dedicated to a single consumer
+The Private Cloud deployment model is a cloud computing system that's dedicated to a single consumer.
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151350.png)
 
-## Public Cloud
+# Public Cloud
 
-The Public Cloud deployment model is a cloud computing system that's used and shared among multiple consumers 
+The Public Cloud deployment model is a cloud computing system that's used and shared among multiple consumers.
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151214.png)
 
-## Hybrid Cloud
+# Hybrid Cloud
 
-The Hybrid Cloud deployment model is a cloud service that combines public cloud computing and private cloud computing systems for different resources
-
-* Can include a combination of a CSP's services and an organization's on-premise resources
-* Organizations can use hybrid cloud environments to reduce their costs and maintain some control over network resources
+The Hybrid Cloud deployment model is a cloud service that combines public cloud computing and private cloud computing systems for different resources, as well as a customer's on-premise resources
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151826.png)
 
-## Community Cloud
+* Organizations can use hybrid cloud environments to reduce their costs and maintain some control over network resources
 
-The Community Cloud deployment model is a cloud computing system that's shared among organizations with common interests, requirements, or compliance needs
+# Community Cloud
+
+The Community Cloud deployment model is a cloud computing system that's shared among organizations with common interests, requirements, or compliance needs.
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-01-15%20151711.png)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Cloud Deployment Elements
+# Cloud Deployment Best Practices
 
-## Migration Timelines
+## Define Migration Timelines
 
 * Timelines must be established for the migration to the cloud
 * Most migrations will be better served if performed incrementally in order to reduce the risk of an outage or having to back out the migration because of unforeseen issues
 * Migration onto the cloud will usually take place during a maintenance window, which is a scheduled time that maintenance can be performed and outages are planned for ongoing support of operations (*There must be time for testing and validation after the migration where all stakeholders can test and verify that the systems are working as planned after the migration*, *etc.*)
-* Time must be allocated in the even that a back-out is required and that the original site or installation must come back online*, *
+* Time must be allocated in the even that a back-out is required and that the original site or installation must come back online
 * It's best to begin an organization's migration onto the cloud with small, easy-to-implement, non-critical systems as candidates to migrate to the cloud
 
 ## Documentation
@@ -62,10 +59,4 @@ The Community Cloud deployment model is a cloud computing system that's shared a
 * Includes configuration scripts, which are useful for initial installation and for ongoing maintenance and troubleshooting
 * Includes sections on the access and distribution networks in the cloud (Ex: *A network management section that provides a map for the network operations center and illustrates how the network management systems are connected to the network and what devices they're monitoring*, *etc.*)
 * Includes benchmarking, which is taking sample performance metrics that need to be collected as part of the documentation process, which will enable an organization to measure performance and identify potential issues when performing post-migration validations (Ex: *CPU usage*, *Memory utilization*, *Storage consumption*, *Database I/O performance*, *Network bandwidth consumed*, *etc.*)
-
-## Service Level Agreement (SLA)
-
-A service level agreement is a formal contract or agreement between a CSP and a customer that outlines the specific terms, conditions, expectations, and penalties regarding the level of service and performance the customer can expect
-
-* Essential for establishing a clear understanding of the services that are being provided, the responsibilities of both parties, and the metrics used to measure and ensure the quality of service
 
