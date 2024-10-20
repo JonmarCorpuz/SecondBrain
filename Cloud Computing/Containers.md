@@ -8,6 +8,8 @@ Containers are software packages that contain an application and all dependencie
 * Doesn't require a Guest OS to run
 * Provides isolation since they're all in their own independent environment (If the Host OS crashes, all containers running on it are effected)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Container Components
 
 | Container Components | Description |
