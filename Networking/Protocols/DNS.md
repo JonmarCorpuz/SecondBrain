@@ -35,7 +35,6 @@ A SLD represents the unique identifier within a domain name
 
 * The segment of a domain that appears directly to the left of the TLD (Ex: *example in example.com*, *etc.*)
 * A SLD must be unique within their TLD
-* 
 
 ## Subdomains
 
