@@ -1,3 +1,5 @@
+# Google Dorking Overview
+
 Google Dorking is a technique that uses advanced search operators in GOogle Search to find information that's not readily available through regular search queries
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
