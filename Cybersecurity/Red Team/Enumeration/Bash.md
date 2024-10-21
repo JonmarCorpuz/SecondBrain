@@ -56,3 +56,17 @@ Domain Information Groper is a CLI tool that's used for querying DNS servers to 
 ```Bash
 dig [<DNS_SERVER_IP>] <DOMAIN> {<RECORD_TYPE>}
 ```
+
+## nslookup
+
+Name Server Lookup is a network administration CLI tool that's used to query the DNS to obtain domain name or IP address mapping information
+
+```Bash
+# Return all the IPv4 and/or IPv6 addresses used by the target domain
+nslookup -type={A|AAAA} <DOMAIN> [TARGET_DNS_ADDRESS]
+```
+
+```Bash
+# Return all the mail servers used by the target domain
+nslookup -type=MX <DOMAIN> [TARGET_DNS_ADDRESS]
+```
