@@ -79,15 +79,6 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 | Predefined | Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin*, *Storage Object Admin*, *Storage Object Viewer*, *etc.*) |
 | Custom | Custom roles that are created by the client |
 
-## GCP IAM Role Launch Stages
-
-| Role Launch Stage | Description |
-| --- | --- |
-| Alpha | |
-| Beta | |
-| General Availability | |
-| Disabled | |
-
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # GCP IAM Policy
