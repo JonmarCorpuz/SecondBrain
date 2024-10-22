@@ -1,3 +1,5 @@
+# IaC Overview
+
 Infrastructure as Code is the automatic management and provisioning of computing infrastructure (*Networks*, *VMs*, *Load Balancers*, *etc.*) through code (*Scripts*, *Declarative definitions*, *etc.*) instead of through manual processes
 
 * The code can be used to define a desired state for the infrastructure, acting as a bluepring for IaC tools to provision the infrastructure and ensure that the infrastructure is always in line with it
