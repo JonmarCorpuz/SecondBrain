@@ -1,0 +1,13 @@
+# Registry Key Overview
+
+# Registry Key Branches
+
+## HKEY_CLASSES_ROOT
+
+## HKEY_LOCAL_MACHINE
+
+## HKEY_CURRENT_USER
+
+## HKEY_USERS
+
+## HKEY_CURRENT_CONFIG
