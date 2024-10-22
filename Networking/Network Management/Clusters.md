@@ -1,3 +1,5 @@
+# Cluster Overview
+
 A cluster refers to a group of interconnected computers or servers that work together to perform a specific set of tasks or provide a particular service
 
 * A cluster is done through a process called clustering, which is a technique used to enhance the availability, reliability, and performance of IT systems by distributing the workload across multiple machines
