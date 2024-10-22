@@ -3,7 +3,15 @@
 ## ping
 
 ```Bash
+#
 for i in {1..255} ;do (ping -c 1 <NETWORK_PORTION>.$i | grep "bytes from"|cut -d ' ' -f4|tr -d ':' &);done
+```
+
+## arp-scan
+
+```Bash
+#
+arp-scan -l
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
@@ -15,6 +23,7 @@ for i in {1..255} ;do (ping -c 1 <NETWORK_PORTION>.$i | grep "bytes from"|cut -d
 traceroute is a network diagnostic tool used to track the path that packets take from one network host to another
 
 ```Bash
+#
 traceroute <TARGET_IP>
 ```
 
@@ -32,6 +41,7 @@ traceroute <TARGET_IP>
 ## .bash_history
 
 ```Bash
+#
 cat ~/.bash_history
 ```
 
