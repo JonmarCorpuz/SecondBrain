@@ -7,7 +7,7 @@ docker images
 #
 
 ```Bash
-docker pull <DOCKER_IMAGE>
+docker pull <DOCKER_IMAGE>[:<IMAGE_VERSION>]
 ```
 
 # 
