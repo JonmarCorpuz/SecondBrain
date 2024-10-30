@@ -13,6 +13,12 @@ docker pull <DOCKER_IMAGE>[:<IMAGE_VERSION>]
 # 
 
 ```Bash
+docker build
+```
+
+# 
+
+```Bash
 docker create
 ```
 
@@ -74,4 +80,20 @@ docker rm {<CONTAINER_ID>|<CONTAINER_NAME}
 
 ```Bash
 docker kill {<CONTAINER_ID>|<CONTAINER_NAME}
+```
+
+# 
+
+```Bash
+docker logs {<CONTAINER_ID>|<CONTAINER_NAME}
+```
+
+```Bash
+docker logs -f {<CONTAINER_ID>|<CONTAINER_NAME}
+```
+
+# 
+
+```Bash
+docker exec -it {<CONTAINER_ID>|<CONTAINER_NAME} /bin/bash
 ```
