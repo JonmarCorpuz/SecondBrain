@@ -48,6 +48,10 @@ docker run --name <CONTAINER_NAME> <DOCKER_IMAGE>
 docker ps
 ```
 
+```Bash
+docker ps -a
+```
+
 # 
 
 ```Bash
