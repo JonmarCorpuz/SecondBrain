@@ -5,11 +5,25 @@
 docker pull <DOCKER_IMAGE>
 ```
 
+# 
+
+```Bash
+docker create
+```
+
+# 
+
+```Bash
+docker start <CONTAINER_ID>
+```
+
 #
 
 ```Bash
 docker run [OPTIONS] <DOCKER_IMAGE>
 ```
+
+* A combination of `docker create` and `docker start`
 
 ```Bash
 docker run -d <DOCKER_IMAGE>
@@ -33,6 +47,12 @@ docker ps
 
 ```Bash
 docker stop <CONTAINER_NAME>
+```
+
+# 
+
+```Bash
+docker rm <CONTAINER_ID>
 ```
 
 #
