@@ -43,6 +43,12 @@ docker run --name <CONTAINER_NAME> <DOCKER_IMAGE>
 docker ps
 ```
 
+# 
+
+```Bash
+docker pause <CONTAINER_NAME>
+```
+
 #
 
 ```Bash
