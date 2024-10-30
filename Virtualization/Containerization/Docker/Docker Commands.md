@@ -13,7 +13,7 @@ docker pull <DOCKER_IMAGE>[:<IMAGE_VERSION>]
 # 
 
 ```Bash
-docker build
+docker build <REPOSITORY>
 ```
 
 # 
