@@ -19,7 +19,7 @@ docker create
 # 
 
 ```Bash
-docker start <CONTAINER_ID>
+docker start {<CONTAINER_ID>|<CONTAINER_NAME}
 ```
 
 #
@@ -51,23 +51,23 @@ docker ps
 # 
 
 ```Bash
-docker pause <CONTAINER_NAME>
+docker pause {<CONTAINER_ID>|<CONTAINER_NAME}
 ```
 
 #
 
 ```Bash
-docker stop <CONTAINER_NAME>
+docker stop {<CONTAINER_ID>|<CONTAINER_NAME}
 ```
 
 # 
 
 ```Bash
-docker rm <CONTAINER_ID>
+docker rm {<CONTAINER_ID>|<CONTAINER_NAME}
 ```
 
 #
 
 ```Bash
-docker kill <CONTAINER_NAME>
+docker kill {<CONTAINER_ID>|<CONTAINER_NAME}
 ```
