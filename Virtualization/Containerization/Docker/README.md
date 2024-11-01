@@ -5,3 +5,7 @@
 * You can only install Linux based containers on a Linux system and vice-versa
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Docker Components Overview
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-11-01%20175629.png)
