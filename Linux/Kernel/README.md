@@ -12,3 +12,4 @@ The Linux kernel is a program that's loaded and run by a boot loader (Ex: *GRUB*
 * Provides controlled access to hardware and other resources to make sure things are done in an orderly and safe manner
 * The Linux kernel is modular
 * The kernel image is relatively small and sufficient to boot to user space to begin running some processes, and once we have processes, we can load additional functionality into the kernel through the loadable kernel module mechanism, which allows you to load the drivers you need and add other functionality that aren't driver related
+* Can be found in /boot
