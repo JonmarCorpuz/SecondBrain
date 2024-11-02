@@ -20,11 +20,11 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 export KUBECONFIG=kubeconfig.yaml
 ```
 
-# Cluster Commands
+# Cluster Operations
 
-# Node Commands
+# Node Operations
 
-# Pod Commands
+# Pod Operations
 
 ```Bash
 # Run a pod
