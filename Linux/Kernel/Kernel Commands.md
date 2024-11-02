@@ -43,3 +43,17 @@ outb
 ```Bash
 setpci
 ```
+
+# View Kernel Messages
+
+```Bash
+dmesg
+```
+
+```Bash
+tail -f /var/log/messages
+```
+
+```Bash
+journalctl -t kernel -f
+```
