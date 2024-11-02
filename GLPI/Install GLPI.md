@@ -1,5 +1,3 @@
-# GLPI Overview
-
 # Install GLPI
 
 ```Bash
