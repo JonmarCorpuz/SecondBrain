@@ -18,6 +18,8 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets1/Proxmox%20Create%20Cluster%20pt9.jpg)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Add Hosts to Cluster
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets1/Proxmox%20Join%20Cluster%20pt0.jpg)
