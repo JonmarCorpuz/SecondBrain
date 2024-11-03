@@ -1,4 +1,4 @@
-# Install TACACS+ on CentOS
+# Install TACACS+ (CentOS)
 
 ```Bash
 cd /etc/yum.repos.d/
