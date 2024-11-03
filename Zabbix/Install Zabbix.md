@@ -38,36 +38,36 @@ zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -u zabbix -p zabbi
 sudo nano /etc/zabbix/apache.conf
 ```
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt5-2.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt5-2.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt5-3.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt5-3.jpg)
 
 ```Bash
 # Ensure that the usernames and passwords match those of your mysql database
 sudo nano /etc/zabbix/zabbix_server.conf
 ```
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20DB%20Password%20pt1.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20DB%20Password%20pt1.png)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20DB%20Password%20pt2.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20DB%20Password%20pt2.png)
 
 ```Bash
 sudo systemctl restart apache2 zabbix-server.service
 sudo systemctl enable apache2 zabbix-server.service
 ```
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt6.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt6.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt7.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt7.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt8.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt8.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt9.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt9.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt10.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt10.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt11.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt11.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt12.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt12.jpg)
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Zabbix%20Install%20pt13.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Zabbix%20Install%20pt13.jpg)
