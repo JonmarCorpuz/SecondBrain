@@ -1,4 +1,4 @@
-# Install Zabbix
+# Install Zabbix (Ubuntu Server)
 
 ```Bash
 sudo apt -y update && sudo apt -y upgrade
