@@ -1,0 +1,13 @@
+network:
+	ethernets:
+		<INTERFACE>:
+			dhcp4: <BOOLEAN VALUE>
+			addresses: [<IP ADDRESS>/<SUBNET MASK>]
+			nameservers:
+				addresses: [<DNS ADDRESS>]
+			routes:
+				-	to: default
+					via: <DEFAULT GATEWAY>
+		
+		version: 2			
+		
