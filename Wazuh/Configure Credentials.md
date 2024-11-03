@@ -6,3 +6,8 @@ bash /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Change%20Wazuh%20Password%20pt1.jpg)
+
+```Bash
+sudo systemctl restart filebeat.service
+sudo systemctl restart wazuh-dashboard.service
+```
