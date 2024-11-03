@@ -1,4 +1,4 @@
-# Kubernetes Components Overview
+# Kubernetes Cluster Components Overview
 
 Cluster 
 --> Nodes 
