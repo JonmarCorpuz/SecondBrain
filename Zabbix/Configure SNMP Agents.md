@@ -1,6 +1,6 @@
 # Configure SNMP Agent
 
-![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Add%20Cisco%20Device%20SNMP%20pt1.jpg)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Add%20Cisco%20Device%20SNMP%20pt1.jpg)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/tree/main/Assets/Add%20Cisco%20Device%20SNMP%20pt2.jpg)
 
