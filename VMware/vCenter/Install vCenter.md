@@ -83,3 +83,17 @@
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt38.png)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt39.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Access vCenter
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt40.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt41.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt42.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt43.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/VCSA%20pt44.png)
