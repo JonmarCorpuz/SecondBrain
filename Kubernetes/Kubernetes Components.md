@@ -1,6 +1,10 @@
 # Kubernetes Components Overview
 
-Cluster --> Nodes --> Pods --> Workloads
+Cluster 
+--> Nodes 
+----> Pods 
+------> Containers 
+------> Workloads
 
 # Kubernetes Cluster
 
