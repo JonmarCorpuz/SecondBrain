@@ -1,21 +1,17 @@
 # Kubernetes Cluster Overview
 
+A Kubernetes cluster is simply a group of worker nodes that are managed by the Master Node (Control Plane)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/piptiprtierpitepirepriwepirpewripweir.png)
+
+| Kubernetes Cluster Component | Description |
+| --- | --- |
+| **Master Node** (Control Plane) | The node that manages the Kubernetes cluster |
+| **Worker Node** | A node that runs the workload (pods) |
+| **Node Pool** | A group of worker nodes within a cluster with the same configurations |
+
 Cluster 
 --> Nodes 
 ----> Pods 
 ------> Containers 
 ------> Workloads
-
-# Node
-
-# Pods
-
-A pod represents a set of running containers on your cluster
-
-## Workloads
-
-A workload is an application running on Kubernetes
-
-* A workload runs inside of one or more pods
-
-## Containers
