@@ -10,3 +10,7 @@ A Kubernetes object is a persistent entity in the Kubernetes system
 
 # ReplicaSet
 
+A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) maintains a stable set of replica Pods running at any given time 
+
+* Usually automatically managed by ReplicaSets
+* Often used to guarantee the availability of a specified number of identical Pods
