@@ -31,11 +31,11 @@ Metric-based alerting policies monitor time-series data (metrics data) to notify
 
 An [alignment](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/alignment-period-aggregation#understanding_alignment_period) divides raw time series data into buckets in which the raw data is regularlized in time so it can be combined with other aligned time series
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/fa-alignment-period.png)
-
 * Analyzing time-series data requires that the data points be available on evenly spaced time boundaries, which is done through an alignment
 * Creates a new time-series with a constant interval between data points
 * Alignment is typically applied to multiple time-series in preparation for further manipulation
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/fa-alignment-period.png)
 
 | Alignment Step | Description |
 | --- | --- |
@@ -57,6 +57,10 @@ The [duration](https://cloud.google.com/monitoring/api/v3/aggregation#picking-al
 #### Alignment Period Sampling Rate
 
 The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/aggregation#align-sampling) refers to the frequency with which the data is written
+
+* If the alignment period is the same as the sampling period, then there is one data point in each alignment period, which means that the applied [aligners](https://cloud.google.com/monitoring/api/v3/aggregation#aligners) will result in the same aligned time series
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/ts-1m-sample-1m-align-w-raw.png)
 
 | Metric Sampling Rate | Description |
 | --- | --- |
