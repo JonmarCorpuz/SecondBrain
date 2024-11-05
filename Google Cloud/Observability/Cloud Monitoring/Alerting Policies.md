@@ -92,9 +92,13 @@ Reduction ([Cross-series aggregation](https://cloud.google.com/monitoring/api/v3
 
 A [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#reducer) is an operation that describes how to aggregate data points from multiple time-series into a single time-series, where the value of each data point in the resulting series is a function of all the already aligned values in the input time-series
 
-* Example: 
+* Example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20175545.png) ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20175956.png) ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20180138.png)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+### Grouping
+
+[Grouping](https://cloud.google.com/monitoring/api/v3/aggregation#aggr-grouping) allows you to apply a [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#reducer) across subsets of your time-series rather than across the entire set of time-series
 
 # Log-Based Alerting Policies
 
