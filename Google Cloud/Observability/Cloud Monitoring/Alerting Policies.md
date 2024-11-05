@@ -40,7 +40,7 @@ An [alignment](https://cloud.google.com/network-intelligence-center/docs/flow-an
 | Alignment Step | Description |
 | --- | --- |
 | Step 1: Bucketing the data | Dividing the raw time-series data into time intervals, also known as the alignment period |
-| Step 2: Computing a single value | You choose how a single value is computed (*Sum all the values*, *Compute their average*, *Use the maximum*, *etc.*) |
+| Step 2: Computing a single value | You choose how a single value is computed by using an [aligner](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) |
 
 #### Alignment Period Duration
 
@@ -58,9 +58,9 @@ The [duration](https://cloud.google.com/monitoring/api/v3/aggregation#picking-al
 
 The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/aggregation#align-sampling) refers to the frequency with which the data is written
 
-* If the alignment period is the same as the sampling period, then there is one data point in each alignment period, which means that the applied [aligners](https://cloud.google.com/monitoring/api/v3/aggregation#aligners) will result in the same aligned time series
+* If the alignment period is the same as the sampling period, then there is one data point in each alignment period, which means that the applied [aligners](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) will result in the same aligned time series ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-04%20190033.png)
+* When choosing an alignment period, make it longer that the sampling period, but short enough to show relevant trends
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/ts-1m-sample-1m-align-w-raw.png)
 
 | Metric Sampling Rate | Description |
 | --- | --- |
@@ -73,9 +73,11 @@ The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/
 | [Knative Metrics](https://cloud.google.com/monitoring/api/metrics_knative#knative) | |
 | [External Metrics](https://cloud.google.com/monitoring/api/metrics_other#other) | |
 
-#### Retest Window
-
 ### Reduction
+
+Reduction ([Cross-series aggregation](https://cloud.google.com/monitoring/api/v3/aggregation#reduction-intro)) is the process of combining multiple aligned time-series into a new time-series by replacing all the values on the alignment-period boundary with a single value using a [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#reducer), which is a function that is applied to the values across a set of time-series to produce a single value
+
+* Works across separate time-series
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
