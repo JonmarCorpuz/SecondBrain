@@ -57,6 +57,12 @@ The [duration](https://cloud.google.com/monitoring/api/v3/aggregation#picking-al
 * [Long alignment periods](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/alignment-period-aggregation#granularity) are typically not useful for looking at short-term anomalous conditions (*Short spikes in traffic*, *etc.*)
 * [Short alignment periods](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/alignment-period-aggregation#granularity) are better for more granular monitoring
 
+#### Aligners
+
+An [aligner](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) is a string that specifies the [operation](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) to be applied to the data points in each alignment period of a time-series
+
+* Replaces the data values in each alignment period with a single value, for example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20174521.png)
+
 ##### Sampling Rate
 
 The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/aggregation#align-sampling) refers to the frequency with which the data is written
@@ -75,14 +81,6 @@ The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/
 | [Legacy Mointoring and Logging Agent Metrics](https://cloud.google.com/monitoring/api/metrics_agent#oagent-vs-magent) | |
 | [Knative Metrics](https://cloud.google.com/monitoring/api/metrics_knative#knative) | |
 | [External Metrics](https://cloud.google.com/monitoring/api/metrics_other#other) | |
-
-#### Aligners
-
-An [aligner](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) is a string that specifies the [operation](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) to be applied to the data points in each alignment period of a time-series
-
-* Replaces the data values in each alignment period with a single value, for example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20174521.png)
-
-
 
 ### Reduction
 
