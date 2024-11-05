@@ -98,7 +98,11 @@ A [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.aler
 
 ### Grouping
 
-[Grouping](https://cloud.google.com/monitoring/api/v3/aggregation#aggr-grouping) allows you to apply a [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#reducer) across subsets of your time-series rather than across the entire set of time-series
+[Grouping](https://cloud.google.com/monitoring/api/v3/aggregation#aggr-grouping) allows you to apply a [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#reducer) across subsets of your time-series rather than across the entire set of time-series by selecting one or more labels
+
+* Time-series are grouped on the basis of their values for the selected labels
+* Grouping results in one time-series for each group
+* Example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20180908.png)
 
 # Log-Based Alerting Policies
 
