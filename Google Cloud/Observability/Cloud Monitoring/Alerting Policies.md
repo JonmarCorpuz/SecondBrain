@@ -48,19 +48,22 @@ The [duration](https://cloud.google.com/monitoring/api/v3/aggregation#picking-al
 
 | Alignment Period Duration Factor | Description |
 | --- | --- |
-| [Granularity](https://cloud.google.com/monitoring/api/v3/aggregation#align-granularity) |
+| [Granularity](https://cloud.google.com/monitoring/api/v3/aggregation#align-granularity) | |
+| [Sampling Rate](https://cloud.google.com/monitoring/api/v3/aggregation#align-sampling) | |
+
+##### Granularity
 
 * Long alignment periods are better for exploring trends over longer periods of time
 * [Long alignment periods](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/alignment-period-aggregation#granularity) are typically not useful for looking at short-term anomalous conditions (*Short spikes in traffic*, *etc.*)
 * [Short alignment periods](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/alignment-period-aggregation#granularity) are better for more granular monitoring
 
-#### Alignment Period Sampling Rate
+##### Sampling Rate
 
 The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/aggregation#align-sampling) refers to the frequency with which the data is written
 
 * If the alignment period is the same as the sampling period, then there is one data point in each alignment period, which means that the applied [aligners](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) will result in the same aligned time series ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-04%20190033.png)
 * When choosing an alignment period, make it longer that the sampling period, but short enough to show relevant trends
-
+* The sample data that was collected during the sample period will be ingested by Cloud Monitoring and won't be available during that period
 
 | Metric Sampling Rate | Description |
 | --- | --- |
@@ -72,6 +75,14 @@ The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/
 | [Legacy Mointoring and Logging Agent Metrics](https://cloud.google.com/monitoring/api/metrics_agent#oagent-vs-magent) | |
 | [Knative Metrics](https://cloud.google.com/monitoring/api/metrics_knative#knative) | |
 | [External Metrics](https://cloud.google.com/monitoring/api/metrics_other#other) | |
+
+#### Aligners
+
+An [aligner](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) is a string that specifies the [operation](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) to be applied to the data points in each alignment period of a time-series
+
+* Replaces the data values in each alignment period with a single value, for example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20174521.png)
+
+
 
 ### Reduction
 
