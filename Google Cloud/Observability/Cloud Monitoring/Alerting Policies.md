@@ -61,7 +61,7 @@ The [duration](https://cloud.google.com/monitoring/api/v3/aggregation#picking-al
 
 An [aligner](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) is a string that specifies the [operation](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#aligner) to be applied to the data points in each alignment period of a time-series
 
-* Replaces the data values in each alignment period with a single value, for example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20174521.png)
+* Replaces the data values in each alignment period with a single value, for example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20174521.png) ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20175028.png)
 
 ##### Sampling Rate
 
@@ -86,7 +86,7 @@ The alignment period [sampling rate](https://cloud.google.com/monitoring/api/v3/
 
 Reduction ([Cross-series aggregation](https://cloud.google.com/monitoring/api/v3/aggregation#reduction-intro)) is the process of combining multiple aligned time-series into a new time-series by replacing all the values on the alignment-period boundary with a single value using a [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#reducer), which is a function that is applied to the values across a set of time-series to produce a single value
 
-* Works across separate time-series
+* Works across separate time-series and they must be aligned before they can be reduced
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
