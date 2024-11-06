@@ -11,14 +11,18 @@ An alerting policy is a set of conditions that define when and how to receive no
 
 # Alert Policies With Multiple Conditions
 
+
+
 * An alert policy can contain up to 6 conditions and are configured using either the [Multi-condition trigger](https://cloud.google.com/monitoring/alerts/concepts-indepth#condition-combiners) step on the Cloud Console or the [combiner](https://cloud.google.com/monitoring/alerts/concepts-indepth#condition-combiners) field of the AlertPolicy structure in the API
 
 | API combiner Value | Multi-Condition Trigger Value | Description |
 | --- | --- | --- |
 | OR | Any condition is met | An incident is opened if any resource causes any of the conditions to be met |
 | AND | All conditions are met even for different resources for each condition (Default) | An incident is opened if each condition is met, even if a different resource causes those conditions to be met |
-| AND_WITH_MATCHING_RESOURCE | All conditions are met | An incident is opened if the same resource causes each condition to be met (This setting is the most stringent combining choice) 
-* Each condition must monitor the same resource |
+| AND_WITH_MATCHING_RESOURCE | All conditions are met | An incident is opened if the same resource causes each condition to be met (This setting is the most stringent combining choice) |
+
+* Each condition must monitor the same resource
+* The monitored resource labels that are available after aggregation must be the same for all conditions
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
