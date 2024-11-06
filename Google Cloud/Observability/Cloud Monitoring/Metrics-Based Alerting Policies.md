@@ -103,3 +103,9 @@ A [Reducer](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.aler
 * Time-series are grouped on the basis of their values for the selected labels
 * Grouping results in one time-series for each group
 * Example: ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-05%20180908.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+  
+# Troubleshooting Alerting Policies
+
+* [Common causes for anomalous incidents](https://cloud.google.com/monitoring/alerts/troubleshooting-alerts#anomalous-incidents)
