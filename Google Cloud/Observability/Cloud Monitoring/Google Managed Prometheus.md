@@ -1,1 +1,0 @@
-# Google Managed Prometheus Overview
