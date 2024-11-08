@@ -19,3 +19,4 @@ Scan for vulnerable plugins
 ```Bash
 wpscan --url <TARGET_URL> --enumerate vp
 ```
+ 
