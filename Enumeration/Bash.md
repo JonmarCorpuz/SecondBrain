@@ -59,55 +59,55 @@ cat ~/.bash_history
 
 ## sudo
 
+List all commands that the user can run with sudo
 ```Bash
-# List all commands that the user can run with sudo
 sudo -l
 ```
 
 ## find
 
+
 ```Bash
-# 
 find / -perm -4000 2> /dev/null
 ```
 
+Find all directories or files containing the specified string
 ```Bash
-# Find all directories or files containing the specified string
 find / -type {d|f} -name <string> 2>/dev/null
 ```
 
+Find all directories or files containing the specified file permissions
 ```Bash
-# Find all directories or files containing the specified file permissions
 find / -type {d|f} -perm {<file_permissions>|<subject>=<permission>} 2>/dev/null
 ```
 
+Find all directories or files owned by the specified user
 ```Bash
-# Find all directories or files owned by the specified user
 find / -type {d|f} -user <username> 2>/dev/null
 ```
 
+Find all directories or files that were modified in the last specified time period
 ```Bash
-# Find all directories or files that were modified in the last specified time period
 find / -type {d|f} -mtime <days> 2>/dev/null
 ```
 
+Find all directories or files that were accessed in the last specified days
 ```Bash
-# Find all directories or files that were accessed in the last specified days
 find / -type {d|f} -atime <days> 2>/dev/null
 ```
 
+Find all directories or files that were changed within the specified time
 ```Bash
-# Find all directories or files that were changed within the specified time
 find / -type {d|f} -cmin -<minutes> 2>/dev/null
 ```
 
+Find all directories or files that were accessed within the specified time
 ```Bash
-# Find all directories or files that were accessed within the specified time
 find / -type {d|f} -amin -<minutes> 2>/dev/null
 ```
 
+Find all directories or files with the specified size
 ```Bash
-# Find all directories or files with the specified size
 find / -type {d|f} -size {[+]|[-]}<size> 2>/dev/null
 ```
 
@@ -128,13 +128,13 @@ dig [<DNS_SERVER_IP>] <DOMAIN> {<RECORD_TYPE>}
 
 Name Server Lookup is a network administration CLI tool that's used to query the DNS to obtain domain name or IP address mapping information
 
+Return all the IPv4 and/or IPv6 addresses used by the target domain
 ```Bash
-# Return all the IPv4 and/or IPv6 addresses used by the target domain
 nslookup -type={A|AAAA} <DOMAIN> [TARGET_DNS_ADDRESS]
 ```
 
+Return all the mail servers used by the target domain
 ```Bash
-# Return all the mail servers used by the target domain
 nslookup -type=MX <DOMAIN> [TARGET_DNS_ADDRESS]
 ```
 
