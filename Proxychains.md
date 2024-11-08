@@ -25,12 +25,28 @@ Add your proxies in the [ProxyList] section in the /etc/proxychains4.conf proxyc
 
 ## proxychains-ng Proxychain Types
 
-### Dynamic Chain
+### Dynamic Proxychain
 
+A dynamic proxychain attemps to use the proxies in the listed order and if one fails, it'll simply skip it and move on to the next one
 
+* Provides reliability
 
-### Strict Chain
+### Strict Proxychain
 
-### Round-Robin Chain
+A strict proxychain attemps to use the proxies in the listed order and if one fails then the entire connection fails
 
-### Random Chain
+* Provides predictability
+
+### Round-Robin Proxychain
+
+A round-robin proxychain is used circularly to distribute the connection amongst the provided proxies 
+
+* Each connection request goes to the next one in the liust, and once it reaches the end, it starts over again at the beginning
+* Provides load balancing
+
+### Random Proxychain
+
+A random proxychain selects proxies for each connection in a random order
+
+* Provides a unique path through each listed proxy
+* Provides highrt anonymity
