@@ -32,10 +32,21 @@ The configuration refers to the configurations for your application and its envi
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Image Sources
+# Container Registries
 
-## Docker Hub
+* Allows you to do versioning to help you keep track of different versions of your images for easy rollback and updates
+* Allows you to collaborate with other people by sharing them your images
+* Provides a secure environment for storing sensitive images
+* Allows you to automate image building and deployment as part of your CI/CD pipeline
 
-## Registries
+## Public Registries
 
-## Self-Created
+Public registries (*[Docker Hub](https://hub.docker.com/)* are open to everyone and host a vast collection of images from various sources
+
+## Private Registries 
+
+Private registries are used for storing proprietary or sensitive images and offer granular access control
+
+## Self-Hosted Regristries
+
+## Cloud-Hosted Registries
