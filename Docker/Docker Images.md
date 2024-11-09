@@ -29,3 +29,13 @@ The application code is your own source code or binaries
 ## Configuration
 
 The configuration refers to the configurations for your application and its environment
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Image Sources
+
+## Docker Hub
+
+## Registries
+
+## Self-Created
