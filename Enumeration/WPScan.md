@@ -12,11 +12,11 @@
 
 Scan for Wordpress users
 ```Bash
-wpscan --url <TARGET_URL> --enumerate u
+wpscan --url <TARGET_WORDPRESS_URL> --enumerate u
 ```
 
 Scan for vulnerable plugins
 ```Bash
-wpscan --url <TARGET_URL> --enumerate vp
+wpscan --url <TARGET_WORDPRESS_URL> --enumerate vp
 ```
  
