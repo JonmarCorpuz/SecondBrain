@@ -3,3 +3,5 @@
 # Dockerfile provides a clear overview and full control of all the steps involved in building it
 
 FROM <BASE_IMAGE>
+
+RUN <COMMAND> [PARAMETER]
