@@ -19,4 +19,8 @@ Scan for vulnerable plugins
 ```Bash
 wpscan --url <TARGET_WORDPRESS_URL> --enumerate vp
 ```
- 
+
+Password brute force
+```Bash
+wpscan --url <TARGET_WORDPRESS_URL> --passwords <WORDLIST>
+```
