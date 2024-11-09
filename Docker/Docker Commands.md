@@ -34,3 +34,12 @@ Forcefully remove all images
 ```Bash
 docker rmi -f $(docker images -q)
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Docker Containers
+
+Deploy a Docker container
+```Bash
+docker run -d <IMAGE_NAME>
+```
