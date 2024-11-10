@@ -1,6 +1,7 @@
 # Stage 1
 
 # syntax=docker/dockerfile:1
+# AS build gives an alias to this build
 FROM golang:1.23 AS build
 WORKDIR /src
 COPY <<EOF /src/main.go
