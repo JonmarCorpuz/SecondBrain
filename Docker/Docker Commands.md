@@ -95,3 +95,7 @@ Remove all stopped containers
 ```Bash
 docker rm $(docker ps -aq)
 ```
+
+```Bash
+docker history <DOCKER_IMAGE>
+```
