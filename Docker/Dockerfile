@@ -18,3 +18,6 @@ EXPOSE <PORT_NUMBER>
 
 #
 CMD [ "<COMMAND>" ]
+
+#
+ENTRYPOINT [ "<COMMAND>" ]
