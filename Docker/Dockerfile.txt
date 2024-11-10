@@ -1,10 +1,17 @@
-# Dockerfile allows you to define all the steps necessary to build your Docker images
-# Dockerfile reduces the risk of human error by automating the build process for your applications
-# Dockerfile provides a clear overview and full control of all the steps involved in building it
-# -------------------------------------------------------------------------
-
+#
 FROM <BASE_IMAGE>
 
-#WORKDIR <PATH_TO_WORKING_DIRECTORY>
-#RUN <COMMAND> [PARAMETER]
-#COPY <FILE_SOURCE> <DESTINATION_PATH_WITHIN_CONTAINER>
+#
+WORKDIR <PATH_TO_WORKING_DIRECTORY>
+
+#
+RUN <COMMAND> [PARAMETER]
+
+#
+COPY <FILE_SOURCE> <DESTINATION_PATH_WITHIN_CONTAINER>
+
+#
+EXPOSE <PORT_NUMBER>
+
+#
+CMD [ "<COMMAND>" ]
