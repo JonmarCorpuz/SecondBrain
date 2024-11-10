@@ -4,14 +4,17 @@
 
 # Docker Hub
 
+tmp
 ```Bash
 docker login
 ```
 
+tmp
 ```Bash
 docker search <IMAGE_NAME>
 ```
 
+tmp
 ```Bash
 docker images
 ```
@@ -21,6 +24,7 @@ Push an image to Docker Hub
 docker push <DOCKER_HUB_USERNAME>/<IMAGE_NAME>[:<TAG_NAME>]
 ```
 
+tmp
 ```Bash
 docker pull <IMAGE_NAME>[:<TAG_NAME>]
 ```
@@ -54,6 +58,7 @@ List all running containers
 docker ps -a
 ```
 
+tmp
 ```Bash
 docker exec -it {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
@@ -96,6 +101,11 @@ Remove all stopped containers
 docker rm $(docker ps -aq)
 ```
 
+tmp
 ```Bash
 docker history <DOCKER_IMAGE>
 ```
+
+tmp
+```Bash
+docker logs <IMAGE_TAG>
