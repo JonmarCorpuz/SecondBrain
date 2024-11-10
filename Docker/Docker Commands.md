@@ -22,7 +22,7 @@ docker push <DOCKER_HUB_USERNAME>/<IMAGE_NAME>[:<TAG_NAME>]
 ```
 
 ```Bash
-docker pull <IMAGE_NAME>[:<VERSION>]
+docker pull <IMAGE_NAME>[:<TAG_NAME>]
 ```
 
 Build a Docker image from a Dockerfile
@@ -46,7 +46,7 @@ docker rmi -f $(docker images -q)
 
 Deploy a Docker container
 ```Bash
-docker run -d <IMAGE_NAME> [-p <HOST_PORT>:<CONTAINER_PORT>]
+docker run -d [--name <CONTAINER_NAME>] <IMAGE_NAME> [-p <HOST_PORT>:<CONTAINER_PORT>]
 ```
 
 List all running containers
@@ -63,7 +63,17 @@ Stop a running container
 docker stop {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
 
+Stop all running containers
+```Bash
+docker rm $(docker ps -q)
+```
+
 Remove a stopped container
 ```Bash
 docker rm {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
+Remove all stopped containers
+```Bash
+docker rm $(docker ps -aq)
 ```
