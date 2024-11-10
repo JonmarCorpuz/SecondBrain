@@ -30,6 +30,11 @@ Build a Docker image from a Dockerfile
 docker build -t <OUTPUT_IMAGE_NAME>
 ```
 
+Forcefully remove an image
+```Bash
+docker rmi -f {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
 Forcefully remove all images
 ```Bash
 docker rmi -f $(docker images -q)
@@ -42,4 +47,23 @@ docker rmi -f $(docker images -q)
 Deploy a Docker container
 ```Bash
 docker run -d <IMAGE_NAME>
+```
+
+List all running containers
+```Bash
+docker ps -a
+```
+
+```Bash
+docker exec -it {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
+Stop a running container
+```Bash
+docker stop {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
+Remove a stopped container
+```Bash
+docker rm {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
