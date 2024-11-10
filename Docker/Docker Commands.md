@@ -46,7 +46,7 @@ docker rmi -f $(docker images -q)
 
 Deploy a Docker container
 ```Bash
-docker run -d <IMAGE_NAME>
+docker run -d <IMAGE_NAME> [-p <HOST_PORT>:<CONTAINER_PORT>]
 ```
 
 List all running containers
