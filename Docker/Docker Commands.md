@@ -27,7 +27,7 @@ docker pull <IMAGE_NAME>[:<VERSION>]
 
 Build a Docker image from a Dockerfile
 ```Bash
-docker build -t <OUTPUT_IMAGE_NAME>
+docker build -t <OUTPUT_IMAGE_NAME> <DOCKERFILE_PATH>
 ```
 
 Forcefully remove an image
