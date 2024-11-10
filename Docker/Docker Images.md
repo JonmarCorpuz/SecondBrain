@@ -50,3 +50,17 @@ Private registries are used for storing proprietary or sensitive images and offe
 ## Self-Hosted Regristries
 
 ## Cloud-Hosted Registries
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Distroless Docker Images
+
+A distroless image is a minimal Docker image that contains only the necessary runtime dependencies of applications
+
+* Provides enhanced security since there are fewer components (*OS*, *Shell utilities*, *etc.*) in the image, meaning that there are fewer potential vulnerabilities and a smaller attack surface
+* Has a reduced image size, which allows for faster image pulls and reduced storage requirements
+* Improved performance (*Quicker startup times*, *Lower resource consumption*) since it's smaller and has fewer components
+* Easier to audit and verify
+* Harder to troubleshoot since there are no shell utilities or debugging tools
+* Managing dependencies is more complex, as you need to ensure all required libraries and binaries are included in the build process
+* Increases build complexity since creating distroless images often involves more complex Dockerfiles and build processes
