@@ -50,7 +50,7 @@ docker rmi -f $(docker images -q)
 
 Deploy a Docker container
 ```Bash
-docker run -d [--name <CONTAINER_NAME>] <IMAGE_NAME> [-p <HOST_PORT>:<CONTAINER_PORT>]
+docker run -d [--env-file "<VARIABLES_FILENAME>"] [--name <CONTAINER_NAME>] <IMAGE_NAME> [-p <HOST_PORT>:<CONTAINER_PORT>]
 ```
 
 List all running containers
