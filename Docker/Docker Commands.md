@@ -63,9 +63,17 @@ Pause a running container
 docker pause {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
 
+Unpause a paused container
+```Bash
+docker unpause {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
 Stop a running container
 ```Bash
 docker stop {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+```Bash
+docker kill {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
 
 Stop all running containers
@@ -73,7 +81,7 @@ Stop all running containers
 docker stop $(docker ps -q)
 ```
 
-Start a stopped or paused container
+Start a stopped container
 ```Bash
 docker start {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
