@@ -109,3 +109,42 @@ docker history <DOCKER_IMAGE>
 tmp
 ```Bash
 docker logs <IMAGE_TAG>
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Docker Volumes
+
+tmp
+```Bash
+docker volume ls [-f <VOLUME_NAME>]
+```
+
+tmp
+```Bash
+docker volume inspect {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
+Remove a volume from a container
+```Bash
+docker volume rm {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
+Create a named volume
+```Bash
+docker volume create <VOLUME_NAME>
+```
+
+tmp
+```Bash
+docker system prune
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Resource Limits
+
+tmp
+```Bash
+docker stats
+```
