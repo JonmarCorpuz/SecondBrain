@@ -17,5 +17,6 @@ RUN go build -o /bin/hello ./main.go
 # Stage 2
 
 FROM scratch
+# --from enables you to specify the previous stage by this build name
 COPY --from=build /bin/hello /bin/hello
 CMD ["/bin/hello"]
