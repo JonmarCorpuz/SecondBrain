@@ -58,6 +58,11 @@ docker ps -a
 docker exec -it {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
 
+Pause a running container
+```Bash
+docker pause {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
 Stop a running container
 ```Bash
 docker stop {<CONTAINER_NAME>|<CONTAINER_ID>}
@@ -66,6 +71,11 @@ docker stop {<CONTAINER_NAME>|<CONTAINER_ID>}
 Stop all running containers
 ```Bash
 docker stop $(docker ps -q)
+```
+
+Start a stopped or paused container
+```Bash
+docker start {<CONTAINER_NAME>|<CONTAINER_ID>}
 ```
 
 Remove a stopped container
