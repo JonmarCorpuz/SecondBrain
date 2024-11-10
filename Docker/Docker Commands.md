@@ -65,7 +65,7 @@ docker stop {<CONTAINER_NAME>|<CONTAINER_ID>}
 
 Stop all running containers
 ```Bash
-docker rm $(docker ps -q)
+docker stop $(docker ps -q)
 ```
 
 Remove a stopped container
