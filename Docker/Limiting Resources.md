@@ -1,3 +1,11 @@
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# CPU Shares
+# Limiting CPU Usage
+
+## CPU Share
+
+## CPU Set
+
+## CPU Quota
+
+## CPU Period
