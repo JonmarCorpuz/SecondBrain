@@ -17,3 +17,19 @@ The [.dockerignore](https://docs.docker.com/build/concepts/context/#dockerignore
 * Helps avoid sending unwanted files and directories to the builder
 * Improves build speed, especially when using a remote builder
 * When you run a build command, the build client looks for a file named `.dockerignore` in the root directory of the context and if this file exists, the files and directories that match patterns in the files are removed from the build context before it's sent to the builder
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Multistage Dockerfiles
+
+A [multi-stage build](https://dev.to/pavanbelagatti/what-are-multi-stage-docker-builds-1mi9#:~:text=A%20multi%2Dstage%20build%20is,on%20both%20time%20and%20space.) build is a process that allows you to break the steps in building a Docker image into multiple stages
+
+* Enables you to create images that include only the dependencies that are necessary for the desired functionality of the final application, cutting down on both time and space
+
+## Stage 1
+
+In the first stage, you'll first build the image that contains only the dependencies needed to build your application
+
+## Stage 2
+
+In this last stage, you can add in any additional layers needed to create your application and configure it for deployment
