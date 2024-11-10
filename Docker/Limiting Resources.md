@@ -9,3 +9,11 @@
 ## CPU Quota
 
 ## CPU Period
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Limiting Memory Usage
+
+## Kernel Memory
+
+## Swap Memory
