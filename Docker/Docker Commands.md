@@ -165,6 +165,26 @@ docker stats
 
 # Docker Networking
 
+View networks
+```Bash
+docker network ls
+```
+
+Inspect network
+```Bash
+docker network inspect <NETWORK_DRIVER>
+```
+
+Inspect a container's network
+```Bash
+docker inspect {<CONTAINER_NAME>|<CONTAINER_ID>}
+```
+
+Connect a container to a network
+```Bash
+docker network connect <NETWORK> <CONTAINER>
+```
+
 ## Default Bridge Network
 
 tmp
