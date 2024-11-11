@@ -13,6 +13,7 @@
 The bridge network driver creates a private network on the host machine where your containers can communicate with each other
 
 * Suitable for most single-host scenarios
+* DNS resolution and auto discovery isn't available in the default bridge network
 
 ## Host
 
@@ -20,6 +21,7 @@ The bridge network driver creates a private network on the host machine where yo
 
 ## None
 
+* Disables all networking for a container
 
 ## Overlay
 
