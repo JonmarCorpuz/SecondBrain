@@ -1,4 +1,8 @@
+# Install Docker
 
+```Bash
+sudo apt -y install docker.io
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -155,4 +159,87 @@ docker stats
 
 ```Bash
 --restart on-failure[:<RESTART_LIMIT>]
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Docker Networking
+
+## Default Bridge Network
+
+tmp
+```Bash
+sudo docker run -itd --rm [-p <host_port>:<container_port>] --name <container_name> <docker_image>[:<version>]
+```
+
+## User-Defined Bridge Network
+
+tmp
+```Bash
+sudo docker network create <network_name>
+
+sudo docker run -itd --rm [-p <host_port>:<container_port>] --network <network_name> --name <container_name> <docker_image>[:<version>]
+```
+
+## Host Network
+
+tmp
+```Bash
+sudo docker run -itd --rm --network host --name <container_name> <docker_image>[:<version>]
+```
+
+## MACVLAN Bridge Network
+
+tmp
+```Bash
+sudo docker network create {-d|--driver} macvlan --subnet <home_network_subnet> --gateway <home_network_gateway> [--ip-range <ip_range>] -o parent=<host_network_interface> <network_name>
+```
+
+```Bash
+sudo docker run -itd --rm --network <network_name> --ip <ip_address> --name <container_name> <docker_image>[:<version>]
+
+sudo ip link set <host_network_interface> promisc on
+```
+
+## MACVLAN 802.1q Network
+
+tmp
+```Bash
+sudo docker network create {-d|--driver} macvlan --subnet <home_network_subnet> --gateway <home_network_gateway> [--ip-range <ip_range>] -o parent=<host_network_interface>.<subinterface> <network_name>
+
+sudo docker run -itd --rm --network <network_name> --ip <ip_address> --name <container_name> <docker_image>[:<version>]
+```
+
+## IPVLAN L2 Network
+
+tmp
+```Bash
+sudo docker network create {-d|--driver} ipvlan --subnet <home_network_subnet> --gateway <home_network_gateway> [--ip-range <ip_range>] -o parent=<host_network_interface>.<subinterface> <network_name>
+
+sudo docker run -itd -rm -network <network_name> --ip <ip_address> --name <container_name> <container_image>[:<image_version>]
+```
+
+## IPVLAN L3 Network
+
+tmp
+```Bash
+sudo docker network create {-d|--driver} ipvlan --subnet <home_network_subnet> -o parent=<host_network_interface> -o ipvlan_mode=l3 --subnet=<l3_network_subnet> <network_name>
+
+sudo docker run -itd --rm --network <network_name> --ip <ip_address> --name <container_name> <container_image>[:<image_version>]
+```
+
+tmp
+```Bash
+sudo docker stop <container_name>
+
+sudo docker exec -it <container_name> {bash|sh}
+```
+
+tmp
+```Bash
+sudo docker network ls
+
+sudo docker inspect <network_name>
+
+bridge link
 ```
