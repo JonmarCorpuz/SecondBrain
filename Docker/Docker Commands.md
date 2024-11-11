@@ -148,3 +148,11 @@ tmp
 ```Bash
 docker stats
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Restart Policies
+
+```Bash
+--restart on-failure[:<RESTART_LIMIT>]
+```
