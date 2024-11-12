@@ -1,0 +1,3 @@
+# Live Migration Overview
+
+A [live migration](https://cloud.google.com/compute/docs/instances/live-migration-process#:~:text=Live%20migration%20lets%20Google%20Cloud%20perform%20maintenance%20without%20interrupting%20a%20workload%2C%20rebooting%20an%20instance%2C%20or%20modifying%20any%20of%20the%20instance%27s%20properties%2C%20such%20as%20IP%20addresses%2C%20metadata%2C%20block%20storage%20data%2C%20application%20state%2C%20or%20network%20settings.) lets Google Cloud perform maintenance without interrupting a workload, rebooting an instance, or modifying any of the instance's properties (*IP addresses*, *metadata*, *block storage data*, *application state*, *network settings*, *etc.*)
