@@ -13,12 +13,13 @@ The [Kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-ref
 
 * Validates and configures data for the api objects
 * Allows us to communicate with the Master Node through the kubectl command-line tool
+* The main entry point for all administrative tasks (*kubectl*, dashboard*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Kube-scheduler
 
-The [Kubernetes scheduler](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/) is a control plane process which assigns Pods to Nodes
+The [Kubernetes scheduler](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/) is a control plane process which assigns Pods to the most suitable Nodes
 
 * Determines which Nodes are valid placements for each Pod in the scheduling queue according to constraints and available resources
 * Ensures that the Node has enough resources to run the Pod
@@ -29,6 +30,9 @@ The [Kubernetes scheduler](https://kubernetes.io/docs/reference/command-line-too
 # Kube-controller-manager
 
 The [Kubernetes control manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/) is a daemon that embeds the core control loops shipped with Kubernetes through various [controllers](https://kubernetes.io/docs/concepts/architecture/cloud-controller/#functions-of-the-ccm)
+
+* Run controller processes that handle routine tasks (*ReplicaSet controller*, *Node controller*, *Job controller*, *etc.*)
+* A [controller](link.com) is a ??? 
 
 ## Node Controller
 
@@ -48,7 +52,8 @@ The [Service Controller](https://kubernetes.io/docs/concepts/architecture/cloud-
 
 The [etcd](https://etcd.io/docs/) is a distributed key-value store database that stores all the cluster's data and its current state
 
-* A leader-based distributed system that ensures that the leader periodically send heartbeats on time to all foloowes to keep the cluster stable
+* Acts as the single source of truth for the cluster's state
+* A leader-based distributed system that ensures that the leader periodically send heartbeats on time to all followes to keep the cluster stable
 * Aims to ensure that no resource starvation occurs (Performance and stability of the cluster is sensitive to network and disk I/O, so any resource starvation can lead to heartbeat timeout, causing instability of the cluster and an unstable etcd indicates that no leader is elected. Under such circumstances, a cluster cannot make any changes to its current state, which implies no new pods can be scheduled)
 * If your Kubernetes cluster uses etcd as its backing store, make sure you have a back up plan for the data
 * [etcd requirements](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#resource-requirements-for-etcd)
