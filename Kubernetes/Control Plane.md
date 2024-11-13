@@ -1,4 +1,4 @@
-# Master Node (Control Plane) Overview
+# Master Node Overview
 
 The Master Node, also known as the Control Plane, is the node that manages the Kubernetes cluster
 
