@@ -263,3 +263,12 @@ sudo docker inspect <network_name>
 
 bridge link
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Docker Compose
+
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Docker Compose Plugin
