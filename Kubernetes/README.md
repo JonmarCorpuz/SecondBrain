@@ -3,8 +3,11 @@
 Kubernetes is an open-source container orchestration platform 
 
 * Automates the deployment, scaling, and management of clusters and the containers within
-* Makes an application highly available and scalable by allowing workloads to be scaled up or down to match demand
+* Makes an application highly available by ensuring that its nodes are healthy
+* Makes an application scalable by allowing workloads to be scaled horizontally and vertically to match demand
 * Highly portable, meaning that it can be run anywhere with nearly any type of infrastructure
+* Allows you to simply declare the final, desired state of your workload and then Kubernetes will figure out how to get there
+* Monitors the state of the Kubernetes cluster and the desired final state that was declared in the configuration file
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
