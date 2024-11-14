@@ -18,6 +18,10 @@ A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smalle
 * Its contents are always co-located and co-scheduled, and run in a shared context
 * Containers running in the same Pod can communicate with each other via localhost, as well as read and write to the same volumes
 
+### Pod Lifecycle
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20171455.png)
+
 ## Containers
 
 * Health probles can be configured in each container so that they're restarted or stop receiving traffic if considered unhealthy
