@@ -11,6 +11,27 @@
 
 ## Pods
 
+A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smallest%20deployable%20units%20of%20computing%20that%20you%20can%20create%20and%20manage%20in%20Kubernetes) is the smallest deployable units of computing that you can create and manage in Kubernetes
+
+* Contains a group of one or more containers and a specification for how to run the containers
+* Allows containers to share storage and network resources
+* Its contents are always co-located and co-scheduled, and run in a shared context
+* Containers running in the same Pod can communicate with each other via localhost, as well as read and write to the same volumes
+
+## Containers
+
+### Init Containers
+
+[Init containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/#:~:text=specialized%20containers%20that,Pod) are specialized containers that run before app containers in a pod, that run during Pod startup
+
+### App Containters
+
+### Ephemeral Containers
+
+An [ephemeral container](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/#:~:text=a%20special%20type,accomplish%20user%2Dinitiated) is a special type of container that runs temporarily in an existing Pod to accomplish user-initiated actions (*Troubleshooting*, *etc.*)
+
+* Used to inspect services rather than to build applications
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Kubelet
