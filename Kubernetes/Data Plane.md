@@ -20,6 +20,8 @@ A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smalle
 
 ## Containers
 
+* Health probles can be configured in each container so that they're restarted or stop receiving traffic if considered unhealthy
+
 ### Init Containers
 
 [Init containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/#:~:text=specialized%20containers%20that,Pod) are specialized containers that run before app containers in a pod, that run during Pod startup
