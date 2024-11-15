@@ -71,6 +71,13 @@ An [ephemeral container](https://kubernetes.io/docs/concepts/workloads/pods/ephe
 
 ## ReplicaSets
 
+A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#:~:text=purpose%20is%20to-,maintain%20a%20stable%20set%20of%20replica%20Pods%20running%20at%20any%20given%20time,-.%20Usually%2C%20you%20define) maintains a stable set of replica Pods running at any given time
+
+* Fullfills its purpose by creating and deleting Pods as needed to reach the desired number
+* When a ReplicaSet needs to create new Pods, it uses its Pod template
+* Linked to its Pods via the their [metadata.ownerReferences](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#:~:text=purpose%20is%20to-,maintain%20a%20stable%20set%20of%20replica%20Pods%20running%20at%20any%20given%20time,-.%20Usually%2C%20you%20define) field, which specifies what resource the current object is owned by
+* All Pods acquired by a ReplicaSet have their owning ReplicaSet's identifying information within their ownerReferences field (It's through this link that the ReplicaSet knows of the state of the Pods it is maintaining and plans accordingly)
+
 ## StatefulSets
 
 ## Deployments
