@@ -20,7 +20,7 @@ A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smalle
 
 ### Pod Lifecycle
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20171455.png)
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20181849.png)
 
 | Pod Lifecycle | Description |
 | --- | --- |
