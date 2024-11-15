@@ -64,6 +64,52 @@ kubectl port-forward <resource_type>/<resource_name> <target_port>/<exposed_port
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Object Management
+
+## Imperative Management With kubectl
+
+```Bash
+kubectl create <RESOURCE> [CONFIGURATION]
+```
+
+```Bash
+kubectl delete <RESOURCE>
+```
+
+```Bash
+kubectl expose <RESOURCE> <NAME>
+```
+
+## Imperative Management With Configuration Files
+
+```Bash
+kubectl apply -f <FILENAME>
+```
+
+```Bash
+kubectl diff -f <FILENAME>
+```
+
+```Bash
+kubectl delete -f <FILENAME>
+```
+
+## Declarative Management With Configuration Files
+
+```Bash
+
+```
+
+```Bash
+
+```
+
+```Bash
+
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Troubleshooting
 
 ```Bash
