@@ -74,9 +74,12 @@ An [ephemeral container](https://kubernetes.io/docs/concepts/workloads/pods/ephe
 A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#:~:text=purpose%20is%20to-,maintain%20a%20stable%20set%20of%20replica%20Pods%20running%20at%20any%20given%20time,-.%20Usually%2C%20you%20define) maintains a stable set of replica Pods running at any given time
 
 * Fullfills its purpose by creating and deleting Pods as needed to reach the desired number
-* When a ReplicaSet needs to create new Pods, it uses its Pod template
+* When a ReplicaSet needs to create new Pods, it uses its Pod template within the [spec](link.com) field 
 * Linked to its Pods via the their [metadata.ownerReferences](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#:~:text=purpose%20is%20to-,maintain%20a%20stable%20set%20of%20replica%20Pods%20running%20at%20any%20given%20time,-.%20Usually%2C%20you%20define) field, which specifies what resource the current object is owned by
 * All Pods acquired by a ReplicaSet have their owning ReplicaSet's identifying information within their ownerReferences field (It's through this link that the ReplicaSet knows of the state of the Pods it is maintaining and plans accordingly)
+* Identifies new Pods to acquire by using its [selector](link.com) (If there's a Pod that has no OwnerReference or the OwnerReference is not a [Controller](https://kubernetes.io/docs/concepts/architecture/controller/#:~:text=a%20control%20loop%20is%20a%20non%2Dterminating%20loop%20that%20regulates%20the%20state%20of%20a%20system) and it matches a ReplicaSet's selector, it'll be immediately acquire by said ReplicaSet)
+* Used when you require custom update orchestration or don't require updates at all
+* Ensures high availability and fault tolerance by replacing exited or unhealthy Pods 
 
 ## StatefulSets
 
