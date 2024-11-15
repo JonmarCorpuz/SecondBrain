@@ -30,6 +30,8 @@ A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smalle
 | Failed | All containers in the Pod have terminated, and at least one container has terminated in failure (non-zero exit code) |
 | Unknown | The Pod's status couldn't be obtained, either due to a communication error with the Node running the Pod or due to some other issue |
 
+How Pods handle container errors ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20192429.png)
+
 ## Containers
 
 * Health probles can be configured in each container so that they're restarted or stop receiving traffic if considered unhealthy
