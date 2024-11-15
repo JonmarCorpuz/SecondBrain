@@ -22,6 +22,14 @@ A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smalle
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20171455.png)
 
+| Pod Lifecycle | Description |
+| --- | --- |
+| Pending | One or more containers are not ready to run |
+| Running | All containers have been created and at least one is still running, or in the process of starting or restarting |
+| Succeeded | All containers in the Pod have terminated successfully and will not be restart |
+| Failed | All containers in the Pod have terminated, and at least one container has terminated in failure (non-zero exit code) |
+| Unknown | The Pod's status couldn't be obtained, either due to a communication error with the Node running the Pod or due to some other issue |
+
 ## Containers
 
 * Health probles can be configured in each container so that they're restarted or stop receiving traffic if considered unhealthy
