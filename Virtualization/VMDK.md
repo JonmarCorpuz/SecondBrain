@@ -6,6 +6,7 @@ The [Virtual Machine Disk File](https://www.diskinternals.com/vmfs-recovery/vmdk
 * Clones physical hard drives for virtual environments and acts as an "offsite" backup for the VMs hosted in the virtual environment
 * Can get corrupted, damaged, or missing due to several possible reasons (*Human errors*, *Virus attacks*, *etc.*)
 * Represented with the .vmdk extension and represents an independent VM
+* If any of its subcomponents
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -17,9 +18,15 @@ The [text descriptor file](https://www.diskinternals.com/vmfs-recovery/vmdk-file
 
 * If this file is not found, then the VMDK is considered damaged and you'll need to recover the descriptor file for the VMDK file to open the connected VM
 
-## 
+## Extent Data File
 
-# *-flat.vmdk
+## RAW Extent Data File
+
+## VMDK Sparse Extent Data File
+
+## COWD Sparse Extent Data File
+
+## *-flat.vmdk
 
 * The virtual equivalent of a physical hard drive
 * Where raw data is written to
