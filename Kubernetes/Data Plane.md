@@ -30,7 +30,17 @@ A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/#:~:text=the%20smalle
 | Failed | All containers in the Pod have terminated, and at least one container has terminated in failure (non-zero exit code) |
 | Unknown | The Pod's status couldn't be obtained, either due to a communication error with the Node running the Pod or due to some other issue |
 
-How Pods handle container errors ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20192429.png)
+### Container Error Lifecycle
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/Screenshot%202024-11-14%20192429.png)
+
+* The `CrashLoopBackOff` helps prevent quick successions of container recreation and crashing recreation by increasing the wait time every time the same container restarts, also known as a wait for exponential backoff
+
+| Pod Restart Policy | Description |
+| --- | --- |
+| Always | The container will always be restarted when exits, no matter the reason |
+| OnFailure | The container will always be restarted when it exits with a non-zero exit code |
+| Never | The container won't restart when it exits |
 
 ## Containers
 
