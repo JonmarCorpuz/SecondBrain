@@ -79,6 +79,12 @@ An [ephemeral container](https://kubernetes.io/docs/concepts/workloads/pods/ephe
 
 * Optional
 
+| Object Management Method | Description |
+| --- | --- |
+| Imperative management with kubectl | |
+| Imperative management with configuration files | |
+| Declarative management with configuration files | |
+
 ## ReplicaSets
 
 A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#:~:text=purpose%20is%20to-,maintain%20a%20stable%20set%20of%20replica%20Pods%20running%20at%20any%20given%20time,-.%20Usually%2C%20you%20define) maintains a stable set of replica Pods running at any given time
