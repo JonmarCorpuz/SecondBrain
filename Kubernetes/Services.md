@@ -11,7 +11,7 @@ The [Service API](https://kubernetes.io/docs/concepts/services-networking/servic
 
 # EndpointSlices
 
-The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently
+The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends and allows the cluster to update its list of healthy backends efficiently by providing a way to track network endpoints within a Kubernetes cluster
 
 * Contains references to a set of network endpoints
 * Offer a more scalable and extensible alternative to [Endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints)
@@ -20,8 +20,30 @@ The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/
 * The name of an EndpointSlice object must be a valid DNS subdomain name
 * By default, the control plane creates and manages EndpointSlices to have no more than 100 endpoints each
 * Can act as the source of truth for kube-proxy when it comes to how to route internal traffic
+
+## EndpointSlice Management
+
 * Managed by the control plane's endpoint slice controller by creating and managing EndpointSlice objects
 * Kubernetes defines the `endpointslice.kubernetes.io/managed-by` label to indicate the entity managing an EndpointSlice, which ensures that multiple entities can manage EndpointSlices without interfering with each other (The endpoint slice controller sets `endpointslice-controller.k8s.io` as the value for this label on all EndpointSlices it manages)
+
+## EndpointSlice Ownership
+
+* EndpointSlices are owned by the Service that the endpoing slice object tracks endpoints for (This ownership is indicated by an owner reference on each EndpointSlice and a `kubernetes.io/service-name` label that enables simple lookups of all EndpointSlices belonging to a Service)
+
+## EndpointSlice Mirroring
+
+* The K8 cluster's control plane mirrors most Endpoints resources to corresponding EndpointSlices to ensure that applications don't need to concurrently write to both Endpoints and EndpointSlice resources
+* The control plane mirrors Endpoints resources unless it has a `endpointslice.kubernetes.io/skip-mirror` label set to true, a `control-plane.alpha.kubernetes.io/leader` annotation, the corresponding Service resource doesn't exist, or the corresponding Service resource has a non-nil selector
+* A maximum of 1000 addresses per subset will be mirrored to EndpointSlices since individual Endpoints resources may translate into multiple EndpointSlices if an Endpoints resource has multiple subsets or includes endpoints with multiple IP families
+
+## EndpointSlice Distribution
+
+* Each EndpointSlice has a set of ports that applies to all endpoints within the resource (When named ports are used for a Service, Pods may end up with different target port numbers for the same named port, requiring different EndpointSlices, which is similar to the logic behind how subsets are grouped with Endpoints)
+* The control plane tries to fill EndpointSlices as full as possible (But doesn't actively rebalance them), by following the following logic:
+
+    1. Iterate through existing EndpointSlices to remove endpoints that are no longer desired and update matching endpoints that have changed
+    2. Iterate through EndpointSlices that have been modified in the first step and fill them up with any new endpoints as needed
+    3. If there's still new endpoints left to add, try to fit them into a previously unchanged slice and/or create new ones in order to prioritize limiting EndpointSlice updates over a perfectly full distribution of EndpointSlices (A single EndpointSlice creation is preferable to multiple EndpointSlice updates
 
 ## EndpointSlice Conditions
 
@@ -50,7 +72,7 @@ The [Terminating](https://kubernetes.io/docs/concepts/services-networking/endpoi
 
 # Endpoints
 
-An [endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) (The resource kind is plural) defines a list of network endpoints that are typically referenced by a Service to define which Pods the traffic can be sent to
+An [Endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) (The resource kind is plural) defines a list of network endpoints that are typically referenced by a Service to define which Pods the traffic can be sent to
 
 * Each endpoint within an EndpointSlice can contain relevant topology information (*Location of the endpoint*, *Information about the corresponding Node and zone*, *etc.*)
 * The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the recommended replacement for Endpoints
