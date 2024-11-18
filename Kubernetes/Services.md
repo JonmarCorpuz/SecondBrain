@@ -12,7 +12,7 @@ The [Service API](https://kubernetes.io/docs/concepts/services-networking/servic
 The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently
 
 * Contains references to a set of network endpoints
-* Offer a more scalable and extensible alternative to [Endpoints](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.)
+* Offer a more scalable and extensible alternative to [Endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints)
 * The control plane automatically creates EndpointSlices for any Kubernetes Service that has a [selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors) specified
 * Group network endpoints together by unique combination of protocol, port number, and Service name
 * The name of an EndpointSlice object must be a valid DNS subdomain name
@@ -32,8 +32,19 @@ The [Ready](https://kubernetes.io/docs/concepts/services-networking/endpoint-sli
 
 ### Serving
 
-The [Serving](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#serving) condition is similar 
+The [Serving](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#serving) condition is similar to the Ready condition but allows users to track readiness for terminating Pods independent of existing semantics for ready
+
+* Users should use this condition if they care about Pod readiness while the Pod is also terminating
 
 ### Terminating
 
-The
+The [Terminating](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#terminating) condition indicates whether an endpoint is terminating
+
+* For Pods, this is any Pod that has a deletion timestamp set
+
+## Endpoints
+
+An [endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) (The resource kind is plural) defines a list of network endpoints that are typically referenced by a Service to define which Pods the traffic can be sent to
+
+* Each endpoint within an EndpointSlice can contain relevant topology information (*Location of the endpoint*, *Information about the corresponding Node and zone*, *etc.*)
+* The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the recommended replacement for Endpoints
