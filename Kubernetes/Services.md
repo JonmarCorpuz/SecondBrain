@@ -11,8 +11,29 @@ The [Service API](https://kubernetes.io/docs/concepts/services-networking/servic
 
 The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently
 
-* Provide a way to track network endpoints within a Kubernetes cluster
+* Contains references to a set of network endpoints
 * Offer a more scalable and extensible alternative to [Endpoints](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.)
-* Created and managed by the control plane to have no more than 100 endpoints each
+* The control plane automatically creates EndpointSlices for any Kubernetes Service that has a [selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors) specified
+* Group network endpoints together by unique combination of protocol, port number, and Service name
+* The name of an EndpointSlice object must be a valid DNS subdomain name
+* By default, the control plane creates and manages EndpointSlices to have no more than 100 endpoints each
+* Can act as the source of truth for kube-proxy when it comes to how to route internal traffic
 
 ## EndpointSlice Conditions
+
+* The EndpointSlice API stores conditions about endpoints that may be useful for consumers
+
+### Ready
+
+The [Ready](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#ready) condition maps to a Pod's Ready condition
+
+* A running Pod with the Ready condition set to True should have this EndpointSlice condition also set to true
+* For compatibility reasons, ready is never true when a Pod is terminating (The only exception to this rule is for Services with `spec.publicNotReadyAddresses` set to true since endpoints for these Services will always have the ready condition set to true)
+
+### Serving
+
+The [Serving](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#serving) condition is similar 
+
+### Terminating
+
+The
