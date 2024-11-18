@@ -20,6 +20,8 @@ The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/
 * The name of an EndpointSlice object must be a valid DNS subdomain name
 * By default, the control plane creates and manages EndpointSlices to have no more than 100 endpoints each
 * Can act as the source of truth for kube-proxy when it comes to how to route internal traffic
+* Managed by the control plane's endpoint slice controller by creating and managing EndpointSlice objects
+* Kubernetes defines the `endpointslice.kubernetes.io/managed-by` label to indicate the entity managing an EndpointSlice, which ensures that multiple entities can manage EndpointSlices without interfering with each other (The endpoint slice controller sets `endpointslice-controller.k8s.io` as the value for this label on all EndpointSlices it manages)
 
 ## EndpointSlice Conditions
 
