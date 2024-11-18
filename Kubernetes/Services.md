@@ -7,6 +7,8 @@ The [Service API](https://kubernetes.io/docs/concepts/services-networking/servic
 * Service abstraction enables you to decouple frontends from backends 
 * The set of Pods targeted by a Service is usually determined by a [selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#:~:text=Via%20a%20label%20selector%2C%20the%20client/user%20can%20identify%20a%20set%20of%20objects.%20The%20label%20selector%20is%20the%20core%20grouping%20primitive%20in%20Kubernetes.) that you define
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # EndpointSlices
 
 The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently
@@ -42,7 +44,9 @@ The [Terminating](https://kubernetes.io/docs/concepts/services-networking/endpoi
 
 * For Pods, this is any Pod that has a deletion timestamp set
 
-## Endpoints
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Endpoints
 
 An [endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) (The resource kind is plural) defines a list of network endpoints that are typically referenced by a Service to define which Pods the traffic can be sent to
 
