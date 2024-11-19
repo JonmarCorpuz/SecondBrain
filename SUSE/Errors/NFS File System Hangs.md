@@ -6,14 +6,14 @@ An [NFS mount appears to be hung or stalled indefinitely](https://www.suse.com/s
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Connection Observations
+# Error Observations
+
+## Connection Observations
 
 * Evidence of the connection attempt may be seen on the NFS client machine with the `netstat -nt | grep :2049` and `ss -nt | grep :2049` commands
 * If one or more connection show the status "SYN_SENT" for an extended period of time, then something is blocking these attempts (Normally, a connection will only be in this status for a fraction of a second, because the other side of the connection will reply and this status will change
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Log Observations
+## Log Observations
 
 * There might also be occurences of `nfs: server <NFS_SERVER> not responding` messages in the NFS client machine's /var/log/messages
 * However, packets on other connections (both new and old) between the same client machine and server machine may be having no problems (This is what sets this scenario apart from most other cases of "nfs: server not responding":  There is not a global problem effecting all communication between the two devices)
@@ -28,3 +28,8 @@ An [NFS mount appears to be hung or stalled indefinitely](https://www.suse.com/s
 
 # Potential Causes
 
+## Connection Reuse Being Blocked
+
+* Something is blocking the NFS client's individual communication attempts with the NFS Server, which often comes from a smart router, frontend device, firewall, or some other kind of network security device or policy (The connection being blocked is usually a repeat of a previous connection, also known as "connection reuse", which the NFS client was using before it ran into some temporary trouble)
+* Addtionally, an NFS mount will initially use a somewhat randomly chosen connection definition which, for any number of reasons, n may eventually be interrupted and when the NFS client code attempts to re-establish the connection, the same connection definition will be used (Connection reuse), which be blocked since some devices have a **smart connection reuse** feature, which can detect connection reuse and may treat it with suspicion if it happens within a short time frame
+* Furthermore, NFS traditionally needs precisely the same connection definition it was using before a problem came up, because of the way NFS recovery works in NFSv2, NFSv3, and NFSv4
