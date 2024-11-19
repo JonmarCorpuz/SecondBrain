@@ -33,9 +33,11 @@ An [NFS mount appears to be hung or stalled indefinitely](https://www.suse.com/s
 Something is blocking the NFS client's individual communication attempts with the NFS Server, which often comes from a smart router, frontend device, firewall, or some other kind of network security device or policy 
 * The connection being blocked is usually a repeat of a previous connection, also known as "connection reuse", which the NFS client was using before it ran into some temporary trouble
 
+---
 
 Addtionally, an NFS mount will initially use a somewhat randomly chosen connection definition which, for any number of reasons, may eventually be interrupted and when the NFS client code attempts to re-establish the connection, the same connection definition will be used (Connection reuse)
 * Some devices have a **smart connection reuse** feature, which can detect connection reuse and may treat it with suspicion if it happens within a short time frame
 
+---
 
 Furthermore, NFS traditionally needs precisely the same connection definition it was using before a problem came up, because of the way NFS recovery works in NFSv2, NFSv3, and NFSv4
