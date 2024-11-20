@@ -9,6 +9,18 @@ The [Service API](https://kubernetes.io/docs/concepts/services-networking/servic
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Service Types
+
+## ClusterIP
+
+## NodePort
+
+## LoadBalancer
+
+## ExternalName
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # EndpointSlices
 
 The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends and allows the cluster to update its list of healthy backends efficiently by providing a way to track network endpoints within a Kubernetes cluster
