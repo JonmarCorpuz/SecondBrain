@@ -1,6 +1,6 @@
 # Services Overview
 
-The [Service API](https://kubernetes.io/docs/concepts/services-networking/service/#:~:text=Expose%20an%20application%20running%20in%20your%20cluster%20behind%20a%20single%20outward%2Dfacing%20endpoint%2C%20even%20when%20the%20workload%20is%20split%20across%20multiple%20backends.) exposes an application running in your cluster behind a single outward-facing endpoint, even when the workload is split across multiple backends
+The [Service API](https://kubernetes.io/docs/concepts/services-networking/service/#:~:text=Expose%20an%20application%20running%20in%20your%20cluster%20behind%20a%20single%20outward%2Dfacing%20endpoint%2C%20even%20when%20the%20workload%20is%20split%20across%20multiple%20backends.) exposes an application running in your cluster behind a single outward-facing endpoint, even when the workload is split across multiple backends, through a stable IP or internal DNS name
 
 * Provides built-in load balancing across Pods
 * Allows clients to interact with applications that are running within Pods in your cluster
