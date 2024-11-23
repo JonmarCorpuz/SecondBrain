@@ -55,3 +55,43 @@ volumeMounts:
   - name: <VOLUME_NAME>
     path: <PATH_TO_VOLUME>
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Persistent Volume Claims
+
+A `PersistentVolumeClaim` is what actually reserves a Persistent Volume when using static provisioning or creates and reserves a Persistent Volume when using dynamic provisioning
+
+* Claims are bound to a single `PersistentVolume`
+* A `PersistentVolume` can have at most one claim bound to it (one-to-one relationship, meaning that if a Persistent Volume is bound to a claim then it cannot be bound to any other claim)
+* You can set specific criteria in a claim, so that only Persistent Volumes that match those criterias are considered for binds
+
+## Reclamation Policies
+
+* Reclamation policies can be either `Retain`, `Delete`, or `Recycle` (Although Recycle is deprecated)
+
+### Retain
+
+### Delete
+
+### Recycle
+
+## Access Modes
+
+* Persistent Volume access mode can be either `ReadWriteOnce`, `ReadOnlyMany`, `ReadWriteMany`, `ReadWriteOncePod`
+
+### ReadWriteOnce
+
+The Persistent Volume can be mounted as read-write by a single Node, which can then be used by any number of Pods within that Node
+
+### ReadOnlyMany
+
+The Persistent Volume can be mounted as read-only by many Nodes, which can then be used by any number of Pods within those Nodes
+
+### ReadWriteMany
+
+The Persistent Volume can be mounted as read-write by many Nodes, which can then be used by any number of Pods within those Nodes
+
+### ReadWriteOncePod
+
+The Persistent Volume can be mounted  as read-write by a single Pod, which can then be used by any number of Pods within that Node
