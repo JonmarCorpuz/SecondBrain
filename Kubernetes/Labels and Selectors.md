@@ -41,4 +41,24 @@ The labelSelector API is used by users to select a set of objects
 
 ## Equality-Based Requirement
 
+Equality-based selectors match objects that have a specific label key-value pair by using either `=`, `==`, or `!=` for inclusion or exclusion
+
+```YAML
+selector:
+  matchLabels:
+    <KEY>: <VALUE>
+```
+
 ## Set-Based Requirement
+
+Set-based selectors match objects based on whether a label's key is part of a set of values by using operators like `In`, `NotIn`, `Exists`, and `DoesNotExist`
+
+```YAML
+selector:
+  matchExpressions:
+    - <KEY>: <LABEL>
+      operator: {In|NotIn|Exists|DoesNotExist}
+      values: [<VALUE>]
+```
+
+* Supported only be certain Kubernetes objects (*Jobs*, *Deployments*, *ReplicaSets*, *etc.*)
