@@ -2,10 +2,13 @@
 
 [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) is a naming mechanism that provides groups of resources within the same single physical cluster to be logically isolated from one another
 
-* Provides cluster resources to be divided between multiple users, teams, applications, and environments
+* Provides cluster resources to be divided between multiple tenants and environments
 * Helps organizations organize workloads within a large Kubernetes cluster
 * Names of resources need to be unique within a namespace, but not across namespaces
 * Namespace-based scoping is applicable only for namespaces objects and not for cluster-wide objects
+* Can prevent a single tenant from monopolizing cluster resources by applying resource quotas for different namespaces
+* Can be used when defining access control policies
+* Service communication requires the FQDM of the service
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
