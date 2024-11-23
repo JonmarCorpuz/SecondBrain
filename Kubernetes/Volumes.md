@@ -48,13 +48,7 @@ A secret volume injects sensitive data into Pods, without having to hard-code th
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Mounting Volumes
-
-```YAML
-volumeMounts:
-  - name: <VOLUME_NAME>
-    path: <PATH_TO_VOLUME>
-```
+## Dynamic Provisioning
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -95,3 +89,17 @@ The Persistent Volume can be mounted as read-write by many Nodes, which can then
 ### ReadWriteOncePod
 
 The Persistent Volume can be mounted  as read-write by a single Pod, which can then be used by any number of Pods within that Node
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Volume Provisioning Types
+
+## Static Provisioning
+
+* Works on a best-effort match-based on access mode and size requests
+* Might not be fulfilled depending on what's available
+
+## Dynamic Provisioning
+
+* Provisions storage dynamically when PersistentVolumeClaims are created
+* If the backend supports what's requested, it'll always be fulfilled
