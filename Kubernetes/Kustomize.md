@@ -11,8 +11,14 @@
 
 ## Base
 
-A base is a set of common YAML configurations that are shared across environments
+A base is a set of common YAML Kubernetes configurations that are shared across environments
+
+* Reusable
+* Provide the foundation for your different environment configurations
 
 ## Overlay
 
-* Applies environment-specific customizations on top of a base
+An Overlay is a set of environment-specific changes that are layered on top of the base
+
+* Through overlays, environments can apply their own customizations (*Change replica counts*, *Change image tags*, *Enable/disable certain features*, *etc.*)
+* When building the final configuration, Kustomize merges the overlay on top of the base, leaving the base intact while still being able to generate a customized configuration for the specific environment
