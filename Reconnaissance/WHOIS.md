@@ -17,6 +17,12 @@ A reverse WHOIS search queries a database by using information (*Organization na
 
 # WHOIS Queries
 
+tmp
 ```Bash
 whois <IP_ADDRESS>
+```
+
+IP-to-ASN translation
+```Bash
+whois -h whois.cymru.com <IP_ADDRESS>
 ```
