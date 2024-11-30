@@ -26,3 +26,4 @@ IP-to-ASN translation
 ```Bash
 whois -h whois.cymru.com <IP_ADDRESS>
 ```
+* `whois.cymru.com` is a database that translates IPs to ASNs
