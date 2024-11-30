@@ -10,3 +10,11 @@ Enumerate subdomains
 ```Bash
 gobuster dns -d <TARGET_DOMAIN> -w <WORDLIST>
 ```
+
+## Dir Mode
+
+* Used to find additional content on a specific domain or subdomain
+
+```Bash
+gobuster dir -u <TARGET_URL> -w <WORDLIST>
+```
