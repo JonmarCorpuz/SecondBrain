@@ -15,3 +15,8 @@ A reverse WHOIS search queries a database by using information (*Organization na
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# WHOIS Queries
+
+```Bash
+whois <IP_ADDRESS>
+```
