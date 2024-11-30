@@ -17,3 +17,10 @@
 ## Web Crawling
 
 Web crawling is a process used to identify all pages on a website
+
+* Allows users to potentially uncover many hidden endpoints in an application by identifying all the URLs embedded on the page and then visiting them
+
+## Third-Party Hosting 
+
+* Looking for a company's third party hosting footprint
+* Their resources on third-party hosting services can sometimes contain useful information (Ex: *Backups*, *Source code*, *Credentials*, *Logs*, *Hidden endpoints*, *etc.*)
