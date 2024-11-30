@@ -60,11 +60,18 @@ The `-` operator tells Google to exclude certain search results
 
 # Google Dorking Queries
 
-## Domains
+* Keep in mind that if you're sending a lot of search queries, Google will start requiring CAPTCHA challenges for visitors from your network before they can perform more searches
+
+## General Information
 
 Search for a target's subdomains
 ```Text
 site:*.example.com
+```
+
+Search for potential text files that contain passwords
+```Text
+site:example.com ext:txt password
 ```
 
 ## AWS
