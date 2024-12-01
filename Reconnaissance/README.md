@@ -41,3 +41,4 @@ Web crawling is a process used to identify all pages on a website
 Fingerprinting is identifying the software brands and versions that a machine or an application uses
 
 * Allows you to perform targeted attacks on the application 
+* You can fingerprint an application by interacting with it directly (Ex: *Nmap scan using the -sV option*, *Check the HTTP headers in a HTTP response*, *View HTML source code for an embed signature within the source code*, *Check for technology-specific file extensions, filenames, folders, and directories*, *etc.*)
