@@ -24,3 +24,14 @@ Web crawling is a process used to identify all pages on a website
 
 * Looking for a company's third party hosting footprint (*Google search*, *Github repositories*, *etc.*)
 * Their resources on third-party hosting services can sometimes contain useful information (Ex: *Backups*, *Source code*, *Credentials*, *Logs*, *Hidden endpoints*, *etc.*)
+
+## Github Recon
+
+* Search an organization's GitHub repositories for sensitive data that has been accidentally committed, or information that could lead to the discovery of a vulnerability
+* For each repository, pay attention to the Issues and Commit sections since they can be full of potential information leaks (*Unresolved bugs*, *Problematic code*, *Most recent code fixes*, *Most recent security patches*, *etc.*)
+* Recent code changes that haven't stood the test of time are more likely to contain bugs
+* Try to look for hardcoded secrets (*API keys*, *Encryption keys*, *Database passwords*, *etc.*)
+* Pay attention to code that deals with user input (*HTTP request parameters*, *HTTP headers*, *HTTP request paths*, *Database entries*, *File reads*, *File uploads*, *etc.*) because they provide potential entry points for attackers to exploit the application's vulnerabilities
+* Look for any configuration files that'll allow you to gather more information about your infrastructure
+* Search for old endpoints and S3 bucket URLs that you can attack
+* Pay attention to dependencies and imports being used and go through the versions list to see if they're outdated
