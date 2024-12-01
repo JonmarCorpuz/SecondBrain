@@ -22,5 +22,5 @@ Web crawling is a process used to identify all pages on a website
 
 ## Third-Party Hosting 
 
-* Looking for a company's third party hosting footprint
+* Looking for a company's third party hosting footprint (*Google search*, *Github repositories*, *etc.*)
 * Their resources on third-party hosting services can sometimes contain useful information (Ex: *Backups*, *Source code*, *Credentials*, *Logs*, *Hidden endpoints*, *etc.*)
