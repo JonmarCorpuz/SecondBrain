@@ -35,3 +35,9 @@ Web crawling is a process used to identify all pages on a website
 * Look for any configuration files that'll allow you to gather more information about your infrastructure
 * Search for old endpoints and S3 bucket URLs that you can attack
 * Pay attention to dependencies and imports being used and go through the versions list to see if they're outdated
+
+## Fingerprinting
+
+Fingerprinting is identifying the software brands and versions that a machine or an application uses
+
+* Allows you to perform targeted attacks on the application 
