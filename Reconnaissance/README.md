@@ -1,3 +1,9 @@
+# Reconnaissance Overview
+
+* Recon shouldn't be a one time activity (Organizations modify their system, technologies, and codebase constantly, so continuous recon will ensure that you always know what they attack surface looks like)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Reconnaissance Techniques
 
 ## Google Dorking
