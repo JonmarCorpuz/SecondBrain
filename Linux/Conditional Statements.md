@@ -41,3 +41,8 @@ Check whether a file is executable
 ```Bash
 if [ -x <FILE_PATH> ]
 ```
+
+Check whether the previous command executed successfully
+```Bash
+if [ "$?" -eq "0" ]
+```
