@@ -1,3 +1,5 @@
+# XSS Overview
+
 Cross-Site Scripting is an injection attack where malicious code (*JavaScript*, *HTML*, *etc.*) gets injected into a web application with the intention of being executed by other users
 
 * If an application fails to distinguish between user input and the legitimate code that makes up a web page, attackers can inject their own code into pages viewed by others (*Comment sections*, *etc.*)
@@ -60,3 +62,15 @@ Blind XSS is when a threat actor injects malicious scripts into a web applicatio
 ## Self-XSS
 
 Self-XSS is where an attack tricks vicitms to input a malicious payload themselves 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Preventing XSS
+
+* Robust input validation
+* Contextual output escaping (Escaping ensures that browsers don't misinterpret characters as code to execute)
+* Contextual output encoding
+* Applications should never insert user-submitted data directly into an HTML document
+* Applications should avoid code that rewrites the HTML document based on user input
+* Applications should implement client-side input validation before it's inserted into the DOM
+* You can instruct the browser to execute only scripts from a list of source
