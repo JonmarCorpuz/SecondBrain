@@ -1,3 +1,6 @@
+# Instance Group Overview
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-09-29%20122816.png)
 
 # Managed Instance Group
 
