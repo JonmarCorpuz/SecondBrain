@@ -1,4 +1,7 @@
-Cross-Site Scripting is an injection attack where malicious JavaScript gets injected into a web application with the intention of being executed by other users
+Cross-Site Scripting is an injection attack where malicious code (*JavaScript*, *HTML*, *etc.*) gets injected into a web application with the intention of being executed by other users
+
+* If an application fails to distinguish between user input and the legitimate code that makes up a web page, attackers can inject their own code into pages viewed by others (*Comment sections*, *etc.*)
+* Attackers can have the victim's browser execute malicious script or code to do certain actions (*Steal cookies*, *Leak personal information*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -17,7 +20,11 @@ Reflected XSS occurs when an attacker injects malicious scripts into a web appli
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/8e3bffe500771c03366de569c3565058.png)
 
-* Relies on tricking a user into clicking a specially crafter link or submitting a malicious form, which then executes the malicious script in their browser
+* Relies on tricking a user into clicking a specially crafted link or submitting a malicious form, which then executes the malicious script in their browser
+* In this case, the application takes in user input, processes it server-side, and immediately returns it to the user
+* Often happens when the server relies on user input to construct pages that display search results or error messages (*Search bars*, *etc.*)
+* Enables attackers to execute code on the browsers of victims who click their malicious links
+* Reflected XSS payloads get sent to the server and returned to the user's browser within an HTTP response
 
 | Reflected XSS Method | Description |
 | --- | --- |
@@ -27,39 +34,29 @@ Reflected XSS occurs when an attacker injects malicious scripts into a web appli
 
 ## Stored XSS
 
-Stored XSS is when a malicious script that was injected by an attacker is permanently stored on the target web server (Ex: *Database*, *Message forum*, *Comment field*, *etc.*)
+Stored XSS is when a malicious script that was injected by an attacker is permanently stored on the target web server (Ex: *Database*, *Message forum*, *Comment section*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/cc2566d297f7328d91bc8552f902210e.png)
 
-* When other users view the affected content, the malicious script is served and executed in their browsers
-
-| Stored XSS Method | Description |
-| --- | --- |
-| Comments | |
-| User Profile Information | |
-| Website Listings | |
-| Forms | |
+* When other users view the affected content, the malicious script is served and executed in their browser
+* All the user has to do to become a victim is to view a page with the payload embedded (Whereas reflected and DOM XSS usually require the user to click a malicious link)
+* Everytime users access the stored information, the XSS executes in their browser
 
 ## DOM-Based XSS
 
-DOM-Based XSS occurs when the client-side script of a web application manipulates the Document Object Model in an unsafe way based on user input
+DOM-Based XSS occurs when the client-side script of a web application manipulates the Document Object Model in an unsafe way based on user input (The DOM is a model that represents a web page's structure and used to render a web page by defining the basic properties and behavior of each HTML element)
 
-* The JavaScript execution happends directly and entirely on the client-side
-* No new pages aren't loaded and no data is submitted to the back end
-* The JavaScript code acts on input or user interaction
-
-| DOM-Based XSS Method | Decription |
-| --- | --- |
-| Unsafe JavaScript Methods | (Ex: *eval()*) |
+* Targets the DOM directly by attacking the client's local copy of the web page instead of going through the server (Attackers can attack the DOM when a page takes user-supplied data and dynamically alters the DOM based on that input)
+* Doesn't require server involvement because it executes when user input modifies the source code of the page in the browser directly (The XSS script is never sent to the server, so the HTTP response from the server won't change)
+* User input never leaves the user's browser
+* The application takes in user input, processes it on the victim's browser, and then returns it to the user (The XSS payload is injected onto a page because of client-side code rendering user input in an insecure manner)
 
 ## Blind XSS
 
 Blind XSS is when a threat actor injects malicious scripts into a web application without immediately seeing the results
 
-* Useful when the injected script is stored and later executed in a different context or viewed by a subject that has access to a part of the application that the attacker can't directly see
-* Similar to a Stored XSS
+* Useful when the injected script is stored and later executed in a different context or viewed by a subject that has access to a part of the application that the attacker can't directly see  (Ex: *An attacker can submit a message with JavaScript code and have that code executed by any admin who views that message*)
 
-| Stored XSS Method | Decription |
-| --- | --- |
+## Self-XSS
 
-
+Self-XSS is where an attack tricks vicitms to input a malicious payload themselves 
