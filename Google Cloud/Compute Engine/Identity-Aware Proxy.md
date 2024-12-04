@@ -10,8 +10,23 @@
 
 ## Compute Engine
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/More%20Assets/gfonovjvjjsdfdkfndsofkndafklnadsfnlkafndsaf.png)
+
 ## GKE
 
 ## Cloud Run
 
 ## App Engine
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IAP Processes 
+
+## Authentication
+
+* If IAP is enabled, information about the protected resource (*Project number*, *Request URL*, *Any IAP credentials in the request headers or cookies*, *etc.*) is sent to the IAP authentication server
+* IAP will then check the user's browser credentials (If none exist, the user is redirected to an OAuth 2.0 Google Account sign-in flow that stores a token in a browser cookie for future sign-ins)
+* If the request credentials are valied, the authentication server uses those credentials to get the user's identity (email address and user ID) and then uses it to check the user's IAM role and check if the user is authorized to access the resource (If you're using GCE or GKE, users who can access the application-serving port of the VM can bypass IAP authentication)
+* GCE and GKE firewall rules can't protect against access from code running on the same VM as the IAP-secured application
+
+## Authorization
