@@ -65,18 +65,6 @@ Self-XSS is where an attack tricks vicitms to input a malicious payload themselv
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Preventing XSS
-
-* Robust input validation
-* Contextual output escaping (Escaping ensures that browsers don't misinterpret characters as code to execute)
-* Contextual output encoding
-* Applications should never insert user-submitted data directly into an HTML document
-* Applications should avoid code that rewrites the HTML document based on user input
-* Applications should implement client-side input validation before it's inserted into the DOM
-* You can instruct the browser to execute only scripts from a list of source
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
 # Finding a XSS Vulnerability
 
 1. Look for user input opportunities on the target application
@@ -138,3 +126,15 @@ tmp
 # XSS Polygot
 
 An XSS polygot is a type of XSS payload that executes in multiple contextx (Ex: *It'll execute regardless of whether it is inserted into an <img> tag, <script> tag, or a <p> tag*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Preventing XSS
+
+* Robust input validation
+* Contextual output escaping (Escaping ensures that browsers don't misinterpret characters as code to execute)
+* Contextual output encoding
+* Applications should never insert user-submitted data directly into an HTML document
+* Applications should avoid code that rewrites the HTML document based on user input
+* Applications should implement client-side input validation before it's inserted into the DOM
+* You can instruct the browser to execute only scripts from a list of source
