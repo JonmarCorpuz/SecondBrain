@@ -74,3 +74,27 @@ Self-XSS is where an attack tricks vicitms to input a malicious payload themselv
 * Applications should avoid code that rewrites the HTML document based on user input
 * Applications should implement client-side input validation before it's inserted into the DOM
 * You can instruct the browser to execute only scripts from a list of source
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# XSS Payloads
+
+```HTML
+<img onload=alert('XSS') scr="example.png">
+```
+
+URL
+```Text
+javascript:alert('XSS')
+```
+
+Data URL
+```Text
+data:text/html;base64,<ENCODED_STRING>
+```
+
+iFrame (Useful when <script> tags are banned by the XSS filter)
+```HTML
+<iframe src=javascript:alert('XSS')>
+```
+```
