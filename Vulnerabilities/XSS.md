@@ -111,7 +111,10 @@ Insert JavaScript code into HTML code as an attribute to the current tag
 <a href="javascript:alert('XSS')>Click me</a>"
 ```
 
-
+Use the JavaScript `fromCharCode()` function to inject a string
+```JavaScript
+String,fromCharCode()
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
