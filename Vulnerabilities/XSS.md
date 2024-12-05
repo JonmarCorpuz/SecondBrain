@@ -77,6 +77,18 @@ Self-XSS is where an attack tricks vicitms to input a malicious payload themselv
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Finding a XSS Vulnerability
+
+1. Look for user input opportunities on the target application
+    * If user input is stored and used to construct a web page later, test the input field for stored XSS
+    * If user input in a URL gets reflected back on the resulting web page, test for reflected and DOM XSS
+2. Insert XSS payloads into the user input fields you've found
+3. Confirm the impact of the payload by checking if your browser runs your JavaScript code or generates a request to your server
+4. Consider it's impact
+5. Report it
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # XSS Payloads
 
 ```HTML
