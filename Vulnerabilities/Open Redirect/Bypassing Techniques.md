@@ -41,13 +41,29 @@ https://example.com/login?redirect=data:text/html;base64,<BASE64_ENCODED_STRING>
 URL encoding converts a character into a percentage sign, followed by two hex digits (Ex: *%2f is the URL-encoded version of /*)
 
 * When validators validate URLs or when browsers redirect users, they have to first find out what is contained in the URL by decoding any characters that are URL encoded (If there's any inconsistency between how the validator and browsers decode URLs, you could exploit that to your advantage)
+* Bypassing Open Direct validators can be used using double-URL-encoding as well (Ex: *https://example.com%252f@attacker.com*), triple-URL-encoding (Ex: *https://example.com%25252f@attackercom*), and non-ASCII characters (Ex: *https://attacker.com%ff.example.com*)
+* Whenever a mismatch exists between how the validator and the browser decode these special characters, you can exploit the mismatch to induce an open redirect (Ex: *Some validators might decode https://example.com%252f@attacker.com and assume the URL redirects to example.com since @attacker.com is in the path portion fo the URL while other browsers might treat example.com%252f as the username portion of the URL*)
+* Sometimes browsers decode non-ASCII characters into question marks (Ex: *In https://attaker.com?.example.com the example.com part would become part of the URL query and the browser would navigate to attacker.com instead*)
+* Browsers may also attempt to find a most alike character (Ex: *In https://attacker.com%E2%95%B1.example.com the validator might think the hostname is example.com but the browser will make attacker.com the hostname instead*)
 
-Double-URL-encoding
+Double-URL Encoding
 ```Text
 
 ```
 
-Triple-URL-encoding
+Triple-URL-Encoding
 ```Text
 
+```
+
+Non-ASCI Characters
+```Text
+
+```
+
+## Combined Payloads
+
+Bypass protection that checks only that a URL contains, starts with, and ends with an allowedlist hostname
+```Text
+https://hostname%252f@attacker.com/hostname
 ```
