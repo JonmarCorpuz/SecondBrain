@@ -11,11 +11,18 @@ An open redirect attack happens when an attacker is able to manipulate the value
 
 ## Step 1: Look for Redirect Parameters
 
-Start searching for the parameters used in redirects
+Start searching for the parameters used in redirects 
+
+* Not all redirect parameters have straightforward names
+* Take note of pages that don't contain redirect parameters in their URLs but still automatically redirect their users (*300 HTTP Response Codes*, *etc.*)
 
 ```Text
 https://example.com/login?redirect=https://example.com/page
 https://example.com/login?redir=https://example.com/page
 https://example.com/login?next=https://example.com/page
 https://example.com/login?next=/page
+https://example.com/login?next=page
 ```
+
+## Step 2: Use Google Dork to Find Additional Redirect Parameters
+
