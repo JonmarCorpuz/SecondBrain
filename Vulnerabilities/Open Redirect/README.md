@@ -6,3 +6,16 @@ An open redirect attack happens when an attacker is able to manipulate the value
 * Redirecting users automatically saves them time and improves their experience
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Hunting for Open Redirects
+
+## Step 1: Look for Redirect Parameters
+
+Start searching for the parameters used in redirects
+
+```Text
+https://example.com/login?redirect=https://example.com/page
+https://example.com/login?redir=https://example.com/page
+https://example.com/login?next=https://example.com/page
+https://example.com/login?next=/page
+```
