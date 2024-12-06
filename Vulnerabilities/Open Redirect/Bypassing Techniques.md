@@ -41,3 +41,13 @@ https://example.com/login?redirect=data:text/html;base64,<BASE64_ENCODED_STRING>
 URL encoding converts a character into a percentage sign, followed by two hex digits (Ex: *%2f is the URL-encoded version of /*)
 
 * When validators validate URLs or when browsers redirect users, they have to first find out what is contained in the URL by decoding any characters that are URL encoded (If there's any inconsistency between how the validator and browsers decode URLs, you could exploit that to your advantage)
+
+Double-URL-encoding
+```Text
+
+```
+
+Triple-URL-encoding
+```Text
+
+```
