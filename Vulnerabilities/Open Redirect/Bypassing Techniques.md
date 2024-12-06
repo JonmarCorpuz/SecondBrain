@@ -2,6 +2,7 @@
 
 * Different browsers can handle the same URL differently (`https://user:password:8080/example.com@attacker.com`, *etc.*)
 * Sometimes validators don't account for all the edge cases that can cause the browser to behave unexpectedle
+* URL components: `scheme://userinfo@hostname:port/path?query#fragment`
 
 ## Using Browser Autocorrect
 
@@ -16,4 +17,14 @@ You can use browser autocorrect features to construct alternative URLs that redi
 
 You can bypass the open-redirect validator by exploiting loopholes in the validator's logic
 
-* Some URL validators check if the redirect URL starts with, contains, or ends with the site's domain name, which you can bypass by creating a subdomain or directory with the target's domain name (*https://example.com/login?redirect=http://example.com.attacker.com*, *https://example.com/login?redirect=http://attacker.com/example.com*, *etc.*)
+* Some URL validators check if the redirect URL starts with, contains, or ends with the site's domain name, which you can bypass by creating a subdomain or directory with the target's domain name
+
+```Text
+https://example.com/login?redirect=http://example.com.attacker.com
+https://example.com/login?redirect=http://attacker.com/example.com
+https://example.com/login?redirect=http://example.com.attacker.com/example.com
+https://example.com/login?redirect=https://exmaple.com@attacker.com/example.com
+```
+
+## Using Data URLs
+
