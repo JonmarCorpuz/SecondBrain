@@ -18,8 +18,12 @@ You should look for pages that allow users to make changes to their accounts (*C
 
 * Clickjacking vulnerabilities are valuable only when the target page contains state-changing actions (*Change password*, *Transfer balance*, *Unlink external accounts*, *etc.*)
 
-## Check the Response Headers
+## Step 2: Check the Response Headers
 
 Go through each of the state-changing functionailities you've found and revisit the pages that contain them using a proxy to intercept the HTTP response to see if the page is being served with the `X-Frame-Options` or `Content-Security-Policy` header (If the page is served without any of these headers then it may be vulnerable to clickjacking)
 
 * You should also check if the target application uses `SameSite` cookies if the state-changing action requires users to be logged in when it's executed (You won't be able to exploit clickjacking on the site's feature if it does since this means that it would require a user to be authenticated)
+
+## Step 3: Confirm the Vulnerability
+
+Confirm the vulnerability by executing a clickjacking attack on your test account
