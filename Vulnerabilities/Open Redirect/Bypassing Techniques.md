@@ -63,6 +63,8 @@ Non-ASCI Characters
 
 ## Combined Payloads
 
+Combining multiple strategies to bypass layered defenses
+
 Bypass protection that checks only that a URL contains, starts with, and ends with an allowedlist hostname
 ```Text
 https://hostname%252f@attacker.com/hostname
