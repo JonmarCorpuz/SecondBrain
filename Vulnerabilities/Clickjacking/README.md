@@ -17,6 +17,7 @@ Clickjacking is an attack that tricks users into clicking a malicious button tha
 You should look for pages that allow users to make changes to their accounts (*Changing account details*, *Changing account settings*, *etc.*)
 
 * Clickjacking vulnerabilities are valuable only when the target page contains state-changing actions (*Change password*, *Transfer balance*, *Unlink external accounts*, *etc.*)
+* Keep a note of the URL locations for the pages that require only mouse clicks to execute for further testing
 
 ## Step 2: Check the Response Headers
 
@@ -27,3 +28,6 @@ Go through each of the state-changing functionailities you've found and revisit 
 ## Step 3: Confirm the Vulnerability
 
 Confirm the vulnerability by executing a clickjacking attack on your test account
+
+* Craft an HTML page that frames the target page and load that page in a browser to see if the page has been framed
+* Craft a way to deliver your payload to end users
