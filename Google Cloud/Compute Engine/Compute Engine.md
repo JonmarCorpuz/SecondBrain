@@ -1,6 +1,6 @@
-# GCE Overview
+# Compute Engine Overview
 
-The Google Compute Engine is a the service engine that provisions VMs to users using Google's cloud infrastructure
+Google's Compute Engine is a the service engine that provisions VMs to users using Google's cloud infrastructure
 
 * Allows the creation and management of VM instances, as well as their lifecycles and network configurations
 * Provides scalable, flexible, and reliable computing resources for a wide range of applications
