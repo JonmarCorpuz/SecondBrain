@@ -17,11 +17,6 @@
 | Zonal MIG | Deploys instances to a single zone |
 | Regional MIG | Deploys instances to multiple zones across the same region |
 
-| MIG Type | Description |
-| --- | --- |
-| Stateless MIG | |
-| Stateful MIG | |
-
 | MIG Update Type | Description |
 | --- | --- |
 | Rolling Update | |
@@ -33,6 +28,12 @@
 | Stateless serving workloads (Ex: *Website frontend*, *etc.*) |
 | Stateless batch, high-performance, or high-throughput compute workloads (Ex: *Image processing from a queue*, *etc.*) |
 | Stateful applications (Ex: *Databases*, *legacy applications*, *long-running batch computations with checkpointing*, *etc.*) |
+
+## Stateless MIG
+
+## Stateful MIG
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Unmanaged Instance Group
 
