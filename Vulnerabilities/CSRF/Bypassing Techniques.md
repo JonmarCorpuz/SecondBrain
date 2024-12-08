@@ -27,3 +27,7 @@ Sometimes websites will accept multiple request methods for the same endpoint, b
     <script>document.getElementById("csrf_form").submit();</script>
 </html>
 ```
+
+## XSS
+
+* Any XSS vulnerability will defeat CSRF protections because XSS will allow attackers to steal the legitimate CSRF tokens and then craft forged requests by using `XMLHttpRequest`
