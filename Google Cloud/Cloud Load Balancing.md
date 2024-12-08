@@ -1,4 +1,7 @@
-# Cloud Load Balancing Overview
+# Cloud Load Balancer Overview
+
+* Provides a single access point to a distributed back end
+* Provides high availability (If one of the VMs in the cluster fails, the workload can be directed to the other VMs within the cluster
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
