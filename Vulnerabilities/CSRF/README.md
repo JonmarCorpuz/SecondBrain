@@ -21,7 +21,7 @@ CSRF is a client-side technique used to attack other users of a web application
 
 ## Step 3: Confirm the Vulnerability
 
-* You can confirm the vulnerability by crafting a malicious HTML form that imitates the request sent by the legitimate site
+* You can confirm the vulnerability by crafting a malicious HTML page and visit that page to see if the action has executed
 
 ```HTML
 <html>
