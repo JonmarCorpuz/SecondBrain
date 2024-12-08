@@ -1,4 +1,4 @@
-# Cloud KMS Overview
+# Cloud Key Management Service Overview
 
 Google's Cloud Key Management Service is a managed service that allows users to manage cryptographic keys for their cloud services 
 
