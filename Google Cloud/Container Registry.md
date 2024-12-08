@@ -1,4 +1,4 @@
-# GCR Overview
+# Google Container Registry Overview
 
 The Google Container Registry is a managed Docker contained registry service provided by GCP
 
