@@ -10,4 +10,4 @@
 
 A project within GCP is a logical grouping of Google Cloud Resources
 
-## 
+## Resources
