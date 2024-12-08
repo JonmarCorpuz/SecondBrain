@@ -27,3 +27,9 @@ Browse through each application feature you mapped and capture all the requests 
 ## Step 4: Change the IDs
 
 Switch the IDs in the sensitive requests and check if the information returned also changes
+
+## Step 5: Monitor for Information Leaks
+
+Monitor for blind IDOR information leaks in export files, emails, text alerts, etc.
+
+* An IDOR might lead to an information leak in the futur 
