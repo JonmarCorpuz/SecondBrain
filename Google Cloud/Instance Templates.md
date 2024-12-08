@@ -11,6 +11,8 @@
 * Reduces cross-region dependency
 * Allows you to meet compliance requirements on the physical location of the data
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Global Instance Template
 
 * Can be used in any region
