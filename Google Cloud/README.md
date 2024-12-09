@@ -11,6 +11,8 @@ Object storage is a system that manages the use of storage in terms of object or
 
 ## File Storage 
 
+* Provides a hierarchical storage system for files
+
 ## Block Storage
 
 ## Caches
