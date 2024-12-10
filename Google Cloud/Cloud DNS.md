@@ -2,7 +2,7 @@
 
 Google's Cloud DNS is a managed DNS service provided by GCP that allows users to host their DNS zones and manage DNS records for their domain names without having to run their own DNS servers
 
-* Requires the Cloud DNS API to be enabled
+* Designed to automatically scale so customers can have as many domains as they want without concern for scaling the underlying infrastructure
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
