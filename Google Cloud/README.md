@@ -1,5 +1,7 @@
 # Google Cloud Platform Overview
 
+* Google uses a security-hardened version of the Kernel Virtual Machine hypervisor, which provides virtualization on Linux systems running on x86 hardware
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Storage
