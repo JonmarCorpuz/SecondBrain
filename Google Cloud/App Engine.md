@@ -2,6 +2,7 @@
 
 Google App Engine is a PaaS offering that enables developers to build and deploy applicaitons on a fully managed serverless platform
 
+* Manages the underlying computing and network infrastructure
 * AppEngine is regional and services are deployed across multiple zones (You can't change an application's region once the project is created)
 * Allows developers to focus on writing code without worying about provisioning, maintaining, or scaling servers
 * Supports various programming languages using pre-configured runtimes
@@ -9,14 +10,6 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 * Less flexibility compared to GCE
 * Maximum of one application per project (One application can host multiple microservices)
 * Uses a combination of resident instances (Instances that run contiunuously) and dynamic instances (Instances that are added based on load)
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# App Engine Components
-
-| App Engine Component | Description |
-| --- | --- |
-| 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -29,14 +22,16 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 ## Standard Environment
 
-* Complete isolation from OS
+* Provides complete isolation from the underlying server's OS as well as other applications running on that server by running applications in a language specific sandbox
+* Well suited to applications that are written in one of the supported languages and don't need OS packages or other compiled software that would have to be installed along with the application code
 * Pricing is based on instance hours
 * Automatically scales down and up depending on traffic (Scales down to zero instances if there's no requests being made to the application)
 
 ## Flexible Environment 
 
-* Makes use of GCE virtual machines
+* Runs containerized applications in the App Engine environment 
 * Provides access to background processes and local disks
+* Works well in cases where an application code needs libraries or other third-party software installed
 * Pricing is based on resource usage
 * Requires a minimum of one instance
 
