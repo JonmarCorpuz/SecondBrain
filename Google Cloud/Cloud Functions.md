@@ -1,11 +1,14 @@
 # Cloud Functions Overview
 
-Cloud Functions is a FaaS pservice product that offers users a serverless execution environment to run event-driven code without the need to manage or provision servers
+Cloud Functions is a FaaS service product that offers users a serverless execution environment to run event-driven code without the need to manage or provision servers
 
+* A lightweight computing option that's well suited to event-driven processing
+* Runs code in response to an event (Ex: *File being uploaded to Cloud Storage*, *A message being written to a message queue*, *etc.*)
+* The code that executes must be short-running (Cloud Functions isn't designed to execute long-running code)
 * Supports multiple programming languages
-* Pay only for the resources you use
 * Time bound, meaning that they have a time limit
-* Requires the Cloud Build API to be enabled
+* Often used to call other services (Ex: *Third-party APIs*, *etc.*)
+* Automatically scales as load increases
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
