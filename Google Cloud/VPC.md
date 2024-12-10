@@ -2,9 +2,12 @@
 
 Google's VPC is a service that provides an isolated network in Google Cloud for GCP resources
 
+* When an organization moves to a public cloud, it shares infrastructure with other customers of that public cloud but they can logically isolate its cloud resources by creating a VPC
+* Google Cloud VPCs can span the globe without relying on the public Internet (Traffic from any server on a VPC can be securely routed through the Google global network to any other point on that network)
+* Your backend servers on GCP can access Google services without need a public IP address for back-end servers
 * Traffic within a VPC is isolated and not reachable by default from all other Google Cloud VPCs
-* Allows users to control their VPC's incoming and outgoing traffic
 * A global resource that can contain resources from any region (The subnets within a VPC are associated with regions)
+* VPCs in Google Cloud can be linked to on-premises VPNs using IPSec
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
