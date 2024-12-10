@@ -5,6 +5,7 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 * Uses the Container-Optimized OS, which is a hardened OS built by Google
 * Integrated with Google Cloud Monitoring and Google Cloud Logging by default
 * Automatically monitors the health of servers in the cluster and automatically repairs problems
+* Multiple clusters can be managed as a group (fleet)
 
 | GKE Feature | Description | 
 | --- | --- |
