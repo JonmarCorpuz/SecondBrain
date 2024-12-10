@@ -11,6 +11,7 @@ Google's Cloud Storage is a managed service for storing unstructured data
 * Useful for storing objects that are treated as single units of data
 * Allows you to store replicas of objects in multiple cloud regions for high availability, durability, and low latency (Multi-region storage)
 * Allows faster access to data when users or applications are distributed across regions through mutli-region storage
+* Allows you to specify lice cycle management policies that can automatically manage objects based on policies you define
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
