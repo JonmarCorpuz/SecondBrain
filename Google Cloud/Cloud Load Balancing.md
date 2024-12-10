@@ -1,5 +1,7 @@
 # Cloud Load Balancer Overview
 
+Google Cloud load balancer distributes workloads across you cloud infrastructure
+
 * Provides a single access point to a distributed back end
 * Provides high availability (If one of the VMs in the cluster fails, the workload can be directed to the other VMs within the cluster
 
