@@ -1,6 +1,6 @@
 # Cloud Bigtable Overview
 
-Google's BigTable is a low-latency NoSQL wide column database managed service for machine learning, operational analytics, and user-facing operations
+Google's BigTable is a low-latency NoSQL wide column database managed service for petabyte-scale applications that can manage up to billions of rows and thousands of columns (Ex: *Machine learning*, *Operational analytics*, *User-facing operations*, *etc.*)
 
 * Not serverless, meaning that you need to create a database instance in order to create a database (SSD or HDD)
 * HBase API compatible
