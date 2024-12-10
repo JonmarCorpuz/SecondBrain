@@ -2,7 +2,8 @@
 
 Google's Cloud Identity and Access Management allows users to manage who has access to read and modify their GCP resources
 
-* Provides very granular control
+* Enables customers to define fine-grained access controls on resources in the cloud
+* Uses the concepts of users, roles, and permissions
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
