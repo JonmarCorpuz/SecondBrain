@@ -4,7 +4,7 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Storage
+# Storage Overview
 
 ## Object Storage
 
@@ -46,7 +46,7 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Networking Peering
+# Network Peering Overview
 
 ## VPN
 
@@ -58,9 +58,50 @@ Caches are in-memory data stores that maintain fast access to data
 
 ## Direct Peering
 
-## Carrier Peering
+## Carrier Peering 
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Observability Overview
 
+## Cloud Monitoring
 
+## Cloud Logging
 
+## Error Reporting
+
+## Cloud Trace
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Data Overview
+
+## BigQuery
+
+## Cloud BigQuery
+
+## Cloud Dataproc
+
+## Cloud Dataprep
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# AI And Machine Learning Overview
+
+## AutoML
+
+## Translation AI
+
+## Natural Language
+
+## Vision AI
+
+## Recommendations AI
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Security Management Overview
+
+## Cloud IAM
+
+## Cloud Armor
