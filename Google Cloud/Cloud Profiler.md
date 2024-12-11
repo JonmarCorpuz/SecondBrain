@@ -1,7 +1,8 @@
 # Cloud Profiler Overview
 
-Google Cloud Profiler is a profiling tool that helps developers understand the performance characteristics of their applications in production by automatically collecting and analyzing performance data, and providing insights into resource usage
+Google Cloud Profiler is a profiling tool that helps developers understand the performance characteristics of their applications in production by automatically collecting and analyzing performance data, and providing insights into resource usage (Ex: *CPU utilization*, *Memory utilization*, *etc.*)
 
+* Uses statistical sampling to minimize the impact of profiling on application performance
 * Has very low overhead, meaning that it can run even in a production system
 * Helps identify bottlenecks and optimizing the performance of applications
 * Automatically and continuously collects profiling data from your applications running in production to provide real-time insights into performance
