@@ -106,4 +106,24 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 | Separation of Duties | Involve at least two people in sensitive tasks |
 | Constant Monitoring | Review Cloud Audit Logs to audit changes to IAM policies and access to Service Account keys |
 
+---
+
+# Organizational IAM
+
+* Cloud identities have super admins, which assign the role of Organization Administrator Identity and Access Management to users who manage the organization (Google Cloud will automatically grant Project Creator and Billing Account Creator IAM roles to all users in the domain)
+* Users with the Organization Admin IAM role are responsible for defining the structure of the resource hierarchy, defining IAM policies over the resource hierarchy, and delegating other management role to other users
+* When a member of a Cloud Identity account creates a billing account or project, Google Cloud will automatically create an organization resource 
+* All projects within a billing account will be children of the organization resource
+
+
+
+
+
+
+
+
+
+
+
+
 
