@@ -105,3 +105,13 @@ Caches are in-memory data stores that maintain fast access to data
 ## Cloud IAM
 
 ## Cloud Armor
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Database Overview
+
+## Cloud Spanner
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+
