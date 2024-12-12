@@ -4,6 +4,8 @@
 
 ## Organization
 
+* The root of the resource hierarchy (Typically corresponds to a company or organization)
+
 ## Folders
 
 ## Projects
