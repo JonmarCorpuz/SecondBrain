@@ -7,37 +7,30 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GCP IAM Components
+# IAM Components
 
-| GCP IAM Component | Description |
+| IAM Component | Description |
 | --- | --- |
 | Resource | |
 | Member | |
-| Permission | (Not directly assigned to a member) |
+| Permission | (Not directly assigned to a member but rather to roles, which are then assigned to users) |
 | Action | |
 | Role | A set of permissions to perform specific actions on specific resources (Can have multiple permissions and can be assigned to multiple members) |
 | Policy | A set of bindings that associate one or more members with a specific role |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GCP Members
+# Members
 
 * A member's type is identified using its prefix
 
-## GCP Member Types
-
-| GCP Member Type | Description |
-| --- | --- |
-| user | Represents a person |
-| serviceaccount | Represents an application account |
-| group | A collection of users and service accounts |
-| domain | |
-
-### Service Accounts
+## Service Accounts
 
 * Identified by an email address (Ex: *id-compute@developer.gserviceaccount.com*)
 * Uses a private and a public RSA key-pair rather than a password
 * Can't be logged in via browsers or cookies
+* Treated as an identity when assigned to a resource and treated as an object when given access to a user
+* Created automatically when resources are created (Ex: *A service account will be created for a VM when the VM is created*)
 
 | Service Account Type | Description |
 | --- | --- |
@@ -45,11 +38,11 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 | User Managed | |
 | Google-Managed | |
 
-#### Default Service Accounts
+### Default Service Accounts
 
 * Not recommended since it has the Editor role assigned to it by default
 
-#### User Managed Service Accounts
+### User Managed Service Accounts
 
 * Provides fine grained access control
 
@@ -58,31 +51,34 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 | Users | |
 | Admins | |
 
-#### Google-Managed Service Accounts
+### Google-Managed Service Accounts
 
 * Used by GCP to perform operations on a user's behalf
 
-### Group
+## Group
 
 * Assigned a unique IP address
 
-### Domain
+## Domain
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GCP IAM Roles
+# IAM Roles
 
-## GCP IAM Role Types
+* A role is a collection of permissions
+* Granted to users by binding a user to a role
 
-| GCP IAM Role Type | Description | 
+## IAM Role Types
+
+| IAM Role Type | Description | 
 | --- | --- |
-| Basic/Primitive | A set of predefined roles that provide broad levels of access to resources within a project (*roles.viewer*, *roles.editor*, *roles.owner*)
+| Basic | A set of predefined roles that provide broad levels of access to resources within a project (*roles.viewer*, *roles.editor*, *roles.owner*)
 | Predefined | Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin*, *Storage Object Admin*, *Storage Object Viewer*, *etc.*) |
 | Custom | Custom roles that are created by the client |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GCP IAM Policy
+# IAM Policy
 
 * Represented by a policy object
 * Can be set on the resource level, project level, folder level, and organization level
@@ -91,22 +87,12 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GCP Organization Policy
+# Organization Policy
 
 * Provides fine grained permissions about what can be done on specific resources
 * Overrides IAM Policies
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Good IAM Practices
-
-| Good IAM Practices | Description |
-| --- | --- |
-| Principle of Least Privilege | Give the least possible privileges that are needed for a role by using either predefined roles or customized service accounts |
-| Separation of Duties | Involve at least two people in sensitive tasks |
-| Constant Monitoring | Review Cloud Audit Logs to audit changes to IAM policies and access to Service Account keys |
-
----
 
 # Organizational IAM
 
@@ -115,8 +101,16 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 * When a member of a Cloud Identity account creates a billing account or project, Google Cloud will automatically create an organization resource 
 * All projects within a billing account will be children of the organization resource
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Roles Overview
 
+## Billing 
+
+* `Billing Account Creator` enables the user create new self-service billing accounts
+* `Billing Account Administrator` enables the user to manage billing accounts but cannot create them
+* `Billing Account User` enables the user to link projects to billing accounts
+* `Billing Account Viewer` enables the user to view billing account cost and transactions
 
 
 
