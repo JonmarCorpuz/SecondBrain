@@ -4,10 +4,9 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 * Manages the underlying computing and network infrastructure
 * AppEngine is regional and services are deployed across multiple zones (You can't change an application's region once the project is created)
-* Allows developers to focus on writing code without worying about provisioning, maintaining, or scaling servers
 * Supports various programming languages using pre-configured runtimes
 * Allows developers to use custom run-time and write code in any language
-* Less flexibility compared to GCE
+* Less flexibility compared to Compute Engine (Users have less to manage but have less control over the compute resources that are used to execute the application
 * Maximum of one application per project (One application can host multiple microservices)
 * Uses a combination of resident instances (Instances that run contiunuously) and dynamic instances (Instances that are added based on load)
 
@@ -37,15 +36,10 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# App Engine Application Components
+# App Engine Service
 
-| App Engine Application Component | Description |
-| --- | --- |
-| Service | |
-| Version | |
-
-## Service 
-
+* Provide a specific function
+* Enables versions to allow multiple versions of an application to run at the same time (Each version of a service runs on an instance that's managed by App Engine)
 * You can have multiple services in a single platform
 * Each service can have different settings
 
@@ -57,12 +51,6 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Service Request Routing
-
-| Service Request Routing Method | Description |
-| --- | --- |
-| Routing With URLs | |
-| Routing With Dispatch File | |
-| Routing With Cloud Load Balancing | |
 
 ## Routing With URLs
 
@@ -112,11 +100,12 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GAE YAML Files
+# App Engine Files
 
-| GAE YAML File | Description |
-| --- | --- |
-| app.yaml | |
-| cron.yaml | |
-| dispatch.yaml | |
-| queue.yaml | |
+## app.yaml
+
+## cron.yaml
+
+## dispatch.yaml
+
+## queue.yaml
