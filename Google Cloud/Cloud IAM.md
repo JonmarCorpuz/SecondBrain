@@ -68,13 +68,17 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 * A role is a collection of permissions
 * Granted to users by binding a user to a role
 
-## IAM Role Types
+## Basic Roles
 
-| IAM Role Type | Description | 
-| --- | --- |
-| Basic | A set of predefined roles that provide broad levels of access to resources within a project (*roles.viewer*, *roles.editor*, *roles.owner*)
-| Predefined | Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin*, *Storage Object Admin*, *Storage Object Viewer*, *etc.*) |
-| Custom | Custom roles that are created by the client |
+A set of predefined roles that provide broad levels of access to resources within a project (*roles.viewer*, *roles.editor*, *roles.owner*)
+
+## Predefined Roles
+
+Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin*, *Storage Object Admin*, *Storage Object Viewer*, *etc.*) 
+
+## Custom Roles
+
+Custom roles that are created by the client 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -103,14 +107,21 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Roles Overview
+# Predefined Roles
 
 ## Billing 
 
-* `Billing Account Creator` enables the user create new self-service billing accounts
-* `Billing Account Administrator` enables the user to manage billing accounts but cannot create them
-* `Billing Account User` enables the user to link projects to billing accounts
-* `Billing Account Viewer` enables the user to view billing account cost and transactions
+* `Billing Account Creator` allows the user to create new self-service billing accounts
+* `Billing Account Administrator` allows the user to manage billing accounts but cannot create them
+* `Billing Account User` allows the user to link projects to billing accounts
+* `Billing Account Viewer` allows the user to view billing account cost and transactions
+
+## Compute Engine
+
+* `Compute Admin` allows the user to have full control over Compute Engine instances
+* `Compute Network Admin` allows the user to create, modify, and delete most networking resources while providing read-only access to firewall rules and SSL certifications
+* `Compute Security Admin` allows the user to create, modify, and delete SSL certificates and firewall rules
+* `Compute Viewer` allows the user to to list Compute Engine resources
 
 
 
