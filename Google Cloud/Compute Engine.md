@@ -213,3 +213,7 @@ Customers create and manage their encryption keys outside of Google
 * Validates boot integrity
 * Provides additional protections for key generation and protection
 * Provides you with the option of enabling Integrity Monitoring, which verifies the runtime integrity of the VM
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Serial Port
