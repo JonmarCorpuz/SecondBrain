@@ -62,20 +62,25 @@ A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *
 
 ## Preemptible 
 
+* Offers the same configuration options as regular VMs
+* Persists up to 24 hours and may terminate at any time
+* Reduces costs
+* Cannot migrate to a regular VM and automatically restart
+* Commonly used for applications that are fault-tolerant and can withstand possible instance interruptions
+
 ## Spot
+
+* Provides the same benefits as preemptible VMs but without the 24 hours time limit
 
 ## Shielded
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Boot Disk 
+# Images
 
-## Image
+## Public Image
 
-| Image Type | Description |
-| --- | --- |
-| Public Image | Provided and maintained by Google, open-source communities, or third party vendors | 
-| Custom Image | Created by you for your projects |
+Provided and maintained by Google, open-source communities, or third party vendors
 
 ## Custom Image
 
@@ -217,3 +222,5 @@ Customers create and manage their encryption keys outside of Google
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Serial Port
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
