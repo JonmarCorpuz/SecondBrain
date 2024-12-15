@@ -8,15 +8,7 @@ Google's Compute Engine is a the service engine that provisions VMs to users usi
 * Provides persistent disks for VM storage and allows users to create snapshots of persistent disks for backup and disaster recovery
 * Provides networking features (Ex: *VPC*, *Subnets*, *Firewall rules*, *Routes*, *Load-balancing*, *Autoscaling*, *etc.*)
 
-| Compute Engine Element | Description | Example |
-| --- | --- | --- |
-| Name | <machine_type_family>-<workload_type>-<number_of_gpu> |
-| Labels | |
-| Region | |
-| Zone | |
-| Machine Configuration | |
-| Boot Disk | |
-| Firewall | |
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Machine Configuration
 
@@ -82,14 +74,7 @@ A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GCE Features
-
-| GCE Feature | Description |
-| --- | --- |
-| Availability Policy | A set of configurations that defines how GCP handles the availability and behavior of VM instances under different condititions |
-| Autoscaling | A feature that automatically adjusts the number of compute resources based on predefined criteria or metrics |
-
-## Availability Policy
+# VM Availability Policies
 
 An Availability Policy is a set of configurations that defines how GCP handles the availability and behavior of VM instances under different condititions (Ex: *What should happen to a VM instance during periodic infrastructure maintenance*, *Host failure*, *etc.*)
 
@@ -100,7 +85,7 @@ An Availability Policy is a set of configurations that defines how GCP handles t
 | On Host Maintenance | A running instance will be either migratated to another host in the same zone or stopped if the host that it's currently on goes offline |
 | Automatic Restart | A running instance will be automatically restarted if they're terminated due to non-user-initiated reasons |
 
-### On Host Maintenance
+## On Host Maintenance
 
 Live Migration is when a running instance will be either migratated to another host in the same zone or stopped if the host that it's currently on goes offline
 
@@ -109,35 +94,31 @@ Live Migration is when a running instance will be either migratated to another h
 * Not supported VM instances include preemptible instances and instances to which you have added GPUs
 * Configured using an Availability Policy
 
-### Automatic Restart 
+## Automatic Restart 
 
 Automatic Restart is when a running instance will be automatically restarted if they're terminated due to non-user-initiated reasons (Ex: *Maintenance event*, *Hardware failure*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Node Groups
-
-A node group is a homogeneous set of sole-tenant nodes in a specific zone
-
-* A node group can have zero or more nodes, and can contain multiple VMs running on machine types of various sizes, as long as the machine type has two or more vCPUs
-
-## Sole-Tenant
+# Sole-Tenant
 
 A sole-tenant node is a physical Compute Engine server that's dedicated to host a group of VM instances on the same hardware
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/skdhgfhgsdfgosdfgdsfgjkfdsjkgfdsgjk.png)
 
-* Sole-tenant nodes can help you meet dedicated hardware requirements for BYOL scenarios that require per-core or per-processor licenses
-* Sole-tenant nodes provide visibility into the node's underlying hardware, which allows you to track core and processor usage
+* Only VMs in your project with node affinity labels matching the labels you specify will run on the same server together
+* Help you meet dedicated hardware requirements for BYOL scenarios that require per-core or per-processor licenses
+* Provide visibility into the node's underlying hardware, which allows you to track core and processor usage
+
+## CPU Overcommit
+
+* Increases performance by scheduling VMs with more CPU requirements than actually available if the VMs don't need all the commited resources at the same time
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# VM Instance Storage 
+# VM Storage 
 
-| Storage Type | Description | 
-| --- | --- |
-| Local SSD | |
-| Persistent Disk | |
+* Disks can be attached as read/write or read-only
 
 ## Local SSD
 
@@ -159,13 +140,64 @@ A sole-tenant node is a physical Compute Engine server that's dedicated to host 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# SSHing Into Linux VMs
+# VM Connectivity Methods
+
+## Cloud Console
 
 Option 1: Console (SSH Button)
 * Ephemeral SSH key pair is created
 
-Option 2: Gcloud
+## SSH Using Command Line
+
+## SSH Using Customized SSH Keys
 
 Option 3: Use customized SSH keys
 * Metadata managed
 * OS Login (Set enable-oslogin to true in metadata)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VM Access Control
+
+* Users can disallow the use of project-based SSH keys
+
+## Access Scopes
+
+* A legacy access control mechanism that existed before IAM
+* Allows minimal by default
+
+## IAM
+
+* When enabled, only users with a role that have permission to enable IAM-based access can login (*Compute OS Login*, *Compute OS Admin*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Disk Encryption
+
+* All data is encrypted at rest
+
+## Google-Managed Encryption Keys
+
+Google creates and managed the encryption keys
+
+## Customer-Managed Encryption Keys
+
+Customers create their own encryption keys but Google manages them
+
+## Customer-Supplied Encryption Keys
+
+Customers create and manage their encryption keys outside of Google
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# VM Security 
+
+## Secure Boot
+
+* Protects against boot-level aand kernel-level malicious code (*Rootkits*, *etc.*)
+
+## vTPM
+
+* Validates boot integrity
+* Provides additional protections for key generation and protection
+* Provides you with the option of enabling Integrity Monitoring, which verifies the runtime integrity of the VM
