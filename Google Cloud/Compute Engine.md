@@ -56,6 +56,18 @@ A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# VM Types
+
+## Regular
+
+## Preemptible 
+
+## Spot
+
+## Shielded
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Boot Disk 
 
 ## Image
