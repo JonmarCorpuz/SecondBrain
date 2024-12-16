@@ -1,4 +1,4 @@
-# Google App Engine Overview
+# App Engine Overview
 
 Google App Engine is a PaaS offering that enables developers to build and deploy applicaitons on a fully managed serverless platform
 
@@ -25,13 +25,14 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 * Well suited for applications that are written in one of the supported languages and don't need OS packages or other compiled software that would have to be installed along with the application code
 * Consists of preconfigured, language specific runtime
+* Can scale down to zero instances if there are no requests to the application
 
 ## Flexible Environment 
 
-* Users can customize their runtime environments by configuring a container
+* Well suited for applications that can be decomposed into services and where each service can be containerized
+* Users can customize their runtime environments by configuring a container (Ex: *Specifying what additional softare or run commands to install during startup using aa Dockerfile*)
 * Provides access to background processes and local disks
-* Works well in cases where an application code needs libraries or other third-party software installed
-* Requires a minimum of one instance
+* Requires a minimum of one instance to run (Even when there are not requests being made to the application)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
