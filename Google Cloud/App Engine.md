@@ -9,30 +9,47 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 * Less flexibility compared to Compute Engine (Users have less to manage but have less control over the compute resources that are used to execute the application
 * Maximum of one application per project (One application can host multiple microservices)
 * Uses a combination of resident instances (Instances that run contiunuously) and dynamic instances (Instances that are added based on load)
+* Dynamic instances are used to autoscale when an application's load increases
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Runtime Environments
 
-| App Engine Runtime Environment | Description |
-| --- | --- |
-| Standard |  |
-| Flexible |  |
+* Provides complete isolation from the underlying server's OS as well as other applications running on that server by running applications in a language specific sandbox
+* Runs containerized applications in the App Engine environment
+* Uses Docker containers
+* Pricing is based on instance hours
+* The health of the application is monitored by Google and is corrected as needed without any intervention from the user
 
 ## Standard Environment
 
-* Provides complete isolation from the underlying server's OS as well as other applications running on that server by running applications in a language specific sandbox
-* Well suited to applications that are written in one of the supported languages and don't need OS packages or other compiled software that would have to be installed along with the application code
-* Pricing is based on instance hours
-* Automatically scales down and up depending on traffic (Scales down to zero instances if there's no requests being made to the application)
+* Well suited for applications that are written in one of the supported languages and don't need OS packages or other compiled software that would have to be installed along with the application code
+* Consists of preconfigured, language specific runtime
 
 ## Flexible Environment 
 
-* Runs containerized applications in the App Engine environment 
+* Users can customize their runtime environments by configuring a container
 * Provides access to background processes and local disks
 * Works well in cases where an application code needs libraries or other third-party software installed
-* Pricing is based on resource usage
 * Requires a minimum of one instance
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Runtime Scaling
+
+## Basic 
+
+App Engine will try to keep costs low so it doesn't start another instance until there's a request that can't be serviced in the first generation
+
+* Can cause a delay in the time to process
+
+## Automatic
+
+App Engine automatically creates new instances as load increases
+
+## Manual
+
+The user specifies the number of instances for each version of a service
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
