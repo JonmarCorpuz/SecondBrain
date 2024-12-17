@@ -22,13 +22,30 @@ A machine family is a curated set of VM configurations that are optimized for sp
 * Each machine family have a set of characteristics that are tailored to certain performance needs
 * Each machine family offers various machine types
 
-| Machine Family | Description | Machine Types |
-| --- | --- | --- |
-| General Purpose | Provides a balanced mix of compute, memory, and network resources |  |
-| Compute-Optimized | Provides high compute performance per core for compute-intensive workloads |  |
-| Memory-Optimized | Provides large amounts of memory for memory-intensive workloads |  |
-| Storage-Optimized | Provides large amounts of storage for workloads that are low in core usage and high in storage density |  |
-| Accelerator-Optimized | Provides GPU acceleration for workloads that require GPUs |  |
+### General Purpose 
+
+Provides a balanced mix of compute, memory, and network resources
+
+### Compute-Optimized 
+
+Provides high compute performance per core for compute-intensive workloads
+
+### Memory-Optimized 
+
+Provides large amounts of memory for memory-intensive workloads
+
+### Storage-Optimized 
+
+Provides large amounts of storage for workloads that are low in core usage and high in storage density
+
+### Accelerator-Optimized 
+
+Provides GPU acceleration for workloads that require GPUs
+
+* GPUs perform math calculations and allow some work to be offloaded from the CPU to the GPU
+* To use GPUs, you'll need to install GPU drivers or use an image that has GPU drivers already installed
+* To add a GPU to an instance, you must start an instance in which GPU libraries have been installed or will be installed
+* Note that there may be some restrictions on the use of GPUs
 
 ## Machine Type
 
@@ -230,8 +247,3 @@ Customers create and manage their encryption keys outside of Google
 * Stored in Google's metadata server, which is available for querying using the Compute Engine API
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Cloud Billing
-
-* Allows you to track costs automatically
-* You can export billing information by setting up Billing Export (This will produce daily reoprts on the usage and cost of VMs)
