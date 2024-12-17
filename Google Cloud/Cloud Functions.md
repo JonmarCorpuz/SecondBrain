@@ -7,7 +7,7 @@ Cloud Functions is a FaaS service product that offers users a serverless executi
 * The code that executes must be short-running (Cloud Functions isn't designed to execute long-running code)
 * Supports multiple programming languages and time bound, meaning that they have a time limit
 * Often used to call other services (Ex: *Third-party APIs*, *etc.*)
-* Helps avoid dependencies between services
+* Helps avoid dependencies between services by providing the possibility to move workloads from one stage to another
 * Each invocation of a Cloud Function runs in a separate instance, meaning that functions don't share memory or viables
 * The execution of one function is independednt of all others (The life cycles of Cloud Functions aren't dependent on each other)
 
