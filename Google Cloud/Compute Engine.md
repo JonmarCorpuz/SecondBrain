@@ -74,6 +74,20 @@ A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *
 
 ## Shielded
 
+### Secure Boot
+
+* Protects against boot-level and kernel-level malicious code by ensuring that only authenticated OS software runs on the VM through digital signature checks (If a digital signature check fails, the boot process fails)
+
+### vTPM
+
+* Validates boot integrity
+* Provides additional protections for key generation and protection
+* Provides you with the option of enabling Integrity Monitoring, which verifies the runtime integrity of the VM
+
+### Integrity Monitoring
+
+* Uses a known good baseline of boot measurements to compare to recent boot measurements (If the check fails, that means some difference exists between the baseline measurement and the current measurement)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Images
@@ -207,25 +221,13 @@ Customers create and manage their encryption keys outside of Google
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# VM Security 
-
-## Secure Boot
-
-* Protects against boot-level aand kernel-level malicious code (*Rootkits*, *etc.*)
-
-## vTPM
-
-* Validates boot integrity
-* Provides additional protections for key generation and protection
-* Provides you with the option of enabling Integrity Monitoring, which verifies the runtime integrity of the VM
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
 # Serial Port
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Metadata
+
+* Stored in Google's metadata server, which is available for querying using the Compute Engine API
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
