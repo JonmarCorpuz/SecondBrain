@@ -73,6 +73,16 @@ A custom configuration of VM resources (Ex: *vCPU*, *RAM*, *GPU*, *local SSD*, *
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Snapshots Overview
+
+* Snapshots are copies of data on a persistent disk and makes that data available on a disk
+* Convenient way to make multiple persistent disks with the same data or to back up a disk so that you can recover the state of the disk at a particular point in time
+* Google updates snapshots by only copying the data that has changed since the last snapshot in order to optimize storage while keeping the snapshot up-to-date
+* If you're running a database or another application that may buffer data in memory before writing to disk, be sure to flush the disk buffers before you create the snapshot to ensure that the data that should be written to disk isn't lost (Flushing the disk buffers varies from one application to another)
+* Can be used to create a VM as long as the snapshot is made from a boot disk
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # VM Types
 
 ## Regular
