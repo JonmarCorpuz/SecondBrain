@@ -3,7 +3,6 @@
 The Google Kubernetes Engine is a managed Kubernetes service for containers and container clusters running on GCP
 
 * Uses the Container-Optimized OS (A hardened OS built by Google)
-* Automatically monitors the health of servers in the cluster and automatically repairs problems
 * Multiple clusters can be managed as a group (fleet)
 * Allows you to manage multiple microservices within a cluster
 * Provides the benefits of using Kubernetes without the administrative overhead
