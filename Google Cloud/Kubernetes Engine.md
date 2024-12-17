@@ -1,4 +1,4 @@
-# Google Kubernetes Engine Overview
+# Kubernetes Engine Overview
 
 The Google Kubernetes Engine is a managed Kubernetes service for containers and container clusters running on GCP
 
@@ -16,7 +16,7 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GKE Cluster Mode
+# Kubernetes Engine Cluster Mode
 
 | GKE Cluster Mode | Description |
 | --- | --- |
@@ -32,7 +32,7 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GKE Container Exeternal Deployment Methods
+# Kubernetes Engine Container Exeternal Deployment Methods
 
 | GKE Container Deployment Method | Description |
 | --- | --- |
@@ -43,7 +43,7 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# GKE Cluster Types
+# Kubernetes Engine Cluster Types
 
 | GKE Cluster Type | Description |
 | --- | --- |
