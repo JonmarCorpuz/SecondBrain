@@ -7,21 +7,9 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 * Automatically monitors the health of servers in the cluster and automatically repairs problems
 * Multiple clusters can be managed as a group (fleet)
 
-| GKE Feature | Description | 
-| --- | --- |
-| Auto-Repair | |
-| Auto-Upgrade | |
-| Pod Autoscaling | |
-| Cluster Autoscaling | |
-
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Kubernetes Engine Cluster Mode
-
-| GKE Cluster Mode | Description |
-| --- | --- |
-| Standard Mode | |
-| Autopilot Mode | |
 
 ## Standard Cluster Mode
 
@@ -52,3 +40,15 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 | Regional Cluster | All nodes within the cluster are running within the same zone whiel having one or more regions are running a replica of the control place |
 | Priavte Cluster | A VPC-native cluster where the Master and Worker nodes are only accessible within their private network |
 | Alpha Cluster | An instable cluster that's running with alpha features enabled for testing purposes |
+
+## Single Zone Zonal Cluster
+
+## Multi Zone Zonal Cluster
+
+## Regional Cluster
+
+## Private Cluster
+
+## Alpha Cluster
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
