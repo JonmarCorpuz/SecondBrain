@@ -1,6 +1,6 @@
 # Cloud Run Overview
 
-Cloud Run is a serverless platform that allows users to run stateless containerized applications in a fully managed environment without having to worry about server provisioning, management, scaling, and maintenance
+Cloud Run is a serverless platform that allows users to run stateless applications in a fully managed containerized environment
 
 * Used when the full features of Kubernetes Engine aren't needed
 * Used to run code in response to an event (Ex: *Uploading a file*, *Adding a message to a message queue*, *etc.*) by running a short process coded in a function or by calling a longer-running application that might be runnin on a VM, managed cluster, or App Engine
