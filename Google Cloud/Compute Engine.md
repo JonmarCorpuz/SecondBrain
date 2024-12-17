@@ -231,3 +231,7 @@ Customers create and manage their encryption keys outside of Google
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Cloud Billing
+
+* Allows you to track costs automatically
+* You can export billing information by setting up Billing Export (This will produce daily reoprts on the usage and cost of VMs)
