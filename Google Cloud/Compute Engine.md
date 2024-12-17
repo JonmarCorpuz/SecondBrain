@@ -224,3 +224,8 @@ Customers create and manage their encryption keys outside of Google
 # Serial Port
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Metadata
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
