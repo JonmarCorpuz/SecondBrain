@@ -18,6 +18,8 @@
 
 The default namespace is the default namespace that Kubernetes uses when creating a new cluster
 
+* Used for objects with no other namespace defined
+
 ## kube-node-lease
 
 The kube-node-lease namespace holds [Lease](https://kubernetes.io/docs/concepts/architecture/leases/) objects associated with each node 
