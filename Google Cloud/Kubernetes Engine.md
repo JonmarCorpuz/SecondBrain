@@ -94,3 +94,11 @@ Externally exposes the service using the value mapped to the value of the extern
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Configure Kubernetes Cluster
+
+## kubeconfig
+
+Configure the kubeconfig file on a cluster
+```Bash
+gcloud container clusters get-credentials --zone <ZONE> <CLUSTER_NAME>
+```
