@@ -40,6 +40,7 @@ A Pod is a single running instance of a running process in a Kubernetes cluster
 * Allows containers to behave as if they're running on an isolated VM (You can deploy multiple instances of the same application or different instances of different application on the same Node or different Nodes, without having to change their configuration)
 * Treats the multiple containers it's hosting as a single entity for management purposes
 * Generally created in groups and considered ephemeral
+* Managed through delpoyments
 
 #### Containers
 
