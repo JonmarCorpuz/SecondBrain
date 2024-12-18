@@ -21,3 +21,22 @@ A [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deploym
 * Maintains application stability by allowing users to roll back to a previous version in case something goes wrong during an update
 * Allows users to view and revert to previous versions by keeping track of the history of all changes made
 * Ensures updates are applied gradually and safely by leveraging controlled rollouts of new versions
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Configure Deployments
+
+View deployments
+```Bash
+kubectl get deployments
+```
+
+Increase the number of ReplicaSets 
+```Bash
+kubectl scale deployment <DEPLOYMENT_NAME> --replicas <NUMBER>
+```
+
+Delete a deployment
+```Bash
+kubectl delete deployment <DEPLOYMENT_NAME>
+```
