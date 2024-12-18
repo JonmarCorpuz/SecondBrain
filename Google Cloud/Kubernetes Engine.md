@@ -10,7 +10,7 @@ The Google Kubernetes Engine is a managed Kubernetes service for containers and 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Kubernetes Engine Container Exeternal Deployment Methods
+# Kubernetes Engine Container External Deployment Methods
 
 ## LoadBalancer
 
@@ -44,13 +44,20 @@ Externally exposes the service using the value mapped to the value of the extern
 
 * All nodes within the cluster are running within the same zone whiel having one or more regions are running a replica of the control place
 
-## Private Cluster
-
-* A VPC-native cluster where the Master and Worker nodes are only accessible within their private network
-
 ## Alpha Cluster
 
 * An instable cluster that's running with alpha features enabled for testing purposes
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Kubernetes Engine Cluster Visibility
+
+## Private Cluster
+
+* A VPC-native cluster where the Master and Worker nodes are only accessible within their private network (All communication done between the two are via private addresses only)
+* Nodes only have private IP addresses
+
+## Public Cluster
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -59,12 +66,13 @@ Externally exposes the service using the value mapped to the value of the extern
 ## Standard Cluster 
 
 * Users are responsible for configuring and managing the Nodes
-* Follows a pay-per-node model where the customer is charged for the resources within their GKE cluster
+* Follows a pay-per-node model where the customer is charged for the provisioned resources used when their application is running
 
 ## Autopilot Cluster 
 
-* Provides a hands-off experience (GKE will configure and manage the cluster infrastructure for you)
+* Provides a hands-off experience (*GKE will configure and manage the cluster infrastructure*, *GKE will manage VPC-native traffic routing for public and private clusters*, *GKE will use Shielded GKE Nodes*, *etc.*)
 * Reduces your operational costs in running Kubernetes clusters by following a pay-per-pod model
+* Uses preconfigured and optimized cluster configurations
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -78,6 +86,11 @@ Externally exposes the service using the value mapped to the value of the extern
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Node Pools
+# Maintenance Window
 
-Node pools are collections of Nodes all within the same configuration
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Kubernetes Engine Security Features
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
