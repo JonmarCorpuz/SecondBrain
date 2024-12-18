@@ -2,6 +2,7 @@
 
 Volumes are directories that are accessible to the containers in a Pod
 
+* Stores data independently of the life of a Pod (Ensures that data saved to a volume is available for the replacement Pod if the Pod it's attached to crashes or restarts)
 * Used by specifying the volumes in the Pod's `.spec.volumes` and declare where to mount those volumes into containers in `.spec.containers[*].volumeMounts`
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
