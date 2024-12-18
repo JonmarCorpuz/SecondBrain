@@ -6,6 +6,7 @@ The [Service API](https://kubernetes.io/docs/concepts/services-networking/servic
 * Allows clients to interact with applications that are running within Pods in your cluster
 * Service abstraction enables you to decouple frontends from backends 
 * The set of Pods targeted by a Service is usually determined by a [selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#:~:text=Via%20a%20label%20selector%2C%20the%20client/user%20can%20identify%20a%20set%20of%20objects.%20The%20label%20selector%20is%20the%20core%20grouping%20primitive%20in%20Kubernetes.) that you define
+* Updates when changes are made to Pods (Allows it to maintain an up-to-date list of Pods running an application)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
