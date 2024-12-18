@@ -12,17 +12,6 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Screenshot%202024-09-29%20122816.png)
 
-| MIG Deployment Type | Description |
-| --- | --- |
-| Zonal MIG | Deploys instances to a single zone |
-| Regional MIG | Deploys instances to multiple zones across the same region |
-
-| MIG Update Type | Description |
-| --- | --- |
-| Rolling Update | |
-| Rolling Restart/Replace | |
-| Canary Deployment | |
-
 | MIG Use Case Example |
 | --- |
 | Stateless serving workloads (Ex: *Website frontend*, *etc.*) |
@@ -39,3 +28,37 @@
 
 * Not all instances in the group are identical
 * Customers manage the VMs themselves
+* Used when customers need to work with different configurations within different VMs in the group
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Instance Group Deployment Methods
+
+## Zonal
+
+Deploys instances to a single zone
+
+## Regional
+
+Deploys instances to across multiple zones within the same region
+
+* Increases resiliency by spreading the workload across multiple zones
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Instance Group Update Methods
+
+## Rolling Update
+
+## Rolling Restart/Replace
+
+## Canary Deployment
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Instance Group Policies
+
+## Distribution Policy
+
+* `Even` deploys managed instances even across zones
+* `Any` deploys managed instances to zones based on availability and reservations
