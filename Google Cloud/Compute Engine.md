@@ -132,7 +132,9 @@ Provided and maintained by Google, open-source communities, or third party vendo
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# VM Availability Policies
+# VM Policies
+
+## Availability Policies
 
 An Availability Policy is a set of configurations that defines how GCP handles the availability and behavior of VM instances under different condititions (Ex: *What should happen to a VM instance during periodic infrastructure maintenance*, *Host failure*, *etc.*)
 
@@ -143,7 +145,7 @@ An Availability Policy is a set of configurations that defines how GCP handles t
 | On Host Maintenance | A running instance will be either migratated to another host in the same zone or stopped if the host that it's currently on goes offline |
 | Automatic Restart | A running instance will be automatically restarted if they're terminated due to non-user-initiated reasons |
 
-## On Host Maintenance
+### On Host Maintenance
 
 Live Migration is when a running instance will be either migratated to another host in the same zone or stopped if the host that it's currently on goes offline
 
@@ -152,9 +154,15 @@ Live Migration is when a running instance will be either migratated to another h
 * Not supported VM instances include preemptible instances and instances to which you have added GPUs
 * Configured using an Availability Policy
 
-## Automatic Restart 
+### Automatic Restart 
 
 Automatic Restart is when a running instance will be automatically restarted if they're terminated due to non-user-initiated reasons (Ex: *Maintenance event*, *Hardware failure*, *etc.*)
+
+## Autoscaling Policies
+
+The autoscaling policy adds or removes instances based on the configured trigger (*CPU utilization*, *Monitoring metric*, *Load-balancing capacity*, *Queue-based workloads*, *etc.*) 
+
+* Ensure you leave enough time for VMs to boot up or shut down before triggering another change in the cluster configuration (If the time check is too small, you may find that a recently added VM isn't fully started before another is added, which can lead to more VMs being added that are actually needed
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
