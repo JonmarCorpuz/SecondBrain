@@ -58,4 +58,5 @@ A Pod is a single running instance of a running process in a Kubernetes cluster
 A Node pool is a set of Nodes in a Kubernetes cluster that have the same configuration
 
 * All Nodes are in the same Node pool by default after a Kubernetes cluster is created (You can add more Nodes and Node pools after the cluster has been created)
-* Useful if you want to group Nodes with similar features 
+* Useful if you want to group Nodes with similar features
+* The number of Nodes specified in the Node pool for a regional cluster will be the number of nodes for each zone the pool is in
