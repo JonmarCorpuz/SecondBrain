@@ -3,7 +3,7 @@
 Cloud Run is a serverless platform that allows users to run stateless applications in a fully managed containerized environment
 
 * Used when the full features of Kubernetes Engine aren't needed
-* Supports any application that can be run in a container (Deploys containers within seconds without users having to create a cluster for their containers)
+* Supports any application that can be run in a container (Deploys containers within seconds)
 * Provides rapid autoscaling for their stateless applications
 * The service name and region isn't changeable after you've created a service (Deploys immutable versions of an application and requires you to create a new container image and then deploy it if you want to make any changes)
 * Built on top of the Knative open standard, which is a platform that extends Kubernetes to provide a set of middleware components for building, deploying, and managing cloud-native applications
@@ -22,6 +22,8 @@ Cloud Run is a serverless platform that allows users to run stateless applicatio
 
 # Cloud Run Deployment Methods
 
+* Deploys one revision by default (You can select the option to continuously deploy new versions as the source repository is updated)
+
 ## Code as a Service
 
 * Used when your code is used to respond to web requests or events (Ex: *An API that returns data from a Cloud SQL database*)
@@ -39,10 +41,25 @@ Cloud Run is a serverless platform that allows users to run stateless applicatio
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Execution Environments
+
+## First Generation
+
+
+
+## Second Generation
+
+
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Cloud Run Security
 
 * You can control who has access to the application using IAM
 * You can control access at the network level by specifying an ingress setting (*Internal*, *Internal and Cloud Load Balancing*, *All*, *etc.*)
 * Implementing Cloud IAP
+* Unauthenticated access to an application is typically used for websites or public APIs
+
+## Binary Authorization
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
