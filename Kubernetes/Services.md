@@ -89,3 +89,23 @@ An [Endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#
 
 * Each endpoint within an EndpointSlice can contain relevant topology information (*Location of the endpoint*, *Information about the corresponding Node and zone*, *etc.*)
 * The [EndpointSlice API](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#:~:text=The%20EndpointSlice%20API%20is%20the%20mechanism%20that%20Kubernetes%20uses%20to%20let%20your%20Service%20scale%20to%20handle%20large%20numbers%20of%20backends%2C%20and%20allows%20the%20cluster%20to%20update%20its%20list%20of%20healthy%20backends%20efficiently.) is the recommended replacement for Endpoints
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Configure Services
+
+List Services
+```Bash
+kubectl get services
+```
+
+Create a Service
+```Bash
+kubectl create deployment <DEPLOYMENT_NAME> --image=<IMAGE>[:<TAG>] --port <PORT_NUMBER>
+kubectl expose deployment <DEPLOYMENT_NAME> --type="<SERVICE_TYPE>"
+```
+
+Delete a Service
+```Bash
+kubectl delete service <DEPLOYMENT_NAME>
+```
