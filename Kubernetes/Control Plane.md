@@ -2,7 +2,7 @@
 
 The Master Node, also known as the Control Plane, is the node that manages the Kubernetes cluster
 
-* For more availability, always replicate the master nodes across multiple zones for high availability
+* Can be replicated and distributed across multiple zones for more availability and fault tolerance
 * Capable of monitoring the metrics of the worker note
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
