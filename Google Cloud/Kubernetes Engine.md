@@ -80,6 +80,9 @@ Externally exposes the service using the value mapped to the value of the extern
 
 ## Autoscaling
 
+* Helps maintain performance by ensuring that there's sufficient Nodes to meet demand
+* Helps optimize the cost of your cluster by not running too many servers when not needed
+
 ## Autohealing
 
 ## Automatic Upgrades
