@@ -4,6 +4,8 @@ A Kubernetes cluster is simply a group of worker nodes that are managed by the M
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/piptiprtierpitepirepriwepirpewripweir.png)
 
+* Clusters are created with a release channel configuration that enables automatic upgrading of the cluster software (If you want more control over the upgrade process, you can choose to configure a static channel)
+
 | Kubernetes Cluster Component | Description |
 | --- | --- |
 | **Master Node** (Control Plane) | The node that manages the Kubernetes cluster |
@@ -49,3 +51,11 @@ A Pod is a single running instance of a running process in a Kubernetes cluster
 * Kubernetes organizes processes into workloads
 * Distributed across Nodes in a Kubernetes cluster
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Node Pools
+
+A Node pool is a set of Nodes in a Kubernetes cluster that have the same configuration
+
+* All Nodes are in the same Node pool by default after a Kubernetes cluster is created (You can add more Nodes and Node pools after the cluster has been created)
+* Useful if you want to group Nodes with similar features 
