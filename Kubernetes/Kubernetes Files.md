@@ -8,3 +8,9 @@ A Kubernetes [manifest file](https://www.loft.sh/blog/kubernetes-manifest#:~:tex
 | `kind` | Defines which exact object or resource is being managed by the configuration file (Must be supported by the specified apiVersion) |
 | `metadata` | Defines data that's used to uniquely identify the object (*name*, *namespace*, *labels*, *annotations*, *etc.*) |
 | `spec` | Defines the actual configuration for the objects being managed by the configuration file (The exact shape of the configuration varies according to both the apiVersion and the kind fields) |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# kubeconfig
+
+* Contains information on how to communicate with the cluster API
