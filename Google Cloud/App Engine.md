@@ -2,12 +2,12 @@
 
 Google App Engine is a PaaS offering that enables developers to build and deploy applicaitons on a fully managed serverless platform
 
-* Manages the underlying computing and network infrastructure
 * AppEngine is regional and services are deployed across multiple zones (You can't change an application's region once the project is created)
-* Supports various programming languages using pre-configured runtimes
+* Supports various programming languages using pre-configured runtimes and versioning
 * Allows developers to use custom run-time and write code in any language
 * Less flexibility compared to Compute Engine (Users have less to manage but have less control over the compute resources that are used to execute the application
-* Maximum of one application per project (One application can host multiple microservices)
+* Maximum of one application per project (An App Engine application is a high-level resource created in a project)
+* One application can host multiple microservices
 * Uses a combination of resident instances (Instances that run contiunuously) and dynamic instances (Instances that are added based on load)
 * Dynamic instances are used to autoscale when an application's load increases
 
@@ -56,7 +56,9 @@ The user specifies the number of instances for each version of a service
 
 # App Engine Service
 
-* Provide a specific function
+A service is the code executed in the App Engine environment
+
+* Structured to perform a single function with complex applications made up of microservices (Ex: *One microservice may handle API requests for data access while another performs authentication*)
 * Enables versions to allow multiple versions of an application to run at the same time (Each version of a service runs on an instance that's managed by App Engine)
 * You can have multiple services in a single platform
 * Each service can have different settings
