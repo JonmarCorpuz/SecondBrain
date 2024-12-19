@@ -42,15 +42,19 @@ Google App Engine is a PaaS offering that enables developers to build and deploy
 
 App Engine will try to keep costs low so it doesn't start another instance until there's a request that can't be serviced in the first generation
 
-* Can cause a delay in the time to process
+* Creates dynamic instances
 
 ## Automatic Scaling
 
 App Engine automatically creates new instances as load increases
 
+* Creates dynamic instances
+
 ## Manual Scaling
 
 The user specifies the number of instances for each version of a service
+
+* Creates resident instances
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
