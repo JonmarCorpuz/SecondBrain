@@ -103,24 +103,29 @@ A service is the code executed in the App Engine environment
 
 # Traffic Splitting Methods
 
-| Traffic Splitting Method | Description | 
-| --- | --- |
-| IP Splitting |  |
-| Cookie Splitting |  |
-| Random |  |
+* If you have more than one version of an application running, you can split traffic between them
 
 ## IP Splitting 
 
 * Splits traffic based on a request's source IP address
 * Can have issues (Ex: *IP addresses can change*, *If all requests originate from a corporate VPN with a single IP, this can cause all requests to go to the same version*, *etc.*)
+* App Engine creates a hash using the IP address of each version (This can be an issue if users change IP address)
 
 ## Cookie Splitting
 
-* Cookies (GOOGAPPUID) can be controlled from your application to generate the appropriate cookie to accurately assign users to versions
+* The HTTP request header for the `GOOGAPPUID` cookie will contain a hash value between 0 and 999 (Allows the user to access the same version of the application even if they change IP addresses)
+* Useful when you want to assign users to versions
+
+## Random Selection
+
+* Useful when you want to evenly distribute workload
+* Used when there's no `GOOGAPPUID` cookie set in the HTTP request header
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # App Engine Files
+
+* Applications are configured through the app.yaml configuration file
 
 ## app.yaml
 
