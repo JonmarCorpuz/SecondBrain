@@ -60,8 +60,8 @@ A service is the code executed in the App Engine environment
 
 * Structured to perform a single function with complex applications made up of microservices (Ex: *One microservice may handle API requests for data access while another performs authentication*)
 * Enables versions to allow multiple versions of an application to run at the same time (Each version of a service runs on an instance that's managed by App Engine)
-* You can have multiple services in a single platform
-* Each service can have different settings
+* You can have multiple services in a single platform (Each service can have different settings)
+* Defined by their source code and their configuration file (The combination of these two consitutes a version of the application)
 
 ## Version
 
