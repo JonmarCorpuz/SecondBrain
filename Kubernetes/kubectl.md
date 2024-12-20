@@ -41,11 +41,13 @@ export KUBECONFIG=kubeconfig.yaml
 
 # Pod Operations
 
+Run a Pod
 ```Bash
-# Run a pod
 kubectl run <pod_name> --image=<docker_image>[:<image_version>] --port=<port_number>
+```
 
-# Deploy multiple pods using a Deployment Manifest file
+Deploy multiple pods using a Deployment Manifest file
+```Bash
 kubectl apply -f <yaml_file>
 ```
 
