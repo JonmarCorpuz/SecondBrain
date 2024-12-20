@@ -2,7 +2,7 @@
 
 Cloud Functions is a FaaS service product that offers users a serverless execution environment to run event-driven code without the need to manage or provision servers
 
-* Runs code in response to an event (Ex: *File being uploaded to Cloud Storage*, *A message being written to a message queue*, *etc.*)
+* Runs single-purpose functions in response to an event (Ex: *File being uploaded to Cloud Storage*, *A message being written to a message queue*, *etc.*)
 * The code that executes must be short-running (Up to 60 minutes for HTTP functions and 10 minutes for event-drive functions)
 * Supports multiple programming languages
 * Often used to call other services (Ex: *Third-party APIs*, *etc.*)
@@ -20,17 +20,33 @@ An event is a particular action that happens in the cloud (Ex: *A file being upl
 
 * For each Cloud Functions enabled events that occur, you can define a trigger
 
-| Event Category | Description |
-| --- | --- |
-| HTTP | Invokes a function by making an HTTP request using POST, GET, PUT, DELETE, and OPTIONS calls |
-| Cloud Storage | Either delete, upload, or achive a file in Cloud Storage |
-| Cloud Pub/Sub | Publishing a message |
-| Cloud Firestore | Either create, delete, or write an event |
-| Cloud Firebase | Invokes database triggers, remote configuration triggers, and authentication triggers |
+### HTTP 
+
+Invokes a function by making an HTTP request using POST, GET, PUT, DELETE, and OPTIONS calls 
+
+### Cloud Storage 
+
+A function can be triggered every time a user deletes, uploads, or achives a file in Cloud Storage 
+
+### Cloud Pub/Sub 
+
+A function can be triggere every time a user writes to a Pub/Sub topic
+
+* Remember that messages in Pub/Sub are encoded to allow for binary data in a place where text data is expected
+
+### Cloud Firestore
+
+Either create, delete, or write an event 
+
+### Cloud Firebase 
+
+Invokes database triggers, remote configuration triggers, and authentication triggers 
 
 ## Trigger 
 
-A trigger is the Function call that responds to an event
+A trigger is the function that you want to execute when an event occurs
+
+* Declares that an action should be taken
 
 ## Function
 
