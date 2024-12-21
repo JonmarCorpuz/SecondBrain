@@ -70,7 +70,7 @@ Externally exposes the service using the value mapped to the value of the extern
 
 ## Autopilot Cluster 
 
-* Provides a hands-off experience (*GKE will configure and manage the cluster infrastructure*, *GKE will manage VPC-native traffic routing for public and private clusters*, *GKE will use Shielded GKE Nodes*, *etc.*)
+* Provides a hands-off experience (*GKE will configure and manage the cluster infrastructure*, *GKE will manage VPC-native traffic routing for public and private clusters*, *GKE will use Shielded GKE Nodes*, *GKE manages the nodes, meaning that there are no node pools for you to manage*, *etc.*)
 * Reduces your operational costs in running Kubernetes clusters by following a pay-per-pod model
 * Uses preconfigured and optimized cluster configurations
 
