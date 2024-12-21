@@ -4,3 +4,6 @@ A cache is an in-memory data store designed to provide appications with submilli
 
 * Offers the lowest latency for accessing data but the data only exists only as long as power is supplied to memory
 * Limited in size by the amount of memory available
+* Usually used with an application that can't tolerate long latencies when receiving data
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
