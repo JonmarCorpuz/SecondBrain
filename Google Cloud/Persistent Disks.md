@@ -12,7 +12,7 @@
 # SSD 
 
 * Used when high throughput is important
-* Provides consistent performance for both random access and sequential access patterns
+* Provides consistent and faster performance for both random access and sequential access patterns but costs more
 * Automatically encrypts data on the disk
 
 ## Local SSD
