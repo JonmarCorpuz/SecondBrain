@@ -9,18 +9,20 @@ Google's Cloud Storage is a managed service for storing unstructured data
 * Allows you to store replicas of objects in multiple cloud regions for high availability, durability, and low latency (Multi-region storage)
 * Allows faster access to data when users or applications are distributed across regions through mutli-region storage
 * Allows you to specify lice cycle management policies that can automatically manage objects based on policies you define
+* Doesn't support concurrency and locking (If multiple clients are writing to a file, then the last data written to the file is stored and persisted)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Cloud Storage Components
+# Buckets
 
-| Cloud Storage Component | Description |
-| --- | --- |
-| Object | An individual piece of data (Ex: *A file*, *An image*, *A video*, *etc.*) |
-| Bucket | A container that'll hold the objects that you want to store in Cloud Storage |
+* Bucket names start with the **goog** prefix and should not contain the word google
+* Bucket names can only contain lower case letters, numbers, hyphens, underscores, and periods (3 to 63 characters max)
+* Bucket names are globally unique and are used as part of object URLs
+* A bucket can contain unlimited objects that each belong to different storage classes
+* Each bucket is associated with a project
 
-## Object
-
+## Objects
+  
 * Each object it identified by a unique key and stored in a bucket
 * Maximum size is 5TB
 * Objects can be versioned to prevent accidental deletion and provide history (The live version is the latest version and the older versions are uniquely identified by an object key along with a generation number)
@@ -31,21 +33,6 @@ Google's Cloud Storage is a managed service for storing unstructured data
 | --- | --- |
 | Live | The latest version of an object |
 | Noncurrent | An older version of an object that has been replaced by a newer version |
-
-## Bucket
-
-* Bucket names start with the **goog** prefix and should not contain the word google
-* Bucket names can only contain lower case letters, numbers, hyphens, underscores, and periods (3 to 63 characters max)
-* Bucket names are globally unique and are used as part of object URLs
-* A bucket can contain unlimited objects that each belong to different storage classes
-* Each bucket is associated with a project
-
-| Bucket Storage Class | Description |
-| --- | --- |
-| Standard | Best for short-term storage and frequently accessed data |
-| Nearline | Best for backups and data accessed less than once a month |
-| Coldline | Best for disaster recovery and data accessed less than once a quarter |
-| Archive | Best for long-term digital preservation of data accessed less than once a year |
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -68,23 +55,24 @@ A storage class is a piece of metadata that's used by every object to control th
 
 ## Standard
 
-* Has no minimum storage duration
-* Used for frequently used data or data that's needed only for a short period of time
+* Used for frequently used data (Hot data) or data that's needed only for a short period of time
+* No minimum storage duration
 
 ## Nearline Storage
 
-* Has a minimum storage duration of 30 days
-* Used for objects that's read or modified once a month on average
+* Used for objects that's read or modified once a month
+* Minimum storage duration of 30 days
 
 ## Coldline Storage 
 
-* Has a minimum storage duration of 90 days
 * Used for objects that are read or modified at most once a quarter
+* Minimum storage duration of 90 days
 
 ## Archive Storage
 
-* Has a minimum storage duration of 365 days
 * Used for objects that are accessed less than once a year
+* Minimum storage duration of 365 days
+* Commonly used for archiving, disaster recovery, and other use cases where the data will be accessed less than once per year and will be stored for at least 365 days
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -146,11 +134,14 @@ A storage class is a piece of metadata that's used by every object to control th
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Object Lifecycle Management
+# Object Lifecycle Management Policy
 
 * When specific conditions are met for an object within a bucket, the specified actions will automatically happen
+* The rules include a condition and an action (If the condition is true, then the action is executed)
 
-| Object Lifecycle Management Condition | Description |
+## Policy Conditions
+
+| Object Lifecycle Management Policy Condition | Description |
 | --- | --- |
 | Age | |
 | CreatedBefore | |
@@ -158,10 +149,19 @@ A storage class is a piece of metadata that's used by every object to control th
 | MatchesStorageClass | |
 | NumberOfNewerVersions | |
 
-| Object Lifecycle Management Action | Description |
+## Policy Actions
+
+| Object Lifecycle Management Policy Action | Description |
 | --- | --- |
 | SetStorageClass | Changes an object's storage class to another |
 | Deletion | Deletes an object |
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Object Versioning
+
+* A copy of an object is archived each time the object is overwritten or when it's deleted
+* Useful when wanting to keep a history of changes to an object or want to mitigate the risk of accidentally deleting an object
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -176,3 +176,25 @@ A storage class is a piece of metadata that's used by every object to control th
 ## Signed URL
 
 A signed URL is a URL that gives permissions for a limited time to perform specific actions
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Bucket Storage Locations
+
+## Regional Bucket
+
+A specific geographical location
+
+* Redundant across zones
+
+## Dual Regional Bucket
+
+A pair of regions
+
+## Multi-Regional Bucket
+
+A large geographical region (*US*, *EU*, *etc.*)
+
+* Used when contents need to be stored in multiple regions to ensure acceptable times to access content
+* Provides redundancy in case of zone-level failures
+* More costly than regional and dual-regional buckets
