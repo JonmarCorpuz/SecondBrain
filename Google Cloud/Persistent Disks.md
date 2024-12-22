@@ -25,7 +25,7 @@
 
 # HDD 
 
-* Have longer latencies but costs less (A good option when storing large amounts of data and performing batch operations that are less sensitive to disk latency than interactive applications
+* Have longer latencies but costs less (A good option when storing large amounts of data and performing batch operations that are less sensitive to disk latency than interactive applications)
 
 ## Standard Disk
 
