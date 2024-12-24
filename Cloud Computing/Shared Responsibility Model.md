@@ -15,3 +15,7 @@ The shared responsibility model refers to the implicit and explicit agreement be
 
 * Responsible for maintaining the physical infrastructure
 * Responsible for ensuring network and resource availability
+
+## Service Level Agreement
+
+* Quantifies the availability of services
