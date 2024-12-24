@@ -2,9 +2,13 @@
 
 * Involves moving an organization's resources from one place to another
 
-# Migration Types
+# Migration Models
 
 ## Lift and Shift Migration
+
+Lift and shift is a migration model where workloads are moved to the cloud with little to no modifications
+
+* Because this model requires few modifications, it doesn't take long to migrate your workloads
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
