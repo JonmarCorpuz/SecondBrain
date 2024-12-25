@@ -7,7 +7,8 @@ IaC is the practice of automating and managing infrastructure using reusable scr
 * Saves costs by freeing developer time to docus on other projects
 * Eliminate the risk of human error by avoiding manual configuration
 * Provides faster and more efficient development by allowing teams to deploy and work on the same infrastructure throughout the software development lifecycle
-* Reduces configuration drift (When a resource's configuration has altered from its original or expected state)
+* Reduces configuration drift by enforcing consistency through and using one configuration file as the single source of truth (When a resource's configuration has altered from its original or expected state due to unplanned changes to the configuration code or unmonitored software or hardware updates)
+* Increases accountability since storing the configuration files within a single repository increases visibility into changes made to the configuration code
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
