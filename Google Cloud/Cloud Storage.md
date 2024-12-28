@@ -2,13 +2,12 @@
 
 Google's Cloud Storage is a managed service for storing unstructured data
 
-* Cloud storage is a service that receives, stores, and retrieves files or objects from a distributed storage system
+* Used when you need to store large volumes of data and don't need fine-grained access to data within an object while it's in the object store (Ex: *Data that needs to be saved but no longer actively analyzed*, *etc.*)
 * Stores objects using a key-value approach and treat entire objects as a unit
 * Always encrypts data on the server side (A newly created bucket is assigned with a Google managed key that's used to encrypt the data by default)
 * Allows clients to encrypt their objects before uploading it to Cloud Storage
 * Allows you to store replicas of objects in multiple cloud regions for high availability, durability, and low latency (Multi-region storage)
 * Allows faster access to data when users or applications are distributed across regions through mutli-region storage
-* Allows you to specify lice cycle management policies that can automatically manage objects based on policies you define
 * Doesn't support concurrency and locking (If multiple clients are writing to a file, then the last data written to the file is stored and persisted)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
