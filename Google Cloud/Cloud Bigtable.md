@@ -8,8 +8,6 @@ Google's BigTable is a low-latency NoSQL wide-column database managed service fo
 * Designed to provide consistent and low-millisecond latency
 * Designed for applications with high data volumes and high-velocity ingest of data (Ex: *Time series*, *IoT*, *etc.*)
 * Runs clusters and scales horizontally
-
-* Not serverless, meaning that you need to create a database instance in order to create a database (SSD or HDD)
 * Designed for huge volumes of analytical and operational data (Ex: *IOT Streams*, *Analytics*, *Time Series Data*, *etc.*)
 * Handles millions of read and write TPS at very low latency
 * Supports only single-row transactions (Multi-row transactions aren't supported)
