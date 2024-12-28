@@ -8,7 +8,6 @@ Google's Cloud SQL is a fully managed relational database service that allows us
 * Uses either SSds or HDDs
 * Provides automatic encryption for tables and backups
 * Supports automatic storage increase without downtime and point-in-time recovery
-* Allows you to export data to and import data from Cloud Storage
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
