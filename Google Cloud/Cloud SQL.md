@@ -1,11 +1,11 @@
 # Cloud SQL Overview
 
-Google's Cloud SQL is a fully managed relational database service that allows users to set up MySQL, PostgreSQL, and SQL Server databases on VMs without having to attend to database administration tasks (Ex: *Backing up databases*, *Patching database software*, *etc.*)
+Google's Cloud SQL is a fully managed relational database service that allows users to set up MySQL, PostgreSQL, and SQL Server databases on VMs without having to attend to database administration tasks
 
-* A regional service that provides high availability (99.95%) and failover (Creates a Standby with automatic failover)
+* Used when data is structured and modeled for relational databases
+* Used for databases that don't need to scale horizontally
 * Uses either SSds or HDDs
 * Provides automatic encryption for tables and backups
-* Allows you to create read replicas for read workloads (*Cross-zone*, *Cross-region*, *External*)
 * Supports automatic storage increase without downtime and point-in-time recovery
 * Allows you to export data to and import data from Cloud Storage
 
@@ -16,3 +16,13 @@ Google's Cloud SQL is a fully managed relational database service that allows us
 * Requires you to choose a Primary and a Secondary zone within a region
 * The changes made on the Primary zone are replicated synchronously to the Secondary zone
 * The Secondary zone can't be used as a Read Replica (You can't connect to both the Primary and Secondary zone at the same time)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Workload Read Replicas
+
+## Cross-Zone
+
+## Cross-Region
+
+## External
