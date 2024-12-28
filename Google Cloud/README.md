@@ -5,7 +5,7 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Storage Overview
+# Storage Services
 
 ## Object Storage
 
@@ -47,7 +47,7 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Network Peering Overview
+# Network Peering Services
 
 ## VPN
 
@@ -63,7 +63,7 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Observability Overview
+# Observability Services
 
 ## Cloud Monitoring
 
@@ -75,19 +75,7 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Data Overview
-
-## BigQuery
-
-## Cloud BigQuery
-
-## Cloud Dataproc
-
-## Cloud Dataprep
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# AI And Machine Learning Overview
+# AI And Machine Learning Services
 
 ## AutoML
 
@@ -101,7 +89,7 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Security Management Overview
+# Security Management Services
 
 ## Cloud IAM
 
@@ -109,7 +97,7 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Relational Database Overview
+# Relational Databases Services
 
 * Supports frequent queries and updates to data
 * Used when users need a consistent view of data (Users that are reading data from a relational database at the same time will see the same data)
@@ -119,4 +107,10 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# NoSQL Databases Services
 
+* NoSQL databases don't use the relational model and don't require a fixed structure or schema
+
+## Cloud Firestore
+
+## BigTable
