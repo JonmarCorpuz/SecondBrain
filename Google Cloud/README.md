@@ -109,7 +109,11 @@ Caches are in-memory data stores that maintain fast access to data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Database Overview
+# Relational Database Overview
+
+* Supports frequent queries and updates to data
+* Used when users need a consistent view of data (Users that are reading data from a relational database at the same time will see the same data)
+* Supports database transactions (There's no chance that some operations are executed and others are not)
 
 ## Cloud Spanner
 
