@@ -75,6 +75,10 @@ A storage class is a piece of metadata that's used by every object to control th
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Storage Class Transitions
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Uploading Objects
 
 | Object Upload Option | Description |
