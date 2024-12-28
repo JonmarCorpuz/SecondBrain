@@ -7,6 +7,7 @@ Google's Firestore is a managed NoSQL document database where the data is organi
 * Supports transactions, indexes, and SQL-like queries
 * Used for nonanalytic and nonrelational storage needs (Ex: *Product catalogs with varying properties*, *User profiles*, *User navigation history*, *etc.*)
 * Doesn't support relational operations (Ex: *Joining tables*, *Sums*, *Counts*, *etc.*)
+* Provides strong consistency and real-time updates
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
