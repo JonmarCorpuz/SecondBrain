@@ -1,11 +1,37 @@
 # Cloud Firestore Overview
 
-Google's Firestore is a NoSQL document database that was built for automatic scaling, high performance, and ease of application development
+Google's Firestore is a managed NoSQL document database where the data is organized into a structure called a document
 
-* Uses the concept of a document, or collection of key-value pairs, as the basic building block
-* Documents allow for flexible schemas, meaning the set of keys that may be included doesn't have to be defined prior to use in document databases (Helpful when applications must accomodate a range of attributes, some of which may not be known at design time)
-* Accessed via a REST API that can be used from applications running in Compute Engine, Kubernetes Engine, or App Engine
-* Scales automatically based on load, as well as shard or partition data as needed to maintain performance
+* Uses the concept of a document as the basic building block
+* Automatically partitions data and scales up or down when needed
 * Supports transactions, indexes, and SQL-like queries
-* Provides mobile and web client libraries
-* Well suited for applications that demand high scalability and structured data and don't always need strong consistency when reading data (Ex: *Product catalogs*, *User profiles*, *User navigation history*, *etc.*)
+* Used for nonanalytic and nonrelational storage needs (Ex: *Product catalogs with varying properties*, *User profiles*, *User navigation history*, *etc.*)
+* Doesn't support relational operations (Ex: *Joining tables*, *Sums*, *Counts*, *etc.*)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Documents
+
+A document is a collection of key-value pairs
+
+* Allow for flexible schemas where the set of keys that may be included doesn't have to be defined prior to use in document databases (Helpful when applications must accomodate a range of attributes, some of which may not be known at design time)
+
+## Collections
+
+A collection is a set of documents
+
+## Entities
+
+An entity is a set of key-value pairs within a document
+
+* There's no requirement for all entities to have all the same properties since Cloud Firestore is a schema-less database
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Firestore Modes
+
+## Native Mode
+
+* Provides a different data modelbased on documents and collections
+
+## Datastore Mode
