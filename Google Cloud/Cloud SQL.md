@@ -26,3 +26,11 @@ Google's Cloud SQL is a fully managed relational database service that allows us
 ## Cross-Region
 
 ## External
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cloud SQL Backups
+
+## On-Demand Backups
+
+## Automatic Backups
