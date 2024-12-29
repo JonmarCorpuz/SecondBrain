@@ -1,4 +1,4 @@
-Google's Cloud Spanner is a fully managed, scalable, globally distributed, and strongly consistent distributed relational database service
+Google's Cloud Spanner is a fully managed, scalable, globally distributed, and strongly consistent distributed relational database for transaction services
 
 * Provides enterprise-grade security with encryption at rest and in transit, along with identity-based access controls
 * Supports ANSI 2011 standard SQL
