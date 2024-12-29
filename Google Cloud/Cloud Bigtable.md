@@ -26,6 +26,30 @@ Google's BigTable is a low-latency NoSQL wide-column database managed service fo
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Cloud Bigtable Instance
+
+* Used to host your Bigtable database
+
+# Cloud Bigtable Database
+
+* Most of the work will be done at the CLI using the `cbt`
+
+```Bash
+echo instance = INSTANCE_NAME >> ~/.cbtrc
+```
+
+```Bash
+cbt createtable TABLE_NAME
+```
+
+## Column Families
+
+```Bash
+cbt createfamily TABLE_NAME COLUMN_FAMILY_NAME
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Cloud Bigtable Cluster Modes
 
 ## Production
