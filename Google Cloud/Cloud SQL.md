@@ -1,6 +1,6 @@
 # Cloud SQL Overview
 
-Google's Cloud SQL is a fully managed relational database service that allows users to set up MySQL, PostgreSQL, and SQL Server databases on VMs without having to attend to database administration tasks
+Google's Cloud SQL is a fully managed relational database service that allows users to set up MySQL, PostgreSQL, and SQL Server databases for transaction services
 
 * Used when data is structured and modeled for relational databases
 * Used for databases that don't need to scale horizontally (Cloud SQL databases scale vertically)
