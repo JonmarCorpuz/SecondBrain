@@ -15,8 +15,17 @@ A BigQuery dataset is used to hold data
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# BigQuery Jobs
+
+A BigQuery job is a process that's used to load, export, copy, and query data
+
+* Automatically created when a user starts either a load, export, copy, or query operation
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # BigQuery Syntax
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # BigQuery Tools
+
