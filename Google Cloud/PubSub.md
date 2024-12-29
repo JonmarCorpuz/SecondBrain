@@ -9,13 +9,9 @@ Google's Pub/Sub is an asynchronous, scalable, and fully-managed messaging servi
 
 # Pub/Sub Components
 
-| Pub/Sub Component | Description |
-| --- | --- |
-| Publisher | The sender of a message |
-| Topic | |
-| Subscription | The receiver of a message |
-
 ## Publisher
+
+A publisher is a sender of a message
 
 * Sends messages by making HTTPS requests 
 
@@ -23,11 +19,33 @@ Google's Pub/Sub is an asynchronous, scalable, and fully-managed messaging servi
 
 * Can have multiple subscribers that are subscribed
 
+## Subscription
+
 ## Subscriber
+
+A subscriber is a receiver of a message
 
 * Pulls messages from the topic that it's subscribed to through HTTPS requests
 * Messages sent by a publisher can also be pushed automatically to its designated subscriber
 * Can have multiple clients that are subscribed
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Deploy Pub/Sub
+
+## Step 1: Create a Topic
+
+```Bash
+gcloud pubsub topics create <TOPIC_NAME>
+```
+
+## Step 2: Create a Subscription
+
+* Subscriptions can be pulled (The application reads from a topic) or pulled (The subscription writes messages to an endpoint)
+
+```Bash
+glcoud pubsub subscriptions create <SUBSCRIPTION_NAME> --topic <TOPIC_NAME>
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
