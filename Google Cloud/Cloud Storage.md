@@ -201,3 +201,17 @@ A large geographical region (*US*, *EU*, *etc.*)
 * Used when contents need to be stored in multiple regions to ensure acceptable times to access content
 * Provides redundancy in case of zone-level failures
 * More costly than regional and dual-regional buckets
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Cloud Storage Operations
+
+Move objects between buckets
+```Bash
+gsutil mv gs://SOURCE_BUCKET_NAME/SOURCE_OBJECT_NAME gs://DESTINATION_BUCKET_NAME/DESTINATION_OBJECT_NAME
+```
+
+Rename an object
+```Bas
+gsutil mv gs://SOURCE_BUCKET_NAME/OLD_OBJECT_NAME gs://DESTINATION_BUCKET_NAME/NEW_OBJECT_NAME
+```
