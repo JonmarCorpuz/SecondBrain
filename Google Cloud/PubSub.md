@@ -2,8 +2,7 @@
 
 Google's Pub/Sub is an asynchronous, scalable, and fully-managed messaging service that decouples services producing messages from services processing those messages
 
-* Allows services to communicate asynchronously, with latencies on the order of 100 milliseconds
-* Supports pushing and pulling message deliveries
+* Allows services to communicate asynchronously
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
