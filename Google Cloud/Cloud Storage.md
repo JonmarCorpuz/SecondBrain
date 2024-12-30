@@ -15,10 +15,10 @@ Google's Cloud Storage is a managed service for storing unstructured data
 # Buckets
 
 * Bucket names start with the **goog** prefix and should not contain the word google
-* Bucket names can only contain lower case letters, numbers, hyphens, underscores, and periods (3 to 63 characters max)
 * Bucket names are globally unique and are used as part of object URLs
 * A bucket can contain unlimited objects that each belong to different storage classes
-* Each bucket is associated with a project
+* Regional resources and are replicated across zones within the region
+* Web addressasble, meaning that you can allow anyone with the URL to the bucket to access its contents (Users can prevent this by enabling the Enforce Public Access Prevention On This Bucket option)
 
 ## Objects
   
@@ -201,6 +201,20 @@ A large geographical region (*US*, *EU*, *etc.*)
 * Used when contents need to be stored in multiple regions to ensure acceptable times to access content
 * Provides redundancy in case of zone-level failures
 * More costly than regional and dual-regional buckets
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Bucket Security
+
+* Using Uniform Access Control instead of ACLs is considered to be best practices
+
+## Fine-Grained Access
+
+* Allows users to specify access controls on individual objects as well as on buckets
+
+## Uniform Access 
+
+* Access to objects in a bucket is controlled by bucket-level permissions managed by the IAM service
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
