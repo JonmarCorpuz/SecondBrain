@@ -17,3 +17,9 @@ Google's Cloud Spanner is a fully managed, scalable, globally distributed, and s
 # Cloud Spanner Database
 
 * Requires the use of the SQL Data Definition Language (DDL) to define the structure of tables
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Exporting Data
+
+* Users can use Dataflow to export data
