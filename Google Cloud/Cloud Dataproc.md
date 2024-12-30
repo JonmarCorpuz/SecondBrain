@@ -5,6 +5,7 @@ Google's Cloud Dataproc is a managed service Apache Spark and Apache Hadoop for 
 * Allows you to create clusters quickly and manage them easily
 * Users can export cluster configuration but not data
 * Can be deployed using both the Compute Engine and the Kubernetes Engine
+* Designed for data manipulation, statistical analysis, machine learning, and other complex operations for data storage and retrieval (Not designed to be a persistent store of data)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
