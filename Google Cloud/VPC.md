@@ -107,8 +107,33 @@ VPC network peering is a networking feature that allows two VPC networks to conn
 * Allows for interproject connectivity even if an organization is not defined
 * Enables private communication between resources in different VPC networks without using external networking solutions and protocols (All communication happens using internal IP addresses)
 
+Specify peering between two projects when an organization doesn't exist (Execute this command on both projects involved using the appropriate options in order to allow private traffic flow between the two VPCs)
+```Bash
+gcloud compute networks peerings create NETWORK_PEERING_NAME --network NETWORK --peer-project PROJECT_ID --peer-network PEER_NETWORK --auto-create-routes
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Shared VPC
 
 * Requires the Shared VPC Admin role either at the organization or folder level in order to be able to create a shared VPC
+
+Assign the Shared VPC Admin role to an organization
+```Bash
+gcloud organizations add-iam-policy-binding ORGANIZATION_ID --member='user:USER_EMAIL' --role="roles/compute.xpnAdmin"
+```
+
+Assign the Shared VPC Admin role to a folder
+```Bash
+gcloud resource-manager folders add-iam-policy-binding FOLDER_ID --member='user=USER_EMAIL' --role="roles/compute.xpnAdmin"
+```
+
+Create a Shared VPC
+```Bash
+gcloud compute shared-vpc enable HOST_PROJECT_ID
+```
+
+Associate a project to the host project
+```Bash
+gcloud compute shared-vpc associated-projects add SERVICE_PROJECT_ID --host-project HOST_PROJECT_ID
+```
