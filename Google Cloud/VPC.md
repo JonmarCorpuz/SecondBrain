@@ -25,47 +25,49 @@ Google's VPC is a service that provides an isolated network in Google Cloud for 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Google Private Access
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Flow Logs
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Dynamic Routing
+
+## Regional Routing
+
+* Enables Goolge Cloud Routers to learn routes with the region
+
+## Global Routing
+
+* Enable Google Cloud Routers to learn routes on all subnetworks in the VPC
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DNS Policy
+
+* Allows users to choose a DNS policy that enables DNS name resolution provided by Google Cloud or make changes to name resolution order
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+
 # VPC Subnets
 
-## VPC Subnet Creation Modes
+* Each subnet is associated with a specific region (Subnets are regional)
 
-| VPC Subnet Creation Mode | Description |
-| --- | --- |
-| Automatic | |
-| Custom | |
-
-### Automatic 
-
-* A subnet is automatically created in every region
-
-### Custom
-
-## Subnet Types
-
-* Each subnet is associated with a specific region
-
-| VPC Subnet | Description |
-| --- | --- |
-| Public Subnet | A network where its resources can be accessed from the Internet |
-| Private Subnet | A network where its resources can't be accessed from the Internet |
-
-### Public Subnet
+## Public Subnet
 
 * Resources in a public subnet can communicate with resources in private subnets
 
-### Private Subnet 
+## Private Subnet 
 
 * Enabling the Private Google Access will allow VMs to connect to Google's API using private IP addresses (Using private IP addresses will keep the communication within the network)
-* Enabling FlowLogs will allow users to troubleshoot any VPC related network issues
+* Enabling FlowLogs will tunr on logging for network traffic (Allows users to troubleshoot any VPC related network issues)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # VPC Network Modes
-
-| VPC Network Mode | Description |
-| --- | --- |
-| Auto Mode VPC Network | |
-| Custom Mode VPC Network | |
 
 ## Auto Mode VPC Network
 
@@ -100,6 +102,11 @@ Google's VPC is a service that provides an isolated network in Google Cloud for 
 
 # VPC Network Peering
 
-VPC network peering is a networking feature that allows two VPCs networks to connect directly with each other 
+VPC network peering is a networking feature that allows two VPC networks to connect directly with each other 
 
+* Allows for interproject connectivity even if an organization is not defined
 * Enables private communication between resources in different VPC networks without using external networking solutions and protocols (All communication happens using internal IP addresses)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Shared VPC
