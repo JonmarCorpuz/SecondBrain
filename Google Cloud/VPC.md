@@ -110,3 +110,5 @@ VPC network peering is a networking feature that allows two VPC networks to conn
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Shared VPC
+
+* Requires the Shared VPC Admin role either at the organization or folder level in order to be able to create a shared VPC
