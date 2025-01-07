@@ -11,7 +11,9 @@ Google's Cloud VPN is a service that securely connects your on-premises network 
 
 ## HA VPN
 
-* SLA of 99.99% service availability with two external IP addresses
+* SLA of 99.99% service availability within a region
+* Supports BGP
+* HA is provided by using two tunnels instead of just one
 
 ## Classic VPN 
 
