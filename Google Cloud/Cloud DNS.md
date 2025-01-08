@@ -8,7 +8,20 @@ Google's Cloud DNS is a managed DNS service provided by GCP that allows users to
 
 # Cloud DNS Zones
 
-| Cloud DNS Zone | Description |
-| --- | --- |
-| Public DNS Zone | |
-| Private DNS Zone | |
+* When a DNS zone is created, NS and SOA records are added automatically
+
+## Public Zone
+
+* Accessible from the Internet
+* Provides name servers that respond to queries from any source
+
+## Private Zone
+
+* Provides name servers respond only to queries that originate from resources in the same projects as the zone
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# DNSSEC
+
+* Provides strong authentication of clients communicating with DNS services
+* Designed to prevent spoofind and cache poisoning
