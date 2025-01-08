@@ -6,7 +6,28 @@ Google Cloud load balancer distributes workloads across you cloud infrastructure
 * Provides high availability (If one of the VMs in the cluster fails, the workload can be directed to the other VMs within the cluster)
 * Can distribute worklads globally
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/sdfsdfsdfsdfsdfsdfsdfsddfasdasdasfdsfasddas.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/zxxcbvvbcnbnvxcbnbmncvbvcbcvbcvbcvbcv.png)
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Backend Service
+
+* Allows you to specify how to distribute traffic as well as support for connection draining, TCP health checks, managed instance groups, and failover groups
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Target Pools 
+
+* Target pools are instances within a region that are identified by a list or URLs that specify what VMs can receive traffic
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Frontend Service
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 
 # Load Balancer Components
 
@@ -37,13 +58,17 @@ SSL/TLS Offloading is the process of moving the computationally intensive SSL/TL
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Load Balancer Options
+# External Load Balancers
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/sdfsdfsdfsdfsdfsdfsdfsddfasdasdasfdsfasddas.png)
+## External HTTP(S) Application Load Balancer
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/zxxcbvvbcnbnvxcbnbmncvbvcbcvbcvbcvbcv.png)
+## External Proxy Network Load Balancer
 
-## External Load Balancers
+## External Passthrough Network Load Balancer
+
+## SSL Proxy Load Balancer
+
+## TCP Proxy Load Balancer
 
 | External Application Load Balancer Type | Description | 
 | --- | --- |
@@ -53,7 +78,13 @@ SSL/TLS Offloading is the process of moving the computationally intensive SSL/TL
 | Regional External Proxy Network Load Balancer | |
 | Regional External Passthrough Network Load Balancer | |
 
-## Internal Load Balancers
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Internal Load Balancers
+
+## Internal HTTP(S) Load Balancer
+
+## Internal TCP/UDP Load Balancer
 
 | Internal Load Balancer Type | Description | 
 | --- | --- |
