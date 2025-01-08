@@ -28,6 +28,11 @@ Google Cloud load balancer distributes workloads across you cloud infrastructure
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Forward Rules
+
+* Forwards traffic that matches an IP address to the load balancer
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Load Balancer Components
 
