@@ -27,6 +27,23 @@ Google's VPC is a service that provides an isolated network in Google Cloud for 
 
 # Google Private Access
 
+* Used to reach Goole Cloud resources without using an external IP address
+* Allows you to connect to Google APIs through the VPC's default network gateway
+* Traffic to Google APIs from on-premises systems needs to be sent to either `private.googleapi.com` or `restrictred.googleapi.com`
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Private Service Connect
+
+* Used with Google Cloud resources that may or may not have external IP addresses as well as on-premises systems
+* This option allows you to connect to a Private Service Connect endpoint in your VPC network and that endpoint will forward requests to Google APIs and services
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Serverless VPC Access
+
+* Allows Cloud Run, App Engine Standard, and Cloud Functions to reach private IP addresses from those services
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Flow Logs
