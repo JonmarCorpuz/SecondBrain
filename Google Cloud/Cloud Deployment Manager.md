@@ -1,6 +1,6 @@
 # Cloud Deployment Manager Overview
 
-* Makes it relatively simple to deploy an application and resources in a repeatable process
+* Makes it relatively simple to deploy an application and resources in a repeatable process by allowing engineers to define configuration files that describe the resources that they would like to deploy
 
 # Cloud Deployment Manager Files
 
