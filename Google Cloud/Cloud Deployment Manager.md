@@ -1,5 +1,7 @@
 # Cloud Deployment Manager Overview
 
+* Makes it relatively simple to deploy an application and resources in a repeatable process
+
 # Cloud Deployment Manager Files
 
 * Written in YAML
