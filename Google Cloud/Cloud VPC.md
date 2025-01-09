@@ -33,6 +33,12 @@ Google's VPC is a service that provides an isolated network in Google Cloud for 
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Private Service Access
+
+* Used with third-party services and some Google Cloud service
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Private Service Connect
 
 * Used with Google Cloud resources that may or may not have external IP addresses as well as on-premises systems
