@@ -7,6 +7,7 @@ Google's Compute Engine is a the service engine that provisions VMs to users usi
 * Offers various types of VMs with different components to suite different workloads (Ex: *CPU*, *Memory*, *Storage configurations*, *etc.*)
 * Provides persistent disks for VM storage and allows users to create snapshots of persistent disks for backup and disaster recovery
 * Provides networking features (Ex: *VPC*, *Subnets*, *Firewall rules*, *Routes*, *Load-balancing*, *Autoscaling*, *etc.*)
+* Can only perform operations allowed by both IAM roles assigned to the service account and scopes defined on the instance
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -265,3 +266,16 @@ Customers create and manage their encryption keys outside of Google
 * Stored in Google's metadata server, which is available for querying using the Compute Engine API
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Access Scopes
+
+Access scopes are permissions granted to a VM to perform some operation
+
+* Authorize the access to API methods
+* Specified using a URL that starts wuth `www.googleapis.com/auth` and is then followed by permission on a resource
+
+## Default Access
+
+## Allow Full Access to All Cloud APIs
+
+## Set Access for Each API
