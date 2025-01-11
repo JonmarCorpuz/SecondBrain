@@ -5,6 +5,7 @@ A Kubernetes cluster is simply a group of worker nodes that are managed by the M
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/piptiprtierpitepirepriwepirpewripweir.png)
 
 * Clusters are created with a release channel configuration that enables automatic upgrading of the cluster software (If you want more control over the upgrade process, you can choose to configure a static channel)
+* Can host multiple resources for various different purposes that can each be isolate using namespaces
 
 | Kubernetes Cluster Component | Description |
 | --- | --- |
