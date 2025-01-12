@@ -54,15 +54,23 @@ Shared VPC allows multiple projects within an organization to share a common VPC
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Dynamic Routing
+# VPC Routing
 
-## Regional Routing
+## Dynamic Routing
+
+### Regional Routing
 
 * Enables Goolge Cloud Routers to learn routes with the region
 
-## Global Routing
+### Global Routing
 
 * Enable Google Cloud Routers to learn routes on all subnetworks in the VPC
+
+## Policy-Based Routing
+
+* Allows users to route network traffic based on criteria other than the destination IP address (*Source IP address*, *IP protocols*, *Source and destination ports*, *etc.*)
+* Allows for more efficient use of netowrk resources, improved network performance, and enhanced security measures by providing more control over the network traffic
+* Involves defining custom routes and attaching tags to instances, which are then used to identify which custom routes apply to which instances
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -90,14 +98,18 @@ Shared VPC allows multiple projects within an organization to share a common VPC
 
 # VPC Network Modes
 
-## Auto Mode VPC Network
+## Automatic Mode VPC Network
 
-* Subnets are automatically created in each region
+* Designed for simplicity and ease of setup
+* Google Cloud automatically sets up the environment with a default configuration (*One subnet is created in each region using a predefined set of IP ranges*, *Automically includes system-generated routes which facilitates communication within the VPC and to the Internet*, *etc.*)
 * Automatically used by default VPCs
 
 ## Custom Mode VPC Network
 
-* No subnets are automatically created (You have complete control over subnets and their IP ranges)
+* Offers full control over the configuration of the network (*No subnets are automatically created*, *etc.*)
+* Users define their own network configurations (*Subnets*, *IP ranges*, *Routes*, *etc.*)
+* Ideal for environments that need detailed network configurations (*Strict compliance or security requirements*, *Integration with on-premises networks*, *etc.*)
+
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
