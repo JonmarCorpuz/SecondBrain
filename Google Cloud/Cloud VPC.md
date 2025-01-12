@@ -13,11 +13,9 @@ Google's VPC is a service that provides an isolated network in Google Cloud for 
 
 # VPC Types
 
-| VPC Type | Description |
-| --- | --- |
-| Shared VPC | Allows multiple projects within an organization to share a common VPC network |
-
 ## Shared VPC
+
+Shared VPC allows multiple projects within an organization to share a common VPC
 
 * Created at the organization or shared folder level
 * Allows a VPC network to be shared between projects in the same organization
