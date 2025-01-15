@@ -9,15 +9,6 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 
 # IAM Components
 
-| IAM Component | Description |
-| --- | --- |
-| Resource | |
-| Member | |
-| Permission | (Not directly assigned to a member but rather to roles, which are then assigned to users) |
-| Action | |
-| Role | A set of permissions to perform specific actions on specific resources (Can have multiple permissions and can be assigned to multiple members) |
-| Policy | A set of bindings that associate one or more members with a specific role |
-
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Members
@@ -31,12 +22,6 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 * Can't be logged in via browsers or cookies
 * Treated as an identity when assigned to a resource and treated as an object when given access to a user
 * Created automatically when resources are created (Ex: *A service account will be created for a VM when the VM is created*)
-
-| Service Account Type | Description |
-| --- | --- |
-| Default | |
-| User Managed | |
-| Google-Managed | |
 
 ### Default Service Accounts
 
@@ -79,6 +64,26 @@ Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin
 ## Custom Roles
 
 Custom roles that are created by the client 
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IAM Permissions
+
+* `<service>.<resource>.<action>`
+
+## Viewer
+
+The `.viewer` permission allows the entity to view all resources but can't make any changes
+
+## Editor
+
+The `.editor` permission allows the entity to modify all resources but can't manage roles and permissions 
+
+## Admin
+
+## Owner
+
+The `.owner` permission gives an entity all permissions
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
