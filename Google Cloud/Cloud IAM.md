@@ -53,17 +53,15 @@ Google's Cloud Identity and Access Management allows users to manage who has acc
 * A role is a collection of permissions
 * Granted to users by binding a user to a role
 
-## Basic Roles
+## Viewer Role
 
-A set of predefined roles that provide broad levels of access to resources within a project (*roles.viewer*, *roles.editor*, *roles.owner*)
+## User Role
 
-## Predefined Roles
+## Manager Role
 
-Fine grained roles that are predefined and managed by Google (Ex: *Storage Admin*, *Storage Object Admin*, *Storage Object Viewer*, *etc.*) 
+## Admin Role
 
-## Custom Roles
-
-Custom roles that are created by the client 
+## Custom Role
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
@@ -78,8 +76,6 @@ The `.viewer` permission allows the entity to view all resources but can't make 
 ## Editor
 
 The `.editor` permission allows the entity to modify all resources but can't manage roles and permissions 
-
-## Admin
 
 ## Owner
 
