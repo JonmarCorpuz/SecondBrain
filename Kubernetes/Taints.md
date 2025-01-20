@@ -1,6 +1,6 @@
 # Taint Overview
 
-A taint is a property you can set on a Node that marks it to repel certain Pods
+A taint is a property you can set on a Node that marks it to repel certain Pods unless they have a corresponding toleration
 
 * Affects how Pods are scheduled onto Nodes
 * Works together with tolerations
@@ -32,10 +32,22 @@ The effect defines what happens to Pods that don't tolerate the taint
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
-# Setting a Taint
+# Untainted Node
 
-Set a taint on a Node with the specified key and value
+An untainted Node refers to a Node that doesn't have any taints applied to them
+
+* Doesn't restrict the scheduling of Pods based on taints and tolerations
+* Assuming that that there are no other scheduling restrictions in place, any Pod can be scheduled on untainted Nodes
+* Nodes are untainted by default when added to a Kubernetes cluster (They'll accept any Pods unless the Pods themselves specify Node selection criteria that prevent them from being scheduled on certain Nodes)
+
+# Configuring Taints
+
+Adding a taint
 ```Bash
 kubectl taint nodes NODE_NAME KEY=VALUE:EFFECT
 ```
 
+Removing a taint
+```Bash
+kubectl taint nodes NODE_NAME KEY=VALUE:EFFECT-
+```
